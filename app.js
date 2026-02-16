@@ -1,7 +1,7 @@
 // Ayuda Inmediata en Japón - simple FAQ assistant (offline-friendly)
 // IMPORTANT: Replace WHATSAPP_NUMBER with your real number in international format (no +, no spaces).
 // Example Japan: 81XXXXXXXXXX
-const WHATSAPP_NUMBER = "819084462419"; // <-- CAMBIA ESTO
+const WHATSAPP_NUMBER = "819084462319"; // <-- CAMBIA ESTO
 // Aporte voluntario (opcional): reemplaza estos enlaces con los tuyos
 const SUPPORT_PAYPAL_URL = "#"; // <-- pega tu link de PayPal.me o botón de PayPal
 const SUPPORT_PAYPAY_URL = "#"; // <-- pega tu link/código PayPay (si lo usas)

@@ -4,7 +4,7 @@
 const WHATSAPP_NUMBER = "819084462319"; // <-- CAMBIA ESTO
 // Aporte voluntario (opcional): reemplaza estos enlaces con los tuyos
 const SUPPORT_PAYPAL_URL = "https://paypal.me/JGarciaUmey"; = "#"; // <-- pega tu link de PayPal.me o botón de PayPal
-const SUPPORT_PAYPAY_URL = "#"; // <-- pega tu link/código PayPay (si lo usas)
+const SUPPORT_PAYPAY_URL = "https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6";= "#"; // <-- pega tu link/código PayPay (si lo usas)
 const SUPPORT_KOFI_URL  = "https://ko-fi.com/ayudainmediatajapon"; // <-- pega tu link Ko-fi
 
 const WHATSAPP_PRESET_MSG = encodeURIComponent("Hola, necesito ayuda en Japón. ¿Me puedes apoyar?");

@@ -3,7 +3,7 @@
 // Example Japan: 81XXXXXXXXXX
 const WHATSAPP_NUMBER = "819084462319"; // <-- CAMBIA ESTO
 // Aporte voluntario (opcional): reemplaza estos enlaces con los tuyos
-const SUPPORT_PAYPAL_URL = "#"; // <-- pega tu link de PayPal.me o botón de PayPal
+const SUPPORT_PAYPAL_URL = "https://paypal.me/JGarciaUmey"; = "#"; // <-- pega tu link de PayPal.me o botón de PayPal
 const SUPPORT_PAYPAY_URL = "#"; // <-- pega tu link/código PayPay (si lo usas)
 const SUPPORT_KOFI_URL  = "https://ko-fi.com/ayudainmediatajapon"; // <-- pega tu link Ko-fi
 

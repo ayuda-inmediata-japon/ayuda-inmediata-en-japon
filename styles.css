@@ -211,3 +211,6 @@ textarea::placeholder{color:rgba(255,255,255,.6);}
 .tip h3{margin:8px 0 6px;font-size:1.05rem}
 .tip p{margin:0;opacity:.92;line-height:1.45}
 .mini-ico{width:42px;height:42px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:.95}
+.hidden-content {
+  display: none;
+}

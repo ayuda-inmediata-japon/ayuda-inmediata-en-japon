@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayuda Inmediata en Japón</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>AYUDA INMEDIATA EN JAPÓN</h1>
+
+      <p>
+        Guía gratuita y orientación práctica en español para ayudarte cuando no sabes qué hacer o necesitas organizar tu experiencia en Japón. 🇯🇵
+      </p>
+
+      <p>
+        English: Basic guidance in English is available. You may ask your question below.
+      </p>
+
+      <p>
+        🟢 Aquí encontrarás orientación gratuita y soluciones claras para resolver tu situación en Japón.
+      </p>
+
+      <button id="continueBtn">Continuar ⬇️</button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="main">
+
+    <h2>¿En qué necesitas ayuda?</h2>
+
+    <input id="searchInput" type="text" placeholder="Ej: transporte, hospital, policía…">
+
+    <div class="chips">
+      <button class="chip" data-target="emergencia">🆘 Emergencia</button>
+      <button class="chip" data-target="transporte">🚆 Transporte</button>
+      <button class="chip" data-target="dinero">💴 Dinero y pagos</button>
+      <button class="chip" data-target="vida">🏠 Vida diaria</button>
+      <button class="chip" data-target="tramites">🏛️ Trámites</button>
+      <button class="chip" data-target="servicios">🧩 Servicios</button>
+    </div>
+
+    <section id="emergencia"><h3>Emergencia</h3></section>
+    <section id="transporte"><h3>Transporte</h3></section>
+    <section id="dinero"><h3>Dinero y pagos</h3></section>
+    <section id="vida"><h3>Vida diaria</h3></section>
+    <section id="tramites"><h3>Trámites</h3></section>
+    <section id="servicios"><h3>Servicios personalizados</h3></section>
+
+  </main>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>

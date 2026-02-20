@@ -24,12 +24,13 @@ a{color:inherit}
 }
 
 .hero-bg{
-  position:absolute; inset:0;
-  background-image: url("https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1600&q=80");
+  position:absolute;
+  inset:0;
+  background-image:url("https://images.unsplash.com/photo-1536098561742-ca998e48cbcc");
   background-size:cover;
   background-position:center;
-  filter: blur(0px);
-  transform: scale(1.02);
+  filter:blur(2px);
+  transform:scale(1.02);
 }
   background-size:cover;
   background-position:center;

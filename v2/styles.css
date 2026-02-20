@@ -22,15 +22,15 @@ a{color:inherit}
   padding:28px 16px;
   overflow:hidden;
 }
-
 .hero-bg{
   position:absolute;
   inset:0;
-  background-image:url("https://images.unsplash.com/photo-1536098561742-ca998e48cbcc");
+  background-image:url("https://images.unsplash.com/photo-1549693578-d683be217e58");
   background-size:cover;
   background-position:center;
-  filter: brightness(0.75);
+  filter: brightness(0.55) contrast(1.15);
   transform:scale(1.02);
+}
 }
   background-size:cover;
   background-position:center;

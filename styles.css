@@ -1,0 +1,149 @@
+/* RESET BÁSICO */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background:#0b0f1a;
+  color:#ffffff;
+  overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:28px 16px;
+  overflow:hidden;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background-image:url("./hero.jpg");
+  background-size:cover;
+  background-position:center;
+  filter:blur(2px);
+  transform:scale(1.05);
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55); /* Oscuro equilibrado */
+}
+
+.hero-content{
+  position:relative;
+  max-width:800px;
+  z-index:2;
+}
+
+.hero-title{
+  font-size:2.2rem;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.hero-sub{
+  font-size:1.05rem;
+  line-height:1.6;
+  margin-bottom:16px;
+  opacity:0.9;
+}
+
+.hero-en{
+  font-size:0.95rem;
+  margin-bottom:16px;
+  opacity:0.8;
+}
+
+.hero-green{
+  font-size:1rem;
+  font-weight:600;
+  margin-bottom:28px;
+}
+
+.continue-btn{
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(8px);
+  color:white;
+  font-size:1rem;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.continue-btn:hover{
+  background:rgba(255,255,255,0.25);
+}
+
+/* SECCIÓN PRINCIPAL */
+
+.main-section{
+  padding:60px 20px;
+  background:#0e1424;
+  text-align:center;
+}
+
+.main-section h2{
+  font-size:1.8rem;
+  margin-bottom:25px;
+}
+
+#searchInput{
+  width:100%;
+  max-width:400px;
+  padding:14px 18px;
+  border-radius:30px;
+  border:none;
+  outline:none;
+  margin-bottom:30px;
+  font-size:1rem;
+  background:rgba(255,255,255,0.1);
+  color:white;
+}
+
+.cat-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  justify-content:center;
+  margin-bottom:40px;
+}
+
+.cat-btn{
+  padding:12px 20px;
+  border-radius:25px;
+  border:none;
+  background:rgba(255,255,255,0.12);
+  color:white;
+  cursor:pointer;
+  transition:0.3s ease;
+  font-size:0.95rem;
+}
+
+.cat-btn:hover{
+  background:rgba(255,255,255,0.25);
+}
+
+/* SECCIONES */
+
+section{
+  padding:60px 20px;
+  border-top:1px solid rgba(255,255,255,0.1);
+}
+
+section h3{
+  font-size:1.5rem;
+}

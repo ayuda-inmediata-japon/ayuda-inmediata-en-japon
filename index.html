@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ayuda Inmediata en Japón</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero" aria-label="Portada">
+
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-content fade-in">
+
+    <h1 class="hero-title">
+      AYUDA INMEDIATA EN JAPÓN
+    </h1>
+
+    <p class="hero-sub">
+      Guía gratuita y orientación práctica en español para ayudarte cuando no sabes qué hacer o necesitas organizar tu experiencia en Japón. 🇯🇵
+    </p>
+
+    <p class="hero-en">
+      English: Basic guidance in English is available. You may ask your question below.
+    </p>
+
+    <p class="hero-green">
+      🟢 Aquí encontrarás orientación gratuita y soluciones claras para resolver tu situación en Japón.
+    </p>
+
+    <button class="continue-btn" id="continueBtn">
+      Continuar <span class="arrow">⬇</span>
+    </button>
+
+  </div>
+
+</header>
+
+<!-- SECCIÓN PRINCIPAL -->
+<section class="main-section" id="main">
+
+  <h2>¿En qué necesitas ayuda?</h2>
+
+  <input type="text" id="searchInput" placeholder="Ej: transporte, hospital, policía, dinero..." />
+
+  <div class="cat-grid">
+
+    <button class="cat-btn" data-target="emergencia">🆘 Emergencia</button>
+    <button class="cat-btn" data-target="transporte">🚆 Transporte</button>
+    <button class="cat-btn" data-target="dinero">💴 Dinero y pagos</button>
+    <button class="cat-btn" data-target="vida">🏠 Vida diaria</button>
+    <button class="cat-btn" data-target="tramites">🏛️ Trámites</button>
+    <button class="cat-btn" data-target="servicios">🧩 Servicios</button>
+
+  </div>
+
+</section>
+
+<!-- SECCIONES DE EJEMPLO -->
+<section id="emergencia"><h3>Emergencia</h3></section>
+<section id="transporte"><h3>Transporte</h3></section>
+<section id="dinero"><h3>Dinero y pagos</h3></section>
+<section id="vida"><h3>Vida diaria</h3></section>
+<section id="tramites"><h3>Trámites</h3></section>
+<section id="servicios"><h3>Servicios personalizados</h3></section>
+
+<script src="./app.js"></script>
+
+</body>
+</html>

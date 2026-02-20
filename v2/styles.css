@@ -29,7 +29,7 @@ a{color:inherit}
   background-image:url("https://images.unsplash.com/photo-1536098561742-ca998e48cbcc");
   background-size:cover;
   background-position:center;
-  filter: blur(1px) brightness(0.8);
+  filter: brightness(0.75);
   transform:scale(1.02);
 }
   background-size:cover;

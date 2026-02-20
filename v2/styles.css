@@ -25,7 +25,7 @@ a{color:inherit}
 
 .hero-bg{
   position:absolute; inset:0;
-  background-image:url("./hero.jpg");
+  background-image: url("https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=1600&q=80");
   background-size:cover;
   background-position:center;
   filter: blur(0px);

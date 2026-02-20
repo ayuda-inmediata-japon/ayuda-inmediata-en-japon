@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayuda Inmediata en Japón (v2)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- HERO (pantalla completa) -->
+  <header class="hero" aria-label="Portada">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content fade-in">
+      <h1 class="hero-title">AYUDA INMEDIATA<br/>EN JAPÓN</h1>
+
+      <p class="hero-sub">
+        Guía gratuita y orientación práctica en español para ayudarte en el momento en que no sabes qué hacer
+        o necesitas organizar tu experiencia en Japón. 🇯🇵
+      </p>
+
+      <p class="hero-en">
+        English: Basic guidance in English is available. You may ask your question below.
+      </p>
+
+      <p class="hero-green">🟢 Aquí encontrarás orientación gratuita y soluciones claras para resolver tu situación en Japón.</p>
+
+      <button class="continue-btn" id="continueBtn" type="button">
+        Continuar <span class="arrow">⬇️</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- BUSCADOR -->
+  <main id="main">
+    <section class="search-section" id="searchSection" aria-label="Buscador principal">
+      <h2 class="question">¿En qué necesitas ayuda?</h2>
+
+      <div class="search-box" role="search">
+        <span class="search-icon" aria-hidden="true">🔎</span>
+        <input
+          id="searchInput"
+          type="text"
+          inputmode="search"
+          autocomplete="off"
+          placeholder="Ej: hotel · tren · taxi · cajero · hospital · policía"
+        />
+      </div>
+
+      <p class="personal">
+        Si necesitas atención personalizada —como traducción de documentos, interpretación telefónica o presencial,
+        planificación o acompañamiento— puedes escribirnos con confianza para consultar tu caso. Te orientaremos primero y,
+        si se requiere un apoyo más específico, coordinaremos según la situación.
+      </p>
+
+      <a class="wa-link" id="waBtn" href="#">
+        🟢💬 Necesito ayuda por WhatsApp
+      </a>
+
+      <details class="cats">
+        <summary>📌 Ver índice (categorías)</summary>
+
+        <div class="cat-grid">
+          <button class="cat-btn" data-target="emergencia">🆘 Emergencia</button>
+          <button class="cat-btn" data-target="llegada">🛬 Llegada a Japón</button>
+          <button class="cat-btn" data-target="transporte">🚆 Transporte</button>
+          <button class="cat-btn" data-target="dinero">💴 Dinero y pagos</button>
+          <button class="cat-btn" data-target="vida">🏠 Vida diaria</button>
+          <button class="cat-btn" data-target="turismo">🌸 Turismo</button>
+          <button class="cat-btn" data-target="tramites">🏛️ Trámites y documentos</button>
+          <button class="cat-btn" data-target="consejos">💡 Consejos</button>
+          <button class="cat-btn" data-target="servicios">🧩 Servicios personalizados</button>
+        </div>
+      </details>
+    </section>
+
+    <!-- SECCIONES (placeholder por ahora) -->
+    <section class="section" id="emergencia"><h3>🆘 Emergencia</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="llegada"><h3>🛬 Llegada a Japón</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="transporte"><h3>🚆 Transporte</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="dinero"><h3>💴 Dinero y pagos</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="vida"><h3>🏠 Vida diaria</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="turismo"><h3>🌸 Turismo</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="tramites"><h3>🏛️ Trámites y documentos</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="consejos"><h3>💡 Consejos</h3><p>Contenido próximamente…</p></section>
+    <section class="section" id="servicios"><h3>🧩 Servicios personalizados</h3><p>Contenido próximamente…</p></section>
+
+    <footer class="footer">
+      <p>© Ayuda Inmediata en Japón</p>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

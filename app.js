@@ -1,3 +1,4 @@
+alert("✅ app.js está cargando");
 document.addEventListener("DOMContentLoaded", function () {
 
   const continueBtn = document.getElementById("continueBtn");

@@ -104,6 +104,39 @@ document.addEventListener("DOMContentLoaded", () => {
       mostrar(respuestas[clave]);
     } else {
       mostrar(`
+        // 🚆 TRANSPORTE GENERAL
+if (
+  query.includes("transporte") ||
+  query.includes("taxi") ||
+  query.includes("tren") ||
+  query.includes("bus") ||
+  query.includes("autobus") ||
+  query.includes("suica") ||
+  query.includes("pasmo")
+) {
+  mostrarResultado(`
+    <h2>🚆 Transporte en Japón</h2>
+
+    <h3>🚕 Taxi</h3>
+    <p><strong>Precio inicial:</strong> ¥500 – ¥700</p>
+    <p>Sube según distancia. De noche (22:00–5:00) aumenta 20%.</p>
+    <div class="jap-box">
+      タクシーをお願いします<br>
+      Takushī o onegaishimasu<br>
+      (Un taxi, por favor)
+    </div>
+
+    <h3>🚆 Tren</h3>
+    <p>Es el transporte más usado. Funciona con boletos o tarjeta IC.</p>
+
+    <h3>🚌 Autobús</h3>
+    <p>Se paga al bajar. Mira el número en pantalla para saber cuánto pagar.</p>
+
+    <h3>💳 Tarjetas IC</h3>
+    <p>Suica y Pasmo sirven para tren, bus y compras pequeñas.</p>
+  `);
+  return;
+}
         <h2>🔎 No encontramos esa información</h2>
         <p>Estamos ampliando la guía constantemente.</p>
         <p>🟢 Puedes escribirnos por WhatsApp y te orientamos.</p>

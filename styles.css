@@ -30,15 +30,11 @@ body {
 
 .hero-content {
   position: relative;
+  z-index: 2;
   max-width: 800px;
   padding: 20px;
   animation: fadeIn 1.5s ease forwards;
 }
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-} no no
 
 .main-text {
   margin-bottom: 15px;

@@ -10,8 +10,8 @@ body {
   color: white;
 }
 
-.hero {
-  position: relative;
+.hero{
+  position: relative;   /* IMPORTANTE */
   height: 100vh;
   background: url('hero.jpg') center center / cover no-repeat;
   display: flex;
@@ -74,14 +74,19 @@ body {
 }
 /* IMPORTANTE: el overlay NO debe bloquear clicks */
 .overlay {
-  pointer-events: none;
-  z-index: 0;
+  pointer-events: none; /* para que NO bloquee el toque */
 }
 
-/* El contenido y la flecha deben estar por encima */
-.hero-content {
-  position: relative;
-  z-index: 2;
+.arrow{
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 5;
+  font-size: 34px;
+  cursor: pointer;
+  user-select: none;
+  animation: bounce 1.4s infinite;
 }
 
 .arrow {

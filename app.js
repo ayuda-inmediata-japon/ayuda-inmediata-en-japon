@@ -2,13 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // BOTÓN CONTINUAR
   const continueBtn = document.getElementById("continueBtn");
-  const main = document.getElementById("main");
 
-  if (continueBtn && main) {
-    continueBtn.addEventListener("click", function () {
-      main.scrollIntoView({ behavior: "smooth" });
+if (continueBtn) {
+  continueBtn.onclick = function () {
+    document.getElementById("main").scrollIntoView({
+      behavior: "smooth"
     });
-  }
+  };
+}
 
   // CHIPS
   const chips = document.querySelectorAll(".chip");

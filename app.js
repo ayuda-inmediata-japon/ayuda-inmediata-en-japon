@@ -113,11 +113,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (searchBtn) searchBtn.addEventListener("click", buscar);
 
-  if (searchInput) {
-    searchInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") buscar();
-    });
-  }
+ if (searchInput) {
+
+  // Activar al presionar Enter
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") buscar();
+  });
+
+  // Activar automáticamente al escribir palabra válida
+  searchInput.addEventListener("input", () => {
+    const valor = normalizar(searchInput.value);
+    const clave = alias[valor] || valor;
+
+    if (respuestas[clave]) {
+      buscar();
+    }
+  });
+
+}
 
   if (volverBtn) {
     volverBtn.addEventListener("click", () => {

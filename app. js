@@ -1,3 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("App cargada correctamente");
+document.addEventListener("DOMContentLoaded", () => {
+  const arrow = document.getElementById("arrowDown");
+  const target = document.getElementById("buscador");
+
+  if (arrow && target) {
+    arrow.addEventListener("click", () => {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  }
 });

@@ -5,10 +5,10 @@ const continueBtn = document.getElementById("continueBtn");
 
 if (continueBtn) {
   continueBtn.onclick = function () {
-    const main = document.getElementById("main");
-    if (main) {
-      main.scrollIntoView({ behavior: "smooth" });
-    }
+    window.scrollBy({
+      top: window.innerHeight * 1.1,
+      behavior: "smooth"
+    });
   };
 }
 

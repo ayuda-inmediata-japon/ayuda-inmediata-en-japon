@@ -96,3 +96,10 @@ h1 {
   opacity: 0.8;
   margin-bottom: 20px;
 }
+.jap-box {
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-weight: bold;
+}

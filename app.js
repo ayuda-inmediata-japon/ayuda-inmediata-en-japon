@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // BOTÓN CONTINUAR
+// BOTÓN CONTINUAR
 const continueBtn = document.getElementById("continueBtn");
-
 if (continueBtn) {
   continueBtn.onclick = function () {
-    window.scrollBy({
-      top: window.innerHeight * 1.1,
-      behavior: "smooth"
-    });
+    const main = document.getElementById("main");
+    if (main) {
+      main.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
   };
 }
 

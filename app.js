@@ -3,13 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // BOTÓN CONTINUAR
   const continueBtn = document.getElementById("continueBtn");
 
-if (continueBtn) {
-  continueBtn.onclick = function () {
-    document.getElementById("main").scrollIntoView({
-      behavior: "smooth"
-    });
-  };
-}
 
   // CHIPS
   const chips = document.querySelectorAll(".chip");

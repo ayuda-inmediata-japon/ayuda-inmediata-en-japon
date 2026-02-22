@@ -72,3 +72,20 @@ body {
   40% {transform: translateY(10px);}
   60% {transform: translateY(5px);}
 }
+/* IMPORTANTE: el overlay NO debe bloquear clicks */
+.overlay {
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* El contenido y la flecha deben estar por encima */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.arrow {
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}

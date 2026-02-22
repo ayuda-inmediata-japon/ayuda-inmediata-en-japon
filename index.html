@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayuda Inmediata en Japón</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-content">
+    <h1>AYUDA INMEDIATA EN JAPÓN</h1>
+
+    <p class="hero-text">
+      Guía gratuita y orientación práctica en español para ayudarte cuando no sabes qué hacer o necesitas organizar tu experiencia en Japón. 🇯🇵
+    </p>
+
+    <p class="hero-text-small">
+      English: Basic guidance in English is available.
+    </p>
+
+    <p class="hero-highlight">
+      🟢 Aquí encontrarás orientación gratuita y soluciones claras para resolver tu situación en Japón.
+    </p>
+
+    <button id="continueBtn" class="continueBtn">
+      Continuar ⬇️
+    </button>
+  </div>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main id="main">
+
+<section class="intro">
+  <h2>¿En qué necesitas ayuda?</h2>
+
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Escribe: hotel, hospital, transporte, dinero, emergencia..."
+    autocomplete="off"
+  >
+
+  <div class="chips">
+    <button class="chip" data-target="emergencia">🚨 Emergencia</button>
+    <button class="chip" data-target="transporte">🚆 Transporte</button>
+    <button class="chip" data-target="hoteles">🏨 Hoteles</button>
+    <button class="chip" data-target="hospitales">🏥 Hospitales</button>
+    <button class="chip" data-target="dinero">💴 Dinero</button>
+    <button class="chip" data-target="vida">🏠 Vida diaria</button>
+    <button class="chip" data-target="tramites">📄 Trámites</button>
+    <button class="chip" data-target="servicios">🧰 Servicios</button>
+  </div>
+</section>
+
+<!-- EMERGENCIA -->
+<section id="emergencia" class="block">
+<h3>🚨 Emergencia</h3>
+
+<h4>📞 Números importantes</h4>
+<ul class="sub">
+<li>110 → Policía</li>
+<li>119 → Ambulancia / Bomberos</li>
+</ul>
+
+<h4>🏯 Koban (puesto de policía)</h4>
+<p>Si perdiste algo o necesitas ayuda inmediata, busca un Koban cercano.</p>
+
+<h4>🧳 Pasaporte perdido o robo</h4>
+<p>Acude a la policía y luego contacta tu embajada.</p>
+</section>
+
+<!-- TRANSPORTE -->
+<section id="transporte" class="block">
+<h3>🚆 Transporte</h3>
+
+<h4>🎫 Tarjetas IC (Suica / ICOCA)</h4>
+<p>Se compran en estaciones grandes y se recargan en máquinas o conbini.</p>
+
+<h4>🗺️ Cómo no perderte</h4>
+<p>Confirma línea, andén y salida en Google Maps antes de moverte.</p>
+
+<h4>🚕 Taxi</h4>
+<p>Usa paradas oficiales. Frase útil: “ここまでお願いします”.</p>
+</section>
+
+<!-- HOTELES -->
+<section id="hoteles" class="block">
+<h3>🏨 Hoteles</h3>
+
+<h4>🛎️ Check-in</h4>
+<p>Te pedirán pasaporte y confirmación de reserva.</p>
+
+<h4>📄 Problemas con reserva</h4>
+<p>Muestra el correo de confirmación y pide que revisen nuevamente.</p>
+
+<h4>🔑 Llave perdida</h4>
+<p>Ve a recepción inmediatamente. Puede haber penalidad.</p>
+</section>
+
+<!-- HOSPITALES -->
+<section id="hospitales" class="block">
+<h3>🏥 Hospitales</h3>
+
+<h4>🩺 Emergencia médica</h4>
+<p>Llama 119 si es urgente.</p>
+
+<h4>💊 Farmacias</h4>
+<p>Muchas medicinas requieren receta. Usa traductor si es necesario.</p>
+</section>
+
+<!-- DINERO -->
+<section id="dinero" class="block">
+<h3>💴 Dinero</h3>
+
+<h4>🏧 Cajeros</h4>
+<p>7-Eleven y JP Bank aceptan tarjetas internacionales.</p>
+
+<h4>💳 Tarjeta rechazada</h4>
+<p>Prueba otro cajero o contacta tu banco.</p>
+</section>
+
+<!-- VIDA DIARIA -->
+<section id="vida" class="block">
+<h3>🏠 Vida diaria</h3>
+
+<h4>🗑️ Basura</h4>
+<p>Revisa las reglas del edificio o ciudad.</p>
+
+<h4>📶 Internet / SIM</h4>
+<p>Se puede comprar en aeropuerto o tiendas electrónicas.</p>
+</section>
+
+<!-- TRÁMITES -->
+<section id="tramites" class="block">
+<h3>📄 Trámites</h3>
+
+<h4>🏢 Municipalidad</h4>
+<p>Para registro, dirección o certificados.</p>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="block">
+<h3>🧰 Servicios</h3>
+
+<p>Ofrecemos apoyo personalizado vía WhatsApp para interpretación, orientación y acompañamiento.</p>
+</section>
+
+<!-- BLOQUE FINAL CONFIRMADO -->
+<section class="experiencia">
+<h3>💬 ¿Te gustaría contarnos tu experiencia o cómo te ayudó esta guía?</h3>
+
+<button class="btn-experiencia"
+onclick="window.open('https://wa.me/819084462319?text=Hola,%20me%20gustar%C3%ADa%20contarte%20mi%20experiencia%20con%20la%20gu%C3%ADa%20y%20compartir%20una%20sugerencia.', '_blank')">
+✍️ Contar mi experiencia
+</button>
+</section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -146,7 +146,21 @@ const searchInput = document.getElementById("searchInput");
       mostrarNoEncontrado();
     }
   }
+// ✅ Auto-buscar al escribir
+let tAuto = null;
 
+if (searchInput) {
+  searchInput.addEventListener("input", () => {
+    clearTimeout(tAuto);
+
+    const v = searchInput.value.trim();
+    if (v.length < 2) return;
+
+    tAuto = setTimeout(() => {
+      buscar();
+    }, 250);
+  });
+}
   // Buscar con botón
   if (searchBtn) searchBtn.addEventListener("click", buscar);
 

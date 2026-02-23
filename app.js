@@ -60,45 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="jap-box">予約があります。確認できますか？<br><small>(Yoyaku ga arimasu. Kakunin dekimasu ka?) = “Tengo reserva, ¿pueden confirmar?”</small></div>
 
       <p><strong>Llave perdida:</strong> ve a recepción inmediatamente (puede haber penalidad).</p>
-    `
-64   emergencia: `
-        <h2>🚨 Emergencia</h2>
-        <p>Llama 110 o 119.</p>
-     `,
-
-     transporte: `
-        <h2>🚆 Transporte</h2>
-        <p>Trenes y taxi.</p>
-     `,
-
-     salud: `
-        <h2>🏥 Salud</h2>
-        <p>Hospitales y farmacias.</p>
-     `,
-
-     alojamiento: `
-        <h2>🏨 Alojamiento</h2>
-        <p>Problemas en hotel.</p>
-     `,
-
-     dinero: `
-        <h2>💰 Dinero</h2>
-        <p>Cajeros y tarjetas.</p>
-     `,
-
-     "vida-diaria": `
-        <h2>🏠 Vida diaria</h2>
-        <p>Basura y restaurantes.</p>
-     `,
-
-     tramites: `
-        <h2>📄 Trámites</h2>
-        <p>Documentos.</p>
-     `,
-
-     servicios: `
-        <h2>🧰 Servicios</h2>
-        <p>Ayuda personalizada.</p>
      `,
 
 65   }; no

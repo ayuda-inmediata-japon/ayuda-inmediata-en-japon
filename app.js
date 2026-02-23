@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Llave perdida:</strong> ve a recepción inmediatamente (puede haber penalidad).</p>
      `,
 
-65   }; no
+   }; no
   };
 
   // Aliases (sinónimos)

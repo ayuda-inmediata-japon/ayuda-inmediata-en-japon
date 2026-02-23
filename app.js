@@ -1,6 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
 alert("✅ app.js cargado");
-    document.addEventListener("DOMContentLoaded", () => {
-  const searchInput = document.getElementById("searchInput");
+const searchInput = document.getElementById("searchInput");
   const searchBtn = document.getElementById("searchBtn");
   const resultado = document.getElementById("resultado");
   const resultadoContent = document.getElementById("resultadoContent");

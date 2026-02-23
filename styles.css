@@ -201,3 +201,27 @@ body.modo-resultado #buscador{
   border:none;
   font-weight:600;
 }
+/* Chips principales */
+.chips-wrap{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.chip{
+  border: 1px solid rgba(255,255,255,0.20);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  padding: 12px 12px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.1;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.chip:active{
+  transform: scale(0.98);
+}

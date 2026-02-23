@@ -140,4 +140,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("buscador").scrollIntoView({ behavior: "smooth" });
     });
   }
+    // Activar chips principales
+  const chips = document.querySelectorAll(".chip");
+
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      const key = chip.getAttribute("data-key");
+      if (respuestas[key]) {
+        mostrar(respuestas[key]);
+      }
+    });
+  });
 });

@@ -146,19 +146,22 @@ const searchInput = document.getElementById("searchInput");
       mostrarNoEncontrado();
     }
   }
-// ✅ Auto-buscar al escribir
+// ✅ Auto-buscar SOLO si hay coincidencia exacta (no interrumpe al escribir)
 let tAuto = null;
 
 if (searchInput) {
   searchInput.addEventListener("input", () => {
     clearTimeout(tAuto);
 
-    const v = searchInput.value.trim();
-    if (v.length < 2) return;
-
     tAuto = setTimeout(() => {
-      buscar();
-    }, 250);
+      const valor = normalizar(searchInput.value);
+      if (!valor) return;
+
+      const clave = alias[valor] || valor;
+
+      // Solo si existe EXACTO, recién muestra
+      if (respuestas[clave]) buscar();
+    }, 600);
   });
 }
   // Buscar con botón

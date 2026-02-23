@@ -114,10 +114,22 @@ document.addEventListener("DOMContentLoaded", () => {
   if (searchBtn) searchBtn.addEventListener("click", buscar);
 
   if (searchInput) {
-    searchInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") buscar();
-    });
-  }
+
+  searchInput.addEventListener("input", () => {
+    const valor = normalizar(searchInput.value);
+    if (!valor) return;
+
+    const clave = alias[valor] || valor;
+
+    if (respuestas[clave]) {
+      buscar();
+    }
+  });
+
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") buscar();
+  });
+}
 
   if (volverBtn) {
     volverBtn.addEventListener("click", () => {

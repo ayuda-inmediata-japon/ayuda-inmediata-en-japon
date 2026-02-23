@@ -161,7 +161,7 @@ if (searchInput) {
 
       // Solo si existe EXACTO, recién muestra
       if (respuestas[clave]) buscar();
-    }, 100);
+    }, 50);
   });
 }
   // Buscar con botón

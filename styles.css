@@ -77,7 +77,7 @@ h1{
   bottom: 54px; /* 👈 aquí la altura de la flecha */
   transform: translateX(-50%);
   z-index:3;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 1;
   background: rgba(255,255,255,.18);
   border: 1px solid rgba(255,255,255,.22);

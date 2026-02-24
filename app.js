@@ -188,31 +188,33 @@ if (searchInput) {
 
   // Chips ✅ (mapea categorías a claves reales)
 const chips = document.querySelectorAll(".chip");
-
-// Si tus botones usan palabras “bonitas” (salud, alojamiento, etc.)
-// aquí las traducimos a las claves reales de respuestas:
+// Traducción de nombres de chips a claves reales
 const chipMap = {
   emergencia: "emergencia",
   transporte: "transporte",
-
-  // categorías de tus botones -> claves reales en respuestas
   salud: "hospital",
   alojamiento: "hotel",
   dinero: "dinero",
-  vida: "vida",          // si tu respuesta se llama "vida"
-  "vida-diaria": "vida", // por si el data-key viene con guion
+  "vida-diaria": "vida",
+  vida: "vida",
   tramites: "tramites",
   servicios: "servicios",
-  policia: "policia",
+  policia: "policia"
 };
 
+// Activar chips
 chips.forEach((chip) => {
   chip.addEventListener("click", () => {
-    const raw = (chip.getAttribute("data-key") || "").trim().toLowerCase();
+
+    const raw = (chip.getAttribute("data-key") || "")
+      .trim()
+      .toLowerCase();
+
     const key = chipMap[raw] || raw;
 
     if (key && respuestas[key]) {
       mostrar(respuestas[key]);
     }
+
   });
 });

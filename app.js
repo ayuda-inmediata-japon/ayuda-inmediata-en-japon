@@ -186,12 +186,33 @@ if (searchInput) {
     });
   }
 
-  // Chips
-  const chips = document.querySelectorAll(".chip");
-  chips.forEach((chip) => {
-    chip.addEventListener("click", () => {
-      const key = chip.getAttribute("data-key");
-      if (key && respuestas[key]) mostrar(respuestas[key]);
-    });
+  // Chips ✅ (mapea categorías a claves reales)
+const chips = document.querySelectorAll(".chip");
+
+// Si tus botones usan palabras “bonitas” (salud, alojamiento, etc.)
+// aquí las traducimos a las claves reales de respuestas:
+const chipMap = {
+  emergencia: "emergencia",
+  transporte: "transporte",
+
+  // categorías de tus botones -> claves reales en respuestas
+  salud: "hospital",
+  alojamiento: "hotel",
+  dinero: "dinero",
+  vida: "vida",          // si tu respuesta se llama "vida"
+  "vida-diaria": "vida", // por si el data-key viene con guion
+  tramites: "tramites",
+  servicios: "servicios",
+  policia: "policia",
+};
+
+chips.forEach((chip) => {
+  chip.addEventListener("click", () => {
+    const raw = (chip.getAttribute("data-key") || "").trim().toLowerCase();
+    const key = chipMap[raw] || raw;
+
+    if (key && respuestas[key]) {
+      mostrar(respuestas[key]);
+    }
   });
 });

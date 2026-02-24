@@ -53,7 +53,7 @@ h1{
 .hero-sub{
   margin: 10px auto;
   color: var(--muted);
-  font-size: 23px;
+  font-size: 10px;
   line-height: 1.45;
   text-shadow: 0 6px 18px rgba(0,0,0,.55);
 }

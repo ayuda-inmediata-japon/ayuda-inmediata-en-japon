@@ -26,6 +26,8 @@ html,body{ margin:0; padding:0; background:var(--bg); color:var(--text); font-fa
   align-items:center;
   justify-content:center;
   padding: 36px 18px 110px;
+  left:0;
+right:0;
 }
 
 .hero-overlay{

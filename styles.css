@@ -51,7 +51,7 @@ h1{
 }
 
 .hero-sub{
-  margin: 10px auto;
+  margin: 15px auto;
   color: var(--muted);
   font-size: 22px;
   line-height: 1.45;
@@ -110,7 +110,7 @@ h1{
 
 .panel h2{
   margin: 0 0 14px;
-  font-size:  22px;
+  font-size:  20px;
   letter-spacing: .2px;
 }
 

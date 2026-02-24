@@ -120,8 +120,10 @@ h1{
 
 .panel h2{
   margin: 0 0 14px;
-  font-size:  20px;
+  font-size: 20px;
   letter-spacing: .2px;
+  text-align: center;
+}
 }
 
 .search-row{

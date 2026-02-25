@@ -157,13 +157,16 @@ h1{
 }
 
 .search-btn{
+  flex:0 0 auto;
+  white-space:nowrap;
+
   height:44px;
   padding:0 18px;
 
   border:none;
   border-radius:16px;
 
-  background:#34C759;
+  background:#34C759;   /* verde */
   color:#000;
   font-weight:700;
 }

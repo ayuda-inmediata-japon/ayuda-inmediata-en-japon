@@ -125,34 +125,51 @@ h1{
   text-align: center;
 }
 }
-
+/* ===== BUSCADOR PRO (una sola ventana) ===== */
 .search-row{
   display:flex;
   align-items:center;
-  gap:0;   /* quitamos espacio para que se pegue bien */
+  gap:10px;
 
   width:100%;
   margin-top:14px;
 
-  background: transparent;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 18px;
+
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: border-color .18s ease, background .18s ease, box-shadow .18s ease;
+}
+
+/* cuando haces tap dentro (se nota claro donde escribir) */
+.search-row:focus-within{
+  border-color: rgba(140,255,140,.55);
+  background: rgba(255,255,255,.12);
+  box-shadow: 0 10px 34px rgba(0,0,0,.38), 0 0 0 3px rgba(80,255,140,.12);
 }
 
 .search-icon{
-  flex: 0 0 auto;
-  opacity: .9;
+  opacity:.9;
+  padding-left: 6px;
   font-size: 18px;
   line-height: 1;
 }
 
 .search-input{
   flex:1;
-  min-width:0;
+  min-width: 0;
 
-  background: rgba(255,255,255,.08);
-  border: none;
+  background: transparent;
+  border:none;
+  outline:none;
 
-  padding: 14px 16px;
-  border-radius: 16px 0 0 16px;
+  padding: 12px 10px;
 
   color: var(--text);
   font-size:16px;
@@ -163,22 +180,28 @@ h1{
 }
 
 .search-btn{
-  padding: 14px 22px;
+  flex: 0 0 auto;
 
-  background: rgba(255,255,255,.15);
-  color: white;
+  background: rgba(255,255,255,.18);
+  color: #fff;
 
-  border: none;
-  border-radius: 0 16px 16px 0;
+  border:none;
+  border-radius: 14px;
 
-  font-weight:600;
-  cursor:pointer;
+  padding: 12px 18px;
+  font-weight: 700;
 
-  transition: all .2s ease;
+  transition: transform .12s ease, background .18s ease;
 }
+
+.search-btn:active{
+  transform: scale(.98);
+}
+
 .search-btn:hover{
-  background: rgba(255,255,255,.25);
+  background: rgba(255,255,255,.28);
 }
+
 .chips-wrap{
   display:grid;
   grid-template-columns: 1fr 1fr;

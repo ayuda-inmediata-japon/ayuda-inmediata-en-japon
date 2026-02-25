@@ -36,19 +36,20 @@
   <main class="main" id="buscador">
     <section class="panel">
       <h2>¿En qué necesitas ayuda?</h2>
+      
+       <div class="search-row" id="buscador">
+  <span class="search-icon" aria-hidden="true">🔎</span>
 
-      <div class="search-row" role="search">
-        <span class="search-icon" aria-hidden="true">🔎</span>
-        <input
-          id="searchInput"
-          class="search-input"
-          type="text"
-          placeholder='Ej: taxi, hospital, hotel, policía...'
-          autocomplete="off"
-          inputmode="search"
-        />
-        <button id="searchBtn" class="search-btn" type="button">Buscar</button>
-      </div>
+  <input
+    id="searchInput"
+    class="search-input"
+    type="text"
+    placeholder="Ej: taxi, hospital, hotel, policía..."
+    autocomplete="off"
+  />
+
+  <button id="searchBtn" class="search-btn" type="button">Buscar</button>
+</div>
 
       <!-- Chips principales (8 categorías) -->
       <div class="chips-wrap" aria-label="Categorías principales">

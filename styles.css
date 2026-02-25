@@ -170,6 +170,14 @@ h1{
   color:#000;
   font-weight:700;
 }
+/* Anti-zoom iPhone (forzado) */
+input, textarea, select{
+  font-size:16px !important;
+}
+
+#searchInput{
+  font-size:16px !important;
+}
 .search-btn:hover{
   background: #2fb350;
 }

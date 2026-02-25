@@ -129,18 +129,12 @@ h1{
 .search-row{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:0;   /* quitamos espacio para que se pegue bien */
 
   width:100%;
   margin-top:14px;
 
-  background: rgba(255,255,255,.12); /* más claro */
-  border: 1px solid rgba(255,255,255,.35); /* marco visible */
-  border-radius: 16px;
-
-  padding: 14px 16px;
-
-  box-shadow: 0 6px 16px rgba(0,0,0,.4);
+  background: transparent;
 }
 
 .search-icon{
@@ -151,16 +145,18 @@ h1{
 }
 
 .search-input{
-  flex: 1 1 auto;
-  min-width: 0;
+  flex:1;
 
-  border: 0;
-  outline: none;
-  background: transparent;
+  background: rgba(255,255,255,.18);  /* blanco alargado */
+  border: 1px solid rgba(255,255,255,.35);
+  border-right: none;  /* se une con el botón */
+
+  padding: 14px 16px;
+
+  border-radius: 16px 0 0 16px;
 
   color: var(--text);
-  font-size: 16px;
-  padding: 10px 6px;
+  font-size:16px;
 }
 
 .search-input::placeholder{
@@ -172,7 +168,7 @@ h1{
   white-space: nowrap;
 
   padding: 12px 18px;
-  border-radius: 14px;
+  border-radius:  0 16px 16px;
   border: 0;
 
   background: rgba(255,255,255,.88);

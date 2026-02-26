@@ -207,8 +207,17 @@ document.addEventListener("DOMContentLoaded", () => {
     planificacion: "servicios"
   };
 
-  // ====== Mensaje cuando NO encuentra ======
-  const htmlNoEncontrado = () => `
+  // ====== WhatsApp (2 tipos) ======
+const WHATS_GENERAL_URL =
+  "https://wa.me/819084462319?text=" +
+  encodeURIComponent("Hola, necesito orientación general sobre: ");
+
+const WHATS_PERSONAL_URL =
+  "https://wa.me/819084462319?text=" +
+  encodeURIComponent("Hola, necesito orientación personalizada sobre: ");
+
+// ====== Mensaje cuando NO encuentra ======
+const htmlNoEncontrado = () => `
   <div class="resultado-content">
     <h2>🤔 No encontré resultados con esa búsqueda.</h2>
 
@@ -219,11 +228,11 @@ document.addEventListener("DOMContentLoaded", () => {
     </p>
 
     <p>
-      Si aun así no encuentras lo que necesitas, escríbenos por WhatsApp.
+      Si aun así no encuentras lo que necesitas, escríbenos por WhatsApp.<br>
       <strong>Estamos aquí para ayudarte.</strong>
     </p>
 
-    <a href="${WHATS_URL}" class="cta-whatsapp">💬 Orientación general por WhatsApp</a>
+    <a href="${WHATS_GENERAL_URL}" class="cta-whatsapp">💬 Orientación general por WhatsApp</a>
 
     <hr style="margin:18px 0; opacity:0.25;">
 
@@ -233,7 +242,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </p>
   </div>
 `;
-
       <h3>¿Necesitas apoyo personalizado?</h3>
 <p>
 Si requieres apoyo más específico —como traducción de documentos, interpretación telefónica o presencial, planificación de gastos, paseos, estadía o acompañamiento— puedes escribirnos con confianza.

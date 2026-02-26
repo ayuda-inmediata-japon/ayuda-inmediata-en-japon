@@ -242,19 +242,6 @@ const htmlNoEncontrado = () => `
     </p>
   </div>
 `;
-      <h3>¿Necesitas apoyo personalizado?</h3>
-<p>
-Si requieres apoyo más específico —como traducción de documentos, interpretación telefónica o presencial, planificación de gastos, paseos, estadía o acompañamiento— puedes escribirnos con confianza.
-</p>
-<p>
-Coordinaremos según tu situación.
-</p>
-
-      <a href="${WHATS_URL}" class="cta-whatsapp">💬 Necesito ayuda por WhatsApp</a>
-
-      <hr style="margin:18px 0; opacity:0.25;">
-
-      
 
   // ====== Buscar ======
   const buscar = () => {

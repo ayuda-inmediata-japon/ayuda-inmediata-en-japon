@@ -209,22 +209,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ====== Mensaje cuando NO encuentra ======
   const htmlNoEncontrado = () => `
-    <div class="resultado-content">
-      <h2>🤔 No encontré resultados con esa búsqueda.</h2>
+  <div class="resultado-content">
+    <h2>🤔 No encontré resultados con esa búsqueda.</h2>
 
-      <p>
-        Puedes intentar con otras palabras como:
-        <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>,
-        <strong>policía</strong> o <strong>emergencia</strong>.
-      </p>
+    <p>
+      Puedes intentar con otras palabras como:
+      <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>,
+      <strong>policía</strong> o <strong>emergencia</strong>.
+    </p>
 
-      <p>
-        Si aun así no encuentras lo que necesitas,
-        no dudes en escribirnos o llamarnos.<br>
-        <strong>Estamos aquí para ayudarte.</strong>
-      </p>
+    <p>
+      Si aun así no encuentras lo que necesitas, escríbenos por WhatsApp.
+      <strong>Estamos aquí para ayudarte.</strong>
+    </p>
 
-      <hr style="margin:18px 0; opacity:0.25;">
+    <a href="${WHATS_URL}" class="cta-whatsapp">💬 Orientación general por WhatsApp</a>
+
+    <hr style="margin:18px 0; opacity:0.25;">
+
+    <p style="font-size:14px; opacity:0.85; line-height:1.5;">
+      La guía es gratis.<br>
+      Si te resultó útil, puedes apoyar el proyecto de forma voluntaria.
+    </p>
+  </div>
+`;
 
       <h3>¿Necesitas apoyo personalizado?</h3>
 <p>

@@ -150,24 +150,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const mostrarNoEncontrado = () => {
     mostrar(`
-      <h2>🤔 No encontré esa palabra</h2>
-      <p>Prueba con: <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>, <strong>policía</strong>, <strong>emergencia</strong>…</p>
-      <p>Si necesitas ayuda personalizada, usa el botón de WhatsApp.</p>
-    `);
-  };
+      resultado.innerHTML = `
+<div class="resultado-content">
 
-  function buscar() {
-    const valor = normalizar(searchInput ? searchInput.value : "");
-    if (!valor) return;
+<h2>🤔 No encontré resultados con esa búsqueda.</h2>
 
-    const clave = alias[valor] || valor;
+<p>Puedes intentar con otras palabras como:
+taxi, hospital, hotel, policía o emergencia.</p>
 
-    if (respuestas[clave]) {
-      mostrar(respuestas[clave]);
-    } else {
-      mostrarNoEncontrado();
-    }
-  }
+<p><strong>Si aun así no encuentras lo que necesitas,
+escríbenos o llámanos.
+Te orientaremos de inmediato, sin costo.</strong></p>
+
+<hr>
+
+<h3>¿Necesitas apoyo más específico?</h3>
+
+<p>Ofrecemos interpretación, traducción,
+acompañamiento y planificación en Japón.</p>
+
+<a href="https://wa.me/819084462319" class="search-btn">
+💬 Necesito ayuda por WhatsApp
+</a>
+
+<hr>
+
+<p style="font-size:14px; opacity:0.8;">
+La guía y la orientación inicial son gratuitas.
+Si te resultan útiles,
+puedes apoyar el proyecto de forma voluntaria.
+</p>
+
+</div>
+`;
 
   // Buscar con botón
   if (searchBtn) searchBtn.addEventListener("click", buscar);

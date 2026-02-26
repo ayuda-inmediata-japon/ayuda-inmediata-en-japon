@@ -160,7 +160,7 @@ h1{
   flex:0 0 auto;
 
   height:44px;
-  min-width:90px;      /* evita que se encoja */
+  min-width:75px;      /* evita que se encoja */
   padding:0 18px;
 
   border:none;

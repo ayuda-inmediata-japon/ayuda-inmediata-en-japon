@@ -323,3 +323,20 @@ input, textarea, select{
   .chips-wrap{ grid-template-columns: 1fr 1fr; }
   .arrow{ bottom: 48px; } /* 👈 si quieres subir más la flecha, baja este número */
 }
+/* FIX buscador: botón más angosto + texto más grande (FORZADO) */
+.search-row .search-btn,
+.search-row button.search-btn,
+button.search-btn,
+#searchBtn,
+#btnBuscar{
+  height: 44px !important;
+  padding: 0 16px !important;   /* <-- reduce el ancho */
+  font-size: 19px !important;   /* <-- letras más grandes */
+  font-weight: 800 !important;
+
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+}

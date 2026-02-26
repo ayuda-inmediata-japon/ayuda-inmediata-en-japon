@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resultado.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const mostrarNoEncontrado = () => {
+const mostrarNoEncontrado = () => {
   mostrar(`
     <div class="resultado-content">
       <h2>🤔 No encontré resultados con esa búsqueda.</h2>
@@ -156,15 +156,14 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>
         Puedes intentar con otras palabras como:
         <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>,
-        <strong>policía</strong>, <strong>emergencia</strong>.
+        <strong>policía</strong>, <strong>emergencia</strong>…
       </p>
 
       <p>
         <strong>
-        Si aun así no encuentras lo que necesitas,
-        escríbenos o llámanos.
-        </strong><br>
-        Te orientaremos de inmediato, sin costo.
+          Si aun así no encuentras lo que necesitas, no dudes en escribirnos o llamarnos.<br>
+          Te orientaremos de inmediato, sin costo.
+        </strong>
       </p>
 
       <hr>
@@ -172,18 +171,18 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>¿Necesitas apoyo más específico?</h3>
 
       <p>
-        Ofrecemos interpretación, traducción,
-        acompañamiento y planificación en Japón.
+        Ofrecemos <strong>interpretación</strong>, <strong>traducción</strong>,
+        <strong>acompañamiento</strong> y <strong>planificación</strong> en Japón.
       </p>
 
-      <a href="https://wa.me/819084462319" class="whatsapp-btn">
+      <a href="https://wa.me/819084462319" class="btn-whatsapp">
         💬 Necesito ayuda por WhatsApp
       </a>
 
       <hr>
 
-      <p style="font-size:14px; opacity:0.8;">
-        La guía y la orientación inicial son gratuitas.
+      <p style="font-size:14px; opacity:0.85;">
+        La guía y la orientación inicial son gratuitas.<br>
         Si te resultan útiles, puedes apoyar el proyecto de forma voluntaria.
       </p>
     </div>
@@ -191,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 };
   // Buscar con botón
   if (searchBtn) searchBtn.addEventListener("click", buscar);
-
+ 
   // Buscar con Enter
   if (searchInput) {
     searchInput.addEventListener("keydown", (e) => {

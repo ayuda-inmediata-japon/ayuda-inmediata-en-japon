@@ -331,7 +331,7 @@ button.search-btn,
 #btnBuscar{
   height: 44px !important;
   padding: 0 16px !important;   /* <-- reduce el ancho */
-  font-size: 18x !important;   /* <-- letras más grandes */
+  font-size: 20x !important;   /* <-- letras más grandes */
   font-weight: 800 !important;
 
   min-width: 0 !important;

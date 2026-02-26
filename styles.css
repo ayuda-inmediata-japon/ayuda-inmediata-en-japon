@@ -160,15 +160,18 @@ h1{
   flex:0 0 auto;
 
   height:44px;
-  min-width:75px;      /* evita que se encoja */
   padding:0 18px;
 
   border:none;
   border-radius:16px;
 
-  background:#34C759;   /* verde */
+  background:#34C759;
   color:#000;
+
   font-weight:700;
+  font-size:18px;
+
+  min-width:unset;     /* ← importante */
 }
 /* Anti-zoom iPhone (forzado) */
 input, textarea, select{

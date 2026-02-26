@@ -227,11 +227,10 @@ const htmlNoEncontrado = () => `
       <strong>policía</strong> o <strong>emergencia</strong>.
     </p>
 
-    <p>
-      Si aun así no encuentras lo que necesitas, escríbenos por WhatsApp.<br>
-      <strong>Estamos aquí para ayudarte.</strong>
-    </p>
-
+    <p>Si aun así no encuentras lo que necesitas,
+puedes contactarnos.
+Estamos aquí para ayudarte.
+</p>
     <a href="${WHATS_GENERAL_URL}" class="cta-whatsapp">💬 Orientación general por WhatsApp</a>
 
     <hr style="margin:18px 0; opacity:0.25;">

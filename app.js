@@ -1,5 +1,5 @@
-document.title = "JS OK";
 document.addEventListener("DOMContentLoaded", () => {
+  document.title = "JS OK";
   const searchInput = document.getElementById("searchInput");
   const searchBtn = document.getElementById("searchBtn");
   const resultado = document.getElementById("resultado");

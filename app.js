@@ -226,12 +226,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <hr style="margin:18px 0; opacity:0.25;">
 
-      <h3>¿Necesitas apoyo específico?</h3>
-      <p>
-        Ofrecemos <strong>interpretación</strong>, <strong>traducción</strong>,
-        <strong>acompañamiento</strong> y <strong>planificación</strong> en Japón.
-        Escríbenos con confianza.
-      </p>
+      <h3>¿Necesitas apoyo personalizado?</h3>
+<p>
+Si requieres apoyo más específico —como traducción de documentos, interpretación telefónica o presencial, planificación de gastos, paseos, estadía o acompañamiento— puedes escribirnos con confianza.
+</p>
+<p>
+Coordinaremos según tu situación.
+</p>
 
       <a href="${WHATS_URL}" class="cta-whatsapp">💬 Necesito ayuda por WhatsApp</a>
 

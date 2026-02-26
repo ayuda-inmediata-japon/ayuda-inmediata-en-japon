@@ -339,7 +339,5 @@ button.search-btn,
   max-width: none !important;
   flex: 0 0 auto !important;
   white-space: nowrap !important;
-}
-.search-btn{
-   font-size:16px !important;
+
 }

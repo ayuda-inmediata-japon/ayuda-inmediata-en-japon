@@ -156,26 +156,35 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>
         Puedes intentar con otras palabras como:
         <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>,
-        <strong>policía</strong>, <strong>emergencia</strong>…
+        <strong>policía</strong>, <strong>emergencia</strong>.
       </p>
 
       <p>
-        <strong>Si aun así no encuentras lo que necesitas, escríbenos o llámanos.</strong><br>
+        <strong>
+        Si aun así no encuentras lo que necesitas,
+        escríbenos o llámanos.
+        </strong><br>
         Te orientaremos de inmediato, sin costo.
       </p>
 
       <hr>
 
       <h3>¿Necesitas apoyo más específico?</h3>
-      <p>Ofrecemos interpretación, traducción, acompañamiento y planificación en Japón.</p>
 
-      <a href="https://wa.me/819084462319" class="whatsapp-btn">💬 Necesito ayuda por WhatsApp</a>
+      <p>
+        Ofrecemos interpretación, traducción,
+        acompañamiento y planificación en Japón.
+      </p>
+
+      <a href="https://wa.me/819084462319" class="whatsapp-btn">
+        💬 Necesito ayuda por WhatsApp
+      </a>
 
       <hr>
 
       <p style="font-size:14px; opacity:0.8;">
-        La guía y la orientación inicial son gratuitas. Si te resultan útiles,
-        puedes apoyar el proyecto de forma voluntaria.
+        La guía y la orientación inicial son gratuitas.
+        Si te resultan útiles, puedes apoyar el proyecto de forma voluntaria.
       </p>
     </div>
   `);

@@ -147,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
     resultado.classList.remove("oculto");
     resultado.scrollIntoView({ behavior: "smooth", block: "start" });
   };
-
 const mostrarNoEncontrado = () => {
   mostrar(`
     <div class="resultado-content">
@@ -161,9 +160,9 @@ const mostrarNoEncontrado = () => {
 
       <p>
         <strong>
-          Si aun así no encuentras lo que necesitas, no dudes en escribirnos o llamarnos.<br>
-          Te orientaremos de inmediato, sin costo.
-        </strong>
+          Si aun así no encuentras lo que necesitas, escríbenos o llámanos.
+        </strong><br>
+        Te orientaremos de inmediato, sin costo.
       </p>
 
       <hr>
@@ -175,7 +174,7 @@ const mostrarNoEncontrado = () => {
         <strong>acompañamiento</strong> y <strong>planificación</strong> en Japón.
       </p>
 
-      <a href="https://wa.me/819084462319" class="btn-whatsapp">
+      <a href="https://wa.me/819084462319" class="whatsapp-btn">
         💬 Necesito ayuda por WhatsApp
       </a>
 

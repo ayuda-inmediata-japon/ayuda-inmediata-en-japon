@@ -214,7 +214,7 @@ const WHATS_GENERAL_URL =
 
 const WHATS_PERSONAL_URL =
   "https://wa.me/819084462319?text=" +
-  encodeURIComponent("Hola, necesito orientación personalizada sobre: ");
+  encodeURIComponent("Hola, necesito orientación personalizada (servicio específico) sobre: ");
 
 // ====== Mensaje cuando NO encuentra ======
 const htmlNoEncontrado = () => `

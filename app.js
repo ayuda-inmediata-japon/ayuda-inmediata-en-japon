@@ -238,12 +238,7 @@ Coordinaremos según tu situación.
 
       <hr style="margin:18px 0; opacity:0.25;">
 
-      <p style="font-size:14px; opacity:0.85; line-height:1.5;">
-        La guía y la orientación inicial son gratuitas.<br>
-        Si te resultan útiles, puedes apoyar el proyecto de forma voluntaria.
-      </p>
-    </div>
-  `;
+      
 
   // ====== Buscar ======
   const buscar = () => {

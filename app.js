@@ -149,41 +149,37 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const mostrarNoEncontrado = () => {
-    mostrar(`
-      resultado.innerHTML = `
-<div class="resultado-content">
+  mostrar(`
+    <div class="resultado-content">
+      <h2>🤔 No encontré resultados con esa búsqueda.</h2>
 
-<h2>🤔 No encontré resultados con esa búsqueda.</h2>
+      <p>
+        Puedes intentar con otras palabras como:
+        <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>,
+        <strong>policía</strong>, <strong>emergencia</strong>…
+      </p>
 
-<p>Puedes intentar con otras palabras como:
-taxi, hospital, hotel, policía o emergencia.</p>
+      <p>
+        <strong>Si aun así no encuentras lo que necesitas, escríbenos o llámanos.</strong><br>
+        Te orientaremos de inmediato, sin costo.
+      </p>
 
-<p><strong>Si aun así no encuentras lo que necesitas,
-escríbenos o llámanos.
-Te orientaremos de inmediato, sin costo.</strong></p>
+      <hr>
 
-<hr>
+      <h3>¿Necesitas apoyo más específico?</h3>
+      <p>Ofrecemos interpretación, traducción, acompañamiento y planificación en Japón.</p>
 
-<h3>¿Necesitas apoyo más específico?</h3>
+      <a href="https://wa.me/819084462319" class="whatsapp-btn">💬 Necesito ayuda por WhatsApp</a>
 
-<p>Ofrecemos interpretación, traducción,
-acompañamiento y planificación en Japón.</p>
+      <hr>
 
-<a href="https://wa.me/819084462319" class="search-btn">
-💬 Necesito ayuda por WhatsApp
-</a>
-
-<hr>
-
-<p style="font-size:14px; opacity:0.8;">
-La guía y la orientación inicial son gratuitas.
-Si te resultan útiles,
-puedes apoyar el proyecto de forma voluntaria.
-</p>
-
-</div>
-`;
-
+      <p style="font-size:14px; opacity:0.8;">
+        La guía y la orientación inicial son gratuitas. Si te resultan útiles,
+        puedes apoyar el proyecto de forma voluntaria.
+      </p>
+    </div>
+  `);
+};
   // Buscar con botón
   if (searchBtn) searchBtn.addEventListener("click", buscar);
 

@@ -172,7 +172,7 @@ h1{
 }
 /* Anti-zoom iPhone (forzado) */
 input, textarea, select{
-  font-size:19px !important;
+  font-size:22px !important;
 }
 
 #searchInput{

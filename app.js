@@ -67,11 +67,72 @@ document.addEventListener("DOMContentLoaded", () => {
   const respuestas = {
     emergencia: `
       <div class="resultado-content">
-        <h2>🚨 Emergencia</h2>
-        <p>Si hay peligro inmediato, llama al <strong>110 (policía)</strong> o <strong>119 (ambulancia/bomberos)</strong>.</p>
-        <p>Si necesitas orientación en español, escríbenos por WhatsApp.</p>
-      </div>
-    `,
+        emergencia: `
+  <div class="resultado-content">
+    <h2>🚨 Emergencias en Japón</h2>
+
+    <p>
+      En Japón, una emergencia es cualquier situación que represente
+      peligro inmediato para tu vida, salud o seguridad.
+    </p>
+
+    <ul>
+      <li>Accidentes graves</li>
+      <li>Incendios</li>
+      <li>Robos o violencia</li>
+      <li>Problemas médicos urgentes</li>
+    </ul>
+
+    <hr style="margin:18px 0; opacity:0.25;">
+
+    <h3>📞 Números importantes</h3>
+
+    <ul>
+      <li><strong>110</strong> – Policía</li>
+      <li><strong>119</strong> – Ambulancia o Bomberos</li>
+    </ul>
+
+    <p>
+      Estos números son gratuitos y funcionan las 24 horas.
+    </p>
+
+    <hr style="margin:18px 0; opacity:0.25;">
+
+    <h3>🧭 ¿Cómo funciona el sistema?</h3>
+
+    <ul>
+      <li>Un operador responderá rápidamente.</li>
+      <li>Te preguntarán tu ubicación exacta.</li>
+      <li>Te pedirán explicar qué está ocurriendo.</li>
+      <li>La ayuda suele llegar con rapidez.</li>
+    </ul>
+
+    <p>
+      Es importante mantener la calma y hablar despacio.
+    </p>
+
+    <hr style="margin:18px 0; opacity:0.25;">
+
+    <h3>⚠️ Consejos importantes</h3>
+
+    <ul>
+      <li>Usa el mapa del teléfono para mostrar tu ubicación.</li>
+      <li>No uses estos números para consultas leves.</li>
+      <li>Si no hablas japonés, intenta usar frases simples.</li>
+    </ul>
+
+    <hr style="margin:18px 0; opacity:0.25;">
+
+    <p><strong>Selecciona el tipo de emergencia:</strong></p>
+
+    <div class="subchips">
+      <button onclick="buscarDirecto('policia')" class="chip-sub">👮 Policía</button>
+      <button onclick="buscarDirecto('ambulancia')" class="chip-sub">🚑 Ambulancia</button>
+      <button onclick="buscarDirecto('incendio')" class="chip-sub">🚒 Bomberos</button>
+    </div>
+
+  </div>
+`,
     policia: `
       <div class="resultado-content">
         <h2>👮 Policía (110)</h2>

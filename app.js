@@ -67,8 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const respuestas = {
     emergencia: `
       <div class="resultado-content">
-        emergencia: `
-  <div class="resultado-content">
+      
     <h2>🚨 Emergencias en Japón</h2>
 
     <p>

@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cerrarResultado = () => {
     if (!resultado) return;
     resultado.classList.add("oculto");
-    if (searchInput) searchInput.value = "";
+    if (searchInput) searchInput.value = "";=
     const buscador = document.getElementById("buscador");
     if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -316,9 +316,29 @@ Estamos aquí para ayudarte.
     </p>
   </div>
 `;
+// ====== Buscar directo (para subchips con onclick) ======
+window.buscarDirecto = (clave) => {
+  const k = normalizar(clave || "");
+  const real = alias[k] || k;
 
+  if (respuestas[real]) {
+    abrirResultado(respuestas[real]);
+    return;
+  }
+
+  // Por si llega ya como clave exacta
+  if (respuestas[k]) {
+    abrirResultado(respuestas[k]);
+    return;
+  }
+
+  // Si no existe todavía esa sección (ej: ambulancia/bomberos),
+  // mostramos el mensaje de "no encontrado"
+  abrirResultado(htmlNoEncontrado());
+};
   // ====== Buscar ======
   const buscar = () => {
+    
     const valor = normalizar(searchInput ? searchInput.value : "");
     if (!valor) return;
 

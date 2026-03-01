@@ -316,20 +316,7 @@ Estamos aquí para ayudarte.
     </p>
   </div>
 `;
-318 `;
-319 
-// ====== Buscar directo (para subchips) ======
-window.buscarDirecto = (clave) => {
-  const k = normalizar(clave || "");
-  const real = alias[k] || k;
 
-  if (respuestas[real]) {
-    abrirResultado(respuestas[real]);
-    return;
-  }
-
-  abrirResultado(htmlNoEncontrado());
-};
   // ====== Buscar ======
   const buscar = () => {
     

@@ -65,73 +65,88 @@ document.addEventListener("DOMContentLoaded", () => {
   // ====== Contenido (respuestas) ======
   // OJO: Las claves “reales” deben coincidir con lo que buscas.
   const respuestas = {
-    emergencia: `
-      <div class="resultado-content">
-      
-    <h2>🚨 Emergencias en Japón</h2>
 
-    <p>
-      En Japón, una emergencia es cualquier situación que represente
-      peligro inmediato para tu vida, salud o seguridad.
-    </p>
+  emergencia: `
+    <div class="resultado-content">
+      <h2>🚨 Emergencias en Japón</h2>
 
-    <ul>
-      <li>Accidentes graves</li>
-      <li>Incendios</li>
-      <li>Robos o violencia</li>
-      <li>Problemas médicos urgentes</li>
-    </ul>
+      <p>
+        En Japón, una emergencia es cualquier situación que represente
+        peligro inmediato para tu vida, salud o seguridad.
+      </p>
 
-    <hr style="margin:18px 0; opacity:0.25;">
+      <ul>
+        <li>Accidentes graves</li>
+        <li>Incendios</li>
+        <li>Robos o violencia</li>
+        <li>Problemas médicos urgentes</li>
+      </ul>
 
-    <h3>📞 Números importantes</h3>
+      <hr style="margin:18px 0; opacity:0.25;">
 
-    <ul>
-      <li><strong>110</strong> – Policía</li>
-      <li><strong>119</strong> – Ambulancia o Bomberos</li>
-    </ul>
+      <h3>📞 Números importantes</h3>
+      <ul>
+        <li><strong>110</strong> — Policía</li>
+        <li><strong>119</strong> — Ambulancia o Bomberos</li>
+      </ul>
 
-    <p>
-      Estos números son gratuitos y funcionan las 24 horas.
-    </p>
+      <hr style="margin:18px 0; opacity:0.25;">
 
-    <hr style="margin:18px 0; opacity:0.25;">
+      <h3>🧭 ¿Cómo funciona el sistema?</h3>
+      <ul>
+        <li>Un operador responderá rápidamente.</li>
+        <li>Te preguntarán tu ubicación exacta.</li>
+        <li>Te pedirán explicar qué está ocurriendo.</li>
+        <li>La ayuda suele llegar con rapidez.</li>
+      </ul>
 
-    <h3>🧭 ¿Cómo funciona el sistema?</h3>
+      <p>Es importante mantener la calma y hablar despacio.</p>
 
-    <ul>
-      <li>Un operador responderá rápidamente.</li>
-      <li>Te preguntarán tu ubicación exacta.</li>
-      <li>Te pedirán explicar qué está ocurriendo.</li>
-      <li>La ayuda suele llegar con rapidez.</li>
-    </ul>
+      <hr style="margin:18px 0; opacity:0.25;">
 
-    <p>
-      Es importante mantener la calma y hablar despacio.
-    </p>
+      <h3>Selecciona el tipo de emergencia:</h3>
 
-    <hr style="margin:18px 0; opacity:0.25;">
-
-    <h3>⚠️ Consejos importantes</h3>
-
-    <ul>
-      <li>Usa el mapa del teléfono para mostrar tu ubicación.</li>
-      <li>No uses estos números para consultas leves.</li>
-      <li>Si no hablas japonés, intenta usar frases simples.</li>
-    </ul>
-
-    <hr style="margin:18px 0; opacity:0.25;">
-
-    <p><strong>Selecciona el tipo de emergencia:</strong></p>
-
-    <div class="subchips">
-      <button onclick="buscarDirecto('policia')" class="chip-sub">👮 Policía</button>
-      <button onclick="buscarDirecto('ambulancia')" class="chip-sub">🚑 Ambulancia</button>
-      <button onclick="buscarDirecto('incendio')" class="chip-sub">🚒 Bomberos</button>
+      <div class="subchips">
+        <button onclick="buscarDirecto('policia')" class="chip-sub">👮 Policía</button>
+        <button onclick="buscarDirecto('ambulancia')" class="chip-sub">🚑 Ambulancia</button>
+        <button onclick="buscarDirecto('bomberos')" class="chip-sub">🚒 Bomberos</button>
+      </div>
     </div>
+  `,
 
-  </div>
-`,
+  policia: `
+    <div class="resultado-content">
+      <h2>👮 Policía en Japón</h2>
+
+      <h3>Cuándo llamar al 110</h3>
+      <ul>
+        <li>Robo o intento de robo</li>
+        <li>Accidente de tránsito</li>
+        <li>Violencia o amenaza</li>
+        <li>Pérdida de pasaporte</li>
+      </ul>
+
+      <h3>Qué hacer</h3>
+      <ol>
+        <li>Mantén la calma.</li>
+        <li>Indica tu ubicación exacta.</li>
+        <li>Explica brevemente qué ocurrió.</li>
+        <li>Sigue las instrucciones del operador.</li>
+      </ol>
+
+      <h3>Frases útiles</h3>
+
+      <div>
+        助けてください。<br>
+        <small>Ayúdeme, por favor.</small>
+      </div>
+
+      <div>
+        パスポートをなくしました。<br>
+        <small>He perdido mi pasaporte.</small>
+      </div>
+    </div>
+  `,
     policia: `
       <div class="resultado-content">
         <h2>👮 Policía (110)</h2>

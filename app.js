@@ -316,7 +316,9 @@ Estamos aquí para ayudarte.
     </p>
   </div>
 `;
-// ====== Buscar directo (para subchips con onclick) ======
+318 `;
+319 
+// ====== Buscar directo (para subchips) ======
 window.buscarDirecto = (clave) => {
   const k = normalizar(clave || "");
   const real = alias[k] || k;
@@ -326,14 +328,6 @@ window.buscarDirecto = (clave) => {
     return;
   }
 
-  // Por si llega ya como clave exacta
-  if (respuestas[k]) {
-    abrirResultado(respuestas[k]);
-    return;
-  }
-
-  // Si no existe todavía esa sección (ej: ambulancia/bomberos),
-  // mostramos el mensaje de "no encontrado"
   abrirResultado(htmlNoEncontrado());
 };
   // ====== Buscar ======

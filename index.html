@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayuda Inmediata Japón</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <h1>Ayuda Inmediata Japón</h1>
+          <p class="subtitle">Guía clara y rápida para momentos difíciles en Japón.</p>
+        </div>
+      </div>
+
+      <button id="arrowDown" class="arrow" aria-label="Bajar al buscador">⌄</button>
+    </div>
+  </header>
+
+  <!-- BUSCADOR -->
+  <main class="main">
+    <section class="search-section" id="searchSection">
+      <h2 class="section-title">¿Qué necesitas?</h2>
+
+      <div class="search-card">
+        <div class="search-input-wrap">
+          <span class="icon">🔎</span>
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Escribe: policía, hospital, taxi, hotel, emergencia…"
+            autocomplete="off"
+          />
+        </div>
+
+        <button id="searchBtn" class="btn-primary">Buscar</button>
+      </div>
+
+      <div class="chips">
+        <button class="chip" data-key="emergencia">🚨 Emergencia</button>
+        <button class="chip" data-key="transporte">🚆 Transporte</button>
+        <button class="chip" data-key="salud">🏥 Salud</button>
+        <button class="chip" data-key="alojamiento">🏨 Alojamiento</button>
+        <button class="chip" data-key="dinero">💴 Dinero</button>
+        <button class="chip" data-key="vida">🧩 Vida diaria</button>
+        <button class="chip" data-key="tramites">📄 Trámites</button>
+        <button class="chip" data-key="servicios">🟢 Servicios</button>
+      </div>
+    </section>
+
+    <!-- ORIENTACIÓN PERSONALIZADA (visible) -->
+    <section class="services">
+      <h2 class="section-title">¿Necesitas orientación personalizada?</h2>
+
+      <p class="services-text">
+        Si requieres apoyo más específico —como traducción de documentos, interpretación telefónica o presencial,
+        planificación de gastos, paseos, estadía o acompañamiento— puedes contactarnos con confianza.
+        <br><br>
+        Coordinaremos contigo según tu situación.
+      </p>
+
+      <div class="services-actions">
+        <a class="btn-primary" id="whatsPersonalBtn" href="#" target="_blank" rel="noopener">
+          🟢 Orientación personalizada por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- APOYO VOLUNTARIO -->
+    <section class="support">
+      <h2 class="section-title">Apoyo voluntario</h2>
+      <p class="muted">
+        Toda la guía y orientación es gratuita. Si te resultó útil, puedes apoyar el proyecto de forma voluntaria.
+      </p>
+      <!-- aquí luego conectamos PayPay / PayPal / Ko-fi -->
+    </section>
+  </main>
+
+  <!-- RESULTADO (modal / panel) -->
+  <section id="resultado" class="resultado" aria-hidden="true">
+    <div class="resultado-box">
+      <div class="resultado-top">
+        <button id="volverBtn" class="btn-ghost">← Volver</button>
+      </div>
+      <div id="resultadoContent" class="resultado-content"></div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

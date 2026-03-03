@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda Inmediata Japón</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero" id="hero">
+  <div class="hero-content">
+    <div class="logo">AI</div>
+    <div>
+      <h1>Ayuda Inmediata Japón</h1>
+      <p>Guía clara y rápida para momentos difíciles en Japón.</p>
+    </div>
+    <button id="arrowDown" class="arrow">▾</button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="card">
+  <h2>¿Qué necesitas?</h2>
+
+  <div class="searchbox">
+    <input id="searchInput" type="text" placeholder="Escribe: policía, hospital, taxi, hotel...">
+    <button id="searchBtn">Buscar</button>
+  </div>
+
+  <div class="chips">
+    <button class="chip" data-key="policia">🚓 Policía</button>
+    <button class="chip" data-key="hospital">🏥 Hospital</button>
+    <button class="chip" data-key="taxi">🚕 Taxi</button>
+    <button class="chip" data-key="hotel">🏨 Hotel</button>
+  </div>
+</section>
+
+<!-- RESULTADO -->
+<section id="resultado" class="resultado hidden">
+  <div id="resultadoContent"></div>
+  <button id="volverBtn" class="volver">Volver</button>
+</section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+}
+
+.hero {
+  padding: 30px 20px;
+  background: linear-gradient(135deg,#0f172a,#111827);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #1f2937;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.arrow {
+  margin-left: auto;
+  background: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.card {
+  padding: 20px;
+}
+
+.searchbox {
+  display: flex;
+  gap: 10px;
+}
+
+.searchbox input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.searchbox button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #22c55e;
+  font-weight: bold;
+}
+
+.chips {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #1f2937;
+  border: none;
+  color: white;
+}
+
+.resultado {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.volver {
+  margin-top: 20px;
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}

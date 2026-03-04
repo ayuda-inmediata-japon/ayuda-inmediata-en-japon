@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Ayuda Inmediata en Japón</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>AYUDA INMEDIATA<br>EN JAPÓN</h1>
+
+      <p class="hero-sub">
+        Guía gratuita y orientación práctica en español para ayudarte cuando no sabes qué hacer o necesitas organizar tu experiencia en Japón. 🇯🇵
+      </p>
+
+      <p class="hero-sub hero-sub-en">
+        Basic guidance in English is available. You may ask your question below.
+      </p>
+
+      <p class="hero-highlight">
+        🟢 Aquí encontrarás orientación gratuita y soluciones claras para resolver tu situación en Japón.
+      </p>
+    </div>
+
+    <!-- Flecha -->
+    <button id="arrowDown" class="arrow" type="button" aria-label="Bajar al buscador">⬇️</button>
+  </header>
+
+  <!-- BUSCADOR / CHIPS -->
+  <main class="main" id="buscador">
+    <section class="panel">
+      <h2>¿En qué necesitas ayuda?</h2>
+      
+       <div class="search-row">
+  <span class="search-icon" aria-hidden="true">🔎</span>
+
+  <input type="text" id="searchInput" placeholder="Escribe aqui: ej;policía…">
+
+  <button id="searchBtn" class="search-btn" type="button">Buscar</button>
+</div>
+
+      <!-- Chips principales (8 categorías) -->
+      <div class="chips-wrap" aria-label="Categorías principales">
+        <button class="chip" type="button" data-key="emergencia">🧯 Emergencia</button>
+        <button class="chip" type="button" data-key="transporte">🚆 Transporte</button>
+        <button class="chip" type="button" data-key="salud">🏥 Salud</button>
+        <button class="chip" type="button" data-key="alojamiento">🏨 Alojamiento</button>
+        <button class="chip" type="button" data-key="dinero">💴 Dinero</button>
+        <button class="chip" type="button" data-key="vida-diaria">🏠 Vida diaria</button>
+        <button class="chip" type="button" data-key="tramites">📄 Trámites</button>
+        <button class="chip" type="button" data-key="servicios">🧰 Servicios</button>
+      </div>
+
+      <!-- Bloque WhatsApp + Apoyo (en esta pantalla, como querías) -->
+      <div class="cta-box">
+        <p class="cta-text">
+          Si necesitas atención personalizada (interpretación, traducción, acompañamiento, planificación), escríbenos con confianza.
+        </p>
+
+        <a class="cta-whatsapp" href="#" id="whatsLink">
+          💬 Necesito ayuda por WhatsApp
+        </a>
+
+        <div class="support">
+          <p class="support-title">🤍 Apoyar el proyecto (opcional)</p>
+          <div class="support-buttons">
+            <a class="support-btn" href="#" id="paypalLink">PayPal</a>
+            <a class="support-btn" href="#" id="kofiLink">Ko-fi</a>
+            <a class="support-btn" href="#" id="paypayLink">PayPay</a>
+          </div>
+          <p class="support-note">La guía es gratis. Tu apoyo ayuda a mantenerla y mejorarla.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADO -->
+    <section id="resultado" class="resultado oculto" aria-live="polite">
+      <div class="resultado-head">
+        <button id="volverBtn" class="volver-btn" type="button">⬅️ Volver</button>
+      </div>
+
+      <article id="resultadoContent" class="resultado-content"></article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

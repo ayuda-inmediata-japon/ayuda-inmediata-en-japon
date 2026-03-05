@@ -149,12 +149,36 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const mostrarNoEncontrado = () => {
-    mostrar(`
-      <h2>🤔 No encontré esa palabra</h2>
-      <p>Prueba con: <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>, <strong>policía</strong>, <strong>emergencia</strong>…</p>
-      <p>Si necesitas ayuda personalizada, usa el botón de WhatsApp.</p>
-    `);
-  };
+  mostrar(`
+  <h2>🤔 No encontré información exacta</h2>
+
+  <p>
+  Intenta buscar nuevamente usando <strong>palabras similares</strong>
+  o una forma diferente de escribir tu consulta.
+  </p>
+
+  <p>
+  Si aún no encuentras lo que buscas y necesitas ayuda,
+  puedes contactarnos con toda confianza.
+  </p>
+
+  <p><strong>💬 WhatsApp</strong></p>
+
+  <a class="boton-whatsapp"
+     href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20general%20sobre%20Japón"
+     target="_blank">
+     Orientación general
+  </a>
+
+  <br><br>
+
+  <a class="boton-whatsapp"
+     href="https://wa.me/819084462319?text=Hola,%20necesito%20apoyo%20personalizado%20en%20Japón"
+     target="_blank">
+     Orientación personalizada
+  </a>
+  `);
+};
 
   function buscar() {
     const valor = normalizar(searchInput ? searchInput.value : "");

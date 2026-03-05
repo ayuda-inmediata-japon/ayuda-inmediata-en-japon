@@ -150,8 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const mostrarNoEncontrado = () => {
     mostrar(`
-      const mostrarNoEncontrado = () => {
-  mostrar(`
+      
     <h2>🤔 ¿No encuentras lo que buscas?</h2>
     <p>Intenta con palabras similares en el buscador.</p>
     <p>Si sigues teniendo dificultades, contáctanos por WhatsApp. Con gusto te orientaremos.</p>

@@ -157,8 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const waGeneral = `https://wa.me/819084462319?text=${encodeURIComponent(msgGeneral)}`;
   const waPersonal = `https://wa.me/819084462319?text=${encodeURIComponent(msgPersonal)}`;
-
-  mostrar(`
     <h2>🤔 ¿No encuentras lo que buscas?</h2>
     <p>Intenta con palabras similares en el buscador.</p>
     <p>Si sigues teniendo dificultades, contáctanos por WhatsApp. Con gusto te orientaremos.</p>

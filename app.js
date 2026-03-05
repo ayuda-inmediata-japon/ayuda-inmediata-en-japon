@@ -149,11 +149,24 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const mostrarNoEncontrado = () => {
-    mostrar(`
-      
+  const texto = (searchInput && searchInput.value ? searchInput.value.trim() : "");
+  const base = `Hola, estuve buscando "${texto || "un tema"}" en Ayuda Inmediata en Japón pero no encontré lo que necesitaba.`;
+
+  const msgGeneral = `${base} Solicito ORIENTACIÓN GENERAL.`;
+  const msgPersonal = `${base} Solicito ORIENTACIÓN PERSONALIZADA (por ejemplo: traducción, interpretación, acompañamiento o gestión).`;
+
+  const waGeneral = `https://wa.me/819084462319?text=${encodeURIComponent(msgGeneral)}`;
+  const waPersonal = `https://wa.me/819084462319?text=${encodeURIComponent(msgPersonal)}`;
+
+  mostrar(`
     <h2>🤔 ¿No encuentras lo que buscas?</h2>
     <p>Intenta con palabras similares en el buscador.</p>
     <p>Si sigues teniendo dificultades, contáctanos por WhatsApp. Con gusto te orientaremos.</p>
+
+    <div class="wa-actions">
+      <a class="btn-wa" href="${waGeneral}" target="_blank" rel="noopener">🟢 Orientación general</a>
+      <a class="btn-wa btn-wa-outline" href="${waPersonal}" target="_blank" rel="noopener">⭐ Orientación personalizada</a>
+    </div>
   `);
 };
   function buscar() {

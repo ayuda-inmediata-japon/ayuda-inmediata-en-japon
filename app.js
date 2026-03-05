@@ -157,9 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
     <p>Si sigues teniendo dificultades, contáctanos por WhatsApp. Con gusto te orientaremos.</p>
   `);
 };
-    `);
-  };
-
   function buscar() {
     const valor = normalizar(searchInput ? searchInput.value : "");
     if (!valor) return;

@@ -150,9 +150,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const mostrarNoEncontrado = () => {
     mostrar(`
-      <h2>🤔 No encontré esa palabra</h2>
-      <p>Prueba con: <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>, <strong>policía</strong>, <strong>emergencia</strong>…</p>
-      <p>Si necesitas ayuda personalizada, usa el botón de WhatsApp.</p>
+      const mostrarNoEncontrado = () => {
+  mostrar(`
+    <h2>🤔 ¿No encuentras lo que buscas?</h2>
+    <p>Intenta con palabras similares en el buscador.</p>
+    <p>Si sigues teniendo dificultades, contáctanos por WhatsApp. Con gusto te orientaremos.</p>
+  `);
+};
     `);
   };
 

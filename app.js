@@ -113,33 +113,41 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Alias (sinónimos) para buscar
-  const alias = {
-    ambulancia: "emergencia",
-    emergencia: "emergencia",
-    tren: "transporte",
-    metro: "transporte",
-    bus: "transporte",
-    buses: "transporte",
-    dinero: "dinero",
-    yen: "dinero",
-    efectivo: "dinero",
-    police: "policia",
-    policei: "policia",
-    policia: "policia",
-    koban: "policia",
-    salud: "hospital",
-    doctor: "hospital",
-    doctora: "hospital",
-    hospital: "hospital",
-    hoteles: "hotel",
-    alojamiento: "hotel",
-    taxi: "taxi",
-    vida: "vida",
-    "vida-diaria": "vida",
-    tramites: "tramites",
-    documentos: "tramites",
-    servicios: "servicios"
-  };
+const alias = {
+
+ambulancia: "emergencia",
+emergencia: "emergencia",
+
+tren: "transporte",
+metro: "transporte",
+bus: "transporte",
+buses: "transporte",
+
+dinero: "dinero",
+yen: "dinero",
+
+pol: "policia",
+poli: "policia",
+polic: "policia",
+
+tax: "taxi",
+taksi: "taxi",
+
+hos: "hospital",
+hosp: "hospital",
+
+hot: "hotel",
+otel: "hotel",
+
+emer: "emergencia",
+emerg: "emergencia",
+
+trans: "transporte",
+tram: "tramites",
+
+serv: "servicios"
+
+};
 
   const mostrar = (html) => {
     if (!resultado || !resultadoContent) return;

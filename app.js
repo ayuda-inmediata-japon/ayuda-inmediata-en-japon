@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resultado.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const mostrarNoEncontrado = () => {
+const mostrarNoEncontrado = () => {
   mostrar(`
   <h2>🤔 No encontré información exacta</h2>
 

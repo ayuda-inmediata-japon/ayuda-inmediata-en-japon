@@ -148,7 +148,79 @@ tram: "tramites",
 serv: "servicios"
 
 };
+const sugerenciasRelacionadas = {
+  pol: [
+    { texto: "Policía", destino: "policia" },
+    { texto: "Patrulla", destino: "policia" },
+    { texto: "Puesto policial", destino: "policia" },
+    { texto: "Koban", destino: "policia" },
+    { texto: "Denuncia", destino: "policia" }
+  ],
 
+  hos: [
+    { texto: "Hospital", destino: "hospital" },
+    { texto: "Ambulancia", destino: "hospital" },
+    { texto: "Emergencia médica", destino: "hospital" },
+    { texto: "Dolor fuerte", destino: "hospital" },
+    { texto: "Accidente", destino: "hospital" }
+  ],
+
+  tax: [
+    { texto: "Taxi", destino: "taxi" },
+    { texto: "Parada de taxi", destino: "taxi" },
+    { texto: "Llamar un taxi", destino: "taxi" },
+    { texto: "Tarifa de taxi", destino: "taxi" },
+    { texto: "Taxi al hospital", destino: "taxi" }
+  ],
+
+  hot: [
+    { texto: "Hotel", destino: "hotel" },
+    { texto: "Alojamiento", destino: "hotel" },
+    { texto: "Check-in", destino: "hotel" },
+    { texto: "Reservar hotel", destino: "hotel" },
+    { texto: "Dormir esta noche", destino: "hotel" }
+  ],
+
+  emer: [
+    { texto: "Emergencia", destino: "emergencia" },
+    { texto: "Urgencia", destino: "emergencia" },
+    { texto: "Ayuda inmediata", destino: "emergencia" },
+    { texto: "Número de emergencia", destino: "emergencia" },
+    { texto: "Qué hacer ahora", destino: "emergencia" }
+  ],
+
+  tran: [
+    { texto: "Transporte", destino: "transporte" },
+    { texto: "Tren", destino: "transporte" },
+    { texto: "Metro", destino: "transporte" },
+    { texto: "Bus", destino: "transporte" },
+    { texto: "Cómo llegar", destino: "transporte" }
+  ],
+
+  dine: [
+    { texto: "Dinero", destino: "dinero" },
+    { texto: "Cambio de moneda", destino: "dinero" },
+    { texto: "Tarjeta", destino: "dinero" },
+    { texto: "Efectivo", destino: "dinero" },
+    { texto: "Cajero", destino: "dinero" }
+  ],
+
+  tram: [
+    { texto: "Trámites", destino: "tramites" },
+    { texto: "Documentos", destino: "tramites" },
+    { texto: "Ayuntamiento", destino: "tramites" },
+    { texto: "Formulario", destino: "tramites" },
+    { texto: "Papeles", destino: "tramites" }
+  ],
+
+  serv: [
+    { texto: "Servicios", destino: "servicios" },
+    { texto: "Interpretación", destino: "servicios" },
+    { texto: "Traducción", destino: "servicios" },
+    { texto: "Acompañamiento", destino: "servicios" },
+    { texto: "Ayuda personalizada", destino: "servicios" }
+  ]
+};
   const mostrar = (html) => {
     if (!resultado || !resultadoContent) return;
     resultadoContent.innerHTML = html;

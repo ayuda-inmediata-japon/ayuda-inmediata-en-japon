@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Consejo:</strong> habla con calma, da tu ubicación y usa puntos de referencia visibles.</p>
     `,
 
-    transport: `
+    transporte: `
       <h2>🚆 Transporte</h2>
       <p><strong>Tren:</strong> revisa estación, línea y andén antes de subir.</p>
       <p><strong>Bus:</strong> en algunas ciudades se paga al subir y en otras al bajar.</p>

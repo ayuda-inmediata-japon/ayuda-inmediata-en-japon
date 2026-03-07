@@ -165,19 +165,17 @@ const mostrarNoEncontrado = () => {
   <p><strong>💬 WhatsApp</strong></p>
 
   <a class="boton-whatsapp"
-style="background:#25D366;color:white;padding:12px 18px;border-radius:8px;text-decoration:none;display:inline-block;"
+style="background:#25D366;color:white;padding:14px 22px;border-radius:10px;text-decoration:none;display:block;text-align:center;margin-top:10px;font-size:16px;font-weight:600;"
 href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20general%20sobre%20Japón"
 target="_blank">
-Orientación general
+📲 Orientación general
 </a>
 
-<br><br>
-
 <a class="boton-whatsapp"
-style="background:#128C7E;color:white;padding:12px 18px;border-radius:8px;text-decoration:none;display:inline-block;"
-href="https://wa.me/819084462319?text=Hola,%20necesito%20apoyo%20personalizado%20en%20Japón"
+style="background:#25D366;color:white;padding:14px 22px;border-radius:10px;text-decoration:none;display:block;text-align:center;margin-top:10px;font-size:16px;font-weight:600;"
+href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20personalizada%20en%20Japón"
 target="_blank">
-Orientación personalizada
+📲 Orientación personalizada
 </a>
   `);
 };

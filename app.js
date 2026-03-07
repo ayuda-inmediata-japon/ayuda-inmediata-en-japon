@@ -263,7 +263,7 @@ text-align:center;
 text-decoration:none;
 margin:10px 0;
 font-weight:600;"
-href="https://wa.me/819084462319?text=Hola"
+href=https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20general%20sobre:
 target="_blank">
 📲 Orientación general
 </a>
@@ -281,7 +281,7 @@ text-align:center;
 text-decoration:none;
 margin:10px 0;
 font-weight:600;"
-href="https://wa.me/819084462319?text=Hola"
+href="https://https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20personalizada%20sobre:
 target="_blank">
 📲 Orientación personalizada
 </a>

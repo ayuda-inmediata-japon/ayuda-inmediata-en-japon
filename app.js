@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+documen.addEventListener("DOMContentLoaded", () => {
   // =========================
   // Utilidad para buscar elementos aunque el id cambie un poco
   // =========================

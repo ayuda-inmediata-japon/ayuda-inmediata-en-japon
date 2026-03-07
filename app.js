@@ -148,13 +148,39 @@ document.addEventListener("DOMContentLoaded", () => {
     resultado.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const mostrarNoEncontrado = () => {
-    mostrar(`
-      <h2>🤔 No encontré esa palabra</h2>
-      <p>Prueba con: <strong>taxi</strong>, <strong>hospital</strong>, <strong>hotel</strong>, <strong>policía</strong>, <strong>emergencia</strong>…</p>
-      <p>Si necesitas ayuda personalizada, usa el botón de WhatsApp.</p>
-    `);
-  };
+const mostrarNoEncontrado = () => {
+  mostrar(`
+
+<h2>🤔 No encontré información exacta</h2>
+
+<p>
+Intenta buscar nuevamente usando <strong>palabras similares</strong>
+o una forma diferente de escribir tu consulta.
+</p>
+
+<p>
+Si aún no encuentras lo que buscas y necesitas ayuda,
+puedes contactarnos con toda confianza.
+</p>
+
+<p><strong>💬 WhatsApp</strong></p>
+
+<a
+style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
+href="https://wa.me/819084462319?text=Hola,%20quisiera%20información%20general%20sobre:"
+target="_blank">
+📲 Orientación general
+</a>
+
+<a
+style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
+href="https://wa.me/819084462319?text=Hola,%20quisiera%20orientación%20personalizada%20sobre:"
+target="_blank">
+📞 Orientación personalizada
+</a>
+
+  `);
+};
 
   function buscar() {
     const valor = normalizar(searchInput ? searchInput.value : "");

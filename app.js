@@ -253,20 +253,38 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>💬 WhatsApp</strong></p>
 
       <a class="boton-whatsapp"
-         style="background:#25D366;color:white;padding:12px 18px;border-radius:12px;display:inline-block;text-decoration:none;margin:8px 0;"
-         href="https://wa.me/${WHATS_NUMBER}?text=${encodeURIComponent(MSG_GENERAL)}"
-         target="_blank">
-         📲 Orientación general
-      </a>
+style="background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:14px;
+display:block;
+width:100%;
+text-align:center;
+text-decoration:none;
+margin:10px 0;
+font-weight:600;"
+href="https://wa.me/819084462319?text=Hola"
+target="_blank">
+📲 Orientación general
+</a>
 
       <br>
 
-      <a class="boton-whatsapp"
-         style="background:#25D366;color:white;padding:12px 18px;border-radius:12px;display:inline-block;text-decoration:none;margin:8px 0;"
-         href="https://wa.me/${WHATS_NUMBER}?text=${encodeURIComponent(MSG_PERSONAL)}"
-         target="_blank">
-         📲 Orientación personalizada
-      </a>
+    <a class="boton-whatsapp"
+style="background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:14px;
+display:block;
+width:100%;
+text-align:center;
+text-decoration:none;
+margin:10px 0;
+font-weight:600;"
+href="https://wa.me/819084462319?text=Hola"
+target="_blank">
+📲 Orientación personalizada
+</a>
     `);
   };
 

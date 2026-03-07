@@ -245,14 +245,13 @@ mostrarNoEncontrado();
       clearTimeout(tAuto);
 
       tAuto = setTimeout(() => {
-        const valor = normalizar(searchInput.value);
-        if (!valor) return;
+        const valorOriginal = normalizar(searchInput.value);
+if (!valorOriginal) return;
 
-        const clave = alias[valor] || valor;
+const valor = aliasBusqueda[valorOriginal] || valorOriginal;
+const clave = valor;
 
-        // Solo dispara si existe EXACTO
-        if (respuestas[clave]) buscar();
-      }, 50); // 👈 velocidad (50 rápido, 200 normal, 600 lento)
+if (respuestas[clave]) buscar();
     });
   }
 

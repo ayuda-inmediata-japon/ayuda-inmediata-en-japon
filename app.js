@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
+  const sugerenciasBox = document.getElementById("sugerencias");
+
+const listaSugerencias = [
+  "policía",
+  "hospital",
+  "hotel",
+  "taxi",
+  "emergencia",
+  "transporte",
+  "dinero",
+  "vida diaria",
+  "trámites",
+  "servicios"
+];
   const searchBtn = document.getElementById("searchBtn");
   const resultado = document.getElementById("resultado");
   const resultadoContent = document.getElementById("resultadoContent");
@@ -151,6 +165,30 @@ document.addEventListener("DOMContentLoaded", () => {
 const mostrarNoEncontrado = () => {
   mostrar(`
   <h2>🤔 No encontré información exacta</h2>
+  searchInput.addEventListener("input", () => {
+  const valor = searchInput.value.trim().toLowerCase();
+  sugerenciasBox.innerHTML = "";
+
+  if (!valor) return;
+
+  const filtradas = listaSugerencias.filter(item =>
+    item.toLowerCase().includes(valor)
+  );
+
+  filtradas.slice(0, 5).forEach(item => {
+    const opcion = document.createElement("div");
+    opcion.className = "sugerencia-item";
+    opcion.textContent = item;
+
+    opcion.addEventListener("click", () => {
+      searchInput.value = item;
+      sugerenciasBox.innerHTML = "";
+      buscar();
+    });
+
+    sugerenciasBox.appendChild(opcion);
+  });
+});
 
   <p>
   Intenta buscar nuevamente usando <strong>palabras similares</strong>

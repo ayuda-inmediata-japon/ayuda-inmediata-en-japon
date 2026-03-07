@@ -14,6 +14,19 @@ const listaSugerencias = [
   "trámites",
   "servicios"
 ];
+
+const aliasBusqueda = {
+  pol: "policía",
+  poli: "policía",
+  tax: "taxi",
+  hos: "hospital",
+  hosp: "hospital",
+  hot: "hotel",
+  emer: "emergencia",
+  trans: "transporte",
+  tram: "trámites",
+  serv: "servicios"
+};
   const searchBtn = document.getElementById("searchBtn");
   const resultado = document.getElementById("resultado");
   const resultadoContent = document.getElementById("resultadoContent");
@@ -164,31 +177,8 @@ const listaSugerencias = [
 
 const mostrarNoEncontrado = () => {
   mostrar(`
+
   <h2>🤔 No encontré información exacta</h2>
-  searchInput.addEventListener("input", () => {
-  const valor = searchInput.value.trim().toLowerCase();
-  sugerenciasBox.innerHTML = "";
-
-  if (!valor) return;
-
-  const filtradas = listaSugerencias.filter(item =>
-    item.toLowerCase().includes(valor)
-  );
-
-  filtradas.slice(0, 5).forEach(item => {
-    const opcion = document.createElement("div");
-    opcion.className = "sugerencia-item";
-    opcion.textContent = item;
-
-    opcion.addEventListener("click", () => {
-      searchInput.value = item;
-      sugerenciasBox.innerHTML = "";
-      buscar();
-    });
-
-    sugerenciasBox.appendChild(opcion);
-  });
-});
 
   <p>
   Intenta buscar nuevamente usando <strong>palabras similares</strong>
@@ -202,34 +192,41 @@ const mostrarNoEncontrado = () => {
 
   <p><strong>💬 WhatsApp</strong></p>
 
-<a class="boton-whatsapp"
-style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
-href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20general%20sobre:"
-target="_blank">
-📲 Orientación general
-</a>
+  <a class="boton-whatsapp"
+  style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
+  href="https://wa.me/819084462319?text=Hola,%20quisiera%20información%20general%20sobre:"
+  target="_blank">
+  📲 Orientación general
+  </a>
 
-<a class="boton-whatsapp"
-style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
-href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20personalizada%20sobre:"
-target="_blank">
-📲 Orientación personalizada
-</a>
+  <a class="boton-whatsapp"
+  style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
+  href="https://wa.me/819084462319?text=Hola,%20quisiera%20información%20personalizada%20sobre:"
+  target="_blank">
+  📲 Orientación personalizada
+  </a>
+
   `);
 };
 
-  function buscar() {
-    const valor = normalizar(searchInput ? searchInput.value : "");
-    if (!valor) return;
+function buscar() {
 
-    const clave = alias[valor] || valor;
+const valorOriginal = searchInput ? searchInput.value.trim().toLowerCase() : "";
+if (!valorOriginal) return;
 
-    if (respuestas[clave]) {
-      mostrar(respuestas[clave]);
-    } else {
-      mostrarNoEncontrado();
-    }
-  }
+const valor = aliasBusqueda[valorOriginal] || valorOriginal;
+
+if (sugerenciasBox) sugerenciasBox.innerHTML = "";
+
+const clave = valor;
+
+if (respuestas[clave]) {
+mostrar(respuestas[clave]);
+} else {
+mostrarNoEncontrado();
+}
+
+}
 
   // Buscar con botón
   if (searchBtn) searchBtn.addEventListener("click", buscar);

@@ -1,10 +1,10 @@
-documen.addEventListener("DOMContentLoaded", () => {
+document. addEventListener("DOMContentLoaded", () => {
   // =========================
   // Utilidad para buscar elementos aunque el id cambie un poco
   // =========================
   const getFirstById = (...ids) => {
     for (const id of ids) {
-      const el = document.getElementById(id);
+      const el = document.getElementById(id); lo lo
       if (el) return el;
     }
     return null;

@@ -392,7 +392,10 @@ target="_blank">
       if (resultado) resultado.classList.add("oculto");
       if (resultadoContent) resultadoContent.innerHTML = "";
       if (searchInput) searchInput.value = "";
-
+window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+});
       const buscador =
         document.getElementById("buscador") ||
         document.querySelector(".search-section") ||

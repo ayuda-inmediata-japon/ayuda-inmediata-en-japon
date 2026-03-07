@@ -249,7 +249,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>
         Si aún no encuentras lo que buscas, puedes contactarnos con toda confianza.
       </p>
-
+<p style="margin-top:10px;font-weight:600;">
+💬 ¿Necesitas ayuda? Escríbenos por WhatsApp
+</p>
       <p><strong>💬 WhatsApp</strong></p>
 
       <a class="boton-whatsapp"

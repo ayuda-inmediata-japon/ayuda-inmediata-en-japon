@@ -115,37 +115,31 @@ document.addEventListener("DOMContentLoaded", () => {
   // Alias (sinónimos) para buscar
 const alias = {
 
-ambulancia: "emergencia",
-emergencia: "emergencia",
+  // Policía
+  pol: "policia",
+  poli: "policia",
+  polic: "policia",
+  policia: "policia",
+  patrulla: "policia",
+  puesto: "policia",
 
-tren: "transporte",
-metro: "transporte",
-bus: "transporte",
-buses: "transporte",
+  // Taxi
+  tax: "taxi",
+  taxi: "taxi",
 
-dinero: "dinero",
-yen: "dinero",
+  // Hospital
+  hos: "hospital",
+  hosp: "hospital",
+  hospital: "hospital",
 
-pol: "policia",
-poli: "policia",
-polic: "policia",
+  // Hotel
+  hot: "hotel",
+  hotel: "hotel",
 
-tax: "taxi",
-taksi: "taxi",
-
-hos: "hospital",
-hosp: "hospital",
-
-hot: "hotel",
-otel: "hotel",
-
-emer: "emergencia",
-emerg: "emergencia",
-
-trans: "transporte",
-tram: "tramites",
-
-serv: "servicios"
+  // Dinero
+  dinero: "dinero",
+  yen: "dinero",
+  efectivo: "dinero",
 
 };
 

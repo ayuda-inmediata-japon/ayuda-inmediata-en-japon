@@ -358,3 +358,22 @@ button.search-btn,
 .sugerencia-item:active {
   opacity: 0.85;
 }
+/* ===== SUGERENCIAS BUSCADOR ===== */
+
+.sugerencias {
+  background: #111;
+  border-radius: 8px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.sugerencia-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+
+.sugerencia-item:hover {
+  background: #1f1f1f;
+}

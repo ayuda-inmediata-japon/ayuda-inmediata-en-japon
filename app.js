@@ -344,23 +344,39 @@ for (const palabra of palabras) {
     });
   }
 
-  // ✅ Auto-buscar SOLO si hay coincidencia exacta (no interrumpe al escribir)
-  let tAuto = null;
-  if (searchInput) {
-    searchInput.addEventListener("input", () => {
-      clearTimeout(tAuto);
+  // ===== Sugerencias mientras escribe =====
+if (searchInput && sugerenciasBox) {
+  searchInput.addEventListener("input", () => {
 
-      tAuto = setTimeout(() => {
-        const valor = normalizar(searchInput.value);
-        if (!valor) return;
+    const valorOriginal = normalizar(searchInput.value);
+    sugerenciasBox.innerHTML = "";
 
-        const clave = alias[valor] || valor;
+    if (!valorOriginal) return;
 
-        // Solo dispara si existe EXACTO
-        if (respuestas[clave]) buscar();
-      }, 50); // 👈 velocidad (50 rápido, 200 normal, 600 lento)
+    const claveBase = alias[valorOriginal] || valorOriginal;
+
+    const filtradas = Object.keys(respuestas).filter(key =>
+      key.includes(claveBase) || key.includes(valorOriginal)
+    );
+
+    filtradas.slice(0,5).forEach(key => {
+
+      const opcion = document.createElement("div");
+      opcion.className = "sugerencia-item";
+      opcion.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+
+      opcion.addEventListener("click", () => {
+        searchInput.value = key;
+        sugerenciasBox.innerHTML = "";
+        mostrar(respuestas[key]);
+      });
+
+      sugerenciasBox.appendChild(opcion);
+
     });
-  }
+
+  });
+}
 
   // Volver
   if (volverBtn) {

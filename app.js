@@ -338,14 +338,6 @@ target="_blank">
       if (respuestas[palabra]) {
         clave = palabra;
         break;
-      }
-
-      const parcial = Object.keys(respuestas).find(k => k.includes(palabra));
-      if (parcial) {
-        clave = parcial;
-        break;
-      }
-
     }
   }
 

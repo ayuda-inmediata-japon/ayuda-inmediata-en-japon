@@ -284,7 +284,57 @@ target="_blank">
       if (e.key === "Enter") buscar();
     });
   }
+// ===== Sugerencias mientras escribe =====
+if (searchInput && sugerenciasBox) {
+  searchInput.addEventListener("input", () => {
+    const valorOriginal = normalizar(searchInput.value);
 
+    sugerenciasBox.innerHTML = "";
+
+    if (!valorOriginal) return;
+
+    // 1) sugerencias especiales por pocas letras
+    const especiales = sugerenciasRelacionadas[valorOriginal];
+    if (especiales) {
+      especiales.forEach(item => {
+        const opcion = document.createElement("div");
+        opcion.className = "sugerencia-item";
+        opcion.textContent = item.texto;
+
+        opcion.addEventListener("click", () => {
+          searchInput.value = item.texto;
+          sugerenciasBox.innerHTML = "";
+          mostrar(respuestas[item.destino]);
+        });
+
+        sugerenciasBox.appendChild(opcion);
+      });
+
+      return;
+    }
+
+    // 2) sugerencias normales por coincidencia parcial
+    const valor = alias[valorOriginal] || valorOriginal;
+
+    const filtradas = Object.keys(respuestas).filter(key =>
+      key.includes(valor)
+    );
+
+    filtradas.slice(0, 5).forEach(key => {
+      const opcion = document.createElement("div");
+      opcion.className = "sugerencia-item";
+      opcion.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+
+      opcion.addEventListener("click", () => {
+        searchInput.value = key;
+        sugerenciasBox.innerHTML = "";
+        mostrar(respuestas[key]);
+      });
+
+      sugerenciasBox.appendChild(opcion);
+    });
+  });
+}
   // ✅ Auto-buscar SOLO si hay coincidencia exacta (no interrumpe al escribir)
   let tAuto = null;
   if (searchInput) {

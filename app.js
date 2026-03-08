@@ -405,38 +405,3 @@ for (const palabra of palabras) {
     });
   });
 });
-// ===== Sugerencias mientras escribe (no rompe buscar ni Enter) =====
-if (searchInput && sugerenciasBox) {
-  searchInput.addEventListener("input", () => {
-    const valor = normalizar(searchInput.value);
-    sugerenciasBox.innerHTML = "";
-
-    if (!valor) return;
-
-    // Recolecta posibles claves de respuestas
-    const keys = Object.keys(respuestas);
-
-    // 1) Sugerencias por alias (pol -> policia, tax -> taxi, etc.)
-    const base = alias[valor] || valor;
-
-    // 2) Coincidencias por inicio o inclusión
-    const sugeridas = keys.filter(k =>
-      k.startsWith(base) ||
-      k.includes(valor)
-    ).slice(0, 5);
-
-    sugeridas.forEach(key => {
-      const item = document.createElement("div");
-      item.className = "sugerencia-item";
-      item.textContent = key.charAt(0).toUpperCase() + key.slice(1);
-
-      item.addEventListener("click", () => {
-        searchInput.value = key;
-        sugerenciasBox.innerHTML = "";
-        mostrar(respuestas[key]);
-      });
-
-      sugerenciasBox.appendChild(item);
-    });
-  });
-}

@@ -217,15 +217,6 @@ airbnb: "hotel",
   atm: "dinero",
   tarjeta: "dinero",
   pagar: "dinero",
-  // 💴 DINERO
-
-dinero: "dinero",
-yen: "dinero",
-efectivo: "dinero",
-cajero: "dinero",
-atm: "dinero",
-tarjeta: "dinero",
-pagar: "dinero",
 
 pago: "dinero",
 precio: "dinero",

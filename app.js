@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
   hoken: "tramites",
   impuestos: "tramites"
 };
-p
+
   const mostrar = (html) => {
     if (!resultado || !resultadoContent) return;
     resultadoContent.innerHTML = html;

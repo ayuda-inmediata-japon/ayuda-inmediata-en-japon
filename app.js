@@ -335,23 +335,6 @@ if (searchInput && sugerenciasBox) {
     });
   });
 }
-  // ✅ Auto-buscar SOLO si hay coincidencia exacta (no interrumpe al escribir)
-  let tAuto = null;
-  if (searchInput) {
-    searchInput.addEventListener("input", () => {
-      clearTimeout(tAuto);
-
-      tAuto = setTimeout(() => {
-        const valor = normalizar(searchInput.value);
-        if (!valor) return;
-
-        const clave = alias[valor] || valor;
-
-        // Solo dispara si existe EXACTO
-        if (respuestas[clave]) buscar();
-      }, 50); // 👈 velocidad (50 rápido, 200 normal, 600 lento)
-    });
-  }
 
   // Volver
   if (volverBtn) {

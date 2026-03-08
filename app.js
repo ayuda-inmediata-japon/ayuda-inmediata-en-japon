@@ -64,43 +64,41 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
     `,
 
-    policia: `
+policia: `
 <h2>🚓 Policía en Japón</h2>
 
-<img src="img/koban.jpg" class="info-img">
+<img src="img/koban.jpg" class="info-img" alt="Koban en Japón">
 
-<p><strong>Puedes acercarte a la policía con tranquilidad.</strong>  
+<p><strong>Puedes acercarte a la policía con tranquilidad.</strong>
 En Japón la policía es un servicio público que está para ayudar y proteger a las personas.</p>
 
-<p><strong>Importante:</strong> en Japón la policía no acepta dinero ni favores.  
+<p><strong>Importante:</strong> en Japón la policía no acepta dinero ni favores.
 Las leyes se respetan y los procedimientos son formales.</p>
 
-<h3>📍 Dónde encontrar policía</h3>
+<h3>📍 Dónde encontrarlos</h3>
 
-<p>Busca un <strong>Koban</strong>. Son pequeñas estaciones de policía que se encuentran normalmente cerca de:</p>
+<p>Busca un <strong>Koban</strong>. Son pequeñas estaciones de policía que normalmente se encuentran cerca de:</p>
 
 <ul>
 <li>Estaciones de tren</li>
 <li>Zonas comerciales</li>
-<li>Intersecciones importantes</li>
+<li>Cruces o avenidas importantes</li>
 <li>Barrios residenciales</li>
 </ul>
 
-<p>También puedes llamar directamente a la policía marcando:</p>
-
+<p>Si necesitas ayuda urgente puedes llamar al:</p>
 <p><strong>📞 110</strong></p>
 
-<h3>🧭 Situaciones comunes</h3>
+<h3>🧭 Qué hacer según tu situación</h3>
 
 <ul>
-<li>Perdiste tu pasaporte</li>
-<li>Te robaron algo</li>
-<li>Encontraste un objeto perdido</li>
-<li>Tuviste un accidente</li>
-<li>Necesitas ayuda o orientación</li>
+<li>Si perdiste tu pasaporte, ve a un Koban o comisaría y explica la situación.</li>
+<li>Si te robaron algo, intenta recordar lugar, hora y descripción.</li>
+<li>Si encontraste un objeto perdido, puedes entregarlo en un Koban.</li>
+<li>Si tuviste un accidente, llama al 110 y explica si hay heridos.</li>
 </ul>
 
-<h3>🗣️ Frases útiles</h3>
+<h3>🗣️ Frases útiles en japonés</h3>
 
 <ul>
 <li><strong>Tasukete kudasai</strong> → Ayuda por favor</li>
@@ -111,11 +109,9 @@ Las leyes se respetan y los procedimientos son formales.</p>
 
 <h3>💡 Consejo importante</h3>
 
-<p>En Japón muchas personas entregan objetos perdidos en la policía.  
-Si perdiste algo, vale la pena ir a un <strong>Koban</strong> o preguntar en objetos perdidos.</p>
+<p>En Japón muchas personas entregan objetos perdidos en la policía o en objetos perdidos de estaciones y tiendas.
+Si perdiste algo, vale la pena preguntar.</p>
 `,
-    `,
-
     emergencia: `
       <h2>🧯 Emergencia</h2>
       <p><strong>Policía:</strong> 110</p>

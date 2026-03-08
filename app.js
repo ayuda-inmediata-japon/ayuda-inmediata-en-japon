@@ -136,7 +136,13 @@ document.addEventListener("DOMContentLoaded", () => {
   cartera: "policia",
   rina: "policia",
   pelea: "policia",
-
+robaron: "policia",
+robo: "policia",
+me_robaron: "policia",
+perdi: "policia",
+perdido: "policia",
+perdida: "policia",
+extravio: "policia",
   // 🚨 EMERGENCIA
   emergencia: "emergencia",
   urgencia: "emergencia",
@@ -167,7 +173,11 @@ document.addEventListener("DOMContentLoaded", () => {
   enfermo: "hospital",
   fiebre: "hospital",
   dolor: "hospital",
-
+doctor: "hospital",
+medico: "hospital",
+me_duele: "hospital",
+dolor: "hospital",
+enfermo: "hospital",
   // 🚕 TRANSPORTE
   tax: "taxi",
   taxi: "taxi",
@@ -205,6 +215,10 @@ document.addEventListener("DOMContentLoaded", () => {
   capsula: "hotel",
   capsule: "hotel",
   airbnb: "hotel",
+    dormir: "hotel",
+donde_dormir: "hotel",
+alojamiento: "hotel",
+habitacion: "hotel",
 
   // 💴 DINERO
   dinero: "dinero",
@@ -315,17 +329,51 @@ target="_blank">
 };
 
   function buscar() {
-    const valor = normalizar(searchInput ? searchInput.value : "");
-    if (!valor) return;
+  const texto = normalizar(searchInput ? searchInput.value : "");
+  if (!texto) return;
 
-  const palabras = valor.split(/\s+/);
-let clave = alias[valor] || valor;
+  const palabrasVacias = [
+    "me", "mi", "mis", "el", "la", "los", "las",
+    "un", "una", "unos", "unas",
+    "de", "del", "al", "a", "en", "por", "para",
+    "con", "sin", "y", "o",
+    "quiero", "necesito", "busco", "donde", "como"
+  ];
 
-for (const palabra of palabras) {
-  if (alias[palabra]) {
-    clave = alias[palabra];
-    break;
+  const palabras = texto
+    .split(/\s+/)
+    .filter(p => p && !palabrasVacias.includes(p));
+
+  let clave = null;
+
+  // 1. Coincidencia exacta del texto completo
+  if (alias[texto]) {
+    clave = alias[texto];
+  } else if (respuestas[texto]) {
+    clave = texto;
   }
+
+  // 2. Coincidencia palabra por palabra
+  if (!clave) {
+    for (const palabra of palabras) {
+      if (alias[palabra]) {
+        clave = alias[palabra];
+        break;
+      }
+
+      if (respuestas[palabra]) {
+        clave = palabra;
+        break;
+      }
+    }
+  }
+
+  if (clave && respuestas[clave]) {
+    mostrar(respuestas[clave]);
+  } else {
+    mostrarNoEncontrado();
+  }
+
 }
 
     if (respuestas[clave]) {

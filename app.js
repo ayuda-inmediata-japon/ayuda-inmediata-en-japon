@@ -65,9 +65,55 @@ document.addEventListener("DOMContentLoaded", () => {
     `,
 
     policia: `
-      <h2>🚓 Policía</h2>
-      <p><strong>Emergencia:</strong> <strong>110</strong></p>
-      <p><strong>Koban:</strong> mini-comisaría local (交番). Útil para pérdidas, direcciones, ayuda rápida.</p>
+<h2>🚓 Policía en Japón</h2>
+
+<img src="img/koban.jpg" class="info-img">
+
+<p><strong>Puedes acercarte a la policía con tranquilidad.</strong>  
+En Japón la policía es un servicio público que está para ayudar y proteger a las personas.</p>
+
+<p><strong>Importante:</strong> en Japón la policía no acepta dinero ni favores.  
+Las leyes se respetan y los procedimientos son formales.</p>
+
+<h3>📍 Dónde encontrar policía</h3>
+
+<p>Busca un <strong>Koban</strong>. Son pequeñas estaciones de policía que se encuentran normalmente cerca de:</p>
+
+<ul>
+<li>Estaciones de tren</li>
+<li>Zonas comerciales</li>
+<li>Intersecciones importantes</li>
+<li>Barrios residenciales</li>
+</ul>
+
+<p>También puedes llamar directamente a la policía marcando:</p>
+
+<p><strong>📞 110</strong></p>
+
+<h3>🧭 Situaciones comunes</h3>
+
+<ul>
+<li>Perdiste tu pasaporte</li>
+<li>Te robaron algo</li>
+<li>Encontraste un objeto perdido</li>
+<li>Tuviste un accidente</li>
+<li>Necesitas ayuda o orientación</li>
+</ul>
+
+<h3>🗣️ Frases útiles</h3>
+
+<ul>
+<li><strong>Tasukete kudasai</strong> → Ayuda por favor</li>
+<li><strong>Keisatsu wa doko desu ka</strong> → ¿Dónde está la policía?</li>
+<li><strong>Pasupooto o nakushimashita</strong> → Perdí mi pasaporte</li>
+<li><strong>Nusumaremashita</strong> → Me robaron</li>
+</ul>
+
+<h3>💡 Consejo importante</h3>
+
+<p>En Japón muchas personas entregan objetos perdidos en la policía.  
+Si perdiste algo, vale la pena ir a un <strong>Koban</strong> o preguntar en objetos perdidos.</p>
+`,
     `,
 
     emergencia: `

@@ -229,7 +229,7 @@ suica: "dinero",
 pasmo: "dinero",
 
   // 🏪 VIDA DIARIA
-  basura: "vida",
+  basura: "vida",i
   reciclaje: "vida",
   conbini: "vida",
   combini: "vida",

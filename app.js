@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+un document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
   const searchBtn = document.getElementById("searchBtn");
   const resultado = document.getElementById("resultado");
@@ -116,20 +116,25 @@ document.addEventListener("DOMContentLoaded", () => {
 const alias = {
 
   // 🚓 POLICÍA / EMERGENCIA
-  pol: "policia",
-  poli: "policia",
-  polic: "policia",
-  policia: "policia",
-  patrulla: "policia",
-  comisaria: "policia",
-  robo: "policia",
-  robaron: "policia",
-  perdida: "policia",
-  perdi: "policia",
-  extravio: "policia",
-  accidente: "policia",
-  emergencia: "policia",
-  ayuda: "policia",
+pol: "policia",
+poli: "policia",
+polic: "policia",
+policia: "policia",
+patrulla: "policia",
+comisaria: "policia",
+koban: "policia",
+robo: "policia",
+robaron: "policia",
+hurto: "policia",
+perdida: "policia",
+perdi: "policia",
+extravio: "policia",
+denuncia: "policia",
+documentos: "policia",
+pasaporte: "policia",
+billetera: "policia",
+cartera: "policia",
+riña,pelea: "policia",
 
   // 🏥 SALUD
   hospital: "hospital",
@@ -137,7 +142,7 @@ const alias = {
   doctor: "hospital",
   medico: "hospital",
   farmacia: "hospital",
-  ambulancia: "hospital",
+  ambulancia: "emergencia",
   enfermo: "hospital",
   fiebre: "hospital",
   dolor: "hospital",
@@ -152,6 +157,17 @@ const alias = {
   autobus: "transporte",
   estacion: "transporte",
   shinkansen: "transporte",
+  jr: "transporte",
+avion: "transporte",
+aeropuerto: "transporte",
+vuelo: "transporte",
+pasaje: "transporte",
+boleto: "transporte",
+ticket: "transporte",
+reserva: "transporte",
+equipaje: "transporte",
+maleta: "transporte",
+valija: "transporte", he
 
   // 🏨 ALOJAMIENTO
   hotel: "hotel",
@@ -159,6 +175,16 @@ const alias = {
   alojamiento: "hotel",
   dormir: "hotel",
   habitacion: "hotel",
+  reserva: "hotel",
+reservar: "hotel",
+checkin: "hotel",
+checkout: "hotel",
+recepcion: "hotel",
+hostel: "hotel",
+ryokan: "hotel",
+capsula: "hotel",
+capsule: "hotel",
+airbnb: "hotel",
 
   // 💰 DINERO
   dinero: "dinero",
@@ -168,6 +194,25 @@ const alias = {
   atm: "dinero",
   tarjeta: "dinero",
   pagar: "dinero",
+  // 💴 DINERO
+
+dinero: "dinero",
+yen: "dinero",
+efectivo: "dinero",
+cajero: "dinero",
+atm: "dinero",
+tarjeta: "dinero",
+pagar: "dinero",
+
+pago: "dinero",
+precio: "dinero",
+costo: "dinero",
+cambio: "dinero",
+retirar: "dinero",
+transferencia: "dinero",
+paypay: "dinero",
+suica: "dinero",
+pasmo: "dinero",
 
   // 🏪 VIDA DIARIA
   basura: "vida",
@@ -178,6 +223,20 @@ const alias = {
   compras: "vida",
   comida: "vida",
   lavanderia: "vida",
+  restaurante: "vida",
+restaurantes: "vida",
+ramen: "vida",
+sushi: "vida",
+wifi: "vida",
+internet: "vida",
+bano: "vida",
+baño: "vida",
+toilet: "vida",
+ducha: "vida",
+tienda: "vida",
+konbini: "vida",
+7eleven: "vida",
+lawson: "vida
 
   // 📄 TRÁMITES
   tramite: "tramites",
@@ -191,6 +250,17 @@ const alias = {
   alcaldia: "tramites",
   ayuntamiento: "tramites",
   registro: "tramites"
+  zairyu: "tramites",
+zairyucard: "tramites",
+tarjeta: "tramites",
+tarjetaresidencia: "tramites",
+direccion: "tramites",
+mudanza: "tramites",
+cambio: "tramites",
+seguro: "tramites",
+nenkin: "tramites",
+hoken: "tramites",
+impuestos: "tramites",
 
 };
 

@@ -134,7 +134,8 @@ documentos: "policia",
 pasaporte: "policia",
 billetera: "policia",
 cartera: "policia",
-riña,pelea: "policia",
+rina: "policia",
+pelea: "policia",
 // 🚨 EMERGENCIA
 emergencia: "emergencia",
 urgencia: "emergencia",
@@ -189,7 +190,7 @@ ticket: "transporte",
 reserva: "transporte",
 equipaje: "transporte",
 maleta: "transporte",
-valija: "transporte", he
+valija: "transporte",  
 
   // 🏨 ALOJAMIENTO
   hotel: "hotel",
@@ -258,7 +259,7 @@ ducha: "vida",
 tienda: "vida",
 konbini: "vida",
 7eleven: "vida",
-lawson: "vida
+lawson: "vida,
 
   // 📄 TRÁMITES
   tramite: "tramites",

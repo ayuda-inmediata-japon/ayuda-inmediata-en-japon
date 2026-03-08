@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
   const searchBtn = document.getElementById("searchBtn");
+  const sugerenciasBox = document.getElementById("sugerencias");
   const resultado = document.getElementById("resultado");
   const resultadoContent = document.getElementById("resultadoContent");
   const volverBtn = document.getElementById("volverBtn");

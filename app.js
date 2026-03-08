@@ -115,31 +115,82 @@ document.addEventListener("DOMContentLoaded", () => {
   // Alias (sinónimos) para buscar
 const alias = {
 
-  // Policía
+  // 🚓 POLICÍA / EMERGENCIA
   pol: "policia",
   poli: "policia",
   polic: "policia",
   policia: "policia",
   patrulla: "policia",
-  puesto: "policia",
+  comisaria: "policia",
+  robo: "policia",
+  robaron: "policia",
+  perdida: "policia",
+  perdi: "policia",
+  extravio: "policia",
+  accidente: "policia",
+  emergencia: "policia",
+  ayuda: "policia",
 
-  // Taxi
+  // 🏥 SALUD
+  hospital: "hospital",
+  hos: "hospital",
+  doctor: "hospital",
+  medico: "hospital",
+  farmacia: "hospital",
+  ambulancia: "hospital",
+  enfermo: "hospital",
+  fiebre: "hospital",
+  dolor: "hospital",
+
+  // 🚕 TRANSPORTE
   tax: "taxi",
   taxi: "taxi",
+  uber: "taxi",
+  tren: "transporte",
+  metro: "transporte",
+  bus: "transporte",
+  autobus: "transporte",
+  estacion: "transporte",
+  shinkansen: "transporte",
 
-  // Hospital
-  hos: "hospital",
-  hosp: "hospital",
-  hospital: "hospital",
-
-  // Hotel
-  hot: "hotel",
+  // 🏨 ALOJAMIENTO
   hotel: "hotel",
+  hostal: "hotel",
+  alojamiento: "hotel",
+  dormir: "hotel",
+  habitacion: "hotel",
 
-  // Dinero
+  // 💰 DINERO
   dinero: "dinero",
   yen: "dinero",
   efectivo: "dinero",
+  cajero: "dinero",
+  atm: "dinero",
+  tarjeta: "dinero",
+  pagar: "dinero",
+
+  // 🏪 VIDA DIARIA
+  basura: "vida",
+  reciclaje: "vida",
+  conbini: "vida",
+  combini: "vida",
+  supermercado: "vida",
+  compras: "vida",
+  comida: "vida",
+  lavanderia: "vida",
+
+  // 📄 TRÁMITES
+  tramite: "tramites",
+  tramites: "tramites",
+  documento: "tramites",
+  documentos: "tramites",
+  papeles: "tramites",
+  visa: "tramites",
+  migracion: "tramites",
+  residencia: "tramites",
+  alcaldia: "tramites",
+  ayuntamiento: "tramites",
+  registro: "tramites"
 
 };
 

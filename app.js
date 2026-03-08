@@ -229,7 +229,7 @@ suica: "dinero",
 pasmo: "dinero",
 
   // 🏪 VIDA DIARIA
-  basura: "vida",i
+  basura: "vida",
   reciclaje: "vida",
   conbini: "vida",
   combini: "vida",
@@ -250,7 +250,7 @@ ducha: "vida",
 tienda: "vida",
 konbini: "vida",
 7eleven: "vida",
-lawson: "vida,
+lawson:  "vida",
 
   // 📄 TRÁMITES
   tramite: "tramites",
@@ -263,7 +263,7 @@ lawson: "vida,
   residencia: "tramites",
   alcaldia: "tramites",
   ayuntamiento: "tramites",
-  registro: "tramites"
+  registro: "tramites",
   zairyu: "tramites",
 zairyucard: "tramites",
 tarjeta: "tramites",

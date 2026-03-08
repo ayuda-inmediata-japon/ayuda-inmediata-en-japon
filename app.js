@@ -143,7 +143,7 @@ urgente: "emergencia",
 ayuda: "emergencia",
 
 ambulancia: "emergencia",
-119: "emergencia",
+"119": "emergencia",
 
 accidente: "emergencia",
 choque: "emergencia",
@@ -249,7 +249,7 @@ toilet: "vida",
 ducha: "vida",
 tienda: "vida",
 konbini: "vida",
-7eleven: "vida",
+"7eleven": "vida",
 lawson:  "vida",
 
   // 📄 TRÁMITES

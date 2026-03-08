@@ -314,25 +314,48 @@ target="_blank">
 };
 
   function buscar() {
-    const valor = normalizar(searchInput ? searchInput.value : "");
-    if (!valor) return;
 
-  const palabras = valor.split(/\s+/);
-let clave = alias[valor] || valor;
+  const texto = normalizar(searchInput ? searchInput.value : "");
+  if (!texto) return;
 
-for (const palabra of palabras) {
-  if (alias[palabra]) {
-    clave = alias[palabra];
-    break;
+  const palabras = texto.split(/\s+/);
+  let clave = null;
+
+  if (alias[texto]) {
+    clave = alias[texto];
+  } else if (respuestas[texto]) {
+    clave = texto;
   }
-}
 
-    if (respuestas[clave]) {
-      mostrar(respuestas[clave]);
-    } else {
-      mostrarNoEncontrado();
+  if (!clave) {
+    for (const palabra of palabras) {
+
+      if (alias[palabra]) {
+        clave = alias[palabra];
+        break;
+      }
+
+      if (respuestas[palabra]) {
+        clave = palabra;
+        break;
+      }
+
+      const parcial = Object.keys(respuestas).find(k => k.includes(palabra));
+      if (parcial) {
+        clave = parcial;
+        break;
+      }
+
     }
   }
+
+  if (clave && respuestas[clave]) {
+    mostrar(respuestas[clave]);
+  } else {
+    mostrarNoEncontrado();
+  }
+
+}
 
   // Buscar con botón
   if (searchBtn) searchBtn.addEventListener("click", buscar);

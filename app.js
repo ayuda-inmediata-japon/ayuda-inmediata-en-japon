@@ -317,7 +317,15 @@ target="_blank">
     const valor = normalizar(searchInput ? searchInput.value : "");
     if (!valor) return;
 
-    const clave = alias[valor] || valor;
+  const palabras = valor.split(/\s+/);
+let clave = alias[valor] || valor;
+
+for (const palabra of palabras) {
+  if (alias[palabra]) {
+    clave = alias[palabra];
+    break;
+  }
+}
 
     if (respuestas[clave]) {
       mostrar(respuestas[clave]);

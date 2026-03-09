@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+I'm document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
   const searchBtn = document.getElementById("searchBtn");
   const resultado = document.getElementById("resultado");
@@ -312,18 +312,17 @@ target="_blank">
 
   `);
 };
-
 function buscar() {
 
   const texto = normalizar(searchInput ? searchInput.value : "");
   if (!texto) return;
 
   const palabrasVacias = [
-    "me", "mi", "mis", "el", "la", "los", "las",
-    "un", "una", "unos", "unas",
-    "de", "del", "al", "a", "en", "por", "para",
-    "con", "sin", "y", "o",
-    "quiero", "necesito", "busco", "donde", "como"
+    "me","mi","mis","el","la","los","las",
+    "un","una","unos","unas",
+    "de","del","al","a","en","por",
+    "con","sin","y","o",
+    "quiero","necesito","busco","donde"
   ];
 
   const palabras = texto
@@ -332,27 +331,32 @@ function buscar() {
 
   let clave = null;
 
-  // 1. Coincidencia exacta del texto completo
   if (alias[texto]) {
     clave = alias[texto];
   } else if (respuestas[texto]) {
     clave = texto;
   }
 
-  // 2. Coincidencia palabra por palabra
   if (!clave) {
     for (const palabra of palabras) {
       if (alias[palabra]) {
         clave = alias[palabra];
         break;
       }
-
       if (respuestas[palabra]) {
         clave = palabra;
         break;
       }
     }
   }
+
+  if (clave && respuestas[clave]) {
+    mostrar(respuestas[clave]);
+  } else {
+    mostrarNoEncontrado();
+  }
+
+}
 
   if (clave && respuestas[clave]) {
     mostrar(respuestas[clave]);

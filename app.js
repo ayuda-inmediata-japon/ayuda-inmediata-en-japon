@@ -313,18 +313,53 @@ target="_blank">
   `);
 };
 
-  function buscar() {
-    const valor = normalizar(searchInput ? searchInput.value : "");
-    if (!valor) return;
+function buscar() {
 
-  const palabras = valor.split(/\s+/);
-let clave = alias[valor] || valor;
+  const texto = normalizar(searchInput ? searchInput.value : "");
+  if (!texto) return;
 
-for (const palabra of palabras) {
-  if (alias[palabra]) {
-    clave = alias[palabra];
-    break;
+  const palabrasVacias = [
+    "me", "mi", "mis", "el", "la", "los", "las",
+    "un", "una", "unos", "unas",
+    "de", "del", "al", "a", "en", "por", "para",
+    "con", "sin", "y", "o",
+    "quiero", "necesito", "busco", "donde", "como"
+  ];
+
+  const palabras = texto
+    .split(/\s+/)
+    .filter(p => p && !palabrasVacias.includes(p));
+
+  let clave = null;
+
+  // 1. Coincidencia exacta del texto completo
+  if (alias[texto]) {
+    clave = alias[texto];
+  } else if (respuestas[texto]) {
+    clave = texto;
   }
+
+  // 2. Coincidencia palabra por palabra
+  if (!clave) {
+    for (const palabra of palabras) {
+      if (alias[palabra]) {
+        clave = alias[palabra];
+        break;
+      }
+
+      if (respuestas[palabra]) {
+        clave = palabra;
+        break;
+      }
+    }
+  }
+
+  if (clave && respuestas[clave]) {
+    mostrar(respuestas[clave]);
+  } else {
+    mostrarNoEncontrado();
+  }
+
 }
 
     if (respuestas[clave]) {

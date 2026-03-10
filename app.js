@@ -65,10 +65,110 @@ document.addEventListener("DOMContentLoaded", () => {
     `,
 
     policia: `
-      <h2>🚓 Policía</h2>
-      <p><strong>Emergencia:</strong> <strong>110</strong></p>
-      <p><strong>Koban:</strong> mini-comisaría local (交番). Útil para pérdidas, direcciones, ayuda rápida.</p>
-    `,
+<h2>🚓 Policía en Japón</h2>
+
+<p><strong>En Japón la policía es un servicio público.</strong></p>
+
+<p>Su función es ayudar, orientar y proteger a las personas. Puedes acercarte con tranquilidad si necesitas ayuda.</p>
+
+<p><strong>Importante:</strong> en Japón la policía no acepta dinero ni favores. Las leyes se respetan y los procedimientos son formales.</p>
+
+<h3>📞 Número de emergencia</h3>
+
+<p><strong>Policía: 110</strong></p>
+
+<p>Llama al 110 si ocurre:</p>
+
+<ul>
+<li>Robo</li>
+<li>Accidente</li>
+<li>Peligro o amenaza</li>
+<li>Situación urgente</li>
+</ul>
+
+<h3>📍 Dónde encontrar policía</h3>
+
+<p>En Japón existen pequeñas estaciones de policía llamadas <strong>Koban (交番)</strong>.</p>
+
+<p>Normalmente se encuentran cerca de:</p>
+
+<ul>
+<li>Estaciones de tren</li>
+<li>Zonas comerciales</li>
+<li>Intersecciones importantes</li>
+<li>Barrios residenciales</li>
+</ul>
+
+<p>También puedes pedir ayuda en un koban si estás perdido o necesitas orientación.</p>
+
+<hr>
+
+<h3>🚨 Si te robaron</h3>
+
+<p>1. Mantén la calma.</p>
+<p>2. Busca el koban más cercano o llama al <strong>110</strong>.</p>
+<p>3. Explica qué ocurrió.</p>
+<p>4. Describe el objeto robado.</p>
+
+<p><strong>Frases útiles:</strong></p>
+
+<ul>
+<li>Nusumaremashita → Me robaron</li>
+<li>Saifu o nusumaremashita → Me robaron la billetera</li>
+</ul>
+
+<hr>
+
+<h3>📄 Si perdiste documentos</h3>
+
+<p>Si perdiste tu pasaporte, billetera o documentos:</p>
+
+<p>1. Ve a un koban.</p>
+<p>2. Explica lo que perdiste.</p>
+<p>3. Indica dónde crees que ocurrió.</p>
+
+<p><strong>Frases útiles:</strong></p>
+
+<ul>
+<li>Pasupooto o nakushimashita → Perdí mi pasaporte</li>
+<li>Saifu o nakushimashita → Perdí mi billetera</li>
+</ul>
+
+<p>En Japón muchas personas entregan objetos perdidos a la policía o a oficinas de objetos perdidos.</p>
+
+<hr>
+
+<h3>🚗 Si ocurre un accidente</h3>
+
+<ul>
+<li>Si hay heridos llama al <strong>119</strong> (ambulancia)</li>
+<li>Si es accidente de tránsito llama al <strong>110</strong></li>
+<li>Espera la llegada de la policía</li>
+</ul>
+
+<p><strong>Frase útil:</strong></p>
+
+<p>Jiko desu → Es un accidente</p>
+
+<hr>
+
+<h3>🗣️ Frases útiles para hablar con la policía</h3>
+
+<ul>
+<li>Tasukete kudasai → Ayuda por favor</li>
+<li>Keisatsu wa doko desu ka → ¿Dónde está la policía?</li>
+<li>Koban wa doko desu ka → ¿Dónde está el koban?</li>
+<li>Nihongo ga amari dekimasen → No hablo mucho japonés</li>
+<li>Eigo wa hanasemasu ka → ¿Habla inglés?</li>
+<li>Yukkuri hanashite kudasai → Por favor hable despacio</li>
+</ul>
+
+<h3>💡 Consejo importante</h3>
+
+<p>En Japón puedes acercarte a la policía con tranquilidad. Su función es ayudar y orientar.</p>
+
+<p>Si perdiste algo, vale la pena preguntar en un <strong>Koban</strong>.</p>
+`,
 
     emergencia: `
       <h2>🧯 Emergencia</h2>

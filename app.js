@@ -267,26 +267,7 @@ No es necesario instalar una aplicación. Puedes abrir un traductor directamente
 <li>交番はどこですか？</li>
 </ul>
 
-<h3>💡 Consejo importante</h3>
 
-<p>
-En Japón muchas personas entregan los objetos perdidos a la policía o a oficinas de objetos perdidos.
-</p>
-
-<p>
-Sin embargo, los objetos no siempre aparecen el mismo día.
-Muchas veces alguien entrega el objeto en un <strong>Koban</strong> y luego es trasladado al centro policial de objetos perdidos.
-</p>
-
-<p>
-Por esta razón puede tardar varios días en aparecer en el sistema.
-Si no aparece ese mismo día, vuelve a preguntar más adelante.
-</p>
-
-<p>
-En Japón es bastante común recuperar objetos perdidos.
-</p>
-`,
 emergencia: `
       <h2>🧯 Emergencia</h2>
       <p><strong>Policía:</strong> 110</p>

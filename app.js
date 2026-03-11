@@ -209,39 +209,62 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 <h3>🌐 Si tienes dificultad con el idioma</h3>
+
 <p><strong>📱 Puedes mostrar este mensaje al policía:</strong></p>
 
+<p><strong>🇪🇸 Español</strong></p>
 <p>
-すみません、日本語があまり話せません。<br>
-翻訳アプリを使って説明してもいいですか？<br><br>
-
-Sumimasen, nihongo ga amari hanasemasen.<br>
-Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
-
 Disculpe, no hablo mucho japonés.<br>
 ¿Puedo usar un traductor para explicarme?
 </p>
-Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo.
 
+<p><strong>🔤 Romaji</strong></p>
+<p>
+Sumimasen, nihongo ga amari hanasemasen.<br>
+Honyaku apuri o tsukatte setsumei shite mo ii desu ka?
+</p>
+
+<p><strong>🇯🇵 Japonés</strong></p>
+<p>
+すみません、日本語があまり話せません。<br>
+翻訳アプリを使って説明してもいいですか？
+</p>
+
+<p>
+Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo.  
 No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto al policía.
+</p>
 
-<p><strong>Traductores recomendados:</strong></p>
+<h3>Traductores recomendados:</h3>
 
-<p><a href="https://www.deepl.com/translator#es/ja/" target="_blank">🔵 Traductor español → japonés (DeepL)</a></p>
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
 
-<p><a href="https://translate.google.com/?sl=es&tl=ja" target="_blank">🟡 Traductor español → japonés (Google)</a></p>
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja" target="_blank">Traductor español → japonés (Google)</a></p>
 
-<p><a href="https://chatgpt.com" target="_blank">🟢 ChatGPT (explicar o traducir situación)</a></p>
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT (explicar o traducir situación)</a></p>
 
-<h3>🗣️ Frases útiles para hablar con la policía</h3>
 
+<h3>🗣 Frases útiles para hablar con la policía</h3>
+
+<p><strong>🇪🇸 Español</strong></p>
 <ul>
-<li>Tasukete kudasai → Ayuda por favor</li>
-<li>Keisatsu wa doko desu ka → ¿Dónde está la policía?</li>
-<li>Koban wa doko desu ka → ¿Dónde está el Koban?</li>
-<li>Nihongo ga amari dekimasen → No hablo mucho japonés</li>
-<li>Eigo wa hanasemasu ka → ¿Habla inglés?</li>
-<li>Yukkuri hanashite kudasai → Por favor hable despacio</li>
+<li>Ayuda por favor</li>
+<li>¿Dónde está la policía?</li>
+<li>¿Dónde está el Koban?</li>
+</ul>
+
+<p><strong>🔤 Romaji</strong></p>
+<ul>
+<li>Tasukete kudasai</li>
+<li>Keisatsu wa doko desu ka?</li>
+<li>Koban wa doko desu ka?</li>
+</ul>
+
+<p><strong>🇯🇵 Japonés</strong></p>
+<ul>
+<li>助けてください</li>
+<li>警察はどこですか？</li>
+<li>交番はどこですか？</li>
 </ul>
 
 <h3>💡 Consejo importante</h3>

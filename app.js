@@ -209,7 +209,18 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 <h3>🌐 Si tienes dificultad con el idioma</h3>
+<p><strong>📱 Puedes mostrar este mensaje al policía:</strong></p>
 
+<p>
+すみません、日本語があまり話せません。<br>
+翻訳アプリを使って説明してもいいですか？<br><br>
+
+Sumimasen, nihongo ga amari hanasemasen.<br>
+Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
+
+Disculpe, no hablo mucho japonés.<br>
+¿Puedo usar un traductor para explicarme?
+</p>
 <p>Si no puedes comunicarte bien en japonés, puedes usar un traductor desde tu teléfono. No necesitas instalar ninguna aplicación.</p>
 
 <p><strong>Traductores recomendados:</strong></p>

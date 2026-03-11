@@ -221,7 +221,9 @@ Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
 Disculpe, no hablo mucho japonés.<br>
 ¿Puedo usar un traductor para explicarme?
 </p>
-<p>Si no puedes comunicarte bien en japonés, puedes usar un traductor desde tu teléfono. No necesitas instalar ninguna aplicación.</p>
+Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo.
+
+No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto al policía.
 
 <p><strong>Traductores recomendados:</strong></p>
 

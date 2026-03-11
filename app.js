@@ -282,6 +282,7 @@ No es necesario instalar una aplicación. Puedes abrir un traductor directamente
 <p>En Japón es bastante común recuperar objetos perdidos.</p>
 `,
 emergencia: `
+<h2>🚨 Emergencia</h2>
       <h2>🧯 Emergencia</h2>
       <p><strong>Policía:</strong> 110</p>
       <p><strong>Ambulancia / Bomberos:</strong> 119</p>

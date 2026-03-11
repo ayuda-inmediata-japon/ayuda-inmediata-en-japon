@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     policia: `
 <h2>🚓 Policía en Japón</h2>
-<img src="img/koban.jpg" class="info-img" alt="Koban en Japón">
+<img src="koban.jpg" class="info-img" alt="Koban en Japón">
 <p><strong>En Japón la policía es un servicio público.</strong></p>
 
 <p>Su función es ayudar, orientar y proteger a las personas. Puedes acercarte con tranquilidad si necesitas ayuda.</p>

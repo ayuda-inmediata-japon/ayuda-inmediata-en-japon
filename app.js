@@ -286,7 +286,8 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 <p>
 En Japón es bastante común recuperar objetos perdidos.
 </p>
-    emergencia: `
+`,
+emergencia: `
       <h2>🧯 Emergencia</h2>
       <p><strong>Policía:</strong> 110</p>
       <p><strong>Ambulancia / Bomberos:</strong> 119</p>

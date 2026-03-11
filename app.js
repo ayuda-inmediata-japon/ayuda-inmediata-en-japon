@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>Si necesitas ayuda de la policía, busca un Koban.</strong> Puedes pedir orientación o ayuda.</p>
 
 <p><strong>Policía: 110</strong></p>
-
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 <div class="subtemas-box">
 
   <details class="subtema-card">

@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     policia: `
 <h2>🚓 Policía en Japón</h2>
+<p><strong>Koban (交番)</strong>: pequeñas estaciones de policía que se encuentran en barrios, estaciones de tren y zonas comerciales.</p>
 <img src="koban.jpg" class="info-img" alt="Koban en Japón">
 <p><strong>En Japón la policía es un servicio público.</strong></p>
 

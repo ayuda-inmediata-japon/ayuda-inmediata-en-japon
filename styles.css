@@ -365,3 +365,41 @@ button.search-btn,
   margin:12px 0;
   display:block;
 }
+
+.subtemas-box{
+  margin-top:18px;
+  display:grid;
+  gap:12px;
+}
+
+.subtema-card{
+  background:#151515;
+  border:1px solid #2a2a2a;
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.subtema-card summary{
+  list-style:none;
+  cursor:pointer;
+  padding:14px 16px;
+  font-weight:700;
+  color:#7CFF7C;
+}
+
+.subtema-card summary::-webkit-details-marker{
+  display:none;
+}
+
+.subtema-card[open] summary{
+  border-bottom:1px solid #2a2a2a;
+}
+
+.subtema-content{
+  padding:14px 16px;
+}
+
+.subtema-content p,
+.subtema-content li{
+  line-height:1.6;
+}

@@ -359,20 +359,36 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 Este proyecto existe para ofrecer orientación clara y gratuita a personas que lo necesitan en Japón.
 </p>
 
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<h3 style="margin-top:25px">🙏 Si esta guía te ayudó</h3>
+
+<p>
+Este proyecto existe para ofrecer orientación clara y gratuita a personas que lo necesitan en Japón.
+</p>
+
 <p>
 Si esta información te fue útil, puedes:
 </p>
 
-<ul style="line-height:1.8">
-<li>📌 Guardar esta página para futuras consultas.</li>
-<li>📤 Compartirla con otras personas que viajen o vivan en Japón.</li>
-<li>❤️ Apoyar este proyecto para que pueda seguir ayudando a más personas.</li>
-</ul>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
 
-<p>
-Tu apoyo ayuda a mantener esta guía actualizada y disponible para todos.
-</p>
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
+<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-size:14px">
+📤 Compartir
+</button>
+
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-size:14px">
+📌 Guardar página
+</button>
+
+<a href="https://paypal.me/JGarciaUmey" target="_blank"
+style="padding:10px 14px;border-radius:8px;border:none;background:#f1c40f;color:black;font-size:14px;text-decoration:none">
+❤️ Apoyar proyecto
+</a>
+
+</div>
 
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
 style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:bold;">

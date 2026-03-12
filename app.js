@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `,
 
     policia: `
-<h2>🚓 Policía en Japón</h2>
+<h2 id="policia">🚓 Policía en Japón</h2>
 
 <p><strong>En Japón la policía forma parte del sistema nacional conocido como Keisatsuchō (警察庁).</strong></p>
 

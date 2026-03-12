@@ -362,22 +362,43 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
 
 <button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:bold;">
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
-
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
 style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;">
 ↗ Compartir
 </button>
 
-<button onclick="document.getElementById('guardar-pagina').scrollIntoView({behavior:'smooth'})"
+<button onclick="mostrarGuardar()"
 style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;">
 • Guardar
 </button>
 
-<div id="apoyo" style="margin-top:15px">
+<button onclick="mostrarApoyo()"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;">
+❤ Apoyar
+</button>
 
-<p><strong>❤ Apoyar este proyecto</strong></p>
+</div>
+
+<div id="guardar-pagina" style="display:none;margin-top:18px;padding:12px;border-radius:8px;background:#1c1c1c;border:1px solid #333;color:#ddd">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y elige <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
+</p>
+
+</div>
+
+<div id="apoyo" style="display:none;margin-top:18px">
+
+<p><strong>❤️ Apoyar este proyecto</strong></p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap">
 
@@ -391,7 +412,7 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 Ko-fi
 </a>
 
-<a href="#"
+<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank"
 style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
 PayPay
 </a>

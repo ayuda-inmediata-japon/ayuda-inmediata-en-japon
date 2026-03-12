@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+1document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
   const searchBtn = document.getElementById("searchBtn");
   

@@ -403,27 +403,7 @@ PayPay
 
 </div>
 
-</div>
 
-<div id="guardar-pagina" style="margin-top:18px;padding:12px;border-radius:8px;background:#1c1c1c;border:1px solid #333;color:#ddd">
-
-<p><strong>📌 Cómo guardar esta página</strong></p>
-
-<p><b>En iPhone / iPad:</b><br>
-Pulsa el botón compartir del navegador y elige <b>“Añadir a favoritos”</b> o <b>“Añadir a pantalla de inicio”</b>.
-</p>
-
-<p><b>En Android:</b><br>
-Pulsa el menú del navegador (⋮) y selecciona <b>“Añadir a favoritos”</b> o <b>“Añadir a pantalla de inicio”</b>.
-</p>
-
-<p><b>En computadora:</b><br>
-Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
-</p>
-
-</div>
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:bold;">
 ⬅ Volver al buscador
 </button>
 

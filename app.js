@@ -354,7 +354,7 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 
 <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
 
-<button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
 style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:bold;">
 ⬅ Volver al buscador
 </button>

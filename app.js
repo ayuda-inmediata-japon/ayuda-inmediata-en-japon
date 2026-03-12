@@ -376,9 +376,23 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 ❤ Apoyar
 </button>
 
+<div id="guardar-pagina" style="display:none;margin-top:18px;padding:12px;border-radius:8px;background:#1c1c1c;border:1px solid #333;color:#ddd">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y elige <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
+</p>
+
 </div>
-
-
 
 <div id="apoyo" style="display:none;margin-top:18px">
 
@@ -396,14 +410,19 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 Ko-fi
 </a>
 
-<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank"
+<a href="#"
 style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
 PayPay
 </a>
 
 </div>
 
+</div>
 
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:bold;">
 ⬅ Volver al buscador
 </button>
 

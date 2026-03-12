@@ -353,11 +353,10 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
-<h3 style="margin-top:25px">🙏 Si esta guía te ayudó</h3>
 
 
 <p>
-Si esta información te fue útil, puedes:
+🙏Si esta información te fue útil, puedes:
 </p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">

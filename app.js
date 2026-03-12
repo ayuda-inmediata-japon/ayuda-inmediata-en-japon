@@ -378,23 +378,7 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 
 </div>
 
-<div id="guardar-pagina" style="display:none;margin-top:18px;padding:12px;border-radius:8px;background:#1c1c1c;border:1px solid #333;color:#ddd">
 
-<p><strong>📌 Cómo guardar esta página</strong></p>
-
-<p><b>En iPhone / iPad:</b><br>
-Pulsa el botón compartir del navegador y elige <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
-</p>
-
-<p><b>En Android:</b><br>
-Pulsa el menú del navegador (⋮) y selecciona <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
-</p>
-
-<p><b>En computadora:</b><br>
-Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
-</p>
-
-</div>
 
 <div id="apoyo" style="display:none;margin-top:18px">
 

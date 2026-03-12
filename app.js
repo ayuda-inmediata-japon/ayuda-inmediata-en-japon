@@ -212,70 +212,135 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <p><strong>📱 Puedes mostrar este mensaje al policía:</strong></p>
 
-<p><strong>🇪🇸 Español</strong></p>
-<p>
+<ul style="line-height:1.9">
+
+<li>
+
+<strong>Español</strong><br>
 Disculpe, no hablo mucho japonés.<br>
-¿Puedo usar un traductor para explicarme?
-</p>
 
-<p><strong>🔤 Romaji</strong></p>
-<p>
+<strong>Romaji</strong><br>
 Sumimasen, nihongo ga amari hanasemasen.<br>
-Honyaku apuri o tsukatte setsumei shite mo ii desu ka?
-</p>
 
-<p><strong>🇯🇵 Japonés</strong></p>
-<p>
-すみません、日本語があまり話せません。<br>
+<strong>日本語</strong><br>
+<span style="font-size:22px;font-weight:bold;">
+すみません、日本語があまり話せません。
+</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Puedo usar un traductor para explicarme?<br>
+
+<strong>Romaji</strong><br>
+Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br>
+
+<strong>日本語</strong><br>
+<span style="font-size:22px;font-weight:bold;">
 翻訳アプリを使って説明してもいいですか？
-</p>
+</span>
+
+</li>
+
+</ul>
+
 
 <p>
-Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo.  
+Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo.
 No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto al policía.
 </p>
 
+
 <h3>Traductores recomendados:</h3>
 
-<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">
+Traductor español → japonés (DeepL)
+</a></p>
 
-<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja" target="_blank">
+Traductor español → japonés (Google)
+</a></p>
 
-<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT (explicar o traducir situación)</a></p>
+<p>🟢 <a href="https://chat.openai.com" target="_blank">
+ChatGPT (explicar o traducir una situación)
+</a></p>
 
 
-<h3>🗣 Frases útiles para hablar con la policía</h3>
+<h3>🗣️ Frases útiles para hablar con la policía</h3>
 
-<p><strong>🇪🇸 Español</strong></p>
-<ul>
-<li>Ayuda por favor</li>
-<li>¿Dónde está la policía?</li>
-<li>¿Dónde está el Koban?</li>
+<ul style="line-height:1.9">
+
+<li>
+
+<strong>Español</strong><br>
+Ayuda por favor<br>
+
+<strong>Romaji</strong><br>
+Tasukete kudasai<br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">
+助けてください
+</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Dónde está la policía?<br>
+
+<strong>Romaji</strong><br>
+Keisatsu wa doko desu ka?<br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">
+警察はどこですか？
+</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Dónde está el Koban?<br>
+
+<strong>Romaji</strong><br>
+Koban wa doko desu ka?<br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">
+交番はどこですか？
+</span>
+
+</li>
+
 </ul>
 
-<p><strong>🔤 Romaji</strong></p>
-<ul>
-<li>Tasukete kudasai</li>
-<li>Keisatsu wa doko desu ka?</li>
-<li>Koban wa doko desu ka?</li>
-</ul>
 
-<p><strong>🇯🇵 Japonés</strong></p>
-<ul>
-<li>助けてください</li>
-<li>警察はどこですか？</li>
-<li>交番はどこですか？</li>
-</ul>
-
-<div style="background:#1c1c1c;border-left:4px solid #f5c542;padding:12px;border-radius:6px;margin:10px 0;">
+<div style="background:#1c1c1c;border-left:4px solid #f5c542;padding:12px;border-radius:6px;margin-top:20px">
 
 <h3>💡 Consejo importante</h3>
 
-<p>En Japón muchas personas entregan objetos perdidos a la policía o a oficinas de objetos perdidos.</p>
+<p>
+En Japón muchas personas entregan objetos perdidos a la policía o a oficinas de objetos perdidos.
+</p>
 
-<p>Los objetos no siempre aparecen el mismo día. A veces primero se entregan en un <strong>Koban</strong> y luego se registran en el sistema central.</p>
+<p>
+Los objetos no siempre aparecen el mismo día. A veces primero se entregan en un <strong>Koban</strong> y luego se registran en el sistema central.
+</p>
 
-<p>Si no aparece ese mismo día, vuelve a preguntar más adelante.</p>
+<p>
+Si no aparece ese mismo día, vuelve a preguntar más adelante.
+</p>
 
 </div>
 `,

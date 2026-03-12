@@ -376,10 +376,30 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 • Guardar
 </button>
 
+<div id="apoyo" style="margin-top:15px">
+
+<p><strong>❤ Apoyar este proyecto</strong></p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+
 <a href="https://paypal.me/JGarciaUmey" target="_blank"
 style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
-❤ Apoyar
+PayPal
 </a>
+
+<a href="https://ko-fi.com/ayudainmediatajapon" target="_blank"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
+Ko-fi
+</a>
+
+<a href="#"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
+PayPay
+</a>
+
+</div>
+
+</div>
 
 <div id="guardar-pagina" style="margin-top:18px;padding:12px;border-radius:8px;background:#1c1c1c;border:1px solid #333;color:#ddd">
 

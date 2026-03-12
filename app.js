@@ -364,10 +364,6 @@ Este proyecto existe para ofrecer orientación clara y gratuita a personas que l
 <h3 style="margin-top:25px">🙏 Si esta guía te ayudó</h3>
 
 <p>
-Este proyecto existe para ofrecer orientación clara y gratuita a personas que lo necesitan en Japón.
-</p>
-
-<p>
 Si esta información te fue útil, puedes:
 </p>
 

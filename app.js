@@ -355,13 +355,6 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 
 <h3 style="margin-top:25px">🙏 Si esta guía te ayudó</h3>
 
-<p>
-Este proyecto existe para ofrecer orientación clara y gratuita a personas que lo necesitan en Japón.
-</p>
-
-<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
-
-<h3 style="margin-top:25px">🙏 Si esta guía te ayudó</h3>
 
 <p>
 Si esta información te fue útil, puedes:

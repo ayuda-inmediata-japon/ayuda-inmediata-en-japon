@@ -215,7 +215,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <ul style="line-height:1.9">
 
 <li>
-
 <strong>Español</strong><br>
 Disculpe, no hablo mucho japonés.<br>
 
@@ -223,16 +222,14 @@ Disculpe, no hablo mucho japonés.<br>
 Sumimasen, nihongo ga amari hanasemasen.<br>
 
 <strong>日本語</strong><br>
-<span style="font-size:22px;font-weight:bold;">
+<span style="font-size:24px;font-weight:bold;">
 すみません、日本語があまり話せません。
 </span>
-
 </li>
 
 <br>
 
 <li>
-
 <strong>Español</strong><br>
 ¿Puedo usar un traductor para explicarme?<br>
 
@@ -240,10 +237,9 @@ Sumimasen, nihongo ga amari hanasemasen.<br>
 Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br>
 
 <strong>日本語</strong><br>
-<span style="font-size:22px;font-weight:bold;">
+<span style="font-size:24px;font-weight:bold;">
 翻訳アプリを使って説明してもいいですか？
 </span>
-
 </li>
 
 </ul>
@@ -255,7 +251,7 @@ No es necesario instalar una aplicación. Puedes abrir un traductor directamente
 </p>
 
 
-<h3>Traductores recomendados:</h3>
+<h3>🌐 Traductores recomendados</h3>
 
 <p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">
 Traductor español → japonés (DeepL)
@@ -268,6 +264,7 @@ Traductor español → japonés (Google)
 <p>🟢 <a href="https://chat.openai.com" target="_blank">
 ChatGPT (explicar o traducir una situación)
 </a></p>
+
 
 
 <h3>🗣️ Frases útiles para hablar con la policía</h3>
@@ -283,7 +280,7 @@ Ayuda por favor<br>
 Tasukete kudasai<br>
 
 <strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
+<span style="font-size:26px;font-weight:bold;color:#ff4d4d;">
 助けてください
 </span>
 
@@ -326,9 +323,18 @@ Koban wa doko desu ka?<br>
 </ul>
 
 
-<div style="background:#1c1c1c;border-left:4px solid #f5c542;padding:12px;border-radius:6px;margin-top:20px">
 
-<h3>💡 Consejo importante</h3>
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
 
 <p>
 En Japón muchas personas entregan objetos perdidos a la policía o a oficinas de objetos perdidos.
@@ -343,6 +349,36 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 </p>
 
 </div>
+
+
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
+
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:bold;">
+⬅ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('policia').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:bold;">
+⬆ Volver al tema Policía
+</button>
+
+</div>
+
+
+
+<style>
+
+@keyframes brilloConsejo{
+
+0%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
+50%{box-shadow:0 0 16px rgba(245,197,66,0.7);}
+100%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
+
+}
+
+</style>
 `,
     emergencia: `
       <h2>🧯 Emergencia</h2>

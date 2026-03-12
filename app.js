@@ -378,7 +378,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 📤 Compartir
 </button>
 
-<button onclick="alert('Para guardar esta página:\n\nEn iPhone: pulsa el botón compartir y elige \"Añadir a favoritos\" o \"Añadir a pantalla de inicio\".')"
+<button onclick="document.getElementById('guardar-pagina').scrollIntoView({behavior:'smooth'})"
 style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-size:14px">
 📌 Cómo guardar esta página
 </button>
@@ -389,7 +389,10 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#f1c40f;color:
 </a>
 
 </div>
-
+<div id="guardar-pagina" style="margin-top:18px;padding:12px;border-radius:8px;background:#1c1c1c;border:1px solid #333;">
+<p><strong>📌 Cómo guardar esta página</strong></p>
+<p>En iPhone: pulsa el botón compartir del navegador y elige “Añadir a favoritos” o “Añadir a pantalla de inicio”.</p>
+</div>
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
 style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:bold;">
 ⬅ Volver al buscador

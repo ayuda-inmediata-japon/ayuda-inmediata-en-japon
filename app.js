@@ -363,17 +363,17 @@ Si esta información te fue útil, puedes:
 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
 
 <button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-size:14px">
+style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:bold;">
 📤 Compartir
 </button>
 
 <button onclick="document.getElementById('guardar-pagina').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-size:14px">
+style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:bold;">
 📌 Cómo guardar esta página
 </button>
 
 <a href="https://paypal.me/JGarciaUmey" target="_blank"
-style="padding:10px 14px;border-radius:8px;border:none;background:#f1c40f;color:black;font-size:14px;text-decoration:none">
+style="padding:10px 14px;border-radius:8px;border:none;background:#f1c40f;color:black;text-decoration:none;font-weight:bold;">
 ❤️ Apoyar proyecto
 </a>
 

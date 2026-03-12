@@ -378,9 +378,9 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 📤 Compartir
 </button>
 
-<button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+<button onclick="alert('Para guardar esta página:\n\nEn iPhone: pulsa el botón compartir y elige \"Añadir a favoritos\" o \"Añadir a pantalla de inicio\".')"
 style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-size:14px">
-📌 Guardar página
+📌 Cómo guardar esta página
 </button>
 
 <a href="https://paypal.me/JGarciaUmey" target="_blank"

@@ -6,6 +6,8 @@ const URLS_TO_CACHE = [
   "./styles.css",
   "./app.js",
   "./hero.jpg",
+  "./koban.jpg",
+  "./policia.jpg",
   "./manifest.json"
 ];
 

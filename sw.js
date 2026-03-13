@@ -1,4 +1,4 @@
-const CACHE_NAME = "ayuda-japon-v1";
+const CACHE_NAME = "ayuda-japon-v4";
 
 const URLS_TO_CACHE = [
   "./",

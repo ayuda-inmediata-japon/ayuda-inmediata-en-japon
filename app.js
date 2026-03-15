@@ -390,30 +390,33 @@ Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
 
 </div>
 
-<div id="apoyo" style="display:none;margin-top:18px">
+<div class="support-section">
 
-<p><strong>❤️ Apoya este proyecto</strong></p>
+<h3>❤️ Apoya esta guía</h3>
 
-<p style="font-size:13px;color:#888;margin-bottom:10px">
-Si esta guía te ayudó, puedes colaborar para que siga ayudando a más personas.
+<p>
+Si esta guía te ayudó, puedes apoyar este proyecto para que siga ayudando a más personas que visitan o viven en Japón.
 </p>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap">
+<div class="support-buttons">
 
-<a href="https://paypal.me/JGarciaUmey" target="_blank"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;text-decoration:none">
+<a class="support-btn" href="https://paypal.me/JGarciaUmey" target="_blank">
 💳 PayPal
 </a>
 
-<a href="https://ko-fi.com/ayudainmediatajapon" target="_blank"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;text-decoration:none">
+<a class="support-btn" href="https://ko-fi.com/ayudainmediatajapon" target="_blank">
 ☕ Ko-fi
 </a>
 
-<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;text-decoration:none">
+<a class="support-btn" href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank">
 📱 PayPay
 </a>
+
+</div>
+
+<p class="support-note">
+Incluso una pequeña colaboración ayuda a mantener esta guía gratuita y disponible para más personas.
+</p>
 
 </div>
 

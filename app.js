@@ -811,64 +811,100 @@ function mostrarApoyo() {
 const btnGeneral = document.getElementById("btnGeneral");
 const btnPersonalizada = document.getElementById("btnPersonalizada");
 
-if (btnGeneral) {
-btnGeneral.addEventListener("click", function () {
+const servicioModal = document.getElementById("servicioModal");
+const cerrarServicioModal = document.getElementById("cerrarServicioModal");
+const servicioModalTitulo = document.getElementById("servicioModalTitulo");
+const servicioModalTexto = document.getElementById("servicioModalTexto");
+const servicioModalWhatsapp = document.getElementById("servicioModalWhatsapp");
 
-if (confirm(
-`ORIENTACIÓN GENERAL
+function abrirServicioModal(titulo, html, whatsappUrl, btnClass = "general") {
+  if (!servicioModal) return;
 
-Este servicio sirve para:
+  servicioModalTitulo.textContent = titulo;
+  servicioModalTexto.innerHTML = html;
+  servicioModalWhatsapp.href = whatsappUrl;
 
-• resolver dudas
-• entender trámites en Japón
-• orientación sobre situaciones básicas
-• indicarte qué pasos seguir
+  servicioModalWhatsapp.classList.remove("general", "personalizada");
+  servicioModalWhatsapp.classList.add(btnClass);
 
-Si estás de acuerdo, presiona ACEPTAR para contactarnos por WhatsApp.`
-)) {
-
-window.open(
-"https://wa.me/819084462319?text=Hola,%20me%20gustaría%20recibir%20orientación%20general.",
-"_blank"
-);
-
+  servicioModal.classList.remove("oculto");
+  document.body.classList.add("modal-abierto");
 }
 
-});
+function cerrarModalServicio() {
+  if (!servicioModal) return;
+  servicioModal.classList.add("oculto");
+  document.body.classList.remove("modal-abierto");
+}
+
+if (btnGeneral) {
+  btnGeneral.addEventListener("click", function () {
+    abrirServicioModal(
+      "💬 ORIENTACIÓN GENERAL",
+      `
+      <p>La guía y las respuestas del buscador están pensadas para resolver la mayoría de las situaciones de forma rápida.</p>
+
+      <p>La orientación general es gratuita y está pensada para ayudarte a entender cómo funcionan muchas cosas en Japón.</p>
+
+      <p>Puede servirte por ejemplo para:</p>
+
+      <ul>
+        <li>resolver dudas sencillas</li>
+        <li>entender trámites en Japón</li>
+        <li>recibir orientación sobre situaciones básicas</li>
+        <li>saber qué pasos seguir en ciertos casos</li>
+      </ul>
+
+      <p>Si tienes una duda puntual o necesitas una aclaración, puedes contactarnos y trataremos de orientarte.</p>
+
+      <p><strong>Si estás de acuerdo, presiona el botón para contactarnos por WhatsApp.</strong></p>
+      `,
+      "https://wa.me/819084462319?text=Hola,%20requiero%20orientaci%C3%B3n%20general.",
+      "general"
+    );
+  });
 }
 
 if (btnPersonalizada) {
-btnPersonalizada.addEventListener("click", function () {
+  btnPersonalizada.addEventListener("click", function () {
+    abrirServicioModal(
+      "📞 AYUDA PERSONALIZADA",
+      `
+      <p>La ayuda personalizada es cuando tu situación requiere intervención directa, coordinación o acompañamiento.</p>
 
-if (confirm(
-`AYUDA PERSONALIZADA
+      <p>Puede incluir por ejemplo:</p>
 
-La ayuda personalizada es cuando tu situación requiere intervención directa, coordinación o acompañamiento.
+      <ul>
+        <li>llamadas en japonés para resolver una situación</li>
+        <li>comunicación con hoteles, hospitales o instituciones</li>
+        <li>traducción de documentos sencillos</li>
+        <li>acompañamiento como intérprete en hospitales u oficinas</li>
+        <li>orientación directa según tu caso específico</li>
+        <li>ayuda para planificar tu estadía en Japón</li>
+        <li>planificación de viajes o turismo</li>
+        <li>propuestas y estimación de costos para tours o viajes</li>
+        <li>guía personalizada para visitas o actividades</li>
+        <li>acompañamiento para compras o recorridos en la ciudad</li>
+      </ul>
 
-Puede incluir por ejemplo:
+      <p>Este tipo de asistencia es un servicio profesional con costo.</p>
 
-• llamadas en japonés para resolver una situación
-• comunicación con hoteles, hospitales o instituciones
-• traducción de documentos sencillos
-• acompañamiento como intérprete en hospitales u oficinas
-• orientación directa según tu caso específico
-• ayuda para planificar tu estadía en Japón
-• planificación de viajes o turismo
-• propuestas y estimación de costos para tours o viajes
-• guía personalizada para visitas o actividades
-• acompañamiento para compras o recorridos en la ciudad
-
-Este tipo de asistencia es un servicio q requiere tiempo y atencion personal por lo q tiene costo.
-
-Si estás de acuerdo, presiona ACEPTAR para contactarnos por WhatsApp.`
-)) {
-
-window.open(
-"https://wa.me/819084462319?text=Hola,%20me%20gustaría%20recibir%20orientación%20personalizada.",
-"_blank"
-);
-
+      <p><strong>Si estás de acuerdo, presiona el botón para contactarnos por WhatsApp.</strong></p>
+      `,
+      "https://wa.me/819084462319?text=Hola,%20requiero%20orientaci%C3%B3n%20personalizada.",
+      "personalizada"
+    );
+  });
 }
 
-});
+if (cerrarServicioModal) {
+  cerrarServicioModal.addEventListener("click", cerrarModalServicio);
+}
+
+if (servicioModal) {
+  servicioModal.addEventListener("click", function (e) {
+    if (e.target === servicioModal) {
+      cerrarModalServicio();
+    }
+  });
 }

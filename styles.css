@@ -428,3 +428,8 @@ button.search-btn,
     transform:translateY(0);
   }
 }
+.whatsapp-buttons-box{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}

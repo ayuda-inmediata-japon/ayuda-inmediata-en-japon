@@ -433,3 +433,48 @@ button.search-btn,
   flex-direction:column;
   gap:12px;
 }
+/* CONTENEDOR BOTONES AYUDA */
+
+.ayuda-opciones{
+display:flex;
+flex-direction:column;
+gap:14px;
+margin-top:12px;
+}
+
+/* BOTONES */
+
+.btn-ayuda{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:16px;
+border-radius:12px;
+font-weight:600;
+font-size:16px;
+text-decoration:none;
+color:#000;
+background:#25D366;
+box-shadow:0 4px 12px rgba(0,0,0,0.25);
+transition:all 0.2s ease;
+}
+
+/* EFECTO AL TOCAR */
+
+.btn-ayuda:active{
+transform:scale(0.97);
+box-shadow:0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ICONOS */
+
+.btn-ayuda .icono{
+font-size:18px;
+}
+
+/* HOVER (para computadora) */
+
+.btn-ayuda:hover{
+background:#1ebe5d;
+}

@@ -14,9 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ======= LINKS (edítalos si quieres) =======
   const WHATS_NUMBER = "819084462319";
   const WHATS_MSG = "Hola, necesito ayuda en Japón. Mi consulta es: ";
-  if (whatsLink) {
-    whatsLink.href = `https://wa.me/${WHATS_NUMBER}?text=${encodeURIComponent(WHATS_MSG)}`;
-  }
 
   // Si ya tienes tus links reales, pégalos aquí:
   if (paypalLink) paypalLink.href = "https://paypal.me/JGarciaUmey";

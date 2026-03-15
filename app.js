@@ -396,24 +396,31 @@ Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
 
 <div id="apoyo" style="display:none;margin-top:18px">
 
-<p><strong>❤️ Apoyar este proyecto</strong></p>
+<div class="support-section">
 
-<div style="display:flex;gap:10px;flex-wrap:wrap">
+<p class="support-text">
+Si esta guía te ayudó, puedes apoyar este proyecto para que siga ayudando a más personas.
+</p>
 
-<a href="https://paypal.me/JGarciaUmey" target="_blank"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
-PayPal
+<div class="support-buttons">
+
+<a href="https://paypal.me/JGarciaUmey" target="_blank" class="support-btn">
+💳 PayPal
 </a>
 
-<a href="https://ko-fi.com/ayudainmediatajapon" target="_blank"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
-Ko-fi
+<a href="https://ko-fi.com/ayudainmediatajapon" target="_blank" class="support-btn">
+☕ Ko-fi
 </a>
 
-<a href="#"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
-PayPay
+<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank" class="support-btn">
+📱 PayPay
 </a>
+
+</div>
+
+<p class="support-small">
+Incluso una pequeña colaboración ayuda a mantener esta guía disponible.
+</p>
 
 </div>
 

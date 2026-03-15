@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const volverBtn = document.getElementById("volverBtn");
   const arrowDown = document.getElementById("arrowDown");
 
-  const whatsLink = document.getElementById("whatsLink");
+  
   const paypalLink = document.getElementById("paypalLink");
   const kofiLink = document.getElementById("kofiLink");
   const paypayLink = document.getElementById("paypayLink");

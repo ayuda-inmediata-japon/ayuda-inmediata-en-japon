@@ -392,24 +392,34 @@ Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
 
 <div id="apoyo" style="display:none;margin-top:18px">
 
-<p><strong>❤️ Apoyar este proyecto</strong></p>
+<p><strong>❤️ Apoya este proyecto</strong></p>
+
+<p style="font-size:13px;color:#888;margin-bottom:10px">
+Si esta guía te ayudó, puedes colaborar para que siga ayudando a más personas.
+</p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap">
 
 <a href="https://paypal.me/JGarciaUmey" target="_blank"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
-PayPal
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;text-decoration:none">
+💳 PayPal
 </a>
 
 <a href="https://ko-fi.com/ayudainmediatajapon" target="_blank"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
-Ko-fi
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;text-decoration:none">
+☕ Ko-fi
 </a>
 
-<a href="#"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;text-decoration:none;">
-PayPay
+<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;text-decoration:none">
+📱 PayPay
 </a>
+
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:8px">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
 
 </div>
 

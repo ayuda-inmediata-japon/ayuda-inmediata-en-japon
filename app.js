@@ -858,7 +858,7 @@ Puede incluir por ejemplo:
 • guía personalizada para visitas o actividades
 • acompañamiento para compras o recorridos en la ciudad
 
-Este tipo de asistencia es un servicio profesional con costo.
+Este tipo de asistencia es un servicio q requiere tiempo y atencion personal por lo q tiene costo.
 
 Si estás de acuerdo, presiona ACEPTAR para contactarnos por WhatsApp.`
 )) {

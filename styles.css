@@ -594,3 +594,16 @@ color:#666;
 body.modal-abierto {
   overflow: hidden;
 }
+.modal-cancelar{
+display:block;
+margin:10px auto 0;
+background:none;
+border:none;
+color:#aaa;
+font-size:14px;
+cursor:pointer;
+}
+
+.modal-cancelar:hover{
+color:#fff;
+}

@@ -679,21 +679,27 @@ Si aún no encuentras lo que buscas y necesitas ayuda,
 puedes contactarnos con toda confianza.
 </p>
 
-<p><strong>💬 WhatsApp</strong></p>
+<div class="ayuda-opciones">
 
-<a
-style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
-href="https://wa.me/819084462319?text=Hola,%20quisiera%20información%20general%20sobre:"
+<a class="btn-ayuda general"
+href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20general%20sobre:"
 target="_blank">
-📲 Orientación general
+
+<span class="icono">💬</span>
+<span>Orientación general</span>
+
 </a>
 
-<a
-style="background:#25D366;color:white;padding:16px;border-radius:30px;text-decoration:none;display:block;text-align:center;font-size:18px;font-weight:600;margin-top:12px;width:100%;"
-href="https://wa.me/819084462319?text=Hola,%20quisiera%20orientación%20personalizada%20sobre:"
+<a class="btn-ayuda personalizada"
+href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20personalizada%20sobre:"
 target="_blank">
-📞 Orientación personalizada
+
+<span class="icono">📞</span>
+<span>Orientación personalizada</span>
+
 </a>
+
+</div>
 
   `);
 };

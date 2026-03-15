@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Ayuda Inmediata en Japón</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ayuda Japón">
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>AYUDA INMEDIATA<br>EN JAPÓN</h1>
+
+      <p class="hero-sub">
+        Guía gratuita y orientación práctica en español para ayudarte cuando no sabes qué hacer o necesitas organizar tu experiencia en Japón. 🇯🇵
+      </p>
+
+      <p class="hero-sub hero-sub-en">
+        Basic guidance in English is available. You may ask your question below.
+      </p>
+
+      <p class="hero-highlight">
+        🟢 Aquí encontrarás orientación gratuita y soluciones claras para resolver tu situación en Japón.
+      </p>
+    </div>
+
+    <!-- Flecha -->
+    <button id="arrowDown" class="arrow" type="button" aria-label="Bajar al buscador">⬇️</button>
+  </header>
+
+  <!-- BUSCADOR / CHIPS -->
+  <main class="main" id="buscador">
+    <section class="panel">
+      <h2>¿En qué necesitas ayuda?</h2>
+      
+       <div class="search-row">
+  <span class="search-icon" aria-hidden="true">🔎</span>
+
+ <input type="text" id="searchInput" placeholder="Escribe aquí: ej;policía…">
+
+<button id="searchBtn" class="search-btn" type="button">Buscar</button>
+
+<div id="sugerencias" class="sugerencias"></div>
+
+
+      <!-- Chips principales (8 categorías) -->
+      <div class="chips-wrap" aria-label="Categorías principales">
+        <button class="chip" type="button" data-key="emergencia">🧯 Emergencia</button>
+        <button class="chip" type="button" data-key="policia">🚓 Policía</button>
+        <button class="chip" type="button" data-key="transporte">🚆 Transporte</button>
+        <button class="chip" type="button" data-key="salud">🏥 Salud</button>
+        <button class="chip" type="button" data-key="alojamiento">🏨 Alojamiento</button>
+        <button class="chip" type="button" data-key="dinero">💴 Dinero</button>
+        <button class="chip" type="button" data-key="vida-diaria">🏠 Vida diaria</button>
+        <button class="chip" type="button" data-key="tramites">📄 Trámites</button>
+        <button class="chip" type="button" data-key="servicios">🧰 Servicios</button>
+      </div>
+
+      <!-- Bloque WhatsApp + Apoyo (en esta pantalla, como querías) -->
+      <div class="cta-box">
+        <p class="cta-text">
+          Si requieres orientacion personalizada,mas especifico—como traducción de documentos,
+interpretación telefónica o presencial, planificación de gastos,
+paseos, estadía o acompañamiento—<br><br>
+puedes escribirnos con confianza.
+        </p>
+        <div class="ayuda-opciones">
+
+<a class="btn-ayuda general"
+href="https://wa.me/819084462319?text=Hola,%20necesito%20orientación%20general%20sobre%20Japón."
+target="_blank">
+💬 Orientación general
+</a>
+
+<a class="btn-ayuda personalizada"
+href="https://wa.me/819084462319?text=Hola,%20necesito%20ayuda%20personalizada%20en%20Japón."
+target="_blank">
+🟢 Ayuda personalizada
+</a>
+
+</div>
+
+        
+
+        <div class="support">
+          <p class="support-title">🤍 Apoyar el proyecto (opcional)</p>
+          <div class="support-buttons">
+            <a class="support-btn" href="#" id="paypalLink">PayPal</a>
+            <a class="support-btn" href="#" id="kofiLink">Ko-fi</a>
+            <a class="support-btn" href="#" id="paypayLink">PayPay</a>
+          </div>
+          <p class="support-note">La guía es gratis. Tu apoyo ayuda a mantenerla y mejorarla.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADO -->
+    <section id="resultado" class="resultado oculto" aria-live="polite">
+      <div class="resultado-head">
+        <button id="volverBtn" class="volver-btn" type="button">⬅️ Volver</button>
+      </div>
+
+      <article id="resultadoContent" class="resultado-content"></article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("Service Worker registrado"))
+      .catch((error) => console.log("Error registrando Service Worker:", error));
+  });
+}
+</script>
+<a class="whatsapp-float"
+href="https://wa.me/819084462319?text=Hola%20necesito%20ayuda%20en%20Japón"
+target="_blank">
+💬
+</a>
+</body>
+</html>

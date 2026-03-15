@@ -806,3 +806,55 @@ function mostrarApoyo() {
   if (apoyo) apoyo.style.display = "block";
   if (guardar) guardar.style.display = "none";
 }
+// BOTONES ORIENTACIÓN
+
+const btnGeneral = document.getElementById("btnGeneral");
+const btnPersonalizada = document.getElementById("btnPersonalizada");
+
+if (btnGeneral) {
+btnGeneral.addEventListener("click", function () {
+
+alert(
+`ORIENTACIÓN GENERAL
+
+Este servicio sirve para:
+
+• resolver dudas
+• entender trámites en Japón
+• orientación sobre situaciones básicas
+• indicarte qué pasos seguir
+
+Luego podrás escribirnos por WhatsApp.`
+);
+
+window.open(
+"https://wa.me/819084462319?text=Hola,%20me%20gustaría%20recibir%20orientación%20general.",
+"_blank"
+);
+
+});
+}
+
+if (btnPersonalizada) {
+btnPersonalizada.addEventListener("click", function () {
+
+alert(
+`ORIENTACIÓN PERSONALIZADA
+
+Este servicio incluye apoyo más específico como:
+
+• traducción de documentos
+• interpretación telefónica
+• orientación en trámites
+• planificación o acompañamiento
+
+Luego podrás escribirnos por WhatsApp.`
+);
+
+window.open(
+"https://wa.me/819084462319?text=Hola,%20me%20gustaría%20recibir%20orientación%20personalizada.",
+"_blank"
+);
+
+});
+}

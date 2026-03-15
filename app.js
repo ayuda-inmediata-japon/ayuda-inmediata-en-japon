@@ -839,16 +839,26 @@ if (btnPersonalizada) {
 btnPersonalizada.addEventListener("click", function () {
 
 alert(
-`ORIENTACIÓN PERSONALIZADA
+`AYUDA PERSONALIZADA
 
-Este servicio incluye apoyo más específico como:
+La ayuda personalizada es cuando tu situación requiere intervención directa, coordinación o acompañamiento.
 
-• traducción de documentos
-• interpretación telefónica
-• orientación en trámites
-• planificación o acompañamiento
+Puede incluir por ejemplo:
 
-Luego podrás escribirnos por WhatsApp.`
+• llamadas en japonés para resolver una situación
+• comunicación con hoteles, hospitales o instituciones
+• traducción de documentos sencillos
+• acompañamiento como intérprete en hospitales u oficinas
+• orientación directa según tu caso específico
+• ayuda para planificar tu estadía en Japón
+• planificación de viajes o turismo
+• propuestas y estimación de costos para tours o viajes
+• guía personalizada para visitas o actividades
+• acompañamiento para compras o recorridos en la ciudad
+
+Este tipo de asistencia requiere tiempo, coordinación y atención directa, por lo que es un servicio con costo.
+
+Nuestro objetivo es siempre buscar la mejor forma de ayudarte según tu necesidad.No dudes en contactarnos.`
 );
 
 window.open(

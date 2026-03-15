@@ -812,7 +812,11 @@ const btnGeneral = document.getElementById("btnGeneral");
 const btnPersonalizada = document.getElementById("btnPersonalizada");
 
 const servicioModal = document.getElementById("servicioModal");
+const cancelarServicioModal = document.getElementById("cancelarServicioModal");
 const cerrarServicioModal = document.getElementById("cerrarServicioModal");
+if (cancelarServicioModal) {
+  cancelarServicioModal.addEventListener("click", cerrarModalServicio);
+}
 const servicioModalTitulo = document.getElementById("servicioModalTitulo");
 const servicioModalTexto = document.getElementById("servicioModalTexto");
 const servicioModalWhatsapp = document.getElementById("servicioModalWhatsapp");

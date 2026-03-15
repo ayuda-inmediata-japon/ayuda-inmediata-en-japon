@@ -814,7 +814,7 @@ const btnPersonalizada = document.getElementById("btnPersonalizada");
 if (btnGeneral) {
 btnGeneral.addEventListener("click", function () {
 
-alert(
+if (confirm(
 `ORIENTACIÓN GENERAL
 
 Este servicio sirve para:
@@ -824,13 +824,15 @@ Este servicio sirve para:
 • orientación sobre situaciones básicas
 • indicarte qué pasos seguir
 
-Luego podrás escribirnos por WhatsApp.`
-);
+Si estás de acuerdo, presiona ACEPTAR para contactarnos por WhatsApp.`
+)) {
 
 window.open(
 "https://wa.me/819084462319?text=Hola,%20me%20gustaría%20recibir%20orientación%20general.",
 "_blank"
 );
+
+}
 
 });
 }
@@ -838,7 +840,7 @@ window.open(
 if (btnPersonalizada) {
 btnPersonalizada.addEventListener("click", function () {
 
-alert(
+if (confirm(
 `AYUDA PERSONALIZADA
 
 La ayuda personalizada es cuando tu situación requiere intervención directa, coordinación o acompañamiento.
@@ -856,15 +858,17 @@ Puede incluir por ejemplo:
 • guía personalizada para visitas o actividades
 • acompañamiento para compras o recorridos en la ciudad
 
-Este tipo de asistencia requiere tiempo, coordinación y atención directa, por lo que es un servicio con costo.
+Este tipo de asistencia es un servicio profesional con costo.
 
-Nuestro objetivo es siempre buscar la mejor forma de ayudarte según tu necesidad.No dudes en contactarnos.`
-);
+Si estás de acuerdo, presiona ACEPTAR para contactarnos por WhatsApp.`
+)) {
 
 window.open(
 "https://wa.me/819084462319?text=Hola,%20me%20gustaría%20recibir%20orientación%20personalizada.",
 "_blank"
 );
+
+}
 
 });
 }

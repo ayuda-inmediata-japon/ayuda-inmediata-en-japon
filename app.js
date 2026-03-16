@@ -913,19 +913,32 @@ if (servicioModal) {
   });
 }
 const flechaApoyo = document.getElementById("flechaApoyo");
+const volverBuscador = document.getElementById("volverBuscador");
 
 if (flechaApoyo) {
+  flechaApoyo.addEventListener("click", function () {
 
-flechaApoyo.addEventListener("click", function(){
+    const bloqueAyuda = document.querySelector(".cta-box");
 
-const botones = document.querySelectorAll(".boton-servicio");
+    if (bloqueAyuda) {
+      bloqueAyuda.style.display = "none";
+    }
 
-botones.forEach(function(boton){
-boton.style.display = "none";
-});
+    flechaApoyo.style.display = "none";
+  });
+}
 
-flechaApoyo.style.display = "none";
+if (volverBuscador) {
+  volverBuscador.addEventListener("click", function () {
 
-});
+    const bloqueAyuda = document.querySelector(".cta-box");
 
+    if (bloqueAyuda) {
+      bloqueAyuda.style.display = "block";
+    }
+
+    if (flechaApoyo) {
+      flechaApoyo.style.display = "block";
+    }
+  });
 }

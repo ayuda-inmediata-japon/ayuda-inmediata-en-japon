@@ -912,3 +912,20 @@ if (servicioModal) {
     }
   });
 }
+const flechaApoyo = document.getElementById("flechaApoyo");
+
+if (flechaApoyo) {
+
+flechaApoyo.addEventListener("click", function(){
+
+const botones = document.querySelectorAll(".boton-servicio");
+
+botones.forEach(function(boton){
+boton.style.display = "none";
+});
+
+flechaApoyo.style.display = "none";
+
+});
+
+}

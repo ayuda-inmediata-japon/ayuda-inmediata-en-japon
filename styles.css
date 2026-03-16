@@ -615,9 +615,9 @@ scroll-behavior:smooth;
 .flecha-apoyo{
 display:block;
 text-align:center;
-font-size:30px;
+font-size:28px;
 font-weight:700;
-margin:40px auto;
+margin:10px auto 30px auto;
 color:#ffffff;
 text-decoration:none;
 animation:moverFlecha 1.6s infinite;

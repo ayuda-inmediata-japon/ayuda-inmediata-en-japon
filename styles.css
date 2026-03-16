@@ -697,3 +697,21 @@ font-size:14px;
 color:#777;
 line-height:1.5;
 }
+.volver-buscador{
+display:block;
+width:max-content;
+margin:24px auto 0;
+padding:12px 18px;
+background:#1f1f1f;
+color:#fff;
+text-decoration:none;
+font-size:16px;
+font-weight:600;
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.12);
+text-align:center;
+}
+
+.volver-buscador:hover{
+opacity:0.9;
+}

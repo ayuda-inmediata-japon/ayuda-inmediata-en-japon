@@ -533,11 +533,11 @@ color:#666;
 .servicio-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(0, 0, 0, 0.88);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px;
+  padding: 14px;
   z-index: 9999;
 }
 
@@ -554,7 +554,7 @@ color:#666;
   color: #fff;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 24px;
-  padding: 22px 18px 24px;
+  padding: 20px 18px 22px;
   position: relative;
   box-shadow: 0 18px 50px rgba(0,0,0,0.4);
 }

@@ -929,3 +929,22 @@ flechaApoyo.style.display = "none";
 });
 
 }
+const flechaApoyo = document.getElementById("flechaApoyo");
+const btnGeneral = document.getElementById("btnGeneral");
+const btnPersonalizada = document.getElementById("btnPersonalizada");
+
+if (flechaApoyo){
+
+flechaApoyo.addEventListener("click", function(){
+
+if(btnGeneral){
+btnGeneral.style.display = "none";
+}
+
+if(btnPersonalizada){
+btnPersonalizada.style.display = "none";
+}
+
+});
+
+}

@@ -912,23 +912,37 @@ if (servicioModal) {
     }
   });
 }
-
 const flechaApoyo = document.getElementById("flechaApoyo");
 const btnGeneral = document.getElementById("btnGeneral");
 const btnPersonalizada = document.getElementById("btnPersonalizada");
+const volverBuscador = document.getElementById("volverBuscador");
 
-if (flechaApoyo){
+if (flechaApoyo) {
+  flechaApoyo.addEventListener("click", function () {
+    if (btnGeneral) {
+      btnGeneral.style.display = "none";
+    }
 
-flechaApoyo.addEventListener("click", function(){
+    if (btnPersonalizada) {
+      btnPersonalizada.style.display = "none";
+    }
 
-if(btnGeneral){
-btnGeneral.style.display = "none";
+    flechaApoyo.style.display = "none";
+  });
 }
 
-if(btnPersonalizada){
-btnPersonalizada.style.display = "none";
-}
+if (volverBuscador) {
+  volverBuscador.addEventListener("click", function () {
+    if (btnGeneral) {
+      btnGeneral.style.display = "block";
+    }
 
-});
+    if (btnPersonalizada) {
+      btnPersonalizada.style.display = "block";
+    }
 
+    if (flechaApoyo) {
+      flechaApoyo.style.display = "block";
+    }
+  });
 }

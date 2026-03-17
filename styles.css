@@ -728,3 +728,6 @@ if (flechaApoyo) {
 
   });
 }
+.apoyo-oculto{
+display:none;
+}

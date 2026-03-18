@@ -917,18 +917,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const flechaApoyo = document.getElementById("flechaApoyo");
   const apoyo = document.getElementById("apoyo");
   const volverBuscador = document.getElementById("volverBuscador");
+  const bloqueOrientacion = document.getElementById("bloqueOrientacion");
 
-  if (flechaApoyo && apoyo) {
+  if (flechaApoyo && apoyo && bloqueOrientacion) {
     flechaApoyo.addEventListener("click", function (e) {
       e.preventDefault();
+      bloqueOrientacion.style.display = "none";
+      flechaApoyo.style.display = "none";
       apoyo.classList.remove("apoyo-oculto");
       apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
 
-  if (volverBuscador && apoyo) {
+  if (volverBuscador && apoyo && bloqueOrientacion && flechaApoyo) {
     volverBuscador.addEventListener("click", function () {
       apoyo.classList.add("apoyo-oculto");
+      bloqueOrientacion.style.display = "block";
+      flechaApoyo.style.display = "block";
     });
   }
 });

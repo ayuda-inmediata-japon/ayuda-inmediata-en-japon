@@ -82,21 +82,29 @@ h1{
 
 /* Flecha */
 .arrow{
-  position:absolute;
-  left:50%;
-  bottom: 54px; /* 👈 aquí la altura de la flecha */
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
   transform: translateX(-50%);
-  z-index:3;
-  font-size: 25px;
+  z-index: 3;
+
+  font-size: 32px; /* 🔥 más grande */
   line-height: 1;
-  background: rgba(255,255,255,.18);
-  border: 1px solid rgba(255,255,255,.22);
-  border-radius: 12px;
-  padding: 8px 10px;
+
+  background: rgba(255,255,255,0.25); /* fondo claro */
+  border: 1px solid rgba(255,255,255,0.35);
+
+  border-radius: 16px;
+
+  padding: 14px 16px; /* 🔥 más grande el cuadro */
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+
   cursor: pointer;
-  box-shadow: var(--shadow);
-  animation: bounce 1.4s infinite;
-  user-select:none;
+
+  user-select: none;
 }
 
 @keyframes bounce{

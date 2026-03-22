@@ -81,27 +81,27 @@ h1{
 }
 
 /* Flecha */
-.arrow{
-  position:absolute;
-  left:50%;
-  bottom: 54px; /* 👈 aquí la altura de la flecha */
-  transform: translateX(-50%);
-  z-index:3;
-  font-size: 25px;
-  line-height: 1;
-  background: rgba(255,255,255,.18);
-  border: 1px solid rgba(255,255,255,.22);
-  border-radius: 12px;
-  padding: 8px 10px;
-  cursor: pointer;
-  box-shadow: var(--shadow);
-  animation: bounce 1.4s infinite;
-  user-select:none;
+/* Flecha hero */
+.flecha-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 55px;
+  margin: 20px auto;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.3);
+  text-decoration: none;
 }
 
-@keyframes bounce{
-  0%, 100%{ transform: translateX(-50%) translateY(0); }
-  50%{ transform: translateX(-50%) translateY(8px); }
+.flecha-hero-icono {
+  font-size: 28px;
 }
 
 .main{

@@ -906,33 +906,25 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
+
+  width: 80px;
   height: 60px;
-  margin: -25px auto 15px;
+  margin: 15px auto 25px;
 
   border-radius: 16px;
 
-  background: rgba(255,255,255,0.06);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(255,255,255,0.12);
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255,255,255,0.1);
+  /* 🔥 fondo claro tipo iPhone */
+  background: rgba(255, 255, 255, 0.18);
+
+  /* efecto vidrio suave */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 
+    0 8px 20px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.3);
 
   text-decoration: none;
-
-  animation: flechaBajar 1.8s infinite;
-}
-
-/* 🔽 icono flecha verde */
-
-
-.flecha-apoyo-icono {
-  font-size: 34px;
-  color: #22c55e;
-
-  text-shadow: 
-    0 0 4px rgba(34,197,94,0.6),
-    0 0 8px rgba(34,197,94,0.4);
 }

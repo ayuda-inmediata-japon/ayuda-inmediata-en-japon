@@ -886,39 +886,32 @@ html{
   padding-bottom: 120px;
 }
 .flecha-apoyo {
-  display: block;
-  text-align: center;
-  margin: 30px auto 40px;
-  font-size: 26px;
-  color: #22c55e;
-text-shadow: 0 0 10px rgba(34,197,94,0.6);
-  text-decoration: none;
-  
-  animation: flechaBajar 1.8s infinite;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 60px;
+  margin: -20px auto 18px;
 
-@keyframes flechaBajar {
-  0% {
-    transform: translateY(0);
-    opacity: 0.6;
-  }
-  50% {
-    transform: translateY(8px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 0.6;
-  }
-}
-.flecha-apoyo {
-  display: block;
-  text-align: center;
-  margin: 10px auto 40px; /* 🔥 sube la flecha */
-  font-size: 20px;
-  color: #22c55e;
-text-shadow: 0 0 10px rgba(34,197,94,0.6);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+
   text-decoration: none;
 
   animation: flechaBajar 1.8s infinite;
+}
+.flecha-apoyo-icono {
+  font-size: 32px;
+  color: #22c55e;
+
+  text-shadow: 0 0 10px rgba(34,197,94,0.7);
 }

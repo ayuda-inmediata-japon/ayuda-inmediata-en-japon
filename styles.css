@@ -818,3 +818,67 @@ html{
     transform:translateY(10px);
   }
 }
+#apoyo{
+  scroll-margin-top:120px;
+}
+
+.apoyo-cta{
+  display:flex;
+  justify-content:center;
+  margin:40px 0 50px;
+}
+
+.apoyo-arrow-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+
+  width:85%;
+  max-width:320px;
+  padding:18px;
+
+  border-radius:18px;
+
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:600;
+  font-size:16px;
+
+  background:linear-gradient(135deg,#2ecc71,#27ae60);
+  box-shadow:0 10px 25px rgba(0,0,0,0.35);
+
+  transition:all 0.25s ease;
+  animation:apoyoPulse 1.8s infinite;
+}
+
+/* ICONO GRANDE */
+.apoyo-icon{
+  font-size:22px;
+}
+
+/* TEXTO */
+.apoyo-text{
+  font-size:16px;
+}
+
+/* HOVER */
+.apoyo-arrow-btn:hover{
+  transform:translateY(-2px) scale(1.02);
+  box-shadow:0 14px 30px rgba(0,0,0,0.4);
+}
+
+/* CLICK */
+.apoyo-arrow-btn:active{
+  transform:scale(0.96);
+}
+
+/* ANIMACIÓN SUAVE */
+@keyframes apoyoPulse{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(8px);
+  }
+}

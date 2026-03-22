@@ -478,22 +478,7 @@ font-size:18px;
 .btn-ayuda:hover{
 background:#1ebe5d;
 }
-.flecha-apoyo{
-display:block;
-text-align:center;
-font-size:26px;
-font-weight:700;
-margin:40px auto;
-color:#ffffff;
-text-decoration:none;
-animation:moverFlecha 1.6s infinite;
-}
 
-@keyframes moverFlecha{
-0%{transform:translateY(0);}
-50%{transform:translateY(8px);}
-100%{transform:translateY(0);}
-}
 
 .support-section{
 background:#ffffff;

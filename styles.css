@@ -748,43 +748,73 @@ text-align:center;
 .volver-buscador:hover{
 opacity:0.9;
 }
-.flecha-global{
-display:flex;
-align-items:center;
-justify-content:center;
-margin:50px auto;
-width:70px;
-height:70px;
-border-radius:16px;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(8px);
--webkit-backdrop-filter:blur(8px);
-border:1px solid rgba(255,255,255,0.15);
-
-font-size:34px;
-color:#ffffff;
-
-cursor:pointer;
-animation:flechaAnimada 1.4s infinite ease-in-out;
-transition:all 0.2s ease;
+html{
+  scroll-behavior:smooth;
 }
 
-.flecha-global:active{
-transform:scale(0.95);
+#apoyo{
+  scroll-margin-top:100px;
 }
 
-@keyframes flechaAnimada{
-0%{ transform:translateY(0); }
-50%{ transform:translateY(10px); }
-100%{ transform:translateY(0); }
-}
-/* FIX GLOBAL - NO rompe diseño */
-html, body{
-  max-width:100%;
-  overflow-x:hidden;
+.apoyo-cta{
+  display:flex;
+  justify-content:center;
+  margin:34px 0 42px;
 }
 
-/* evita que cualquier elemento se salga */
-img, div, section, main{
-  max-width:100%;
+.apoyo-arrow-btn{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  min-width:210px;
+  padding:18px 22px;
+  border-radius:22px;
+
+  text-decoration:none;
+  color:#ffffff;
+
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.16);
+  box-shadow:0 10px 28px rgba(0,0,0,0.35);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+
+  animation:apoyoFloat 1.6s ease-in-out infinite;
+  transition:transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.apoyo-arrow-btn:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,0.12);
+  box-shadow:0 14px 34px rgba(0,0,0,0.38);
+}
+
+.apoyo-arrow-btn:active{
+  transform:scale(0.97);
+}
+
+.apoyo-arrow-icon{
+  font-size:40px;
+  line-height:1;
+  text-shadow:0 0 14px rgba(255,255,255,0.35);
+}
+
+.apoyo-arrow-text{
+  font-size:17px;
+  font-weight:700;
+  line-height:1.2;
+  letter-spacing:0.2px;
+  color:#f3f3f3;
+}
+
+@keyframes apoyoFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(10px);
+  }
 }

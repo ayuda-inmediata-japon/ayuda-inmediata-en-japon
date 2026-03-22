@@ -707,19 +707,29 @@ text-align:center;
 .volver-buscador:hover{
 opacity:0.9;
 }
-const flechaApoyo = document.getElementById("flechaApoyo");
+.flecha-apoyo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-if (flechaApoyo) {
-  flechaApoyo.addEventListener("click", function () {
+  width: 60px;
+  height: 60px;
 
-    const botones = document.querySelector(".botones-servicio");
+  margin: 10px auto 15px;
 
-    if (botones) {
-      botones.style.display = "none";
-    }
+  font-size: 28px;
 
-  });
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+
+  animation: moverFlecha 1.4s infinite;
 }
+
 .apoyo-oculto{
 display:none;
 }

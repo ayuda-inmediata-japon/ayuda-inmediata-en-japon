@@ -612,21 +612,54 @@ html{
 scroll-behavior:smooth;
 }
 
-.flecha-apoyo{
-display:block;
-text-align:center;
-font-size:26px;
-font-weight:700;
-margin:10px auto 30px auto;
+.flecha-ui{
+display:flex;
+align-items:center;
+justify-content:center;
+
+width:68px;
+height:68px;
+margin:50px auto;
+
+border-radius:20px;
+
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(12px);
+-webkit-backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,0.12);
+box-shadow:0 12px 30px rgba(0,0,0,0.35);
+
+font-size:32px;
 color:#ffffff;
-text-decoration:none;
-animation:moverFlecha 1.6s infinite;
+
+cursor:pointer;
+transition:all 0.35s ease;
+
+animation:flechaBounce 1.6s infinite;
 }
 
-@keyframes moverFlecha{
-0%{transform:translateY(0);}
-50%{transform:translateY(8px);}
-100%{transform:translateY(0);}
+/* icono */
+.flecha-ui span{
+display:block;
+}
+
+/* animación suave tipo app */
+@keyframes flechaBounce{
+0%,100%{ transform:translateY(0); }
+50%{ transform:translateY(14px); }
+}
+
+/* ocultar */
+.flecha-hide{
+opacity:0;
+transform:translateY(-10px);
+pointer-events:none;
+}
+
+/* evitar desbordes (esto era tu problema real) */
+body{
+overflow-x:hidden;
 }
 
 .support-section{

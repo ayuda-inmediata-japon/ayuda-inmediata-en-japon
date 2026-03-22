@@ -778,3 +778,13 @@ transform:scale(0.95);
 50%{ transform:translateY(10px); }
 100%{ transform:translateY(0); }
 }
+/* FIX GLOBAL - NO rompe diseño */
+html, body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+/* evita que cualquier elemento se salga */
+img, div, section, main{
+  max-width:100%;
+}

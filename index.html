@@ -103,9 +103,12 @@ Cancelar
   </div>
 </div>
 
-<a href="apoyo.html" class="flecha-apoyo">
-⬇️ Apoyar esta guía
-</a>
+<div class="flecha-apoyo-wrap">
+  <button type="button" class="flecha-apoyo" onclick="document.getElementById('apoyo').scrollIntoView({behavior:'smooth'})">
+    ⬇
+  </button>
+  <p class="flecha-apoyo-texto">Apoyar esta guía</p>
+</div>
 
 <div id="apoyo" class="support-section">
 

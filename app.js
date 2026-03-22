@@ -913,3 +913,42 @@ if (servicioModal) {
   });
 }
 
+const flechaInicio = document.getElementById("flechaInicio");
+const flechaApoyo = document.getElementById("flechaApoyo");
+
+const buscador = document.getElementById("buscador");
+const apoyo = document.getElementById("apoyo");
+
+// 👉 Scroll al hacer click
+if (flechaInicio) {
+  flechaInicio.addEventListener("click", () => {
+    buscador.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+if (flechaApoyo) {
+  flechaApoyo.addEventListener("click", () => {
+    apoyo.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+// 👉 Control inteligente al hacer scroll
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  // Oculta flecha de inicio cuando bajas
+  if (scrollY > 100) {
+    flechaInicio.classList.add("flecha-oculta");
+  } else {
+    flechaInicio.classList.remove("flecha-oculta");
+  }
+
+  // Muestra flecha de apoyo solo cuando estás cerca
+  const apoyoTop = apoyo.getBoundingClientRect().top;
+
+  if (apoyoTop < window.innerHeight) {
+    flechaApoyo.classList.remove("flecha-oculta");
+  } else {
+    flechaApoyo.classList.add("flecha-oculta");
+  }
+});

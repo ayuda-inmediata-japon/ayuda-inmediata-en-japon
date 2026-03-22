@@ -882,3 +882,6 @@ html{
     transform:translateY(8px);
   }
 }
+.apoyo-section {
+  padding-bottom: 120px;
+}

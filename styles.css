@@ -910,3 +910,13 @@ html{
     opacity: 0.6;
   }
 }
+.flecha-apoyo {
+  display: block;
+  text-align: center;
+  margin: 10px auto 40px; /* 🔥 sube la flecha */
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+
+  animation: flechaBajar 1.8s infinite;
+}

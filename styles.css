@@ -885,6 +885,23 @@ html{
 .apoyo-section {
   padding-bottom: 120px;
 }
+/* 🔽 animación flecha */
+@keyframes flechaBajar {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}
+
+/* 🔥 botón flecha estilo app */
 .flecha-apoyo {
   display: flex;
   justify-content: center;
@@ -895,6 +912,7 @@ html{
 
   border-radius: 16px;
 
+  /* glass effect */
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -909,6 +927,8 @@ html{
 
   animation: flechaBajar 1.8s infinite;
 }
+
+/* 🔽 icono flecha verde */
 .flecha-apoyo-icono {
   font-size: 32px;
   color: #22c55e;

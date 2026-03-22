@@ -885,3 +885,28 @@ html{
 .apoyo-section {
   padding-bottom: 120px;
 }
+.flecha-apoyo {
+  display: block;
+  text-align: center;
+  margin: 40px auto 20px;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  
+  animation: flechaBajar 1.8s infinite;
+}
+
+@keyframes flechaBajar {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}

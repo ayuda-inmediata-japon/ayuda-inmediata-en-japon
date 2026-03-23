@@ -723,7 +723,7 @@ opacity:0.9;
   animation: moverFlecha 1.4s infinite;
 
   /* CLAVE: solo margen, nada de position */
-  margin: 20px auto calc(85px + env(safe-area-inset-bottom));
+margin: 4px auto 8px;
 }
 
 .apoyo-oculto{

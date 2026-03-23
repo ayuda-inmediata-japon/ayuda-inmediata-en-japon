@@ -703,6 +703,12 @@ text-align:center;
 opacity:0.9;
 }
 .flecha-apoyo{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: calc(90px + env(safe-area-inset-bottom));
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -712,18 +718,17 @@ opacity:0.9;
 
   font-size: 26px;
 
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.6);
   border: 1px solid rgba(255,255,255,0.35);
   border-radius: 16px;
 
   box-shadow:
-    0 10px 25px rgba(0,0,0,0.45),
+    0 10px 25px rgba(0,0,0,0.5),
     inset 0 1px 0 rgba(255,255,255,0.4);
 
   animation: moverFlecha 1.4s infinite;
 
-  /* CLAVE: solo margen, nada de position */
-  margin: 20px auto calc(85px + env(safe-area-inset-bottom));
+  z-index: 999;
 }
 
 .apoyo-oculto{

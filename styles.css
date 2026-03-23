@@ -20,21 +20,18 @@ body{
 }
 
 .hero{
-  position:relative;
+  position: relative;
   min-height: 100svh;
-  width:100%;
+  width: 100%;
   background-image: url("hero.jpg");
   background-size: cover;
   background-position: center;
-  display:flex;
-  .hero{
+
+  display: flex;
   align-items: flex-start;
-  justify-content:center;
+  justify-content: center;
+
   padding: 16px 18px 70px;
-  left:0;
-right:0;
-.hero{
-  padding-top: 12px;
 }
 
 .hero-overlay{

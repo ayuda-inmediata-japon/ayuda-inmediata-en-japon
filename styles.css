@@ -731,3 +731,10 @@ opacity:0.9;
 .apoyo-oculto{
 display:none;
 }
+.support-buttons .support-btn{
+  font-size: 18px !important;
+}
+
+.support-buttons .support-btn *{
+  font-size: 18px !important;
+}

@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ======= Flecha baja al buscador =======
   const bajar = () => {
-    const buscador = document.getElementById("buscador");
+    const buscador = document.getElementById("resultado");
     if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -912,3 +912,8 @@ if (servicioModal) {
     }
   });
 }
+arrowDown.addEventListener("click", () => {
+  document.getElementById("resultado").scrollIntoView({
+    behavior: "smooth"
+  });
+});

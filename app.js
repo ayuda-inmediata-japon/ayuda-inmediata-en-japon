@@ -456,218 +456,466 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 
 </style>
 `,
-    emergencia: `
-    <h2 id="emergencia">🚨 Emergencia en Japón</h2>
+  <h2 id="emergencia">🚨 Emergencia en Japón</h2>
 
-<p><strong>En Japón los servicios de emergencia son rápidos, seguros y gratuitos.</strong></p>
+<img src="emergencia.jpg" class="info-img" alt="Emergencia en Japón">
 
-<p>Su función es ayudarte inmediatamente en situaciones graves como accidentes, incendios o problemas de salud.</p>
+<p><strong>En Japón los servicios de emergencia son rápidos, organizados y confiables.</strong></p>
 
-<p><strong>📞 Números importantes:</strong></p>
+<p>Si ocurre una situación grave, mantén la calma y pide ayuda inmediatamente.</p>
+
 <p><strong>🚓 Policía: 110</strong></p>
 <p><strong>🚑 Ambulancia / Bomberos: 119</strong></p>
-
-<p><strong>Importante:</strong> No tengas miedo de llamar. No necesitas hablar japonés perfecto.</p>
-
-<p>Si no puedes comunicarte, di:</p>
-<p><strong>Español:</strong> Ayuda por favor</p>
-<p><strong>Romaji:</strong> Tasukete kudasai</p>
-<p><strong>日本語:</strong> <span style="font-size:26px;font-weight:bold;">助けてください</span></p>
-
-<hr>
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
 <div class="subtemas-box">
+
+<!-- AMBULANCIA -->
 <details class="subtema-card">
-<summary>🚑 Emergencia médica</summary>
+<summary>🚑 Emergencia médica / ambulancia</summary>
 <div class="subtema-content">
 
-<p><strong>Cuándo usar:</strong></p>
-<ul>
-<li>Dolor fuerte</li>
-<li>Desmayo</li>
-<li>Accidente</li>
-<li>Problemas para respirar</li>
-</ul>
+<img src="ambulancia.jpg" class="info-img">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<li>Llama al <strong>119</strong></li>
-<li>No te muevas si estás herido</li>
-<li>Espera a la ambulancia</li>
+<li>Llama al 119</li>
+<li>Mantén la calma</li>
+<li>Di o muestra tu ubicación</li>
+<li>No muevas al herido si es grave</li>
 </ol>
+
+<p><strong>Importante:</strong> en Japón la ambulancia es gratuita.</p>
 
 <p><strong>Frases útiles:</strong></p>
 
-<p>Español: Necesito una ambulancia</p>
-<p>Romaji: Kyūkyūsha onegaishimasu</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">救急車をお願いします</span></p>
+<p>Español<br>Necesito una ambulancia</p>
+<p>Romaji<br>Kyūkyūsha o onegaishimasu</p>
+<p>日本語<br><b>救急車をお願いします</b></p>
 
-<p>Español: Me duele mucho</p>
-<p>Romaji: Totemo itai desu</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">とても痛いです</span></p>
+<p>Español<br>Está herido</p>
+<p>Romaji<br>Kega shiteimasu</p>
+<p>日本語<br><b>けがしています</b></p>
 
 </div>
 </details>
+
+<!-- INCENDIO -->
 <details class="subtema-card">
-<summary>🔥 Incendio</summary>
+<summary>🔥 Incendio / humo</summary>
 <div class="subtema-content">
+
+<img src="bomberos.jpg" class="info-img">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<li>Llama al <strong>119</strong></li>
+<li>Llama al 119</li>
 <li>Sal inmediatamente</li>
-<li>Avisa a otras personas</li>
+<li>No uses ascensor</li>
 </ol>
 
 <p><strong>Frase útil:</strong></p>
 
-<p>Español: Hay un incendio</p>
-<p>Romaji: Kaji desu</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">火事です</span></p>
+<p>Español<br>Hay un incendio</p>
+<p>Romaji<br>Kaji desu</p>
+<p>日本語<br><b>火事です</b></p>
 
 </div>
 </details>
+
+<!-- POLICIA -->
 <details class="subtema-card">
-<summary>🚓 Situación peligrosa</summary>
+<summary>🚓 Robo / peligro</summary>
 <div class="subtema-content">
 
-<p><strong>Cuándo usar:</strong></p>
-<ul>
-<li>Peleas</li>
-<li>Robo en proceso</li>
-<li>Personas agresivas</li>
-</ul>
+<img src="policia.jpg" class="info-img">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<li>Llama al <strong>110</strong></li>
+<li>Llama al 110</li>
 <li>Aléjate del peligro</li>
-</ol>
-
-<p><strong>Frase útil:</strong></p>
-
-<p>Español: Necesito la policía</p>
-<p>Romaji: Keisatsu o yonde kudasai</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">警察を呼んでください</span></p>
-
-</div>
-</details>
-<details class="subtema-card">
-<summary>🚗 Tuve un accidente</summary>
-<div class="subtema-content">
-
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Si hay heridos, llama al <strong>119</strong></li>
-<li>Llama a la policía <strong>110</strong></li>
-<li>No abandones el lugar</li>
-<li>Toma fotos si puedes</li>
+<li>Explica lo ocurrido</li>
+<li>Guarda pruebas si es posible</li>
 </ol>
 
 <p><strong>Frases útiles:</strong></p>
 
-<p>Español: Tuve un accidente</p>
-<p>Romaji: Jiko desu</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">事故です</span></p>
+<p>Español<br>Llame a la policía</p>
+<p>Romaji<br>Keisatsu o yonde kudasai</p>
+<p>日本語<br><b>警察を呼んでください</b></p>
 
-<p>Español: Ayuda por favor</p>
-<p>Romaji: Tasukete kudasai</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">助けてください</span></p>
+<p>Español<br>Me robaron</p>
+<p>Romaji<br>Nusumaremashita</p>
+<p>日本語<br><b>盗まれました</b></p>
 
 </div>
 </details>
+
+<!-- PERDIDO -->
+<details class="subtema-card">
+<summary>📄 Perdí documentos / billetera</summary>
+<div class="subtema-content">
+
+<img src="koban.jpg" class="info-img">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Busca un Koban (policía)</li>
+<li>Explica lo que perdiste</li>
+<li>Da detalles (lugar, hora, contenido)</li>
+</ol>
+
+<p><strong>Consejo:</strong></p>
+<p>En Japón muchas personas entregan objetos perdidos.</p>
+
+<p><strong>Frases útiles:</strong></p>
+
+<p>Español<br>Perdí mi billetera</p>
+<p>Romaji<br>Saifu o nakushimashita</p>
+<p>日本語<br><b>財布をなくしました</b></p>
+
+<p>Español<br>Perdí mi pasaporte</p>
+<p>Romaji<br>Pasupōto o nakushimashita</p>
+<p>日本語<br><b>パスポートをなくしました</b></p>
+
+</div>
+</details>
+
+<!-- PERDIDO PERSONA -->
 <details class="subtema-card">
 <summary>🧭 Estoy perdido</summary>
 <div class="subtema-content">
 
+<img src="perdido.jpg" class="info-img">
+
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<li>Busca una estación o tienda</li>
-<li>Busca un Koban</li>
-<li>Pide ayuda</li>
+<li>Busca estación o Koban</li>
+<li>Muestra dirección</li>
+<li>Pide ayuda con calma</li>
 </ol>
 
 <p><strong>Frases útiles:</strong></p>
 
-<p>Español: Estoy perdido</p>
-<p>Romaji: Michi ni mayotte imasu</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">道に迷っています</span></p>
+<p>Español<br>Estoy perdido</p>
+<p>Romaji<br>Michi ni mayoimashita</p>
+<p>日本語<br><b>道に迷いました</b></p>
 
-<p>Español: ¿Dónde estoy?</p>
-<p>Romaji: Koko wa doko desu ka?</p>
-<p>日本語:<br><span style="font-size:24px;font-weight:bold;">ここはどこですか？</span></p>
+<p>Español<br>¿Dónde está este lugar?</p>
+<p>Romaji<br>Kono basho wa doko desu ka?</p>
+<p>日本語<br><b>この場所はどこですか？</b></p>
 
 </div>
 </details>
+
 </div>
 
+<!-- IDIOMA -->
 <h3>🌍 Si tienes dificultad con el idioma</h3>
 
-<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+<p>Español<br>No hablo mucho japonés</p>
+<p>Romaji<br>Sumimasen, nihongo ga amari hanasemasen</p>
+<p>日本語<br><b>すみません、日本語があまり話せません</b></p>
 
-<ul style="line-height:1.9">
+<p>Español<br>¿Puedo usar un traductor?</p>
+<p>Romaji<br>Honyaku apuri o tsukatte mo ii desu ka</p>
+<p>日本語<br><b>翻訳アプリを使ってもいいですか？</b></p>
 
-<li>
-<strong>Español</strong><br>
-No hablo mucho japonés
-<br><br>
-<strong>Romaji</strong><br>
-Sumimasen, nihongo ga amari hanasemasen
-<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-すみません、日本語があまり話せません。
-</span>
-</li>
-
-<br>
-
-<li>
-<strong>Español</strong><br>
-¿Puedo usar un traductor?
-<br><br>
-<strong>Romaji</strong><br>
-Honyaku apuri o tsukatte mo ii desu ka?
-<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-翻訳アプリを使ってもいいですか？
-</span>
-</li>
-
-</ul>
+<!-- TRADUCTORES -->
 <h3>🌐 Traductores recomendados</h3>
 
-<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">DeepL</a></p>
-<p>🟡 <a href="https://translate.google.com" target="_blank">Google Translate</a></p>
-<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT</a></p>
-<div style="
-border:3px solid #f5c542;
-border-radius:10px;
-padding:14px;
-margin-top:22px;
-background:#1c1c1c;
-box-shadow:0 0 8px rgba(245,197,66,0.4);
-animation:brilloConsejo 4s ease-in-out infinite;
-">
+<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT (explicar o traducir)</a></p>
 
-<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+<!-- FRASES -->
+<h3>🗣️ Frases útiles</h3>
 
-<p>En Japón, la gente suele ayudar rápidamente en emergencias.</p>
+<p>Español<br>Ayuda por favor</p>
+<p>Romaji<br>Tasukete kudasai</p>
+<p>日本語<br><b>助けてください</b></p>
 
-<p>No dudes en pedir ayuda incluso a desconocidos.</p>
+<p>Español<br>Necesito ayuda urgente</p>
+<p>Romaji<br>Kinkyū desu</p>
+<p>日本語<br><b>緊急です</b></p>
 
-<p>Los servicios funcionan muy bien y llegan rápido.</p>
+<!-- CONSEJO -->
+<div class="consejo-box">
+<p><strong>💡 Consejo importante</strong></p>
+<p>En Japón muchas personas ayudan si ven que lo necesitas. Muestra tu celular con una frase o dirección.</p>
+<p>Si no aparece un objeto perdido el mismo día, vuelve a preguntar más adelante.</p>
+</div>
 
+<hr>
+
+<!-- ACCIONES -->
+<p>🙏 Si esta información te fue útil, puedes:</p>
+
+<div class="acciones">
+<button onclick="compartir()">↗ Compartir</button>
+<button onclick="mostrarGuardar()">• Guardar</button>
+<button onclick="mostrarApoyo()">❤️ Apoyar</button>
+</div>
+
+<div id="guardar-pagina" style="display:none;">
+<p><strong>Cómo guardar esta página:</strong></p>
+<p>iPhone: Añadir a pantalla de inicio</p>
+<p>Android: Añadir a inicio</p>
+</div>
+
+<div id="apoyo-seccion" style="display:none;">
+<p style="font-size:24px;">❤️</p>
+
+<a href="https://paypal.me/JGarciaUmey">PayPal</a><br>
+<a href="https://ko-fi.com/ayudainmediatajapon">Ko-fi</a><br>
+<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6">PayPay</a>
+
+<p>Incluso una pequeña colaboración ayuda a mantener esta guía gratuita.</p>
+</div>
+
+<!-- BOTONES -->
+<div style="margin-top:20px;">
+<button onclick="document.getElementById('buscador').scrollIntoView()">⬅️ Volver al buscador</button>
+<button onclick="document.getElementById('emergencia').scrollIntoView()">⬆️ Volver al tema Emergencia</button>
 </div>
     `,
 
-    transporte: `
-      <h2>🚆 Transporte</h2>
-      <p><strong>Trenes:</strong> usa Google Maps para rutas y andenes.</p>
-      <p><strong>IC Card:</strong> Suica / ICOCA sirve para trenes y buses en muchas zonas.</p>
+<h2 id="transporte">🚆 Transporte en Japón</h2>
+
+<img src="transporte.jpg" class="info-img" alt="Transporte en Japón">
+
+<p><strong>El transporte en Japón es rápido, puntual y muy organizado.</strong></p>
+
+<p>Puedes moverte fácilmente en tren, metro, autobús o taxi incluso sin hablar japonés.</p>
+
+<p><strong>🟢 Presiona una opción para ver cómo usarlo:</strong></p>
+
+<div class="subtemas-box">
+
+<!-- TREN -->
+<details class="subtema-card">
+<summary>🚆 Trenes (metro y JR)</summary>
+<div class="subtema-content">
+
+<img src="tren.jpg" class="info-img">
+
+<p><strong>Cómo usar:</strong></p>
+<ol>
+<li>Busca la ruta (pantalla o app)</li>
+<li>Compra boleto o usa tarjeta IC</li>
+<li>Pasa torniquete</li>
+<li>Sigue número de línea y andén</li>
+</ol>
+
+<p><strong>Consejo:</strong></p>
+<p>Respeta filas y deja salir antes de entrar.</p>
+
+</div>
+</details>
+
+<!-- SHINKANSEN -->
+<details class="subtema-card">
+<summary>🚄 Tren bala (Shinkansen)</summary>
+<div class="subtema-content">
+
+<img src="shinkansen.jpg" class="info-img">
+
+<p><strong>Cómo usar:</strong></p>
+<ol>
+<li>Compra boleto en máquina o ventanilla</li>
+<li>Reserva asiento si es necesario</li>
+<li>Llega con tiempo</li>
+</ol>
+
+<p><strong>Consejo:</strong></p>
+<p>Ideal para viajes largos entre ciudades.</p>
+
+</div>
+</details>
+
+<!-- IC -->
+<details class="subtema-card">
+<summary>💳 Tarjeta IC (Suica / Pasmo)</summary>
+<div class="subtema-content">
+
+<img src="suica.jpg" class="info-img">
+
+<p><strong>Qué es:</strong></p>
+<p>Tarjeta recargable para transporte.</p>
+
+<p><strong>Cómo usar:</strong></p>
+<ol>
+<li>Compra en estación</li>
+<li>Recarga dinero</li>
+<li>Toca entrada y salida</li>
+</ol>
+
+<p><strong>También sirve para:</strong></p>
+<ul>
+<li>Tiendas</li>
+<li>Máquinas expendedoras</li>
+</ul>
+
+</div>
+</details>
+
+<!-- TAXI -->
+<details class="subtema-card">
+<summary>🚕 Taxi</summary>
+<div class="subtema-content">
+
+<img src="taxi.jpg" class="info-img">
+
+<p><strong>Cómo usar:</strong></p>
+<ol>
+<li>Levanta la mano o usa app</li>
+<li>Puertas automáticas</li>
+<li>Paga al final</li>
+</ol>
+
+<p><strong>Consejo:</strong></p>
+<p>Seguro pero más caro que el tren.</p>
+
+<p><strong>Frase útil:</strong></p>
+
+<p>Español<br>Lléveme aquí</p>
+<p>Romaji<br>Koko made onegaishimasu</p>
+<p>日本語<br><b>ここまでお願いします</b></p>
+
+</div>
+</details>
+
+<!-- BUS -->
+<details class="subtema-card">
+<summary>🚌 Autobús</summary>
+<div class="subtema-content">
+
+<img src="bus.jpg" class="info-img">
+
+<p><strong>Cómo usar:</strong></p>
+<ol>
+<li>Sube por atrás (generalmente)</li>
+<li>Paga al bajar</li>
+<li>Mira pantalla de paradas</li>
+</ol>
+
+<p><strong>Consejo:</strong></p>
+<p>Ten efectivo o tarjeta IC.</p>
+
+</div>
+</details>
+
+<!-- UBER -->
+<details class="subtema-card">
+<summary>📱 Uber / apps</summary>
+<div class="subtema-content">
+
+<img src="uber.jpg" class="info-img">
+
+<p><strong>Apps disponibles:</strong></p>
+<ul>
+<li>Uber</li>
+<li>GO Taxi</li>
+</ul>
+
+<p><strong>Consejo:</strong></p>
+<p>Útil si no hablas japonés.</p>
+
+</div>
+</details>
+
+<!-- BOLETOS -->
+<details class="subtema-card">
+<summary>🎫 Comprar boletos</summary>
+<div class="subtema-content">
+
+<img src="maquina.jpg" class="info-img">
+
+<p><strong>Cómo comprar:</strong></p>
+<ol>
+<li>Selecciona destino</li>
+<li>Paga en máquina</li>
+<li>Recoge boleto</li>
+</ol>
+
+<p><strong>Consejo:</strong></p>
+<p>También puedes usar tarjeta IC y evitar comprar cada vez.</p>
+
+</div>
+</details>
+
+</div>
+
+<!-- IDIOMA -->
+<h3>🌍 Si tienes dificultad con el idioma</h3>
+
+<p>Español<br>¿Dónde está esta estación?</p>
+<p>Romaji<br>Kono eki wa doko desu ka?</p>
+<p>日本語<br><b>この駅はどこですか？</b></p>
+
+<p>Español<br>Quiero ir aquí</p>
+<p>Romaji<br>Koko ni ikitai desu</p>
+<p>日本語<br><b>ここに行きたいです</b></p>
+
+<!-- TRADUCTORES -->
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT</a></p>
+
+<!-- FRASES -->
+<h3>🗣️ Frases útiles</h3>
+
+<p>Español<br>¿Cuánto cuesta?</p>
+<p>Romaji<br>Ikura desu ka?</p>
+<p>日本語<br><b>いくらですか？</b></p>
+
+<p>Español<br>¿Dónde compro boleto?</p>
+<p>Romaji<br>Kippu wa doko de kaemasu ka?</p>
+<p>日本語<br><b>切符はどこで買えますか？</b></p>
+
+<!-- CONSEJO -->
+<div class="consejo-box">
+<p><strong>💡 Consejo importante</strong></p>
+<p>Revisa siempre la línea, dirección y número de andén antes de subir al tren.</p>
+<p>En hora pico, mantente ordenado y sigue el flujo de las personas.</p>
+</div>
+
+<hr>
+
+<!-- ACCIONES -->
+<p>🙏 Si esta información te fue útil, puedes:</p>
+
+<div class="acciones">
+<button onclick="compartir()">↗ Compartir</button>
+<button onclick="mostrarGuardar()">• Guardar</button>
+<button onclick="mostrarApoyo()">❤️ Apoyar</button>
+</div>
+
+<div id="guardar-pagina" style="display:none;">
+<p><strong>Cómo guardar esta página:</strong></p>
+<p>iPhone: Añadir a pantalla de inicio</p>
+<p>Android: Añadir a inicio</p>
+</div>
+
+<div id="apoyo-seccion" style="display:none;">
+<p style="font-size:24px;">❤️</p>
+
+<a href="https://paypal.me/JGarciaUmey">PayPal</a><br>
+<a href="https://ko-fi.com/ayudainmediatajapon">Ko-fi</a><br>
+<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6">PayPay</a>
+
+<p>Tu apoyo mantiene esta guía gratuita.</p>
+</div>
+
+<!-- BOTONES -->
+<div style="margin-top:20px;">
+<button onclick="document.getElementById('buscador').scrollIntoView()">⬅️ Volver al buscador</button>
+<button onclick="document.getElementById('transporte').scrollIntoView()">⬆️ Volver al tema Transporte</button>
+</div>
+      
     `,
 
     dinero: `

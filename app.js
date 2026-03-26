@@ -457,10 +457,211 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 </style>
 `,
     emergencia: `
-      <h2>🧯 Emergencia</h2>
-      <p><strong>Policía:</strong> 110</p>
-      <p><strong>Ambulancia / Bomberos:</strong> 119</p>
-      <p>Si no hablas japonés, di: <strong>“Spanish / English please”</strong> y tu ubicación.</p>
+    <h2 id="emergencia">🚨 Emergencia en Japón</h2>
+
+<p><strong>En Japón los servicios de emergencia son rápidos, seguros y gratuitos.</strong></p>
+
+<p>Su función es ayudarte inmediatamente en situaciones graves como accidentes, incendios o problemas de salud.</p>
+
+<p><strong>📞 Números importantes:</strong></p>
+<p><strong>🚓 Policía: 110</strong></p>
+<p><strong>🚑 Ambulancia / Bomberos: 119</strong></p>
+
+<p><strong>Importante:</strong> No tengas miedo de llamar. No necesitas hablar japonés perfecto.</p>
+
+<p>Si no puedes comunicarte, di:</p>
+<p><strong>Español:</strong> Ayuda por favor</p>
+<p><strong>Romaji:</strong> Tasukete kudasai</p>
+<p><strong>日本語:</strong> <span style="font-size:26px;font-weight:bold;">助けてください</span></p>
+
+<hr>
+
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+<details class="subtema-card">
+<summary>🚑 Emergencia médica</summary>
+<div class="subtema-content">
+
+<p><strong>Cuándo usar:</strong></p>
+<ul>
+<li>Dolor fuerte</li>
+<li>Desmayo</li>
+<li>Accidente</li>
+<li>Problemas para respirar</li>
+</ul>
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Llama al <strong>119</strong></li>
+<li>No te muevas si estás herido</li>
+<li>Espera a la ambulancia</li>
+</ol>
+
+<p><strong>Frases útiles:</strong></p>
+
+<p>Español: Necesito una ambulancia</p>
+<p>Romaji: Kyūkyūsha onegaishimasu</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">救急車をお願いします</span></p>
+
+<p>Español: Me duele mucho</p>
+<p>Romaji: Totemo itai desu</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">とても痛いです</span></p>
+
+</div>
+</details>
+<details class="subtema-card">
+<summary>🔥 Incendio</summary>
+<div class="subtema-content">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Llama al <strong>119</strong></li>
+<li>Sal inmediatamente</li>
+<li>Avisa a otras personas</li>
+</ol>
+
+<p><strong>Frase útil:</strong></p>
+
+<p>Español: Hay un incendio</p>
+<p>Romaji: Kaji desu</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">火事です</span></p>
+
+</div>
+</details>
+<details class="subtema-card">
+<summary>🚓 Situación peligrosa</summary>
+<div class="subtema-content">
+
+<p><strong>Cuándo usar:</strong></p>
+<ul>
+<li>Peleas</li>
+<li>Robo en proceso</li>
+<li>Personas agresivas</li>
+</ul>
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Llama al <strong>110</strong></li>
+<li>Aléjate del peligro</li>
+</ol>
+
+<p><strong>Frase útil:</strong></p>
+
+<p>Español: Necesito la policía</p>
+<p>Romaji: Keisatsu o yonde kudasai</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">警察を呼んでください</span></p>
+
+</div>
+</details>
+<details class="subtema-card">
+<summary>🚗 Tuve un accidente</summary>
+<div class="subtema-content">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Si hay heridos, llama al <strong>119</strong></li>
+<li>Llama a la policía <strong>110</strong></li>
+<li>No abandones el lugar</li>
+<li>Toma fotos si puedes</li>
+</ol>
+
+<p><strong>Frases útiles:</strong></p>
+
+<p>Español: Tuve un accidente</p>
+<p>Romaji: Jiko desu</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">事故です</span></p>
+
+<p>Español: Ayuda por favor</p>
+<p>Romaji: Tasukete kudasai</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">助けてください</span></p>
+
+</div>
+</details>
+<details class="subtema-card">
+<summary>🧭 Estoy perdido</summary>
+<div class="subtema-content">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Busca una estación o tienda</li>
+<li>Busca un Koban</li>
+<li>Pide ayuda</li>
+</ol>
+
+<p><strong>Frases útiles:</strong></p>
+
+<p>Español: Estoy perdido</p>
+<p>Romaji: Michi ni mayotte imasu</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">道に迷っています</span></p>
+
+<p>Español: ¿Dónde estoy?</p>
+<p>Romaji: Koko wa doko desu ka?</p>
+<p>日本語:<br><span style="font-size:24px;font-weight:bold;">ここはどこですか？</span></p>
+
+</div>
+</details>
+</div>
+
+<h3>🌍 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+No hablo mucho japonés
+<br><br>
+<strong>Romaji</strong><br>
+Sumimasen, nihongo ga amari hanasemasen
+<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">
+すみません、日本語があまり話せません。
+</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Puedo usar un traductor?
+<br><br>
+<strong>Romaji</strong><br>
+Honyaku apuri o tsukatte mo ii desu ka?
+<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">
+翻訳アプリを使ってもいいですか？
+</span>
+</li>
+
+</ul>
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">DeepL</a></p>
+<p>🟡 <a href="https://translate.google.com" target="_blank">Google Translate</a></p>
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT</a></p>
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+
+<p>En Japón, la gente suele ayudar rápidamente en emergencias.</p>
+
+<p>No dudes en pedir ayuda incluso a desconocidos.</p>
+
+<p>Los servicios funcionan muy bien y llegan rápido.</p>
+
+</div>
     `,
 
     transporte: `

@@ -471,212 +471,211 @@ emergencia: `
 
 <p><strong>¿Cuál usar?</strong></p>
 <ul>
-<li><strong>110:</strong> robo, pelea, peligro, accidente de tránsito, persona sospechosa, pérdida importante, estafa.</li>
-<li><strong>119:</strong> desmayo, dificultad para respirar, fractura, herida fuerte, accidente con lesionados, incendio, humo o fuego.</li>
+<li><strong>110:</strong> robo, peligro, pelea, accidente de tránsito, persona sospechosa o problema policial.</li>
+<li><strong>119:</strong> ambulancia, incendio, humo, heridas graves, dificultad para respirar, desmayo o emergencia médica.</li>
 </ul>
 
 <img src="ambulancia.jpg" class="info-img" alt="Ambulancia en Japón">
+
 <p><strong>🚑 Ambulancia (119)</strong></p>
-<p>En Japón la ambulancia es <strong>gratuita</strong>. En una emergencia médica real es mejor llamar una ambulancia que intentar ir en taxi.</p>
+<p>En Japón la ambulancia es <strong>gratuita</strong>. Si se trata de una emergencia médica real, normalmente es mejor llamar una ambulancia que intentar ir en taxi.</p>
 
 <img src="policia.jpg" class="info-img" alt="Policía en Japón">
+
 <p><strong>🚓 Policía (110)</strong></p>
 <p>La policía ayuda, orienta y protege. También puedes acudir a un <strong>Koban</strong> si necesitas ayuda directa.</p>
 
 <img src="bomberos.jpg" class="info-img" alt="Bomberos en Japón">
-<p><strong>🔥 Bomberos (119)</strong></p>
-<p>Los bomberos no solo atienden incendios. También participan en rescates, accidentes de tránsito, apertura de puertas en emergencias y búsqueda de personas en ciertas situaciones.</p>
 
-<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+<p><strong>🔥 Bomberos (119)</strong></p>
+<p>Los bomberos no solo atienden incendios. También participan en rescates, accidentes, apertura de puertas en emergencias y apoyo en situaciones graves.</p>
+
+<p style="font-size:1.15rem;font-weight:800;color:#f3f3f3;margin:24px 0 16px;display:flex;align-items:center;gap:10px;">
+  <span style="font-size:1.25rem;">🟢</span> Presiona una situación para ver qué hacer:
+</p>
 
 <div class="subtemas-box">
 
-<!-- AMBULANCIA -->
-<details class="subtema-card">
-<summary>🚑 Necesito ambulancia / emergencia médica</summary>
-<div class="subtema-content">
+  <details class="subtema-card">
+    <summary>🚑 Necesito ambulancia / emergencia médica</summary>
+    <div class="subtema-content">
 
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Llama al <strong>119</strong>.</li>
-<li>Mantén la calma.</li>
-<li>Explica qué pasó.</li>
-<li>Di tu ubicación exacta.</li>
-<li>No muevas a la persona si la lesión parece grave.</li>
-</ol>
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Llama al <strong>119</strong>.</li>
+        <li>Mantén la calma.</li>
+        <li>Explica qué pasó.</li>
+        <li>Di tu ubicación exacta.</li>
+        <li>No muevas a la persona si la lesión parece grave.</li>
+      </ol>
 
-<p><strong>Dónde ir:</strong></p>
-<p>Si la persona no puede moverse o respira mal, quédate en el lugar y espera la ambulancia. Si estás en una estación, tienda, hotel o edificio, pide ayuda al personal.</p>
+      <p><strong>Dónde ir:</strong></p>
+      <p>Si la persona no puede moverse o respira mal, quédate en el lugar y espera la ambulancia. Si estás en una estación, tienda, hotel o edificio, pide ayuda al personal.</p>
 
-<p><strong>A quién llamar:</strong></p>
-<p><strong>119</strong> (ambulancia / bomberos)</p>
+      <p><strong>A quién llamar:</strong></p>
+      <p><strong>119</strong> (ambulancia / bomberos)</p>
 
-<p><strong>Cómo explicarlo:</strong></p>
-<p>Di qué pasó, cuántas personas están afectadas y dónde estás.</p>
+      <p><strong>Cómo explicarlo:</strong></p>
+      <p>Di qué pasó, cuántas personas están afectadas y dónde estás.</p>
 
-<p><strong>Frases útiles:</strong></p>
-<p>Español<br>Necesito una ambulancia</p>
-<p>Romaji<br>Kyūkyūsha o onegaishimasu</p>
-<p>日本語<br><b>救急車をお願いします</b></p>
+      <p><strong>Frases útiles:</strong></p>
+      <p>Español<br>Necesito una ambulancia</p>
+      <p>Romaji<br>Kyūkyūsha o onegaishimasu</p>
+      <p>日本語<br><b>救急車をお願いします</b></p>
 
-<p>Español<br>Está herido</p>
-<p>Romaji<br>Kega shiteimasu</p>
-<p>日本語<br><b>けがしています</b></p>
+      <p>Español<br>Está herido</p>
+      <p>Romaji<br>Kega shiteimasu</p>
+      <p>日本語<br><b>けがしています</b></p>
 
-<p>Español<br>No respira bien</p>
-<p>Romaji<br>Yoku kokyū ga dekimasen</p>
-<p>日本語<br><b>よく呼吸ができません</b></p>
+      <p>Español<br>No respira bien</p>
+      <p>Romaji<br>Yoku kokyū ga dekimasen</p>
+      <p>日本語<br><b>よく呼吸ができません</b></p>
 
-<p>Español<br>Se desmayó</p>
-<p>Romaji<br>Taoremashita</p>
-<p>日本語<br><b>倒れました</b></p>
+      <p>Español<br>Se desmayó</p>
+      <p>Romaji<br>Taoremashita</p>
+      <p>日本語<br><b>倒れました</b></p>
 
-</div>
-</details>
+    </div>
+  </details>
 
-<!-- INCENDIO -->
-<details class="subtema-card">
-<summary>🔥 Hay incendio / humo</summary>
-<div class="subtema-content">
+  <details class="subtema-card">
+    <summary>🔥 Hay incendio / humo</summary>
+    <div class="subtema-content">
 
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Llama al <strong>119</strong>.</li>
-<li>Sal inmediatamente del lugar.</li>
-<li>No uses ascensor.</li>
-<li>Aléjate del humo y del fuego.</li>
-<li>Avisa a otras personas si puedes hacerlo sin ponerte en riesgo.</li>
-</ol>
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Llama al <strong>119</strong>.</li>
+        <li>Sal inmediatamente del lugar.</li>
+        <li>No uses ascensor.</li>
+        <li>Aléjate del humo y del fuego.</li>
+        <li>Avisa a otras personas si puedes hacerlo sin ponerte en riesgo.</li>
+      </ol>
 
-<p><strong>Dónde ir:</strong></p>
-<p>Ve a una zona abierta y segura, lejos del edificio o del vehículo afectado.</p>
+      <p><strong>Dónde ir:</strong></p>
+      <p>Ve a una zona abierta y segura, lejos del edificio o del vehículo afectado.</p>
 
-<p><strong>A quién llamar:</strong></p>
-<p><strong>119</strong> (bomberos)</p>
+      <p><strong>A quién llamar:</strong></p>
+      <p><strong>119</strong> (bomberos)</p>
 
-<p><strong>Cómo explicarlo:</strong></p>
-<p>Di dónde hay fuego o humo y si hay personas atrapadas o heridas.</p>
+      <p><strong>Cómo explicarlo:</strong></p>
+      <p>Di dónde hay fuego o humo y si hay personas atrapadas o heridas.</p>
 
-<p><strong>Frases útiles:</strong></p>
-<p>Español<br>Hay un incendio</p>
-<p>Romaji<br>Kaji desu</p>
-<p>日本語<br><b>火事です</b></p>
+      <p><strong>Frases útiles:</strong></p>
+      <p>Español<br>Hay un incendio</p>
+      <p>Romaji<br>Kaji desu</p>
+      <p>日本語<br><b>火事です</b></p>
 
-<p>Español<br>Hay humo</p>
-<p>Romaji<br>Kemuri ga deteimasu</p>
-<p>日本語<br><b>煙が出ています</b></p>
+      <p>Español<br>Hay humo</p>
+      <p>Romaji<br>Kemuri ga deteimasu</p>
+      <p>日本語<br><b>煙が出ています</b></p>
 
-</div>
-</details>
+    </div>
+  </details>
 
-<!-- POLICIA -->
-<details class="subtema-card">
-<summary>🚓 Me robaron / estoy en peligro</summary>
-<div class="subtema-content">
+  <details class="subtema-card">
+    <summary>🚓 Me robaron / estoy en peligro</summary>
+    <div class="subtema-content">
 
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Aléjate del peligro.</li>
-<li>Llama al <strong>110</strong>.</li>
-<li>No enfrentes a la persona si no es seguro.</li>
-<li>Guarda pruebas si puedes: fotos, mensajes, capturas o lugar.</li>
-</ol>
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Aléjate del peligro.</li>
+        <li>Llama al <strong>110</strong>.</li>
+        <li>No enfrentes a la persona si no es seguro.</li>
+        <li>Guarda pruebas si puedes: fotos, mensajes, capturas o lugar.</li>
+      </ol>
 
-<p><strong>Dónde ir:</strong></p>
-<p>Busca un Koban, una estación, una tienda, un hotel o cualquier lugar con personal.</p>
+      <p><strong>Dónde ir:</strong></p>
+      <p>Busca un Koban, una estación, una tienda, un hotel o cualquier lugar con personal.</p>
 
-<p><strong>A quién llamar:</strong></p>
-<p><strong>110</strong> (policía)</p>
+      <p><strong>A quién llamar:</strong></p>
+      <p><strong>110</strong> (policía)</p>
 
-<p><strong>Cómo explicarlo:</strong></p>
-<p>Di qué pasó, dónde ocurrió, a qué hora y si viste a la persona o vehículo.</p>
+      <p><strong>Cómo explicarlo:</strong></p>
+      <p>Di qué pasó, dónde ocurrió, a qué hora y si viste a la persona o vehículo.</p>
 
-<p><strong>Frases útiles:</strong></p>
-<p>Español<br>Llama a la policía</p>
-<p>Romaji<br>Keisatsu o yonde kudasai</p>
-<p>日本語<br><b>警察を呼んでください</b></p>
+      <p><strong>Frases útiles:</strong></p>
+      <p>Español<br>Llama a la policía</p>
+      <p>Romaji<br>Keisatsu o yonde kudasai</p>
+      <p>日本語<br><b>警察を呼んでください</b></p>
 
-<p>Español<br>Me robaron</p>
-<p>Romaji<br>Nusumaremashita</p>
-<p>日本語<br><b>盗まれました</b></p>
+      <p>Español<br>Me robaron</p>
+      <p>Romaji<br>Nusumaremashita</p>
+      <p>日本語<br><b>盗まれました</b></p>
 
-<p>Español<br>Estoy en peligro</p>
-<p>Romaji<br>Abunai desu</p>
-<p>日本語<br><b>危ないです</b></p>
+      <p>Español<br>Estoy en peligro</p>
+      <p>Romaji<br>Abunai desu</p>
+      <p>日本語<br><b>危ないです</b></p>
 
-</div>
-</details>
+    </div>
+  </details>
 
-<!-- PERDIDO -->
-<details class="subtema-card">
-<summary>📄 Perdí documentos o billetera</summary>
-<div class="subtema-content">
+  <details class="subtema-card">
+    <summary>📄 Perdí documentos o billetera</summary>
+    <div class="subtema-content">
 
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Mantén la calma.</li>
-<li>Busca un Koban cercano.</li>
-<li>Explica qué perdiste y dónde crees que ocurrió.</li>
-<li>Da todos los detalles posibles.</li>
-</ol>
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Mantén la calma.</li>
+        <li>Busca un Koban cercano.</li>
+        <li>Explica qué perdiste y dónde crees que ocurrió.</li>
+        <li>Da todos los detalles posibles.</li>
+      </ol>
 
-<p><strong>Dónde ir:</strong></p>
-<p>A un Koban, estación de tren, oficina de objetos perdidos o lugar donde crees que lo viste por última vez.</p>
+      <p><strong>Dónde ir:</strong></p>
+      <p>A un Koban, estación de tren, oficina de objetos perdidos o lugar donde crees que lo viste por última vez.</p>
 
-<p><strong>A quién llamar:</strong></p>
-<p>Si es urgente, <strong>110</strong>. Si no, puedes acudir directamente al Koban.</p>
+      <p><strong>A quién llamar:</strong></p>
+      <p>Si es urgente, <strong>110</strong>. Si no, puedes acudir directamente al Koban.</p>
 
-<p><strong>Cómo explicarlo:</strong></p>
-<p>Di qué objeto era, qué tenía dentro, la hora aproximada y el lugar donde lo perdiste.</p>
+      <p><strong>Cómo explicarlo:</strong></p>
+      <p>Di qué objeto era, qué tenía dentro, la hora aproximada y el lugar donde lo perdiste.</p>
 
-<p><strong>Frases útiles:</strong></p>
-<p>Español<br>Perdí mi billetera</p>
-<p>Romaji<br>Saifu o nakushimashita</p>
-<p>日本語<br><b>財布をなくしました</b></p>
+      <p><strong>Frases útiles:</strong></p>
+      <p>Español<br>Perdí mi billetera</p>
+      <p>Romaji<br>Saifu o nakushimashita</p>
+      <p>日本語<br><b>財布をなくしました</b></p>
 
-<p>Español<br>Perdí mi pasaporte</p>
-<p>Romaji<br>Pasupōto o nakushimashita</p>
-<p>日本語<br><b>パスポートをなくしました</b></p>
+      <p>Español<br>Perdí mi pasaporte</p>
+      <p>Romaji<br>Pasupōto o nakushimashita</p>
+      <p>日本語<br><b>パスポートをなくしました</b></p>
 
-</div>
-</details>
+    </div>
+  </details>
 
-<!-- PERDIDO PERSONA -->
-<details class="subtema-card">
-<summary>🧭 Estoy perdido / no sé dónde estoy</summary>
-<div class="subtema-content">
+  <details class="subtema-card">
+    <summary>🧭 Estoy perdido / no sé dónde estoy</summary>
+    <div class="subtema-content">
 
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Busca una estación, tienda, hotel o Koban.</li>
-<li>Muestra la dirección o nombre del lugar al que quieres ir.</li>
-<li>Pide ayuda con calma.</li>
-</ol>
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Busca una estación, tienda, hotel o Koban.</li>
+        <li>Muestra la dirección o nombre del lugar al que quieres ir.</li>
+        <li>Pide ayuda con calma.</li>
+      </ol>
 
-<p><strong>Dónde ir:</strong></p>
-<p>A una estación, un Koban, un hotel, una tienda grande o cualquier lugar con personal.</p>
+      <p><strong>Dónde ir:</strong></p>
+      <p>A una estación, un Koban, un hotel, una tienda grande o cualquier lugar con personal.</p>
 
-<p><strong>A quién pedir ayuda:</strong></p>
-<p>Al personal de la estación, tienda, hotel o a la policía.</p>
+      <p><strong>A quién pedir ayuda:</strong></p>
+      <p>Al personal de la estación, tienda, hotel o a la policía.</p>
 
-<p><strong>Cómo explicarlo:</strong></p>
-<p>Muestra la dirección, el nombre del hotel, una captura del mapa o el destino escrito.</p>
+      <p><strong>Cómo explicarlo:</strong></p>
+      <p>Muestra la dirección, el nombre del hotel, una captura del mapa o el destino escrito.</p>
 
-<p><strong>Frases útiles:</strong></p>
-<p>Español<br>Estoy perdido</p>
-<p>Romaji<br>Michi ni mayoimashita</p>
-<p>日本語<br><b>道に迷いました</b></p>
+      <p><strong>Frases útiles:</strong></p>
+      <p>Español<br>Estoy perdido</p>
+      <p>Romaji<br>Michi ni mayoimashita</p>
+      <p>日本語<br><b>道に迷いました</b></p>
 
-<p>Español<br>¿Dónde está este lugar?</p>
-<p>Romaji<br>Kono basho wa doko desu ka?</p>
-<p>日本語<br><b>この場所はどこですか？</b></p>
+      <p>Español<br>¿Dónde está este lugar?</p>
+      <p>Romaji<br>Kono basho wa doko desu ka?</p>
+      <p>日本語<br><b>この場所はどこですか？</b></p>
 
-</div>
-</details>
+    </div>
+  </details>
 
 </div>
 
-<!-- IDIOMA -->
 <h3>🌍 Si tienes dificultad con el idioma</h3>
 
 <p><strong>📱 Puedes mostrar este mensaje:</strong></p>
@@ -691,16 +690,12 @@ emergencia: `
 
 <p>Si no puedes comunicarte bien en japonés, puedes usar cualquier traductor desde tu teléfono o dispositivo. No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto.</p>
 
-<!-- TRADUCTORES -->
 <h3>🌐 Traductores recomendados</h3>
 
 <p><span style="color:#3aa0ff;">●</span> <a href="https://www.deepl.com/translator" target="_blank">Traductor español → japonés (DeepL)</a></p>
-
 <p><span style="color:#ffd43b;">●</span> <a href="https://translate.google.com" target="_blank">Traductor español → japonés (Google)</a></p>
-
 <p><span style="color:#00d26a;">●</span> <a href="https://chat.openai.com" target="_blank">ChatGPT (explicar o traducir una situación)</a></p>
 
-<!-- FRASES -->
 <h3>🗣️ Frases útiles</h3>
 
 <p>Español<br>Ayuda por favor</p>
@@ -711,101 +706,237 @@ emergencia: `
 <p>Romaji<br>Kinkyū desu</p>
 <p>日本語<br><b>緊急です</b></p>
 
-<!-- CONSEJO -->
-<div class="consejo-box">
-<p><strong>💡 Consejo importante</strong></p>
+<div style="
+border:3px solid #f5c542;
+border-radius:18px;
+padding:20px;
+margin:24px 0;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+  <p style="
+  color:#f5c542;
+  font-size:1.5rem;
+  font-weight:800;
+  margin:0 0 14px 0;
+  ">💡 Consejo importante</p>
 
-<p>En Japón puedes pedir ayuda aunque no hables japonés. Muestra tu teléfono, tu ubicación, una frase traducida o el nombre del lugar al que quieres ir.</p>
+  <p>En Japón puedes pedir ayuda aunque no hables japonés. Muestra tu teléfono, tu ubicación, una frase traducida o el nombre del lugar al que quieres ir.</p>
 
-<p>Si se trata de una emergencia médica real, es mejor llamar ambulancia que intentar llegar por tu cuenta.</p>
+  <p>Si se trata de una emergencia médica real, es mejor llamar ambulancia que intentar llegar por tu cuenta.</p>
 </div>
 
 <hr style="margin-top:35px;border:none;border-top:1px solid rgba(255,255,255,0.12);">
 
-<!-- ACCIONES -->
-<p style="font-weight:800;font-size:22px;margin:0 0 14px 0;">
-🙏 Si esta información te fue útil, puedes:
-</p>
+<p style="
+font-weight:800;
+font-size:22px;
+margin:0 0 14px 0;
+color:#fff;
+">🙏 Si esta información te fue útil, puedes:</p>
 
-<div class="acciones-pro">
-  <button type="button" class="accion-btn-pro" onclick="compartir()">
+<div style="
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin:14px 0 20px;
+">
+  <button type="button" onclick="compartir()" style="
+  background:#1a1a1a;
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:14px;
+  padding:12px 16px;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 2px 10px rgba(0,0,0,0.25);
+  ">
     ↗ Compartir
   </button>
 
-  <button type="button" class="accion-btn-pro" onclick="mostrarGuardar()">
+  <button type="button" onclick="mostrarGuardar()" style="
+  background:#1a1a1a;
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:14px;
+  padding:12px 16px;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 2px 10px rgba(0,0,0,0.25);
+  ">
     • Guardar
   </button>
 
-  <button type="button" class="accion-btn-pro accion-btn-apoyo" onclick="mostrarApoyo()">
+  <button type="button" onclick="mostrarApoyo()" style="
+  background:#1a1a1a;
+  color:#ff8a8a;
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:14px;
+  padding:12px 16px;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 2px 10px rgba(0,0,0,0.25);
+  ">
     ❤️ Apoyar
   </button>
 </div>
 
-<!-- GUARDAR -->
-<div id="guardar-pagina" class="guardar-box-pro" style="display:none;">
-  <p class="guardar-title-pro">📌 Cómo guardar esta página</p>
+<div id="guardar-pagina" style="
+display:none;
+background:#111;
+color:#f1f1f1;
+border:1px solid rgba(255,255,255,0.10);
+border-radius:16px;
+padding:18px;
+margin:16px 0;
+">
+  <p style="font-size:18px;font-weight:800;margin-bottom:12px;">📌 Cómo guardar esta página</p>
 
-  <p><strong>En iPhone:</strong><br>
+  <p><strong>iPhone:</strong><br>
   Pulsa compartir y luego <strong>“Añadir a pantalla de inicio”</strong>.</p>
 
-  <p><strong>En Android:</strong><br>
+  <p><strong>Android:</strong><br>
   Pulsa el menú del navegador y selecciona <strong>“Añadir a pantalla de inicio”</strong>.</p>
 
-  <p><strong>En computadora:</strong><br>
+  <p><strong>Computadora:</strong><br>
   Guarda esta página en favoritos usando la estrella ⭐ del navegador.</p>
 </div>
 
-<!-- APOYO -->
-<div id="apoyo-seccion" class="apoyo-box-pro" style="display:none;">
+<div id="apoyo-seccion" style="
+display:none;
+background:#e9e9e9;
+color:#2c2c2c;
+border-radius:28px;
+padding:26px 22px;
+margin:20px 0;
+box-shadow:0 8px 25px rgba(0,0,0,0.22);
+text-align:center;
+">
 
-  <div class="apoyo-header-pro">
-    <div class="apoyo-heart-pro">❤️</div>
-    <div>
-      <p class="apoyo-title-pro">Apoya esta guía</p>
-      <p class="apoyo-subtitle-pro">Tu apoyo ayuda a mantener este proyecto gratuito y disponible.</p>
-    </div>
-  </div>
+  <p style="
+  font-size:18px;
+  color:#7a7a7a;
+  font-weight:700;
+  margin:0 0 16px 0;
+  ">🙏 Gracias por utilizar esta guía</p>
 
-  <p class="apoyo-text-pro">
-    Si esta guía te ayudó, puedes apoyar este proyecto con una pequeña colaboración. Cada aporte ayuda a seguir mejorando la información, mantener la guía gratuita y llegar a más personas que necesitan orientación en Japón.
+  <h3 style="
+  font-size:2.3rem;
+  font-weight:900;
+  margin:0 0 18px 0;
+  color:#111;
+  ">❤️ Apoya esta guía</h3>
+
+  <p style="
+  font-size:1.05rem;
+  line-height:1.9;
+  color:#4a4a4a;
+  font-weight:700;
+  margin:0 0 24px 0;
+  ">
+    Si esta guía te resultó útil, puedes apoyarla con una pequeña colaboración. Tu ayuda permite mantener esta información gratuita y disponible para más personas que la necesitan.
   </p>
 
-  <div class="apoyo-buttons-pro">
-    <a href="https://paypal.me/JGarciaUmey" target="_blank" class="apoyo-btn-pro">
+  <div style="
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:14px;
+  margin:0 0 24px 0;
+  ">
+    <a href="https://paypal.me/JGarciaUmey" target="_blank" style="
+    background:#f1f1f1;
+    color:#333;
+    text-decoration:none;
+    padding:16px 22px;
+    border-radius:18px;
+    font-weight:800;
+    font-size:1.05rem;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    ">
       💳 PayPal
     </a>
 
-    <a href="https://ko-fi.com/ayudainmediatajapon" target="_blank" class="apoyo-btn-pro">
+    <a href="https://ko-fi.com/ayudainmediatajapon" target="_blank" style="
+    background:#f1f1f1;
+    color:#333;
+    text-decoration:none;
+    padding:16px 22px;
+    border-radius:18px;
+    font-weight:800;
+    font-size:1.05rem;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    ">
       ☕ Ko-fi
     </a>
 
-    <a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank" class="apoyo-btn-pro">
+    <a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank" style="
+    background:#f1f1f1;
+    color:#333;
+    text-decoration:none;
+    padding:16px 22px;
+    border-radius:18px;
+    font-weight:800;
+    font-size:1.05rem;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    ">
       📱 PayPay
     </a>
   </div>
 
-  <p class="apoyo-note">
+  <p style="
+  font-size:1rem;
+  font-weight:700;
+  color:#6a6a6a;
+  line-height:1.8;
+  margin:0;
+  ">
     Incluso una pequeña colaboración ayuda a mantener esta guía gratuita y disponible para más personas.
-  </p>
-
-  <p class="apoyo-small">
-    También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
   </p>
 </div>
 
-<!-- BOTONES FINALES -->
-<div class="volver-final-box">
-  <button type="button" class="volver-final-btn volver-buscador"
-    onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
+<p style="font-size:15px;color:#bdbdbd;line-height:1.7;margin:0 0 22px 0;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
+
+<div style="display:flex;flex-direction:column;gap:14px;margin-top:30px;">
+
+  <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'});" style="
+  width:100%;
+  padding:16px;
+  font-size:1.2rem;
+  font-weight:800;
+  border:none;
+  border-radius:16px;
+  color:#fff;
+  cursor:pointer;
+  background:linear-gradient(135deg,#00c853,#00e676);
+  box-shadow:0 0 16px rgba(0,255,100,0.35);
+  ">
     ⬅️ Volver al buscador
   </button>
 
-  <button type="button" class="volver-final-btn volver-tema"
-    onclick="document.getElementById('emergencia').scrollIntoView({behavior:'smooth'})">
+  <button onclick="document.getElementById('emergencia').scrollIntoView({behavior:'smooth'});" style="
+  width:100%;
+  padding:16px;
+  font-size:1.2rem;
+  font-weight:800;
+  border:none;
+  border-radius:16px;
+  color:#fff;
+  cursor:pointer;
+  background:linear-gradient(135deg,#2196f3,#42a5f5);
+  box-shadow:0 0 16px rgba(33,150,243,0.35);
+  ">
     ⬆️ Volver al inicio de Emergencia
   </button>
 </div>
 `,
+
 
     transporte: `
       <h2>🚆 Transporte</h2>

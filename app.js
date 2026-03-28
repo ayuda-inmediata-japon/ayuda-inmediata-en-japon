@@ -441,22 +441,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 </button>
 
 </div>
-
-
-
-<style>
-
-@keyframes brilloConsejo{
-
-0%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
-50%{box-shadow:0 0 16px rgba(245,197,66,0.7);}
-100%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
-
-}
-
-</style>
-
-
+`,
     vida: `
       <h2>🏠 Vida diaria</h2>
       <p><strong>Basura:</strong> cada ciudad tiene reglas (燃えるごみ / 燃えないごみ / 資源ごみ).</p>

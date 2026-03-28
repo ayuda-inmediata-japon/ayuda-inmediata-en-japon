@@ -455,7 +455,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 }
 
 </style>
-`,
+
   <h2 id="emergencia">🚨 Emergencia en Japón</h2>
 
 <img src="emergencia.jpg" class="info-img" alt="Emergencia en Japón">
@@ -679,8 +679,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 <button onclick="document.getElementById('buscador').scrollIntoView()">⬅️ Volver al buscador</button>
 <button onclick="document.getElementById('emergencia').scrollIntoView()">⬆️ Volver al tema Emergencia</button>
 </div>
-    `,
-
+  
 <h2 id="transporte">🚆 Transporte en Japón</h2>
 
 <img src="transporte.jpg" class="info-img" alt="Transporte en Japón">

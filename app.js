@@ -60,194 +60,177 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
     `,
 
-      <p>この場所はどこですか？<br>Kono basho wa doko desu ka?<br>¿Dónde estoy?</p>
+policia: `
+<h2 id="policia">🚓 Policía en Japón</h2>
 
-      <p>この場所に行きたいです<br>Kono basho ni ikitai desu<br>Quiero ir a este lugar</p>
-    </div>
-  </details>
+<p><strong>En Japón la policía forma parte del sistema nacional conocido como Keisatsuchō (警察庁).</strong></p>
 
-  <details class="subtema-card">
-    <summary>📍 Cómo encontrar un Koban</summary>
-    <div class="subtema-content">
-      <p>Los Koban suelen estar cerca de:</p>
-      <ul>
-        <li>Estaciones de tren</li>
-        <li>Zonas comerciales</li>
-        <li>Intersecciones importantes</li>
-        <li>Barrios residenciales</li>
-      </ul>
+<p>Su función es ayudar, orientar y proteger a las personas. Puedes acercarte con tranquilidad si necesitas ayuda.</p>
 
-      <p>Busca el letrero <strong>KOBAN</strong> o el símbolo de policía.</p>
+<p><strong>Importante:</strong> en Japón la policía no acepta dinero ni favores. Las leyes se respetan y los procedimientos son formales.</p>
 
-      <p><strong>Frase útil:</strong></p>
-      <p>交番はどこですか？<br>Koban wa doko desu ka?<br>¿Dónde está el Koban?</p>
-    </div>
-  </details>
+<p><strong>Koban (交番):</strong> pequeñas estaciones de policía ubicadas en barrios, estaciones de tren y zonas comerciales.</p>
+
+<img src="koban.jpg" class="info-img">
+
+<p><strong>Si necesitas ayuda de la policía, busca un Koban.</strong> Puedes pedir orientación o ayuda.</p>
+
+<p><strong>📞 Policía: 110</strong></p>
+
+<p>🟢 Presiona una situación para ver qué hacer:</p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+<summary>🚨 Me robaron algo o fui víctima de estafa</summary>
+<div class="subtema-content">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Mantén la calma.</li>
+<li>Busca un Koban cercano o llama al 110.</li>
+<li>Explica lo ocurrido con la mayor claridad posible.</li>
+<li>Si fue una estafa, guarda mensajes, capturas o pruebas.</li>
+</ol>
+
+<p><strong>Información útil para la policía:</strong></p>
+<ul>
+<li>Hora aproximada</li>
+<li>Lugar donde ocurrió</li>
+<li>Descripción del objeto robado</li>
+<li>Pruebas o fotos</li>
+</ul>
+
+<p><strong>Frases útiles:</strong></p>
+<p>盗まれました<br>Nusumaremashita</p>
+
+</div>
+</details>
 
 </div>
 
-<h3>🌐 Si tienes dificultad con el idioma</h3>
+<hr style="margin:30px 0;border:none;border-top:1px solid #333;">
 
-<p><strong>📱 Puedes mostrar este mensaje al policía:</strong></p>
+<div style="text-align:center;">
+<p style="font-size:18px;margin-bottom:10px;">🙏 Si esta información te fue útil, puedes:</p>
 
-<ul style="line-height:1.9">
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
 
-<li>
-<strong>Español</strong><br>
-Disculpe, no hablo mucho japonés.<br>
-
-<strong>Romaji</strong><br>
-Sumimasen, nihongo ga amari hanasemasen.<br>
-
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-すみません、日本語があまり話せません。
-</span>
-</li>
-
-<br>
-
-<li>
-<strong>Español</strong><br>
-¿Puedo usar un traductor para explicarme?<br>
-
-<strong>Romaji</strong><br>
-Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br>
-
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-翻訳アプリを使って説明してもいいですか？
-</span>
-</li>
-
-</ul>
-
-
-<p>
-Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo.
-No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto al policía.
-</p>
-
-
-<h3>🌐 Traductores recomendados</h3>
-
-<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">
-Traductor español → japonés (DeepL)
-</a></p>
-
-<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja" target="_blank">
-Traductor español → japonés (Google)
-</a></p>
-
-<p>🟢 <a href="https://chat.openai.com" target="_blank">
-ChatGPT (explicar o traducir una situación)
-</a></p>
-
-
-
-<h3>🗣️ Frases útiles para hablar con la policía</h3>
-
-<ul style="line-height:1.9">
-
-<li>
-
-<strong>Español</strong><br>
-Ayuda por favor<br>
-
-<strong>Romaji</strong><br>
-Tasukete kudasai<br>
-
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;color:#ff4d4d;">
-助けてください
-</span>
-
-</li>
-
-<br>
-
-<li>
-
-<strong>Español</strong><br>
-¿Dónde está la policía?<br>
-
-<strong>Romaji</strong><br>
-Keisatsu wa doko desu ka?<br>
-
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-警察はどこですか？
-</span>
-
-</li>
-
-<br>
-
-<li>
-
-<strong>Español</strong><br>
-¿Dónde está el Koban?<br>
-
-<strong>Romaji</strong><br>
-Koban wa doko desu ka?<br>
-
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-交番はどこですか？
-</span>
-
-</li>
-
-</ul>
-
-
-
-<div style="
-border:3px solid #f5c542;
-border-radius:10px;
-padding:14px;
-margin-top:22px;
-background:#1c1c1c;
-box-shadow:0 0 8px rgba(245,197,66,0.4);
-animation:brilloConsejo 4s ease-in-out infinite;
-">
-
-<h3 style="color:#f5c542;">💡 Consejo importante</h3>
-
-<p>
-En Japón muchas personas entregan objetos perdidos a la policía o a oficinas de objetos perdidos.
-</p>
-
-<p>
-Los objetos no siempre aparecen el mismo día. A veces primero se entregan en un <strong>Koban</strong> y luego se registran en el sistema central.
-</p>
-
-<p>
-Si no aparece ese mismo día, vuelve a preguntar más adelante.
-</p>
-
-</div>
-
-
-<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
-
-
-
-<p>
-🙏Si esta información te fue útil, puedes:
-</p>
-
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
-
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;">
+<button onclick="if(navigator.share){navigator.share({title:document.title,url:window.location.href});}else{alert('Usa el botón compartir del navegador');}"
+style="padding:10px 16px;border-radius:10px;background:#222;color:#fff;border:1px solid #444;">
 ↗ Compartir
 </button>
 
-<button onclick="mostrarGuardar()"
-style="padding:8px 14px;border-radius:
-    
-emergencia: `
+<button onclick="document.getElementById('guardar-pagina').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 16px;border-radius:10px;background:#222;color:#fff;border:1px solid #444;">
+• Guardar
+</button>
+
+<button onclick="document.getElementById('apoyo').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 16px;border-radius:10px;background:#222;color:#ff6b6b;border:1px solid #444;">
+❤️ Apoyar
+</button>
+
+</div>
+</div>
+
+<p style="margin-top:15px;color:#aaa;font-size:14px;text-align:center;">
+También es posible colaborar utilizando tarjeta de crédito o débito.
+</p>
+
+<!-- GUARDAR -->
+<div id="guardar-pagina" style="margin-top:30px;scroll-margin-top:80px;background:#111;padding:20px;border-radius:12px;border:1px solid #333;">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir y selecciona <strong>"Añadir a pantalla de inicio"</strong>.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador y selecciona <strong>"Añadir a pantalla de inicio"</strong>.
+</p>
+
+<p><b>En computadora:</b><br>
+Usa la estrella ⭐ del navegador o presiona Ctrl + D.
+</p>
+
+</div>
+
+<!-- APOYO -->
+<div id="apoyo" style="margin-top:30px;scroll-margin-top:80px;background:#111;padding:20px;border-radius:16px;border:1px solid #333;text-align:center;">
+
+<p style="color:#777;font-size:13px;">🙏 Gracias por utilizar esta guía</p>
+
+<h3 style="font-size:22px;margin:5px 0;">❤️ Apoya esta guía</h3>
+
+<p style="color:#ccc;">
+Si esta guía te resultó útil, puedes apoyarla con una pequeña colaboración.
+Tu ayuda permite mantener esta información gratuita.
+</p>
+
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:15px;">
+
+<a href="https://paypal.me/JGarciaUmey" target="_blank"
+style="padding:12px 16px;border-radius:10px;background:#2563eb;color:white;text-decoration:none;font-weight:600;">
+💳 PayPal
+</a>
+
+<a href="https://ko-fi.com/ayudainmediatajapon" target="_blank"
+style="padding:12px 16px;border-radius:10px;background:#16a34a;color:white;text-decoration:none;font-weight:600;">
+☕ Ko-fi
+</a>
+
+<a href="#"
+style="padding:12px 16px;border-radius:10px;background:#ef4444;color:white;text-decoration:none;font-weight:600;">
+📱 PayPay
+</a>
+
+</div>
+
+<p style="margin-top:12px;font-size:13px;color:#777;">
+Incluso una pequeña colaboración ayuda mucho.
+</p>
+
+</div>
+
+<!-- BOTONES VOLVER -->
+<div style="margin-top:30px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+
+<button onclick="document.getElementById('inicio').scrollIntoView({behavior:'smooth'})"
+style="
+width:85%;
+max-width:320px;
+padding:14px;
+border-radius:14px;
+background:#22c55e;
+color:white;
+border:none;
+font-weight:700;
+font-size:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
+">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('policia').scrollIntoView({behavior:'smooth'})"
+style="
+width:85%;
+max-width:320px;
+padding:14px;
+border-radius:14px;
+background:#3b82f6;
+color:white;
+border:none;
+font-weight:700;
+font-size:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
+">
+⬆️ Volver al tema Policía
+</button>
+
+</div>
+`,emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>
 
 <img src="emergencia.jpg" class="info-img" alt="Emergencia en Japón">

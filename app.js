@@ -367,9 +367,9 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 • Guardar
 </button>
 
-<a href="#apoyo" style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;text-decoration:none;display:inline-block;">
+<button onclick="mostrarApoyo()" style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
   ❤️ Apoyar
-</a>
+</button>
 
 <div id="guardar-pagina" style="display:none;margin-top:18px;padding:12px;border-radius:8px;background:#1c1c1c;border:1px solid #333;color:#ddd">
 

@@ -854,10 +854,14 @@ function mostrarGuardar() {
   if (apoyo) apoyo.style.display = "none";
 }
 function irAApoyo() {
+  alert("sí entró a apoyo");
+
   const apoyo = document.getElementById("apoyo");
 
   if (apoyo) {
-    apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
+    apoyo.scrollIntoView({ behavior: "smooth" });
+  } else {
+    alert("no encontró el bloque apoyo");
   }
 }
 window.irAApoyo = irAApoyo;

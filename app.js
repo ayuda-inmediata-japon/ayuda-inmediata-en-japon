@@ -853,3 +853,10 @@ function mostrarGuardar() {
   if (guardar) guardar.style.display = "block";
   if (apoyo) apoyo.style.display = "none";
 }
+function irAApoyo() {
+  const apoyo = document.getElementById("apoyo");
+
+  if (apoyo) {
+    apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}

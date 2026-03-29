@@ -389,21 +389,19 @@ Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
 </p>
 
 </div>
+<div id="apoyo-pagina" style="display:none;">
 
-<div class="support-section">
+  <div class="support-section">
+    <h3>❤️ Apoya esta guía</h3>
 
-<h3>❤️ Apoya esta guía</h3>
+    <p>
+      Si esta guía te ayudó, puedes apoyar este proyecto.
+    </p>
 
-<p>
-Si esta guía te ayudó, puedes apoyar este proyecto para que siga ayudando a más personas que visitan o viven en Japón.
-</p>
-
-<div class="support-buttons">
-
-<a class="support-btn" href="https://paypal.me/JGarciaUmey" target="_blank">
-💳 PayPal
-</a>
-
+    <div class="support-buttons">
+      <a class="support-btn" href="https://paypal.me/...">
+        💳 PayPal
+      </a>
 <a class="support-btn" href="https://ko-fi.com/ayudainmediatajapon" target="_blank">
 ☕ Ko-fi
 </a>
@@ -411,8 +409,16 @@ Si esta guía te ayudó, puedes apoyar este proyecto para que siga ayudando a m�
 <a class="support-btn" href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank">
 📱 PayPay
 </a>
+   
+    
+  </div>
+
+  </div>
 
 </div>
+
+
+
 
 <p class="support-note">
 Incluso una pequeña colaboración ayuda a mantener esta guía gratuita y disponible para más personas.

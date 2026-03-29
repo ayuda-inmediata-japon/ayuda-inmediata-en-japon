@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  alert("JS cargó");
   const searchInput = document.getElementById("searchInput");
   const searchBtn = document.getElementById("searchBtn");
   

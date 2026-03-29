@@ -60,246 +60,148 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
     `,
  policia: `
-<h2 id="policia">🚓 Policía en Japón</h2>
 
-<p><strong>Si necesitas ayuda de la policía, busca un Koban.</strong> Puedes pedir orientación o ayuda.</p>
+<h2 id="policia">🚔 Policía en Japón</h2>
+
+<p><strong>En Japón la policía forma parte de la vida diaria.</strong></p>
+
+<p>Su función es ayudar, orientar y proteger.</p>
+
+<p><strong>Koban (交番):</strong> pequeñas estaciones de policía donde puedes acudir.</p>
+
 <p><strong>📞 Policía: 110</strong></p>
 
-<p style="margin-top:10px;"><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+<p>🟢 Presiona una situación para ver qué hacer:</p>
 
-<button class="option-btn" onclick="toggle('robo')">🚨 Me robaron algo o fui víctima de estafa</button>
-<div id="robo" class="hidden">
-  <p>Ve a un Koban y explica lo sucedido. Lleva documentos si es posible.</p>
-</div>
+<div class="subtemas-box">
 
-<button class="option-btn" onclick="toggle('perdida')">📄 Perdí mi billetera o documentos</button>
-<div id="perdida" class="hidden">
-  <p>Ve a un Koban. En Japón muchas cosas se recuperan gracias a la policía.</p>
-</div>
-
-<button class="option-btn" onclick="toggle('accidente')">🚗 Tuve un accidente</button>
-<div id="accidente" class="hidden">
-  <p>Llama al 110 o busca ayuda inmediata. No abandones el lugar.</p>
-</div>
-
-<button class="option-btn" onclick="toggle('perdido')">🧭 Estoy perdido</button>
-<div id="perdido" class="hidden">
-  <p>Un Koban puede darte direcciones claras o ayudarte directamente.</p>
-</div>
-
-<button class="option-btn" onclick="toggle('koban')">📍 Cómo encontrar un Koban</button>
-<div id="koban" class="hidden">
-  <p>Busca edificios pequeños con el símbolo de policía o pregunta a locales.</p>
-</div>
-
-<p style="margin-top:20px;"><strong>🌐 Si tienes dificultad con el idioma:</strong></p>
-
-<p>Puedes mostrar este mensaje al policía:</p>
-
-<ul style="line-height:1.9">
-
-<li>
-<strong>Español</strong><br>
-Disculpe, no hablo mucho japonés.<br>
-
-<strong>Romaji</strong><br>
-Sumimasen, nihongo ga amari hanasemasen.<br>
-
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-すみません、日本語があまり話せません。
-</span>
-</li>
-
-<br>
-
-<li>
-<strong>Español</strong><br>
-¿Dónde está el Koban?<br>
-
-<strong>Romaji</strong><br>
-Koban wa doko desu ka?<br>
-
-<strong>日本語</strong><br>
-<span style="font-size:24px;font-weight:bold;">
-交番はどこですか？
-</span>
-</li>
-
+<details class="subtema-card">
+<summary>🚨 Me robaron algo o fui víctima de estafa</summary>
+<div class="subtema-content">
+<ul>
+<li>Ve a un Koban</li>
+<li>Llama al 110</li>
+<li>Explica claramente</li>
+<li>Muestra pruebas</li>
 </ul>
+</div>
+</details>
 
-<p style="margin-top:26px;">🙏 Si esta información te fue útil, puedes:</p>
+<details class="subtema-card">
+<summary>📄 Perdí documentos o billetera</summary>
+<div class="subtema-content">
+<ul>
+<li>Ir al Koban</li>
+<li>Describir lo perdido</li>
+</ul>
+</div>
+</details>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+<details class="subtema-card">
+<summary>🚗 Tuve un accidente</summary>
+<div class="subtema-content">
+<ul>
+<li>119 si hay heridos</li>
+<li>110 siempre</li>
+</ul>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🧭 Estoy perdido</summary>
+<div class="subtema-content">
+<p>Busca un Koban y pide ayuda</p>
+</div>
+</details>
+
+</div>
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+
+<p>En Japón muchas personas entregan objetos perdidos.</p>
+<p>Si no aparece ese mismo día, vuelve a preguntar en el Koban.</p>
+
+<!-- BOTONES -->
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:25px;">
 
 <button onclick="navigator.share({title:'Ayuda en Japón',url:window.location.href})"
-style="
-padding:12px 18px;
-border-radius:999px;
-background:#1f1f1f;
-color:#ffffff;
-border:1px solid #555;
-font-size:15px;
-font-weight:600;
-min-width:140px;
-text-align:center;
-">
+style="flex:1;padding:12px;border-radius:12px;background:#1f1f1f;color:#fff;border:none;font-weight:600;">
 ↗ Compartir
 </button>
 
-<button onclick="(function(){
-let g=document.getElementById('guardar-pagina');
-let a=document.getElementById('apoyo');
-if(a)a.style.display='none';
-if(g){
-g.style.display = g.style.display==='block'?'none':'block';
-if(g.style.display==='block'){g.scrollIntoView({behavior:'smooth'});}
-}
-})()"
-style="
-padding:12px 18px;
-border-radius:999px;
-background:#1f1f1f;
-color:#ffffff;
-border:1px solid #555;
-font-size:15px;
-font-weight:600;
-min-width:140px;
-text-align:center;
-">
-• Guardar
+<button onclick="document.getElementById('guardar-pagina').style.display='block'"
+style="flex:1;padding:12px;border-radius:12px;background:#1f1f1f;color:#fff;border:none;font-weight:600;">
+📌 Guardar
 </button>
 
-<button onclick="(function(){
-let a=document.getElementById('apoyo');
-let g=document.getElementById('guardar-pagina');
-if(g)g.style.display='none';
-if(a){
-a.style.display = a.style.display==='block'?'none':'block';
-if(a.style.display==='block'){a.scrollIntoView({behavior:'smooth'});}
-}
-})()"
-style="
-padding:12px 18px;
-border-radius:999px;
-background:#1f1f1f;
-color:#ff8a8a;
-border:1px solid #555;
-font-size:15px;
-font-weight:600;
-min-width:140px;
-text-align:center;
-">
-♥ Apoyar
+<button onclick="document.getElementById('apoyo').style.display='block'"
+style="flex:1;padding:12px;border-radius:12px;background:#1f1f1f;color:#ff8a8a;border:none;font-weight:600;">
+❤️ Apoyar
 </button>
 
 </div>
 
-<div id="guardar-pagina" style="
-display:none;
-background:#111;
-padding:18px;
-border-radius:14px;
-margin-top:16px;
-border:1px solid #333;
-">
-
+<!-- GUARDAR -->
+<div id="guardar-pagina" style="display:none;margin-top:15px;background:#111;padding:18px;border-radius:14px;">
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
-<p><b>En iPhone / iPad:</b><br>
-Pulsa el botón compartir y selecciona "Añadir a pantalla de inicio"
-</p>
+<p><b>iPhone / iPad:</b><br>
+Pulsa compartir → Añadir a pantalla de inicio</p>
 
-<p><b>En Android:</b><br>
-Pulsa el menú del navegador y selecciona "Añadir a pantalla de inicio"
-</p>
+<p><b>Android:</b><br>
+Menú → Añadir a inicio</p>
 
-<p><b>En computadora:</b><br>
-Usa la estrella ⭐ del navegador o presiona Ctrl + D
-</p>
-
+<p><b>Computadora:</b><br>
+Pulsa la estrella ⭐</p>
 </div>
 
-<div id="apoyo" style="
-display:none;
-margin-top:16px;
-background:#111;
-padding:22px;
-border-radius:18px;
-border:1px solid #333;
-text-align:center;
-">
+<!-- APOYO -->
+<div id="apoyo" style="display:none;margin-top:15px;background:#111;padding:20px;border-radius:16px;text-align:center;">
 
-<p style="color:#aaa;">🙏 Gracias por utilizar esta guía</p>
+<h3>❤️ Apoya esta guía</h3>
 
-<h3 style="margin:10px 0;color:#fff;">❤️ Apoya esta guía</h3>
+<p>Si esta guía te ayudó, puedes apoyar el proyecto.</p>
 
-<p style="color:#ccc;">
-Si esta guía te ayudó, puedes apoyarla con una pequeña colaboración.
-</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px;">
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
-
-<a href="https://paypal.me/JGarciaUmey" target="_blank"
-style="padding:10px 16px;border-radius:10px;background:#2563eb;color:#fff;text-decoration:none;font-weight:600;min-width:120px;text-align:center;">
+<a href="https://paypal.me/JGarciaUmey"
+style="padding:10px 14px;border-radius:10px;background:#1f1f1f;color:#fff;text-decoration:none;">
 💳 PayPal
 </a>
 
-<a href="https://ko-fi.com/ayudainmediatajapon" target="_blank"
-style="padding:10px 16px;border-radius:10px;background:#22c55e;color:#fff;text-decoration:none;font-weight:600;min-width:120px;text-align:center;">
+<a href="https://ko-fi.com/ayudainmediatajapon"
+style="padding:10px 14px;border-radius:10px;background:#1f1f1f;color:#fff;text-decoration:none;">
 ☕ Ko-fi
 </a>
 
-<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank"
-style="padding:10px 16px;border-radius:10px;background:#ef4444;color:#fff;text-decoration:none;font-weight:600;min-width:120px;text-align:center;">
+<a href="#"
+style="padding:10px 14px;border-radius:10px;background:#1f1f1f;color:#fff;text-decoration:none;">
 📱 PayPay
 </a>
 
 </div>
 
-<p style="font-size:12px;color:#777;margin-top:14px;">
-Incluso una pequeña colaboración ayuda a mantener esta guía gratuita.
+<p style="margin-top:10px;font-size:13px;color:#aaa;">
+Incluso una pequeña colaboración ayuda 🙏
 </p>
 
 </div>
 
-<p style="font-size:12px;color:#777;margin-top:12px;">
-También es posible colaborar utilizando tarjeta de crédito o débito.
-</p>
-
-<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+<!-- VOLVER -->
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
 
 <button onclick="document.getElementById('contenido').innerHTML = inicio"
-style="
-padding:14px 20px;
-border-radius:10px;
-background:#22c55e;
-color:#fff;
-border:none;
-font-size:16px;
-font-weight:600;
-min-width:180px;
-box-shadow:0 4px 10px rgba(0,0,0,0.4);
-">
+style="flex:1;padding:12px;border-radius:12px;background:#3b82f6;color:#fff;border:none;font-weight:600;">
 ⬅ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('contenido').innerHTML = temas.policia"
-style="
-padding:14px 20px;
-border-radius:10px;
-background:#3b82f6;
-color:#fff;
-border:none;
-font-size:16px;
-font-weight:600;
-min-width:180px;
-box-shadow:0 4px 10px rgba(0,0,0,0.4);
-">
-⬆ Volver al tema Policía
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+style="flex:1;padding:12px;border-radius:12px;background:#22c55e;color:#fff;border:none;font-weight:600;">
+⬆ Volver arriba
 </button>
 
 </div>
+
 `,
 
 transporte: `

@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Check-in:</strong> muestra pasaporte y reserva. Si llegas tarde, avisa al hotel.</p>
       <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
     `,
+    policia: `
 <h2 id="policia">🚓 Policía en Japón</h2>
 
 <p><strong>En Japón la policía forma parte de la vida cotidiana y es muy segura.</strong></p>

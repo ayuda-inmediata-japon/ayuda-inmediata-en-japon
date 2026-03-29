@@ -397,10 +397,6 @@ style="padding:10px 14px;border-radius:8px;background:#3b82f6;color:white;border
 
 </div>
 `,
-
-
-
-`,
 transporte: `
       <h2>🚆 Transporte</h2>
       <p><strong>Trenes:</strong> usa Google Maps para rutas y andenes.</p>

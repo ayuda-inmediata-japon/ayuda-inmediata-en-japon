@@ -899,3 +899,10 @@ function mostrarApoyo() {
   if (guardar) guardar.style.display = "none";
   if (apoyo) apoyo.style.display = "block";
 }
+<script>
+window.addEventListener("load", function () {
+  if (window.location.hash === "#apoyo") {
+    document.getElementById("bloque-superior").style.display = "none";
+  }
+});
+</script>

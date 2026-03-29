@@ -854,3 +854,12 @@ function mostrarGuardar() {
   if (guardar) guardar.style.display = "block";
   if (apoyo) apoyo.style.display = "none";
 }
+function mostrarApoyo() {
+  const guardar = document.getElementById("guardar-pagina");
+const apoyo = document.getElementById("apoyo-pagina");
+  if (guardar) guardar.style.display = "none";
+  if (apoyo) {
+    apoyo.style.display = "block";
+    apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}

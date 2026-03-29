@@ -59,55 +59,40 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Check-in:</strong> muestra pasaporte y reserva. Si llegas tarde, avisa al hotel.</p>
       <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
     `,
-    policia: `
+ policia: `
 <h2 id="policia">🚓 Policía en Japón</h2>
 
-<p><strong>En Japón la policía forma parte de la vida cotidiana y es muy segura.</strong></p>
-
-<p>Su función es ayudar, orientar y proteger. No dudes en acudir a ellos.</p>
-
-<p><strong>Importante:</strong> en Japón es normal acercarse a la policía incluso por cosas pequeñas.</p>
-
-<p><strong>Koban (交番):</strong> pequeñas estaciones de policía en barrios y calles.</p>
-
-<img src="koban.jpg" class="info-img">
-
 <p><strong>Si necesitas ayuda de la policía, busca un Koban.</strong> Puedes pedir orientación o ayuda.</p>
-
 <p><strong>📞 Policía: 110</strong></p>
 
-<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
-
-<!-- SITUACIONES -->
+<p style="margin-top:10px;"><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
 <button class="option-btn" onclick="toggle('robo')">🚨 Me robaron algo o fui víctima de estafa</button>
 <div id="robo" class="hidden">
-<p>Ve a un Koban y explica lo sucedido. Lleva documentos si es posible.</p>
+  <p>Ve a un Koban y explica lo sucedido. Lleva documentos si es posible.</p>
 </div>
 
 <button class="option-btn" onclick="toggle('perdida')">📄 Perdí mi billetera o documentos</button>
 <div id="perdida" class="hidden">
-<p>Ve a un Koban. En Japón muchas cosas se recuperan gracias a la policía.</p>
+  <p>Ve a un Koban. En Japón muchas cosas se recuperan gracias a la policía.</p>
 </div>
 
 <button class="option-btn" onclick="toggle('accidente')">🚗 Tuve un accidente</button>
 <div id="accidente" class="hidden">
-<p>Llama al 110 o busca ayuda inmediata. No abandones el lugar.</p>
+  <p>Llama al 110 o busca ayuda inmediata. No abandones el lugar.</p>
 </div>
 
 <button class="option-btn" onclick="toggle('perdido')">🧭 Estoy perdido</button>
 <div id="perdido" class="hidden">
-<p>Un Koban puede darte direcciones claras o ayudarte directamente.</p>
+  <p>Un Koban puede darte direcciones claras o ayudarte directamente.</p>
 </div>
 
 <button class="option-btn" onclick="toggle('koban')">📍 Cómo encontrar un Koban</button>
 <div id="koban" class="hidden">
-<p>Busca edificios pequeños con el símbolo de policía o pregunta a locales.</p>
+  <p>Busca edificios pequeños con el símbolo de policía o pregunta a locales.</p>
 </div>
 
-<!-- IDIOMA -->
-
-<p><strong>🌐 Si tienes dificultad con el idioma:</strong></p>
+<p style="margin-top:20px;"><strong>🌐 Si tienes dificultad con el idioma:</strong></p>
 
 <p>Puedes mostrar este mensaje al policía:</p>
 
@@ -143,53 +128,136 @@ Koban wa doko desu ka?<br>
 
 </ul>
 
-<!-- BOTONES ACCIONES -->
-
-<p>🙏 Si esta información te fue útil, puedes:</p>
+<p style="margin-top:26px;">🙏 Si esta información te fue útil, puedes:</p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
 
 <button onclick="navigator.share({title:'Ayuda en Japón',url:window.location.href})"
-class="action-btn">↗ Compartir</button>
+style="
+padding:12px 18px;
+border-radius:999px;
+background:#1f1f1f;
+color:#ffffff;
+border:1px solid #555;
+font-size:15px;
+font-weight:600;
+min-width:140px;
+text-align:center;
+">
+↗ Compartir
+</button>
 
-<button onclick="mostrarGuardar()" class="action-btn">• Guardar</button>
+<button onclick="(function(){
+let g=document.getElementById('guardar-pagina');
+let a=document.getElementById('apoyo');
+if(a)a.style.display='none';
+if(g){
+g.style.display = g.style.display==='block'?'none':'block';
+if(g.style.display==='block'){g.scrollIntoView({behavior:'smooth'});}
+}
+})()"
+style="
+padding:12px 18px;
+border-radius:999px;
+background:#1f1f1f;
+color:#ffffff;
+border:1px solid #555;
+font-size:15px;
+font-weight:600;
+min-width:140px;
+text-align:center;
+">
+• Guardar
+</button>
 
-<button onclick="mostrarApoyo()" class="action-btn support">♥ Apoyar</button>
+<button onclick="(function(){
+let a=document.getElementById('apoyo');
+let g=document.getElementById('guardar-pagina');
+if(g)g.style.display='none';
+if(a){
+a.style.display = a.style.display==='block'?'none':'block';
+if(a.style.display==='block'){a.scrollIntoView({behavior:'smooth'});}
+}
+})()"
+style="
+padding:12px 18px;
+border-radius:999px;
+background:#1f1f1f;
+color:#ff8a8a;
+border:1px solid #555;
+font-size:15px;
+font-weight:600;
+min-width:140px;
+text-align:center;
+">
+♥ Apoyar
+</button>
 
 </div>
 
-<!-- GUARDAR -->
+<div id="guardar-pagina" style="
+display:none;
+background:#111;
+padding:18px;
+border-radius:14px;
+margin-top:16px;
+border:1px solid #333;
+">
 
-<div id="guardar-pagina" style="display:none;margin-top:16px;">
-  <p><strong>📌 Cómo guardar esta página</strong></p>
+<p><strong>📌 Cómo guardar esta página</strong></p>
 
-  <p><b>En iPhone / iPad:</b><br>
-  Pulsa compartir → "Añadir a pantalla de inicio"</p>
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir y selecciona "Añadir a pantalla de inicio"
+</p>
 
-  <p><b>En Android:</b><br>
-  Menú → "Añadir a pantalla de inicio"</p>
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador y selecciona "Añadir a pantalla de inicio"
+</p>
 
-  <p><b>En computadora:</b><br>
-  ⭐ o Ctrl + D</p>
+<p><b>En computadora:</b><br>
+Usa la estrella ⭐ del navegador o presiona Ctrl + D
+</p>
+
 </div>
 
-<!-- APOYO -->
+<div id="apoyo" style="
+display:none;
+margin-top:16px;
+background:#111;
+padding:22px;
+border-radius:18px;
+border:1px solid #333;
+text-align:center;
+">
 
-<div id="apoyo" style="display:none;margin-top:16px;" class="support-section">
+<p style="color:#aaa;">🙏 Gracias por utilizar esta guía</p>
 
-<p>🙏 Gracias por utilizar esta guía</p>
+<h3 style="margin:10px 0;color:#fff;">❤️ Apoya esta guía</h3>
 
-<h3>❤️ Apoya esta guía</h3>
+<p style="color:#ccc;">
+Si esta guía te ayudó, puedes apoyarla con una pequeña colaboración.
+</p>
 
-<p>Si esta guía te ayudó, puedes apoyar con una pequeña colaboración.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
 
-<div class="support-buttons">
-<a class="support-btn" href="https://paypal.me/JGarciaUmey" target="_blank">💳 PayPal</a>
-<a class="support-btn" href="https://ko-fi.com/ayudainmediatajapon" target="_blank">☕ Ko-fi</a>
-<a class="support-btn" href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank">📱 PayPay</a>
+<a href="https://paypal.me/JGarciaUmey" target="_blank"
+style="padding:10px 16px;border-radius:10px;background:#2563eb;color:#fff;text-decoration:none;font-weight:600;min-width:120px;text-align:center;">
+💳 PayPal
+</a>
+
+<a href="https://ko-fi.com/ayudainmediatajapon" target="_blank"
+style="padding:10px 16px;border-radius:10px;background:#22c55e;color:#fff;text-decoration:none;font-weight:600;min-width:120px;text-align:center;">
+☕ Ko-fi
+</a>
+
+<a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank"
+style="padding:10px 16px;border-radius:10px;background:#ef4444;color:#fff;text-decoration:none;font-weight:600;min-width:120px;text-align:center;">
+📱 PayPay
+</a>
+
 </div>
 
-<p class="support-note">
+<p style="font-size:12px;color:#777;margin-top:14px;">
 Incluso una pequeña colaboración ayuda a mantener esta guía gratuita.
 </p>
 
@@ -198,8 +266,6 @@ Incluso una pequeña colaboración ayuda a mantener esta guía gratuita.
 <p style="font-size:12px;color:#777;margin-top:12px;">
 También es posible colaborar utilizando tarjeta de crédito o débito.
 </p>
-
-<!-- BOTONES VOLVER MEJORADOS -->
 
 <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
 
@@ -235,6 +301,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.4);
 
 </div>
 `,
+
 transporte: `
       <h2>🚆 Transporte</h2>
       <p><strong>Trenes:</strong> usa Google Maps para rutas y andenes.</p>

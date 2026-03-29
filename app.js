@@ -771,13 +771,6 @@ function mostrarGuardar() {
   if (apoyo) apoyo.style.display = "none";
 }
 
-function mostrarApoyo() {
-  const guardar = document.getElementById("guardar-pagina");
-  const apoyo = document.getElementById("apoyo");
-
-  if (apoyo) apoyo.style.display = "block";
-  if (guardar) guardar.style.display = "none";
-}
 // BOTONES ORIENTACIÓN
 
 const btnGeneral = document.getElementById("btnGeneral");

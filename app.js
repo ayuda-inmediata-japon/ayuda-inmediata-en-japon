@@ -891,16 +891,3 @@ function mostrarGuardar() {
   if (guardar) guardar.style.display = "block";
   if (apoyo) apoyo.style.display = "none";
 }
-
-function mostrarApoyo() {
-  const guardar = document.getElementById("guardar-pagina");
-  const apoyo = document.getElementById("apoyo-pagina");
-
-  if (guardar) guardar.style.display = "none";
-  if (apoyo) apoyo.style.display = "block";
-}
-window.addEventListener("load", function () {
-  if (window.location.hash === "#apoyo") {
-    document.getElementById("bloque-superior").style.display = "none";
-  }
-});

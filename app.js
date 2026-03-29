@@ -860,3 +860,4 @@ function irAApoyo() {
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+window.irAApoyo = irAApoyo;

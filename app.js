@@ -848,20 +848,17 @@ if (servicioModal) {
 }
 function mostrarGuardar() {
   const guardar = document.getElementById("guardar-pagina");
-  const apoyo = document.getElementById("apoyo-pagina");
+  const apoyo = document.getElementById("apoyo");
 
   if (guardar) guardar.style.display = "block";
   if (apoyo) apoyo.style.display = "none";
 }
-function irAApoyo() {
-  alert("sí entró a apoyo");
 
+function irAApoyo() {
   const apoyo = document.getElementById("apoyo");
 
   if (apoyo) {
     apoyo.scrollIntoView({ behavior: "smooth" });
-  } else {
-    alert("no encontró el bloque apoyo");
   }
 }
 window.irAApoyo = irAApoyo;

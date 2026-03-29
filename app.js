@@ -379,7 +379,7 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 Pulsa el botón compartir del navegador y elige <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
 </p>
 
-<p><b>En Android:</b><br>
+<p><b>En Android:</b><br>MK
 Pulsa el menú del navegador (⋮) y selecciona <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
 </p>
 
@@ -853,13 +853,4 @@ function mostrarGuardar() {
 
   if (guardar) guardar.style.display = "block";
   if (apoyo) apoyo.style.display = "none";
-}
-function mostrarApoyo() {
-  const guardar = document.getElementById("guardar-pagina");
-const apoyo = document.getElementById("apoyo-pagina");
-  if (guardar) guardar.style.display = "none";
-  if (apoyo) {
-    apoyo.style.display = "block";
-    apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
 }

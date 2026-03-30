@@ -855,9 +855,14 @@ function mostrarGuardar() {
 }
 function irAApoyo() {
   const apoyo = document.getElementById("apoyo");
+  const cta = document.getElementById("ctaBox");
+
+  if (cta) {
+    cta.style.display = "none"; // 👈 OCULTA LO DE ARRIBA
+  }
 
   if (apoyo) {
-    apoyo.style.display = "block"; // 👈 MOSTRAR
+    apoyo.style.display = "block";
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }

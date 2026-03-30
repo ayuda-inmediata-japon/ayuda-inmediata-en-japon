@@ -855,8 +855,9 @@ function mostrarGuardar() {
 }
 function irAApoyo() {
   const apoyo = document.getElementById("apoyo");
-  
+
   if (apoyo) {
+    apoyo.style.display = "block"; // 👈 MOSTRAR
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }

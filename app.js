@@ -692,20 +692,15 @@ for (const palabra of palabras) {
 
   // Volver
   if (volverBtn) {
-    volverBtn.addEventListener("click", () => {
-      if (resultado) resultado.classList.add("oculto");
-      if (resultadoContent) resultadoContent.innerHTML = "";
-      if (searchInput) searchInput.value = "";
+  volverBtn.addEventListener("click", () => {
+    if (resultado) resultado.classList.add("oculto");
+    if (resultadoContent) resultadoContent.innerHTML = "";
+    if (searchInput) searchInput.value = "";
 
-const btnGeneral = document.getElementById("btnGeneral");
-const btnPersonalizada = document.getElementById("btnPersonalizada");
-
-if (btnGeneral) btnGeneral.style.display = "";
-if (btnPersonalizada) btnPersonalizada.style.display = "";
-      const buscador = document.getElementById("buscador");
-      if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }
+    const buscador = document.getElementById("buscador");
+    if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
 
   // Chips (mapea categorías a claves reales)
   const chips = document.querySelectorAll(".chip");
@@ -860,12 +855,7 @@ function mostrarGuardar() {
 }
 function irAApoyo() {
   const apoyo = document.getElementById("apoyo");
-  const btnGeneral = document.getElementById("btnGeneral");
-  const btnPersonalizada = document.getElementById("btnPersonalizada");
-
-  if (btnGeneral) btnGeneral.style.display = "none";
-  if (btnPersonalizada) btnPersonalizada.style.display = "none";
-
+  
   if (apoyo) {
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
   }

@@ -697,6 +697,11 @@ for (const palabra of palabras) {
       if (resultadoContent) resultadoContent.innerHTML = "";
       if (searchInput) searchInput.value = "";
 
+const btnGeneral = document.getElementById("btnGeneral");
+const btnPersonalizada = document.getElementById("btnPersonalizada");
+
+if (btnGeneral) btnGeneral.style.display = "";
+if (btnPersonalizada) btnPersonalizada.style.display = "";
       const buscador = document.getElementById("buscador");
       if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
     });

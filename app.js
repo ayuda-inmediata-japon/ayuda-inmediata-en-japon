@@ -854,15 +854,20 @@ function mostrarGuardar() {
   if (apoyo) apoyo.style.display = "none";
 }
 function irAApoyo() {
-  const apoyo = document.getElementById("apoyo");
   const cta = document.getElementById("ctaBox");
+  const apoyo = document.getElementById("apoyo");
 
-  if (cta) {
-    cta.style.display = "none"; // 👈 OCULTA LO DE ARRIBA
-  }
+  if (!apoyo) return;
 
-  if (apoyo) {
-    apoyo.style.display = "block";
-    apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  if (cta) cta.style.display = "none";
+  apoyo.style.display = "block";
+
+  setTimeout(() => {
+    const card = apoyo.querySelector(".support-card");
+    if (card) {
+      card.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 80);
 }

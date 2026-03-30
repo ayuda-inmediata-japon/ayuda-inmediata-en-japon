@@ -855,6 +855,11 @@ function mostrarGuardar() {
 }
 function irAApoyo() {
   const apoyo = document.getElementById("apoyo");
+  const btnGeneral = document.getElementById("btnGeneral");
+  const btnPersonalizada = document.getElementById("btnPersonalizada");
+
+  if (btnGeneral) btnGeneral.style.display = "none";
+  if (btnPersonalizada) btnPersonalizada.style.display = "none";
 
   if (apoyo) {
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });

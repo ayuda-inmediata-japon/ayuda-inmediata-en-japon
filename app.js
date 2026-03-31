@@ -871,3 +871,15 @@ function irAApoyo() {
     }
   }, 80);
 }
+function volverAlBuscador() {
+  const apoyo = document.getElementById("apoyo");
+  const cta = document.getElementById("ctaBox");
+  const buscador = document.getElementById("buscador");
+
+  if (apoyo) apoyo.style.display = "none";
+  if (cta) cta.style.display = "block";
+
+  if (buscador) {
+    buscador.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}

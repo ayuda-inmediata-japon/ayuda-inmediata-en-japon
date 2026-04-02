@@ -63,24 +63,23 @@ document.addEventListener("DOMContentLoaded", () => {
 emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>
 
-<p><strong>En Japón existen servicios específicos para cada tipo de emergencia. Saber a quién llamar puede ayudarte a actuar rápido y correctamente.</strong></p>
+<p><strong>En Japón existen servicios especializados para cada tipo de emergencia. Saber a quién llamar puede ayudarte a actuar rápido y correctamente.</strong></p>
 
 <p><strong>📞 Números importantes:</strong></p>
 <p><strong>🚑 Ambulancia / 🔥 Bomberos: 119</strong></p>
 <p><strong>🚓 Policía: 110</strong></p>
 
-<img src="TU_IMAGEN_GENERAL_EMERGENCIA" class="info-img">
+<img src="TU_IMAGEN_GENERAL_EMERGENCIA" class="info-img" alt="Emergencia en Japón">
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
 <div class="subtemas-box">
 
-<!-- 🚑 AMBULANCIA -->
 <details class="subtema-card">
 <summary>🚑 Necesito una ambulancia</summary>
 <div class="subtema-content">
 
-<img src="TU_IMAGEN_AMBULANCIA" class="info-img">
+<img src="TU_IMAGEN_AMBULANCIA" class="info-img" alt="Ambulancia en Japón">
 
 <p><strong>Qué es:</strong></p>
 <p>La ambulancia en Japón es un servicio de emergencia médica gratuito que llega rápidamente y te traslada al hospital adecuado.</p>
@@ -90,21 +89,24 @@ emergencia: `
 <li>Llama al 119</li>
 <li>Di “Ambulance” o “Help”</li>
 <li>Indica tu ubicación</li>
-<li>Sigue instrucciones</li>
+<li>Sigue las instrucciones</li>
 </ol>
 
 <p><strong>Importante:</strong></p>
 <p>En una emergencia real es mejor llamar a una ambulancia que usar taxi. El taxi no brinda atención médica.</p>
 
+<p><strong>Frases útiles:</strong></p>
+<p>救急車をお願いします<br>Kyūkyūsha o onegaishimasu</p>
+<p>助けてください<br>Tasukete kudasai</p>
+
 </div>
 </details>
 
-<!-- 🚓 POLICÍA -->
 <details class="subtema-card">
 <summary>🚓 Necesito a la policía</summary>
 <div class="subtema-content">
 
-<img src="TU_IMAGEN_POLICIA" class="info-img">
+<img src="TU_IMAGEN_POLICIA" class="info-img" alt="Policía en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -115,38 +117,45 @@ emergencia: `
 
 <p>La policía en Japón ayuda en robos, pérdidas, accidentes y orientación.</p>
 
+<p><strong>Frases útiles:</strong></p>
+<p>警察を呼んでください<br>Keisatsu o yonde kudasai</p>
+<p>助けてください<br>Tasukete kudasai</p>
+
 </div>
 </details>
 
-<!-- 🔥 BOMBEROS -->
 <details class="subtema-card">
 <summary>🔥 Incendio o rescate</summary>
 <div class="subtema-content">
 
-<img src="TU_IMAGEN_BOMBEROS" class="info-img">
+<img src="TU_IMAGEN_BOMBEROS" class="info-img" alt="Bomberos en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Llama al 119</li>
 <li>Evacúa sin usar ascensor</li>
 <li>Aléjate del humo</li>
+<li>Sigue las instrucciones de emergencia</li>
 </ol>
 
 <p>Los bomberos responden a incendios y rescates.</p>
 
+<p><strong>Frases útiles:</strong></p>
+<p>火事です<br>Kaji desu</p>
+<p>助けてください<br>Tasukete kudasai</p>
+
 </div>
 </details>
 
-<!-- 🌏 DESASTRES -->
 <details class="subtema-card">
 <summary>🌏 Terremoto o tsunami</summary>
 <div class="subtema-content">
 
-<img src="TU_IMAGEN_DESASTRES" class="info-img">
+<img src="TU_IMAGEN_DESASTRES" class="info-img" alt="Desastres en Japón">
 
 <p><strong>Terremoto:</strong></p>
 <ul>
-<li>Protégete debajo de una mesa</li>
+<li>Protégete debajo de una mesa o estructura firme</li>
 <li>Cubre tu cabeza</li>
 <li>No corras inmediatamente</li>
 </ul>
@@ -155,38 +164,40 @@ emergencia: `
 <ul>
 <li>Aléjate del mar</li>
 <li>Dirígete a zonas altas</li>
+<li>No esperes a ver el agua para evacuar</li>
 </ul>
 
 <p><strong>Hinambasho (避難場所):</strong></p>
-<p>Son zonas seguras de evacuación. Están señalizadas en calles y parques.</p>
+<p>Son zonas seguras de evacuación. Están señalizadas en calles, escuelas, parques y edificios públicos.</p>
+
+<p><strong>Frases útiles:</strong></p>
+<p>避難場所はどこですか？<br>Hinan basho wa doko desu ka?</p>
+<p>高いところへ逃げてください<br>Takai tokoro e nigete kudasai</p>
 
 </div>
 </details>
 
 </div>
 
-<hr>
-
 <h3>🌐 Si tienes dificultad con el idioma</h3>
 
-<p>Puedes usar un traductor desde tu teléfono y mostrarlo directamente.</p>
+<p>Si no puedes comunicarte bien en japonés, puedes usar un traductor desde tu teléfono o dispositivo. No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto.</p>
 
 <h3>🌐 Traductores recomendados</h3>
 
-<p>🔵 Traductor español → japonés (DeepL)</p>
-<p>🟡 Traductor español → japonés (Google)</p>
-<p>🟢 ChatGPT (explicar situación)</p>
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT (explicar o traducir una situación)</a></p>
 
-<h3>🗣️ Frases útiles</h3>
+<h3>🗣️ Frases útiles en una emergencia</h3>
 
-<p><strong>Español:</strong> Ayuda por favor</p>
-<p><strong>Romaji:</strong> Tasukete kudasai</p>
-<p><strong>日本語:</strong></p>
-<p style="color:red;font-size:22px;"><strong>助けてください</strong></p>
+<p><strong>Español:</strong><br>Ayuda por favor</p>
+<p><strong>Romaji:</strong><br>Tasukete kudasai</p>
+<p><strong>日本語:</strong><br><span style="color:red;font-size:22px;"><strong>助けてください</strong></span></p>
 
 <div class="consejo-box">
 <p><strong>💡 Consejo importante</strong></p>
-<p>En Japón los servicios de emergencia son rápidos y confiables. No dudes en usarlos si lo necesitas.</p>
+<p>En Japón los servicios de emergencia son rápidos y confiables. No dudes en usarlos si realmente los necesitas. En caso de desastre, busca también los puntos de evacuación señalizados.</p>
 </div>
 
 <hr>
@@ -194,14 +205,30 @@ emergencia: `
 <p>🙏 Si esta información te fue útil, puedes:</p>
 
 <div class="botones">
-<button>↗ Compartir</button>
-<button>📌 Guardar</button>
-<button>❤️ Apoyar</button>
+<button onclick="navigator.share({title:'Ayuda en Japón',url:window.location.href})">↗ Compartir</button>
+<button onclick="mostrarGuardar()">• Guardar</button>
+<button onclick="mostrarApoyo()">❤️ Apoyar</button>
 </div>
 
-<p style="font-size:12px;color:#777;">
-También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
-</p>
+<div id="guardar-pagina" style="display:none;">
+<p><strong>📌 Cómo guardar esta página</strong></p>
+<p><b>En iPhone / iPad:</b><br>Pulsa el botón compartir del navegador y selecciona "Añadir a pantalla de inicio".</p>
+<p><b>En Android:</b><br>Pulsa el menú del navegador y selecciona "Añadir a pantalla de inicio".</p>
+<p><b>En computadora:</b><br>Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.</p>
+</div>
+
+<div id="apoyo" class="support-section" style="display:none;">
+<h3>❤️ Apoya esta guía</h3>
+<p>Si esta guía te ayudó, puedes apoyar este proyecto.</p>
+
+<div class="support-buttons">
+<a class="support-btn" href="https://paypal.me/JGarciaUmey" target="_blank">💳 PayPal</a>
+<a class="support-btn" href="https://ko-fi.com/ayudainmediatajapon" target="_blank">☕ Ko-fi</a>
+<a class="support-btn" href="#" target="_blank">📱 PayPay</a>
+</div>
+</div>
+
+<p style="font-size:12px;color:#777;">También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.</p>
 
 <div class="botones-finales">
 <button onclick="document.getElementById('contenido').innerHTML = inicio">⬅️ Volver al buscador</button>

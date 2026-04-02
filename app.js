@@ -60,6 +60,154 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
     `,
 
+emergencia: `
+<h2 id="emergencia">🚨 Emergencia en Japón</h2>
+
+<p><strong>En Japón existen servicios específicos para cada tipo de emergencia. Saber a quién llamar puede ayudarte a actuar rápido y correctamente.</strong></p>
+
+<p><strong>📞 Números importantes:</strong></p>
+<p><strong>🚑 Ambulancia / 🔥 Bomberos: 119</strong></p>
+<p><strong>🚓 Policía: 110</strong></p>
+
+<img src="TU_IMAGEN_GENERAL_EMERGENCIA" class="info-img">
+
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+
+<!-- 🚑 AMBULANCIA -->
+<details class="subtema-card">
+<summary>🚑 Necesito una ambulancia</summary>
+<div class="subtema-content">
+
+<img src="TU_IMAGEN_AMBULANCIA" class="info-img">
+
+<p><strong>Qué es:</strong></p>
+<p>La ambulancia en Japón es un servicio de emergencia médica gratuito que llega rápidamente y te traslada al hospital adecuado.</p>
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Llama al 119</li>
+<li>Di “Ambulance” o “Help”</li>
+<li>Indica tu ubicación</li>
+<li>Sigue instrucciones</li>
+</ol>
+
+<p><strong>Importante:</strong></p>
+<p>En una emergencia real es mejor llamar a una ambulancia que usar taxi. El taxi no brinda atención médica.</p>
+
+</div>
+</details>
+
+<!-- 🚓 POLICÍA -->
+<details class="subtema-card">
+<summary>🚓 Necesito a la policía</summary>
+<div class="subtema-content">
+
+<img src="TU_IMAGEN_POLICIA" class="info-img">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Llama al 110</li>
+<li>O acude a un <strong>Koban</strong></li>
+<li>Explica la situación</li>
+</ol>
+
+<p>La policía en Japón ayuda en robos, pérdidas, accidentes y orientación.</p>
+
+</div>
+</details>
+
+<!-- 🔥 BOMBEROS -->
+<details class="subtema-card">
+<summary>🔥 Incendio o rescate</summary>
+<div class="subtema-content">
+
+<img src="TU_IMAGEN_BOMBEROS" class="info-img">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Llama al 119</li>
+<li>Evacúa sin usar ascensor</li>
+<li>Aléjate del humo</li>
+</ol>
+
+<p>Los bomberos responden a incendios y rescates.</p>
+
+</div>
+</details>
+
+<!-- 🌏 DESASTRES -->
+<details class="subtema-card">
+<summary>🌏 Terremoto o tsunami</summary>
+<div class="subtema-content">
+
+<img src="TU_IMAGEN_DESASTRES" class="info-img">
+
+<p><strong>Terremoto:</strong></p>
+<ul>
+<li>Protégete debajo de una mesa</li>
+<li>Cubre tu cabeza</li>
+<li>No corras inmediatamente</li>
+</ul>
+
+<p><strong>Tsunami:</strong></p>
+<ul>
+<li>Aléjate del mar</li>
+<li>Dirígete a zonas altas</li>
+</ul>
+
+<p><strong>Hinambasho (避難場所):</strong></p>
+<p>Son zonas seguras de evacuación. Están señalizadas en calles y parques.</p>
+
+</div>
+</details>
+
+</div>
+
+<hr>
+
+<h3>🌐 Si tienes dificultad con el idioma</h3>
+
+<p>Puedes usar un traductor desde tu teléfono y mostrarlo directamente.</p>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 Traductor español → japonés (DeepL)</p>
+<p>🟡 Traductor español → japonés (Google)</p>
+<p>🟢 ChatGPT (explicar situación)</p>
+
+<h3>🗣️ Frases útiles</h3>
+
+<p><strong>Español:</strong> Ayuda por favor</p>
+<p><strong>Romaji:</strong> Tasukete kudasai</p>
+<p><strong>日本語:</strong></p>
+<p style="color:red;font-size:22px;"><strong>助けてください</strong></p>
+
+<div class="consejo-box">
+<p><strong>💡 Consejo importante</strong></p>
+<p>En Japón los servicios de emergencia son rápidos y confiables. No dudes en usarlos si lo necesitas.</p>
+</div>
+
+<hr>
+
+<p>🙏 Si esta información te fue útil, puedes:</p>
+
+<div class="botones">
+<button>↗ Compartir</button>
+<button>📌 Guardar</button>
+<button>❤️ Apoyar</button>
+</div>
+
+<p style="font-size:12px;color:#777;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
+
+<div class="botones-finales">
+<button onclick="document.getElementById('contenido').innerHTML = inicio">⬅️ Volver al buscador</button>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆️ Volver arriba</button>
+</div>
+`
     policia: `
 <h2 id="policia">🚓 Policía en Japón</h2>
 

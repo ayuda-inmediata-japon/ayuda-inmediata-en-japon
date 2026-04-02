@@ -234,8 +234,8 @@ emergencia: `
 <button onclick="document.getElementById('contenido').innerHTML = inicio">⬅️ Volver al buscador</button>
 <button onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆️ Volver arriba</button>
 </div>
-`
-    policia: `
+`,
+policia: `
 <h2 id="policia">🚓 Policía en Japón</h2>
 
 <p><strong>En Japón la policía forma parte del sistema nacional conocido como Keisatsuchō (警察庁).</strong></p>

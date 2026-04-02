@@ -195,46 +195,146 @@ emergencia: `
 <p><strong>Romaji:</strong><br>Tasukete kudasai</p>
 <p><strong>日本語:</strong><br><span style="color:red;font-size:22px;"><strong>助けてください</strong></span></p>
 
-<div class="consejo-box">
-<p><strong>💡 Consejo importante</strong></p>
-<p>En Japón los servicios de emergencia son rápidos y confiables. No dudes en usarlos si realmente los necesitas. En caso de desastre, busca también los puntos de evacuación señalizados.</p>
+<!-- 💡 CONSEJO IMPORTANTE -->
+<div style="
+border:3px solid #f5c542;
+border-radius:16px;
+padding:18px;
+margin-top:25px;
+background:linear-gradient(145deg,#1a1a1a,#111);
+box-shadow:0 0 12px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="
+color:#f5c542;
+font-size:20px;
+margin-bottom:12px;
+">
+💡 Consejo importante
+</h3>
+
+<p style="line-height:1.6;">
+En Japón los servicios de emergencia son rápidos y confiables. No dudes en usarlos si realmente los necesitas.
+</p>
+
+<p style="line-height:1.6;">
+Si es una emergencia médica real, es mejor llamar una ambulancia que usar taxi.
+</p>
+
+<p style="line-height:1.6;">
+En caso de desastre, busca los puntos de evacuación señalizados (<strong>避難場所</strong>).
+</p>
+
 </div>
 
-<hr>
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
-<p>🙏 Si esta información te fue útil, puedes:</p>
+<p>
+🙏 Si esta información te fue útil, puedes:
+</p>
 
-<div class="botones">
-<button onclick="navigator.share({title:'Ayuda en Japón',url:window.location.href})">↗ Compartir</button>
-<button onclick="mostrarGuardar()">• Guardar</button>
-<button onclick="mostrarApoyo()">❤️ Apoyar</button>
+<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-start;margin-top:10px;">
+
+<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;background:#1f1f1f;color:#fff;border:1px solid #555;">
+↗ Compartir
+</button>
+
+<button onclick="document.getElementById('guardar-pagina').style.display='block'"
+style="padding:8px 14px;border-radius:6px;background:#1f1f1f;color:#fff;border:1px solid #555;">
+• Guardar
+</button>
+
+<button onclick="document.getElementById('apoyo').style.display='block'"
+style="padding:8px 14px;border-radius:6px;background:#1f1f1f;color:#ff8a8a;border:1px solid #555;">
+❤️ Apoyar
+</button>
+
 </div>
 
-<div id="guardar-pagina" style="display:none;">
+<div id="guardar-pagina" style="display:none;margin-top:15px;">
+
 <p><strong>📌 Cómo guardar esta página</strong></p>
-<p><b>En iPhone / iPad:</b><br>Pulsa el botón compartir del navegador y selecciona "Añadir a pantalla de inicio".</p>
-<p><b>En Android:</b><br>Pulsa el menú del navegador y selecciona "Añadir a pantalla de inicio".</p>
-<p><b>En computadora:</b><br>Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.</p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir y selecciona "Añadir a pantalla de inicio".
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador y selecciona "Añadir a pantalla de inicio".
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ o presiona Ctrl + D.
+</p>
+
 </div>
 
-<div id="apoyo" class="support-section" style="display:none;">
+<div id="apoyo" class="support-section" style="display:none;margin-top:15px;">
+
 <h3>❤️ Apoya esta guía</h3>
-<p>Si esta guía te ayudó, puedes apoyar este proyecto.</p>
+
+<p>
+Si esta guía te ayudó, puedes apoyar este proyecto.
+</p>
 
 <div class="support-buttons">
 <a class="support-btn" href="https://paypal.me/JGarciaUmey" target="_blank">💳 PayPal</a>
 <a class="support-btn" href="https://ko-fi.com/ayudainmediatajapon" target="_blank">☕ Ko-fi</a>
 <a class="support-btn" href="#" target="_blank">📱 PayPay</a>
 </div>
+
 </div>
 
-<p style="font-size:12px;color:#777;">También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.</p>
+<p style="font-size:12px;color:#777;margin-top:10px;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
 
-<div class="botones-finales">
-<button onclick="document.getElementById('contenido').innerHTML = inicio">⬅️ Volver al buscador</button>
-<button onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆️ Volver arriba</button>
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+
+<button onclick="document.getElementById('contenido').innerHTML = inicio; window.scrollTo({top:0,behavior:'smooth'});"
+style="
+width:85%;
+max-width:320px;
+padding:14px;
+border-radius:14px;
+background:#22c55e;
+color:white;
+border:none;
+font-weight:700;
+font-size:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
+">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('contenido').innerHTML = secciones.emergencia; window.scrollTo({top:0,behavior:'smooth'});"
+style="
+width:85%;
+max-width:320px;
+padding:14px;
+border-radius:14px;
+background:#3b82f6;
+color:white;
+border:none;
+font-weight:700;
+font-size:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
+">
+⬆️ Volver al tema Emergencia
+</button>
+
 </div>
-`,
+
+<style>
+@keyframes brilloConsejo{
+0%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
+50%{box-shadow:0 0 18px rgba(245,197,66,0.6);}
+100%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
+}
+</style>
+
 policia: `
 <h2 id="policia">🚓 Policía en Japón</h2>
 

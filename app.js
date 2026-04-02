@@ -388,11 +388,7 @@ Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
 
 </div>
 
-<p class="support-note">
-Incluso una pequeña colaboración ayuda a mantener esta guía gratuita y disponible para más personas.
-</p>
-
-</div>
+</div>no
 
 <p style="font-size:12px;color:#777;margin-top:8px">
 También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.

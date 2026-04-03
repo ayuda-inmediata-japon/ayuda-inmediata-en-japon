@@ -817,6 +817,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 
 </div>
 `
+,
     vida: `
       <h2>🏠 Vida diaria</h2>
       <p><strong>Basura:</strong> cada ciudad tiene reglas (燃えるごみ / 燃えないごみ / 資源ごみ).</p>

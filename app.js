@@ -1013,6 +1013,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 ⬆️ Volver al tema Transporte
 </button>
 </div>
+
 `,
     vida: `
       <h2>🏠 Vida diaria</h2>

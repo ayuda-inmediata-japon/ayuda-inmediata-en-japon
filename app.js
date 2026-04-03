@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ======= RESPUESTAS (clave -> HTML) =======
   // Puedes ampliar con calma luego.
   const respuestas = {
-    <h2>✈️ Llegada a Japón</h2>
+    llegada: `
+<h2>✈️ Llegada a Japón</h2>
 
 <img src="AQUI_TU_IMAGEN" style="width:100%; border-radius:10px; margin:10px 0;">
 
@@ -90,8 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <p>Lleva siempre efectivo.</p>
 </div>
 
----
-
 <h3>🌐 Traductores recomendados</h3>
 
 <p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">
@@ -105,8 +104,6 @@ Traductor español → japonés (Google)
 <p>🟢 <a href="https://chat.openai.com/" target="_blank">
 ChatGPT (explicar o traducir una situación)
 </a></p>
-
----
 
 <h3>🗣️ Frases útiles</h3>
 
@@ -151,8 +148,6 @@ Intaanetto ga arimasen<br><br>
 
 </ul>
 
----
-
 <h3>🌍 Si tienes dificultad con el idioma</h3>
 
 <p><strong>📱 Puedes mostrar este mensaje:</strong></p>
@@ -189,18 +184,12 @@ Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
 
 </ul>
 
----
-
 <div style="background:#2a2112;border:2px solid #f0b93a;padding:15px;border-radius:12px;">
 <b>💡 Consejo importante</b><br>
 Primero resuelve: internet, transporte, hotel y efectivo.
 </div>
 
----
-
-<p>
-🙏 Si esta información te fue útil, puedes:
-</p>
+<p>🙏 Si esta información te fue útil, puedes:</p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
@@ -240,20 +229,19 @@ Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
 También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
 </p>
 
----
-
 <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
 
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('tema-llegada').scrollIntoView({behavior:'smooth'})">
+<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})">
 ⬆️ Volver al tema Llegada
 </button>
 
 </div>
-    taxi: `
+`,
+taxi: `
       <h2>🚕 Taxi en Japón</h2>
       <p><strong>Cómo pedirlo:</strong> busca una parada de taxi (タクシー乗り場) o usa apps como GO / DiDi (según zona).</p>
       <p><strong>Frases útiles:</strong> 「ここまでお願いします」(Koko made onegaishimasu) = “Hasta aquí por favor”.</p>

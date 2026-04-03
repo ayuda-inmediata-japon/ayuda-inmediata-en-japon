@@ -791,12 +791,33 @@ style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e
 style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff8a8a;">
 ❤️ Apoyar
 </button>
+<div class="guardar-pagina">
+  <h3>📌 Cómo guardar esta página</h3>
 
-</div>
+  <div class="guardar-opciones">
 
-<div id="guardar-pagina" style="display:none;margin-top:18px;">
-<p><strong>📌 Cómo guardar esta página</strong></p>
-<p>iPhone / Android: añadir a favoritos o pantalla de inicio</p>
+    <div class="guardar-item">
+      <h4>📱 iPhone (Safari)</h4>
+      <p>1. Toca el botón <strong>Compartir</strong> (cuadro con flecha ↑)</p>
+      <p>2. Desliza y selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
+      <p>3. Pulsa <strong>Añadir</strong></p>
+      <p class="tip">👉 Se guardará como una app en tu celular</p>
+    </div>
+
+    <div class="guardar-item">
+      <h4>🤖 Android (Chrome)</h4>
+      <p>1. Toca los <strong>3 puntos ⋮</strong> arriba a la derecha</p>
+      <p>2. Selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
+      <p>3. Confirma</p>
+      <p class="tip">👉 Acceso rápido como aplicación</p>
+    </div>
+
+    <div class="guardar-item">
+      <h4>⭐ Opción rápida</h4>
+      <p>También puedes guardarla en <strong>Favoritos / Marcadores</strong> de tu navegador</p>
+    </div>
+
+  </div>
 </div>
 
 <p style="font-size:12px;color:#777;margin-top:8px">

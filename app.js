@@ -229,6 +229,7 @@ En caso de desastre, busca los puntos de evacuación señalizados (<strong>避�
 </div>
 
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+</div>
 
 <p>
 🙏 Si esta información te fue útil, puedes:
@@ -309,7 +310,7 @@ box-shadow:0 4px 12px rgba(0,0,0,0.4);
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('contenido').innerHTML = secciones.emergencia; window.scrollTo({top:0,behavior:'smooth'});"
+<button onclick="document.getElementById('contenido').innerHTML = secciones['emergencia']; window.scrollTo({top:0,behavior:'smooth'});"
 style="
 width:85%;
 max-width:320px;
@@ -326,14 +327,6 @@ box-shadow:0 4px 12px rgba(0,0,0,0.4);
 </button>
 
 </div>
-
-<style>
-@keyframes brilloConsejo{
-0%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
-50%{box-shadow:0 0 18px rgba(245,197,66,0.6);}
-100%{box-shadow:0 0 6px rgba(245,197,66,0.3);}
-}
-</style>
 
 `,
 policia: `

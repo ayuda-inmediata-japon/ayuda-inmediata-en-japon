@@ -644,113 +644,306 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 transporte: `
 <h2 id="transporte">🚄 Transporte en Japón</h2>
 
-<p><strong>Si necesitas moverte en Japón y no sabes qué hacer, sigue estas guías rápidas según tu situación:</strong></p>
+<p><strong>En Japón el transporte es muy puntual y organizado, pero al principio puede confundir.</strong></p>
 
-<!-- 🚄 SHINKANSEN -->
-<h3>🚄 Viajar entre ciudades (Shinkansen)</h3>
-<img src="shinkansen.jpg" class="info-img">
+<p>Si no sabes cómo moverte, aquí encontrarás orientación práctica para tren, metro, shinkansen, taxi, bus y bicicleta.</p>
 
-<p><strong>Qué hacer:</strong></p>
-<p>- Ve a una estación grande (JR)</p>
-<p>- Busca “Shinkansen” o pregunta</p>
+<p><strong>Importante:</strong> muchas veces la forma más fácil es usar Google Maps y una tarjeta IC como <strong>Suica</strong> o <strong>Pasmo</strong>.</p>
 
-<p><strong>Cómo comprar:</strong></p>
-<p>- Máquina automática (inglés disponible)</p>
-<p>- Ventanilla JR (JR Ticket Office)</p>
+<img src="transporte.jpg" class="info-img" alt="Transporte en Japón">
 
-<p><strong>Asiento:</strong></p>
-<p>- 自由席 (sin reserva, más barato)</p>
-<p>- 指定席 (asiento reservado)</p>
+<p><strong>Si necesitas moverte y no sabes qué hacer, presiona una situación:</strong></p>
 
-<p><strong>Equipaje:</strong></p>
-<p>- Maletas grandes necesitan reserva especial</p>
+<div class="subtemas-box">
 
-<p><strong>Consejo:</strong></p>
-<p>- Llega 15 minutos antes</p>
+<details class="subtema-card">
+<summary>🚖 Necesito tomar un taxi</summary>
+<div class="subtema-content">
 
-<!-- 🚆 TREN -->
-<h3>🚆 Tren (dentro de la ciudad)</h3>
-<img src="tren.jpg" class="info-img">
+<img src="taxi.jpg" class="info-img" alt="Taxi en Japón">
 
 <p><strong>Qué hacer:</strong></p>
-<p>- Usa Google Maps para saber línea y estación</p>
+<ol>
+<li>Busca una parada de taxi o taxis con luz disponible.</li>
+<li>Si puedes, muestra la dirección en japonés.</li>
+<li>Entra y dile al conductor a dónde vas.</li>
+<li>No intentes abrir la puerta trasera: muchas veces se abre sola.</li>
+</ol>
 
-<p><strong>Cómo pagar:</strong></p>
-<p>- Tarjeta IC (Suica / Pasmo)</p>
-<p>- Tocar al entrar y salir</p>
+<p><strong>Dónde tomar:</strong></p>
+<ul>
+<li>Paradas oficiales de taxi</li>
+<li>Estaciones grandes</li>
+<li>Aeropuertos</li>
+<li>Hoteles</li>
+</ul>
 
-<p><strong>Consejo:</strong></p>
-<p>- Sigue colores y números de línea</p>
+<p><strong>Importante:</strong></p>
+<ul>
+<li>No se deja propina.</li>
+<li>Es cómodo, pero más caro que tren o bus.</li>
+<li>De noche puede costar bastante más.</li>
+</ul>
 
-<!-- 🚇 METRO -->
-<h3>🚇 Metro (subterráneo)</h3>
-<img src="metro.jpg" class="info-img">
+<p><strong>Frases útiles:</strong></p>
+<p>ここに行ってください<br>Koko ni itte kudasai<br>Lléveme a este lugar</p>
+
+<p>このホテルまでお願いします<br>Kono hoteru made onegaishimasu<br>Por favor, hasta este hotel</p>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚆 No entiendo el tren o el metro</summary>
+<div class="subtema-content">
+
+<img src="tren.jpg" class="info-img" alt="Tren en Japón">
 
 <p><strong>Qué hacer:</strong></p>
-<p>- Igual que tren</p>
-<p>- Sigue señalización en inglés</p>
-
-<p><strong>Consejo:</strong></p>
-<p>- Puede ser complejo → sigue colores</p>
-
-<!-- 🚌 BUS -->
-<h3>🚌 Autobús</h3>
-<img src="bus.jpg" class="info-img">
+<ol>
+<li>Abre Google Maps.</li>
+<li>Escribe tu destino.</li>
+<li>Revisa línea, plataforma y horario.</li>
+<li>Sigue los colores, números y carteles en la estación.</li>
+</ol>
 
 <p><strong>Cómo usar:</strong></p>
-<p>- Entras por atrás</p>
-<p>- Sales por delante</p>
-<p>- Pagas al bajar</p>
-
-<p><strong>Consejo:</strong></p>
-<p>- Usa tarjeta IC o monedas</p>
-
-<!-- 🚖 TAXI -->
-<h3>🚖 Taxi</h3>
-<img src="taxi.jpg" class="info-img">
-
-<p><strong>Cómo tomar:</strong></p>
-<p>- Busca luz roja (libre)</p>
-<p>- O usa parada de taxi</p>
+<ul>
+<li>Entra a la estación.</li>
+<li>Toca con tu tarjeta IC al entrar.</li>
+<li>Sigue la línea correcta.</li>
+<li>Al salir, vuelve a tocar la tarjeta.</li>
+</ul>
 
 <p><strong>Importante:</strong></p>
-<p>- Puertas automáticas</p>
-<p>- No se deja propina</p>
+<ul>
+<li>Tren y metro son muy puntuales.</li>
+<li>No hables fuerte ni hagas ruido.</li>
+<li>Muchas estaciones tienen nombres en inglés.</li>
+</ul>
+
+<p><strong>Frases útiles:</strong></p>
+<p>この駅はどこですか<br>Kono eki wa doko desu ka<br>¿Dónde está esta estación?</p>
+
+<p>この電車は〇〇に行きますか<br>Kono densha wa 〇〇 ni ikimasu ka<br>¿Este tren va a 〇〇?</p>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🎫 Cómo comprar ticket</summary>
+<div class="subtema-content">
+
+<img src="ticket.jpg" class="info-img" alt="Comprar ticket en Japón">
 
 <p><strong>Qué hacer:</strong></p>
-<p>- Mostrar dirección en japonés</p>
+<ol>
+<li>Busca una máquina de tickets en la estación.</li>
+<li>Cambia el idioma a inglés si está disponible.</li>
+<li>Selecciona destino o tarifa.</li>
+<li>Paga con efectivo o tarjeta si la máquina lo permite.</li>
+<li>Guarda el ticket hasta salir.</li>
+</ol>
 
-<!-- 🚲 BICICLETA -->
-<h3>🚲 Alquiler de bicicletas</h3>
-<img src="bici.jpg" class="info-img">
+<p><strong>Consejo:</strong></p>
+<p>Si vas a usar transporte varias veces, es mucho más fácil comprar una <strong>Suica / Pasmo</strong> que sacar ticket cada vez.</p>
 
-<p><strong>¿Cuándo usar?</strong></p>
-<p>- Distancias cortas</p>
-<p>- Turismo</p>
+<p><strong>Frases útiles:</strong></p>
+<p>切符を買いたいです<br>Kippu o kaitai desu<br>Quiero comprar un ticket</p>
 
-<p><strong>¿Dónde alquilar?</strong></p>
-<p>- Estaciones</p>
-<p>- Apps de bicicletas</p>
+<p>英語はありますか<br>Eigo wa arimasu ka<br>¿Hay inglés?</p>
 
-<p><strong>Cómo alquilar:</strong></p>
-<p>
-1. Descargar app<br>
-2. Registrarse<br>
-3. Escanear QR<br>
-4. Desbloquear bici
-</p>
+</div>
+</details>
 
-<p><strong>Precio:</strong></p>
-<p>- ¥100 – ¥300 (30 min)</p>
-<p>- ¥1000 – ¥2000 (día)</p>
+<details class="subtema-card">
+<summary>🚄 Cómo usar Shinkansen</summary>
+<div class="subtema-content">
 
-<p><strong>Cómo devolver:</strong></p>
-<p>- Solo en estaciones autorizadas</p>
+<img src="shinkansen.jpg" class="info-img" alt="Shinkansen en Japón">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Ve a una estación JR grande.</li>
+<li>Busca la zona de Shinkansen.</li>
+<li>Compra ticket en máquina o ventanilla JR.</li>
+<li>Revisa tu andén y tu vagón.</li>
+<li>Llega con tiempo porque sale puntual.</li>
+</ol>
+
+<p><strong>Asiento:</strong></p>
+<ul>
+<li><strong>自由席</strong> = sin reserva, más barato</li>
+<li><strong>指定席</strong> = asiento reservado</li>
+</ul>
+
+<p><strong>Equipaje:</strong></p>
+<ul>
+<li>Maletas pequeñas suelen ir contigo.</li>
+<li>Maletas grandes pueden requerir asiento con espacio para equipaje.</li>
+</ul>
+
+<p><strong>Consejo:</strong></p>
+<p>Para viajes largos entre ciudades, el Shinkansen es la opción más rápida y cómoda.</p>
+
+<p><strong>Frases útiles:</strong></p>
+<p>指定席をお願いします<br>Shiteiseki o onegaishimasu<br>Quiero asiento reservado</p>
+
+<p>自由席はどこですか<br>Jiyuuseki wa doko desu ka<br>¿Dónde está la zona de asientos no reservados?</p>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🧳 Viajo con equipaje</summary>
+<div class="subtema-content">
+
+<img src="equipaje.jpg" class="info-img" alt="Equipaje en transporte">
+
+<p><strong>Qué hacer:</strong></p>
+<ul>
+<li>En tren normal, lleva tu maleta sin bloquear el paso.</li>
+<li>En Shinkansen, revisa si tu maleta necesita espacio especial.</li>
+<li>En estaciones grandes puedes usar lockers.</li>
+<li>Si es mucho equipaje, a veces conviene taxi.</li>
+</ul>
+
+<p><strong>Consejo:</strong></p>
+<p>Si llevas varias maletas o maletas grandes, evita horas punta.</p>
+
+<p><strong>Frases útiles:</strong></p>
+<p>コインロッカーはどこですか<br>Koin rokkā wa doko desu ka<br>¿Dónde están los lockers?</p>
+
+<p>大きい荷物があります<br>Ōkii nimotsu ga arimasu<br>Tengo equipaje grande</p>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚌 Cómo usar el bus</summary>
+<div class="subtema-content">
+
+<img src="bus.jpg" class="info-img" alt="Bus en Japón">
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Sube por donde indique el bus (muchas veces por atrás).</li>
+<li>Toma número o usa tu tarjeta IC.</li>
+<li>Presiona el botón antes de tu parada.</li>
+<li>Baja por delante y paga al salir, si ese sistema aplica.</li>
+</ol>
+
+<p><strong>Consejo:</strong></p>
+<p>En algunas ciudades el sistema cambia, pero normalmente está indicado dentro del bus.</p>
+
+<p><strong>Frases útiles:</strong></p>
+<p>このバスは〇〇に行きますか<br>Kono basu wa 〇〇 ni ikimasu ka<br>¿Este bus va a 〇〇?</p>
+
+<p>ここで降ります<br>Koko de orimasu<br>Bajo aquí</p>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚲 Alquilar bicicleta</summary>
+<div class="subtema-content">
+
+<img src="bici.jpg" class="info-img" alt="Bicicleta en Japón">
+
+<p><strong>Dónde alquilar:</strong></p>
+<ul>
+<li>Estaciones de tren</li>
+<li>Tiendas de alquiler</li>
+<li>Estaciones automáticas con app</li>
+</ul>
+
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Busca una estación o tienda de alquiler.</li>
+<li>Regístrate si hace falta.</li>
+<li>Escanea el código o pide la bici.</li>
+<li>Revisa dónde debes devolverla.</li>
+</ol>
+
+<p><strong>Precio aproximado:</strong></p>
+<ul>
+<li>¥100–¥300 por 30 minutos</li>
+<li>¥1000–¥2000 por día completo</li>
+</ul>
 
 <p><strong>Importante:</strong></p>
-<p>- No estacionar mal (multa)</p>
+<ul>
+<li>No la dejes en cualquier sitio.</li>
+<li>Devuélvela en una estación oficial.</li>
+<li>Respeta señales y zonas de estacionamiento.</li>
+</ul>
 
-<!-- 💡 CONSEJO -->
+<p><strong>Frases útiles:</strong></p>
+<p>自転車を借りたいです<br>Jitensha o karitai desu<br>Quiero alquilar una bicicleta</p>
+
+<p>どこで返しますか<br>Doko de kaeshimasu ka<br>¿Dónde la devuelvo?</p>
+
+</div>
+</details>
+
+</div>
+
+<h3>🌐 Si tienes dificultad con el idioma:</h3>
+
+<p>Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo. No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto.</p>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT (explicar o traducir una situación)</a></p>
+
+<h3>🗣️ Frases útiles para transporte</h3>
+
+<ul style="line-height:1.9;">
+<li>
+<strong>Español</strong><br>
+¿Dónde está esta estación?<br>
+<strong>Romaji</strong><br>
+Kono eki wa doko desu ka?<br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">この駅はどこですか？</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+Quiero comprar un ticket<br>
+<strong>Romaji</strong><br>
+Kippu o kaitai desu<br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">切符を買いたいです</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Este tren va a 〇〇?<br>
+<strong>Romaji</strong><br>
+Kono densha wa 〇〇 ni ikimasu ka?<br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">この電車は〇〇に行きますか？</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+Lléveme a este lugar<br>
+<strong>Romaji</strong><br>
+Koko ni itte kudasai<br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">ここに行ってください</span>
+</li>
+</ul>
+
 <div style="
 border:3px solid #f5c542;
 border-radius:16px;
@@ -759,73 +952,57 @@ margin-top:25px;
 background:linear-gradient(145deg,#1a1a1a,#000);
 box-shadow:0 0 12px rgba(245,197,66,0.4);
 ">
-
-<h3 style="color:#f5c542;font-size:20px;">
-💡 Consejo importante
-</h3>
-
-<p>
-Compra una tarjeta IC (<strong>Suica / Pasmo</strong>)  
-Te permite usar casi todo el transporte sin comprar tickets cada vez.
+<h3 style="color:#f5c542;font-size:20px;margin-bottom:10px;">💡 Consejo importante</h3>
+<p style="line-height:1.6;">
+Compra una tarjeta IC (<strong>Suica / Pasmo</strong>). Te permite usar casi todo el transporte sin comprar tickets cada vez.
 </p>
-
+<p style="line-height:1.6;">
+Si llevas maletas grandes o viajas muy cansado, a veces un taxi puede ser mejor que cambiar muchas líneas.
+</p>
 </div>
 
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
 <p>🙏 Si esta información te fue útil, puedes:</p>
 
-<div style="margin-top:20px;">
-  <p style="margin-bottom:10px;">🙏 Si esta información te fue útil, puedes:</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
+<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+↗ Compartir
+</button>
 
-  <div style="display:flex;gap:10px;flex-wrap:wrap;">
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+• Guardar
+</button>
 
-    <button onclick="navigator.share ? navigator.share({title:'Ayuda en Japón', url:window.location.href}) : alert('Tu navegador no permite compartir')"
-    style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
-    ↗ Compartir
-    </button>
-
-    <button onclick="mostrarGuardar()"
-    style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
-    • Guardar
-    </button>
-
-    <button onclick="irAApoyo()"
-    style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff4d4d;">
-    ❤️ Apoyar
-    </button>
-
-  </div>
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff8a8a;">
+❤️ Apoyar
+</button>
 </div>
 
-<!-- BLOQUE GUARDAR OCULTO -->
-<div id="guardar-pagina" style="display:none;margin-top:18px;padding:16px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);">
+<div id="guardar-pagina" style="display:none;margin-top:18px;padding:12px;border-radius:8px;">
+<p><strong>📌 Cómo guardar esta página</strong></p>
 
-  <h3 style="margin-bottom:12px;">📌 Cómo guardar esta página</h3>
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y elige <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
+</p>
 
-  <p><strong>📱 iPhone (Safari)</strong></p>
-  <p>1. Toca el botón <strong>Compartir</strong> (cuadro con flecha ↑)</p>
-  <p>2. Desliza y selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
-  <p>3. Pulsa <strong>Añadir</strong></p>
-  <p style="color:#aaa;">👉 Se guardará como una app en tu celular</p>
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
+</p>
 
-  <p style="margin-top:14px;"><strong>🤖 Android (Chrome)</strong></p>
-  <p>1. Toca los <strong>3 puntos ⋮</strong> arriba a la derecha</p>
-  <p>2. Selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
-  <p>3. Confirma</p>
-  <p style="color:#aaa;">👉 Acceso rápido como aplicación</p>
-
-  <p style="margin-top:14px;"><strong>⭐ Opción rápida</strong></p>
-  <p>También puedes guardarla en <strong>Favoritos / Marcadores</strong> de tu navegador</p>
-
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
+</p>
 </div>
 
 <p style="font-size:12px;color:#777;margin-top:8px">
-También puedes colaborar con tarjeta.
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
 </p>
 
 <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
-
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
 style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:700;">
 ⬅️ Volver al buscador
@@ -835,8 +1012,8 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:
 style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:700;">
 ⬆️ Volver al tema Transporte
 </button>
-
 </div>
+`,
 `
 ,
     vida: `

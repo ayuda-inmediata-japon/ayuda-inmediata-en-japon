@@ -1373,6 +1373,79 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
   "7eleven": "vida",
   lawson: "vida",
   familymart: "vida",
+  // LLEGADA A JAPÓN
+"llegada": "llegada",
+"llegada a japon": "llegada",
+"llegada a japón": "llegada",
+"aeropuerto": "llegada",
+"llegue": "llegada",
+"llegué": "llegada",
+"recién llegado": "llegada",
+"primer dia": "llegada",
+"primer día": "llegada",
+"que hago al llegar": "llegada",
+"que hacer al llegar": "llegada",
+"no se que hacer aeropuerto": "llegada",
+"salir aeropuerto": "llegada",
+"llegar japon": "llegada",
+"llegar a japon": "llegada",
+"llegar a japón": "llegada",
+
+// TRANSPORTE DESDE AEROPUERTO
+"como ir del aeropuerto": "llegada",
+"como ir aeropuerto ciudad": "llegada",
+"transporte aeropuerto": "llegada",
+"tren aeropuerto": "llegada",
+"bus aeropuerto": "llegada",
+"taxi aeropuerto": "llegada",
+"ir del aeropuerto al hotel": "llegada",
+
+// INTERNET / SIM
+"internet aeropuerto": "llegada",
+"no tengo internet": "llegada",
+"wifi aeropuerto": "llegada",
+"sim japon": "llegada",
+"esim japon": "llegada",
+"comprar sim": "llegada",
+"internet japon": "llegada",
+
+// TARJETA IC
+"tarjeta ic": "llegada",
+"suica": "llegada",
+"pasmo": "llegada",
+"ic card": "llegada",
+"como usar suica": "llegada",
+"como usar pasmo": "llegada",
+
+// HOTEL / DIRECCIÓN
+"como llegar al hotel": "llegada",
+"direccion hotel japon": "llegada",
+"llegar al hotel": "llegada",
+"mostrar direccion japon": "llegada",
+
+// DINERO
+"cambiar dinero": "llegada",
+"cambio yenes": "llegada",
+"retirar dinero japon": "llegada",
+"atm aeropuerto": "llegada",
+"efectivo japon": "llegada",
+
+// EQUIPAJE / TAKKYUBIN
+"enviar maleta": "llegada",
+"enviar equipaje": "llegada",
+"maleta aeropuerto": "llegada",
+"kuroneko": "llegada",
+"takkyubin": "llegada",
+"takyubin": "llegada",
+"yamato": "llegada",
+"equipaje hotel": "llegada",
+
+// AYUDA GENERAL
+"estoy perdido aeropuerto": "llegada",
+"no entiendo aeropuerto": "llegada",
+"ayuda aeropuerto japon": "llegada",
+"informacion aeropuerto": "llegada",
+"mostrador informacion": "llegada",
 
   // 📄 TRÁMITES
   tramite: "tramites",

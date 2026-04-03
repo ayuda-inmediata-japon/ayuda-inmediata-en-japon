@@ -641,6 +641,182 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 
 </div>
 `,
+transporte: `
+<h2 id="transporte">🚄 Transporte en Japón</h2>
+
+<p><strong>Si necesitas moverte en Japón y no sabes qué hacer, sigue estas guías rápidas según tu situación:</strong></p>
+
+<!-- 🚄 SHINKANSEN -->
+<h3>🚄 Viajar entre ciudades (Shinkansen)</h3>
+<img src="shinkansen.jpg" class="info-img">
+
+<p><strong>Qué hacer:</strong></p>
+<p>- Ve a una estación grande (JR)</p>
+<p>- Busca “Shinkansen” o pregunta</p>
+
+<p><strong>Cómo comprar:</strong></p>
+<p>- Máquina automática (inglés disponible)</p>
+<p>- Ventanilla JR (JR Ticket Office)</p>
+
+<p><strong>Asiento:</strong></p>
+<p>- 自由席 (sin reserva, más barato)</p>
+<p>- 指定席 (asiento reservado)</p>
+
+<p><strong>Equipaje:</strong></p>
+<p>- Maletas grandes necesitan reserva especial</p>
+
+<p><strong>Consejo:</strong></p>
+<p>- Llega 15 minutos antes</p>
+
+<!-- 🚆 TREN -->
+<h3>🚆 Tren (dentro de la ciudad)</h3>
+<img src="tren.jpg" class="info-img">
+
+<p><strong>Qué hacer:</strong></p>
+<p>- Usa Google Maps para saber línea y estación</p>
+
+<p><strong>Cómo pagar:</strong></p>
+<p>- Tarjeta IC (Suica / Pasmo)</p>
+<p>- Tocar al entrar y salir</p>
+
+<p><strong>Consejo:</strong></p>
+<p>- Sigue colores y números de línea</p>
+
+<!-- 🚇 METRO -->
+<h3>🚇 Metro (subterráneo)</h3>
+<img src="metro.jpg" class="info-img">
+
+<p><strong>Qué hacer:</strong></p>
+<p>- Igual que tren</p>
+<p>- Sigue señalización en inglés</p>
+
+<p><strong>Consejo:</strong></p>
+<p>- Puede ser complejo → sigue colores</p>
+
+<!-- 🚌 BUS -->
+<h3>🚌 Autobús</h3>
+<img src="bus.jpg" class="info-img">
+
+<p><strong>Cómo usar:</strong></p>
+<p>- Entras por atrás</p>
+<p>- Sales por delante</p>
+<p>- Pagas al bajar</p>
+
+<p><strong>Consejo:</strong></p>
+<p>- Usa tarjeta IC o monedas</p>
+
+<!-- 🚖 TAXI -->
+<h3>🚖 Taxi</h3>
+<img src="taxi.jpg" class="info-img">
+
+<p><strong>Cómo tomar:</strong></p>
+<p>- Busca luz roja (libre)</p>
+<p>- O usa parada de taxi</p>
+
+<p><strong>Importante:</strong></p>
+<p>- Puertas automáticas</p>
+<p>- No se deja propina</p>
+
+<p><strong>Qué hacer:</strong></p>
+<p>- Mostrar dirección en japonés</p>
+
+<!-- 🚲 BICICLETA -->
+<h3>🚲 Alquiler de bicicletas</h3>
+<img src="bici.jpg" class="info-img">
+
+<p><strong>¿Cuándo usar?</strong></p>
+<p>- Distancias cortas</p>
+<p>- Turismo</p>
+
+<p><strong>¿Dónde alquilar?</strong></p>
+<p>- Estaciones</p>
+<p>- Apps de bicicletas</p>
+
+<p><strong>Cómo alquilar:</strong></p>
+<p>
+1. Descargar app<br>
+2. Registrarse<br>
+3. Escanear QR<br>
+4. Desbloquear bici
+</p>
+
+<p><strong>Precio:</strong></p>
+<p>- ¥100 – ¥300 (30 min)</p>
+<p>- ¥1000 – ¥2000 (día)</p>
+
+<p><strong>Cómo devolver:</strong></p>
+<p>- Solo en estaciones autorizadas</p>
+
+<p><strong>Importante:</strong></p>
+<p>- No estacionar mal (multa)</p>
+
+<!-- 💡 CONSEJO -->
+<div style="
+border:3px solid #f5c542;
+border-radius:16px;
+padding:18px;
+margin-top:25px;
+background:linear-gradient(145deg,#1a1a1a,#000);
+box-shadow:0 0 12px rgba(245,197,66,0.4);
+">
+
+<h3 style="color:#f5c542;font-size:20px;">
+💡 Consejo importante
+</h3>
+
+<p>
+Compra una tarjeta IC (<strong>Suica / Pasmo</strong>)  
+Te permite usar casi todo el transporte sin comprar tickets cada vez.
+</p>
+
+</div>
+
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p>🙏 Si esta información te fue útil, puedes:</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
+
+<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+• Guardar
+</button>
+
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff8a8a;">
+❤️ Apoyar
+</button>
+
+</div>
+
+<div id="guardar-pagina" style="display:none;margin-top:18px;">
+<p><strong>📌 Cómo guardar esta página</strong></p>
+<p>iPhone / Android: añadir a favoritos o pantalla de inicio</p>
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:8px">
+También puedes colaborar con tarjeta.
+</p>
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:700;">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('transporte').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:700;">
+⬆️ Volver al tema Transporte
+</button>
+
+</div>
+`
     vida: `
       <h2>🏠 Vida diaria</h2>
       <p><strong>Basura:</strong> cada ciudad tiene reglas (燃えるごみ / 燃えないごみ / 資源ごみ).</p>

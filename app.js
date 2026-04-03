@@ -42,6 +42,217 @@ document.addEventListener("DOMContentLoaded", () => {
   // ======= RESPUESTAS (clave -> HTML) =======
   // Puedes ampliar con calma luego.
   const respuestas = {
+    <h2>✈️ Llegada a Japón</h2>
+
+<img src="AQUI_TU_IMAGEN" style="width:100%; border-radius:10px; margin:10px 0;">
+
+<p>🟢 Presiona una situación para ver qué hacer:</p>
+
+<div class="opcion" onclick="mostrarSubtema('llegada1')">🧳 Llegué al aeropuerto y no sé qué hacer</div>
+<div id="llegada1" class="subtema">
+<p>Al salir del avión, sigue los letreros de salida, tren o taxi.</p>
+<p>Primero asegúrate de tener internet, dinero y la dirección de tu hotel.</p>
+<p>Si estás perdido, busca el mostrador de información.</p>
+</div>
+
+<div class="opcion" onclick="mostrarSubtema('llegada2')">🚆 Cómo ir del aeropuerto a la ciudad</div>
+<div id="llegada2" class="subtema">
+<p>Usa Google Maps para ver la mejor ruta.</p>
+<p>El tren es la opción más rápida y económica.</p>
+<p>El bus es útil si llevas muchas maletas.</p>
+</div>
+
+<div class="opcion" onclick="mostrarSubtema('llegada3')">📶 No tengo internet / SIM</div>
+<div id="llegada3" class="subtema">
+<p>Conéctate al WiFi del aeropuerto.</p>
+<p>Compra una SIM o usa eSIM.</p>
+<p>Guarda mapas offline si no tienes conexión.</p>
+</div>
+
+<div class="opcion" onclick="mostrarSubtema('llegada4')">💳 Cómo usar tarjeta IC</div>
+<div id="llegada4" class="subtema">
+<p>Sirve para tren, metro y tiendas.</p>
+<p>Se carga con efectivo.</p>
+<p>Solo toca al entrar y salir.</p>
+</div>
+
+<div class="opcion" onclick="mostrarSubtema('llegada5')">🏨 Cómo llegar a mi hotel</div>
+<div id="llegada5" class="subtema">
+<p>Guarda la dirección en japonés.</p>
+<p>Muéstrala en taxi o estación.</p>
+<p>Usa Google Maps para guiarte.</p>
+</div>
+
+<div class="opcion" onclick="mostrarSubtema('llegada6')">💱 Cambiar dinero</div>
+<div id="llegada6" class="subtema">
+<p>Puedes cambiar en el aeropuerto.</p>
+<p>También retirar en ATM.</p>
+<p>Lleva siempre efectivo.</p>
+</div>
+
+---
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">
+Traductor español → japonés (DeepL)
+</a></p>
+
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">
+Traductor español → japonés (Google)
+</a></p>
+
+<p>🟢 <a href="https://chat.openai.com/" target="_blank">
+ChatGPT (explicar o traducir una situación)
+</a></p>
+
+---
+
+<h3>🗣️ Frases útiles</h3>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+¿Dónde está la estación?<br><br>
+
+<strong>Romaji</strong><br>
+Eki wa doko desu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">駅はどこですか？</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+Quiero ir a este hotel<br><br>
+
+<strong>Romaji</strong><br>
+Kono hoteru ni ikitai desu<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">このホテルに行きたいです</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+No tengo internet<br><br>
+
+<strong>Romaji</strong><br>
+Intaanetto ga arimasen<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">インターネットがありません</span>
+</li>
+
+</ul>
+
+---
+
+<h3>🌍 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+Disculpe, no hablo mucho japonés.<br><br>
+
+<strong>Romaji</strong><br>
+Sumimasen, nihongo ga amari hanasemasen.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">
+すみません、日本語があまり話せません。
+</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Puedo usar un traductor para explicarme?<br><br>
+
+<strong>Romaji</strong><br>
+Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">
+翻訳アプリを使って説明してもいいですか？
+</span>
+</li>
+
+</ul>
+
+---
+
+<div style="background:#2a2112;border:2px solid #f0b93a;padding:15px;border-radius:12px;">
+<b>💡 Consejo importante</b><br>
+Primero resuelve: internet, transporte, hotel y efectivo.
+</div>
+
+---
+
+<p>
+🙏 Si esta información te fue útil, puedes:
+</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()">
+• Guardar
+</button>
+
+<button onclick="irAApoyo()">
+❤️ Apoyar
+</button>
+
+</div>
+
+<div id="guardar-pagina" style="display:none;">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
+</p>
+
+</div>
+
+<p style="font-size:12px;color:#777;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
+
+---
+
+<div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('tema-llegada').scrollIntoView({behavior:'smooth'})">
+⬆️ Volver al tema Llegada
+</button>
+
+</div>
     taxi: `
       <h2>🚕 Taxi en Japón</h2>
       <p><strong>Cómo pedirlo:</strong> busca una parada de taxi (タクシー乗り場) o usa apps como GO / DiDi (según zona).</p>

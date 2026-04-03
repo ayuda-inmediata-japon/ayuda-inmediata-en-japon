@@ -295,34 +295,11 @@ También es posible colaborar utilizando tarjeta de crédito o débito a través
 <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
 
 <button onclick="document.getElementById('contenido').innerHTML = inicio; window.scrollTo({top:0,behavior:'smooth'});"
-style="
-width:85%;
-max-width:320px;
-padding:14px;
-border-radius:14px;
-background:#22c55e;
-color:white;
-border:none;
-font-weight:700;
-font-size:16px;
-box-shadow:0 4px 12px rgba(0,0,0,0.4);
-">
+style="width:85%;max-width:320px;padding:14px;border-radius:14px;background:#22c55e;color:white;border:none;font-weight:700;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,0.4);">
 ⬅️ Volver al buscador
-</button>
-
+</button> 
 <button onclick="document.getElementById('contenido').innerHTML = secciones['emergencia']; window.scrollTo({top:0,behavior:'smooth'});"
-style="
-width:85%;
-max-width:320px;
-padding:14px;
-border-radius:14px;
-background:#3b82f6;
-color:white;
-border:none;
-font-weight:700;
-font-size:16px;
-box-shadow:0 4px 12px rgba(0,0,0,0.4);
-">
+style="width:85%;max-width:320px;padding:14px;border-radius:14px;background:#3b82f6;color:white;border:none;font-weight:700;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,0.4);">
 ⬆️ Volver al tema Emergencia
 </button>
 

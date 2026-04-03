@@ -235,94 +235,54 @@ En caso de desastre, busca los puntos de evacuación señalizados (<strong>避�
 🙏 Si esta información te fue útil, puedes:
 </p>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-start;margin-top:10px;">
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
 
 <button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-style="padding:8px 14px;border-radius:6px;background:#1f1f1f;color:#fff;border:1px solid #555;">
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
 ↗ Compartir
 </button>
 
-<button onclick="document.getElementById('guardar-pagina').style.display='block'"
-style="padding:8px 14px;border-radius:6px;background:#1f1f1f;color:#fff;border:1px solid #555;">
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
 • Guardar
 </button>
 
-<button onclick="document.getElementById('apoyo').style.display='block'"
-style="padding:8px 14px;border-radius:6px;background:#1f1f1f;color:#ff8a8a;border:1px solid #555;">
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff8a8a;">
 ❤️ Apoyar
 </button>
 
 </div>
 
-<div id="guardar-pagina" style="display:none;margin-top:15px;">
-
+<div id="guardar-pagina" style="display:none;margin-top:18px;padding:12px;border-radius:8px;">
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
 <p><b>En iPhone / iPad:</b><br>
-Pulsa el botón compartir y selecciona "Añadir a pantalla de inicio".
+Pulsa el botón compartir del navegador y elige <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
 </p>
 
 <p><b>En Android:</b><br>
-Pulsa el menú del navegador y selecciona "Añadir a pantalla de inicio".
+Pulsa el menú del navegador (⋮) y selecciona <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
 </p>
 
 <p><b>En computadora:</b><br>
-Pulsa la estrella ⭐ o presiona Ctrl + D.
+Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
 </p>
-
 </div>
 
-<div id="apoyo" class="support-section" style="display:none;margin-top:15px;">
-
-<h3>❤️ Apoya esta guía</h3>
-
-<p>
-Si esta guía te ayudó, puedes apoyar este proyecto.
-</p>
-
-<div class="support-buttons">
-<a class="support-btn" href="https://paypal.me/JGarciaUmey" target="_blank">💳 PayPal</a>
-<a class="support-btn" href="https://ko-fi.com/ayudainmediatajapon" target="_blank">☕ Ko-fi</a>
-<a class="support-btn" href="#" target="_blank">📱 PayPay</a>
-</div>
-
-</div>
-
-<p style="font-size:12px;color:#777;margin-top:10px;">
+<p style="font-size:12px;color:#777;margin-top:8px">
 También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
 </p>
 
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
 
-<button onclick="document.getElementById('contenido').innerHTML = inicio"
-style="
-width:85%;
-max-width:320px;
-padding:14px;
-border-radius:14px;
-background:#22c55e;
-color:white;
-border:none;
-font-weight:700;
-font-size:16px;
-box-shadow:0 4px 12px rgba(0,0,0,0.4);
-">
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:700;">
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('contenido').innerHTML = secciones['emergencia']"
-style="
-width:85%;
-max-width:320px;
-padding:14px;
-border-radius:14px;
-background:#3b82f6;
-color:white;
-border:none;
-font-weight:700;
-font-size:16px;
-box-shadow:0 4px 12px rgba(0,0,0,0.4);
-">
+<button onclick="document.getElementById('emergencia').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:700;">
 ⬆️ Volver al tema Emergencia
 </button>
 

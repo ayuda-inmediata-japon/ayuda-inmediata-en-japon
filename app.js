@@ -775,49 +775,49 @@ Te permite usar casi todo el transporte sin comprar tickets cada vez.
 
 <p>🙏 Si esta información te fue útil, puedes:</p>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
+<div style="margin-top:20px;">
+  <p style="margin-bottom:10px;">🙏 Si esta información te fue útil, puedes:</p>
 
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
-↗ Compartir
-</button>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="mostrarGuardar()"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
-• Guardar
-</button>
+    <button onclick="navigator.share ? navigator.share({title:'Ayuda en Japón', url:window.location.href}) : alert('Tu navegador no permite compartir')"
+    style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+    ↗ Compartir
+    </button>
 
-<button onclick="irAApoyo()"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff8a8a;">
-❤️ Apoyar
-</button>
-<div class="guardar-pagina">
-  <h3>📌 Cómo guardar esta página</h3>
+    <button onclick="mostrarGuardar()"
+    style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+    • Guardar
+    </button>
 
-  <div class="guardar-opciones">
-
-    <div class="guardar-item">
-      <h4>📱 iPhone (Safari)</h4>
-      <p>1. Toca el botón <strong>Compartir</strong> (cuadro con flecha ↑)</p>
-      <p>2. Desliza y selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
-      <p>3. Pulsa <strong>Añadir</strong></p>
-      <p class="tip">👉 Se guardará como una app en tu celular</p>
-    </div>
-
-    <div class="guardar-item">
-      <h4>🤖 Android (Chrome)</h4>
-      <p>1. Toca los <strong>3 puntos ⋮</strong> arriba a la derecha</p>
-      <p>2. Selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
-      <p>3. Confirma</p>
-      <p class="tip">👉 Acceso rápido como aplicación</p>
-    </div>
-
-    <div class="guardar-item">
-      <h4>⭐ Opción rápida</h4>
-      <p>También puedes guardarla en <strong>Favoritos / Marcadores</strong> de tu navegador</p>
-    </div>
+    <button onclick="irAApoyo()"
+    style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff4d4d;">
+    ❤️ Apoyar
+    </button>
 
   </div>
+</div>
+
+<!-- BLOQUE GUARDAR OCULTO -->
+<div id="guardar-pagina" style="display:none;margin-top:18px;padding:16px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);">
+
+  <h3 style="margin-bottom:12px;">📌 Cómo guardar esta página</h3>
+
+  <p><strong>📱 iPhone (Safari)</strong></p>
+  <p>1. Toca el botón <strong>Compartir</strong> (cuadro con flecha ↑)</p>
+  <p>2. Desliza y selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
+  <p>3. Pulsa <strong>Añadir</strong></p>
+  <p style="color:#aaa;">👉 Se guardará como una app en tu celular</p>
+
+  <p style="margin-top:14px;"><strong>🤖 Android (Chrome)</strong></p>
+  <p>1. Toca los <strong>3 puntos ⋮</strong> arriba a la derecha</p>
+  <p>2. Selecciona <strong>"Añadir a pantalla de inicio"</strong></p>
+  <p>3. Confirma</p>
+  <p style="color:#aaa;">👉 Acceso rápido como aplicación</p>
+
+  <p style="margin-top:14px;"><strong>⭐ Opción rápida</strong></p>
+  <p>También puedes guardarla en <strong>Favoritos / Marcadores</strong> de tu navegador</p>
+
 </div>
 
 <p style="font-size:12px;color:#777;margin-top:8px">

@@ -1351,7 +1351,6 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 `,
 alojamiento: `
 <h2 id="alojamiento">🏨 Alojamiento en Japón</h2>
-
 <p>En Japón hay muchas opciones para dormir según tu presupuesto.</p>
 
 <p>

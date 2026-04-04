@@ -251,8 +251,8 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 <button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})">
 ⬆️ Volver al tema Llegada
 </button>
-
 </div>
+`,
 salud: `
 <h2 id="salud">🏥 Salud en Japón</h2>
 

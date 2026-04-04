@@ -252,6 +252,7 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 ⬆️ Volver al tema Llegada
 </button>
 </div>
+`,
 alojamiento: `
 <h2 id="hotel">🏨 Alojamiento en Japón</h2>
 

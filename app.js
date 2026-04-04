@@ -622,9 +622,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:
 style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:700;">
 ⬆️ Volver al tema Emergencia
 </button>
-
 </div>
-
 `,
 policia: `
 <h2 id="policia">🚓 Policía en Japón</h2>

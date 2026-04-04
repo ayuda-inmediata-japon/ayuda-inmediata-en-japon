@@ -252,7 +252,6 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 ⬆️ Volver al tema Llegada
 </button>
 </div>
-`,
 <h2 id="hotel">🏨 Alojamiento en Japón</h2>
 
 <p>En Japón puedes alojarte en diferentes tipos de lugares según tu presupuesto y necesidad. Todo es muy organizado y seguro.</p>
@@ -394,20 +393,7 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 taxi: `
       <h2>🚕 Taxi en Japón</h2>
       <p><strong>Cómo pedirlo:</strong> busca una parada de taxi (タクシー乗り場) o usa apps como GO / DiDi (según zona).</p>
-      <p><strong>Frases útiles:</strong> 「ここまでお願いします」(Koko made onegaishimasu) = “Hasta aquí por favor”.</p>
-    `,
-
-    hospital: `
-      <h2>🏥 Salud / Hospital</h2>
-      <p><strong>Emergencia grave:</strong> llama al <strong>119</strong> (ambulancia).</p>
-      <p><strong>Si no es emergencia:</strong> busca clínica (クリニック) cercana o “内科” (medicina interna).</p>
-    `,
-
-    hotel: `
-      <h2>🏨 Alojamiento / Hotel</h2>
-      <p><strong>Check-in:</strong> muestra pasaporte y reserva. Si llegas tarde, avisa al hotel.</p>
-      <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
-    `,
+      <p><strong>Frases útiles:</strong> 「ここまでお願いします」(Koko made onegaishimasu) = “Hasta aquí por favor”.</
 
 emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>

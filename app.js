@@ -253,200 +253,143 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 </button>
 </div>
 `,
-salud: `
-<h2 id="salud">🏥 Salud en Japón</h2>
+<h2 id="hotel">🏨 Alojamiento en Japón</h2>
 
-<p>
-En Japón puedes ir directamente a una clínica sin cita en la mayoría de casos.
-</p>
+<p>En Japón puedes alojarte en diferentes tipos de lugares según tu presupuesto y necesidad. Todo es muy organizado y seguro.</p>
 
-<p>
-✔ Si tienes seguro (nacional o de empresa), pagas aprox. <strong>30%</strong>.<br>
-✔ Si no tienes seguro (turista), igual te atienden, pero pagas <strong>100%</strong>.
-</p>
+<p><strong>Importante:</strong> siempre lleva tu pasaporte para el check-in.</p>
 
-<p>
-💰 Ejemplo aproximado:
+<img src="hotel1.jpg" class="info-img">
+<img src="hotel2.jpg" class="info-img">
+<img src="hotel3.jpg" class="info-img">
+
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+<summary>🏨 Hoteles (Hotel)</summary>
+<div class="subtema-content">
+<p>Son los más comunes. Habitaciones privadas, baño, recepción 24h en muchos casos.</p>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🛏️ Hostales / Guest House</summary>
+<div class="subtema-content">
+<p>Más económicos. Habitaciones compartidas o privadas. Buen ambiente para viajeros.</p>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🛌 Cápsula hotel</summary>
+<div class="subtema-content">
+<p>Espacios pequeños tipo cápsula. Ideal para dormir una noche. Económico.</p>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🏯 Ryokan (tradicional japonés)</summary>
+<div class="subtema-content">
+<p>Hospedaje tradicional con tatami y futón. A veces incluye comida japonesa.</p>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🏠 Minshuku (casa familiar)</summary>
+<div class="subtema-content">
+<p>Similar a ryokan pero más sencillo y económico. Ambiente familiar.</p>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🏡 Casas o Airbnb</summary>
+<div class="subtema-content">
+<p>Departamentos o casas completas. Ideal para grupos o estadías largas.</p>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>💻 Café internet (Manga café)</summary>
+<div class="subtema-content">
+<p>Puedes pasar la noche. Incluye asiento, internet, bebidas. Opción barata de emergencia.</p>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>❌ Problemas en el check-in</summary>
+<div class="subtema-content">
+<ol>
+<li>Muestra tu reserva.</li>
+<li>Usa traductor si no te entienden.</li>
+<li>Pide ayuda en recepción.</li>
+</ol>
+</div>
+</details>
+
+</div>
+
+<h3>🌐 Si tienes dificultad con el idioma</h3>
+
+<p>Puedes mostrar este mensaje:</p>
+
 <ul>
-<li>Consulta con seguro: ¥3,000 – ¥10,000</li>
-<li>Sin seguro: ¥10,000 – ¥30,000 o más</li>
-<li>Hospital o emergencia: puede ser más alto</li>
-</ul>
-</p>
-
-<p>
-👉 Cualquier clínica puede atenderte, incluso siendo turista.
-</p>
-
-<div style="display:flex; gap:10px; overflow-x:auto; margin:10px 0;">
-
-<img src="IMAGEN_1" style="width:85%; border-radius:10px;">
-<img src="IMAGEN_2" style="width:85%; border-radius:10px;">
-<img src="IMAGEN_3" style="width:85%; border-radius:10px;">
-
-</div>
-
-<p>🟢 Presiona una situación para ver qué hacer:</p>
-
-<div class="opcion" onclick="mostrarSubtema('salud1')">🤒 Me siento mal / fiebre / dolor</div>
-<div id="salud1" class="subtema">
-<p>Busca una clínica cercana (クリニック).</p>
-<p>En la mayoría puedes entrar sin cita.</p>
-<p>Lleva pasaporte y seguro si tienes.</p>
-<p>Explica tus síntomas o usa traductor.</p>
-</div>
-
-<div class="opcion" onclick="mostrarSubtema('salud2')">🚑 Emergencia médica</div>
-<div id="salud2" class="subtema">
-<p>Llama al <strong>119</strong>.</p>
-<p>La ambulancia es gratuita.</p>
-<p>Di tu ubicación lo más claro posible.</p>
-</div>
-
-<div class="opcion" onclick="mostrarSubtema('salud3')">💊 Comprar medicina</div>
-<div id="salud3" class="subtema">
-<p>Busca una farmacia (ドラッグストア).</p>
-<p>Para síntomas leves puedes comprar sin receta.</p>
-<p>Pide ayuda al personal.</p>
-</div>
-
-<div class="opcion" onclick="mostrarSubtema('salud4')">🏥 Ir a hospital grande</div>
-<div id="salud4" class="subtema">
-<p>Puede requerir cita o referencia.</p>
-<p>Si no es urgente, ve primero a clínica.</p>
-<p>Puede haber espera larga.</p>
-</div>
-
-<div class="opcion" onclick="mostrarSubtema('salud5')">💳 No tengo seguro</div>
-<div id="salud5" class="subtema">
-<p>Igual puedes atenderte.</p>
-<p>Pagarás el costo completo.</p>
-<p>Se paga el mismo día normalmente.</p>
-</div>
-
-<div class="opcion" onclick="mostrarSubtema('salud6')">🗣️ No hablo japonés</div>
-<div id="salud6" class="subtema">
-<p>Usa traductor en el celular.</p>
-<p>Muestra frases escritas.</p>
-<p>Algunos lugares tienen inglés básico.</p>
-</div>
-
-<h3>🌍 Si tienes dificultad con el idioma</h3>
-
-<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
-
-<ul style="line-height:1.9">
-
-<li>
-<strong>Español</strong><br>
-No me siento bien.<br><br>
-<strong>Romaji</strong><br>
-Taichou ga warui desu.<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">体調が悪いです。</span>
-</li>
-
-<li>
-<strong>Español</strong><br>
-Necesito ver a un doctor.<br><br>
-<strong>Romaji</strong><br>
-Isha ni mitai desu.<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">医者に診てもらいたいです。</span>
-</li>
-
+<li><strong>Español:</strong> Tengo una reserva.</li>
+<li><strong>Romaji:</strong> Yoyaku ga arimasu.</li>
+<li><strong>日本語:</strong> 予約があります。</li>
 </ul>
 
 <h3>🌐 Traductores recomendados</h3>
 
-<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
-<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
-<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></p>
+<p>🔵 <a href="https://www.deepl.com/translator">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com/">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="#">ChatGPT (explicar o traducir una situación)</a></p>
 
 <h3>🗣️ Frases útiles</h3>
 
-<ul style="line-height:1.9">
+<ul>
 
 <li>
-<strong>Español</strong><br>
-Me duele aquí<br><br>
-<strong>Romaji</strong><br>
-Koko ga itai desu<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">ここが痛いです</span>
+<strong>Español:</strong> Ayuda por favor<br>
+<strong>Romaji:</strong> Tasukete kudasai<br>
+<strong style="color:red;">助けてください</strong>
 </li>
 
 <li>
-<strong>Español</strong><br>
-Tengo fiebre<br><br>
-<strong>Romaji</strong><br>
-Netsu ga arimasu<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">熱があります</span>
+<strong>Español:</strong> Tengo una reserva<br>
+<strong>Romaji:</strong> Yoyaku ga arimasu<br>
+<strong>日本語:</strong> 予約があります
 </li>
 
 <li>
-<strong>Español</strong><br>
-Necesito ayuda médica<br><br>
-<strong>Romaji</strong><br>
-Iryou no tasuke ga hitsuyou desu<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">医療の助けが必要です</span>
+<strong>Español:</strong> Quiero una habitación<br>
+<strong>Romaji:</strong> Heya o onegaishimasu<br>
+<strong>日本語:</strong> 部屋をお願いします
+</li>
+
+<li>
+<strong>Español:</strong> ¿Dónde está mi habitación?<br>
+<strong>Romaji:</strong> Heya wa doko desu ka?<br>
+<strong>日本語:</strong> 部屋はどこですか？
 </li>
 
 </ul>
 
-<div style="background:#2a2112;border:2px solid #f0b93a;box-shadow:0 0 14px rgba(240,185,58,.35);padding:18px;border-radius:16px;margin-top:18px;">
-<h3 style="color:#f0c24b;margin-top:0;">💡 Consejo importante</h3>
-<p style="margin-bottom:0;">
-Si no es grave, ve primero a una clínica. Es más rápido y más económico.
-</p>
+<div class="consejo-box">
+💡 <strong>Consejo importante</strong>
+<p>Si llegas tarde al hotel, avisa antes. Algunos cancelan automáticamente si no te presentas.</p>
 </div>
 
 <p>🙏 Si esta información te fue útil, puedes:</p>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<button>↗ Compartir</button>
+<button>• Guardar</button>
+<button>❤️ Apoyar</button>
 
-<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})">
-↗ Compartir
-</button>
+<br><br>
 
-<button onclick="mostrarGuardar()">
-• Guardar
-</button>
-
-<button onclick="irAApoyo()">
-❤️ Apoyar
-</button>
-
-</div>
-
-<div id="guardar-pagina" style="display:none;">
-
-<p><strong>📌 Cómo guardar esta página</strong></p>
-
-<p><b>iPhone / iPad:</b> Añadir a pantalla de inicio</p>
-<p><b>Android:</b> Añadir a pantalla de inicio</p>
-<p><b>PC:</b> Ctrl + D</p>
-
-</div>
-
-<p style="font-size:12px;color:#777;margin-top:10px;">
-También es posible colaborar utilizando tarjeta de crédito o débito.
-</p>
-
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
-
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
-⬅️ Volver al buscador
-</button>
-
-<button onclick="document.getElementById('salud').scrollIntoView({behavior:'smooth'})">
-⬆️ Volver al tema Salud
-</button>
-
-</div>
-
+<button>⬅ Volver al buscador</button>
+<button>⬆ Volver al tema Alojamiento</button>
 `,
 taxi: `
       <h2>🚕 Taxi en Japón</h2>

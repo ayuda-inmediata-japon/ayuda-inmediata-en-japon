@@ -252,6 +252,7 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 ⬆️ Volver al tema Llegada
 </button>
 </div>
+alojamiento: `
 <h2 id="hotel">🏨 Alojamiento en Japón</h2>
 
 <p>En Japón puedes alojarte en diferentes tipos de lugares según tu presupuesto y necesidad. Todo es muy organizado y seguro.</p>

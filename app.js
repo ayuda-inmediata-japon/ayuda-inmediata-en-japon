@@ -1654,7 +1654,7 @@ Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
   rescate: "emergencia",
   explosion: "emergencia",
 
-  // 🏥 SALUD
+  
   // 🏥 SALUD
 salud: "salud",
 hospital: "salud",

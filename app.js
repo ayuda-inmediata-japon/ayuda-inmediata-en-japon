@@ -1583,10 +1583,6 @@ Check-out wa nanji desu ka?<br><br>
 Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
 </p>
 </div>
-
-<!-- BOTONES (NO TOCAR) -->
-...
-
 `,
     vida: `
       <h2>🏠 Vida diaria</h2>

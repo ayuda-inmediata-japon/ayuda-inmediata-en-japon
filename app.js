@@ -1514,7 +1514,7 @@ Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
 </p>
 </div>
 `,
-    vida: `
+vida: `
       <h2>🏠 Vida diaria</h2>
       <p><strong>Basura:</strong> cada ciudad tiene reglas (燃えるごみ / 燃えないごみ / 資源ごみ).</p>
       <p><strong>Consejo:</strong> revisa el calendario de tu municipio.</p>

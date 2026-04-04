@@ -1663,6 +1663,12 @@ Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
   enfermo: "hospital",
   fiebre: "hospital",
   dolor: "hospital",
+  "salud": "salud",
+"hospital": "salud",
+"doctor": "salud",
+"clinica": "salud",
+"clínica": "salud",
+"medicina": "salud",
 
   // 🚕 TRANSPORTE
   tax: "taxi",
@@ -1701,7 +1707,14 @@ Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
   capsula: "hotel",
   capsule: "hotel",
   airbnb: "hotel",
-
+"alojamiento": "
+"hotel": "alojamiento",
+"hospedaje": "alojamiento",
+"capsula": "alojamiento",
+"cápsula": "alojamiento",
+"airbnb": "alojamiento",
+"internet cafe": "alojamiento",
+"internet café": "alojamiento",
   // 💴 DINERO
   dinero: "dinero",
   yen: "dinero",

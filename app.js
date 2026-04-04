@@ -48,57 +48,94 @@ document.addEventListener("DOMContentLoaded", () => {
 <img src="AQUI_TU_IMAGEN" style="width:100%; border-radius:10px; margin:10px 0;">
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+<div class="subtemas-box">
 
-<div class="opcion" onclick="mostrarSubtema('llegada1')">🧳 Llegué al aeropuerto y no sé qué hacer</div>
-<div id="llegada1" class="subtema">
-<p>Sigue los letreros de salida, tren o taxi.</p>
-<p>Asegúrate de tener internet, dinero y la dirección del hotel.</p>
-<p>Si estás perdido, busca el mostrador de información.</p>
-</div>
+  <details class="subtema-card">
+    <summary>🧳 Llegué al aeropuerto y no sé qué hacer</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Sigue los letreros de salida, tren o taxi.</li>
+        <li>Asegúrate de tener internet, dinero y la dirección del hotel.</li>
+        <li>Si estás perdido, busca el mostrador de información.</li>
+      </ol>
+    </div>
+  </details>
 
-<div class="opcion" onclick="mostrarSubtema('llegada2')">🚆 Cómo ir del aeropuerto a la ciudad</div>
-<div id="llegada2" class="subtema">
-<p>Usa Google Maps.</p>
-<p>El tren es la opción más rápida.</p>
-<p>El bus es mejor si llevas maletas.</p>
-<p>Taxi es más caro pero directo.</p>
-</div>
+  <details class="subtema-card">
+    <summary>🚆 Cómo ir del aeropuerto a la ciudad</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Usa Google Maps.</li>
+        <li>El tren suele ser la opción más rápida.</li>
+        <li>El bus es mejor si llevas maletas.</li>
+        <li>El taxi es más caro pero directo.</li>
+      </ol>
+    </div>
+  </details>
 
-<div class="opcion" onclick="mostrarSubtema('llegada3')">📶 No tengo internet / SIM</div>
-<div id="llegada3" class="subtema">
-<p>Conéctate al WiFi del aeropuerto.</p>
-<p>Compra SIM o eSIM.</p>
-<p>Guarda mapas offline.</p>
-</div>
+  <details class="subtema-card">
+    <summary>📶 No tengo internet / SIM</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Conéctate al WiFi del aeropuerto.</li>
+        <li>Compra una SIM o usa eSIM.</li>
+        <li>Guarda mapas offline.</li>
+      </ol>
+    </div>
+  </details>
 
-<div class="opcion" onclick="mostrarSubtema('llegada4')">💳 Cómo usar tarjeta IC (Suica / Pasmo)</div>
-<div id="llegada4" class="subtema">
-<p>Sirve para tren, metro y tiendas.</p>
-<p>Se recarga con efectivo.</p>
-<p>Solo toca al entrar y salir.</p>
-</div>
+  <details class="subtema-card">
+    <summary>💳 Cómo usar tarjeta IC (Suica / Pasmo)</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Sirve para tren, metro y tiendas.</li>
+        <li>Se recarga con efectivo.</li>
+        <li>Solo toca al entrar y salir.</li>
+      </ol>
+    </div>
+  </details>
 
-<div class="opcion" onclick="mostrarSubtema('llegada5')">🏨 Cómo llegar a mi hotel</div>
-<div id="llegada5" class="subtema">
-<p>Guarda la dirección en japonés.</p>
-<p>Muéstrala si necesitas ayuda.</p>
-<p>Usa Google Maps.</p>
-</div>
+  <details class="subtema-card">
+    <summary>🏨 Cómo llegar a mi hotel</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Guarda la dirección en japonés.</li>
+        <li>Muéstrala si necesitas ayuda.</li>
+        <li>Usa Google Maps.</li>
+      </ol>
+    </div>
+  </details>
 
-<div class="opcion" onclick="mostrarSubtema('llegada6')">💱 Cambiar dinero o retirar efectivo</div>
-<div id="llegada6" class="subtema">
-<p>Puedes cambiar en el aeropuerto.</p>
-<p>También retirar en ATM.</p>
-<p>Lleva efectivo.</p>
-</div>
+  <details class="subtema-card">
+    <summary>💱 Cambiar dinero o retirar efectivo</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Puedes cambiar en el aeropuerto.</li>
+        <li>También retirar en ATM.</li>
+        <li>Lleva efectivo.</li>
+      </ol>
+    </div>
+  </details>
 
-<div class="opcion" onclick="mostrarSubtema('llegada7')">📦 Enviar equipaje (Kuroneko / Takkyubin)</div>
-<div id="llegada7" class="subtema">
-<p>Puedes enviar maletas al hotel o destino.</p>
-<p>Disponible en aeropuerto, hoteles y konbini.</p>
-<p>Necesitas la dirección del hotel.</p>
-<p>Puede llegar el mismo día o al siguiente.</p>
-<p>Confirma que el hotel reciba equipaje.</p>
+  <details class="subtema-card">
+    <summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Puedes enviar maletas al hotel o destino.</li>
+        <li>Está disponible en aeropuerto, hoteles y konbini.</li>
+        <li>Necesitas la dirección del hotel.</li>
+        <li>Confirma que el hotel reciba equipaje.</li>
+      </ol>
+    </div>
+  </details>
+
 </div>
 
 <h3>🌐 Traductores recomendados</h3>

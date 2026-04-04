@@ -42,77 +42,65 @@ document.addEventListener("DOMContentLoaded", () => {
   // ======= RESPUESTAS (clave -> HTML) =======
   // Puedes ampliar con calma luego.
   const respuestas = {
-    
-llegada: `
+    llegada: `
 <h2 id="llegada">✈️ Llegada a Japón</h2>
 
 <img src="AQUI_TU_IMAGEN" style="width:100%; border-radius:10px; margin:10px 0;">
 
 <p>🟢 Presiona una situación para ver qué hacer:</p>
 
-<div class="opcion" onclick="mostrarSubtema('llegada1')">
-🧳 Llegué al aeropuerto y no sé qué hacer
-</div>
+<div class="opcion" onclick="mostrarSubtema('llegada1')">🧳 Llegué al aeropuerto y no sé qué hacer</div>
 <div id="llegada1" class="subtema" style="display:none;">
-<p>Sigue los letreros de salida, tren o taxi.</p>
-<p>Primero asegúrate de tener internet, dinero y dirección del hotel.</p>
-<p>Si estás perdido, busca el mostrador de información.</p>
+<p>Al salir del avión, sigue los letreros de salida, tren o taxi.</p>
+<p>Primero asegúrate de tener internet, dinero y la dirección de tu hotel.</p>
+<p>Si estás perdido, busca el mostrador de información del aeropuerto.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('llegada2')">
-🚆 Cómo ir del aeropuerto a la ciudad
-</div>
+<div class="opcion" onclick="mostrarSubtema('llegada2')">🚆 Cómo ir del aeropuerto a la ciudad</div>
 <div id="llegada2" class="subtema" style="display:none;">
-<p>Usa Google Maps.</p>
-<p>El tren es la opción más rápida.</p>
-<p>El bus es más cómodo con maletas.</p>
+<p>Usa Google Maps para ver la mejor ruta.</p>
+<p>El tren suele ser la opción más rápida y económica.</p>
+<p>El bus puede ser más cómodo si llevas muchas maletas.</p>
+<p>El taxi es útil, pero normalmente es la opción más cara.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('llegada3')">
-📶 No tengo internet / SIM
-</div>
+<div class="opcion" onclick="mostrarSubtema('llegada3')">📶 No tengo internet / SIM</div>
 <div id="llegada3" class="subtema" style="display:none;">
-<p>Conéctate al WiFi del aeropuerto.</p>
-<p>Compra SIM o usa eSIM.</p>
-<p>Guarda mapas offline.</p>
+<p>Conéctate al WiFi del aeropuerto si está disponible.</p>
+<p>Puedes comprar una SIM o usar eSIM si tu teléfono es compatible.</p>
+<p>Si todavía no tienes conexión, guarda mapas y dirección del hotel antes de salir.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('llegada4')">
-💳 Cómo usar tarjeta IC (Suica / Pasmo)
-</div>
+<div class="opcion" onclick="mostrarSubtema('llegada4')">💳 Cómo usar tarjeta IC (Suica / Pasmo)</div>
 <div id="llegada4" class="subtema" style="display:none;">
-<p>Sirve para tren, bus y tiendas.</p>
-<p>Se recarga con efectivo.</p>
-<p>Solo toca al entrar y salir.</p>
+<p>La tarjeta IC sirve para tren, metro, bus y muchas tiendas.</p>
+<p>Se puede recargar con efectivo en máquinas o estaciones.</p>
+<p>Solo toca la tarjeta al entrar y salir.</p>
+<p>Es muy práctica para moverte sin comprar boleto cada vez.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('llegada5')">
-🏨 Cómo llegar a mi hotel
-</div>
+<div class="opcion" onclick="mostrarSubtema('llegada5')">🏨 Cómo llegar a mi hotel</div>
 <div id="llegada5" class="subtema" style="display:none;">
-<p>Guarda la dirección en japonés.</p>
-<p>Muéstrala si necesitas ayuda.</p>
-<p>Usa Google Maps.</p>
+<p>Guarda la dirección del hotel en japonés.</p>
+<p>Muéstrala en estación, taxi o mostrador si necesitas ayuda.</p>
+<p>Usa Google Maps para revisar la estación correcta y la salida más cercana.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('llegada6')">
-💱 Cambiar dinero o retirar efectivo
-</div>
+<div class="opcion" onclick="mostrarSubtema('llegada6')">💱 Cambiar dinero o retirar efectivo</div>
 <div id="llegada6" class="subtema" style="display:none;">
-<p>Puedes cambiar en el aeropuerto.</p>
-<p>También retirar en ATM.</p>
-<p>Lleva efectivo siempre.</p>
+<p>Puedes cambiar algo de dinero en el aeropuerto.</p>
+<p>También puedes retirar efectivo en ATM compatibles.</p>
+<p>Es recomendable llevar algo de efectivo porque no todos aceptan tarjeta extranjera.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('llegada7')">
-📦 Enviar equipaje (Kuroneko / Takkyubin)
-</div>
+<div class="opcion" onclick="mostrarSubtema('llegada7')">📦 Enviar equipaje (Kuroneko / Takkyubin)</div>
 <div id="llegada7" class="subtema" style="display:none;">
-<p>Permite enviar maletas al hotel o destino.</p>
-<p>Disponible en aeropuerto, hoteles y konbini.</p>
-<p>Necesitas dirección del hotel.</p>
-<p>Puede tardar hasta el día siguiente.</p>
-<p>Confirma que el hotel reciba equipaje.</p>
+<p>Puedes enviar tus maletas al hotel o a otro destino dentro de Japón.</p>
+<p>Este servicio se conoce como Takkyubin y es muy útil si no quieres cargar equipaje.</p>
+<p>Puede encontrarse en algunos aeropuertos, hoteles, konbini o mostradores de envío.</p>
+<p>Necesitas la dirección del hotel o destino en Japón.</p>
+<p>A veces la entrega es el mismo día, pero muchas veces llega al día siguiente.</p>
+<p>Confirma antes con tu hotel que pueden recibir equipaje.</p>
 </div>
 
 <h3>🌐 Traductores recomendados</h3>
@@ -136,32 +124,45 @@ ChatGPT (explicar o traducir una situación)
 <li>
 <strong>Español</strong><br>
 ¿Dónde está la estación?<br><br>
+
 <strong>Romaji</strong><br>
 Eki wa doko desu ka?<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">駅はどこですか？</span>
 </li>
 
-<br>
-
 <li>
 <strong>Español</strong><br>
-Quiero ir a este hotel<br><br>
+Quiero ir a este hotel.<br><br>
+
 <strong>Romaji</strong><br>
-Kono hoteru ni ikitai desu<br><br>
+Kono hoteru ni ikitai desu.<br><br>
+
 <strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">このホテルに行きたいです</span>
+<span style="font-size:26px;font-weight:bold;">このホテルに行きたいです。</span>
 </li>
 
-<br>
+<li>
+<strong>Español</strong><br>
+No tengo internet.<br><br>
+
+<strong>Romaji</strong><br>
+Intaanetto ga arimasen.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">インターネットがありません。</span>
+</li>
 
 <li>
 <strong>Español</strong><br>
-Quiero enviar esta maleta al hotel<br><br>
+Quiero enviar esta maleta al hotel.<br><br>
+
 <strong>Romaji</strong><br>
-Kono nimotsu o hoteru ni okuritai desu<br><br>
+Kono nimotsu o hoteru ni okuritai desu.<br><br>
+
 <strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">この荷物をホテルに送りたいです</span>
+<span style="font-size:26px;font-weight:bold;">この荷物をホテルに送りたいです。</span>
 </li>
 
 </ul>
@@ -175,19 +176,21 @@ Kono nimotsu o hoteru ni okuritai desu<br><br>
 <li>
 <strong>Español</strong><br>
 Disculpe, no hablo mucho japonés.<br><br>
+
 <strong>Romaji</strong><br>
 Sumimasen, nihongo ga amari hanasemasen.<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">すみません、日本語があまり話せません。</span>
 </li>
 
-<br>
-
 <li>
 <strong>Español</strong><br>
 ¿Puedo usar un traductor para explicarme?<br><br>
+
 <strong>Romaji</strong><br>
 Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">翻訳アプリを使って説明してもいいですか？</span>
 </li>
@@ -197,23 +200,28 @@ Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
 <div style="background:#2a2112;border:2px solid #f0b93a;box-shadow:0 0 14px rgba(240,185,58,.35);padding:18px;border-radius:16px;margin-top:18px;">
 <h3 style="color:#f0c24b;margin-top:0;">💡 Consejo importante</h3>
 <p style="margin-bottom:0;">
-Primero resuelve: internet, transporte, hotel y efectivo.
+Al llegar a Japón, primero resuelve estas cuatro cosas: internet, transporte, dirección del hotel y algo de efectivo. Si llevas muchas maletas, Takkyubin puede ayudarte bastante.
 </p>
 </div>
 
-<p>🙏 Si esta información te fue útil, puedes:</p>
+<p>
+🙏 Si esta información te fue útil, puedes:
+</p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})">
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;">
 ↗ Compartir
 </button>
 
-<button onclick="mostrarGuardar()">
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;">
 • Guardar
 </button>
 
-<button onclick="irAApoyo()">
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;">
 ❤️ Apoyar
 </button>
 
@@ -224,30 +232,32 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
 <p><b>En iPhone / iPad:</b><br>
-Añadir a pantalla de inicio.
+Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
 </p>
 
 <p><b>En Android:</b><br>
-Añadir a pantalla de inicio.
+Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
 </p>
 
-<p><b>En PC:</b><br>
-Ctrl + D.
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
 </p>
 
 </div>
 
-<p style="font-size:12px;color:#777;">
-También es posible colaborar utilizando tarjeta de crédito o débito.
+<p style="font-size:12px;color:#777;margin-top:10px;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
 </p>
 
-<div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;">
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})">
+<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;">
 ⬆️ Volver al tema Llegada
 </button>
 

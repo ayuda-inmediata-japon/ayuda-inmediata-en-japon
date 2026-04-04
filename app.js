@@ -1419,6 +1419,173 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 ⬆️ Volver al tema Transporte
 </button>
 </div>
+alojamiento: `
+<h2 id="alojamiento">🏨 Alojamiento en Japón</h2>
+
+<p>En Japón hay muchas opciones para dormir según tu presupuesto.</p>
+
+<p>
+✔ Hoteles: cómodos y limpios (¥6,000 – ¥15,000)<br>
+✔ Cápsula: económicos y prácticos (¥2,500 – ¥6,000)<br>
+✔ Airbnb / departamentos: más espacio<br>
+✔ Internet café: opción básica para pasar la noche
+</p>
+
+<p>👉 El servicio en Japón suele ser muy limpio, puntual y respetuoso.</p>
+
+<div style="display:flex; gap:10px; overflow-x:auto; margin:10px 0;">
+<img src="IMAGEN_1" style="width:85%; border-radius:10px;">
+<img src="IMAGEN_2" style="width:85%; border-radius:10px;">
+<img src="IMAGEN_3" style="width:85%; border-radius:10px;">
+</div>
+
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+<summary>🏨 Cómo funcionan los hoteles</summary>
+<div class="subtema-content">
+<p><strong>Qué esperar:</strong></p>
+<ol>
+<li>Check-in normalmente desde 15:00.</li>
+<li>Check-out entre 10:00 y 11:00.</li>
+<li>Habitaciones pequeñas pero muy limpias.</li>
+<li>Muchos incluyen pijama, toalla y amenities.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🛌 Hoteles cápsula</summary>
+<div class="subtema-content">
+<p><strong>Qué saber:</strong></p>
+<ol>
+<li>Espacios individuales tipo cápsula.</li>
+<li>Baños y duchas compartidos.</li>
+<li>No apto para equipaje grande.</li>
+<li>Muy usados para estancias cortas.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🏠 Airbnb / departamentos</summary>
+<div class="subtema-content">
+<p><strong>Qué saber:</strong></p>
+<ol>
+<li>Más espacio y privacidad.</li>
+<li>Puede ser más económico en grupo.</li>
+<li>Revisa reglas del edificio.</li>
+<li>Check-in suele ser automático.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>💻 Internet café (para dormir)</summary>
+<div class="subtema-content">
+<p><strong>Qué saber:</strong></p>
+<ol>
+<li>Cabinas privadas con silla o sofá.</li>
+<li>Incluye internet, bebidas y manga.</li>
+<li>Se paga por horas (¥1,500 – ¥3,000).</li>
+<li>Útil si perdiste el último tren.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>📍 Cómo llegar a mi hotel</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Usa Google Maps.</li>
+<li>Muestra la dirección en japonés.</li>
+<li>Guarda la ubicación offline.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🗣️ No hablo japonés</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Muestra tu reserva.</li>
+<li>Usa traductor.</li>
+<li>Muchos hoteles tienen inglés básico.</li>
+</ol>
+</div>
+</details>
+
+</div>
+
+<h3>🌍 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+Tengo una reserva<br><br>
+<strong>Romaji</strong><br>
+Yoyaku ga arimasu<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">予約があります</span>
+</li>
+
+<li>
+<strong>Español</strong><br>
+¿Dónde está mi habitación?<br><br>
+<strong>Romaji</strong><br>
+Heya wa doko desu ka?<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">部屋はどこですか？</span>
+</li>
+
+</ul>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></p>
+
+<h3>🗣️ Frases útiles</h3>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+Quiero hacer check-in<br><br>
+<strong>Romaji</strong><br>
+Check-in onegaishimasu<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">チェックインお願いします</span>
+</li>
+
+<li>
+<strong>Español</strong><br>
+¿A qué hora es el check-out?<br><br>
+<strong>Romaji</strong><br>
+Check-out wa nanji desu ka?<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">チェックアウトは何時ですか？</span>
+</li>
+
+</ul>
+
+<div style="background:#2a2112;border:2px solid #f0b93a;padding:18px;border-radius:16px;margin-top:18px;">
+<h3 style="color:#f0c24b;margin-top:0;">💡 Consejo importante</h3>
+<p style="margin-bottom:0;">
+Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
+</p>
+</div>
+
+<!-- BOTONES (NO TOCAR) -->
+...
 
 `,
     vida: `

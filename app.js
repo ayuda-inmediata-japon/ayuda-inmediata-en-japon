@@ -239,12 +239,12 @@ style="flex:1;background:#3a7cc4;color:white;padding:14px;font-size:16px;border:
 <div style="display:flex;gap:10px;width:100%;margin-top:8px;">
 
   <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-  style="flex:1;background:#25D366;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
+  style="flex:1;background:#25D366;color:white;padding:14px;font-size:12px;border:none;border-radius:12px;font-weight:bold;">
   ⬅ Volver al buscador
   </button>
 
   <button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
-  style="flex:1;background:#25D366;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
+  style="flex:1;background:#25D366;color:white;padding:14px;font-size:12px;border:none;border-radius:12px;font-weight:bold;">
   ⬆ Volver al tema Llegada a Japón
   </button>
 

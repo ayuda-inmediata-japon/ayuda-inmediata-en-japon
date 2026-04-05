@@ -345,7 +345,6 @@ font-weight:bold;
 ">
 ⬆️ Volver al tema Llegada a Japon
 </button>
-
 </div>
 `,
 salud: `

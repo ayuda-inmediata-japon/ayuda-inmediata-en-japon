@@ -343,7 +343,7 @@ border:none;
 border-radius:10px;
 font-weight:bold;
 ">
-⬆️ Volver al tema llegada a japon
+⬆️ Volver al tema Llegada a Japon
 </button>
 
 </div>

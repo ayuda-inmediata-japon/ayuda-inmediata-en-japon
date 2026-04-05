@@ -619,12 +619,12 @@ También es posible colaborar utilizando tu apoyo para mantener esta guía.
 <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
 
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;">
+style="padding:10px 10px;border-radius:8px;">
 ⬅️ Volver al buscador
 </button>
 
 <button onclick="document.getElementById('salud').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;">
+style="padding:10px 10px;border-radius:8px;">
 ⬆️ Volver al tema Salud
 </button>
 

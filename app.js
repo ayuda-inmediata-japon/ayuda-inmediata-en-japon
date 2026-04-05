@@ -2882,16 +2882,342 @@ font-weight:bold;
 
 </div>
 `,
-    servicios: `
-      <h2>🧰 Servicios personalizados</h2>
-      <ul>
-        <li>Interpretación (teléfono o presencial)</li>
-        <li>Traducción de documentos</li>
-        <li>Acompañamiento a trámites, hospital, hotel</li>
-        <li>Planificación y presupuesto de gastos</li>
-        <li>Soporte para organizar tu experiencia en Japón</li>
-      </ul>
-    `,
+servicios: `
+<h2 id="servicios">💼 Servicios y ayuda personalizada</h2>
+
+<p>Si necesitas ayuda más específica en Japón, aquí puedes orientarte según tu situación y ver qué tipo de apoyo puede servirte.</p>
+
+<img src="servicios.jpg" class="info-img" alt="Servicios y ayuda en Japón">
+
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+  <summary>🗣️ Necesito traducción o interpretación</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes hacer:</strong></p>
+    <ul>
+      <li>Usar traductor en el teléfono</li>
+      <li>Solicitar ayuda para explicar una situación</li>
+      <li>Recibir apoyo por llamada o de forma presencial</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Para situaciones importantes, una buena interpretación puede evitar errores y confusiones.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🏥 Necesito ayuda en hospital o clínica</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes hacer:</strong></p>
+    <ul>
+      <li>Recibir apoyo para explicar síntomas</li>
+      <li>Usar traductor en consulta o recepción</li>
+      <li>Solicitar acompañamiento si el caso es complicado</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>En temas médicos es muy importante explicar bien lo que sientes y entender bien las indicaciones.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🏫 Necesito ayuda en colegio o escuela</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes hacer:</strong></p>
+    <ul>
+      <li>Entender avisos, cartas o documentos escolares</li>
+      <li>Recibir apoyo para hablar con profesores o administración</li>
+      <li>Orientarte sobre horarios, reglas y sistema escolar</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Muchos documentos escolares están solo en japonés.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🏛️ Necesito ayuda en instituciones o trámites</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes hacer:</strong></p>
+    <ul>
+      <li>Recibir ayuda antes de ir a una oficina</li>
+      <li>Entender qué documento llevar</li>
+      <li>Ir acompañado si el trámite es importante</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Un error en trámites puede causar retrasos o problemas.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🚓 Necesito ayuda en policía</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes hacer:</strong></p>
+    <ul>
+      <li>Explicar mejor lo ocurrido con ayuda de traducción</li>
+      <li>Solicitar apoyo para comunicarte correctamente</li>
+      <li>Ir acompañado si la situación es delicada</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>En situaciones con policía es importante que todo quede claro desde el principio.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>📄 Necesito ayuda con documentos</summary>
+  <div class="subtema-content">
+
+    <p><strong>Opciones:</strong></p>
+    <ul>
+      <li>Traducción de documentos</li>
+      <li>Explicación de formularios</li>
+      <li>Ayuda para completar o entender papeles</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Antes de firmar o entregar algo, asegúrate de entenderlo bien.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>💼 Necesito ayuda laboral o empleo</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes hacer:</strong></p>
+    <ul>
+      <li>Buscar orientación para empleo</li>
+      <li>Entender mejor condiciones de trabajo</li>
+      <li>Recibir ayuda para leer avisos o mensajes laborales</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Es importante entender horarios, salario, descansos y condiciones antes de aceptar un trabajo.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>📲 Quiero orientación personalizada</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué incluye:</strong></p>
+    <ul>
+      <li>Apoyo según tu caso específico</li>
+      <li>Ayuda en tiempo real</li>
+      <li>Orientación más directa para resolver una situación concreta</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>La orientación general es distinta al apoyo personalizado según tu caso.</p>
+
+  </div>
+</details>
+
+</div>
+
+<h3>🌍 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+Necesito ayuda.<br><br>
+
+<strong>Romaji</strong><br>
+Tasukete kudasai.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">助けてください。</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+No hablo japonés.<br><br>
+
+<strong>Romaji</strong><br>
+Nihongo ga hanasemasen.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">日本語が話せません。</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Puede ayudarme?<br><br>
+
+<strong>Romaji</strong><br>
+Tetsudatte moraemasu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">手伝ってもらえますか？</span>
+</li>
+
+</ul>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
+
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT</a></p>
+
+<h3>🗣️ Frases útiles</h3>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+Necesito ayuda con esto.<br><br>
+
+<strong>Romaji</strong><br>
+Kore ni tsuite tasukete kudasai.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">これについて助けてください。</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Puede acompañarme?<br><br>
+
+<strong>Romaji</strong><br>
+Issho ni kite moraemasu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">一緒に来てもらえますか？</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+Necesito explicación.<br><br>
+
+<strong>Romaji</strong><br>
+Setsumei ga hitsuyou desu.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">説明が必要です。</span>
+</li>
+
+</ul>
+
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+
+<p>
+Primero intenta resolver con la información gratuita. Si tu caso es más delicado o más específico, busca apoyo más directo.
+</p>
+
+</div>
+
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p>🙏 Si esta información te fue útil, puedes apoyar este proyecto:</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;">
+• Guardar
+</button>
+
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;">
+❤️ Apoyar
+</button>
+
+<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa compartir → “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En Android:</b><br>
+Menú (⋮) → “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En computadora:</b><br>
+Ctrl + D o ⭐ en navegador.
+</p>
+
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
+También puedes colaborar con tarjeta o débito.
+</p>
+
+</div>
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="
+background:#2ecc71;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})"
+style="
+background:#3498db;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
+⬆️ Volver al tema Servicios
+</button>
+
+</div>
+`,
   };
 
   // Alias (sinónimos) para buscar

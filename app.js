@@ -2591,12 +2591,297 @@ font-weight:bold;
 
 </div>
 `,
-    tramites: `
-      <h2>📄 Trámites</h2>
-      <p><strong>Ward/City Office:</strong> 市役所 / 区役所 (registro, papeles, seguro).</p>
-      <p>Si necesitas ayuda con traducción de documentos, escríbenos.</p>
-    `,
+tramites: `
+<h2 id="tramites">📄 Trámites y documentos en Japón</h2>
 
+<p>Si vives o permaneces en Japón, hay algunos trámites básicos que debes conocer para evitar problemas y poder realizar gestiones importantes.</p>
+
+<img src="tramites.jpg" class="info-img" alt="Trámites en Japón">
+
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+  <summary>🪪 Tarjeta de residencia (Zairyu Card)</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué saber:</strong></p>
+    <ul>
+      <li>Es obligatoria para residentes extranjeros</li>
+      <li>Debes llevarla siempre contigo</li>
+      <li>Se entrega al ingresar al país o en inmigración</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>No llevarla puede causarte problemas legales.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🏠 Registrar dirección (Juminhyo)</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Ir al ayuntamiento (city hall)</li>
+      <li>Registrar tu dirección dentro de los 14 días</li>
+      <li>Solicitar certificado si lo necesitas</li>
+    </ol>
+
+    <p><strong>Importante:</strong></p>
+    <p>Es necesario para casi todos los trámites en Japón.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🏥 Seguro de salud</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué saber:</strong></p>
+    <ul>
+      <li>Es obligatorio para residentes</li>
+      <li>Paga aproximadamente el 30% del costo médico</li>
+      <li>Puede ser seguro nacional o de empresa</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Sin seguro, la atención médica es muy costosa.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>💴 Impuestos básicos</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué saber:</strong></p>
+    <ul>
+      <li>Debes pagar impuestos si resides en Japón</li>
+      <li>Incluye impuesto municipal y nacional</li>
+      <li>Recibirás notificaciones o facturas</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Pagar a tiempo evita multas y problemas.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>📑 Certificados (Juminhyo, ingresos, etc.)</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes obtener:</strong></p>
+    <ul>
+      <li>Certificado de residencia</li>
+      <li>Certificado de ingresos o impuestos</li>
+      <li>Otros documentos oficiales</li>
+    </ul>
+
+    <p><strong>Dónde:</strong></p>
+    <p>En el ayuntamiento (city hall).</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🚗 Licencia de conducir (Menkyo)</summary>
+  <div class="subtema-content">
+
+    <p><strong>Opciones:</strong></p>
+    <ul>
+      <li>Convertir licencia extranjera</li>
+      <li>Obtener licencia japonesa</li>
+    </ul>
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Ir al centro de licencias</li>
+      <li>Presentar documentos</li>
+      <li>Realizar examen si es necesario</li>
+    </ol>
+
+  </div>
+</details>
+
+</div>
+
+<h3>🌐 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+Necesito hacer un trámite.<br><br>
+<strong>Romaji</strong><br>
+Tetsuzuki o shitai desu.<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">手続きをしたいです。</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+No hablo japonés.<br><br>
+<strong>Romaji</strong><br>
+Nihongo ga hanasemasen.<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">日本語が話せません。</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Dónde debo ir?<br><br>
+<strong>Romaji</strong><br>
+Doko ni ikeba ii desu ka?<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">どこに行けばいいですか？</span>
+</li>
+
+</ul>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT</a></p>
+
+<h3>🗣️ Frases útiles</h3>
+
+<ul style="line-height:1.9">
+
+<li>
+<strong>Español</strong><br>
+Quiero registrar mi dirección.<br><br>
+<strong>Romaji</strong><br>
+Jusho o touroku shitai desu.<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">住所を登録したいです。</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+Necesito este documento.<br><br>
+<strong>Romaji</strong><br>
+Kono shorui ga hitsuyou desu.<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">この書類が必要です。</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Dónde está la municipalidad?<br><br>
+<strong>Romaji</strong><br>
+Yakusho wa doko desu ka?<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">役所はどこですか？</span>
+</li>
+
+</ul>
+
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+
+<p>
+Haz tus trámites lo antes posible después de llegar. Muchos procesos en Japón tienen plazos importantes.
+</p>
+
+</div>
+
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p>🙏 Si esta información te fue útil, puedes apoyar este proyecto:</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;">
+• Guardar
+</button>
+
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;">
+❤️ Apoyar
+</button>
+
+<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa compartir → “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En Android:</b><br>
+Menú (⋮) → “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En computadora:</b><br>
+Ctrl + D o ⭐ en navegador.
+</p>
+
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
+También puedes colaborar con tarjeta o débito.
+</p>
+
+</div>
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="
+background:#2ecc71;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('tramites').scrollIntoView({behavior:'smooth'})"
+style="
+background:#3498db;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
+⬆️ Volver al tema Trámites
+</button>
+
+</div>
+`,
     servicios: `
       <h2>🧰 Servicios personalizados</h2>
       <ul>

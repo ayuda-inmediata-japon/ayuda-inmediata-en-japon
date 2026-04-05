@@ -448,17 +448,6 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 </div>
 
 `,
-taxi: `
-      <h2>🚕 Taxi en Japón</h2>
-      <p><strong>Cómo pedirlo:</strong> busca una parada de taxi (タクシー乗り場) o usa apps como GO / DiDi (según zona).</p>
-      <p><strong>Frases útiles:</strong> 「ここまでお願いします」(Koko made onegaishimasu) = “Hasta aquí por favor”.</p>
-    `,
-  hotel: `
-      <h2>🏨 Alojamiento / Hotel</h2>
-      <p><strong>Check-in:</strong> muestra pasaporte y reserva. Si llegas tarde, avisa al hotel.</p>
-      <p><strong>Problemas:</strong> si hay ruido, limpieza o cobro, pide hablar con recepción (フロント).</p>
-    `,
-
 emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>
 

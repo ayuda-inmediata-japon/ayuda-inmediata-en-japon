@@ -257,13 +257,12 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   ⬅ Volver al buscador
   </button>
 
-  
-  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  <button onclick="document.getElementById('resultadoContent').scrollIntoView({ behavior: 'smooth' })"
 style="flex:1;background:#25D366;color:white;">
 ⬆️ Volver al tema
+
 </button>
   
-
 </div>
 `,
 salud: `

@@ -253,14 +253,14 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 <div style="display:flex;gap:10px;margin-top:12px;">
 
   <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-  style="flex:1;background:#25D366;color:white;padding:12px;font-size:16px;border:none;border-radius:10px;font-weight:bold;">
+  style="flex:1;background:#25D366;color:white;padding:8px 0;font-size:14px;border:none;border-radius:8px;font-weight:600;">
   ⬅ Volver al buscador
   </button>
 
-  <button class="volver-tema" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-⬆️ Volver al tema
-</button>
-  
+  <button onclick="document.getElementById('vida-diaria').scrollIntoView({behavior:'smooth'})"
+  style="flex:1;background:#25D366;color:white;padding:8px 0;font-size:14px;border:none;border-radius:8px;font-weight:600;">
+  ⬆ Volver al tema
+  </button>
 
 </div>
 `,

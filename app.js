@@ -245,7 +245,7 @@ style="width:100%;background:#2e9d63;color:white;padding:14px;border:none;border
 💬 Orientación general
 </button>
 
-<button onclick="document.getElementById('btnPersonalizado').click()"
+<button onclick="document.getElementById('btnPersonalizada').click()"
 style="width:100%;background:#278a56;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
 📞 Orientación personalizada
 </button>
@@ -260,7 +260,6 @@ style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border
 ⬆ Volver al tema Llegada a Japón
 </button>
 
-</div>
 </div>
 `,
 salud: `

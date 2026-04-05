@@ -241,10 +241,6 @@ También puedes colaborar con tarjeta o débito.
 <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
 
 <button onclick="document.getElementById('btnGeneral').click()"
-
-
-
-<button onclick="document.getElementById('btnGeneral').click()"
 style="width:100%;background:#2e9d63;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
 💬 Orientación general
 </button>
@@ -259,11 +255,12 @@ style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border
 ⬅ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('ID_DEL_TEMA').scrollIntoView({behavior:'smooth'})"
+<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
 style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
-⬆ Volver al tema
+⬆ Volver al tema Llegada a Japón
 </button>
 
+</div>
 </div>
 `,
 salud: `
@@ -1074,7 +1071,7 @@ Traductor español → japonés (Google)
 
 <p>🟢 <a href="https://chat.openai.com" target="_blank">
 ChatGPT (explicar o traducir una situación)
-</a></p>
+</a></p>oi
 
 
 

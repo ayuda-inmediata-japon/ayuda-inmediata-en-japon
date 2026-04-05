@@ -214,51 +214,55 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 <p style="margin-bottom:14px;font-weight:bold;">
 🙏 Si esta información te fue útil, puedes apoyar este proyecto:
 </p>
+<!-- BOTONES COMPARTIR / GUARDAR / APOYAR -->
+<div style="display:flex;gap:10px;width:100%;margin-top:10px;">
+  
+  <button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
+  style="flex:1;background:#3a7cc4;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;">
+  ↗ Compartir
+  </button>
 
-<div style="display:flex;flex-direction:column;gap:10px;width:100%;">
+  <button onclick="guardarPagina()"
+  style="flex:1;background:#7f8c8d;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;">
+  • Guardar
+  </button>
 
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
-↗ Compartir
-</button>
-
-<button onclick="guardarPagina()"
-style="width:100%;background:#7f8c8d;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
-• Guardar
-</button>
-
-<button onclick="irApoyo()"
-style="width:100%;background:#e74c3c;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
-❤️ Apoyar
-</button>
+  <button onclick="irApoyo()"
+  style="flex:1;background:#e74c3c;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;">
+  ❤️ Apoyar
+  </button>
 
 </div>
 
-<p style="margin-top:10px;font-size:13px;color:#aaa;">
-También puedes colaborar con tarjeta o débito.
-</p>
 
-<div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
+<!-- BOTONES ORIENTACIÓN -->
+<div style="display:flex;gap:10px;width:100%;margin-top:12px;">
 
-<button onclick="document.getElementById('btnGeneral').click()"
-style="width:100%;background:#2e9d63;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
-💬 Orientación general
-</button>
+  <button onclick="document.getElementById('btnGeneral').click()"
+  style="flex:1;background:#2e9d63;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
+  💬 Orientación general
+  </button>
 
-<button onclick="document.getElementById('btnPersonalizada').click()"
-style="width:100%;background:#278a56;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
-📞 Orientación personalizada
-</button>
+  <button onclick="document.getElementById('btnPersonalizada').click()"
+  style="flex:1;background:#278a56;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
+  📞 Orientación personalizada
+  </button>
 
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
-⬅ Volver al buscador
-</button>
+</div>
 
-<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
-style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
-⬆ Volver al tema Llegada a Japón
-</button>
+
+<!-- BOTONES VOLVER -->
+<div style="display:flex;gap:10px;width:100%;margin-top:12px;">
+
+  <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+  style="flex:1;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
+  ⬅ Volver al buscador
+  </button>
+
+  <button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
+  style="flex:1;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
+  ⬆ Volver al tema Llegada a Japón
+  </button>
 
 </div>
 `,

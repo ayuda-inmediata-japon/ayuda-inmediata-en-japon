@@ -241,8 +241,7 @@ También puedes colaborar con tarjeta o débito.
 <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
 
 <button onclick="document.getElementById('btnGeneral').click()"
-style="width:100%;background:#2e9d63;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;">
-</div>
+
 <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
 
 <button onclick="document.getElementById('btnGeneral').click()"

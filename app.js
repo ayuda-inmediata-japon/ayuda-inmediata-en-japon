@@ -267,57 +267,69 @@ salud: `
 
 <p>💰 Ejemplo aproximado:</p>
 <ul>
-<li>Consulta con seguro: ¥3,000 – ¥10,000</li>
-<li>Sin seguro: ¥10,000 – ¥30,000 o más</li>
-<li>Hospital o emergencia: puede ser más alto</li>
+  <li>Consulta con seguro: ¥3,000 – ¥10,000</li>
+  <li>Sin seguro: ¥10,000 – ¥30,000 o más</li>
+  <li>Hospital o emergencia: puede ser más alto</li>
 </ul>
 
 <div style="display:flex; gap:10px; overflow-x:auto; margin:20px 0;">
-<img src="IMAGEN_1" style="width:85%; border-radius:12px;">
-<img src="IMAGEN_2" style="width:85%; border-radius:12px;">
-<img src="IMAGEN_3" style="width:85%; border-radius:12px;">
+  <img src="IMAGEN_1" style="width:85%; border-radius:12px;">
+  <img src="IMAGEN_2" style="width:85%; border-radius:12px;">
+  <img src="IMAGEN_3" style="width:85%; border-radius:12px;">
 </div>
 
 <p>🟢 Presiona una situación para ver qué hacer:</p>
 
-<div class="opcion" onclick="mostrarSubtema('salud1')">🏥 Ir a una clínica</div>
-<div id="salud1" class="subtema">
+<div onclick="mostrarSubtema('salud1')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
+🏥 Ir a una clínica
+</div>
+<div id="salud1" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
 <p>Busca una clínica cercana (クリニック).</p>
 <p>En la mayoría puedes entrar sin cita.</p>
 <p>Lleva pasaporte y seguro si tienes.</p>
 <p>Explica tus síntomas o usa traductor.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('salud2')">🚑 Emergencia grave</div>
-<div id="salud2" class="subtema">
+<div onclick="mostrarSubtema('salud2')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
+🚑 Emergencia grave
+</div>
+<div id="salud2" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
 <p>Llama al <strong>119</strong>.</p>
 <p>La ambulancia es gratuita.</p>
 <p>Di tu ubicación lo más claro posible.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('salud3')">💊 Comprar medicina</div>
-<div id="salud3" class="subtema">
+<div onclick="mostrarSubtema('salud3')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
+💊 Comprar medicina
+</div>
+<div id="salud3" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
 <p>Busca una farmacia (ドラッグストア).</p>
 <p>Para síntomas leves puedes comprar sin receta.</p>
 <p>Pide ayuda al personal.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('salud4')">🏥 Hospital grande</div>
-<div id="salud4" class="subtema">
+<div onclick="mostrarSubtema('salud4')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
+🏥 Hospital grande
+</div>
+<div id="salud4" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
 <p>Puede requerir cita o referencia.</p>
 <p>Si no es urgente, ve primero a una clínica.</p>
 <p>Puede haber espera larga.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('salud5')">💸 Sin seguro</div>
-<div id="salud5" class="subtema">
+<div onclick="mostrarSubtema('salud5')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
+💸 Sin seguro
+</div>
+<div id="salud5" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
 <p>Igual puedes atenderte.</p>
 <p>Pagarás el costo completo.</p>
 <p>Se paga el mismo día normalmente.</p>
 </div>
 
-<div class="opcion" onclick="mostrarSubtema('salud6')">🌐 Problema con idioma</div>
-<div id="salud6" class="subtema">
+<div onclick="mostrarSubtema('salud6')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
+🌐 Problema con idioma
+</div>
+<div id="salud6" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
 <p>Usa traductor en el celular.</p>
 <p>Muestra frases escritas.</p>
 <p>Algunos lugares tienen inglés básico.</p>
@@ -360,7 +372,6 @@ Iryou no tasuke ga hitsuyou desu<br><br>
 <h3>💬 Frases útiles</h3>
 
 <ul style="line-height:1.9">
-
 <li>
 <strong>Español</strong><br>
 Me duele aquí<br><br>
@@ -393,7 +404,6 @@ Isha ga hitsuyou desu<br><br>
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">医者が必要です</span>
 </li>
-
 </ul>
 
 <div style="background:#2a2112;border:2px solid #f0c24b;padding:15px;border-radius:10px;margin-top:20px;">

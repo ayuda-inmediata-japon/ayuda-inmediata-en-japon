@@ -1005,7 +1005,7 @@ Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
 
 </div>
 
-</div>no
+</div>
 
 <p style="font-size:12px;color:#777;margin-top:8px">
 También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.

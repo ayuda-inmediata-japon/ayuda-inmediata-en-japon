@@ -209,38 +209,72 @@ Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
 Primero resuelve: internet, transporte, hotel y efectivo.
 </p>
 </div>
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
 <p>🙏 Si esta información te fue útil, puedes:</p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})">
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+style="
+background:#3498db;
+color:white;
+padding:8px 14px;
+border:none;
+border-radius:8px;
+font-size:14px;
+font-weight:bold;
+">
 ↗ Compartir
 </button>
 
-<button onclick="mostrarGuardar()">
+<button onclick="mostrarGuardar()"
+style="
+background:#95a5a6;
+color:white;
+padding:8px 14px;
+border:none;
+border-radius:8px;
+font-size:14px;
+font-weight:bold;
+">
 • Guardar
 </button>
 
-<button onclick="irAApoyo()">
+<button onclick="irAApoyo()"
+style="
+background:#e74c3c;
+color:white;
+padding:8px 14px;
+border:none;
+border-radius:8px;
+font-size:14px;
+font-weight:bold;
+">
 ❤️ Apoyar
 </button>
 
-</div>
-
-<div id="guardar-pagina" style="display:none;">
+<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
 
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
-<p><b>iPhone / iPad:</b> Añadir a pantalla de inicio</p>
-<p><b>Android:</b> Añadir a pantalla de inicio</p>
-<p><b>PC:</b> Ctrl + D</p>
+<p><b>iPhone / iPad:</b><br>
+Compartir → Añadir a pantalla de inicio</p>
+
+<p><b>Android:</b><br>
+Menú → Añadir a pantalla de inicio</p>
+
+<p><b>PC:</b><br>
+Ctrl + D o ⭐</p>
 
 </div>
 
-<p style="font-size:12px;color:#777;">
+<p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
 También es posible colaborar utilizando tarjeta de crédito o débito.
 </p>
+
+</div>
+
 <div style="
 margin-top:25px;
 display:flex;
@@ -250,6 +284,7 @@ gap:10px;
 
 <button onclick="irAOrientacionGeneral()"
 style="
+width:100%;
 background:#2ecc71;
 color:white;
 padding:14px;
@@ -263,6 +298,7 @@ font-size:16px;
 
 <button onclick="irAOrientacionPersonalizada()"
 style="
+width:100%;
 background:#27ae60;
 color:white;
 padding:14px;
@@ -275,15 +311,39 @@ font-size:16px;
 </button>
 
 </div>
-<div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
+<div style="
+margin-top:30px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="
+background:#2ecc71;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})">
-⬆️ Volver al tema Llegada
+<button onclick="document.getElementById('ID_DEL_TEMA').scrollIntoView({behavior:'smooth'})"
+style="
+background:#3498db;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
+⬆️ Volver al tema llegada a japon
 </button>
+
 </div>
 `,
 salud: `

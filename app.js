@@ -217,18 +217,18 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 
 <div style="display:flex;flex-direction:column;gap:10px;width:100%;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón',text:'Mira esto',url:window.location.href})"
-style="background:#3a7cc4;color:white;padding:10px 14px;border:none;border-radius:8px;font-weight:bold;">
+<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
+style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
 ↗ Compartir
 </button>
 
-<button
-style="background:#95a5a6;color:white;padding:10px 14px;border:none;border-radius:8px;font-weight:bold;">
+<button onclick="guardarPagina()"
+style="width:100%;background:#7f8c8d;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
 • Guardar
 </button>
 
-<button
-style="background:#d35454;color:white;padding:10px 14px;border:none;border-radius:8px;font-weight:bold;">
+<button onclick="irApoyo()"
+style="width:100%;background:#e74c3c;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
 ❤️ Apoyar
 </button>
 

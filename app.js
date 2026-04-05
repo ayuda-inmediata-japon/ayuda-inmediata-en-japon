@@ -215,7 +215,7 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 🙏 Si esta información te fue útil, puedes apoyar este proyecto:
 </p>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<div style="display:flex;flex-direction:column;gap:10px;width:100%;">
 
 <button onclick="navigator.share({title:'Ayuda en Japón',text:'Mira esto',url:window.location.href})"
 style="background:#3a7cc4;color:white;padding:10px 14px;border:none;border-radius:8px;font-weight:bold;">

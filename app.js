@@ -222,15 +222,15 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   Compartir
   </button>
 
-  <button onclick="irApoyo()"
-  style="flex:1;background:#e74c3c;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
-  ❤️ Apoyar
-  </button>
+  <button onclick="irAApoyo()"
+style="flex:1;background:#e74c3c;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
+❤️ Apoyar
+</button>
 
-  <button onclick="guardarPagina()"
-  style="flex:1;background:#3a7cc4;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
-  • Guardar
-  </button>
+  <button onclick="mostrarGuardar()"
+style="flex:1;background:#3a7cc4;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
+• Guardar
+</button>
 
 </div>
 

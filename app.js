@@ -2131,17 +2131,18 @@ for (const palabra of palabras) {
   // OJO: tus data-key son: emergencia, transporte, salud, alojamiento, dinero, vida-diaria, tramites, servicios
   // Pero tus respuestas reales son: emergencia, transporte, hospital, hotel, dinero, vida, tramites, servicios
   const chipMap = {
-    emergencia: "emergencia",
-    transporte: "transporte",
-    salud: "hospital",
-    alojamiento: "hotel",
-    dinero: "dinero",
-    "vida-diaria": "vida",
-    vida: "vida",
-    tramites: "tramites",
-    servicios: "servicios",
-  };
-
+  llegada: "llegada",
+  emergencia: "emergencia",
+  policia: "policia",
+  transporte: "transporte",
+  salud: "salud",
+  alojamiento: "alojamiento",
+  dinero: "dinero",
+  "vida-diaria": "vida",
+  vida: "vida",
+  tramites: "tramites",
+  servicios: "servicios",
+};
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       const raw = (chip.getAttribute("data-key") || "").trim().toLowerCase();

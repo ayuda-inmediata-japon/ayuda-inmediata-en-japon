@@ -242,7 +242,7 @@ También puedes colaborar con tarjeta o débito.
 
 <button onclick="document.getElementById('btnGeneral').click()"
 
-<div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
+
 
 <button onclick="document.getElementById('btnGeneral').click()"
 style="width:100%;background:#2e9d63;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">

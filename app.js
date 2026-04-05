@@ -2278,11 +2278,319 @@ font-weight:bold;
 </div>
 `,
     vida: `
-      <h2>🏠 Vida diaria</h2>
-      <p><strong>Basura:</strong> cada ciudad tiene reglas (燃えるごみ / 燃えないごみ / 資源ごみ).</p>
-      <p><strong>Consejo:</strong> revisa el calendario de tu municipio.</p>
-    `,
+<h2 id="vida">🏨 Vida diaria en Japón</h2>
 
+<p>En Japón hay muchas cosas cotidianas que pueden ser diferentes si es tu primera vez. Aquí tienes lo esencial para moverte sin problemas.</p>
+
+<img src="vida.jpg" class="info-img" alt="Vida diaria en Japón">
+
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+  <summary>🏪 Konbini (tiendas 24h)</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué puedes hacer:</strong></p>
+    <ul>
+      <li>Comprar comida, bebidas y productos básicos</li>
+      <li>Retirar dinero en ATM</li>
+      <li>Pagar algunos servicios</li>
+      <li>Usar baño en algunos casos</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Son muy útiles y están por todas partes.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🛒 Supermercados y descuentos</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué saber:</strong></p>
+    <ul>
+      <li>Los precios suelen ser más bajos que en konbini</li>
+      <li>Antes del cierre hay descuentos en comida preparada</li>
+      <li>Busca etiquetas con rebajas</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Es una de las mejores formas de ahorrar dinero.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🍱 Dónde comer barato</summary>
+  <div class="subtema-content">
+
+    <p><strong>Opciones:</strong></p>
+    <ul>
+      <li>Konbini</li>
+      <li>Supermercados</li>
+      <li>Cadenas económicas</li>
+    </ul>
+
+    <p><strong>Qué esperar:</strong></p>
+    <p>Comida rápida, limpia y accesible.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🗑️ Basura y reciclaje</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué saber:</strong></p>
+    <ul>
+      <li>La basura se separa por tipo</li>
+      <li>No hay muchos basureros en la calle</li>
+      <li>Debes llevar tu basura contigo</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Cada ciudad tiene reglas diferentes para la basura.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🚻 Baños públicos</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué saber:</strong></p>
+    <ul>
+      <li>Son gratuitos y muy limpios</li>
+      <li>Muchos tienen funciones electrónicas</li>
+      <li>Se encuentran en estaciones, konbini y parques</li>
+    </ul>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🧺 Lavandería</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Busca coin laundry</li>
+      <li>Introduce monedas o IC card</li>
+      <li>Selecciona lavado o secado</li>
+    </ol>
+
+    <p><strong>Importante:</strong></p>
+    <p>Algunas máquinas ya incluyen detergente.</p>
+
+  </div>
+</details>
+
+</div>
+
+<h3>🌐 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+
+<li>
+
+<strong>Español</strong><br>
+No hablo japonés.<br><br>
+
+<strong>Romaji</strong><br>
+Nihongo ga hanasemasen.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">日本語が話せません。</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Dónde está el baño?<br><br>
+
+<strong>Romaji</strong><br>
+Toire wa doko desu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">トイレはどこですか？</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Me puede ayudar?<br><br>
+
+<strong>Romaji</strong><br>
+Tetsudatte moraemasu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">手伝ってもらえますか？</span>
+
+</li>
+
+</ul>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
+
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT</a></p>
+
+<h3>🗣️ Frases útiles</h3>
+
+<ul style="line-height:1.9">
+
+<li>
+
+<strong>Español</strong><br>
+Quiero comprar esto.<br><br>
+
+<strong>Romaji</strong><br>
+Kore o kaitai desu.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">これを買いたいです。</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Aceptan tarjeta?<br><br>
+
+<strong>Romaji</strong><br>
+Kaado wa tsukaemasu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">カードは使えますか？</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+Gracias.<br><br>
+
+<strong>Romaji</strong><br>
+Arigatou gozaimasu.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">ありがとうございます。</span>
+
+</li>
+
+</ul>
+
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+
+<p>
+En Japón respeta las normas, mantén el orden y evita hacer ruido en espacios públicos.
+</p>
+
+</div>
+
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p>
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;">
+• Guardar
+</button>
+
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;">
+❤️ Apoyar
+</button>
+
+<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
+</p>
+
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
+
+</div>
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="
+background:#2ecc71;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('vida').scrollIntoView({behavior:'smooth'})"
+style="
+background:#3498db;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
+⬆️ Volver al tema Vida diaria
+</button>
+
+</div>
+`,
     tramites: `
       <h2>📄 Trámites</h2>
       <p><strong>Ward/City Office:</strong> 市役所 / 区役所 (registro, papeles, seguro).</p>

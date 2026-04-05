@@ -2248,15 +2248,30 @@ También es posible colaborar utilizando tarjeta de crédito o débito a través
 
 </div>
 
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
 
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;">
+style="
+background:#2ecc71;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
 ⬅️ Volver al buscador
 </button>
 
 <button onclick="document.getElementById('dinero').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;">
+style="
+background:#3498db;
+color:white;
+padding:12px 16px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+">
 ⬆️ Volver al tema Dinero
 </button>
 

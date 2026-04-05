@@ -1925,6 +1925,343 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 </button>
 </div>
 `,
+dinero: `
+<h2 id="dinero">💴 Dinero y pagos en Japón</h2>
+
+<p><strong>En Japón el efectivo sigue siendo muy importante.</strong></p>
+
+<p>Muchos lugares aceptan tarjeta, pero todavía hay tiendas, restaurantes, máquinas y servicios donde es más seguro pagar en efectivo.</p>
+
+<p><strong>Importante:</strong> no todos los ATM aceptan tarjetas extranjeras, y muchos pagos QR requieren cuenta japonesa.</p>
+
+<img src="dinero.jpg" class="info-img" alt="Dinero y pagos en Japón">
+
+<p><strong>Si necesitas dinero, cambio o pagos, aquí encontrarás opciones útiles:</strong></p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+  <summary>🏧 Necesito sacar dinero en ATM</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Busca ATM en konbini, estaciones o zonas comerciales.</li>
+      <li>Prueba primero en 7-Eleven, Lawson o FamilyMart.</li>
+      <li>Selecciona idioma si está disponible.</li>
+      <li>Verifica comisión antes de confirmar.</li>
+    </ol>
+
+    <p><strong>Importante:</strong></p>
+    <p>No todos los cajeros aceptan tarjetas extranjeras. Si uno falla, prueba otro.</p>
+
+    <p><strong>Búsqueda útil:</strong></p>
+    <p>
+      <a href="https://www.google.com/maps/search/ATM/" target="_blank">🏧 Ver ATM / cajeros en Google Maps</a><br>
+      <a href="https://www.google.com/search?q=ATM+cerca+de+mi" target="_blank">📍 Buscar ATM cerca de mí</a>
+    </p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>🏦 Necesito ir a un banco</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué saber:</strong></p>
+    <ol>
+      <li>Los bancos pueden servir para consultas, transferencias o algunos trámites.</li>
+      <li>No todos los bancos hacen cambio directo de moneda para turistas.</li>
+      <li>En algunos casos te pedirán pasaporte o datos de la cuenta.</li>
+    </ol>
+
+    <p><strong>Búsqueda útil:</strong></p>
+    <p>
+      <a href="https://www.google.com/maps/search/banco/" target="_blank">🏦 Ver bancos en Google Maps</a><br>
+      <a href="https://www.google.com/search?q=banco+cerca+de+mi" target="_blank">📍 Buscar bancos cerca de mí</a>
+    </p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>💱 Quiero cambiar dinero</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Busca una casa de cambio en aeropuerto o ciudad.</li>
+      <li>Compara si la tasa te conviene.</li>
+      <li>Ten tu pasaporte a mano si te lo piden.</li>
+      <li>Cuenta el dinero antes de irte.</li>
+    </ol>
+
+    <p><strong>Importante:</strong></p>
+    <p>No en todos los bancos cambian moneda extranjera para visitantes.</p>
+
+    <p><strong>Búsqueda útil:</strong></p>
+    <p>
+      <a href="https://www.google.com/maps/search/casa+de+cambio/" target="_blank">💱 Ver casas de cambio en Google Maps</a><br>
+      <a href="https://www.google.com/search?q=casa+de+cambio+cerca+de+mi" target="_blank">📍 Buscar casa de cambio cerca de mí</a>
+    </p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>💸 Quiero enviar, depositar o transferir dinero</summary>
+  <div class="subtema-content">
+
+    <p><strong>Opciones comunes:</strong></p>
+    <ul>
+      <li>Transferencia bancaria</li>
+      <li>Depósito en ATM o banco</li>
+      <li>Servicios internacionales si envías o recibes desde fuera de Japón</li>
+    </ul>
+
+    <p><strong>Importante:</strong></p>
+    <p>Verifica muy bien nombre, número de cuenta y monto antes de confirmar.</p>
+
+    <p><strong>Frase útil:</strong></p>
+    <p>振込したいです<br>Furikomi shitai desu<br>Quiero hacer una transferencia</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>💵 Quiero recibir o cobrar dinero</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué revisar:</strong></p>
+    <ol>
+      <li>Pregunta dónde se cobra o retira exactamente.</li>
+      <li>Lleva pasaporte o documento si lo requieren.</li>
+      <li>Confirma horario, comisión y monto.</li>
+    </ol>
+
+    <p><strong>Importante:</strong></p>
+    <p>Algunos servicios de cobro o retiro no funcionan igual para todos los países.</p>
+
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>💳 Mi tarjeta o pago no funciona</summary>
+  <div class="subtema-content">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Prueba otro ATM o comercio.</li>
+      <li>Pregunta si aceptan efectivo.</li>
+      <li>Usa otra tarjeta si tienes.</li>
+      <li>Busca un cajero o cambio cercano.</li>
+    </ol>
+
+    <p><strong>También debes saber:</strong></p>
+    <ul>
+      <li>PayPay es muy común en Japón</li>
+      <li>También existen Rakuten Pay, d払い, au PAY, LINE Pay y otros</li>
+      <li>Muchos pagos QR requieren cuenta japonesa</li>
+      <li>Alipay puede aceptarse en algunos lugares turísticos</li>
+    </ul>
+
+  </div>
+</details>
+
+</div>
+
+<h3>🌐 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+
+<li>
+
+<strong>Español</strong><br>
+Quiero sacar dinero.<br><br>
+
+<strong>Romaji</strong><br>
+Okane o oroshitai desu.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">お金を下ろしたいです。</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+Quiero cambiar dinero.<br><br>
+
+<strong>Romaji</strong><br>
+Ryougae shitai desu.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">両替したいです。</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Puedo usar un traductor para explicarme?<br><br>
+
+<strong>Romaji</strong><br>
+Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">翻訳アプリを使って説明してもいいですか？</span>
+
+</li>
+
+</ul>
+
+<p>
+Si no puedes comunicarte bien en japonés, puedes utilizar cualquier traductor desde tu teléfono o dispositivo.
+No es necesario instalar una aplicación. Puedes abrir un traductor directamente desde tu navegador y mostrar el texto al personal.
+</p>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
+
+<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
+
+<p>🟢 <a href="https://chat.openai.com" target="_blank">ChatGPT (explicar o traducir una situación)</a></p>
+
+<h3>🗣️ Frases útiles</h3>
+
+<ul style="line-height:1.9">
+
+<li>
+
+<strong>Español</strong><br>
+¿Dónde está el ATM?<br><br>
+
+<strong>Romaji</strong><br>
+ATM wa doko desu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">ATMはどこですか？</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+¿Aceptan tarjeta?<br><br>
+
+<strong>Romaji</strong><br>
+Kaado wa tsukaemasu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">カードは使えますか？</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+Quiero depositar dinero.<br><br>
+
+<strong>Romaji</strong><br>
+Okane o nyuukin shitai desu.<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">お金を入金したいです。</span>
+
+</li>
+
+</ul>
+
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+
+<p>
+En Japón conviene llevar siempre algo de efectivo. No todos los lugares aceptan tarjeta, QR o pagos extranjeros.
+</p>
+
+</div>
+
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p>
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;">
+• Guardar
+</button>
+
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;">
+❤️ Apoyar
+</button>
+
+<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
+
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
+</p>
+
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
+
+</div>
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('dinero').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;">
+⬆️ Volver al tema Dinero
+</button>
+
+</div>
+`,
     vida: `
       <h2>🏠 Vida diaria</h2>
       <p><strong>Basura:</strong> cada ciudad tiene reglas (燃えるごみ / 燃えないごみ / 資源ごみ).</p>

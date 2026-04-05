@@ -1590,7 +1590,9 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:
 alojamiento: `
 <h2 id="alojamiento">🏨 Alojamiento en Japón</h2>
 
-<p>En Japón hay muchas opciones para dormir según tu presupuesto.</p>
+<p><strong>En Japón hay muchas opciones para dormir según tu presupuesto.</strong></p>
+
+<p>Desde hoteles normales hasta cápsula, cafés internet o alquileres por días.</p>
 
 <p>
 ✔ Hoteles: cómodos y limpios (¥6,000 – ¥15,000)<br>
@@ -1602,9 +1604,9 @@ alojamiento: `
 <p>👉 El servicio en Japón suele ser muy limpio, puntual y respetuoso.</p>
 
 <div style="display:flex; gap:10px; overflow-x:auto; margin:10px 0;">
-<img src="IMAGEN_1" style="width:85%; border-radius:10px;">
-<img src="IMAGEN_2" style="width:85%; border-radius:10px;">
-<img src="IMAGEN_3" style="width:85%; border-radius:10px;">
+  <img src="IMAGEN_1" style="width:85%; border-radius:10px;">
+  <img src="IMAGEN_2" style="width:85%; border-radius:10px;">
+  <img src="IMAGEN_3" style="width:85%; border-radius:10px;">
 </div>
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
@@ -1612,79 +1614,94 @@ alojamiento: `
 <div class="subtemas-box">
 
 <details class="subtema-card">
-<summary>🏨 Cómo funcionan los hoteles</summary>
-<div class="subtema-content">
-<p><strong>Qué esperar:</strong></p>
-<ol>
-<li>Check-in normalmente desde 15:00.</li>
-<li>Check-out entre 10:00 y 11:00.</li>
-<li>Habitaciones pequeñas pero muy limpias.</li>
-<li>Muchos incluyen pijama, toalla y amenities.</li>
-</ol>
-</div>
+  <summary>🏨 Cómo funcionan los hoteles</summary>
+  <div class="subtema-content">
+    <p><strong>Qué esperar:</strong></p>
+    <ol>
+      <li>Check-in normalmente desde la tarde.</li>
+      <li>Check-out normalmente por la mañana.</li>
+      <li>Las habitaciones suelen ser pequeñas, limpias y bien organizadas.</li>
+      <li>Muchos hoteles incluyen toallas, jabón, shampoo, piyama o bata.</li>
+    </ol>
+
+    <p><strong>Frases útiles:</strong></p>
+    <p>チェックインお願いします<br>Check-in onegaishimasu<br>Quiero hacer check-in</p>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>🛌 Hoteles cápsula</summary>
-<div class="subtema-content">
-<p><strong>Qué saber:</strong></p>
-<ol>
-<li>Espacios individuales tipo cápsula.</li>
-<li>Baños y duchas compartidos.</li>
-<li>No apto para equipaje grande.</li>
-<li>Muy usados para estancias cortas.</li>
-</ol>
-</div>
+  <summary>🛏️ Hoteles cápsula</summary>
+  <div class="subtema-content">
+    <p><strong>Qué saber:</strong></p>
+    <ol>
+      <li>Son espacios pequeños e individuales para dormir.</li>
+      <li>Los baños y duchas suelen ser compartidos.</li>
+      <li>Son prácticos para una o pocas noches.</li>
+      <li>No son la mejor opción si llevas mucho equipaje.</li>
+    </ol>
+
+    <p><strong>Precio aproximado:</strong></p>
+    <p>¥2,500 – ¥6,000 por noche</p>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>🏠 Airbnb / departamentos</summary>
-<div class="subtema-content">
-<p><strong>Qué saber:</strong></p>
-<ol>
-<li>Más espacio y privacidad.</li>
-<li>Puede ser más económico en grupo.</li>
-<li>Revisa reglas del edificio.</li>
-<li>Check-in suele ser automático.</li>
-</ol>
-</div>
+  <summary>🏠 Airbnb / departamentos</summary>
+  <div class="subtema-content">
+    <p><strong>Qué saber:</strong></p>
+    <ol>
+      <li>Ofrecen más espacio y más privacidad.</li>
+      <li>Pueden ser útiles para familias o grupos.</li>
+      <li>El check-in muchas veces es automático.</li>
+      <li>Debes revisar bien reglas, dirección y horario de entrada.</li>
+    </ol>
+
+    <p><strong>Importante:</strong></p>
+    <p>Guarda bien las instrucciones de entrada y el código si lo hay.</p>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>💻 Internet café (para dormir)</summary>
-<div class="subtema-content">
-<p><strong>Qué saber:</strong></p>
-<ol>
-<li>Cabinas privadas con silla o sofá.</li>
-<li>Incluye internet, bebidas y manga.</li>
-<li>Se paga por horas (¥1,500 – ¥3,000).</li>
-<li>Útil si perdiste el último tren.</li>
-</ol>
-</div>
+  <summary>💻 Internet café (para dormir)</summary>
+  <div class="subtema-content">
+    <p><strong>Qué es:</strong></p>
+    <ol>
+      <li>Son lugares con cabinas privadas o semi privadas.</li>
+      <li>Suelen tener internet, bebidas y a veces ducha.</li>
+      <li>Sirven para pasar la noche si no tienes otra opción.</li>
+      <li>Son útiles si perdiste el último tren.</li>
+    </ol>
+
+    <p><strong>Precio aproximado:</strong></p>
+    <p>¥1,500 – ¥3,500 según horas y servicios</p>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>📍 Cómo llegar a mi hotel</summary>
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Usa Google Maps.</li>
-<li>Muestra la dirección en japonés.</li>
-<li>Guarda la ubicación offline.</li>
-</ol>
-</div>
+  <summary>📍 Cómo llegar a mi hotel</summary>
+  <div class="subtema-content">
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Usa Google Maps.</li>
+      <li>Guarda la dirección exacta en japonés.</li>
+      <li>Si te pierdes, muestra la dirección en una estación o taxi.</li>
+    </ol>
+
+    <p><strong>Frase útil:</strong></p>
+    <p>このホテルに行きたいです<br>Kono hoteru ni ikitai desu<br>Quiero ir a este hotel</p>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>🗣️ No hablo japonés</summary>
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Muestra tu reserva.</li>
-<li>Usa traductor.</li>
-<li>Muchos hoteles tienen inglés básico.</li>
-</ol>
-</div>
+  <summary>🗣️ No hablo japonés</summary>
+  <div class="subtema-content">
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Muestra tu reserva.</li>
+      <li>Usa traductor en el celular.</li>
+      <li>Habla con frases cortas y claras.</li>
+    </ol>
+  </div>
 </details>
 
 </div>
@@ -1698,19 +1715,38 @@ alojamiento: `
 <li>
 <strong>Español</strong><br>
 Tengo una reserva<br><br>
+
 <strong>Romaji</strong><br>
 Yoyaku ga arimasu<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">予約があります</span>
 </li>
 
+<br>
+
 <li>
 <strong>Español</strong><br>
 ¿Dónde está mi habitación?<br><br>
+
 <strong>Romaji</strong><br>
 Heya wa doko desu ka?<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">部屋はどこですか？</span>
+</li>
+
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Puedo usar un traductor para explicarme?<br><br>
+
+<strong>Romaji</strong><br>
+Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">翻訳アプリを使って説明してもいいですか？</span>
 </li>
 
 </ul>
@@ -1719,7 +1755,7 @@ Heya wa doko desu ka?<br><br>
 
 <p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
 <p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
-<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></p>
+<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT (explicar o traducir una situación)</a></p>
 
 <h3>🗣️ Frases útiles</h3>
 
@@ -1728,28 +1764,119 @@ Heya wa doko desu ka?<br><br>
 <li>
 <strong>Español</strong><br>
 Quiero hacer check-in<br><br>
+
 <strong>Romaji</strong><br>
 Check-in onegaishimasu<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">チェックインお願いします</span>
 </li>
 
+<br>
+
 <li>
 <strong>Español</strong><br>
 ¿A qué hora es el check-out?<br><br>
+
 <strong>Romaji</strong><br>
 Check-out wa nanji desu ka?<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">チェックアウトは何時ですか？</span>
 </li>
 
+<br>
+
+<li>
+<strong>Español</strong><br>
+¿Pueden guardar mi equipaje?<br><br>
+
+<strong>Romaji</strong><br>
+Nimotsu o azukatte moraemasu ka?<br><br>
+
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">荷物を預かってもらえますか？</span>
+</li>
+
 </ul>
 
-<div style="background:#2a2112;border:2px solid #f0b93a;padding:18px;border-radius:16px;margin-top:18px;">
-<h3 style="color:#f0c24b;margin-top:0;">💡 Consejo importante</h3>
-<p style="margin-bottom:0;">
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+<p>
 Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
 </p>
+</div>
+
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p>
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',text:'Guía útil sobre alojamiento en Japón',url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;border:none;background:#2a2a2a;color:white;cursor:pointer;">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;border:none;background:#2a2a2a;color:white;cursor:pointer;">
+• Guardar
+</button>
+
+<button onclick="irAApoyo()"
+style="padding:8px 14px;border-radius:6px;border:none;background:#2a2a2a;color:white;cursor:pointer;">
+❤️ Apoyar
+</button>
+
+<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
+</p>
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
+También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
+</p>
+
+<div id="apoyo" style="width:100%;margin-top:8px;">
+<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+<a href="https://www.paypal.com/" target="_blank" style="padding:10px 14px;border-radius:10px;background:#f2f2f2;color:#222;text-decoration:none;font-weight:bold;">💳 PayPal</a>
+<a href="https://ko-fi.com/" target="_blank" style="padding:10px 14px;border-radius:10px;background:#f2f2f2;color:#222;text-decoration:none;font-weight:bold;">☕ Ko-fi</a>
+<a href="#" style="padding:10px 14px;border-radius:10px;background:#f2f2f2;color:#222;text-decoration:none;font-weight:bold;">📱 PayPay</a>
+</div>
+</div>
+
+</div>
+
+<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
+<button onclick="document.getElementById('searchInput').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;cursor:pointer;">
+⬅️ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('alojamiento').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;cursor:pointer;">
+⬆️ Volver al tema Alojamiento
+</button>
 </div>
 `,
     vida: `

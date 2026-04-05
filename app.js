@@ -232,23 +232,6 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   ❤️ Apoyar
   </button>
 
-</div>
-
-
-<!-- BOTONES ORIENTACIÓN -->
-<div style="display:flex;gap:10px;width:100%;margin-top:12px;">
-
-  <button onclick="document.getElementById('btnGeneral').click()"
-  style="flex:1;background:#2e9d63;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
-  💬 Orientación general
-  </button>
-
-  <button onclick="document.getElementById('btnPersonalizada').click()"
-  style="flex:1;background:#278a56;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;">
-  📞 Orientación personalizada
-  </button>
-
-</div>
 
 
 <!-- BOTONES VOLVER -->

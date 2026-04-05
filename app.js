@@ -241,7 +241,40 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 <p style="font-size:12px;color:#777;">
 También es posible colaborar utilizando tarjeta de crédito o débito.
 </p>
+<div style="
+margin-top:25px;
+display:flex;
+flex-direction:column;
+gap:10px;
+">
 
+<button onclick="irAOrientacionGeneral()"
+style="
+background:#2ecc71;
+color:white;
+padding:14px;
+border:none;
+border-radius:12px;
+font-weight:bold;
+font-size:16px;
+">
+💬 Orientación general
+</button>
+
+<button onclick="irAOrientacionPersonalizada()"
+style="
+background:#27ae60;
+color:white;
+padding:14px;
+border:none;
+border-radius:12px;
+font-weight:bold;
+font-size:16px;
+">
+📞 Orientación personalizada
+</button>
+
+</div>
 <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
 
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">

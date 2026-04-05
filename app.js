@@ -210,80 +210,76 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 </p>
 </div>
 
-<p>🙏 Si esta información te fue útil, puedes:</p>
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p style="margin-bottom:14px;">
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})">
+<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+style="background:#3d7fc1;color:white;padding:8px 14px;border:none;border-radius:10px;font-size:14px;font-weight:bold;">
 ↗ Compartir
 </button>
 
-<button onclick="mostrarGuardar()">
+<button onclick="mostrarGuardar()"
+style="background:#8f9a9d;color:white;padding:8px 14px;border:none;border-radius:10px;font-size:14px;font-weight:bold;">
 • Guardar
 </button>
 
-<button onclick="irAApoyo()">
+<button onclick="irAApoyo()"
+style="background:#c95a4a;color:white;padding:8px 14px;border:none;border-radius:10px;font-size:14px;font-weight:bold;">
 ❤️ Apoyar
 </button>
 
-</div>
-
-<div id="guardar-pagina" style="display:none;">
+<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
 
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
-<p><b>iPhone / iPad:</b> Añadir a pantalla de inicio</p>
-<p><b>Android:</b> Añadir a pantalla de inicio</p>
-<p><b>PC:</b> Ctrl + D</p>
+<p><b>iPhone / iPad:</b><br>
+Compartir → Añadir a pantalla de inicio</p>
+
+<p><b>Android:</b><br>
+Menú → Añadir a pantalla de inicio</p>
+
+<p><b>PC:</b><br>
+Ctrl + D o ⭐</p>
 
 </div>
 
-<p style="font-size:12px;color:#777;">
-También es posible colaborar utilizando tarjeta de crédito o débito.
+<p style="font-size:12px;color:#8a8a8a;margin-top:10px;width:100%;">
+También puedes colaborar con tarjeta o débito.
 </p>
-<div style="
-margin-top:25px;
-display:flex;
-flex-direction:column;
-gap:10px;
-">
+
+</div>
+
+<div style="margin-top:24px;display:flex;flex-direction:column;gap:10px;">
 
 <button onclick="irAOrientacionGeneral()"
-style="
-background:#2ecc71;
-color:white;
-padding:14px;
-border:none;
-border-radius:12px;
-font-weight:bold;
-font-size:16px;
-">
+style="width:100%;background:#39b96d;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
 💬 Orientación general
 </button>
 
 <button onclick="irAOrientacionPersonalizada()"
-style="
-background:#27ae60;
-color:white;
-padding:14px;
-border:none;
-border-radius:12px;
-font-weight:bold;
-font-size:16px;
-">
+style="width:100%;background:#2ea85f;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
 📞 Orientación personalizada
 </button>
 
 </div>
-<div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
+<div style="margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="background:#39b96d;color:white;padding:12px 16px;border:none;border-radius:10px;font-weight:bold;">
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})">
-⬆️ Volver al tema Llegada
+<button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
+style="background:#4b93d1;color:white;padding:12px 16px;border:none;border-radius:10px;font-weight:bold;">
+⬆️ Volver al tema Llegada a Japón
 </button>
+
 </div>
 `,
 salud: `

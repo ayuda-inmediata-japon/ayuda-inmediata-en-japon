@@ -214,8 +214,7 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 <p style="margin-bottom:14px;font-weight:bold;">
 🙏 Si esta información te fue útil, puedes apoyar este proyecto:
 </p>
-<!-- FILA 1 -->
-<div style="display:flex;gap:10px;margin-top:10px;">
+<div style="display:flex;gap:10px;margin-top:10px;width:100%;">
 
   <button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
   style="flex:1;background:#3a7cc4;color:white;padding:12px;font-size:16px;border:none;border-radius:10px;font-weight:bold;">
@@ -232,7 +231,7 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   ❤️ Apoyar
   </button>
 
-</div>
+</div
 
 <!-- BLOQUE GUARDAR (OBLIGATORIO) -->
 <div id="guardar-pagina" style="display:none;margin-top:14px;">

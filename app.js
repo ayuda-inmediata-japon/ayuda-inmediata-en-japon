@@ -1911,15 +1911,6 @@ Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
 <p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
 También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
 </p>
-
-<div id="apoyo" style="width:100%;margin-top:8px;">
-<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
-<a href="https://www.paypal.com/" target="_blank" style="padding:10px 14px;border-radius:10px;background:#f2f2f2;color:#222;text-decoration:none;font-weight:bold;">💳 PayPal</a>
-<a href="https://ko-fi.com/" target="_blank" style="padding:10px 14px;border-radius:10px;background:#f2f2f2;color:#222;text-decoration:none;font-weight:bold;">☕ Ko-fi</a>
-<a href="#" style="padding:10px 14px;border-radius:10px;background:#f2f2f2;color:#222;text-decoration:none;font-weight:bold;">📱 PayPay</a>
-</div>
-</div>
-
 </div>
 
 <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">

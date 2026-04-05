@@ -256,196 +256,381 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 salud: `
 <h2 id="salud">🏥 Salud en Japón</h2>
 
-<p>
-👉 En Japón puedes ir directamente a una clínica o hospital.
-</p>
+<p><strong>En Japón puedes ir directamente a una clínica o a un hospital.</strong></p>
 
-<p>
-✔️ Si tienes seguro (kokumin hoken o seguro de empresa), pagarás solo una parte.<br>
-✔️ Si no tienes seguro (turista), igual te atienden pero pagarás el costo completo.
-</p>
+<p>Su función es atenderte, orientarte y ayudarte según tus síntomas, aunque no hables bien japonés.</p>
 
-<p>💰 Ejemplo aproximado:</p>
-<ul>
-  <li>Consulta con seguro: ¥3,000 – ¥10,000</li>
-  <li>Sin seguro: ¥10,000 – ¥30,000 o más</li>
-  <li>Hospital o emergencia: puede ser más alto</li>
-</ul>
+<p><strong>Importante:</strong> en Japón muchas veces conviene ir primero a una <strong>clínica</strong> si no es una urgencia grave.</p>
 
-<div style="display:flex; gap:10px; overflow-x:auto; margin:20px 0;">
-  <img src="IMAGEN_1" style="width:85%; border-radius:12px;">
-  <img src="IMAGEN_2" style="width:85%; border-radius:12px;">
-  <img src="IMAGEN_3" style="width:85%; border-radius:12px;">
+<p><strong>Clínica (クリニック)</strong>: atiende síntomas comunes, fiebre, dolor, resfrío, malestar general y consultas normales.</p>
+
+<img src="salud1.jpg" class="info-img" alt="Clínica en Japón">
+<img src="salud2.jpg" class="info-img" alt="Hospital en Japón">
+<img src="salud3.jpg" class="info-img" alt="Farmacia en Japón">
+
+<p><strong>Si necesitas ayuda médica urgente:</strong></p>
+
+<p><strong>Ambulancia / Bomberos: 119</strong></p>
+<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+
+<div class="subtemas-box">
+
+  <details class="subtema-card">
+    <summary>🏥 Quiero ir a una clínica</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Busca una clínica cercana o pregunta en tu hotel.</li>
+        <li>Lleva pasaporte y seguro si tienes.</li>
+        <li>Explica tus síntomas con calma.</li>
+        <li>Si no hablas japonés, usa un traductor.</li>
+      </ol>
+
+      <p><strong>Información útil para la consulta:</strong></p>
+      <ul>
+        <li>Qué sientes</li>
+        <li>Desde cuándo empezó</li>
+        <li>Si tienes fiebre</li>
+        <li>Si tomaste alguna medicina</li>
+      </ul>
+
+      <p><strong>Frases útiles:</strong></p>
+      <p>具合が悪いです<br>Guai ga warui desu<br>Me siento mal</p>
+      <p>熱があります<br>Netsu ga arimasu<br>Tengo fiebre</p>
+      <p>ここが痛いです<br>Koko ga itai desu<br>Me duele aquí</p>
+    </div>
+  </details>
+
+  <details class="subtema-card">
+    <summary>🚑 Es una emergencia grave</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Llama al <strong>119</strong>.</li>
+        <li>Di tu ubicación con calma.</li>
+        <li>Explica si hay dolor fuerte, sangrado, desmayo o dificultad para respirar.</li>
+        <li>Espera la ambulancia.</li>
+      </ol>
+
+      <p><strong>Información importante:</strong></p>
+      <ul>
+        <li>Dirección o lugar donde estás</li>
+        <li>Qué pasó</li>
+        <li>Edad aproximada de la persona</li>
+        <li>Si está consciente o no</li>
+      </ul>
+
+      <p><strong>Frases útiles:</strong></p>
+      <p>救急車を呼んでください<br>Kyuukyuusha o yonde kudasai<br>Llame a una ambulancia por favor</p>
+      <p>息が苦しいです<br>Iki ga kurushii desu<br>Me cuesta respirar</p>
+      <p>強い痛みがあります<br>Tsuyoi itami ga arimasu<br>Tengo un dolor fuerte</p>
+    </div>
+  </details>
+
+  <details class="subtema-card">
+    <summary>💊 Quiero comprar medicina</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Busca una farmacia o drugstore.</li>
+        <li>Explica tu síntoma al personal.</li>
+        <li>Para síntomas leves muchas medicinas se compran sin receta.</li>
+        <li>Si el problema parece serio, te dirán que vayas a una clínica.</li>
+      </ol>
+
+      <p><strong>Información útil:</strong></p>
+      <ul>
+        <li>Fiebre</li>
+        <li>Dolor de garganta</li>
+        <li>Tos</li>
+        <li>Dolor de cabeza</li>
+        <li>Dolor estomacal</li>
+      </ul>
+
+      <p><strong>Frases útiles:</strong></p>
+      <p>薬がほしいです<br>Kusuri ga hoshii desu<br>Quiero medicina</p>
+      <p>風邪です<br>Kaze desu<br>Estoy resfriado</p>
+      <p>頭が痛いです<br>Atama ga itai desu<br>Me duele la cabeza</p>
+    </div>
+  </details>
+
+  <details class="subtema-card">
+    <summary>🏥 Necesito ir a un hospital grande</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Ve si tu caso necesita hospital y no solo clínica.</li>
+        <li>Algunos hospitales piden referencia.</li>
+        <li>Puede haber más espera y más costo.</li>
+        <li>Lleva tus documentos y explica bien el problema.</li>
+      </ol>
+
+      <p><strong>También debes saber:</strong></p>
+      <ul>
+        <li>Si no es urgencia, puede convenir clínica primero</li>
+        <li>Un hospital grande puede cobrar más</li>
+        <li>Algunos no tienen personal que hable español</li>
+      </ul>
+
+      <p><strong>Frases útiles:</strong></p>
+      <p>病院に行きたいです<br>Byouin ni ikitai desu<br>Quiero ir a un hospital</p>
+      <p>紹介状は必要ですか？<br>Shoukaijou wa hitsuyou desu ka?<br>¿Necesito referencia?</p>
+      <p>診察を受けたいです<br>Shinsatsu o uketai desu<br>Quiero una consulta médica</p>
+    </div>
+  </details>
+
+  <details class="subtema-card">
+    <summary>💴 No tengo seguro</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Igual pueden atenderte.</li>
+        <li>Explica que no tienes seguro.</li>
+        <li>Prepárate para pagar el costo completo.</li>
+        <li>Pregunta el monto aproximado antes si es posible.</li>
+      </ol>
+
+      <p><strong>También debes saber:</strong></p>
+      <ul>
+        <li>Una clínica suele costar menos que un hospital</li>
+        <li>La urgencia puede costar más</li>
+        <li>Normalmente se paga el mismo día</li>
+      </ul>
+
+      <p><strong>Frases útiles:</strong></p>
+      <p>保険がありません<br>Hoken ga arimasen<br>No tengo seguro</p>
+      <p>いくらぐらいかかりますか？<br>Ikura gurai kakarimasu ka?<br>¿Cuánto costará aproximadamente?</p>
+      <p>現金で払えます<br>Genkin de haraemasu<br>Puedo pagar en efectivo</p>
+    </div>
+  </details>
+
+  <details class="subtema-card">
+    <summary>🌐 No hablo bien japonés</summary>
+    <div class="subtema-content">
+      <p><strong>Qué hacer:</strong></p>
+      <ol>
+        <li>Habla despacio y con calma.</li>
+        <li>Muestra frases escritas.</li>
+        <li>Usa traductor si es necesario.</li>
+        <li>Pide ayuda en recepción o en tu hotel.</li>
+      </ol>
+
+      <p><strong>Frase útil:</strong></p>
+      <p>翻訳アプリを使ってもいいですか？<br>Honyaku apuri o tsukatte mo ii desu ka?<br>¿Puedo usar un traductor para explicarme?</p>
+    </div>
+  </details>
+
 </div>
 
-<p>🟢 Presiona una situación para ver qué hacer:</p>
-
-<div onclick="mostrarSubtema('salud1')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
-🏥 Ir a una clínica
-</div>
-<div id="salud1" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
-<p>Busca una clínica cercana (クリニック).</p>
-<p>En la mayoría puedes entrar sin cita.</p>
-<p>Lleva pasaporte y seguro si tienes.</p>
-<p>Explica tus síntomas o usa traductor.</p>
-</div>
-
-<div onclick="mostrarSubtema('salud2')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
-🚑 Emergencia grave
-</div>
-<div id="salud2" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
-<p>Llama al <strong>119</strong>.</p>
-<p>La ambulancia es gratuita.</p>
-<p>Di tu ubicación lo más claro posible.</p>
-</div>
-
-<div onclick="mostrarSubtema('salud3')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
-💊 Comprar medicina
-</div>
-<div id="salud3" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
-<p>Busca una farmacia (ドラッグストア).</p>
-<p>Para síntomas leves puedes comprar sin receta.</p>
-<p>Pide ayuda al personal.</p>
-</div>
-
-<div onclick="mostrarSubtema('salud4')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
-🏥 Hospital grande
-</div>
-<div id="salud4" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
-<p>Puede requerir cita o referencia.</p>
-<p>Si no es urgente, ve primero a una clínica.</p>
-<p>Puede haber espera larga.</p>
-</div>
-
-<div onclick="mostrarSubtema('salud5')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
-💸 Sin seguro
-</div>
-<div id="salud5" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
-<p>Igual puedes atenderte.</p>
-<p>Pagarás el costo completo.</p>
-<p>Se paga el mismo día normalmente.</p>
-</div>
-
-<div onclick="mostrarSubtema('salud6')" style="background:#1db954;color:white;padding:14px 16px;border-radius:12px;font-weight:bold;margin:12px 0;cursor:pointer;">
-🌐 Problema con idioma
-</div>
-<div id="salud6" style="display:none;background:#111;padding:14px 16px;border-radius:12px;margin-top:8px;margin-bottom:14px;border-left:4px solid #1db954;">
-<p>Usa traductor en el celular.</p>
-<p>Muestra frases escritas.</p>
-<p>Algunos lugares tienen inglés básico.</p>
-</div>
-
-<h3>🌍 Si tienes dificultad con el idioma</h3>
+<h3>🌐 Si tienes dificultad con el idioma</h3>
 
 <p><strong>📱 Puedes mostrar este mensaje:</strong></p>
 
 <ul style="line-height:1.9">
 <li>
+
 <strong>Español</strong><br>
-No me siento bien<br><br>
+Disculpe, no hablo mucho japonés.<br>
 
 <strong>Romaji</strong><br>
-Taichou ga warui desu<br><br>
+Sumimasen, nihongo ga amari hanasemasen.<br>
 
 <strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">体調が悪いです</span>
+<span style="font-size:24px;font-weight:bold;">すみません、日本語があまり話せません。</span>
 </li>
+
+<br>
 
 <li>
+
 <strong>Español</strong><br>
-Necesito ayuda médica<br><br>
+¿Puedo usar un traductor para explicarme?<br>
 
 <strong>Romaji</strong><br>
-Iryou no tasuke ga hitsuyou desu<br><br>
+Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br>
 
 <strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">医療の助けが必要です</span>
+<span style="font-size:24px;font-weight:bold;">翻訳アプリを使って説明してもいいですか？</span>
 </li>
+
 </ul>
+
+<p>
+Si no puedes comunicarte bien en japonés, usa frases cortas y claras.<br>
+No es necesario instalar una aplicación. Puedes mostrar este texto directamente.
+</p>
 
 <h3>🌐 Traductores recomendados</h3>
 
-<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">DeepL</a></p>
-<p>🟡 <a href="https://translate.google.com/" target="_blank">Google Translate</a></p>
-<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></p>
+<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">
+Traductor español → japonés (DeepL)
+</a></p>
 
-<h3>💬 Frases útiles</h3>
+<p>🟡 <a href="https://translate.google.com/" target="_blank">
+Traductor español → japonés (Google)
+</a></p>
+
+<p>🟢 <a href="https://chat.openai.com" target="_blank">
+ChatGPT (explicar o traducir una situación médica)
+</a></p>
+
+<h3>🗣️ Frases útiles para hablar con personal médico</h3>
 
 <ul style="line-height:1.9">
-<li>
-<strong>Español</strong><br>
-Me duele aquí<br><br>
-
-<strong>Romaji</strong><br>
-Koko ga itai desu<br><br>
-
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">ここが痛いです</span>
-</li>
 
 <li>
+
 <strong>Español</strong><br>
-Tengo fiebre<br><br>
+Ayuda por favor<br>
 
 <strong>Romaji</strong><br>
-Netsu ga arimasu<br><br>
+Tasukete kudasai<br>
 
 <strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">熱があります</span>
+<span style="font-size:26px;font-weight:bold;">助けてください</span>
+
 </li>
+
+<br>
 
 <li>
+
 <strong>Español</strong><br>
-Necesito un doctor<br><br>
+Me siento mal<br>
 
 <strong>Romaji</strong><br>
-Isha ga hitsuyou desu<br><br>
+Guai ga warui desu<br>
 
 <strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">医者が必要です</span>
+<span style="font-size:24px;font-weight:bold;">具合が悪いです</span>
+
 </li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+Tengo fiebre<br>
+
+<strong>Romaji</strong><br>
+Netsu ga arimasu<br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">熱があります</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+Me duele aquí<br>
+
+<strong>Romaji</strong><br>
+Koko ga itai desu<br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">ここが痛いです</span>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>Español</strong><br>
+Necesito un doctor<br>
+
+<strong>Romaji</strong><br>
+Isha ga hitsuyou desu<br>
+
+<strong>日本語</strong><br>
+<span style="font-size:24px;font-weight:bold;">医者が必要です</span>
+
+</li>
+
 </ul>
 
-<div style="background:#2a2112;border:2px solid #f0c24b;padding:15px;border-radius:10px;margin-top:20px;">
-<h3 style="color:#f0c24b;margin-top:0;">⚠️ Consejo importante</h3>
-<p style="margin-bottom:0;">
-Si no es grave, ve primero a una clínica. Ir directo a hospital puede costar más y tomar más tiempo.
+<div style="
+border:3px solid #f5c542;
+border-radius:10px;
+padding:14px;
+margin-top:22px;
+background:#1c1c1c;
+box-shadow:0 0 8px rgba(245,197,66,0.4);
+animation:brilloConsejo 4s ease-in-out infinite;
+">
+
+<h3 style="color:#f5c542;">💡 Consejo importante</h3>
+
+<p>
+En Japón, si no es una emergencia grave, muchas veces es mejor ir primero a una clínica.
 </p>
+
+<p>
+Los hospitales grandes pueden costar más, pedir referencia y tardar más.
+</p>
+
+<p>
+Si puedes explicar tus síntomas con calma, todo será más fácil.
+</p>
+
 </div>
 
-<p style="font-size:12px;color:#777;margin-top:20px;">
-También es posible colaborar utilizando PayPal, Ko-fi o PayPay.
-</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;">
 
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
-<button onclick="navigator.share({title:'Ayuda en Japón',text:'Mira esta guía útil',url:window.location.href})">
-↗️ Compartir
+<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',text:'Información útil sobre salud en Japón',url:window.location.href})"
+style="padding:8px 14px;border-radius:6px;">
+↗ Compartir
 </button>
 
-<button onclick="mostrarGuardar()">
+<button onclick="mostrarGuardar()"
+style="padding:8px 14px;border-radius:6px;">
 • Guardar
 </button>
 
-<button onclick="irAApoyo()">
+<button onclick="irAApoyo()" style="padding:8px 14px;border-radius:6px;">
 ❤️ Apoyar
 </button>
-</div>
 
 <div id="guardar-pagina" style="display:none;">
 <p><strong>📌 Cómo guardar esta página</strong></p>
-<p><b>iPhone / iPad:</b> Añadir a pantalla de inicio</p>
-<p><b>Android:</b> Añadir a pantalla de inicio</p>
-<p><b>PC:</b> Ctrl + D</p>
+
+<p><b>En iPhone / iPad:</b><br>
+Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En Android:</b><br>
+Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
+</p>
+
+<p><b>En computadora:</b><br>
+Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
+</p>
+</div>
+
+</div>
+
+<p style="font-size:12px;color:#777;margin-top:12px;">
+También es posible colaborar utilizando tu apoyo para mantener esta guía.
+</p>
+
 </div>
 
 <div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;">
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('salud').scrollIntoView({behavior:'smooth'})">
+<button onclick="document.getElementById('salud').scrollIntoView({behavior:'smooth'})"
+style="padding:10px 14px;border-radius:8px;">
 ⬆️ Volver al tema Salud
 </button>
+
 </div>
 `,
 emergencia: `

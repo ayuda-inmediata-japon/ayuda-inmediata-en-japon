@@ -251,16 +251,25 @@ style="width:100%;background:#278a56;color:white;padding:12px;border:none;border
 </button>
 
 </div>
-
 <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
 
+<button onclick="document.getElementById('btnGeneral').click()"
+style="width:100%;background:#2e9d63;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
+💬 Orientación general
+</button>
+
+<button onclick="document.getElementById('btnPersonalizado').click()"
+style="width:100%;background:#278a56;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
+📞 Orientación personalizada
+</button>
+
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-style="background:#2e9d63;color:white;padding:12px;border:none;border-radius:10px;font-weight:bold;">
+style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
 ⬅ Volver al buscador
 </button>
 
 <button onclick="document.getElementById('ID_DEL_TEMA').scrollIntoView({behavior:'smooth'})"
-style="background:#3a7cc4;color:white;padding:12px;border:none;border-radius:10px;font-weight:bold;">
+style="width:100%;background:#3a7cc4;color:white;padding:14px;border:none;border-radius:12px;font-weight:bold;font-size:15px;">
 ⬆ Volver al tema
 </button>
 

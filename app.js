@@ -257,10 +257,10 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   ⬅ Volver al buscador
   </button>
 
-  <button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
-  style="flex:1;background:#25D366;color:white;padding:12px;font-size:16px;border:none;border-radius:10px;font-weight:bold;">
-  ⬆ Volver al tema
-  </button>
+  <button class="volver-tema" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+⬆️ Volver al tema
+</button>
+  
 
 </div>
 `,

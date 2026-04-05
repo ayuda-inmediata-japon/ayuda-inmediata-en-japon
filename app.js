@@ -231,7 +231,7 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   style="flex:1;background:#e74c3c;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;">
   ❤️ Apoyar
   </button>
-
+</div>
 
 
 <!-- BOTONES VOLVER -->

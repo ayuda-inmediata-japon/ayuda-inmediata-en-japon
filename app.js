@@ -214,39 +214,56 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 <p style="margin-bottom:14px;font-weight:bold;">
 🙏 Si esta información te fue útil, puedes apoyar este proyecto:
 </p>
-<!-- FILA 1 -->
-<div style="display:flex;gap:10px;width:100%;margin-top:10px;">
+<!-- BOTONES -->
+<div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;">
 
   <button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-  style="flex:1;background:#3a7cc4;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
-  Compartir
+  style="background:#3a7cc4;color:white;padding:12px;border:none;border-radius:10px;font-weight:bold;">
+  ↗ Compartir
+  </button>
+
+  <button onclick="mostrarGuardar()"
+  style="background:#3a7cc4;color:white;padding:12px;border:none;border-radius:10px;font-weight:bold;">
+  • Guardar
   </button>
 
   <button onclick="irAApoyo()"
-style="flex:1;background:#e74c3c;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
-❤️ Apoyar
-</button>
-
-  <button onclick="mostrarGuardar()"
-style="flex:1;background:#3a7cc4;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">
-• Guardar
-</button>
+  style="background:#e74c3c;color:white;padding:12px;border:none;border-radius:10px;font-weight:bold;">
+  ❤️ Apoyar
+  </button>
 
 </div>
 
+<!-- BLOQUE GUARDAR (DEBE IR JUSTO DEBAJO) -->
+<div id="guardar-pagina" style="display:none;margin-top:14px;">
 
-<!-- FILA 2 -->
-<div style="display:flex;gap:10px;width:100%;margin-top:8px;">
+  <p><strong>📌 Cómo guardar esta página</strong></p>
+
+  <p><b>iPhone / iPad:</b><br>
+  Compartir → Añadir a pantalla de inicio</p>
+
+  <p><b>Android:</b><br>
+  Menú (⋮) → Añadir a pantalla de inicio</p>
+
+  <p><b>PC:</b><br>
+  Ctrl + D o ⭐</p>
+
+</div>
+
+<!-- VOLVER -->
+<div style="margin-top:12px;display:flex;gap:10px;">
 
   <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-  style="flex:1;background:#25D366;color:white;padding:14px;font-size:12px;border:none;border-radius:12px;font-weight:bold;">
+  style="flex:1;background:#25D366;color:white;padding:12px;border:none;border-radius:10px;font-weight:bold;">
   ⬅ Volver al buscador
   </button>
 
   <button onclick="document.getElementById('llegada').scrollIntoView({behavior:'smooth'})"
-  style="flex:1;background:#25D366;color:white;padding:14px;font-size:12px;border:none;border-radius:12px;font-weight:bold;">
+  style="flex:1;background:#25D366;color:white;padding:12px;border:none;border-radius:10px;font-weight:bold;">
   ⬆ Volver al tema Llegada a Japón
   </button>
+
+</div>
 
 </div>
 `,

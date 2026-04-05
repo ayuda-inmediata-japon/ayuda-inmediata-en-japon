@@ -236,7 +236,7 @@ Primero resuelve: internet, transporte, hotel y efectivo.
 
 
 <!-- FILA 2 -->
-<div style="display:flex;gap:10px;width:100%;margin-top:12px;">
+<div style="display:flex;gap:10px;width:100%;margin-top:8px;">
 
   <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
   style="flex:1;background:#25D366;color:white;padding:14px;font-size:16px;border:none;border-radius:12px;font-weight:bold;">

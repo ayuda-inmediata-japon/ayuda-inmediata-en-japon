@@ -253,7 +253,7 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 </button>
 </div>
 `,
-salud: `
+swalud: `
 <h2 id="salud">🏥 Salud en Japón</h2>
 
 <p>

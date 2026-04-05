@@ -275,6 +275,7 @@ También es posible colaborar utilizando tarjeta de crédito o débito.
 
 </div>
 
+<!-- ORIENTACIÓN -->
 <div style="
 margin-top:25px;
 display:flex;
@@ -287,11 +288,11 @@ style="
 width:100%;
 background:#2ecc71;
 color:white;
-padding:14px;
+padding:12px;
 border:none;
 border-radius:12px;
 font-weight:bold;
-font-size:16px;
+font-size:15px;
 ">
 💬 Orientación general
 </button>
@@ -301,19 +302,20 @@ style="
 width:100%;
 background:#27ae60;
 color:white;
-padding:14px;
+padding:12px;
 border:none;
 border-radius:12px;
 font-weight:bold;
-font-size:16px;
+font-size:15px;
 ">
 📞 Orientación personalizada
 </button>
 
 </div>
 
+<!-- VOLVER -->
 <div style="
-margin-top:30px;
+margin-top:35px;
 display:flex;
 gap:10px;
 flex-wrap:wrap;
@@ -345,7 +347,6 @@ font-weight:bold;
 </button>
 
 </div>
-`,
 salud: `
 <h2 id="salud">🏥 Salud en Japón</h2>
 

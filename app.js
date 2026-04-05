@@ -1608,7 +1608,62 @@ alojamiento: `
   <img src="IMAGEN_2" style="width:85%; border-radius:10px;">
   <img src="IMAGEN_3" style="width:85%; border-radius:10px;">
 </div>
+<div style="
+margin:20px 0;
+padding:14px;
+border-radius:12px;
+background:#111;
+border:1px solid #333;
+">
 
+<p style="font-weight:bold;">🔎 Buscar alojamiento ahora</p>
+
+<a href="https://www.google.com/maps/search/hotel/" target="_blank"
+style="
+display:block;
+margin-top:10px;
+padding:12px;
+border-radius:10px;
+background:#2ecc71;
+color:white;
+text-decoration:none;
+text-align:center;
+font-weight:bold;
+">
+🗺️ Ver hoteles en Google Maps
+</a>
+
+<a href="https://www.google.com/search?q=hotel+cerca+de+mi" target="_blank"
+style="
+display:block;
+margin-top:10px;
+padding:12px;
+border-radius:10px;
+background:#3498db;
+color:white;
+text-decoration:none;
+text-align:center;
+font-weight:bold;
+">
+📍 Buscar hotel cerca de mí
+</a>
+
+<a href="https://www.booking.com/" target="_blank"
+style="
+display:block;
+margin-top:10px;
+padding:12px;
+border-radius:10px;
+background:#9b59b6;
+color:white;
+text-decoration:none;
+text-align:center;
+font-weight:bold;
+">
+🛏️ Ver precios y reservar
+</a>
+
+</div>
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
 <div class="subtemas-box">

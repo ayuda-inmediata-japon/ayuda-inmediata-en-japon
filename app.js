@@ -3738,3 +3738,6 @@ function irAApoyo() {
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+a:active {
+  transform: scale(0.97);
+}

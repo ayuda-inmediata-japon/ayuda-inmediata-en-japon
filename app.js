@@ -209,7 +209,6 @@ Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
 Primero resuelve: internet, transporte, hotel y efectivo.
 </p>
 </div>
-`,
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
 <p>🙏 Si esta información te fue útil, puedes:</p>

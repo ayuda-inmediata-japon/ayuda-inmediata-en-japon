@@ -242,14 +242,6 @@ También puedes colaborar con tarjeta o débito.
 
 <button onclick="document.getElementById('btnGeneral').click()"
 style="width:100%;background:#2e9d63;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;">
-💬 Orientación general
-</button>
-
-<button onclick="document.getElementById('btnPersonalizado').click()"
-style="width:100%;background:#278a56;color:white;padding:12px;border:none;border-radius:12px;font-weight:bold;">
-📞 Orientación personalizada
-</button>
-
 </div>
 <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;">
 

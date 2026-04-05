@@ -231,7 +231,7 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   ❤️ Apoyar
   </button>
 
-</div
+</div>
 
 <!-- BLOQUE GUARDAR (OBLIGATORIO) -->
 <div id="guardar-pagina" style="display:none;margin-top:14px;">

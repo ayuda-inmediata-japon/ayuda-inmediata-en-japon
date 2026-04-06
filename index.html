@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Ayuda Inmediata en Japón</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ayuda Japón">
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>AYUDA INMEDIATA<br>EN JAPÓN</h1>
+
+      <p class="hero-sub">
+        Guía gratuita y orientación práctica en español para ayudarte cuando no sabes qué hacer o necesitas organizar tu experiencia en Japón. 🇯🇵
+      </p>
+
+      <p class="hero-sub hero-sub-en">
+        Basic guidance in English is available. You may ask your question below.
+      </p>
+
+      <p class="hero-highlight">
+        🟢 Aquí encontrarás orientación gratuita y soluciones claras para resolver tu situación en Japón.
+      </p>
+    </div>
+
+    <!-- Flecha -->
+    <button id="arrowDown" class="arrow" type="button" aria-label="Bajar al buscador">⬇️</button>
+  </header>
+
+  <!-- BUSCADOR / CHIPS -->
+  <main class="main" id="buscador">
+    <section class="panel">
+      <h2>¿En qué necesitas ayuda?</h2>
+      
+       <div class="search-row">
+  <span class="search-icon" aria-hidden="true">🔎</span>
+
+ <input type="text" id="searchInput" placeholder="Escribe aquí: ej;policía…">
+
+<button id="searchBtn" class="search-btn" type="button">Buscar</button>
+
+<div id="sugerencias" class="sugerencias"></div>
+
+
+      <!-- Chips principales (10 categorías) -->
+  <div class="chips-wrap" aria-label="Categorías principales">
+  <button class="chip" type="button" data-key="llegada">✈️ Llegada a Japón</button>
+  <button class="chip" type="button" data-key="emergencia">🚨 Emergencia</button>
+  <button class="chip" type="button" data-key="policia">🚓 Policía</button>
+  <button class="chip" type="button" data-key="transporte">🚆 Transporte</button>
+  <button class="chip" type="button" data-key="salud">🏥 Salud</button>
+  <button class="chip" type="button" data-key="alojamiento">🏨 Alojamiento</button>
+  <button class="chip" type="button" data-key="dinero">💴 Dinero</button>
+  <button class="chip" type="button" data-key="vida-diaria">🏠 Vida diaria</button>
+  <button class="chip" type="button" data-key="tramites">📄 Trámites</button>
+  <button class="chip" type="button" data-key="servicios">🧰 Servicios</button>
+</div>
+      <!-- Bloque WhatsApp + Apoyo (en esta pantalla, como querías) -->
+      
+       <div class="cta-box">
+
+  <p style="font-size:14px;line-height:1.35;margin-bottom:10px;">
+    <strong>Si no encontraste la información,</strong><br>
+    puedes contactarnos con confianza.
+  </p>
+     <div class="whatsapp-buttons-box">
+
+<button class="cta-whatsapp general" id="btnGeneral" type="button">
+💬 Orientación general
+</button>
+
+<button class="cta-whatsapp personalizada" id="btnPersonalizada" type="button">
+📞 Orientación personalizada
+</button>
+
+</div>
+
+</div>
+
+<!-- TARJETAS -->
+<div class="cards-wrap">
+
+  <!-- TURISMO -->
+  <a href="turismo.html" class="card-link" style="border:1px solid #ffd6e0;">
+    <div style="font-size:26px;">🌸</div>
+    <div class="card-title">Turismo en Japón</div>
+    <div class="card-desc">
+      Lugares, videos y recomendaciones
+    </div>
+  </a>
+
+  <!-- JAPONES -->
+  <a href="japones.html" class="card-link" style="border:1px solid #c7f5dc;">
+    <div style="font-size:26px;">🗣️</div>
+    <div class="card-title">Aprender japonés</div>
+    <div class="card-desc">
+      Frases útiles y guía práctica
+    </div>
+  </a>
+
+</div>
+          <p>
+     
+<div id="servicioModal" class="servicio-modal oculto">
+  <div class="servicio-modal-box">
+
+    <button id="cerrarServicioModal" class="servicio-modal-close" type="button">✕</button>
+
+    <h3 id="servicioModalTitulo" class="servicio-modal-titulo"></h3>
+
+    <div id="servicioModalTexto" class="servicio-modal-texto"></div>
+
+    <a id="servicioModalWhatsapp" class="cta-whatsapp general" href="#" target="_blank">
+      Aceptar y continuar a WhatsApp
+    </a>
+<button id="cancelarServicioModal" class="modal-cancelar" type="button">
+Cancelar
+</button>
+  </div>
+</div> 
+<a href="apoyo.html" class="flecha-apoyo">
+⬇️ 
+</a>
+
+<div id="apoyo" class="support-section">
+
+  <div class="support-card">
+
+    <p class="support-thanks">🙏 Gracias por utilizar esta guía</p>
+
+    <h3 class="titulo-apoyo">❤️ Apoya esta guía</h3>
+
+    <p class="support-text">
+      Si esta guía te resultó útil, puedes apoyarla con una pequeña colaboración.
+      Tu ayuda permite mantener esta información gratuita y disponible para más personas que la necesitan.
+    </p>
+
+    <div class="support-buttons">
+
+      <a href="https://paypal.me/JGarciaUmey" target="_blank" class="support-btn">
+        💳 PayPal
+      </a>
+
+      <a href="https://ko-fi.com/ayudainmediatajapon" target="_blank" class="support-btn">
+        ☕ Ko-fi
+      </a>
+
+      <a href="https://qr.paypay.ne.jp/p2p01_uhtObkY1IUOc9WQ6" target="_blank" class="support-btn">
+        📱 PayPay
+      </a>
+
+    </div>
+
+    <p class="support-note">
+      Incluso una pequeña colaboración ayuda a mantener esta guía gratuita y disponible para más personas.
+    </p>
+
+  </div>
+
+</div>
+<a href="#buscador" class="volver-buscador">
+🔙 Volver al buscador
+</a>
+<p class="support-note"></p>
+<p class="support-small">
+
+</div>
+
+    <!-- RESULTADO -->
+    <section id="resultado" class="resultado oculto" aria-live="polite">
+      <div class="resultado-head">
+        <button id="volverBtn" class="volver-btn" type="button">⬅️ Volver</button>
+      </div>
+
+      <article id="resultadoContent" class="resultado-content"></article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("Service Worker registrado"))
+      .catch((error) => console.log("Error registrando Service Worker:", error));
+  });
+}
+</script>
+</body>
+</html>

@@ -108,6 +108,7 @@ Cancelar
 <a href="apoyo.html" class="flecha-apoyo">
 ⬇️ 
 </a>
+      <!-- Bloque WhatsApp + Apoyo (en esta pantalla, como querías) -->
       <div class="cta-box">
 
   <p style="font-size:14px;line-height:1.35;margin-bottom:10px;">
@@ -127,25 +128,28 @@ Cancelar
 </div>
 
 </div> 
+    <!-- RESULTADO -->
+    <section id="resultado" class="resultado oculto" aria-live="polite">
+      <div class="resultado-head">
+        <button id="volverBtn" class="volver-btn" type="button">⬅️ Volver</button>
+      </div>
 
+      <article id="resultadoContent" class="resultado-content"></article>
+    </section>
+  </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="app.js"></script>
+  <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("Service Worker registrado"))
+      .catch((error) => console.log("Error registrando Service Worker:", error));
+  });
+}
+</script>
+</body>
+</html>
 
 <div id="apoyo" class="support-section">
 
@@ -191,29 +195,7 @@ Cancelar
 
 </div>
 
-    <!-- RESULTADO -->
-    <section id="resultado" class="resultado oculto" aria-live="polite">
-      <div class="resultado-head">
-        <button id="volverBtn" class="volver-btn" type="button">⬅️ Volver</button>
-      </div>
 
-      <article id="resultadoContent" class="resultado-content"></article>
-    </section>
-  </main>
-
-  <script src="app.js"></script>
-  <script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js")
-      .then(() => console.log("Service Worker registrado"))
-      .catch((error) => console.log("Error registrando Service Worker:", error));
-  });
-}
-</script>
-</body>
-</html>
-
-                           <!-- Bloque WhatsApp + Apoyo (en esta pantalla, como querías) -->
+                     
       
  

@@ -925,22 +925,16 @@ display:none;
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
   transition: transform 0.15s ease;
 }
-
-.card-link:active {
-  transform: scale(0.97);
-}
-
 .card-title {
-  font-weight: 700;
-  margin-top: 6px;
-  font-size: 14px;
+  font-size: 13px;
+  margin-top: 4px;
 }
 
 .card-desc {
-  font-size: 12px;
-  margin-top: 4px;
-  color: #666;
+  font-size: 11px;
+  margin-top: 2px;
 }
+
 #apoyo {
   min-height: 90vh;
   display: flex;

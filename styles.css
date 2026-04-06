@@ -941,3 +941,14 @@ display:none;
   margin-top: 4px;
   color: #666;
 }
+#apoyo {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.support-card {
+  max-width: 500px;
+  width: 100%;
+}

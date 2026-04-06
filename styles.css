@@ -869,3 +869,75 @@ display:none;
   background:#4aa3ff;
   color:#fff;
 }
+/* PANEL GENERAL */
+.panel {
+  padding: 14px;
+}
+
+/* BUSCADOR */
+.search-box {
+  margin-bottom: 12px;
+}
+
+/* CHIPS */
+.chips-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 14px;
+}
+
+/* TEXTO CTA */
+.cta-box {
+  margin-top: 14px;
+}
+
+/* BOTONES WHATSAPP */
+.cta-whatsapp {
+  padding: 9px 12px;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+/* TARJETAS */
+.cards-wrap {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.card-link {
+  flex: 1;
+  min-width: 140px;
+  background: linear-gradient(180deg,#f8f8f8 0%,#ececec 100%);
+  color: #222;
+  border-radius: 18px;
+  padding: 14px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease;
+}
+
+.card-link:active {
+  transform: scale(0.97);
+}
+
+.card-title {
+  font-weight: 700;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.card-desc {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #666;
+}

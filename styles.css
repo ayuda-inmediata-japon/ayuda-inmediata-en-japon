@@ -952,3 +952,6 @@ display:none;
   max-width: 500px;
   width: 100%;
 }
+a:active {
+  transform: scale(0.97);
+}

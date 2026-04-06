@@ -208,7 +208,7 @@ input, textarea, select{
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .chip{

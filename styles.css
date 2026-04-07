@@ -987,3 +987,19 @@ a:active {
   border-radius: 12px;
   font-weight: 700;
 }
+.subtemas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.chip-verde {
+  background: #1db954;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}

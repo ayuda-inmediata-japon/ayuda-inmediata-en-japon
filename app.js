@@ -51,16 +51,107 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="subtemas-box">
 
   <details class="subtema-card">
-    <summary>🧳 Llegué al aeropuerto y no sé qué hacer</summary>
-    <div class="subtema-content">
-      <p><strong>Qué hacer:</strong></p>
-      <ol>
-        <li>Sigue los letreros de salida, tren o taxi.</li>
-        <li>Asegúrate de tener internet, dinero y la dirección del hotel.</li>
-        <li>Si estás perdido, busca el mostrador de información.</li>
-      </ol>
-    </div>
-  </details>
+<summary>🛄 Llegué al aeropuerto y no sé qué hacer</summary>
+<div class="subtema-content">
+
+<p><strong>🟢 Presiona el paso que necesitas:</strong></p>
+
+<!-- MIGRACIÓN -->
+<details class="subtema-card">
+<summary>🛂 Migración (control de pasaporte)</summary>
+<div class="subtema-content">
+
+<ul>
+<li>Sigue los letreros de <strong>Immigration / 入国審査</strong>.</li>
+<li>Ten listo tu pasaporte.</li>
+<li>Te tomarán foto y huellas.</li>
+<li>Responde simple: turismo, trabajo, etc.</li>
+<li>Te sellan la entrada a Japón.</li>
+</ul>
+
+<p><strong>⚠️ Importante:</strong> Ten tu dirección de hotel a la mano por si te preguntan.</p>
+
+</div>
+</details>
+
+<!-- EQUIPAJE -->
+<details class="subtema-card">
+<summary>🧳 Recojo de equipaje</summary>
+<div class="subtema-content">
+
+<ul>
+<li>Mira las pantallas y busca tu vuelo.</li>
+<li>Ahí verás el número de cinta (belt).</li>
+<li>Ve a esa cinta y espera tu maleta.</li>
+<li><strong>Los carritos son GRATIS</strong> 🛒</li>
+<li>Revisa bien que sea tu equipaje.</li>
+</ul>
+
+<p><strong>⚠️ Importante:</strong> Hay maletas iguales, revisa etiqueta antes de salir.</p>
+
+</div>
+</details>
+
+<!-- ADUANA -->
+<details class="subtema-card">
+<summary>🛃 Aduana</summary>
+<div class="subtema-content">
+
+<ul>
+<li>Sigue los letreros de <strong>Customs / 税関</strong>.</li>
+<li>Entrega la declaración si te la piden.</li>
+<li>Puedes pasar rápido si no llevas nada especial.</li>
+<li>A veces revisan equipaje.</li>
+</ul>
+
+<p><strong>⚠️ Importante:</strong> No lleves alimentos, plantas o productos prohibidos.</p>
+
+</div>
+</details>
+
+<!-- SALIDA -->
+<details class="subtema-card">
+<summary>🚪 Salida del aeropuerto</summary>
+<div class="subtema-content">
+
+<ul>
+<li>Ya estás en zona pública.</li>
+<li>Aquí encontrarás:</li>
+<ul>
+<li>💴 ATM (cajeros)</li>
+<li>📶 SIM / WiFi</li>
+<li>💱 Cambio de dinero</li>
+<li>ℹ️ Información</li>
+<li>🚆 Transporte</li>
+</ul>
+</ul>
+
+<p><strong>⚠️ Importante:</strong> No salgas del aeropuerto sin internet, dinero y dirección del hotel.</p>
+
+</div>
+</details>
+
+<!-- TRANSPORTE -->
+<details class="subtema-card">
+<summary>🚆 Cómo ir a tu hotel</summary>
+<div class="subtema-content">
+
+<ul>
+<li>Usa <strong>Google Maps</strong>.</li>
+<li>Ten la dirección en japonés.</li>
+<li>Opciones:</li>
+<ul>
+<li>🚆 Tren (mejor opción)</li>
+<li>🚌 Bus (directo)</li>
+<li>🚖 Taxi (más caro pero fácil)</li>
+</ul>
+<li>Si dudas, ve al mostrador de información.</li>
+</ul>
+
+<p><strong>⚠️ Importante:</strong> El taxi es caro, úsalo solo si es necesario.</p>
+
+</div>
+</details>
 
   <details class="subtema-card">
     <summary>🚆 Cómo ir del aeropuerto a la ciudad</summary>

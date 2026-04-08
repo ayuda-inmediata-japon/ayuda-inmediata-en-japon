@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     llegada: `
 <h2 id="llegada">✈️ Llegada a Japón</h2>
 
-<img src="AQUI_TU_IMAGEN" style="width:100%; border-radius:10px; margin:10px 0;">
+<img src="Img/llegada.jpg" style="width:100%; border-radius:10px; margin:10px 0;">
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 <div class="subtemas-box">

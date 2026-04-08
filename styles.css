@@ -1003,3 +1003,12 @@ a:active {
   font-weight: 600;
   cursor: pointer;
 }
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+}

@@ -949,3 +949,9 @@ display:none;
 a:active {
   transform: scale(0.97);
 }
+a[href="turismo.html"],
+a[href="japones.html"]{
+  min-width: 110px;
+  padding: 10px 8px;
+  border-radius: 14px;
+}

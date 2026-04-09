@@ -47,28 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <img src="Img/llegada.jpg" style="width:100%; border-radius:10px; margin:10px 0;">
 
-<p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
-<div class="subtemas-box">
+<p>
 
-<!-- EQUIPAJE -->
-<details class="subtema-card">
-<summary>🧳 Recojo de equipaje</summary>
-<div class="subtema-content">
 
-<ul>
-<li>Mira las pantallas y busca tu vuelo.</li>
-<li>Ahí verás el número de cinta (belt).</li>
-<li>Ve a esa cinta y espera tu maleta.</li>
-<li><strong>Los carritos son GRATIS</strong> 🛒</li>
-<li>Revisa bien que sea tu equipaje.</li>
-</ul>
 
-<p><strong>⚠️ Importante:</strong> Hay maletas iguales, revisa etiqueta antes de salir.</p>
-
-</div>
-</details>
-
-<!-- ADUANA -->
 <details class="subtema-card">
 <summary>🛃 Aduana</summary>
 <div class="subtema-content">

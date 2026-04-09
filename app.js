@@ -50,30 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 <div class="subtemas-box">
 
-  <details class="subtema-card">
-<summary>🛄 Llegué al aeropuerto y no sé qué hacer</summary>
-<div class="subtema-content">
-
-<p><strong>🟢 Presiona el paso que necesitas:</strong></p>
-
-<!-- MIGRACIÓN -->
-<details class="subtema-card">
-<summary>🛂 Migración (control de pasaporte)</summary>
-<div class="subtema-content">
-
-<ul>
-<li>Sigue los letreros de <strong>Immigration / 入国審査</strong>.</li>
-<li>Ten listo tu pasaporte.</li>
-<li>Te tomarán foto y huellas.</li>
-<li>Responde simple: turismo, trabajo, etc.</li>
-<li>Te sellan la entrada a Japón.</li>
-</ul>
-
-<p><strong>⚠️ Importante:</strong> Ten tu dirección de hotel a la mano por si te preguntan.</p>
-
-</div>
-</details>
-
 <!-- EQUIPAJE -->
 <details class="subtema-card">
 <summary>🧳 Recojo de equipaje</summary>

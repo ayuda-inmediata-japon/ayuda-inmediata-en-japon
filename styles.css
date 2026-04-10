@@ -907,9 +907,9 @@ display:none;
 /* TARJETAS */
 .cards-wrap {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 .card-link {
   flex: 1;

@@ -964,7 +964,7 @@ a[href="japones.html"]{
 /* 📱 iPad */
 @media (min-width: 601px) and (max-width: 1024px){
   .card-link{
-    flex: 0 0 calc(50% - 10px); /* 2 grandes */
+  flex: 0 0 calc(60% - 10px);/* 2 grandes */
     padding: 10px 12px;
   }
 }

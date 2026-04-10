@@ -978,3 +978,11 @@ a[href="japones.html"]{
     padding: 12px 14px;
   }
 }
+.flecha-abajo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  font-size: 28px;
+  cursor: pointer;
+}

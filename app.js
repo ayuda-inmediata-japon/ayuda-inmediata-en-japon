@@ -3703,13 +3703,6 @@ for (const palabra of palabras) {
     });
   });
 });
-function mostrarGuardar() {
-  const guardar = document.getElementById("guardar-pagina");
-  const apoyo = document.getElementById("apoyo");
-
-  if (guardar) guardar.style.display = "block";
-  if (apoyo) apoyo.style.display = "none";
-}
 
 // BOTONES ORIENTACIÓN
 

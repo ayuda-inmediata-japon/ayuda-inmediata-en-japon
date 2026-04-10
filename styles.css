@@ -953,3 +953,26 @@ a[href="japones.html"]{
   padding: 10px 8px;
   border-radius: 14px;
 }
+/* 📱 iPhone */
+@media (max-width: 600px){
+  .card-link{
+    flex: 0 0 calc(50% - 6px);
+    padding: 6px 8px;
+  }
+}
+
+/* 📱 iPad */
+@media (min-width: 601px) and (max-width: 1024px){
+  .card-link{
+    flex: 0 0 calc(50% - 10px); /* 2 grandes */
+    padding: 10px 12px;
+  }
+}
+
+/* 💻 PC */
+@media (min-width: 1025px){
+  .card-link{
+    flex: 0 0 calc(33.33% - 12px); /* 3 por fila */
+    padding: 12px 14px;
+  }
+}

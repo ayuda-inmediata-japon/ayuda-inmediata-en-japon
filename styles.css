@@ -986,3 +986,29 @@ a[href="japones.html"]{
   font-size: 28px;
   cursor: pointer;
 }
+.flecha-abajo-box{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin:22px 0 34px;
+  position:relative;
+  z-index:5;
+}
+
+.flecha-abajo{
+  width:72px;
+  height:72px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:34px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.18);
+  box-shadow:0 6px 16px rgba(0,0,0,0.35);
+  cursor:pointer;
+  user-select:none;
+}
+
+.whatsapp-buttons-box{
+  margin-top:10px;
+} 

@@ -3805,3 +3805,6 @@ function irAExtra() {
     seccion.scrollIntoView({ behavior: "smooth" });
   }
 }
+html {
+  scroll-behavior: smooth;
+}

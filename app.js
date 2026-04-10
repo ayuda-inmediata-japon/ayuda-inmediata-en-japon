@@ -21,15 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (paypayLink) paypayLink.href = "#"; // aquí puedes poner link/imagen o dejarlo para después
 
   // ======= Flecha baja al buscador =======
-  const bajar = () => {
-    const buscador = document.getElementById("buscador");
-    if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+const bajar = () => {
+  const buscador = document.getElementById("buscador");
+  if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
-  if (arrowDown) {
-    arrowDown.addEventListener("click", bajar);
-  }
+const arrowDown = document.getElementById("arrowDown");
 
+if (arrowDown) {
+  arrowDown.addEventListener("click", bajar);
+}
   // ======= Normalizar: minúsculas + sin acentos =======
   const normalizar = (txt) => {
     return (txt || "")

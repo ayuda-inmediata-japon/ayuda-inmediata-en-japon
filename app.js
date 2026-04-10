@@ -3792,3 +3792,16 @@ function irAApoyo() {
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+function irAOrientacion() {
+  const seccion = document.getElementById("orientacion");
+  if (seccion) {
+    seccion.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function irAExtra() {
+  const seccion = document.getElementById("extra");
+  if (seccion) {
+    seccion.scrollIntoView({ behavior: "smooth" });
+  }
+}

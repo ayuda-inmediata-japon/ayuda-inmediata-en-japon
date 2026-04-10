@@ -85,10 +85,10 @@ h1{
 }
 
 /* Flecha */
-.arrow{
+.arrow {
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 8vh; /* 👈 CAMBIO CLAVE */
   transform: translateX(-50%);
   z-index: 3;
 

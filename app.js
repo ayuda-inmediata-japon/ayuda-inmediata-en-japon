@@ -3793,10 +3793,10 @@ function irAApoyo() {
   }
 }
 function irAOrientacion() {
-  const seccion = document.getElementById("orientacion");
-  if (seccion) {
-    seccion.scrollIntoView({ behavior: "smooth" });
-  }
+  window.scrollBy({
+    top: window.innerHeight,
+    behavior: "smooth"
+  });
 }
 
 function irAExtra() {

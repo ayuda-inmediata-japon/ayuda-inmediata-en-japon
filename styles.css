@@ -907,13 +907,13 @@ display:none;
 /* TARJETAS */
 .cards-wrap {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .card-link {
   flex: 1;
-  min-width: 130px; /* antes 140 */
+  min-width: 110px; /* antes 140 */
   background: linear-gradient(180deg,#f8f8f8 0%,#ececec 100%);
   color: #222;
   border-radius: 14px;
@@ -925,12 +925,12 @@ display:none;
   transition: transform 0.15s ease;
 }
 .card-title {
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 4px;
 }
 
 .card-desc {
-  font-size: 10px;
+  font-size: 8px;
   margin-top: 2px;
 }
 #apoyo {

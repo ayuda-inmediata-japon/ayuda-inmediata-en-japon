@@ -913,10 +913,10 @@ display:none;
 }
 .card-link {
   flex: 1;
-  min-width: 140px;
+  min-width: 130px; /* antes 140 */
   background: linear-gradient(180deg,#f8f8f8 0%,#ececec 100%);
   color: #222;
-  border-radius: 16px;
+  border-radius: 14px;
   padding: 6px 8px;
   text-align: center;
   text-decoration: none;
@@ -925,15 +925,14 @@ display:none;
   transition: transform 0.15s ease;
 }
 .card-title {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 4px;
 }
 
 .card-desc {
-  font-size: 11px;
+  font-size: 10px;
   margin-top: 2px;
 }
-
 #apoyo {
   min-height: 90vh;
   display: flex;

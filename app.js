@@ -556,58 +556,53 @@ Si puedes explicar tus síntomas con calma, todo será más fácil.
 
 </div>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;">
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:`
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',text:'Información útil sobre salud en Japón',url:window.location.href})"
-style="padding:8px 14px;border-radius:6px;">
+<p style="margin-bottom:14px;font-weight:bold;">
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})" style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
 
-<button onclick="mostrarGuardar()"
-style="padding:8px 14px;border-radius:6px;">
+<button onclick="mostrarGuardar()" style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 • Guardar
 </button>
 
-<button onclick="irAApoyo()" style="padding:8px 14px;border-radius:6px;">
+<button onclick="window.location.href='apoyo.html'" style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ❤️ Apoyar
 </button>
 
-<div id="guardar-pagina" style="display:none;">
+</div>
+
+<div id="guardar-pagina" style="display:none;margin-top:14px;">
+
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
-<p><b>En iPhone / iPad:</b><br>
-Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
-</p>
+<p><b>iPhone / iPad:</b><br>
+Pulsa compartir y guarda la página.</p>
 
-<p><b>En Android:</b><br>
-Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
-</p>
+<p><b>Android:</b><br>
+Abre el menú (⋮) y guarda la página.</p>
 
-<p><b>En computadora:</b><br>
-Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
-</p>
-</div>
+<p><b>PC:</b><br>
+Presiona Ctrl + D o usa ⭐</p>
 
 </div>
 
-<p style="font-size:12px;color:#777;margin-top:12px;">
-También es posible colaborar utilizando tu apoyo para mantener esta guía.
-</p>
+<div style="display:flex;gap:10px;margin-top:30px;">
 
-</div>
-
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
-
-<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 10px;border-radius:8px;">
-⬅️ Volver al buscador
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})" style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;font-weight:bold;">
+⬅ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('salud').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 10px;border-radius:8px;">
-⬆️ Volver al tema Salud
+<button onclick="document.getElementById('AQUI_ID_TEMA').scrollIntoView({behavior:'smooth'})" style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;font-weight:bold;">
+⬆ Volver al tema
 </button>
-
 </div>
 `,
 emergencia: `

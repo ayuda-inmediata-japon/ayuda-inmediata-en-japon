@@ -192,10 +192,7 @@ Primero resuelve: internet, transporte, hotel y efectivo.
   • Guardar
   </button>
 
-  <button onclick="irAApoyo()"
-  style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:8px;font-weight:600;">
-  ❤️ Apoyar
-  </button>
+  <button onclick="window.location.href='apoyo.html'"
 
 </div>
 

@@ -1093,3 +1093,31 @@ a[href="english.html"] {
 
   animation: moverFlecha 1.4s infinite;
 }
+/* === BOTONES ESTÁNDAR GLOBAL (NO TOCAR) === */
+.btn-base {
+  flex: 1;
+  background: #ddd;
+  color: #2a6edb;
+  padding: 8px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.btn-verde {
+  flex: 1;
+  background: #34c759;
+  color: white;
+  padding: 10px 0;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}

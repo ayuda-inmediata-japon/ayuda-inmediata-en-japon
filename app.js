@@ -1832,60 +1832,56 @@ animation:brilloConsejo 4s ease-in-out infinite;
 Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
 </p>
 </div>
-
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
-<p>
+<p style="margin-bottom:14px;font-weight:bold;">
 🙏 Si esta información te fue útil, puedes apoyar este proyecto:
 </p>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',text:'Guía útil sobre alojamiento en Japón',url:window.location.href})"
-style="padding:8px 14px;border-radius:6px;border:none;background:#2a2a2a;color:white;cursor:pointer;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
 
 <button onclick="mostrarGuardar()"
-style="padding:8px 14px;border-radius:6px;border:none;background:#2a2a2a;color:white;cursor:pointer;">
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 • Guardar
 </button>
 
-<button onclick="irAApoyo()"
-style="padding:8px 14px;border-radius:6px;border:none;background:#2a2a2a;color:white;cursor:pointer;">
+<button onclick="window.location.href='apoyo.html'"
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ❤️ Apoyar
 </button>
 
-<div id="guardar-pagina" style="display:none;width:100%;margin-top:14px;">
+</div>
+
+<div id="guardar-pagina" style="display:none;margin-top:14px;">
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
-<p><b>En iPhone / iPad:</b><br>
-Pulsa el botón compartir del navegador y selecciona “Añadir a pantalla de inicio”.
-</p>
+<p><b>iPhone / iPad:</b><br>
+Pulsa el botón compartir y guarda la página.</p>
 
-<p><b>En Android:</b><br>
-Pulsa el menú del navegador (⋮) y selecciona “Añadir a pantalla de inicio”.
-</p>
+<p><b>Android:</b><br>
+Abre el menú (⋮) y guarda la página.</p>
 
-<p><b>En computadora:</b><br>
-Pulsa la estrella ⭐ del navegador o presiona Ctrl + D.
-</p>
+<p><b>PC:</b><br>
+Presiona Ctrl + D o usa ⭐</p>
 </div>
 
-<p style="font-size:12px;color:#777;margin-top:10px;width:100%;">
-También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
-</p>
-</div>
+<div style="margin-top:30px;display:flex;gap:10px;">
 
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;">
-<button onclick="document.getElementById('searchInput').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;cursor:pointer;">
-⬅️ Volver al buscador
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;">
+⬅ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('transporte').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;cursor:pointer;">
-⬆️ Volver al tema Alojamiento
+<button onclick="document.getElementById('policia').scrollIntoView({behavior:'smooth'})"
+style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;">
+⬆ Volver al tema
 </button>
+
 </div>
 `,
 dinero: `

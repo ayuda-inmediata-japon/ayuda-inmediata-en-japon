@@ -950,16 +950,19 @@ a:active {
   transform: scale(0.97);
 }
 a[href="turismo.html"],
-a[href="japones.html"]{
-  min-width: 110px;
-  padding: 10px 8px;
-  border-radius: 14px;
+a[href="japones.html"],
+a[href="english.html"]{
+  min-width: 95px;
+  padding: 8px 6px;
+  border-radius: 12px;
 }
+
 /* 📱 iPhone */
 @media (max-width: 600px){
   .card-link{
-    flex: 0 0 calc(50% - 6px);
-    padding: 6px 8px;
+    flex: 0 0 calc(33.33% - 8px);
+    max-width: calc(33.33% - 8px);
+    padding: 6px 6px;
   }
 }
 

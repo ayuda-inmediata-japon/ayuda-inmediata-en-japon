@@ -1060,3 +1060,27 @@ a[href="english.html"] {
   top: -20px;
   font-size: 15px;
 }
+/* ===== FLECHA PREMIUM (UNIFICADA) ===== */
+.arrow,
+.flecha-apoyo{
+  font-size: 0;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  top: -20px;
+}
+
+.arrow::before,
+.flecha-apoyo::before{
+  content: "↓";
+  font-size: 32px;
+  color: white;
+  display: inline-block;
+  animation: flechaBounce 1.5s infinite;
+}
+
+@keyframes flechaBounce{
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}

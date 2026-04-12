@@ -1052,3 +1052,11 @@ a[href="english.html"] {
     font-size: 11px;
   }
 }
+.flecha-apoyo{
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  position: relative;
+  top: -20px;
+  font-size: 30px;
+}

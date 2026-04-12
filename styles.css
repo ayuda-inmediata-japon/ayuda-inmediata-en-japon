@@ -1093,3 +1093,6 @@ a[href="english.html"] {
 
   animation: moverFlecha 1.4s infinite;
 }
+#apoyo {
+  display: none;
+}

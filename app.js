@@ -1500,55 +1500,54 @@ Si llevas maletas grandes o viajas muy cansado, a veces un taxi puede ser mejor 
 
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
-<p>🙏 Si esta información te fue útil, puedes:</p>
+<p style="margin-bottom:14px;font-weight:bold;">
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
 
 <button onclick="mostrarGuardar()"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#fff;">
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 • Guardar
 </button>
 
-<button onclick="irAApoyo()"
-style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ff8a8a;">
+<button onclick="window.location.href='apoyo.html'"
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ❤️ Apoyar
 </button>
+
 </div>
 
-<div id="guardar-pagina" style="display:none;margin-top:18px;padding:12px;border-radius:8px;">
+<div id="guardar-pagina" style="display:none;margin-top:14px;">
 <p><strong>📌 Cómo guardar esta página</strong></p>
 
-<p><b>En iPhone / iPad:</b><br>
-Pulsa el botón compartir del navegador y elige <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
-</p>
+<p><b>iPhone / iPad:</b><br>
+Pulsa el botón compartir y guarda la página.</p>
 
-<p><b>En Android:</b><br>
-Pulsa el menú del navegador (⋮) y selecciona <b>"Añadir a favoritos"</b> o <b>"Añadir a pantalla de inicio"</b>.
-</p>
+<p><b>Android:</b><br>
+Abre el menú (⋮) y guarda la página.</p>
 
-<p><b>En computadora:</b><br>
-Pulsa la estrella ⭐ del navegador o presiona <b>Ctrl + D</b>.
-</p>
+<p><b>PC:</b><br>
+Presiona Ctrl + D o usa ⭐</p>
 </div>
 
-<p style="font-size:12px;color:#777;margin-top:8px">
-También es posible colaborar utilizando tarjeta de crédito o débito a través de estas plataformas.
-</p>
+<div style="margin-top:30px;display:flex;gap:10px;">
 
-<div style="margin-top:30px;display:flex;gap:10px;flex-wrap:wrap">
 <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:white;font-weight:700;">
-⬅️ Volver al buscador
+style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;">
+⬅ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('transporte').scrollIntoView({behavior:'smooth'})"
-style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;font-weight:700;">
-⬆️ Volver al tema Transporte
+<button onclick="document.getElementById('policia').scrollIntoView({behavior:'smooth'})"
+style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;">
+⬆ Volver al tema
 </button>
+
 </div>
 `,
 alojamiento: `
@@ -1883,7 +1882,7 @@ style="padding:10px 14px;border-radius:8px;border:none;background:#2ecc71;color:
 ⬅️ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('alojamiento').scrollIntoView({behavior:'smooth'})"
+<button onclick="document.getElementById('transporte').scrollIntoView({behavior:'smooth'})"
 style="padding:10px 14px;border-radius:8px;border:none;background:#3498db;color:white;cursor:pointer;">
 ⬆️ Volver al tema Alojamiento
 </button>

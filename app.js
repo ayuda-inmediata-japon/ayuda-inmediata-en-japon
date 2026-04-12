@@ -600,7 +600,7 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 ⬅ Volver al buscador
 </button>
 
-<button onclick="document.getElementById('AQUI_ID_TEMA').scrollIntoView({behavior:'smooth'})"
+<button onclick="document.getElementById('salud').scrollIntoView({behavior:'smooth'})"
 style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;">
 ⬆ Volver al tema
 </button>

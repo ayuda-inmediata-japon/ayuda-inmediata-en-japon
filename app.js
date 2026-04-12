@@ -555,10 +555,7 @@ Si puedes explicar tus síntomas con calma, todo será más fácil.
 </p>
 
 </div>
-
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:`
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
-
 <p style="margin-bottom:14px;font-weight:bold;">
 🙏 Si esta información te fue útil, puedes apoyar este proyecto:
 </p>

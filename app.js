@@ -43,76 +43,220 @@ document.addEventListener("DOMContentLoaded", () => {
   // Puedes ampliar con calma luego.
   const respuestas = {
     llegada: `
-<h2 id="llegada">✈️ Llegada a Japón</h2>
+    <h2 id="llegada">✈️ Llegada a Japón</h2>
 
-<img src="Img/llegada.jpg" style="width:100%; border-radius:10px; margin:10px 0;">
+<p><strong>Al llegar a Japón:</strong></p>
 
-<p>
+<p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>
 
+<p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de entrada al país.</p>
 
+<p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto. En muchos aeropuertos hay <strong>servicio médico o personal de asistencia</strong>.</p>
 
+<div style="display:grid;gap:12px;margin:18px 0;">
+  <img src="Img/llegada.jpg" style="width:100%;border-radius:18px;" alt="Llegada a Japón 1">
+  <img src="Img/llegada2.jpg" style="width:100%;border-radius:18px;" alt="Llegada a Japón 2">
+  <img src="Img/llegada3.jpg" style="width:100%;border-radius:18px;" alt="Llegada a Japón 3">
+</div>
 
+<div class="subtemas-box">
 
-  <details class="subtema-card">
-    <summary>💳 Cómo usar tarjeta IC (Suica / Pasmo)</summary>
-    <div class="subtema-content">
-      <p><strong>Qué hacer:</strong></p>
-      <ol>
-        <li>Sirve para tren, metro y tiendas.</li>
-        <li>Se recarga con efectivo.</li>
-        <li>Solo toca al entrar y salir.</li>
-      </ol>
-    </div>
-  </details>
+<details class="subtema-card">
+<summary>🛬 Arribo al aeropuerto</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Al bajar del avión sigue los letreros de <strong>Arrivals / 到着</strong>.</li>
+<li>No te apresures; normalmente el camino está bien indicado.</li>
+<li>Ten a mano tu pasaporte y la dirección de tu alojamiento.</li>
+</ol>
+</div>
+</details>
 
-  <details class="subtema-card">
-    <summary>🏨 Cómo llegar a mi hotel</summary>
-    <div class="subtema-content">
-      <p><strong>Qué hacer:</strong></p>
-      <ol>
-        <li>Guarda la dirección en japonés.</li>
-        <li>Muéstrala si necesitas ayuda.</li>
-        <li>Usa Google Maps.</li>
-      </ol>
-    </div>
-  </details>
+<details class="subtema-card">
+<summary>🛂 Migración / control de pasaporte</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Dirígete a la fila de migración.</li>
+<li>Presenta tu pasaporte y responde con calma si te preguntan algo.</li>
+<li>En muchos casos tomarán foto y huellas.</li>
+<li>Ten lista la dirección del hotel o alojamiento en Japón.</li>
+</ol>
+</div>
+</details>
 
-  <details class="subtema-card">
-    <summary>💱 Cambiar dinero o retirar efectivo</summary>
-    <div class="subtema-content">
-      <p><strong>Qué hacer:</strong></p>
-      <ol>
-        <li>Puedes cambiar en el aeropuerto.</li>
-        <li>También retirar en ATM.</li>
-        <li>Lleva efectivo.</li>
-      </ol>
-    </div>
-  </details>
+<details class="subtema-card">
+<summary>🧳 Recoger equipaje en la cinta correcta</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Revisa las pantallas y busca tu número de vuelo.</li>
+<li>Ve a la cinta o cinturón correspondiente.</li>
+<li>Espera unos minutos si tu maleta no sale de inmediato.</li>
+<li>Confirma primero que estás en la cinta correcta.</li>
+</ol>
+</div>
+</details>
 
-  <details class="subtema-card">
-    <summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
-    <div class="subtema-content">
-      <p><strong>Qué hacer:</strong></p>
-      <ol>
-        <li>Puedes enviar maletas al hotel o destino.</li>
-        <li>Está disponible en aeropuerto, hoteles y konbini.</li>
-        <li>Necesitas la dirección del hotel.</li>
-        <li>Confirma que el hotel reciba equipaje.</li>
-      </ol>
-    </div>
-  </details>
+<details class="subtema-card">
+<summary>🛒 Cómo usar carritos para equipaje</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Busca los carritos cerca de la zona de equipaje.</li>
+<li>Úsalos para mover tus maletas dentro del aeropuerto.</li>
+<li>No bloquees el paso ni abandones el carrito en medio del camino.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🧾 Aduana</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Después de recoger tus maletas dirígete a aduana.</li>
+<li>Sigue la fila que corresponda según tu situación.</li>
+<li>Entrega o muestra lo que te soliciten con calma.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚪 Salida del aeropuerto</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Al salir encontrarás trenes, buses, taxis, cajeros y servicios.</li>
+<li>Antes de moverte, resuelve internet, transporte y algo de efectivo.</li>
+<li>Ten lista la dirección de tu hotel en japonés.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚕 Taxi o transporte al hotel</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>
+<li>Muestra la dirección exacta de tu hotel.</li>
+<li>Si vas en tren, confirma primero la línea y estación correcta.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>💳 Cómo usar tarjeta IC (Suica / Pasmo)</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Sirve para tren, metro, bus y algunas tiendas.</li>
+<li>Se recarga con efectivo en máquinas o puntos autorizados.</li>
+<li>Solo toca al entrar y salir.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🏨 Cómo llegar a mi hotel</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Guarda la dirección en japonés.</li>
+<li>Muéstrala si necesitas ayuda.</li>
+<li>Usa Google Maps o pregunta al personal.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>💱 Cambiar dinero o retirar efectivo</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Puedes cambiar en el aeropuerto o retirar en ATM.</li>
+<li>Conviene tener algo de efectivo desde el inicio.</li>
+<li>Úsalo para transporte, comida o pequeños gastos.</li>
+</ol>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Puedes enviar maletas al hotel o al siguiente destino.</li>
+<li>Está disponible en aeropuerto, hoteles o puntos de servicio.</li>
+<li>Necesitas la dirección exacta del hotel.</li>
+<li>Confirma que el hotel reciba equipaje.</li>
+</ol>
+</div>
+</details>
 
 </div>
 
+<h3>🌐 Si tienes dificultad con el idioma</h3>
+
+<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
+
+<ul style="line-height:1.9">
+<li>
+<strong>Español</strong><br>
+Acabo de llegar a Japón y necesito ayuda para orientarme.<br><br>
+<strong>Romaji</strong><br>
+Nihon ni tsuita bakari de, michi annai no tasuke ga hitsuyou desu.<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">日本に着いたばかりで、案内の助けが必要です。</span>
+</li>
+
+<li>
+<strong>Español</strong><br>
+¿Dónde está migración?<br><br>
+<strong>Romaji</strong><br>
+Nyuukoku shinsa wa doko desu ka?<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">入国審査はどこですか？</span>
+</li>
+
+<li>
+<strong>Español</strong><br>
+¿Dónde está la cinta de equipaje de este vuelo?<br><br>
+<strong>Romaji</strong><br>
+Kono bin no nimotsu uketori reen wa doko desu ka?<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">この便の荷物受取レーンはどこですか？</span>
+</li>
+
+<li>
+<strong>Español</strong><br>
+Me siento mal.<br><br>
+<strong>Romaji</strong><br>
+Taichou ga warui desu.<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">体調が悪いです。</span>
+</li>
+</ul>
+
 <h3>🌐 Traductores recomendados</h3>
 
-<p>🔵 <a href="https://www.deepl.com/translator#es/ja/" target="_blank">Traductor español → japonés (DeepL)</a></p>
-<p>🟡 <a href="https://translate.google.com/?sl=es&tl=ja&op=translate" target="_blank">Traductor español → japonés (Google)</a></p>
-<p>🟢 <a href="https://chat.openai.com/" target="_blank">ChatGPT (explicar o traducir una situación)</a></p>
+<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">Traductor español → japonés (DeepL)</a></p>
+<p>🟡 <a href="https://translate.google.com/" target="_blank">Traductor español → japonés (Google)</a></p>
+<p>🟢 <a href="https://chat.openai.com/" target="_blank">Asistente y traductor (ChatGPT)</a></p>
 
 <h3>🗣️ Frases útiles</h3>
 
 <ul style="line-height:1.9">
+<li>
+<strong>Español</strong><br>
+Acabo de llegar a Japón<br><br>
+<strong>Romaji</strong><br>
+Nihon ni tsuita bakari desu<br><br>
+<strong>日本語</strong><br>
+<span style="font-size:26px;font-weight:bold;">日本に着いたばかりです</span>
+</li>
 
 <li>
 <strong>Español</strong><br>
@@ -140,94 +284,11 @@ Kono nimotsu o hoteru ni okuritai desu<br><br>
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">この荷物をホテルに送りたいです</span>
 </li>
-
 </ul>
 
-<h3>🌍 Si tienes dificultad con el idioma</h3>
-
-<p><strong>📱 Puedes mostrar este mensaje:</strong></p>
-
-<ul style="line-height:1.9">
-
-<li>
-<strong>Español</strong><br>
-Disculpe, no hablo mucho japonés.<br><br>
-<strong>Romaji</strong><br>
-Sumimasen, nihongo ga amari hanasemasen.<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">すみません、日本語があまり話せません。</span>
-</li>
-
-<li>
-<strong>Español</strong><br>
-¿Puedo usar un traductor para explicarme?<br><br>
-<strong>Romaji</strong><br>
-Honyaku apuri o tsukatte setsumei shite mo ii desu ka?<br><br>
-<strong>日本語</strong><br>
-<span style="font-size:26px;font-weight:bold;">翻訳アプリを使って説明してもいいですか？</span>
-</li>
-
-</ul>
-
-<div style="background:#2a2112;border:2px solid #f0b93a;box-shadow:0 0 14px rgba(240,185,58,.35);padding:18px;border-radius:16px;margin-top:18px;">
+<div style="background:#2a2112;border:2px solid #f0c24b;border-radius:18px;padding:16px 18px;margin-top:18px;box-shadow:0 0 16px rgba(240,194,75,.18);">
 <h3 style="color:#f0c24b;margin-top:0;">💡 Consejo importante</h3>
-<p style="margin-bottom:0;">
-Primero resuelve: internet, transporte, hotel y efectivo.
-</p>
-</div>
-<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
-
-<p style="margin-bottom:14px;font-weight:bold;">
-🙏 Si esta información te fue útil, puedes apoyar este proyecto:
-</p>
-<div style="display:flex;gap:10px;margin-top:10px;width:100%;">
-
-  <button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
-  style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:8px;font-weight:600;">
-  ↗ Compartir
-  </button>
-
-  <button onclick="mostrarGuardar()"
-  style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:8px;font-weight:600;">
-  • Guardar
-  </button>
-
-<button onclick="window.location.href='apoyo.html'" style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
-❤️ Apoyar
-</button>
-
-</div>
-
-<!-- BLOQUE GUARDAR (OBLIGATkkORIO) -->
-<div id="guardar-pagina" style="display:none;margin-top:14px;">
-
-  <p><strong>📌 Cómo guardar esta página</strong></p>
-
-  <p><b>iPhone / iPad:</b><br>
-  Pulsa compartir y guarda la página.</p>
-
-  <p><b>Android:</b><br>
-  Abre el menú (⋮) y guarda la página.</p>
-
-  <p><b>PC:</b><br>
-  Presiona Ctrl + D o usa ⭐</p>
-
-</div>
-
-<!-- FILA 2 -->
-<div style="display:flex;gap:10px;margin-top:12px;">
-
-  <button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
-  style="flex:1;background:#25D366;color:white;padding:8px 0;font-size:14px;border:none;border-radius:8px;font-weight:600;">
-  ⬅ Volver al buscador
-  </button>
-
-  <button onclick="document.getElementById('resultadoContent').scrollIntoView({ behavior: 'smooth' })"
-style="flex:1;background:#25D366;color:white;">
-⬆️ Volver al tema
-
-</button>
-  
+<p style="margin-bottom:0;">Primero resuelve: internet, transporte, hotel y efectivo.</p>
 </div>
 `,
 salud: `

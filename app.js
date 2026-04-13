@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const arrowDown = document.getElementById("arrowDown");
 
   const paypalLink = document.getElementById("paypalLink");
-  const kofiLink = document.getElementById("kofiLink");
+  const kofiLink = document.getElementById("kofiLink"); lo
   const paypayLink = document.getElementById("paypayLink");
 
   // ======= LINKS (edítalos si quieres) =======
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const respuestas = {
     llegada: `
     <h2 id="llegada">✈️ Llegada a Japón</h2>
-
+<div style="padding:0 10px;">
 <p><strong>Al llegar a Japón:</strong></p>
 
 <p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 <div class="subtemas-box">
-
+I'm
 <details class="subtema-card">
 <summary>🛬 Arribo al aeropuerto</summary>
 <div class="subtema-content">
@@ -289,6 +289,7 @@ Kono nimotsu o hoteru ni okuritai desu<br><br>
 <div style="background:#2a2112;border:2px solid #f0c24b;border-radius:18px;padding:16px 18px;margin-top:18px;box-shadow:0 0 16px rgba(240,194,75,.18);">
 <h3 style="color:#f0c24b;margin-top:0;">💡 Consejo importante</h3>
 <p style="margin-bottom:0;">Primero resuelve: internet, transporte, hotel y efectivo.</p>
+</div>
 </div>
 <hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 

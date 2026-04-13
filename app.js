@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto. En muchos aeropuertos hay <strong>servicio médico o personal de asistencia</strong>.</p>
 
-<div style="display:grid;gap:12px;margin:18px 0;">
-  <img src="Img/llegada.jpg" style="width:100%;border-radius:18px;" alt="Llegada a Japón 1">
-  <img src="Img/llegada2.jpg" style="width:100%;border-radius:18px;" alt="Llegada a Japón 2">
-  <img src="Img/llegada3.jpg" style="width:100%;border-radius:18px;" alt="Llegada a Japón 3">
+  <div style="display:grid;gap:12px;margin:18px auto;max-width:100%;">
+  <img src="Img/llegada.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 1">
+  <img src="Img/llegada2.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+  <img src="Img/llegada3.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
 </div>
 
 <div class="subtemas-box">

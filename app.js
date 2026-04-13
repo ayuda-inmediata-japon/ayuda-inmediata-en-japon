@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Puedes ampliar con calma luego.
   const respuestas = {
     llegada: `
-<h2 id="llegada">✈️ Llegada a Japón</h2>
+<h2 id="llegada-japon">✈️ Llegada a Japón</h2>
 
 <p><strong>Al llegar a Japón:</strong></p>
 

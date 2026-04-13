@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </details>
 
 </div>
-
+<div style="max-width: 900px; margin: 0 auto; padding: 0 15px;">
 <h3>🌐 Si tienes dificultad con el idioma</h3>
 
 <p><strong>📱 Puedes mostrar este mensaje:</strong></p>

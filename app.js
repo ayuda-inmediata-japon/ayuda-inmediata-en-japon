@@ -3750,3 +3750,17 @@ function irAApoyo() {
     apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+document.addEventListener("click", function(e) {
+  if (e.target.tagName === "SUMMARY") {
+    const current = e.target.parentElement;
+    const container = current.closest(".subtemas-box");
+
+    if (!container) return;
+
+    container.querySelectorAll("details").forEach(d => {
+      if (d !== current) {
+        d.removeAttribute("open");
+      }
+    });
+  }
+});

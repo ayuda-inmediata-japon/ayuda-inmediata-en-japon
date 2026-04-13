@@ -3108,7 +3108,7 @@ Tetsudatte moraemasu ka?<br><br>
 
 <h3>🗣️ Frases útiles</h3>
 
-<ul style="line-height:1.9">
+<ul style="line-height:1.9; padding-left:0; list-style:none; margin:0;">
 
 <li>
 <strong>Español</strong><br>

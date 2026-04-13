@@ -290,6 +290,57 @@ Kono nimotsu o hoteru ni okuritai desu<br><br>
 <h3 style="color:#f0c24b;margin-top:0;">💡 Consejo importante</h3>
 <p style="margin-bottom:0;">Primero resuelve: internet, transporte, hotel y efectivo.</p>
 </div>
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
+
+<p style="margin-bottom:14px;font-weight:bold;">
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
+↗ Compartir
+</button>
+
+<button onclick="mostrarGuardar()"
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
+• Guardar
+</button>
+
+<button onclick="window.location.href='apoyo.html'"
+style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
+❤️ Apoyar
+</button>
+
+</div>
+
+<div id="guardar-pagina" style="display:none;margin-top:14px;">
+<p><strong>📌 Cómo guardar esta página</strong></p>
+
+<p><b>iPhone / iPad:</b><br>
+Pulsa el botón compartir y guarda la página.</p>
+
+<p><b>Android:</b><br>
+Abre el menú (⋮) y guarda la página.</p>
+
+<p><b>PC:</b><br>
+Presiona Ctrl + D o usa ⭐</p>
+</div>
+
+<div style="margin-top:30px;display:flex;gap:10px;">
+
+<button onclick="document.getElementById('buscador').scrollIntoView({behavior:'smooth'})"
+style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;">
+⬅ Volver al buscador
+</button>
+
+<button onclick="document.getElementById('policia').scrollIntoView({behavior:'smooth'})"
+style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-radius:8px;">
+⬆ Volver al tema
+</button>
+
+</div>
 `,
 salud: `
 <h2 id="salud">🏥 Salud en Japón</h2>

@@ -730,7 +730,7 @@ emergencia: `
 <p><strong>🚑 Ambulancia / 🔥 Bomberos: 119</strong></p>
 <p><strong>🚓 Policía: 110</strong></p>
 
-<img src="TU_IMAGEN_GENERAL_EMERGENCIA" class="info-img" alt="Emergencia en Japón">
+<img src="Img/emergencia en japon.jpg" class="info-img" alt="emergencia en Japón">
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 

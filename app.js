@@ -740,7 +740,7 @@ emergencia: `
 <summary>🚑 Necesito una ambulancia</summary>
 <div class="subtema-content">
 
-<img src="Img/ambulancia en japon.jpg" class="info-img" alt="Ambulancia en Japón">
+<img src="Img/ambulancia en japon.jpg" class="info-img" alt="ambulacia en japon">
 
 <p><strong>Qué es:</strong></p>
 <p>La ambulancia en Japón es un servicio de emergencia médica gratuito que llega rápidamente y te traslada al hospital adecuado.</p>

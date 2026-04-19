@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <div style="display:grid;gap:12px;margin:18px auto;max-width:100%;">
   <img src="Img/llegada.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 1">
-  <img src="Img/llegada2.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
   <img src="Img/llegada3.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
 </div>
 
@@ -92,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Revisa las pantallas y busca tu número de vuelo.</li>
+  <img src="Img/llegada2.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <li>Ve a la cinta o cinturón correspondiente.</li>
 <li>Espera unos minutos si tu maleta no sale de inmediato.</li>
 <li>Confirma primero que estás en la cinta correcta.</li>

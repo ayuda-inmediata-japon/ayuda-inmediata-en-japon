@@ -187,8 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <details class="subtema-card">
 <summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
 <div class="subtema-content">
-  <img src="Img/llegada 5.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
-
+<img src="Img/llegada4.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 4">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Puedes enviar maletas al hotel o al siguiente destino.</li>

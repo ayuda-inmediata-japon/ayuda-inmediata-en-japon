@@ -139,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <details class="subtema-card">
 <summary>🚕 Taxi o transporte al hotel</summary>
 <div class="subtema-content">
+ <img src="Img/llegada5.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>

@@ -54,8 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto. En muchos aeropuertos hay <strong>servicio médico o personal de asistencia</strong>.</p>
 
   <div style="display:grid;gap:12px;margin:18px auto;max-width:100%;">
-  <img src="Img/llegada.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 1">
-
 </div>
 
 <div class="subtemas-box">
@@ -65,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
+<img src="Img/llegada.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 1">
 <li>Al bajar del avión sigue los letreros de <strong>Arrivals / 到着</strong>.</li>
 <li>No te apresures; normalmente el camino está bien indicado.</li>
 <li>Ten a mano tu pasaporte y la dirección de tu alojamiento.</li>

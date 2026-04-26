@@ -1121,14 +1121,3 @@ a[href="english.html"] {
   gap: 8px;
   margin-top: 10px;
 }
-.contenedor-imagen {
-  display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;     /* Centrado vertical (si el contenedor tiene altura) */
-  width: 100%;             /* Asegura que ocupe todo el ancho disponible */
-}
-
-.contenedor-imagen img {
-  max-width: 100%;         /* Evita que la imagen se salga en pantallas pequeñas */
-  height: auto;
-}

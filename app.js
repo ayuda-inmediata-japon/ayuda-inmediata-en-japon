@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <img src="Img/llegada.jpg"
-style="width:calc(100% - 56px); max-width:540px; display:block; margin:10px auto 18px auto; border-radius:18px;"
+style="width:100%; max-width:540px; display:block; margin:12px auto; border-radius:18px;"
 alt="Llegada a Japón">
 <li>Al bajar del avión sigue los letreros de <strong>Arrivals / 到着</strong>.</li>
 <li>No te apresures; normalmente el camino está bien indicado.</li>

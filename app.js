@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>Qué hacer:</strong></p>
 <ol>
   <div class="contenedor-imagen">
-  <img src="llegada.jpg" alt="llegada a japon ">
+    <img src="Img/llegada2.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 </div>
 
 

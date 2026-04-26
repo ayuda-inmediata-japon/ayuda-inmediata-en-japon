@@ -1121,3 +1121,19 @@ a[href="english.html"] {
   gap: 8px;
   margin-top: 10px;
 }
+.btn-row-final{
+  display:flex;
+  gap:12px;
+  margin-top:28px;
+  flex-wrap:wrap;
+}
+
+.btn-row-final .final-btn{
+  flex:1;
+  margin:0;
+  text-align:center;
+}
+
+.secondary-btn{
+  background:#2f6df6 !important;
+}

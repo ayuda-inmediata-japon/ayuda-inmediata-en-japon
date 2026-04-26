@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprender japonés práctico</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:#050505;
+  color:white;
+  font-family:Arial,sans-serif;
+}
+.jpn-page{
+  max-width:920px;
+  margin:auto;
+  padding:22px;
+}
+.back-btn{
+  display:inline-block;
+  background:#2b2b2b;
+  color:white;
+  padding:10px 18px;
+  border-radius:16px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+.hero-jpn{
+  text-align:center;
+  padding:18px 0 28px;
+}
+.hero-jpn h1{
+  font-size:38px;
+  margin:10px 0;
+}
+.hero-jpn p{
+  color:#ddd;
+  font-size:18px;
+  line-height:1.6;
+}
+.hero-img{
+  width:100%;
+  max-width:760px;
+  display:block;
+  margin:18px auto;
+  border-radius:22px;
+}
+.intro-box{
+  background:#111;
+  border:1px solid #333;
+  border-radius:22px;
+  padding:20px;
+  color:#ddd;
+  line-height:1.7;
+  margin-bottom:28px;
+}
+.green{
+  color:#8cff85;
+  font-weight:bold;
+}
+.subtemas-box{
+  display:grid;
+  gap:16px;
+  margin-top:18px;
+}
+.subtema-card{
+  background:#181818;
+  border:1px solid #333;
+  border-radius:20px;
+  overflow:hidden;
+}
+.subtema-card summary{
+  cursor:pointer;
+  padding:18px;
+  color:#8cff85;
+  font-size:22px;
+  font-weight:bold;
+}
+.subtema-content{
+  padding:18px;
+  border-top:1px solid #333;
+  color:#ddd;
+  line-height:1.7;
+}
+.subtema-content img{
+  width:100%;
+  max-width:540px;
+  display:block;
+  margin:14px auto;
+  border-radius:18px;
+}
+.nhk-btn,
+.action-btn{
+  display:block;
+  text-align:center;
+  background:#25D366;
+  color:white;
+  padding:14px;
+  border-radius:18px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:16px auto;
+  max-width:420px;
+}
+.phrase-box{
+  background:#101010;
+  border:1px solid #333;
+  border-radius:18px;
+  padding:16px;
+  margin:14px 0;
+}
+.phrase-box p{
+  margin:8px 0;
+}
+.jp-big{
+  font-size:26px;
+  font-weight:bold;
+  color:white;
+}
+.consejo{
+  background:#2a2112;
+  border:2px solid #f0a000;
+  border-radius:18px;
+  padding:18px;
+  margin-top:28px;
+  color:#fff2cc;
+}
+.apoyo-box{
+  background:#111;
+  border:1px solid #333;
+  border-radius:22px;
+  padding:20px;
+  margin-top:28px;
+  text-align:center;
+  color:#ddd;
+}
+.btn-row-final{
+  display:flex;
+  gap:12px;
+  margin-top:28px;
+  flex-wrap:wrap;
+}
+.final-btn{
+  flex:1;
+  display:block;
+  text-align:center;
+  background:#25D366;
+  color:white;
+  padding:14px;
+  border-radius:18px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0;
+}
+.secondary-btn{
+  background:#2f6df6 !important;
+}
+.share-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
+.share-row button,
+.share-row a{
+  flex:1;
+  background:#ddd;
+  color:#222;
+  padding:12px;
+  border-radius:14px;
+  border:none;
+  text-decoration:none;
+  font-weight:bold;
+  text-align:center;
+}
+@media(max-width:600px){
+  .hero-jpn h1{font-size:32px;}
+  .subtema-card summary{font-size:20px;}
+  .btn-row-final{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="jpn-page" id="top">
+
+<a href="index.html" class="back-btn">⬅ Volver</a>
+
+<section class="hero-jpn">
+  <h1>🗣️ Aprende japonés práctico</h1>
+  <p>
+    Guía sencilla para aprender japonés útil para viajar, vivir, trabajar y moverte con más confianza en Japón.
+  </p>
+
+  <img src="Img/japones-hero.jpg" class="hero-img" alt="Aprender japonés en Japón">
+</section>
+
+<div class="intro-box">
+  <h2>🇯🇵 ¿Qué es el japonés?</h2>
+  <p>
+    El japonés es el idioma oficial de Japón. Usa tres sistemas de escritura:
+    <span class="green">Hiragana</span>, <span class="green">Katakana</span> y <span class="green">Kanji</span>.
+  </p>
+  <p>
+    Al principio puede parecer difícil, pero aprender frases básicas ayuda muchísimo para pedir ayuda,
+    usar trenes, ir al hospital, comprar, trabajar o comunicarte en situaciones diarias.
+  </p>
+</div>
+
+<h2>📚 Temas para aprender japonés</h2>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+<summary>🎓 Aprender japonés con NHK</summary>
+<div class="subtema-content">
+
+<img src="Img/japones-nhk.jpg" alt="Curso de japonés NHK">
+
+<p>
+NHK World Japan tiene un curso gratuito muy útil para principiantes. Es una buena opción para empezar desde cero,
+con lecciones ordenadas y explicaciones fáciles.
+</p>
+
+<a class="nhk-btn" href="https://www3.nhk.or.jp/nhkworld/es/learnjapanese/" target="_blank">
+🎓 Ir al curso gratuito de NHK
+</a>
+
+<p>
+Consejo: estudia poco cada día. Es mejor 10 minutos diarios que intentar aprender todo de golpe.
+</p>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🗣️ Frases útiles para turistas</summary>
+<div class="subtema-content">
+
+<img src="Img/japones-frases.jpg" alt="Frases útiles en japonés">
+
+<p>
+Estas frases sirven para pedir ayuda, preguntar direcciones, usar transporte, ir a un hotel o comunicarte en situaciones básicas.
+</p>
+
+<div class="phrase-box">
+<p><strong>Español:</strong> Disculpe.</p>
+<p><strong>Romaji:</strong> Sumimasen.</p>
+<p class="jp-big">すみません。</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>Español:</strong> No hablo japonés.</p>
+<p><strong>Romaji:</strong> Nihongo ga hanasemasen.</p>
+<p class="jp-big">日本語が話せません。</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>Español:</strong> ¿Dónde está la estación?</p>
+<p><strong>Romaji:</strong> Eki wa doko desu ka?</p>
+<p class="jp-big">駅はどこですか？</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>Español:</strong> Ayúdeme, por favor.</p>
+<p><strong>Romaji:</strong> Tasukete kudasai.</p>
+<p class="jp-big">助けてください。</p>
+</div>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🌱 Japonés básico para empezar</summary>
+<div class="subtema-content">
+
+<img src="Img/japones-basico.jpg" alt="Japonés básico">
+
+<p>
+Primero aprende saludos, respuestas cortas y expresiones de cortesía. Eso te ayudará a sonar más amable y seguro.
+</p>
+
+<div class="phrase-box">
+<p><strong>Hola / Buenas tardes:</strong> Konnichiwa</p>
+<p class="jp-big">こんにちは。</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>Gracias:</strong> Arigatou gozaimasu</p>
+<p class="jp-big">ありがとうございます。</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>Sí:</strong> Hai</p>
+<p class="jp-big">はい。</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>No:</strong> Iie</p>
+<p class="jp-big">いいえ。</p>
+</div>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🔤 Hiragana, Katakana y Kanji</summary>
+<div class="subtema-content">
+
+<img src="Img/japones-escritura.jpg" alt="Hiragana Katakana Kanji">
+
+<p>
+El japonés usa tres sistemas de escritura:
+</p>
+
+<p><span class="green">Hiragana:</span> letras básicas japonesas. Se usa para palabras japonesas y gramática.</p>
+
+<p><span class="green">Katakana:</span> se usa mucho para palabras extranjeras, nombres extranjeros, marcas y sonidos.</p>
+
+<p><span class="green">Kanji:</span> caracteres de origen chino que representan ideas o palabras. Son muchos, pero no necesitas aprender todos al inicio.</p>
+
+<p>
+Consejo: empieza por Hiragana, luego Katakana y después Kanji poco a poco.
+</p>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚆 Japonés para la vida diaria</summary>
+<div class="subtema-content">
+
+<img src="Img/japones-vida-diaria.jpg" alt="Japonés vida diaria">
+
+<p>
+Este japonés sirve para trenes, tiendas, restaurantes, hospitales, hoteles y trámites simples.
+</p>
+
+<div class="phrase-box">
+<p><strong>Español:</strong> ¿Cuánto cuesta?</p>
+<p><strong>Romaji:</strong> Ikura desu ka?</p>
+<p class="jp-big">いくらですか？</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>Español:</strong> Quiero ir a esta dirección.</p>
+<p><strong>Romaji:</strong> Kono juusho ni ikitai desu.</p>
+<p class="jp-big">この住所に行きたいです。</p>
+</div>
+
+<div class="phrase-box">
+<p><strong>Español:</strong> ¿Puede escribirlo, por favor?</p>
+<p><strong>Romaji:</strong> Kaite moraemasu ka?</p>
+<p class="jp-big">書いてもらえますか？</p>
+</div>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>💡 Consejos para aprender más rápido</summary>
+<div class="subtema-content">
+
+<img src="Img/japones-consejos.jpg" alt="Consejos para aprender japonés">
+
+<p>
+No necesitas aprender perfecto desde el primer día. Lo importante es usar frases reales y repetirlas muchas veces.
+</p>
+
+<ul>
+<li>Escucha japonés todos los días aunque sea poco.</li>
+<li>Aprende frases completas, no solo palabras sueltas.</li>
+<li>Usa romaji al inicio, pero intenta mirar también el japonés real.</li>
+<li>Practica en tiendas, estaciones y situaciones simples.</li>
+<li>No tengas miedo a equivocarte.</li>
+</ul>
+
+</div>
+</details>
+
+</div>
+
+<div class="consejo">
+  <strong>💡 Consejo importante:</strong>
+  <p>
+    No intentes aprender todo de golpe. Primero domina frases útiles para situaciones reales.
+    La práctica diaria es más importante que estudiar muchas horas una sola vez.
+  </p>
+</div>
+
+<div class="apoyo-box">
+  <h2>❤️ Apoya esta guía</h2>
+  <p>
+    Si esta información te resulta útil, puedes apoyar este proyecto para seguir creando guías gratuitas en español para personas en Japón.
+  </p>
+  <a href="apoyo.html" class="action-btn">❤️ Apoyar el proyecto</a>
+</div>
+
+<div class="share-row">
+  <button onclick="navigator.share && navigator.share({title:'Aprender japonés práctico',url:window.location.href})">
+    ↗ Compartir
+  </button>
+
+  <button onclick="alert('Para guardar esta página: en iPhone toca compartir y luego “Agregar a pantalla de inicio”. En Android usa el menú del navegador.')">
+    ⭐ Guardar
+  </button>
+
+  <a href="apoyo.html">❤️ Apoyar</a>
+</div>
+
+<div class="btn-row-final">
+  <a href="#top" class="final-btn secondary-btn">⬆ Volver arriba</a>
+  <a href="index.html" class="final-btn">⬅ Volver al inicio</a>
+</div>
+
+</div>
+
+</body>
+</html>

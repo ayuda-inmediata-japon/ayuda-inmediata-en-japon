@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
- <img src="Img/llegada.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón">
+<img src="Img/llegada.jpg" alt="Llegada a Japón">
 <li>Al bajar del avión sigue los letreros de <strong>Arrivals / 到着</strong>.</li>
 <li>No te apresures; normalmente el camino está bien indicado.</li>
 <li>Ten a mano tu pasaporte y la dirección de tu alojamiento.</li>

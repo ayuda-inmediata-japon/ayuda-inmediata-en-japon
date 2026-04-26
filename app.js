@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 style="width:100%; max-width:540px; display:block; margin:14px auto 14px -22px; border-radius:18px;"
 alt="Llegada a Japón">
 
-<li>Al bajar del avión sigue los letreros de <strong>Arrivals / 到着</strong>.</li>
+<li>Al bajar del avión suigue los letreros de <strong>Arrivals / 到着</strong>.</li>
 <li>No te apresures; normalmente el camino está bien indicado.</li>
 <li>Ten a mano tu pasaporte y la dirección de tu alojamiento.</li>
 </ol>

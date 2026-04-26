@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turismo en Japón</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+  margin:0;
+  background:#050505;
+  color:white;
+  font-family:Arial, sans-serif;
+}
+
+.turismo-page{
+  max-width:900px;
+  margin:auto;
+  padding:22px;
+}
+
+.back-btn{
+  display:inline-block;
+  background:#2b2b2b;
+  color:white;
+  padding:10px 18px;
+  border-radius:16px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+
+.turismo-hero{
+  text-align:center;
+  padding:22px 0 28px;
+}
+
+.turismo-hero h1{
+  font-size:38px;
+  margin:10px 0;
+}
+
+.turismo-hero p{
+  color:#ddd;
+  font-size:18px;
+  line-height:1.6;
+}
+
+.hero-img{
+  width:100%;
+  max-width:720px;
+  display:block;
+  margin:18px auto;
+  border-radius:22px;
+}
+
+.section-title{
+  margin-top:30px;
+  font-size:28px;
+}
+
+.subtemas-box{
+  display:grid;
+  gap:14px;
+  margin-top:18px;
+}
+
+.subtema-card{
+  background:#181818;
+  border:1px solid #333;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.subtema-card summary{
+  cursor:pointer;
+  padding:18px;
+  color:#8cff85;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.subtema-content{
+  padding:18px;
+  border-top:1px solid #333;
+  color:#ddd;
+  line-height:1.6;
+}
+
+.video-box{
+  max-width:720px;
+  margin:16px auto;
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.video-box iframe{
+  width:100%;
+  height:220px;
+  border:0;
+  display:block;
+}
+
+.consejo{
+  background:#2a2112;
+  border:2px solid #f0a000;
+  border-radius:18px;
+  padding:16px;
+  margin-top:28px;
+  color:#fff2cc;
+}
+
+.final-btn{
+  display:block;
+  text-align:center;
+  background:#25D366;
+  color:white;
+  padding:14px;
+  border-radius:18px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:30px auto 10px;
+  max-width:360px;
+}
+
+@media(max-width:600px){
+  .turismo-hero h1{
+    font-size:32px;
+  }
+  .subtema-card summary{
+    font-size:20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="turismo-page">
+
+<a href="index.html" class="back-btn">⬅ Volver</a>
+
+<section class="turismo-hero">
+  <h1>🌸 Turismo en Japón</h1>
+
+  <p>
+    Lugares recomendados, videos turísticos y consejos prácticos para disfrutar Japón con más confianza.
+  </p>
+
+  <img src="Img/turismo.jpg" class="hero-img" alt="Turismo en Japón">
+</section>
+
+<h2 class="section-title">🌸 Lugares turísticos recomendados en Japón</h2>
+
+<p style="color:#ddd;line-height:1.6;">
+Explora algunos de los destinos más populares de Japón. Abre cada sección para ver un video y conocer mejor el ambiente de cada lugar.
+</p>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+<summary>🌆 Tokio – Modernidad y energía</summary>
+<div class="subtema-content">
+<p>Tokio combina rascacielos, trenes, luces, tecnología, compras y barrios famosos como Shibuya, Shinjuku y Asakusa.</p>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/BDt4EQ99lhQ" title="Tokio turismo" allowfullscreen></iframe>
+</div>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>⛩️ Kioto – Tradición y templos</summary>
+<div class="subtema-content">
+<p>Kioto es ideal para ver templos, santuarios, calles antiguas, jardines japoneses y paisajes tradicionales.</p>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/2hV0IL9Vx3Q" title="Kioto turismo" allowfullscreen></iframe>
+</div>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🍜 Osaka – Comida y diversión</summary>
+<div class="subtema-content">
+<p>Osaka es famosa por su comida callejera, Dotonbori, ambiente alegre y buena conexión con Kioto, Nara y Kobe.</p>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/F1s8l0zJk7Q" title="Osaka turismo" allowfullscreen></iframe>
+</div>
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🗻 Monte Fuji – Naturaleza icónica</summary>
+<div class="subtema-content">
+<p>El Monte Fuji es uno de los símbolos más importantes de Japón. Es ideal para fotos, excursiones y paisajes naturales.</p>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/8Y0M6bYwL1A" title="Monte Fuji turismo" allowfullscreen></iframe>
+</div>
+</div>
+</details>
+
+</div>
+
+<div class="consejo">
+  <strong>💡 Consejo importante:</strong>
+  <p>
+    Antes de salir, revisa el clima, el horario del último tren, lleva batería en el teléfono y guarda la dirección de tu hotel en japonés.
+  </p>
+</div>
+
+<a href="index.html" class="final-btn">⬅ Volver al buscador</a>
+
+</div>
+
+</body>
+</html>

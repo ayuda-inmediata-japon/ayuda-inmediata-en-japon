@@ -1137,11 +1137,11 @@ a[href="english.html"] {
 .secondary-btn{
   background:#2f6df6 !important;
 }
-.simple-footer{
+.support-footer{
+  margin-top:22px;
   text-align:center;
-  color:#999;
+  color:#777;
   font-size:14px;
-  padding:30px 15px 40px;
-  border-top:1px solid rgba(255,255,255,0.08);
-  margin-top:40px;
+  line-height:1.6;
+  padding-bottom:8px;
 }

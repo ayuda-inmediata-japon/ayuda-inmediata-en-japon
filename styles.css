@@ -1146,19 +1146,22 @@ a[href="english.html"] {
   padding-bottom:4px;
 }
 .hero-premium{
-  position:relative;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:40px 22px;
-  overflow:hidden;
-  background:
-    linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.88)),
-    url("Img/banner-github.png");
-  background-size:cover;
-  background-position:center;
+position:relative;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 22px;
+overflow:hidden;
+
+background-image:
+linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.78)),
+url("Img/banner-github.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 }
 
 .hero-overlay{

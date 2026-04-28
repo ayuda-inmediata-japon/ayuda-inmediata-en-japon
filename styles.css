@@ -1137,7 +1137,7 @@ a[href="english.html"] {
 .secondary-btn{
   background:#2f6df6 !important;
 }
-.hero-banner{
+hero-banner{
   position:relative;
   min-height:100vh;
   overflow:hidden;

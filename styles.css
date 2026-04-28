@@ -23,7 +23,7 @@ body{
   position:relative;
   min-height: 100svh;
   width:100%;
-  background-image: url("hero.jpg");
+  background-image: url("Img/hero.jpg");
   background-size: cover;
   background-position: center;
   display:flex;

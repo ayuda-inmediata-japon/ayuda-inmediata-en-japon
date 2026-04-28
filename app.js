@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (paypayLink) paypayLink.href = "#"; // aquí puedes poner link/imagen o dejarlo para después
 
   // ======= Flecha baja al buscador =======
-  const bajar = () => {
-    const buscador = document.getElementById("buscador");
-    if (buscador) buscador.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+const bajar = () => {
+  const footer = document.querySelector(".site-footer");
+  if (footer) footer.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
   if (arrowDown) {
     arrowDown.addEventListener("click", bajar);

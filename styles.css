@@ -23,7 +23,9 @@ body{
   position:relative;
   min-height: 100svh;
   width:100%;
-  background-image: url("Img/hero.jpg");
+  background-image:
+  linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.70)),
+  url("Img/hero.jpg");
   background-size: cover;
   background-position: center;
   display:flex;

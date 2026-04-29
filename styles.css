@@ -22,24 +22,33 @@ body{
 .hero{
   position:relative;
   min-height:100svh;
-  width:100%;
-
-  background-image:
-    linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.22)),
-    url("Img/hero.jpg");
-
-  background-size:cover;
-  background-position:center center;
-  background-repeat:no-repeat;
-
+  overflow:hidden;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:16px 18px 150px;
-  left:0;
-  right:0;
+  padding:20px;
+}
+.hero-foto{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
 }
 
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.45));
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  width:min(860px,92vw);
+}
 .hero-overlay{
   position:absolute;
   inset:0;

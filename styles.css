@@ -21,18 +21,23 @@ body{
 
 .hero{
   position:relative;
-  min-height: 100svh;
+  min-height:100svh;
   width:100%;
-  linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.70)),
- background-image: url("Img/hero.jpg");
-  background-size: cover;
-  background-position: center;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.80)),
+    url("Img/hero.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
   display:flex;
   align-items:center;
   justify-content:center;
-  padding: 16px 18px 150px;
+  padding:16px 18px 150px;
   left:0;
-right:0;
+  right:0;
 }
 
 .hero-overlay{

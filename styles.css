@@ -26,9 +26,9 @@ body{
 
   background-image:
 linear-gradient(to bottom, 
-rgba(0,0,0,.55) 0%,   /* más oscuro arriba */
-rgba(0,0,0,.25) 35%,  /* transición */
-rgba(0,0,0,.05) 70%   /* casi transparente abajo */
+rgba(0,0,0,.45) 0%,   /* más oscuro arriba */
+rgba(0,0,0,.20) 35%,  /* transición */
+rgba(0,0,0,.03) 70%   /* casi transparente abajo */
 ),
 url("Img/hero.jpg");
 

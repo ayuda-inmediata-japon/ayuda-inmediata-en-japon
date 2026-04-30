@@ -41,11 +41,8 @@ body{
 }
 
 .hero-overlay{
-  position:absolute;
-  inset:0;
-  background: linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.70));
+  display:none;
 }
-
 .hero-content{
  position:relative;
  z-index:2;

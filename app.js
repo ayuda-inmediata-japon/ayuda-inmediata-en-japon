@@ -769,7 +769,7 @@ emergencia: `
 <summary>🚓 Necesito a la policía</summary>
 <div class="subtema-content">
 
-<img src="TU_IMAGEN_POLICIA" class="info-img" alt="Policía en Japón">
+<img src="Img/policia en japon.jpg" class="info-img" alt="Policía en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>

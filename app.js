@@ -1303,7 +1303,7 @@ transporte: `
 
 <p><strong>Importante:</strong> muchas veces la forma más fácil es usar Google Maps y una tarjeta IC como <strong>Suica</strong> o <strong>Pasmo</strong>.</p>
 
-<img src="transporte.jpg" class="info-img" alt="Transporte en Japón">
+<img src="Img/transporte en japon.jpg" class="info-img" alt="Transporte en Japón">
 
 <p><strong>Si necesitas moverte y no sabes qué hacer, presiona una situación:</strong></p>
 

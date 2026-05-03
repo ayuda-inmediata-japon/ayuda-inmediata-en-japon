@@ -953,7 +953,7 @@ policia: `
 
 <p><strong>Koban (交番)</strong>: pequeñas estaciones de policía que se encuentran en barrios, estaciones de tren y zonas comerciales.</p>
 
-<img src="koban.jpg" class="info-img" alt="Koban en Japón">
+<img src="Img/policia1 en japon.jpg" class="info-img" alt="Koban en Japón">
 
 <p><strong>Si necesitas ayuda de la policía, busca un Koban.</strong> Puedes pedir orientación o ayuda.</p>
 

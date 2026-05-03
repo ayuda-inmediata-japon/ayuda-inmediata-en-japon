@@ -1451,7 +1451,7 @@ transporte: `
 <summary>🧳 Viajo con equipaje</summary>
 <div class="subtema-content">
 
-<img src="" class="info-img" alt="Equipaje en transporte">
+<img src="Img/estoy con equipaje.jpg" class="info-img" alt="Equipaje en transporte">
 
 <p><strong>Qué hacer:</strong></p>
 <ul>

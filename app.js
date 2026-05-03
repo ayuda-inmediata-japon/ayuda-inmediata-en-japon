@@ -1313,7 +1313,7 @@ transporte: `
 <summary>🚖 Necesito tomar un taxi</summary>
 <div class="subtema-content">
 
-<img src="taxi.jpg" class="info-img" alt="Taxi en Japón">
+<img src="Img/taxi en japon.jpg" class="info-img" alt="Taxi en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1350,7 +1350,7 @@ transporte: `
 <summary>🚆 No entiendo el tren o el metro</summary>
 <div class="subtema-content">
 
-<img src="tren.jpg" class="info-img" alt="Tren en Japón">
+<img src="Img/tren en japon.jpg" class="info-img" alt="Tren en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1387,7 +1387,7 @@ transporte: `
 <summary>🎫 Cómo comprar ticket</summary>
 <div class="subtema-content">
 
-<img src="ticket.jpg" class="info-img" alt="Comprar ticket en Japón">
+<img src="Img/ticketen japon.jpg" class="info-img" alt="Comprar ticket en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1413,7 +1413,7 @@ transporte: `
 <summary>🚄 Cómo usar Shinkansen</summary>
 <div class="subtema-content">
 
-<img src="shinkansen.jpg" class="info-img" alt="Shinkansen en Japón">
+<img src="Img/shinkansen en japon.jpg" class="info-img" alt="Shinkansen en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1451,7 +1451,7 @@ transporte: `
 <summary>🧳 Viajo con equipaje</summary>
 <div class="subtema-content">
 
-<img src="equipaje.jpg" class="info-img" alt="Equipaje en transporte">
+<img src="" class="info-img" alt="Equipaje en transporte">
 
 <p><strong>Qué hacer:</strong></p>
 <ul>

@@ -1476,7 +1476,7 @@ transporte: `
 <summary>🚌 Cómo usar el bus</summary>
 <div class="subtema-content">
 
-<img src="bus.jpg" class="info-img" alt="Bus en Japón">
+<img src="Img/bus en japon.jpg" class="info-img" alt="Bus en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1501,7 +1501,7 @@ transporte: `
 <summary>🚲 Alquilar bicicleta</summary>
 <div class="subtema-content">
 
-<img src="bici.jpg" class="info-img" alt="Bicicleta en Japón">
+<img src="Img/bicicletas en japon.jpg" class="info-img" alt="Bicicleta en Japón">
 
 <p><strong>Dónde alquilar:</strong></p>
 <ul>

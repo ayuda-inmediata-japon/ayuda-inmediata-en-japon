@@ -1387,7 +1387,7 @@ transporte: `
 <summary>🎫 Cómo comprar ticket</summary>
 <div class="subtema-content">
 
-<img src="Img/ticketen japon.jpg" class="info-img" alt="Comprar ticket en Japón">
+<img src="Img/ticket en japon.jpg" class="info-img" alt="Comprar ticket en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>

@@ -791,7 +791,7 @@ emergencia: `
 <summary>🔥 Incendio o rescate</summary>
 <div class="subtema-content">
 
-<img src= "incendio en japon.jpg" class="info-img" alt="Bomberos en Japón">
+<img src= "Img/incendio en japon.jpg" class="info-img" alt="Bomberos en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -814,7 +814,7 @@ emergencia: `
 <summary>🌏 Terremoto o tsunami</summary>
 <div class="subtema-content">
 
-<img src="terremoto en japon.jpg" class="info-img" alt="Desastres en Japón">
+<img src="Img/terremoto en japon.jpg" class="info-img" alt="Desastres en Japón">
 
 <p><strong>Terremoto:</strong></p>
 <ul>

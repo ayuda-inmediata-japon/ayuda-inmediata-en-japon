@@ -1683,9 +1683,9 @@ alojamiento: `
 <p>👉 El servicio en Japón suele ser muy limpio, puntual y respetuoso.</p>
 
 <div style="display:flex; gap:10px; overflow-x:auto; margin:10px 0;">
-  <img src="IMAGEN_1" style="width:85%; border-radius:10px;">
-  <img src="IMAGEN_2" style="width:85%; border-radius:10px;">
-  <img src="IMAGEN_3" style="width:85%; border-radius:10px;">
+  <img src="Img/hotel1.jpg" style="width:85%; border-radius:10px;">
+  <img src="Img/hotel2.jpg"style="width:85%; border-radius:10px;">
+  <img src="Img/hotel3.jpg"style="width:85%; border-radius:10px;">
 </div>
 <div style="
 margin:20px 0;

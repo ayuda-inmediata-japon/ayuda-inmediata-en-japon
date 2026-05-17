@@ -205,6 +205,28 @@ if ("serviceWorker" in navigator) {
       .catch((error) => console.log("Error registrando Service Worker:", error));
   });
 }
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
+  const visor = document.createElement("div");
+  visor.id = "visor-img";
+  visor.innerHTML = '<img id="img-grande">';
+  document.body.appendChild(visor);
+
+  document.querySelectorAll("img").forEach(img => {
+    img.style.cursor = "zoom-in";
+
+    img.addEventListener("click", () => {
+      document.getElementById("img-grande").src = img.src;
+      visor.classList.add("activo");
+    });
+  });
+
+  visor.addEventListener("click", () => {
+    visor.classList.remove("activo");
+  });
+
+});
+</script>
 </body>
 </html>

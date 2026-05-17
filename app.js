@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const respuestas = {-8
   
     llegada: `
-    <img src="Img/llegada0.-37?. jpg"
 <h2 id="llegada-japon">✈️ Llegada a Japón</h2>
 
 <p><strong>Al llegar a Japón:</strong></p>

@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <h2 id="llegada-japon">✈️ Llegada a Japón</h2>
 
 <p><strong>Al llegar a Japón:</strong></p>
+<img src="Img/llegada0.jpg"
 
 <p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>
 
@@ -90,7 +91,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🧳 Recoger equipaje en la cinta correcta</summary>
 <div class="subtema-content">
-  <img src="Img/llegada2.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+  <img src="Img/llegada4.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Revisa las pantallas y busca tu número de vuelo.</li>
@@ -129,7 +130,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🚪 Salida del aeropuerto</summary>
 <div class="subtema-content">
-  <img src="Img/llegada3.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
+  <img src="Img/llegada4.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
 <p><strong>Qué hacer:</strong></p>
   <li>Al salir encontrarás trenes, buses, taxis, cajeros y servicios.</li>
 <li>Antes de moverte, resuelve internet, transporte y algo de efectivo.</li>
@@ -141,7 +142,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🚕 Taxi o transporte al hotel</summary>
 <div class="subtema-content">
- <img src="Img/llegada5.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
+ <img src="Img/llegada2.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>

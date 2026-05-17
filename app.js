@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Puedes ampliar con calma luego.
   const respuestas = {
     llegada: `
+    <img src="Img/llegada0.jpg"
 <h2 id="llegada-japon">✈️ Llegada a Japón</h2>
 
 <p><strong>Al llegar a Japón:</strong></p>
-<img src="Img/llegada0.jpg"
 
 <p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>
 

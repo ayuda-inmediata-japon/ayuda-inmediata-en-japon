@@ -1557,3 +1557,28 @@ font-size:13px;
   border-radius:16px;
   font-weight:700;
 }
+#visor-img{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.92);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:99999;
+  opacity:0;
+  pointer-events:none;
+  transition:.25s;
+  padding:20px;
+}
+
+#visor-img.activo{
+  opacity:1;
+  pointer-events:auto;
+}
+
+#visor-img img{
+  max-width:95%;
+  max-height:95%;
+  border-radius:18px;
+  box-shadow:0 0 30px rgba(0,0,0,.7);
+}

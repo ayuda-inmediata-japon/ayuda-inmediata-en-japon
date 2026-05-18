@@ -44,6 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const respuestas = {
     llegada: `
 <h2 id="llegada-japon">✈️ Llegada a Japón</h2>
+<div style="text-align:center;margin:24px 0;">
+
+  <img 
+    src="Img/llegada0.jpg"
+    alt="Guía llegada Japón"
+    style="
+      width:100%;
+      max-width:820px;
+      display:block;
+      margin:0 auto;
+      border-radius:0;
+      border:2px solid #222;
+    "
+  >
+
+</div>
 
 <p><strong>Al llegar a Japón:</strong></p>
 

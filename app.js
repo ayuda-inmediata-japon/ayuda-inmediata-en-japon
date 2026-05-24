@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <div style="text-align:center;margin:24px 0;">
 
   <img 
-    src="Img/llegada0.jpg"
+    src="Img/llegada.jpg.PNG"
     alt="Guía llegada Japón"
     style="
       width:100%;
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<img src="Img/llegada.jpg"
+<img src="Img/llegada0.jpg.PNG"
 style="width:100%; max-width:540px; display:block; margin:14px auto 14px -22px; border-radius:18px;"
 alt="Llegada a Japón">
 
@@ -91,10 +91,12 @@ alt="Llegada a Japón">
 </details>
 
 <details class="subtema-card">
+ <img src="Img/llegada1.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <summary>🛂 Migración / control de pasaporte</summary>
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
+
 <li>Dirígete a la fila de migración.</li>
 <li>Presenta tu pasaporte y responde con calma si te preguntan algo.</li>
 <li>En muchos casos tomarán foto y huellas.</li>
@@ -106,7 +108,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🧳 Recoger equipaje en la cinta correcta</summary>
 <div class="subtema-content">
-  <img src="Img/llegada2.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+  <img src="Img/llegada2.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Revisa las pantallas y busca tu número de vuelo.</li>
@@ -135,6 +137,7 @@ alt="Llegada a Japón">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
+ <img src="Img/llegada3.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <li>Después de recoger tus maletas dirígete a aduana.</li>
 <li>Sigue la fila que corresponda según tu situación.</li>
 <li>Entrega o muestra lo que te soliciten con calma.</li>
@@ -157,7 +160,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🚕 Taxi o transporte al hotel</summary>
 <div class="subtema-content">
- <img src="Img/llegada3.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
+ <img src="Img/llegada5.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>

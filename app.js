@@ -139,6 +139,7 @@ alt="Llegada a Japón">
 <ol>
  <img src="Img/llegada3.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <li>Después de recoger tus maletas dirígete a aduana.</li>
+ <img src="Img/llegada4.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <li>Sigue la fila que corresponda según tu situación.</li>
 <li>Entrega o muestra lo que te soliciten con calma.</li>
 </ol>
@@ -148,7 +149,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🚪 Salida del aeropuerto</summary>
 <div class="subtema-content">
-  <img src="Img/llegada4.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
+  <img src="Img/llegada5.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
 <p><strong>Qué hacer:</strong></p>
   <li>Al salir encontrarás trenes, buses, taxis, cajeros y servicios.</li>
 <li>Antes de moverte, resuelve internet, transporte y algo de efectivo.</li>
@@ -209,7 +210,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
 <div class="subtema-content">
-<img src="Img/llegada4.jpg" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 4">
+<img src="Img/llegada6.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 4">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Puedes enviar maletas al hotel o al siguiente destino.</li>

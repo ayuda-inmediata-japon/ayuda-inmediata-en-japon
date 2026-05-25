@@ -172,6 +172,7 @@ alt="Llegada a Japón">
 </details>
 
 <details class="subtema-card">
+ <img src="Img/llegada7.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <summary>💳 Cómo usar tarjeta IC (Suica / Pasmo)</summary>
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>

@@ -200,7 +200,7 @@ alt="Llegada a Japón">
 
 <details class="subtema-card">
 <summary>💱 Cambiar dinero o retirar efectivo</summary>
- <img src="Img/llegada11.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 11">
+ <img src="Img/llegada11.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="llegada11">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -214,7 +214,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
 <div class="subtema-content">
-<img src="Img/llegada6.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 6">
+<img src="Img/llegada6.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="llegada6">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Puedes enviar maletas al hotel o al siguiente destino.</li>

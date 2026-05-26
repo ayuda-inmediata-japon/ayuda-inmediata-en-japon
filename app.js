@@ -122,7 +122,7 @@ alt="Llegada a Japón">
 
 <details class="subtema-card">
 <summary>🛒 Cómo usar carritos para equipaje</summary>
- <img src="Img/llegada9.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada9">
+ <img src="Img/llegada.9.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada9">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>

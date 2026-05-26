@@ -91,7 +91,7 @@ alt="Llegada a Japón">
 </details>
 
 <details class="subtema-card">
- <img src="Img/llegada1.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada1.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 1">
 <summary>🛂 Migración / control de pasaporte</summary>
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
@@ -138,9 +138,9 @@ alt="Llegada a Japón">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
- <img src="Img/llegada3.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada3.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
 <li>Después de recoger tus maletas dirígete a aduana.</li>
- <img src="Img/llegada4.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada4.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 4">
 <li>Sigue la fila que corresponda según tu situación.</li>
 <li>Entrega o muestra lo que te soliciten con calma.</li>
 </ol>
@@ -150,7 +150,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🚪 Salida del aeropuerto</summary>
 <div class="subtema-content">
-  <img src="Img/llegada5.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 3">
+  <img src="Img/llegada5.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
 <p><strong>Qué hacer:</strong></p>
   <li>Al salir encontrarás trenes, buses, taxis, cajeros y servicios.</li>
 <li>Antes de moverte, resuelve internet, transporte y algo de efectivo.</li>
@@ -162,7 +162,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🚕 Taxi o transporte al hotel</summary>
 <div class="subtema-content">
- <img src="Img/llegada6jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 5">
+ <img src="Img/llegada6jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 6">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>
@@ -174,7 +174,7 @@ alt="Llegada a Japón">
 
 <details class="subtema-card">
 <summary>💳 Cómo usar tarjeta IC (Suica / Pasmo)</summary>
- <img src="Img/llegada7.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada7.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 7">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -187,7 +187,7 @@ alt="Llegada a Japón">
 
 <details class="subtema-card">
 <summary>🏨 Cómo llegar a mi hotel</summary>
- <img src="Img/llegada10.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada10.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 10">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -200,7 +200,7 @@ alt="Llegada a Japón">
 
 <details class="subtema-card">
 <summary>💱 Cambiar dinero o retirar efectivo</summary>
- <img src="Img/llegada11.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada11.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 11">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -214,7 +214,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
 <div class="subtema-content">
-<img src="Img/llegada6.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 4">
+<img src="Img/llegada6.jpg.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 6">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Puedes enviar maletas al hotel o al siguiente destino.</li>

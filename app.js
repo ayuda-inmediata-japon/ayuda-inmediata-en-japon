@@ -187,7 +187,7 @@ alt="Llegada a Japón">
 
 <details class="subtema-card">
 <summary>🏨 Cómo llegar a mi hotel</summary>
- <img src="Img/llegada1.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada10.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -200,7 +200,7 @@ alt="Llegada a Japón">
 
 <details class="subtema-card">
 <summary>💱 Cambiar dinero o retirar efectivo</summary>
- <img src="Img/llegada1.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
+ <img src="Img/llegada11.jpg.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 2">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>

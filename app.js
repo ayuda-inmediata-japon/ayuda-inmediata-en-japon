@@ -121,7 +121,7 @@ alt="Llegada a Japón">
 <details class="subtema-card">
 <summary>🧳 Recoger equipaje en la cinta correcta</summary>
 <div class="subtema-content">
-  <img src="Img/llegada2.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada2">
+  <img src="Img/llegada3.webp"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada2">
 <p><strong>Qué hacer:</strong></p>
 <ol>
 <li>Revisa las pantallas y busca tu número de vuelo.</li>

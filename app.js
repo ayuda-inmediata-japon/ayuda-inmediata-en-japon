@@ -64,10 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>Al llegar a Japón:</strong></p>
 
 <p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>
-<img src="Img/llegada.webp"alt="Guía llegada Japón"style="
-width:100%;max-width:820px;display:block;margin:0 auto;border-radius:0;border:2px solid #222;">
-style="width:100%; max-width:540px; display:block; margin:14px auto 14px -22px; border-radius:18px;"
+<img src="img/llegada.webp"
+style="width:100%; max-width:540px;
+display:block; margin:14px auto 14px -22px;
+border-radius:18px;"
 alt="Llegada a Japón">
+
 <p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de entrada al país.</p>
 
 <p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto. En muchos aeropuertos hay <strong>servicio médico o personal de asistencia</strong>.</p>
@@ -82,7 +84,12 @@ alt="Llegada a Japón">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-  <img src="Img/llegada2.webp"alt="Guía llegada Japón"style="
+<img src="img/llegada1.webp"
+style="width:100%; max-width:540px;
+display:block; margin:14px auto 14px -22px;
+border-radius:18px;"
+alt="Llegada a Japón">
+
 
 <li>Al bajar del avión suigue los letreros de <strong>Arrivals / 到着</strong>.</li>
 <li>No te apresures; normalmente el camino está bien indicado.</li>
@@ -92,7 +99,12 @@ alt="Llegada a Japón">
 </details>
 
 <details class="subtema-card">
- <img src="Img/llegada1.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 1">
+ <img src="img/llegada2.webp"
+style="width:100%; max-width:540px;
+display:block; margin:14px auto 14px -22px;
+border-radius:18px;"
+alt="Llegada a Japón">
+
 <summary>🛂 Migración / control de pasaporte</summary>
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>

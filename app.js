@@ -79,7 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<img src="Img/llegada1.webp"
+  <img src="Img/llegada12.webp"alt="Guía llegada Japón"style="
+width:100%;max-width:820px;display:block;margin:0 auto;border-radius:0;border:2px solid #222;">
 style="width:100%; max-width:540px; display:block; margin:14px auto 14px -22px; border-radius:18px;"
 alt="Llegada a Japón">
 

@@ -83,9 +83,6 @@ alt="Llegada a Japón">
 <p><strong>Qué hacer:</strong></p>
 <ol>
   <img src="Img/llegada2.webp"alt="Guía llegada Japón"style="
-width:100%;max-width:820px;display:block;margin:0 auto;border-radius:0;border:2px solid #222;">
-style="width:100%; max-width:540px; display:block; margin:14px auto 14px -22px; border-radius:18px;"
-alt="Llegada a Japón">
 
 <li>Al bajar del avión suigue los letreros de <strong>Arrivals / 到着</strong>.</li>
 <li>No te apresures; normalmente el camino está bien indicado.</li>

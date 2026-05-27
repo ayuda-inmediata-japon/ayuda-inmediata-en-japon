@@ -1557,3 +1557,24 @@ font-size:13px;
   border-radius:16px;
   font-weight:700;
 }
+.respuesta,
+.card,
+.chip-content,
+.resultado {
+  width: min(100%, 680px);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.respuesta img,
+.card img,
+.chip-content img,
+.resultado img {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  margin: 14px auto;
+  border-radius: 18px;
+}

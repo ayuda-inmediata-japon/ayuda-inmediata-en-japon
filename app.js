@@ -64,11 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
 <p><strong>Al llegar a Japón:</strong></p>
 
 <p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>
-<img src="img/llegada.webp"
-style="width:100%; max-width:540px;
-display:block; margin:14px auto 14px -22px;
-border-radius:18px;"
-alt="Llegada a Japón">
+<img 
+    src="Img/llegada.webp"
+    alt="Guía llegada Japón"
+    style="
+      width:100%;
+      max-width:820px;
+      display:block;
+      margin:0 auto;
+      border-radius:0;
+      border:2px solid #222;
+    "
 
 <p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de entrada al país.</p>
 
@@ -84,11 +90,17 @@ alt="Llegada a Japón">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<img src="img/llegada1.webp"
-style="width:100%; max-width:540px;
-display:block; margin:14px auto 14px -22px;
-border-radius:18px;"
-alt="Llegada a Japón">
+<img 
+    src="Img/llegada1.webp"
+    alt="Guía llegada Japón"
+    style="
+      width:100%;
+      max-width:820px;
+      display:block;
+      margin:0 auto;
+      border-radius:0;
+      border:2px solid #222;
+    "
 
 
 <li>Al bajar del avión suigue los letreros de <strong>Arrivals / 到着</strong>.</li>

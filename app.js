@@ -376,14 +376,6 @@ Taichou ga warui desu.<br><br>
 
 <p>🟢 <a href="https://chat.openai.com/" target="_blank">Asistente y traductor (ChatGPT)</a></p>
 
-`
-
-<h3>🌐 Traductores recomendados</h3>
-
-<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">Traductor español → japonés (DeepL)</a></p>
-<p>🟡 <a href="https://translate.google.com/" target="_blank">Traductor español → japonés (Google)</a></p>
-<p>🟢 <a href="https://chat.openai.com/" target="_blank">Asistente y traductor (ChatGPT)</a></p>
-
 <h3>🗣️ Frases útiles</h3>
 
 <ul style="line-height:1.9">

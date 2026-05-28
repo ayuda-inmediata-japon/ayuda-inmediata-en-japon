@@ -98,80 +98,89 @@ alt="Llegada a Japón">
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-
-<li>Dirígete a la fila de migración.</li>
-<li>Presenta tu pasaporte y responde con calma si te preguntan algo.</li>
-<li>En muchos casos tomarán foto y huellas.</li>
-<li>Ten lista la dirección del hotel o alojamiento en Japón.</li>
-</ol>
-</div>
-<s/details>
-
 <details class="subtema-card">
-<summary>🛒 Cómo usar carritos para equipaje</summary>
- <Img src="Img/llegada3.webp" alt="Llegada a Japón">
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Busca los carritos cerca de la zona de equipaje.</li>
-<li>Úsalos para mover tus maletas dentro del aeropuerto.</li>
-<li>No bloquees el paso ni abandones el carrito en medio del camino.</li>
-</ol>
-</div>
+  <summary>🛂 Migración / control de pasaporte</summary>
+  <div class="subtema-content">
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Dirígete a la fila de migración.</li>
+      <li>Presenta tu pasaporte y responde con calma si te preguntan algo.</li>
+      <li>En muchos casos tomarán foto y huellas.</li>
+      <li>Ten lista la dirección del hotel o alojamiento en Japón.</li>
+    </ol>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>🧳 Recoger equipaje en la cinta correcta</summary>
-<Img src="Img/llegada4.webp" alt="Llegada a Japón">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Revisa las pantallas y busca tu número de vuelo.</li>
-<li>Ve a la cinta o cinturón correspondiente.</li>
+  <summary>🛒 Cómo usar carritos para equipaje</summary>
+  <div class="subtema-content">
+    <img src="Img/llegada3.webp" alt="Carritos de equipaje">
 
-<li>Espera unos minutos si tu maleta no sale de inmediato.</li>
-<li>Confirma primero que estás en la cinta correcta.</li>
-</ol>
-</div>
-
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Busca los carritos cerca de la zona de equipaje.</li>
+      <li>Úsalos para mover tus maletas dentro del aeropuerto.</li>
+      <li>No bloquees el paso ni abandones el carrito en medio del camino.</li>
+    </ol>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>🧾 Aduana</summary>
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
- <Img src="Img/llegada5.webp" alt="Llegada a Japón">
-<li>Después de recoger tus maletas dirígete a aduana.</li>
- <Img src="Img/llegada6.webp" alt="Llegada a Japón">
-<li>Sigue la fila que corresponda según tu situación.</li>
-<li>Entrega o muestra lo que te soliciten con calma.</li>
-</ol>
-</div>
+  <summary>🛄 Recoger equipaje en la cinta correcta</summary>
+  <div class="subtema-content">
+    <img src="Img/llegada4.webp" alt="Recoger equipaje">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Revisa las pantallas y busca tu número de vuelo.</li>
+      <li>Ve a la cinta o cinturón correspondiente.</li>
+      <li>Espera unos minutos si tu maleta no sale de inmediato.</li>
+      <li>Confirma primero que estás en la cinta correcta.</li>
+    </ol>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>🚪 Salida del aeropuerto</summary>
-<div class="subtema-content">
-  <Img src="Img/llegada7.webp" alt="Llegada a Japón">
-<p><strong>Qué hacer:</strong></p>
-  <li>Al salir encontrarás trenes, buses, taxis, cajeros y servicios.</li>
-<li>Antes de moverte, resuelve internet, transporte y algo de efectivo.</li>
-<li>Ten lista la dirección de tu hotel en japonés.</li>
-</ol>
-</div>
+  <summary>🧾 Aduana</summary>
+  <div class="subtema-content">
+    <img src="Img/llegada5.webp" alt="Aduana">
+    <img src="Img/llegada6.webp" alt="Aduana en Japón">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Después de recoger tus maletas dirígete a aduana.</li>
+      <li>Sigue la fila que corresponda según tu situación.</li>
+      <li>Entrega o muestra lo que te soliciten con calma.</li>
+    </ol>
+  </div>
 </details>
 
 <details class="subtema-card">
-<summary>💱 Cambiar dinero o retirar efectivo</summary>
-  <Img src="Img/llegada8.webp" alt="Llegada a Japón">
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Puedes cambiar en el aeropuerto o retirar en ATM.</li>
-<li>Conviene tener algo de efectivo desde el inicio.</li>
-<li>Úsalo para transporte, comida o pequeños gastos.</li>
-</ol>
-</div>
+  <summary>🚪 Salida del aeropuerto</summary>
+  <div class="subtema-content">
+    <img src="Img/llegada7.webp" alt="Salida del aeropuerto">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Al salir encontrarás trenes, buses, taxis, cajeros y servicios.</li>
+      <li>Antes de moverte, resuelve internet, dinero o tarjeta IC si lo necesitas.</li>
+      <li>Ten lista la dirección de tu hotel en japonés o en Google Maps.</li>
+    </ol>
+  </div>
+</details>
+
+<details class="subtema-card">
+  <summary>💱 Cambiar dinero o retirar efectivo</summary>
+  <div class="subtema-content">
+    <img src="Img/llegada8.webp" alt="Cambiar dinero en Japón">
+
+    <p><strong>Qué hacer:</strong></p>
+    <ol>
+      <li>Puedes cambiar dinero en el aeropuerto o retirar en ATM.</li>
+      <li>Conviene tener algo de efectivo desde el inicio.</li>
+      <li>Úsalo para transporte, comida o pequeños gastos.</li>
+    </ol>
+  </div>
 </details>
 <details class="subtema-card">
   <summary>📶 Internet / SIM / eSIM / Pocket Wi-Fi</summary>

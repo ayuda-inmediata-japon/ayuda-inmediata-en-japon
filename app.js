@@ -47,6 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
 <div style="text-align:center;margin:24px 0;">
 </div>
 <Img src="Img/llegada12.webp" alt="Llegada a Japón">
+<div style="
+text-align:center;
+margin:18px auto 10px auto;
+padding:10px;
+background:#111;
+border:1px solid #2a2a2a;
+border-radius:14px;
+color:#ffd54f;
+font-weight:700;
+font-size:1rem;
+max-width:540px;
+">
+📌 Guía visual rápida del proceso de llegada
+</div>
 <Img src="Img/llegada.webp" alt="Llegada a Japón">
 <p><strong>Al llegar a Japón:</strong></p>
 

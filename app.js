@@ -66,7 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<Img src="Img/llegada1.webp" alt="Llegada a Japón">
+<img src="Img/llegada1.webp"
+style="width:100%; border-radius:18px;"
+alt="Llegada a Japón">
 
 <li>Al bajar del avión suigue los letreros de <strong>Arrivals / 到着</strong>.</li>
 <li>No te apresures; normalmente el camino está bien indicado.</li>

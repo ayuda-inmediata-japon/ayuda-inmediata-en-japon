@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     llegada: `
 <h2 id="llegada-japon">✈️ Llegada a Japón</h2>
 <div style="text-align:center;margin:24px 0;">
-<Img src="img/llegada12.webp" alt="Llegada a Japón">
+<Img src="Img/llegada12.webp" alt="Llegada a Japón">
 </div>
 <Img src="Img/llegada.webp" alt="Llegada a Japón">
 <p><strong>Al llegar a Japón:</strong></p>

@@ -80,7 +80,7 @@ max-width:540px;
 <div class="subtema-content">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<img src="Img/llegada1.webp"
+<Img src="Img/llegada1.webp"
 style="width:100%; border-radius:18px;"
 alt="Llegada a Japón">
 

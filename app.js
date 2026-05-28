@@ -62,11 +62,10 @@ max-width:540px;
 </div>
 <Img src="Img/llegada12.webp" alt="Llegada a Japón">
 
-<Img src="Img/llegada.webp" alt="Llegada a Japón">
 <p><strong>Al llegar a Japón:</strong></p>
 
 <p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>
-
+<Img src="Img/llegada.webp" alt="Llegada a Japón">
 <p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de entrada al país.</p>
 
 <p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto. En muchos aeropuertos hay <strong>servicio médico o personal de asistencia</strong>.</p>

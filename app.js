@@ -105,6 +105,19 @@ alt="Llegada a Japón">
 <li>Ten lista la dirección del hotel o alojamiento en Japón.</li>
 </ol>
 </div>
+<s/details>
+
+<details class="subtema-card">
+<summary>🛒 Cómo usar carritos para equipaje</summary>
+ <img src="Img/llegada9.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada9">
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Busca los carritos cerca de la zona de equipaje.</li>
+<li>Úsalos para mover tus maletas dentro del aeropuerto.</li>
+<li>No bloquees el paso ni abandones el carrito en medio del camino.</li>
+</ol>
+</div>
 </details>
 
 <details class="subtema-card">
@@ -119,19 +132,7 @@ alt="Llegada a Japón">
 <li>Confirma primero que estás en la cinta correcta.</li>
 </ol>
 </div>
-</details>
 
-<details class="subtema-card">
-<summary>🛒 Cómo usar carritos para equipaje</summary>
- <img src="Img/llegada9.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada9">
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Busca los carritos cerca de la zona de equipaje.</li>
-<li>Úsalos para mover tus maletas dentro del aeropuerto.</li>
-<li>No bloquees el paso ni abandones el carrito en medio del camino.</li>
-</ol>
-</div>
 </details>
 
 <details class="subtema-card">
@@ -161,18 +162,37 @@ alt="Llegada a Japón">
 </details>
 
 <details class="subtema-card">
-<summary>🚕 Taxi o transporte al hotel</summary>
+<summary>💱 Cambiar dinero o retirar efectivo</summary>
+ <img src="Img/llegada11.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="llegada11">
 <div class="subtema-content">
- <img src="Img/llegada6.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 6">
 <p><strong>Qué hacer:</strong></p>
 <ol>
-<li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>
-<li>Muestra la dirección exacta de tu hotel.</li>
-<li>Si vas en tren, confirma primero la línea y estación correcta.</li>
+<li>Puedes cambiar en el aeropuerto o retirar en ATM.</li>
+<li>Conviene tener algo de efectivo desde el inicio.</li>
+<li>Úsalo para transporte, comida o pequeños gastos.</li>
 </ol>
 </div>
 </details>
+<details class="subtema-card">
+  <summary>📶 Internet / SIM / eSIM / Pocket Wi-Fi</summary>
+  <div class="subtema-content">
+    <p><strong>Qué hacer:</strong></p>
 
+    <img src="Img/internet-japon.webp" alt="Internet, SIM y eSIM en Japón">
+
+    <ol>
+      <li>Antes de salir del aeropuerto, asegúrate de tener internet.</li>
+      <li>Puedes comprar una <strong>SIM</strong>, activar una <strong>eSIM</strong> o alquilar un <strong>Pocket Wi-Fi</strong>.</li>
+      <li>También puedes usar el Wi-Fi gratis del aeropuerto mientras decides.</li>
+      <li>Si usarás tren, taxi o Google Maps, tener internet es muy importante.</li>
+    </ol>
+
+    <p><strong>Frase útil:</strong></p>
+    <p>Quiero internet para mi teléfono.</p>
+    <p><strong>日本語:</strong> 携帯電話で使えるインターネットがほしいです。</p>
+    <p><strong>Romaji:</strong> Keitai denwa de tsukaeru intānetto ga hoshii desu.</p>
+  </div>
+</details>
 <details class="subtema-card">
 <summary>💳 Cómo usar tarjeta IC (Suica / Pasmo)</summary>
  <img src="Img/llegada7.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 7">
@@ -185,33 +205,6 @@ alt="Llegada a Japón">
 </ol>
 </div>
 </details>
-
-<details class="subtema-card">
-<summary>🏨 Cómo llegar a mi hotel</summary>
- <img src="Img/llegada10.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 10">
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Guarda la dirección en japonés.</li>
-<li>Muéstrala si necesitas ayuda.</li>
-<li>Usa Google Maps o pregunta al personal.</li>
-</ol>
-</div>
-</details>
-
-<details class="subtema-card">
-<summary>💱 Cambiar dinero o retirar efectivo</summary>
- <img src="Img/llegada11.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="llegada11">
-<div class="subtema-content">
-<p><strong>Qué hacer:</strong></p>
-<ol>
-<li>Puedes cambiar en el aeropuerto o retirar en ATM.</li>
-<li>Conviene tener algo de efectivo desde el inicio.</li>
-<li>Úsalo para transporte, comida o pequeños gastos.</li>
-</ol>
-</div>
-</details>
-
 <details class="subtema-card">
 <summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
 <div class="subtema-content">
@@ -225,6 +218,56 @@ alt="Llegada a Japón">
 </ol>
 </div>
 </details>
+
+<details class="subtema-card">
+<summary>🚕 Taxi o transporte al hotel</summary>
+<div class="subtema-content">
+ <img src="Img/llegada6.PNG" style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 6">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>
+<li>Muestra la dirección exacta de tu hotel.</li>
+<li>Si vas en tren, confirma primero la línea y estación correcta.</li>
+</ol>
+</div>
+</details>
+
+
+
+<<details class="subtema-card">
+  <summary>📶 Internet / SIM / eSIM / Pocket Wi-Fi</summary>
+  <div class="subtema-content">
+    <p><strong>Qué hacer:</strong></p>
+
+    <img src="Img/internet-japon.webp" alt="Internet, SIM y eSIM en Japón">
+
+    <ol>
+      <li>Antes de salir del aeropuerto, asegúrate de tener internet.</li>
+      <li>Puedes comprar una <strong>SIM</strong>, activar una <strong>eSIM</strong> o alquilar un <strong>Pocket Wi-Fi</strong>.</li>
+      <li>También puedes usar el Wi-Fi gratis del aeropuerto mientras decides.</li>
+      <li>Si usarás tren, taxi o Google Maps, tener internet es muy importante.</li>
+    </ol>
+
+    <p><strong>Frase útil:</strong></p>
+    <p>Quiero internet para mi teléfono.</p>
+    <p><strong>日本語:</strong> 携帯電話で使えるインターネットがほしいです。</p>
+    <p><strong>Romaji:</strong> Keitai denwa de tsukaeru intānetto ga hoshii desu.</p>
+  </div>
+</details>
+details class="subtema-card">
+<summary>🏨 Cómo llegar a mi hotel</summary>
+ <img src="Img/llegada10.PNG"style="width:100%;display:block;margin:0 auto;border-radius:18px;" alt="Llegada a Japón 10">
+<div class="subtema-content">
+<p><strong>Qué hacer:</strong></p>
+<ol>
+<li>Guarda la dirección en japonés.</li>
+<li>Muéstrala si necesitas ayuda.</li>
+<li>Usa Google Maps o pregunta al personal.</li>
+</ol>
+</div>
+
+
+
 
 </div>
 <div style="max-width: 900px; margin: 0 auto; padding: 0 15px;">

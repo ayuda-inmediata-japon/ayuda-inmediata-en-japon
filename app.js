@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
     llegada: `
 <h2 id="llegada-japon">✈️ Llegada a Japón</h2>
 <div style="text-align:center;margin:24px 0;">
-<img src="img/llegada12.webp" alt="Llegada a Japón">
+<img src="llegada12.webp" alt="Llegada a Japón">
 </div>
-<img src="img/llegada.webp" alt="Llegada a Japón">
+<img src="llegada.webp" alt="Llegada a Japón">
 <p><strong>Al llegar a Japón:</strong></p>
 
 <p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>. En la mayoría de aeropuertos en Japón todo está bien señalizado, por lo que normalmente solo debes avanzar siguiendo las indicaciones.</p>

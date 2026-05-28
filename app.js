@@ -44,49 +44,339 @@ document.addEventListener("DOMContentLoaded", () => {
   const respuestas = {
    
 
+llegada: `
+
+<h2 id="llegada-japon">✈️ Llegada a Japón</h2>
+
+<div style="text-align:center;margin:24px 0;"></div>
+
+<img src="img/llegada12.webp" alt="Llegada a Japón">
+
+<div style="
+text-align:center;
+margin:18px auto 10px auto;
+padding:10px;
+background:#111;
+border:1px solid #2a2a2a;
+border-radius:14px;
+color:#ffd54f;
+font-weight:700;
+font-size:1rem;
+max-width:540px;
+">
+📌 Guía visual rápida del proceso de llegada
 </div>
-<div style="max-width: 900px; margin: 0 auto; padding: 0 15px;">
+
+<img src="img/llegada.webp" alt="Llegada a Japón">
+
+<p><strong>Al llegar a Japón:</strong></p>
+
+<p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>.</p>
+
+<p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de pasaporte y entrada al país.</p>
+
+<p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto.</p>
+
+<div style="display:grid;gap:12px;margin:18px auto;max-width:100%;"></div>
+
+<div class="subtemas-box">
+
+<details class="subtema-card">
+<summary>🛬 Arribo al aeropuerto</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada1.webp"
+style="width:100%; border-radius:18px;"
+alt="Llegada a Japón">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Al bajar del avión sigue los letreros de <strong>Arrivals / 到着</strong>.</li>
+<li>No te apresures; normalmente el camino está bien indicado.</li>
+<li>Ten a mano tu pasaporte y la dirección de tu alojamiento.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🛂 Migración / control de pasaporte</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada2.webp"
+style="width:100%; border-radius:18px;"
+alt="Migración Japón">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Dirígete a la fila de migración.</li>
+<li>Presenta tu pasaporte y responde con calma si te preguntan algo.</li>
+<li>En muchos casos tomarán foto y huellas.</li>
+<li>Ten lista la dirección del hotel o alojamiento.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🛒 Cómo usar carritos para equipaje</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada9.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Carritos equipaje">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Busca los carritos cerca de la zona de equipaje.</li>
+<li>Úsalos para mover tus maletas dentro del aeropuerto.</li>
+<li>No bloquees el paso ni abandones el carrito.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🧳 Recoger equipaje en la cinta correcta</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada3.webp"
+style="width:100%; border-radius:18px;"
+alt="Equipaje Japón">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Revisa las pantallas y busca tu número de vuelo.</li>
+<li>Ve a la cinta correspondiente.</li>
+<li>Espera unos minutos si tu maleta no sale de inmediato.</li>
+<li>Confirma que estás en la cinta correcta.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🧾 Aduana</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada4.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Aduana Japón">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Después de recoger tus maletas dirígete a aduana.</li>
+<li>Sigue la fila que corresponda.</li>
+<li>Entrega o muestra lo que te soliciten con calma.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚪 Salida del aeropuerto</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada5.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Salida aeropuerto">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Al salir encontrarás trenes, buses, taxis y servicios.</li>
+<li>Antes de moverte resuelve internet y algo de efectivo.</li>
+<li>Ten lista la dirección de tu hotel en japonés.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>💱 Cambiar dinero o retirar efectivo</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada11.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Cambio dinero">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Puedes cambiar dinero en el aeropuerto o retirar en ATM.</li>
+<li>Conviene tener algo de efectivo desde el inicio.</li>
+<li>Úsalo para transporte, comida y pequeños gastos.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>📶 Comprar chip / SIM / eSIM</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada8.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="SIM Japón">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Puedes comprar SIM o activar eSIM en el aeropuerto.</li>
+<li>También puedes alquilar Wi-Fi portátil.</li>
+<li>Internet será importante para mapas y traductor.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>📦 Enviar equipaje (Kuroneko / Takkyubin)</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada6.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Enviar equipaje">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Puedes enviar maletas al hotel o siguiente destino.</li>
+<li>Está disponible en aeropuerto y hoteles.</li>
+<li>Necesitas la dirección exacta del hotel.</li>
+<li>Confirma que el hotel reciba equipaje.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🚕 Taxi o transporte al hotel</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada7.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Taxi Japón">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Usa paraderos oficiales de taxi o sigue señales de tren y bus.</li>
+<li>Muestra la dirección exacta de tu hotel.</li>
+<li>Confirma línea y estación si vas en tren.</li>
+</ol>
+
+</div>
+</details>
+
+<details class="subtema-card">
+<summary>🏨 Cómo llegar a mi hotel</summary>
+
+<div class="subtema-content">
+
+<img src="img/llegada10.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Hotel Japón">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Guarda la dirección en japonés.</li>
+<li>Muéstrala si necesitas ayuda.</li>
+<li>Usa Google Maps o pregunta al personal.</li>
+</ol>
+
+</div>
+</details>
+
+</div>
+
+<div style="max-width:900px; margin: 0 auto; padding: 0 15px;">
+
 <h3>🌐 Si tienes dificultad con el idioma</h3>
 
 <p><strong>📱 Puedes mostrar este mensaje:</strong></p>
 
 <ul style="line-height:1.9">
+
 <li>
+
 <strong>Español</strong><br>
 Acabo de llegar a Japón y necesito ayuda para orientarme.<br><br>
+
 <strong>Romaji</strong><br>
 Nihon ni tsuita bakari de, michi annai no tasuke ga hitsuyou desu.<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">日本に着いたばかりで、案内の助けが必要です。</span>
+
 </li>
 
 <li>
+
 <strong>Español</strong><br>
 ¿Dónde está migración?<br><br>
+
 <strong>Romaji</strong><br>
 Nyuukoku shinsa wa doko desu ka?<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">入国審査はどこですか？</span>
+
 </li>
 
 <li>
+
 <strong>Español</strong><br>
 ¿Dónde está la cinta de equipaje de este vuelo?<br><br>
+
 <strong>Romaji</strong><br>
 Kono bin no nimotsu uketori reen wa doko desu ka?<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">この便の荷物受取レーンはどこですか？</span>
+
 </li>
 
 <li>
+
 <strong>Español</strong><br>
 Me siento mal.<br><br>
+
 <strong>Romaji</strong><br>
 Taichou ga warui desu.<br><br>
+
 <strong>日本語</strong><br>
 <span style="font-size:26px;font-weight:bold;">体調が悪いです。</span>
+
 </li>
+
 </ul>
+
+<h3>🌐 Traductores recomendados</h3>
+
+<p>🔵 <a href="https://www.deepl.com/translator" target="_blank">Traductor español → japonés (DeepL)</a></p>
+
+<p>🟡 <a href="https://translate.google.com/" target="_blank">Traductor español → japonés (Google)</a></p>
+
+<p>🟢 <a href="https://chat.openai.com/" target="_blank">Asistente y traductor (ChatGPT)</a></p>
+
+`
 
 <h3>🌐 Traductores recomendados</h3>
 

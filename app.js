@@ -50,7 +50,7 @@ llegada: `
 
 <div style="text-align:center;margin:24px 0;"></div>
 
-<img src="img/llegada12.webp" alt="Llegada a Japón">
+<Img src="Img/llegada12.webp" alt="Llegada a Japón">
 
 <div style="
 text-align:center;
@@ -67,7 +67,7 @@ max-width:540px;
 📌 Guía visual rápida del proceso de llegada
 </div>
 
-<img src="img/llegada.webp" alt="Llegada a Japón">
+<Img src="Img/llegada.webp" alt="Llegada a Japón">
 
 <p><strong>Al llegar a Japón:</strong></p>
 
@@ -86,7 +86,7 @@ max-width:540px;
 
 <div class="subtema-content">
 
-<img src="img/llegada1.webp"
+<Img src="Img/llegada1.webp"
 style="width:100%; border-radius:18px;"
 alt="Llegada a Japón">
 
@@ -106,7 +106,7 @@ alt="Llegada a Japón">
 
 <div class="subtema-content">
 
-<img src="img/llegada2.webp"
+<Img src="Img/llegada2.webp"
 style="width:100%; border-radius:18px;"
 alt="Migración Japón">
 

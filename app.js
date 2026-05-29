@@ -48,6 +48,17 @@ llegada: `
 
 <h2 id="llegada-japon">✈️ Llegada a Japón</h2>
 
+<p><strong>Al llegar a Japón:</strong></p>
+
+<p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>.</p>
+
+<p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de pasaporte y entrada al país.</p>
+
+<p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto.</p>
+
+<div style="display:grid;gap:12px;margin:18px auto;max-width:100%;"></div>
+
+<div class="subtemas-box">
 <details class="subtema-card">
 <summary>📌 Guía esencial para tu llegada a Japón</summary>
 <div class="subtema-content">
@@ -61,19 +72,6 @@ llegada: `
 <img src="img/llegada.webp" alt="Llegada a Japón">
 </div>
 </details>
-
-<p><strong>Al llegar a Japón:</strong></p>
-
-<p>Después de bajar del avión, sigue con calma los letreros de <strong>Arrivals / 到着 (Touchaku)</strong>.</p>
-
-<p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de pasaporte y entrada al país.</p>
-
-<p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto.</p>
-
-<div style="display:grid;gap:12px;margin:18px auto;max-width:100%;"></div>
-
-<div class="subtemas-box">
-
 <details class="subtema-card">
 <summary>🛬 Arribo al aeropuerto</summary>
 

@@ -62,14 +62,14 @@ llegada: `
 <details class="subtema-card">
 <summary>📌 Guía esencial para tu llegada a Japón</summary>
 <div class="subtema-content">
-<img src="img/llegada12.webp" alt="Llegada a Japón">
+<Img src="Img/llegada12.webp" alt="Llegada a Japón">
 </div>
 </details>
 
 <details class="subtema-card">
 <summary>📌 Guía visual rápida del proceso de llegada</summary>
 <div class="subtema-content">
-<img src="img/llegada.webp" alt="Llegada a Japón">
+<Img src="Img/llegada.webp" alt="Llegada a Japón">
 </div>
 </details>
 <details class="subtema-card">
@@ -118,7 +118,7 @@ alt="Migración Japón">
 
 <div class="subtema-content">
 
-<img src="img/llegada9.webp"
+<Img src="Img/llegada9.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Carritos equipaje">
 
@@ -138,7 +138,7 @@ alt="Carritos equipaje">
 
 <div class="subtema-content">
 
-<img src="img/llegada3.webp"
+<Img src="Img/llegada3.webp"
 style="width:100%; border-radius:18px;"
 alt="Equipaje Japón">
 
@@ -159,7 +159,7 @@ alt="Equipaje Japón">
 
 <div class="subtema-content">
 
-<img src="img/llegada4.webp"
+<Img src="Img/llegada4.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Aduana Japón">
 
@@ -179,7 +179,7 @@ alt="Aduana Japón">
 
 <div class="subtema-content">
 
-<img src="img/llegada5.webp"
+<Img src="Img/llegada5.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Salida aeropuerto">
 
@@ -199,7 +199,7 @@ alt="Salida aeropuerto">
 
 <div class="subtema-content">
 
-<img src="img/llegada11.webp"
+<Img src="Img/llegada11.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Cambio dinero">
 
@@ -219,7 +219,7 @@ alt="Cambio dinero">
 
 <div class="subtema-content">
 
-<img src="img/llegada8.webp"
+<Img src="Img/llegada8.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="SIM Japón">
 
@@ -239,7 +239,7 @@ alt="SIM Japón">
 
 <div class="subtema-content">
 
-<img src="img/llegada6.webp"
+<Img src="Img/llegada6.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Enviar equipaje">
 
@@ -260,7 +260,7 @@ alt="Enviar equipaje">
 
 <div class="subtema-content">
 
-<img src="img/llegada7.webp"
+<Img src="Img/llegada7.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Taxi Japón">
 
@@ -280,7 +280,7 @@ alt="Taxi Japón">
 
 <div class="subtema-content">
 
-<img src="img/llegada10.webp"
+<Img src="Img/llegada10.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Hotel Japón">
 

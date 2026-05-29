@@ -138,7 +138,7 @@ alt="Carritos equipaje">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada3.webp"
+<Img src="Img/llegada4.webp"
 style="width:100%; border-radius:18px;"
 alt="Equipaje Japón">
 

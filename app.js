@@ -159,7 +159,7 @@ alt="Equipaje Japón">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada4.webp"
+<Img src="Img/llegada5.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Aduana Japón">
 
@@ -168,6 +168,7 @@ alt="Aduana Japón">
 <ol>
 <li>Después de recoger tus maletas dirígete a aduana.</li>
 <li>Sigue la fila que corresponda.</li>
+<Img src="Img/llegada6.webp"
 <li>Entrega o muestra lo que te soliciten con calma.</li>
 </ol>
 
@@ -179,7 +180,7 @@ alt="Aduana Japón">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada5.webp"
+<Img src="Img/llegada7.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Salida aeropuerto">
 
@@ -199,7 +200,7 @@ alt="Salida aeropuerto">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada11.webp"
+<Img src="Img/llegada9.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Cambio dinero">
 
@@ -239,7 +240,7 @@ alt="SIM Japón">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada6.webp"
+<Img src="Img/llegada10.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Enviar equipaje">
 
@@ -260,7 +261,7 @@ alt="Enviar equipaje">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada7.webp"
+<Img src="Img/llegada11.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Taxi Japón">
 

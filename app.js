@@ -118,7 +118,7 @@ alt="Migración Japón">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada9.webp"
+<Img src="Img/llegada3.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Carritos equipaje">
 

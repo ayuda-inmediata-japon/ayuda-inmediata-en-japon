@@ -281,7 +281,7 @@ alt="Taxi Japón">
 
 <div class="subtema-content">
 
-<Img src="Img/llegada10.webp"
+<Img src="Img/llegada13.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Hotel Japón">
 
@@ -289,6 +289,7 @@ alt="Hotel Japón">
 
 <ol>
 <li>Guarda la dirección en japonés.</li>
+<Img src="Img/llegada14.webp"
 <li>Muéstrala si necesitas ayuda.</li>
 <li>Usa Google Maps o pregunta al personal.</li>
 </ol>

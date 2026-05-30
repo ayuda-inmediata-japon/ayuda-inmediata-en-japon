@@ -169,6 +169,8 @@ alt="Aduana Japón">
 <li>Después de recoger tus maletas dirígete a aduana.</li>
 <li>Sigue la fila que corresponda.</li>
 <Img src="Img/llegada6.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Aduana Japón">
 <li>Entrega o muestra lo que te soliciten con calma.</li>
 </ol>
 
@@ -290,6 +292,8 @@ alt="Hotel Japón">
 <ol>
 <li>Guarda la dirección en japonés.</li>
 <Img src="Img/llegada14.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Hotel Japón">
 <li>Muéstrala si necesitas ayuda.</li>
 <li>Usa Google Maps o pregunta al personal.</li>
 </ol>

@@ -55,7 +55,9 @@ llegada: `
 <p>Dirígete directamente a la zona de <strong>migración</strong>, donde realizarás el control de pasaporte y entrada al país.</p>
 
 <p>Si te sientes mareado, débil o tienes algún problema de salud, avisa de inmediato al personal del aeropuerto.</p>
-
+<p style="background:#111;border:1px solid #333;border-radius:16px;padding:14px 16px;color:#dcdcdc;font-weight:bold;line-height:1.6;">
+📌 Recomendación: sigue los temas en orden, de arriba hacia abajo, para completar todo el proceso de llegada a Japón paso a paso.
+</p>
 <div style="display:grid;gap:12px;margin:18px auto;max-width:100%;"></div>
 
 <div class="subtemas-box">

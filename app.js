@@ -3924,3 +3924,34 @@ document.addEventListener("click", function(e) {
     });
   }
 });
+document.addEventListener("click", function(e) {
+  if (e.target.tagName === "IMG" && e.target.closest(".subtema-content")) {
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.background = "rgba(0,0,0,0.95)";
+    overlay.style.zIndex = "99999";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.padding = "10px";
+    overlay.style.boxSizing = "border-box";
+
+    const img = document.createElement("img");
+    img.src = e.target.src;
+    img.style.maxWidth = "100%";
+    img.style.maxHeight = "100%";
+    img.style.objectFit = "contain";
+    img.style.borderRadius = "12px";
+
+    overlay.appendChild(img);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener("click", function() {
+      overlay.remove();
+    });
+  }
+});

@@ -168,9 +168,6 @@ alt="Aduana Japón">
 <ol>
 <li>Después de recoger tus maletas dirígete a aduana.</li>
 <li>Sigue la fila que corresponda.</li>
-<Img src="Img/llegada6.webp"
-style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="Aduana Japón">
 <li>Entrega o muestra lo que te soliciten con calma.</li>
 </ol>
 
@@ -178,6 +175,26 @@ alt="Aduana Japón">
 </details>
 
 <details class="subtema-card">
+<details class="subtema-card">
+<summary>📋 Revisión y documentos de Aduana</summary>
+
+<div class="subtema-content">
+
+<Img src="Img/llegada6.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Documentos Aduana">
+
+<p><strong>Qué hacer:</strong></p>
+
+<ol>
+<li>Ten listo tu pasaporte y declaración de aduanas.</li>
+<li>Mantén la calma si te seleccionan para revisión.</li>
+<li>Sigue las instrucciones del personal.</li>
+<li>Utiliza un traductor si no entiendes japonés.</li>
+</ol>
+
+</div>
+</details>
 <summary>🚪 Salida del aeropuerto</summary>
 
 <div class="subtema-content">

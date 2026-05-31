@@ -194,8 +194,8 @@ alt="Documentos Aduana">
 
 </div>
 </details>
+<details class="subtema-card">
 <summary>🚪 Salida del aeropuerto</summary>
-
 <div class="subtema-content">
 
 <Img src="Img/llegada7.webp"

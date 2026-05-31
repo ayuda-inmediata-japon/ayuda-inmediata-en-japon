@@ -175,7 +175,6 @@ alt="Aduana Japón">
 </details>
 
 <details class="subtema-card">
-<details class="subtema-card">
 <summary>📋 Revisión y documentos de Aduana</summary>
 
 <div class="subtema-content">

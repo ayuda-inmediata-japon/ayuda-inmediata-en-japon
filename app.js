@@ -307,26 +307,6 @@ alt="Hotel Japón">
 
 <ol>
 <li>Guarda la dirección en japonés.</li>
-<details class="subtema-card">
-<summary>🏨 Check-in, Check-out y normas del hotel</summary>
-
-<div class="subtema-content">
-
-<Img src="Img/llegada14.webp"
-style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="Normas Hotel">
-
-<p><strong>Qué hacer:</strong></p>
-
-<ol>
-<li>Presenta pasaporte o tarjeta de residencia.</li>
-<li>Respeta horarios y normas del hotel.</li>
-<li>Separa correctamente la basura.</li>
-<li>Deja la habitación ordenada al salir.</li>
-</ol>
-
-</div>
-</details>
 <li>Muéstrala si necesitas ayuda.</li>
 <li>Usa Google Maps o pregunta al personal.</li>
 </ol>

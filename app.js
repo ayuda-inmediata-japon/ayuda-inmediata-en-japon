@@ -881,9 +881,13 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
 emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>
-<details class="subtema-card">
-<summary>🔥 Incendio o rescate</summary>
+<div class="subtema-content">
 
+<Img src="Img/llegada14.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Normas Hotel">
+
+<p><strong>Qué hacer:</strong></p>
 <div class="subtema-content">
 
 <img src="Img/energencia1.webp"

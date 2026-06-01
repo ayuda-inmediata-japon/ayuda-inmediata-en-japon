@@ -883,19 +883,17 @@ emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>
 <div class="subtema-content">
 
-<Img src="Img/llegada14.webp"
+<Img src="Img/emergrncia1.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Normas Hotel">
 
 <p><strong>Qué hacer:</strong></p>
+<p><strong>En Japón existen servicios especializados para cada tipo de emergencia. Saber a quién llamar puede ayudarte a actuar rápido y correctamente.</strong></p>
 <div class="subtema-content">
 
 <Img src="Img/energencia1.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Emergencia en Japon">
-
-<p><strong>En Japón existen servicios especializados para cada tipo de emergencia. Saber a quién llamar puede ayudarte a actuar rápido y correctamente.</strong></p>
-
 <p><strong>📞 Números importantes:</strong></p>
 <p><strong>🚑 Ambulancia / 🔥 Bomberos: 119</strong></p>
 <p><strong>🚓 Policía: 110</strong></p>

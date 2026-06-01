@@ -881,14 +881,28 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
 emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>
+<details class="subtema-card">
+<summary>🔥 Incendio o rescate</summary>
+
+<div class="subtema-content">
+
+<img src="Img/energencia1.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Emergencia en Japon">
 
 <p><strong>En Japón existen servicios especializados para cada tipo de emergencia. Saber a quién llamar puede ayudarte a actuar rápido y correctamente.</strong></p>
 
 <p><strong>📞 Números importantes:</strong></p>
 <p><strong>🚑 Ambulancia / 🔥 Bomberos: 119</strong></p>
 <p><strong>🚓 Policía: 110</strong></p>
+<details class="subtema-card">
+<summary>🔥 Incendio o rescate</summary>
 
-<img src="Img/emergencia en japon.jpg" class="info-img" alt="emergencia en Japón">
+<div class="subtema-content">
+
+<img src="Img/incendio_rescate_japon.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Incendio o rescate en Japón">
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
@@ -898,7 +912,14 @@ emergencia: `
 <summary>🚑 Necesito una ambulancia</summary>
 <div class="subtema-content">
 
-<img src="Img/ambulancia en japon.jpg" class="info-img" alt="ambulacia en japon">
+<details class="subtema-card">
+<summary>🔥 Incendio o rescate</summary>
+
+<div class="subtema-content">
+
+<img src="Img/incendio_rescate_japon.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Incendio o rescate en Japón">
 
 <p><strong>Qué es:</strong></p>
 <p>La ambulancia en Japón es un servicio de emergencia médica gratuito que llega rápidamente y te traslada al hospital adecuado.</p>

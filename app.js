@@ -886,7 +886,7 @@ emergencia: `
 
 <div class="subtema-content">
 
-<img src="Img/energencia1.webp"
+<Img src="Img/emergencia1.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Emergencia en Japon">
 
@@ -900,7 +900,7 @@ alt="Emergencia en Japon">
 
 <div class="subtema-content">
 
-<img src="Img/incendio_rescate_japon.webp"
+<Img src="Img/emergencia2.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Incendio o rescate en Japón">
 

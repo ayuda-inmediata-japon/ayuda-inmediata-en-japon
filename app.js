@@ -922,7 +922,7 @@ alt="Ambulancia en Japón">
 
 <div class="subtema-content">
 
-<Img src="Img/energencia3.webp"
+<Img src="Img/emergencia3.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Policía en Japón">
 
@@ -946,7 +946,7 @@ alt="Incendio o rescate en Japón">
 
 <div class="subtema-content">
 
-<Img src="Img/energencia5.webp"
+<Img src="Img/emergencia5.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Terremoto y tsunami en Japón">
 

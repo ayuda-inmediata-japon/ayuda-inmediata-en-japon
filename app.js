@@ -885,7 +885,7 @@ emergencia: `
 
 <div class="subtema-content">
 
-<img src="Img/emergencias_japon_premium.webp"
+<Img src="Img/emergencia1.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Emergencias en Japón">
 
@@ -910,7 +910,7 @@ Saber a quién llamar puede ayudarte a actuar rápido y correctamente.
 
 <div class="subtema-content">
 
-<img src="Img/ambulancia_japon.webp"
+<Img src="Img/emergencia2.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Ambulancia en Japón">
 
@@ -922,7 +922,7 @@ alt="Ambulancia en Japón">
 
 <div class="subtema-content">
 
-<img src="Img/policia_general_japon.webp"
+<Img src="Img/energencia3.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Policía en Japón">
 
@@ -934,7 +934,7 @@ alt="Policía en Japón">
 
 <div class="subtema-content">
 
-<img src="Img/incendio_rescate_japon.webp"
+<Img src="Img/emergencia4.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Incendio o rescate en Japón">
 
@@ -946,7 +946,7 @@ alt="Incendio o rescate en Japón">
 
 <div class="subtema-content">
 
-<img src="Img/terremoto_tsunami_japon.webp"
+<Img src="Img/energencia5.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Terremoto y tsunami en Japón">
 

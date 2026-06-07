@@ -3978,3 +3978,14 @@ document.addEventListener("click", function(e) {
     });
   }
 });
+// Scroll automático al abrir cualquier subtema
+document.addEventListener("toggle", function (e) {
+  if (e.target.matches("details.subtema-card") && e.target.open) {
+    setTimeout(() => {
+      e.target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 150);
+  }
+}, true);

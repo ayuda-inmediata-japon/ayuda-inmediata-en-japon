@@ -883,7 +883,7 @@ emergencia: `
 <h2 id="emergencia">🚨 Emergencia en Japón</h2>
 <div class="subtema-content">
 
-<Img src="Img/emergrncia1.webp"
+<Img src="Img/emergencia1.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Normas Hotel">
 
@@ -891,7 +891,7 @@ alt="Normas Hotel">
 <p><strong>En Japón existen servicios especializados para cada tipo de emergencia. Saber a quién llamar puede ayudarte a actuar rápido y correctamente.</strong></p>
 <div class="subtema-content">
 
-<Img src="Img/energencia1.webp"
+<Img src="Img/emergencia2.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Emergencia en Japon">
 <p><strong>📞 Números importantes:</strong></p>
@@ -902,7 +902,7 @@ alt="Emergencia en Japon">
 
 <div class="subtema-content">
 
-<Img src="Img/incendio_rescate_japon.webp"
+<Img src="Img/emergencia3.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Incendio o rescate en Japón">
 
@@ -919,7 +919,7 @@ alt="Incendio o rescate en Japón">
 
 <div class="subtema-content">
 
-<img src="Img/incendio_rescate_japon.webp"
+<Img src="Img/emergencia4.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Incendio o rescate en Japón">
 
@@ -948,7 +948,7 @@ alt="Incendio o rescate en Japón">
 <summary>🚓 Necesito a la policía</summary>
 <div class="subtema-content">
 
-<img src="Img/policia en japon.jpg" class="info-img" alt="Policía en Japón">
+<Img src="Img/emergencia5.webp" class="info-img" alt="Policía en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -970,7 +970,7 @@ alt="Incendio o rescate en Japón">
 <summary>🔥 Incendio o rescate</summary>
 <div class="subtema-content">
 
-<img src= "Img/incendio en japon.jpg" class="info-img" alt="Bomberos en Japón">
+<Img src= "Img/emergencia6.webp" class="info-img" alt="Bomberos en Japón">
 
 <p><strong>Qué hacer:</strong></p>
 <ol>

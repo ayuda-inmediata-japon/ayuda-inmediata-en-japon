@@ -1101,8 +1101,9 @@ policia: `
 <p><strong>Importante:</strong> en Japón la policía no acepta dinero ni favores. Las leyes se respetan y los procedimientos son formales.</p>
 
 <p><strong>Koban (交番)</strong>: pequeñas estaciones de policía que se encuentran en barrios, estaciones de tren y zonas comerciales.</p>
-
-<img src="Img/policia1 en japon.jpg" class="info-img" alt="Koban en Japón">
+<Img src="Img/policia1.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Policia en Japon">
 
 <p><strong>Si necesitas ayuda de la policía, busca un Koban.</strong> Puedes pedir orientación o ayuda.</p>
 

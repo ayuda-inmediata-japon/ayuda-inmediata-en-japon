@@ -1103,7 +1103,8 @@ policia: `
 <p><strong>Koban (交番)</strong>: pequeñas estaciones de policía que se encuentran en barrios, estaciones de tren y zonas comerciales.</p>
 <Img src="Img/policia1.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="Policia en Japon">
+alt="Policia en Japón">
+
 
 <p><strong>Si necesitas ayuda de la policía, busca un Koban.</strong> Puedes pedir orientación o ayuda.</p>
 

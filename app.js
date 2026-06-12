@@ -1115,6 +1115,10 @@ alt="Policia en Japón">
   <details class="subtema-card">
     <summary>🚨 Me robaron algo o fui víctima de estafa</summary>
     <div class="subtema-content">
+    <Img src="Img/policia2.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Policia en Japón">
+
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Mantén la calma.</li>
@@ -1143,6 +1147,10 @@ alt="Policia en Japón">
   <details class="subtema-card">
     <summary>📄 Perdí mi billetera o documentos</summary>
     <div class="subtema-content">
+    <Img src="Img/policia3.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Policia en Japón">
+
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Mantén la calma.</li>

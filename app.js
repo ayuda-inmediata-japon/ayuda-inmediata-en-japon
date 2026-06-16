@@ -1213,6 +1213,10 @@ alt="Policia en Japón">
   <details class="subtema-card">
     <summary>🧭 Estoy perdido</summary>
     <div class="subtema-content">
+    <Img src="Img/policia5.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Policia en Japón">
+
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Busca un Koban o una estación de tren cercana.</li>
@@ -1232,7 +1236,7 @@ alt="Policia en Japón">
   <details class="subtema-card">
     <summary>📍 Cómo encontrar un Koban</summary>
     <div class="subtema-content">
-    <Img src="Img/policia5.webp"
+    <Img src="Img/policia6.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="Policia en Japón">
 

@@ -1191,6 +1191,10 @@ alt="Policia en Japón">
   <details class="subtema-card">
     <summary>🚗 Tuve un accidente</summary>
     <div class="subtema-content">
+    <Img src="Img/policia4.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Policia en Japón">
+
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Si hay heridos, llama al <strong>119</strong>.</li>
@@ -1228,6 +1232,10 @@ alt="Policia en Japón">
   <details class="subtema-card">
     <summary>📍 Cómo encontrar un Koban</summary>
     <div class="subtema-content">
+    <Img src="Img/policia5.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="Policia en Japón">
+
       <p>Los Koban suelen estar cerca de:</p>
       <ul>
         <li>Estaciones de tren</li>

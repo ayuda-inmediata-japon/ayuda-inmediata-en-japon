@@ -1474,7 +1474,10 @@ transporte: `
 
 <p><strong>Importante:</strong> muchas veces la forma más fácil es usar Google Maps y una tarjeta IC como <strong>Suica</strong> o <strong>Pasmo</strong>.</p>
 
-<img src="Img/transporte en japon.jpg" class="info-img" alt="Transporte en Japón">
+  <Img src="Img/transporte.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="transporte en Japón">
+
 
 <p><strong>Si necesitas moverte y no sabes qué hacer, presiona una situación:</strong></p>
 
@@ -1484,7 +1487,10 @@ transporte: `
 <summary>🚖 Necesito tomar un taxi</summary>
 <div class="subtema-content">
 
-<img src="Img/taxi en japon.jpg" class="info-img" alt="Taxi en Japón">
+  <Img src="Img/taxi.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" taxi en Japón">
+
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1521,7 +1527,10 @@ transporte: `
 <summary>🚆 No entiendo el tren o el metro</summary>
 <div class="subtema-content">
 
-<img src="Img/tren en japon.jpg" class="info-img" alt="Tren en Japón">
+  <Img src="Img/tren.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="tren en Japón">
+
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1558,7 +1567,10 @@ transporte: `
 <summary>🎫 Cómo comprar ticket</summary>
 <div class="subtema-content">
 
-<img src="Img/ticket en japon.jpg" class="info-img" alt="Comprar ticket en Japón">
+  <Img src="Img/boleto.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="boleto en Japón">
+
 
 <p><strong>Qué hacer:</strong></p>
 <ol>
@@ -1584,7 +1596,10 @@ transporte: `
 <summary>🚄 Cómo usar Shinkansen</summary>
 <div class="subtema-content">
 
-<img src="Img/shinkansen en japon.jpg" class="info-img" alt="Shinkansen en Japón">
+  <Img src="Img/shinkansen.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="shinkansen en Japón">
+
 
 <p><strong>Qué hacer:</strong></p>
 <ol>

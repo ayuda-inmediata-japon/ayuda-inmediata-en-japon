@@ -1637,7 +1637,10 @@ alt="shinkansen en Japón">
 <summary>🧳 Viajo con equipaje</summary>
 <div class="subtema-content">
 
-<img src="Img/estoy con equipaje.jpg" class="info-img" alt="Equipaje en transporte">
+  <Img src="Img/equipaje.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="equipaje en Japón">
+
 
 <p><strong>Qué hacer:</strong></p>
 <ul>

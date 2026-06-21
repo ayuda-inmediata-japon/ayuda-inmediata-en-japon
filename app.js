@@ -1693,7 +1693,7 @@ alt="bus en Japón">
 <summary>🚲 Alquilar bicicleta</summary>
 <div class="subtema-content">
 
-  <Img src="Img/bicicleta y monopatines.webp"
+  <Img src="Img/bicicletas y monopatines.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="bicicleta y monopatines en Japón">
 

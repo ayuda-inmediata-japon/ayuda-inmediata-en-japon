@@ -1665,7 +1665,7 @@ alt="equipaje en Japón">
 <summary>🚌 Cómo usar el bus</summary>
 <div class="subtema-content">
 
-  <Img src="Img/bus.webp"
+  <Img src="Img/Bus.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="bus en Japón">
 

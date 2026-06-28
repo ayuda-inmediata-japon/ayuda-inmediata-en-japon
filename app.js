@@ -554,7 +554,7 @@ alt="clinica s">
   <details class="subtema-card">
     <summary>🚑 Es una emergencia grave</summary>
     <div class="subtema-content">
-    <Img src="Img/enerencia a grave.webp"
+    <Img src="Img/emergencia a grave.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="emergencia a grave">
       <p><strong>Qué hacer:</strong></p>
@@ -583,7 +583,7 @@ alt="emergencia a grave">
   <details class="subtema-card">
     <summary>💊 Quiero comprar medicina</summary>
     <div class="subtema-content">
-    <Img src="Img/comprar medicina  s.webp"
+    <Img src="Img/comprar medicina s.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="comprsr medicina s">
       <p><strong>Qué hacer:</strong></p>

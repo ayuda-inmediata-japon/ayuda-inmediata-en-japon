@@ -669,7 +669,7 @@ alt="no tengo seguro medico s">
   <details class="subtema-card">
     <summary>🌐 No hablo bien japonés</summary>
     <div class="subtema-content">
-    <Img src="Img/no hablo bien japones s.webp"
+    <Img src="Img/no hablo bien japonés s.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="no hablo bien japones s">
       <p><strong>Qué hacer:</strong></p>

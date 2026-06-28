@@ -613,6 +613,9 @@ alt="comprsr medicina s">
   <details class="subtema-card">
     <summary>🏥 Necesito ir a un hospital grande</summary>
     <div class="subtema-content">
+    <Img src="Img/hospital grande s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="hospital grande s">
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Ve si tu caso necesita hospital y no solo clínica.</li>

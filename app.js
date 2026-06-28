@@ -504,7 +504,9 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
 salud: `
 <h2 id="salud">🏥 Salud en Japón</h2>
-
+<Img src="Img/salud general s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="salud general">
 <p><strong>En Japón puedes ir directamente a una clínica o a un hospital.</strong></p>
 
 <p>Su función es atenderte, orientarte y ayudarte según tus síntomas, aunque no hables bien japonés.</p>

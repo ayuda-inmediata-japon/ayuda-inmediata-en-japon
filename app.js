@@ -515,10 +515,6 @@ alt="salud general">
 
 <p><strong>Clínica (クリニック)</strong>: atiende síntomas comunes, fiebre, dolor, resfrío, malestar general y consultas normales.</p>
 
-<Img src="Img/clinica s.webp"
-style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="clinica s">
-
 <p><strong>Si necesitas ayuda médica urgente:</strong></p>
 
 <p><strong>Ambulancia / Bomberos: 119</strong></p>
@@ -529,6 +525,9 @@ alt="clinica s">
   <details class="subtema-card">
     <summary>🏥 Quiero ir a una clínica</summary>
     <div class="subtema-content">
+    <Img src="Img/clinica s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="clinica s">
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Busca una clínica cercana o pregunta en tu hotel.</li>
@@ -555,6 +554,9 @@ alt="clinica s">
   <details class="subtema-card">
     <summary>🚑 Es una emergencia grave</summary>
     <div class="subtema-content">
+    <Img src="Img/enerencia a grave.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="emergencia a grave">
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Llama al <strong>119</strong>.</li>
@@ -581,6 +583,9 @@ alt="clinica s">
   <details class="subtema-card">
     <summary>💊 Quiero comprar medicina</summary>
     <div class="subtema-content">
+    <Img src="Img/comprar medicina  s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="comprsr medicina s">
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Busca una farmacia o drugstore.</li>

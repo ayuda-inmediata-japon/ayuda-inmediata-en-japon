@@ -515,9 +515,9 @@ alt="salud general">
 
 <p><strong>Clínica (クリニック)</strong>: atiende síntomas comunes, fiebre, dolor, resfrío, malestar general y consultas normales.</p>
 
-<img src="salud1.jpg" class="info-img" alt="Clínica en Japón">
-<img src="salud2.jpg" class="info-img" alt="Hospital en Japón">
-<img src="salud3.jpg" class="info-img" alt="Farmacia en Japón">
+<Img src="Img/clinica s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="clinica s">
 
 <p><strong>Si necesitas ayuda médica urgente:</strong></p>
 

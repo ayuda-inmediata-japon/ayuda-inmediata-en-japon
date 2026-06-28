@@ -585,7 +585,7 @@ alt="emergencia a grave">
     <div class="subtema-content">
     <Img src="Img/comprar medicina s.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="comprsr medicina s">
+alt="comprar medicina s">
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Busca una farmacia o drugstore.</li>
@@ -641,6 +641,9 @@ alt="hospital grande s">
   <details class="subtema-card">
     <summary>💴 No tengo seguro</summary>
     <div class="subtema-content">
+    <Img src="Img/no tengo seguro medico s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="no tengo seguro medico s">
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Igual pueden atenderte.</li>
@@ -666,6 +669,9 @@ alt="hospital grande s">
   <details class="subtema-card">
     <summary>🌐 No hablo bien japonés</summary>
     <div class="subtema-content">
+    <Img src="Img/no hablo bien japones s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="no hablo bien japones s">
       <p><strong>Qué hacer:</strong></p>
       <ol>
         <li>Habla despacio y con calma.</li>

@@ -1998,9 +1998,9 @@ alt="capsula s">
 <details class="subtema-card">
   <summary>🏠 Airbnb / departamentos</summary>
   <div class="subtema-content">
-  <Img src="Img/airbnb s.webp"
+  <Img src="Img/airbnb.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="airbnb s">
+alt="airbnb">
     <p><strong>Qué saber:</strong></p>
     <ol>
       <li>Ofrecen más espacio y más privacidad.</li>
@@ -2017,9 +2017,9 @@ alt="airbnb s">
 <details class="subtema-card">
   <summary>💻 Internet café (para dormir)</summary>
   <div class="subtema-content">.
-  <Img src="Img/internet cafe s s.webp"
+  <Img src="Img/cafe internet s.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="internet cafe s s">
+alt="cafe internet s">
     <p><strong>Qué es:</strong></p>
     <ol>
       <li>Son lugares con cabinas privadas o semi privadas.</li>
@@ -2036,6 +2036,10 @@ alt="internet cafe s s">
 <details class="subtema-card">
   <summary>📍 Cómo llegar a mi hotel</summary>
   <div class="subtema-content">
+    <Img src="Img/como llegar hotel s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="como llegar hotel s">
+  
     <p><strong>Qué hacer:</strong></p>
     <ol>
       <li>Usa Google Maps.</li>

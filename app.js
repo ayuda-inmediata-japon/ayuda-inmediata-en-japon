@@ -2228,14 +2228,14 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
 dinero: `
 <h2 id="dinero">💴 Dinero y pagos en Japón</h2>
-
+<Img src="Img/dinero.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="dinero en japon">
 <p><strong>En Japón el efectivo sigue siendo muy importante.</strong></p>
 
 <p>Muchos lugares aceptan tarjeta, pero todavía hay tiendas, restaurantes, máquinas y servicios donde es más seguro pagar en efectivo.</p>
 
 <p><strong>Importante:</strong> no todos los ATM aceptan tarjetas extranjeras, y muchos pagos QR requieren cuenta japonesa.</p>
-
-<img src="dinero.jpg" class="info-img" alt="Dinero y pagos en Japón">
 
 <p><strong>Si necesitas dinero, cambio o pagos, aquí encontrarás opciones útiles:</strong></p>
 
@@ -2244,7 +2244,9 @@ dinero: `
 <details class="subtema-card">
   <summary>🏧 Necesito sacar dinero en ATM</summary>
   <div class="subtema-content">
-
+<Img src="Img/atm.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="atm en japon">
     <p><strong>Qué hacer:</strong></p>
     <ol>
       <li>Busca ATM en konbini, estaciones o zonas comerciales.</li>
@@ -2268,7 +2270,9 @@ dinero: `
 <details class="subtema-card">
   <summary>🏦 Necesito ir a un banco</summary>
   <div class="subtema-content">
-
+<Img src="Img/banco.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="banco en japon">
     <p><strong>Qué saber:</strong></p>
     <ol>
       <li>Los bancos pueden servir para consultas, transferencias o algunos trámites.</li>
@@ -2288,7 +2292,9 @@ dinero: `
 <details class="subtema-card">
   <summary>💱 Quiero cambiar dinero</summary>
   <div class="subtema-content">
-
+<Img src="Img/csmbio moneda.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="cambio moneda en japon">
     <p><strong>Qué hacer:</strong></p>
     <ol>
       <li>Busca una casa de cambio en aeropuerto o ciudad.</li>
@@ -2312,7 +2318,9 @@ dinero: `
 <details class="subtema-card">
   <summary>💸 Quiero enviar, depositar o transferir dinero</summary>
   <div class="subtema-content">
-
+<Img src="Img/enviar recibir dinero.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="enviar recibir dinero en japon">
     <p><strong>Opciones comunes:</strong></p>
     <ul>
       <li>Transferencia bancaria</li>
@@ -2332,7 +2340,9 @@ dinero: `
 <details class="subtema-card">
   <summary>💵 Quiero recibir o cobrar dinero</summary>
   <div class="subtema-content">
-
+<Img src="Img/quiero recibir dinero.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="quiero recibir dibero en japon">
     <p><strong>Qué revisar:</strong></p>
     <ol>
       <li>Pregunta dónde se cobra o retira exactamente.</li>
@@ -2349,7 +2359,9 @@ dinero: `
 <details class="subtema-card">
   <summary>💳 Mi tarjeta o pago no funciona</summary>
   <div class="subtema-content">
-
+<Img src="Img/tarjeta no funciona.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="tatjeta no funciona en japon">
     <p><strong>Qué hacer:</strong></p>
     <ol>
       <li>Prueba otro ATM o comercio.</li>
@@ -2555,7 +2567,9 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
     vida: `
 <h2 id="vida">🏨 Vida diaria en Japón</h2>
-
+<Img src="Img/vida diaria.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="vida diaria en japon">
 <p>En Japón hay muchas cosas cotidianas que pueden ser diferentes si es tu primera vez. Aquí tienes lo esencial para moverte sin problemas.</p>
 
 <img src="vida.jpg" class="info-img" alt="Vida diaria en Japón">

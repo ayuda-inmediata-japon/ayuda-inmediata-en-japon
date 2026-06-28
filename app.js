@@ -1998,9 +1998,9 @@ alt="capsula s">
 <details class="subtema-card">
   <summary>🏠 Airbnb / departamentos</summary>
   <div class="subtema-content">
-  <Img src="Img/airbnb.webp"
+  <Img src="Img/Airbnb.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="airbnb">
+alt="Airbnb">
     <p><strong>Qué saber:</strong></p>
     <ol>
       <li>Ofrecen más espacio y más privacidad.</li>

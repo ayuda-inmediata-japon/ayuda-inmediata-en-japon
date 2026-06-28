@@ -1889,9 +1889,6 @@ alt="alojamiento s">
 <p>
 ✔ Hoteles: cómodos y limpios (¥6,000 – ¥15,000)<br>
 ✔ Cápsula: económicos y prácticos (¥2,500 – ¥6,000)<br>
-<Img src="Img/capsula s.webp"
-style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="capsula s">
 ✔ Airbnb / departamentos: más espacio<br>
 ✔ Internet café: opción básica para pasar la noche
 </p>
@@ -1982,6 +1979,9 @@ alt="hoteles s">
 <details class="subtema-card">
   <summary>🛏️ Hoteles cápsula</summary>
   <div class="subtema-content">
+  <Img src="Img/capsula s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="capsula s">
     <p><strong>Qué saber:</strong></p>
     <ol>
       <li>Son espacios pequeños e individuales para dormir.</li>
@@ -2016,7 +2016,7 @@ alt="airbnb s">
 
 <details class="subtema-card">
   <summary>💻 Internet café (para dormir)</summary>
-  <div class="subtema-content">
+  <div class="subtema-content">.
   <Img src="Img/internet cafe s s.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="internet cafe s s">

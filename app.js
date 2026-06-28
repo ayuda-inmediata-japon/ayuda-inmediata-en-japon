@@ -1879,7 +1879,9 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
 alojamiento: `
 <h2 id="alojamiento">🏨 Alojamiento en Japón</h2>
-
+<Img src="Img/alojamiento s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="alojamiento s">
 <p><strong>En Japón hay muchas opciones para dormir según tu presupuesto.</strong></p>
 
 <p>Desde hoteles normales hasta cápsula, cafés internet o alquileres por días.</p>
@@ -1887,6 +1889,9 @@ alojamiento: `
 <p>
 ✔ Hoteles: cómodos y limpios (¥6,000 – ¥15,000)<br>
 ✔ Cápsula: económicos y prácticos (¥2,500 – ¥6,000)<br>
+<Img src="Img/capsula s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="capsula s">
 ✔ Airbnb / departamentos: más espacio<br>
 ✔ Internet café: opción básica para pasar la noche
 </p>
@@ -1894,9 +1899,6 @@ alojamiento: `
 <p>👉 El servicio en Japón suele ser muy limpio, puntual y respetuoso.</p>
 
 <div style="display:flex; gap:10px; overflow-x:auto; margin:10px 0;">
-  <img src="IMAGEN_1" style="width:85%; border-radius:10px;">
-  <img src="IMAGEN_2" style="width:85%; border-radius:10px;">
-  <img src="IMAGEN_3" style="width:85%; border-radius:10px;">
 </div>
 <div style="
 margin:20px 0;
@@ -1961,6 +1963,9 @@ font-weight:bold;
 <details class="subtema-card">
   <summary>🏨 Cómo funcionan los hoteles</summary>
   <div class="subtema-content">
+  <Img src="Img/hoteles s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="hoteles s">
     <p><strong>Qué esperar:</strong></p>
     <ol>
       <li>Check-in normalmente desde la tarde.</li>
@@ -1993,6 +1998,9 @@ font-weight:bold;
 <details class="subtema-card">
   <summary>🏠 Airbnb / departamentos</summary>
   <div class="subtema-content">
+  <Img src="Img/airbnb s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="airbnb s">
     <p><strong>Qué saber:</strong></p>
     <ol>
       <li>Ofrecen más espacio y más privacidad.</li>
@@ -2009,6 +2017,9 @@ font-weight:bold;
 <details class="subtema-card">
   <summary>💻 Internet café (para dormir)</summary>
   <div class="subtema-content">
+  <Img src="Img/internet cafe s s.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="internet cafe s s">
     <p><strong>Qué es:</strong></p>
     <ol>
       <li>Son lugares con cabinas privadas o semi privadas.</li>

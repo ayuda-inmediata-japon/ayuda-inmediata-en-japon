@@ -2244,7 +2244,7 @@ alt="dinero en japon">
 <details class="subtema-card">
   <summary>🏧 Necesito sacar dinero en ATM</summary>
   <div class="subtema-content">
-<Img src="Img/atm.webp"
+<Img src="Img/atm .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="atm en japon">
     <p><strong>Qué hacer:</strong></p>

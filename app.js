@@ -2292,7 +2292,7 @@ alt="banco en japon">
 <details class="subtema-card">
   <summary>💱 Quiero cambiar dinero</summary>
   <div class="subtema-content">
-<Img src="Img/csmbio moneda.webp"
+<Img src="Img/cambio moneda.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="cambio moneda en japon">
     <p><strong>Qué hacer:</strong></p>

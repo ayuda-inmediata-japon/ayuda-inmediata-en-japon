@@ -2567,12 +2567,11 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
     vida: `
 <h2 id="vida">🏨 Vida diaria en Japón</h2>
+
+<p>En Japón hay muchas cosas cotidianas que pueden ser diferentes si es tu primera vez. Aquí tienes lo esencial para moverte sin problemas.</p>
 <Img src="Img/vida diaria.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="vida diaria en japon">
-<p>En Japón hay muchas cosas cotidianas que pueden ser diferentes si es tu primera vez. Aquí tienes lo esencial para moverte sin problemas.</p>
-
-<img src="vida.jpg" class="info-img" alt="Vida diaria en Japón">
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 

@@ -2869,11 +2869,13 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 </div>
 `,
 tramites: `
-<h2 id="tramites">📄 Trámites y documentos en Japón</h2>
-
+<h2 id="tr">📄 Trámites y documentos en Japón</h2>
+<Img src="Img/trámites.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" trámites en japon">
 <p>Si vives o permaneces en Japón, hay algunos trámites básicos que debes conocer para evitar problemas y poder realizar gestiones importantes.</p>
 
-<img src="tramites.jpg" class="info-img" alt="Trámites en Japón">
+
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
@@ -2882,7 +2884,9 @@ tramites: `
 <details class="subtema-card">
   <summary>🪪 Tarjeta de residencia (Zairyu Card)</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Es obligatoria para residentes extranjeros</li>
@@ -2899,7 +2903,9 @@ tramites: `
 <details class="subtema-card">
   <summary>🏠 Registrar dirección (Juminhyo)</summary>
   <div class="subtema-content">
-
+<Img src="Img/direccion.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" direccion en japon">
     <p><strong>Qué hacer:</strong></p>
     <ol>
       <li>Ir al ayuntamiento (city hall)</li>

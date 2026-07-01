@@ -2600,9 +2600,9 @@ alt="konnini en japon">
 <details class="subtema-card">
   <summary>🛒 Supermercados y descuentos</summary>
   <div class="subtema-content">
-<Img src="Img/supermercado.webp"
+<Img src="Img/supermercados.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="supermercado en japon">
+alt="supermercados en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Los precios suelen ser más bajos que en konbini</li>

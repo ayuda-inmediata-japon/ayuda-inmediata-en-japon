@@ -2657,9 +2657,9 @@ alt="basura en japon">
 <details class="subtema-card">
   <summary>🚻 Baños públicos</summary>
   <div class="subtema-content">
-<Img src="Img/baños publicos.webp"
+<Img src="Img/banos publicos.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="baños publicosen japon">
+alt="banos publicos en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Son gratuitos y muy limpios</li>

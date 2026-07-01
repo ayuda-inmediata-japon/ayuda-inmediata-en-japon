@@ -2870,9 +2870,9 @@ style="flex:1;background:#25D366;color:white;padding:10px;border:none;border-rad
 `,
 tramites: `
 <h2 id="tr">📄 Trámites y documentos en Japón</h2>
-<Img src="Img/trámites.webp"
+<Img src="Img/salud general s.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" trámites en japon">
+alt="salud general">
 <p>Si vives o permaneces en Japón, hay algunos trámites básicos que debes conocer para evitar problemas y poder realizar gestiones importantes.</p>
 
 

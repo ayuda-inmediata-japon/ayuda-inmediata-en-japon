@@ -2580,7 +2580,9 @@ alt="vida diaria en japon">
 <details class="subtema-card">
   <summary>🏪 Konbini (tiendas 24h)</summary>
   <div class="subtema-content">
-
+<Img src="Img/konbini.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="konnini en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Comprar comida, bebidas y productos básicos</li>
@@ -2598,7 +2600,9 @@ alt="vida diaria en japon">
 <details class="subtema-card">
   <summary>🛒 Supermercados y descuentos</summary>
   <div class="subtema-content">
-
+<Img src="Img/supermercado.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="supermercado en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Los precios suelen ser más bajos que en konbini</li>
@@ -2615,7 +2619,9 @@ alt="vida diaria en japon">
 <details class="subtema-card">
   <summary>🍱 Dónde comer barato</summary>
   <div class="subtema-content">
-
+<Img src="Img/comer barato.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="comer barato en japon">
     <p><strong>Opciones:</strong></p>
     <ul>
       <li>Konbini</li>
@@ -2632,7 +2638,9 @@ alt="vida diaria en japon">
 <details class="subtema-card">
   <summary>🗑️ Basura y reciclaje</summary>
   <div class="subtema-content">
-
+<Img src="Img/basura.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="basura en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>La basura se separa por tipo</li>
@@ -2649,7 +2657,9 @@ alt="vida diaria en japon">
 <details class="subtema-card">
   <summary>🚻 Baños públicos</summary>
   <div class="subtema-content">
-
+<Img src="Img/baños publicos.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="baños publicosen japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Son gratuitos y muy limpios</li>
@@ -2663,7 +2673,9 @@ alt="vida diaria en japon">
 <details class="subtema-card">
   <summary>🧺 Lavandería</summary>
   <div class="subtema-content">
-
+<Img src="Img/lavanderia.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt="lavanderia en japon">
     <p><strong>Qué hacer:</strong></p>
     <ol>
       <li>Busca coin laundry</li>

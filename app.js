@@ -2924,7 +2924,7 @@ alt=" direccion en japon">
   <div class="subtema-content">
 <Img src="Img/segurosalud.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt="seguro salud en japon">
+alt="segurosalud en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Es obligatorio para residentes</li>

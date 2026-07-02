@@ -2941,7 +2941,7 @@ alt="seguro salud en japon">
 <details class="subtema-card">
   <summary>💴 Impuestos básicos</summary>
   <div class="subtema-content">
-<Img src="Img/impuestos.webp"
+<Img src="Img/impuestos .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" impuestos en japon">
     <p><strong>Qué saber:</strong></p>
@@ -2979,7 +2979,7 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>🚗 Licencia de conducir (Menkyo)</summary>
   <div class="subtema-content">
-<Img src="Img/licencia.webp"
+<Img src="Img/licencia .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" licencia en japon">
     <p><strong>Opciones:</strong></p>

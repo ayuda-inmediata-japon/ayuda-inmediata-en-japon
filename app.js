@@ -2922,7 +2922,9 @@ alt=" direccion en japon">
 <details class="subtema-card">
   <summary>🏥 Seguro de salud</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Es obligatorio para residentes</li>
@@ -2939,7 +2941,9 @@ alt=" direccion en japon">
 <details class="subtema-card">
   <summary>💴 Impuestos básicos</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Debes pagar impuestos si resides en Japón</li>
@@ -2956,7 +2960,9 @@ alt=" direccion en japon">
 <details class="subtema-card">
   <summary>📑 Certificados (Juminhyo, ingresos, etc.)</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué puedes obtener:</strong></p>
     <ul>
       <li>Certificado de residencia</li>
@@ -2973,7 +2979,9 @@ alt=" direccion en japon">
 <details class="subtema-card">
   <summary>🚗 Licencia de conducir (Menkyo)</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Opciones:</strong></p>
     <ul>
       <li>Convertir licencia extranjera</li>
@@ -3167,7 +3175,9 @@ font-weight:bold;
 `,
 servicios: `
 <h2 id="servicios">💼 Servicios y ayuda personalizada</h2>
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
 <p>Si necesitas ayuda más específica en Japón, aquí puedes orientarte según tu situación y ver qué tipo de apoyo puede servirte.</p>
 
 <img src="servicios.jpg" class="info-img" alt="Servicios y ayuda en Japón">
@@ -3179,7 +3189,9 @@ servicios: `
 <details class="subtema-card">
   <summary>🗣️ Necesito traducción o interpretación</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Usar traductor en el teléfono</li>
@@ -3196,7 +3208,9 @@ servicios: `
 <details class="subtema-card">
   <summary>🏥 Necesito ayuda en hospital o clínica</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Recibir apoyo para explicar síntomas</li>
@@ -3213,7 +3227,9 @@ servicios: `
 <details class="subtema-card">
   <summary>🏫 Necesito ayuda en colegio o escuela</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Entender avisos, cartas o documentos escolares</li>
@@ -3230,7 +3246,9 @@ servicios: `
 <details class="subtema-card">
   <summary>🏛️ Necesito ayuda en instituciones o trámites</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Recibir ayuda antes de ir a una oficina</li>
@@ -3247,7 +3265,9 @@ servicios: `
 <details class="subtema-card">
   <summary>🚓 Necesito ayuda en policía</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Explicar mejor lo ocurrido con ayuda de traducción</li>
@@ -3264,7 +3284,9 @@ servicios: `
 <details class="subtema-card">
   <summary>📄 Necesito ayuda con documentos</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Opciones:</strong></p>
     <ul>
       <li>Traducción de documentos</li>
@@ -3281,7 +3303,9 @@ servicios: `
 <details class="subtema-card">
   <summary>💼 Necesito ayuda laboral o empleo</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Buscar orientación para empleo</li>
@@ -3298,7 +3322,9 @@ servicios: `
 <details class="subtema-card">
   <summary>📲 Quiero orientación personalizada</summary>
   <div class="subtema-content">
-
+<Img src="Img/zairyu.webp"
+style="width:100%;display:block;margin:0 auto;border-radius:18px;"
+alt=" zairyu en japon">
     <p><strong>Qué incluye:</strong></p>
     <ul>
       <li>Apoyo según tu caso específico</li>

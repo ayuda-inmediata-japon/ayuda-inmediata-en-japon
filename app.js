@@ -2922,9 +2922,9 @@ alt=" direccion en japon">
 <details class="subtema-card">
   <summary>🏥 Seguro de salud</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/seguro salud.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt="seguro salud en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Es obligatorio para residentes</li>
@@ -2941,9 +2941,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>💴 Impuestos básicos</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/impuestos.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" impuestos en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
       <li>Debes pagar impuestos si resides en Japón</li>
@@ -2960,7 +2960,7 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>📑 Certificados (Juminhyo, ingresos, etc.)</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/certificados.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" zairyu en japon">
     <p><strong>Qué puedes obtener:</strong></p>
@@ -2979,9 +2979,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>🚗 Licencia de conducir (Menkyo)</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/licencia.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" licencia en japon">
     <p><strong>Opciones:</strong></p>
     <ul>
       <li>Convertir licencia extranjera</li>

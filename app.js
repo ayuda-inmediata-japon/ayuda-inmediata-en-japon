@@ -2922,7 +2922,7 @@ alt=" direccion en japon">
 <details class="subtema-card">
   <summary>🏥 Seguro de salud</summary>
   <div class="subtema-content">
-<Img src="Img/seguro salud .webp"
+<Img src="Img/segurosalud.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt="seguro salud en japon">
     <p><strong>Qué saber:</strong></p>

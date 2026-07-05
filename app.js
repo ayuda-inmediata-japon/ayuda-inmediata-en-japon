@@ -3175,12 +3175,11 @@ font-weight:bold;
 `,
 servicios: `
 <h2 id="servicios">💼 Servicios y ayuda personalizada</h2>
-<Img src="Img/zairyu.webp"
+<Img src="Img/servicios.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" servicios en japon">
 <p>Si necesitas ayuda más específica en Japón, aquí puedes orientarte según tu situación y ver qué tipo de apoyo puede servirte.</p>
 
-<img src="servicios.jpg" class="info-img" alt="Servicios y ayuda en Japón">
 
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
@@ -3189,9 +3188,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>🗣️ Necesito traducción o interpretación</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/traduccion.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" traduccion en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Usar traductor en el teléfono</li>
@@ -3208,9 +3207,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>🏥 Necesito ayuda en hospital o clínica</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/ayuda hospital.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" ayuda hospital en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Recibir apoyo para explicar síntomas</li>
@@ -3227,9 +3226,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>🏫 Necesito ayuda en colegio o escuela</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/escuela guarderia.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" escuela guarderia en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Entender avisos, cartas o documentos escolares</li>
@@ -3246,9 +3245,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>🏛️ Necesito ayuda en instituciones o trámites</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/ayuda instituciones.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" ayuda instituciones en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Recibir ayuda antes de ir a una oficina</li>
@@ -3265,9 +3264,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>🚓 Necesito ayuda en policía</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/ayuda policia.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" ayuda policia en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Explicar mejor lo ocurrido con ayuda de traducción</li>
@@ -3284,9 +3283,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>📄 Necesito ayuda con documentos</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/ayuda documentos.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" ayuda documentos en japon">
     <p><strong>Opciones:</strong></p>
     <ul>
       <li>Traducción de documentos</li>
@@ -3303,9 +3302,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>💼 Necesito ayuda laboral o empleo</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/ayuda laboral.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" ayuda laboral en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Buscar orientación para empleo</li>
@@ -3322,9 +3321,9 @@ alt=" zairyu en japon">
 <details class="subtema-card">
   <summary>📲 Quiero orientación personalizada</summary>
   <div class="subtema-content">
-<Img src="Img/zairyu.webp"
+<Img src="Img/ayuda personalizada.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" zairyu en japon">
+alt=" auuda personalizada en japon">
     <p><strong>Qué incluye:</strong></p>
     <ul>
       <li>Apoyo según tu caso específico</li>

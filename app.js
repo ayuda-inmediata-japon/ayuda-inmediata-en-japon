@@ -3245,7 +3245,7 @@ alt=" escuela guarderia en japon">
 <details class="subtema-card">
   <summary>🏛️ Necesito ayuda en instituciones o trámites</summary>
   <div class="subtema-content">
-<Img src="Img/ayuda instituciones.webp"
+<Img src="Img/ayuda instituciones .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" ayuda instituciones en japon">
     <p><strong>Qué puedes hacer:</strong></p>
@@ -3264,7 +3264,7 @@ alt=" ayuda instituciones en japon">
 <details class="subtema-card">
   <summary>🚓 Necesito ayuda en policía</summary>
   <div class="subtema-content">
-<Img src="Img/ayuda policia.webp"
+<Img src="Img/ayuda policia .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" ayuda policia en japon">
     <p><strong>Qué puedes hacer:</strong></p>
@@ -3283,7 +3283,7 @@ alt=" ayuda policia en japon">
 <details class="subtema-card">
   <summary>📄 Necesito ayuda con documentos</summary>
   <div class="subtema-content">
-<Img src="Img/ayuda documentos.webp"
+<Img src="Img/ayuda documentos .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" ayuda documentos en japon">
     <p><strong>Opciones:</strong></p>
@@ -3302,7 +3302,7 @@ alt=" ayuda documentos en japon">
 <details class="subtema-card">
   <summary>💼 Necesito ayuda laboral o empleo</summary>
   <div class="subtema-content">
-<Img src="Img/ayuda laboral.webp"
+<Img src="Img/ayuda laboral .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" ayuda laboral en japon">
     <p><strong>Qué puedes hacer:</strong></p>
@@ -3321,7 +3321,7 @@ alt=" ayuda laboral en japon">
 <details class="subtema-card">
   <summary>📲 Quiero orientación personalizada</summary>
   <div class="subtema-content">
-<Img src="Img/ayuda personalizada.webp"
+<Img src="Img/ayuda personalizada .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" auuda personalizada en japon">
     <p><strong>Qué incluye:</strong></p>

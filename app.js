@@ -3174,7 +3174,7 @@ font-weight:bold;
 </div>
 `,
 servicios: `
-<h2 id="servicios">💼 Servicios y ayuda personalizada</h2>
+<h2 id="servicios">💼 Prueba y ayuda personalizada</h2>
 <Img src="Img/servicios.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" servicios en japon">

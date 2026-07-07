@@ -3264,7 +3264,7 @@ alt=" ayuda instituciones en japon">
 <details class="subtema-card">
   <summary>🚓 Necesito ayuda en policía</summary>
   <div class="subtema-content">
-<Img src="Img/ayuda policia .webp"
+<Img src="Img/ayuda policia.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" ayuda policia en japon">
     <p><strong>Qué puedes hacer:</strong></p>
@@ -3283,7 +3283,7 @@ alt=" ayuda policia en japon">
 <details class="subtema-card">
   <summary>📄 Necesito ayuda con documentos</summary>
   <div class="subtema-content">
-<Img src="Img/ayuda documentos .webp"
+<Img src="Img/ayuda documentos.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" ayuda documentos en japon">
     <p><strong>Opciones:</strong></p>

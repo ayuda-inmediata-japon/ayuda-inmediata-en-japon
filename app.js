@@ -3226,9 +3226,9 @@ alt=" ayuda hospital en japon">
 <details class="subtema-card">
   <summary>🏫 Necesito ayuda en colegio o escuela</summary>
   <div class="subtema-content">
-<Img src="Img/escuela guarderia.webp"
+<Img src="Img/colegio.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
-alt=" escuela guarderia en japon">
+alt="colegio en japon">
     <p><strong>Qué puedes hacer:</strong></p>
     <ul>
       <li>Entender avisos, cartas o documentos escolares</li>

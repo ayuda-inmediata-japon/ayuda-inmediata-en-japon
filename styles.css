@@ -1578,3 +1578,40 @@ font-size:13px;
   margin: 14px auto;
   border-radius: 18px;
 }
+.info-card {
+  background: #161616;
+  border: 1px solid #333;
+  border-radius: 22px;
+  padding: 24px;
+  margin: 28px 0;
+  color: #f5f5f5;
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.15);
+}
+
+.info-card h2 {
+  color: #9cff8f;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.info-card p,
+.info-card li {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.info-card ul {
+  padding-left: 24px;
+}
+
+.phrase-box {
+  display: grid;
+  gap: 14px;
+}
+
+.phrase-box p {
+  background: #0d0d0d;
+  border-left: 5px solid #ffb300;
+  border-radius: 14px;
+  padding: 16px;
+}

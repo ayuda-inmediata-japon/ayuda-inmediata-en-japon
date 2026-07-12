@@ -1,4 +1,4 @@
-
+:root {
   --bg: #0b0b0f;
   --panel: rgba(0,0,0,.55);
   --panel2: rgba(0,0,0,.65);
@@ -8,7 +8,7 @@
   --chip: rgba(255,255,255,.10);
   --chipBorder: rgba(255,255,255,.16);
   --btn: rgba(255,255,255,.85);
-  --btnText:#111;
+  --btnText: #111;
   --shadow: 0 14px 40px rgba(0,0,0,.35);
 }
 

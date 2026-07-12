@@ -1617,10 +1617,10 @@ font-size:13px;
 }
 .btn-inicio{
     display:block;
-    width:70%;
-    max-width:360px;
-    margin:10px auto 0;
-    padding:11px 16px;
+    width:140px;
+padding:12px;
+border-radius:20px;
+  
     background:#73d66d;
     color:#000;
     text-align:center;

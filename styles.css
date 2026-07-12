@@ -1617,15 +1617,15 @@ font-size:13px;
 }
 .btn-inicio{
     display:block;
-    width:140px;
-    height:95px;
+    width:100px;
+    height:75px;
     margin:10px auto 0;
     padding:0;
     background:#73d66d;
     color:#000;
     text-align:center;
     text-decoration:none;
-    font-size:16px;
+    font-size:10px;
     font-weight:700;
     border-radius:20px;
 

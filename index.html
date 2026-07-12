@@ -254,5 +254,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
+<div id="music-player">
+    <button id="music-btn">🎵 Música</button>
+
+    <select id="music-select">
+        <option value="audio/lluvia.mp3">🌧️ Lluvia</option>
+        <option value="audio/bosque.mp3">🌳 Bosque</option>
+        <option value="audio/taiko.mp3">🥁 Taiko</option>
+        <option value="audio/tokyo.mp3">🌃 Tokio</option>
+    </select>
+
+    <audio id="bgMusic" loop>
+        <source src="audio/lluvia.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script>
+const music=document.getElementById("bgMusic");
+const button=document.getElementById("music-btn");
+const selector=document.getElementById("music-select");
+
+button.addEventListener("click",()=>{
+    if(music.paused){
+        music.play();
+        button.innerHTML="⏸️ Pausar";
+    }else{
+        music.pause();
+        button.innerHTML="🎵 Música";
+    }
+});
+
+selector.addEventListener("change",()=>{
+    music.src=selector.value;
+    music.play();
+    button.innerHTML="⏸️ Pausar";
+});
+</script>
 </body>
 </html>

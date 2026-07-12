@@ -1636,3 +1636,20 @@ font-size:13px;
 
     overflow:hidden;
 }
+/* ===== CONTROL DE MÚSICA ===== */
+
+#music-player{
+  position:fixed;
+  left:16px;
+  bottom:90px;
+  z-index:9999;
+
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  padding:9px;
+  background:rgba(0,0,0,.82);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:16px;
+  box-shadow:0 8px 24px rgba

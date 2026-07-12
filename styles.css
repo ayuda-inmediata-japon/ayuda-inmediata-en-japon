@@ -1616,23 +1616,18 @@ font-size:13px;
   padding: 16px;
 }
 .btn-inicio{
-    width: 95px;
-    height: 75px;
-
+    width:95px;
+    height:75px;
     background:#8fd27b;
     border-radius:18px;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     font-size:12px;
     font-weight:700;
     text-align:center;
     line-height:1.1;
-
     text-decoration:none;
     color:#000;
-
     overflow:hidden;
 }

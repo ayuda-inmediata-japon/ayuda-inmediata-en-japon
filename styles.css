@@ -1617,8 +1617,10 @@ font-size:13px;
 }
 .btn-inicio{
     display:block;
-    width:100px;
-    height:75px;
+    .btn-inicio{
+    width: 150px;
+    height: 90px;
+}
     margin:10px auto 0;
     padding:0;
     background:#73d66d;

@@ -93,7 +93,7 @@ h1{
 .arrow {
   position: absolute;
   left: 50%;
-  bottom: 10vh; /* 👈 CAMBIO CLAVE */
+  bottom: 15vh; /* 👈 CAMBIO CLAVE */
   transform: translateX(-50%);
   z-index: 3;
 

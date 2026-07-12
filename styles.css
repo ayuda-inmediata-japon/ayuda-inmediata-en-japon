@@ -1618,15 +1618,20 @@ font-size:13px;
 .btn-inicio{
     display:block;
     width:140px;
-padding:12px;
-border-radius:20px;
-  
+    height:95px;
+    margin:10px auto 0;
+    padding:0;
     background:#73d66d;
     color:#000;
     text-align:center;
     text-decoration:none;
-    font-size:18px;
+    font-size:16px;
     font-weight:700;
-    border-radius:16px;
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     box-shadow:0 4px 12px rgba(0,0,0,.35);
 }

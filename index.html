@@ -28,9 +28,26 @@
       <p class="hero-highlight">
         🟢También para organizar mejor tu experiencia en Japón 🇯🇵
       </p>
-      <p style="font-size:14px;color:#d9d9d9;line-height:1.5;text-align:center;max-width:320px;margin:14px auto 0 auto;">
-🔄 Guía en mejora constante con nuevas imágenes, información útil y soluciones prácticas.
+🔄 Guía en mejora constante con nuevas imágenes,
+información útil y soluciones prácticas.
 </p>
+
+<div id="music-player">
+  <button id="music-btn">🎵 Música</button>
+
+  <select id="music-select">
+    <option value="audio/lluvia.mp3">🌧️ Lluvia</option>
+    <option value="audio/bosque.mp3">🌲 Bosque</option>
+    <option value="audio/taiko.mp3">🥁 Taiko</option>
+    <option value="audio/tokyo.mp3">🏙️ Tokio</option>
+  </select>
+
+  <audio id="bgMusic" loop>
+    <source src="audio/lluvia.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+</div>
     </div>
     <!-- Flecha -->
     <button id="arrowDown" class="arrow" type="button" aria-label="Bajar al buscador">⬇️</button>

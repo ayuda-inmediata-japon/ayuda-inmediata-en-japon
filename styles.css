@@ -1650,12 +1650,12 @@ font-size:13px;
     align-items: center;
     gap: 6px;
 
-    padding: 6px 8px;
+    padding: 4px 6px;
     background: rgba(5,10,20,.55);
     backdrop-filter: blur(10px);
 
     border: 1px solid rgba(255,255,255,.10);
-    border-radius: 18px;
+    border-radius: 14px;
 
     box-shadow: 0 6px 20px rgba(0,0,0,.35);
 }

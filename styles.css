@@ -1661,8 +1661,8 @@ font-size:13px;
 }
 
 #music-btn{
-    width: 58px;
-    height: 58px;
+    width: 42px;
+    height: 42px;
 
     border: none;
     border-radius: 14px;
@@ -1670,7 +1670,7 @@ font-size:13px;
     background: rgba(20,35,65,.85);
     color: #9fc5ff;
 
-    font-size: 12px;
+    font-size: 10;
     font-weight: 700;
 
     cursor: pointer;

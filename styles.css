@@ -1695,3 +1695,68 @@ font-size:13px;
 #music-btn:focus{
     outline: none;
 }
+/* ===== ACCIONES FINALES ===== */
+
+.acciones-finales{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 86px 1fr;
+  align-items:center;
+  gap:10px;
+  margin:18px auto 24px;
+}
+
+.acciones-finales .btn-comentarios,
+.acciones-finales .btn-inicio{
+  width:100%;
+  min-height:72px;
+  padding:10px 8px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#66cc66;
+  color:#000;
+  text-decoration:none;
+  text-align:center;
+
+  border-radius:18px;
+  font-size:14px;
+  font-weight:800;
+  line-height:1.15;
+}
+
+.acciones-finales .flecha-apoyo{
+  width:86px;
+  height:86px;
+  margin:0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#808080;
+  border-radius:18px;
+  text-decoration:none;
+  font-size:38px;
+}
+
+@media (max-width:420px){
+  .acciones-finales{
+    grid-template-columns:1fr 76px 1fr;
+    gap:8px;
+  }
+
+  .acciones-finales .flecha-apoyo{
+    width:76px;
+    height:76px;
+    font-size:32px;
+  }
+
+  .acciones-finales .btn-comentarios,
+  .acciones-finales .btn-inicio{
+    min-height:68px;
+    font-size:13px;
+  }
+}

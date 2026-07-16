@@ -1825,12 +1825,13 @@ font-size:13px;
 .titulo-apoyo{
   margin-bottom:10px !important;
 }
-/* AJUSTE FINAL CUADRO DE APOYO */
+/* AJUSTE DEFINITIVO DE LA SECCIÓN DE APOYO */
 .support-section{
   padding:22px 20px !important;
-  margin-top:20px !important;
+  margin-top:320px !important;
   min-height:auto !important;
   height:auto !important;
+  border-radius:28px !important;
 }
 
 .support-card{
@@ -1855,4 +1856,5 @@ font-size:13px;
 
 .titulo-apoyo{
   margin-bottom:10px !important;
+  color:#111 !important;
 }

@@ -1859,3 +1859,12 @@ font-size:13px;
   margin-bottom:10px !important;
   color:#111 !important;
 }
+/* APOYO OCULTO AL COMENZAR */
+.support-section{
+  display:none !important;
+  margin-top:30px !important;
+}
+
+.support-section.apoyo-visible{
+  display:block !important;
+}

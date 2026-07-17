@@ -383,5 +383,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const botonApoyo = document.getElementById("mostrarApoyo");
+  const seccionApoyo = document.getElementById("apoyo");
+
+  if (!botonApoyo || !seccionApoyo) return;
+
+  botonApoyo.addEventListener("click", function () {
+    seccionApoyo.classList.toggle("apoyo-visible");
+
+    if (seccionApoyo.classList.contains("apoyo-visible")) {
+      botonApoyo.innerHTML = "⬆️ Ocultar opciones de apoyo";
+
+      setTimeout(function () {
+        seccionApoyo.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 100);
+    } else {
+      botonApoyo.innerHTML = "⬇️ Ver opciones para apoyar este proyecto";
+    }
+  });
+});
+</script>
 </body>
 </html>

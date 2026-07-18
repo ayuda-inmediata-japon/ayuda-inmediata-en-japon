@@ -288,52 +288,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const music = document.getElementById("bgMusic");
-  const button = document.getElementById("music-btn");
-  const selector = document.getElementById("music-select");
-
-  if (!music || !button || !selector) {
-    console.log("No se encontraron los controles de música");
-    return;
-  }
-
-  button.addEventListener("click", async function () {
-    if (music.paused) {
-      music.src = selector.value;
-      music.load();
-
-      try {
-        await music.play();
-        button.innerHTML = "🔊<br>ON";
-      } catch (error) {
-        console.log("No se pudo reproducir:", error);
-        button.innerHTML = "🎵<br>OFF";
-      }
-    } else {
-      music.pause();
-      button.innerHTML = "🎵<br>OFF";
-    }
-  });
-
-  selector.addEventListener("change", async function () {
-    const estabaSonando = !music.paused;
-
-    music.pause();
-    music.src = selector.value;
-    music.load();
-
-    if (estabaSonando) {
-      try {
-        await music.play();
-        button.innerHTML = "🔊<br>ON";
-      } catch (error) {
-        button.innerHTML = "🎵<br>OFF";
-      }
-    }
-  });
-});
-</script> n
 </body>
 </html>

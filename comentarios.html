@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Sugerencias · Ayuda Inmediata en Japón</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#000000">
+
+  <style>
+    .sugerencias-page{
+      min-height:100svh;
+      padding:24px 14px 50px;
+      background:#0b0b0f;
+      color:#fff;
+    }
+
+    .sugerencias-panel{
+      width:min(720px,96vw);
+      margin:0 auto;
+      background:rgba(0,0,0,.68);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:22px;
+      padding:22px 18px;
+      box-shadow:0 14px 40px rgba(0,0,0,.35);
+    }
+
+    .sugerencias-panel h1{
+      margin:0 0 10px;
+      font-size:clamp(28px,7vw,42px);
+      text-align:center;
+    }
+
+    .sugerencias-intro{
+      color:rgba(255,255,255,.82);
+      line-height:1.6;
+      text-align:center;
+      margin:0 auto 20px;
+      max-width:620px;
+    }
+
+    .aviso-privacidad{
+      background:#171717;
+      border-left:5px solid #f5c542;
+      border-radius:14px;
+      padding:14px 16px;
+      margin:18px 0 22px;
+      color:#ededed;
+      line-height:1.55;
+    }
+
+    .campo{
+      margin-bottom:16px;
+    }
+
+    .campo label{
+      display:block;
+      margin-bottom:7px;
+      font-weight:800;
+      color:#fff;
+    }
+
+    .campo small{
+      display:block;
+      margin-top:6px;
+      color:rgba(255,255,255,.62);
+      line-height:1.4;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea{
+      width:100%;
+      border:1px solid rgba(255,255,255,.20);
+      border-radius:14px;
+      background:#171717;
+      color:#fff;
+      padding:13px 14px;
+      font-size:16px !important;
+      font-family:inherit;
+    }
+
+    .campo textarea{
+      min-height:150px;
+      resize:vertical;
+      line-height:1.5;
+    }
+
+    .campo input:focus,
+    .campo select:focus,
+    .campo textarea:focus{
+      outline:2px solid #34c759;
+      outline-offset:1px;
+      border-color:transparent;
+    }
+
+    .contador{
+      text-align:right;
+      color:rgba(255,255,255,.62);
+      font-size:13px;
+      margin-top:6px;
+    }
+
+    .acciones-sugerencias{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:22px;
+    }
+
+    .btn-sugerencia{
+      border:none;
+      border-radius:16px;
+      padding:14px 12px;
+      font-size:16px;
+      font-weight:800;
+      cursor:pointer;
+      text-align:center;
+      text-decoration:none;
+    }
+
+    .btn-enviar{
+      background:#25d366;
+      color:#07150b;
+    }
+
+    .btn-volver{
+      background:#2f6df6;
+      color:#fff;
+    }
+
+    .estado-formulario{
+      display:none;
+      margin-top:16px;
+      padding:13px 14px;
+      border-radius:14px;
+      background:#2a2112;
+      border:1px solid #f5c542;
+      color:#fff;
+      line-height:1.5;
+    }
+
+    .nota-final{
+      margin:20px 0 0;
+      text-align:center;
+      color:rgba(255,255,255,.62);
+      font-size:13px;
+      line-height:1.5;
+    }
+
+    @media (max-width:520px){
+      .acciones-sugerencias{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="sugerencias-page">
+    <section class="sugerencias-panel">
+
+      <h1>💬 Sugerencias</h1>
+
+      <p class="sugerencias-intro">
+        Tu opinión nos ayuda a mejorar <strong>Ayuda Inmediata en Japón</strong>.
+        Puedes informar un error, proponer información nueva o contarnos qué parte
+        de la guía podría ser más clara.
+      </p>
+
+      <div class="aviso-privacidad">
+        <strong>🔒 Importante:</strong><br>
+        Tu mensaje será revisado antes de incorporarse o publicarse.
+        No escribas contraseñas, datos bancarios, números de documentos,
+        direcciones privadas ni información médica sensible.
+      </div>
+
+      <form id="formSugerencias" novalidate>
+
+        <div class="campo">
+          <label for="nombre">Nombre o apodo</label>
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            maxlength="60"
+            placeholder="Opcional"
+            autocomplete="name"
+          >
+        </div>
+
+        <div class="campo">
+          <label for="pais">País</label>
+          <input
+            id="pais"
+            name="pais"
+            type="text"
+            maxlength="60"
+            placeholder="Opcional"
+            autocomplete="country-name"
+          >
+        </div>
+
+        <div class="campo">
+          <label for="tipo">Tipo de mensaje *</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Sugerencia</option>
+            <option>Corrección</option>
+            <option>Información faltante</option>
+            <option>Problema de funcionamiento</option>
+            <option>Agradecimiento</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="tema">Tema relacionado *</label>
+          <select id="tema" name="tema" required>
+            <option value="">Selecciona un tema</option>
+            <option>Llegada a Japón</option>
+            <option>Emergencias</option>
+            <option>Policía</option>
+            <option>Transporte</option>
+            <option>Salud</option>
+            <option>Alojamiento</option>
+            <option>Dinero</option>
+            <option>Vida diaria</option>
+            <option>Trámites</option>
+            <option>Servicios</option>
+            <option>Turismo</option>
+            <option>Aprender japonés</option>
+            <option>Guía en inglés</option>
+            <option>Página web / funcionamiento</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Escribe tu mensaje *</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            maxlength="1200"
+            required
+            placeholder="Explícanos con claridad qué deseas sugerir, corregir o mejorar."
+          ></textarea>
+
+          <div class="contador">
+            <span id="contadorMensaje">0</span>/1200
+          </div>
+
+          <small>
+            Describe el problema o propuesta con la mayor claridad posible.
+          </small>
+        </div>
+
+        <div class="acciones-sugerencias">
+          <button class="btn-sugerencia btn-enviar" type="submit">
+            📲 Enviar por WhatsApp
+          </button>
+
+          <a class="btn-sugerencia btn-volver" href="index.html">
+            🏠 Volver al inicio
+          </a>
+        </div>
+
+        <div
+          id="estadoFormulario"
+          class="estado-formulario"
+          role="alert"
+          aria-live="polite"
+        ></div>
+      </form>
+
+      <p class="nota-final">
+        El envío abre WhatsApp con el mensaje preparado.
+        Nada se publica automáticamente.
+      </p>
+
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const formulario = document.getElementById("formSugerencias");
+      const nombre = document.getElementById("nombre");
+      const pais = document.getElementById("pais");
+      const tipo = document.getElementById("tipo");
+      const tema = document.getElementById("tema");
+      const mensaje = document.getElementById("mensaje");
+      const contador = document.getElementById("contadorMensaje");
+      const estado = document.getElementById("estadoFormulario");
+
+      const numeroWhatsApp = "819084462319";
+
+      mensaje.addEventListener("input", () => {
+        contador.textContent = mensaje.value.length;
+      });
+
+      formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault();
+
+        const tipoValor = tipo.value.trim();
+        const temaValor = tema.value.trim();
+        const mensajeValor = mensaje.value.trim();
+
+        if (!tipoValor || !temaValor || !mensajeValor) {
+          estado.style.display = "block";
+          estado.textContent =
+            "Por favor, completa el tipo de mensaje, el tema y el contenido de la sugerencia.";
+          return;
+        }
+
+        if (mensajeValor.length < 10) {
+          estado.style.display = "block";
+          estado.textContent =
+            "Escribe un poco más de información para que podamos entender bien tu sugerencia.";
+          return;
+        }
+
+        estado.style.display = "none";
+
+        const texto = [
+          "💬 NUEVA SUGERENCIA",
+          "Ayuda Inmediata en Japón",
+          "",
+          "Tipo: " + tipoValor,
+          "Tema: " + temaValor,
+          "Nombre o apodo: " + (nombre.value.trim() || "No indicado"),
+          "País: " + (pais.value.trim() || "No indicado"),
+          "",
+          "Mensaje:",
+          mensajeValor,
+          "",
+          "Este mensaje será revisado antes de incorporarse o publicarse."
+        ].join("\n");
+
+        const url =
+          "https://wa.me/" +
+          numeroWhatsApp +
+          "?text=" +
+          encodeURIComponent(texto);
+
+        window.location.href = url;
+      });
+    });
+  </script>
+</body>
+</html>

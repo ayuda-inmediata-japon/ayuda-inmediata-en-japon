@@ -4026,13 +4026,29 @@ if (servicioModal) {
     }
   });
 }
-
 function irAApoyo() {
-  const apoyo = document.getElementById("apoyo");
+  const inicio = document.getElementById("inicio");
+  const buscador = document.getElementById("buscador");
+  const pantallaApoyo = document.getElementById("pantallaApoyo");
+  const pantallaFinal = document.getElementById("pantallaFinal");
+  const resultado = document.getElementById("resultado");
 
-  if (apoyo) {
-    apoyo.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (inicio) inicio.style.display = "none";
+  if (buscador) buscador.style.display = "none";
+  if (pantallaFinal) pantallaFinal.style.display = "none";
+  if (resultado) resultado.classList.add("oculto");
+
+  if (pantallaApoyo) {
+    pantallaApoyo.style.display = "block";
+  } else {
+    window.location.href = "apoyo.html";
+    return;
   }
+
+  window.scrollTo({
+    top: 0,
+    behavior: "auto"
+  });
 }
 document.addEventListener("click", function(e) {
   const summary = e.target.closest("summary");

@@ -792,8 +792,15 @@ display:none;
 .apoyo-buttons-pro{
   display:flex;
   flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
   gap:12px;
-  margin:12px 0 18px;
+  margin:12px auto 18px;
+  width:100%;
+}
+.apoyo-btn-pro{
+  justify-content:center;
+  text-align:center;
 }
 
 .apoyo-btn-pro{

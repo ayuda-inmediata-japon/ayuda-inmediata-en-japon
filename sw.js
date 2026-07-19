@@ -1,4 +1,4 @@
-const CACHE_NAME = "ayuda-japon-v5";
+const CACHE_NAME = "ayuda-japon-v6";
 
 const CORE_FILES = [
   "./",

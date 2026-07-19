@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Ayuda Inmediata en Japón",
   "short_name": "Ayuda Japón",
-  "description": "Guía práctica de ayuda, orientación y servicios para extranjeros en Japón.",
+  "description": "Guía práctica de ayuda, orientación y servicios para extranjeros en Japón",
   "lang": "es",
   "start_url": "./index.html",
   "scope": "./",
@@ -12,10 +12,16 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "hero.jpg",
-      "sizes": "any",
-      "type": "image/jpeg",
+      "src": "Img/icons/icon-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
       "purpose": "any"
+    },
+    {
+      "src": "Img/icons/icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
     }
   ]
 }

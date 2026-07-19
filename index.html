@@ -326,7 +326,52 @@
           </p>
         </details>
       </div>
+<hr style="margin-top:35px;border:none;border-top:1px solid #333;">
 
+<p style="margin-bottom:14px;font-weight:bold;">
+🙏 Si esta información te fue útil, puedes apoyar este proyecto:
+</p>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+
+  <button
+    onclick="navigator.share
+      ? navigator.share({
+          title:'Ayuda Inmediata en Japón',
+          text:'Guía práctica para extranjeros en Japón',
+          url:window.location.href
+        })
+      : alert('Copia el enlace desde la barra del navegador para compartirlo.')"
+    style="flex:1;background:#ddd;color:#2a6edb;padding:12px 8px;font-size:16px;font-weight:bold;border:none;border-radius:10px;">
+    ↗ Compartir
+  </button>
+
+  <button
+    onclick="mostrarGuardar()"
+    style="flex:1;background:#ddd;color:#2a6edb;padding:12px 8px;font-size:16px;font-weight:bold;border:none;border-radius:10px;">
+    • Guardar
+  </button>
+
+  <button
+    onclick="window.location.href='apoyo.html'"
+    style="flex:1;background:#ddd;color:#2a6edb;padding:12px 8px;font-size:16px;font-weight:bold;border:none;border-radius:10px;">
+    ❤️ Apoyar
+  </button>
+
+</div>
+
+<div id="guardar-pagina" style="display:none;margin-top:14px;">
+  <p><strong>📌 Cómo guardar esta página</strong></p>
+
+  <p><b>iPhone / iPad:</b><br>
+  Pulsa Compartir → Añadir a pantalla de inicio.</p>
+
+  <p><b>Android:</b><br>
+  Menú ⋮ → Añadir a pantalla de inicio.</p>
+
+  <p><b>Computadora:</b><br>
+  Presiona Ctrl + D o usa la estrella ⭐.</p>
+</div>
       <button
         id="volverBuscadorFinal"
         class="volver-buscador"

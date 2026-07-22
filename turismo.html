@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WENSND2DJG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WENSND2DJG');
+  </script>
+
+  <title>Turismo en Japón</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#000000">
+
+  <style>
+    body{
+      margin:0;
+      background:#050505;
+      color:#fff;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    }
+
+    .turismo-page{
+      width:min(900px,96vw);
+      margin:0 auto;
+      padding:22px 14px 50px;
+    }
+
+    .back-btn{
+      display:inline-block;
+      background:#2b2b2b;
+      color:#fff;
+      padding:10px 18px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:800;
+      margin-bottom:22px;
+    }
+
+    .turismo-hero{
+      text-align:center;
+      padding:10px 0 22px;
+    }
+
+    .turismo-hero h1{
+      font-size:clamp(34px,8vw,48px);
+      margin:10px 0 14px;
+    }
+
+    .turismo-hero p{
+      color:#ddd;
+      font-size:18px;
+      line-height:1.6;
+      max-width:720px;
+      margin:0 auto;
+    }
+
+    .hero-img{
+      width:100%;
+      max-width:720px;
+      display:block;
+      margin:20px auto 26px;
+      border-radius:22px;
+    }
+
+    .accordion-list{
+      display:grid;
+      gap:14px;
+      margin-top:18px;
+    }
+
+    .accordion-card{
+      background:#181818;
+      border:1px solid #333;
+      border-radius:20px;
+      overflow:hidden;
+    }
+
+    .accordion-card > summary{
+      list-style:none;
+      cursor:pointer;
+      padding:18px 54px 18px 20px;
+      color:#7cff7c;
+      font-size:clamp(20px,4.8vw,26px);
+      font-weight:900;
+      line-height:1.25;
+      position:relative;
+    }
+
+    .accordion-card > summary::-webkit-details-marker,
+    .lugar-card summary::-webkit-details-marker,
+    .route-card summary::-webkit-details-marker{
+      display:none;
+    }
+
+    .accordion-card > summary::after,
+    .lugar-card summary::after,
+    .route-card summary::after{
+      content:"▼";
+      position:absolute;
+      right:20px;
+      top:50%;
+      transform:translateY(-50%);
+      color:#7cff7c;
+      font-size:20px;
+      transition:transform .2s ease;
+    }
+
+    .accordion-card[open] > summary::after,
+    .lugar-card[open] summary::after,
+    .route-card[open] summary::after{
+      transform:translateY(-50%) rotate(180deg);
+    }
+
+    .accordion-card[open] > summary{
+      border-bottom:1px solid #333;
+    }
+
+    .accordion-content{
+      padding:18px 20px 22px;
+      color:#ddd;
+      line-height:1.7;
+      font-size:18px;
+    }
+
+    .accordion-content h3{
+      color:#fff;
+      margin-top:0;
+    }
+
+    .accordion-content ul{
+      padding-left:24px;
+    }
+
+    .phrase-box{
+      display:grid;
+      gap:12px;
+    }
+
+    .phrase-box p{
+      background:#101010;
+      border-left:5px solid #f5c542;
+      border-radius:14px;
+      padding:14px;
+      margin:0;
+    }
+
+    .apps-list{
+      display:grid;
+      gap:12px;
+      padding-left:0;
+      list-style:none;
+    }
+
+    .apps-list li{
+      background:#101010;
+      border:1px solid #2a2a2a;
+      border-radius:14px;
+      padding:13px 14px;
+    }
+
+    .lugares-box,
+    .routes-box{
+      display:grid;
+      gap:12px;
+    }
+
+    .lugar-card,
+    .route-card{
+      background:#111;
+      border:1px solid #2a2a2a;
+      border-radius:16px;
+      overflow:hidden;
+    }
+
+    .lugar-card summary,
+    .route-card summary{
+      list-style:none;
+      cursor:pointer;
+      padding:16px 48px 16px 18px;
+      color:#8cff85;
+      font-size:20px;
+      font-weight:800;
+      position:relative;
+    }
+
+    .lugar-content,
+    .route-content{
+      padding:16px 18px 18px;
+      border-top:1px solid #2a2a2a;
+    }
+
+    .video-box{
+      width:100%;
+      margin:16px auto 0;
+      border-radius:18px;
+      overflow:hidden;
+      background:#000;
+    }
+
+    .video-box iframe{
+      width:100%;
+      aspect-ratio:16/9;
+      border:0;
+      display:block;
+    }
+
+    .consejo{
+      background:#2a2112;
+      border:2px solid #f0a000;
+      border-radius:18px;
+      padding:16px;
+      color:#fff2cc;
+    }
+
+    .route-day{
+      background:#181818;
+      border:1px solid #333;
+      border-left:5px solid #8cff85;
+      border-radius:14px;
+      padding:14px;
+      margin:10px 0;
+    }
+
+    .route-day strong{
+      color:#fff;
+    }
+
+    .route-map{
+      background:#101010;
+      border:1px solid #333;
+      border-radius:15px;
+      padding:14px;
+      margin-bottom:14px;
+      color:#fff;
+      font-weight:800;
+      line-height:1.7;
+    }
+
+    .attraction-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:14px;
+    }
+
+    .attraction{
+      background:#101010;
+      border:1px solid #303030;
+      border-radius:16px;
+      padding:15px;
+    }
+
+    .attraction h4{
+      margin:0 0 5px;
+      color:#fff;
+      font-size:19px;
+    }
+
+    .jp-name{
+      color:#8cff85;
+      font-weight:800;
+      margin-bottom:8px;
+    }
+
+    .tag{
+      display:inline-block;
+      margin:4px 4px 4px 0;
+      padding:5px 9px;
+      border-radius:999px;
+      background:#263427;
+      color:#caffc7;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .tag.reserve{
+      background:#3a2d14;
+      color:#ffe19b;
+    }
+
+    .link-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:12px;
+    }
+
+    .mini-btn{
+      display:inline-block;
+      text-decoration:none;
+      color:#fff;
+      background:#2b2b2b;
+      border:1px solid #484848;
+      border-radius:11px;
+      padding:9px 11px;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .mini-btn.official{
+      background:#16411f;
+      border-color:#2f7740;
+    }
+
+    .warning-box{
+      background:#2a2112;
+      border:2px solid #d79724;
+      border-radius:16px;
+      padding:15px;
+      margin-top:16px;
+      color:#fff2cc;
+    }
+
+    .btn-row-final{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:28px;
+    }
+
+    .final-btn{
+      flex:1;
+      display:block;
+      text-align:center;
+      background:#25d366;
+      color:#fff;
+      padding:14px;
+      border-radius:18px;
+      text-decoration:none;
+      font-weight:800;
+      min-width:180px;
+    }
+
+    .secondary-btn{
+      background:#2f6df6;
+    }
+
+    .copyright{
+      text-align:center;
+      color:#aaa;
+      font-size:13px;
+      margin-top:28px;
+    }
+
+    @media(max-width:700px){
+      .attraction-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <main class="turismo-page">
+
+    <a href="index.html" class="back-btn">⬅ Volver</a>
+
+    <section class="turismo-hero">
+      <h1>🌸 Turismo en Japón</h1>
+
+      <p>
+        Lugares recomendados, videos turísticos y consejos prácticos para
+        disfrutar Japón con más confianza.
+      </p>
+
+      <img
+        src="Img/turismojapon.webp"
+        class="hero-img"
+        alt="Turismo en Japón"
+      >
+    </section>
+
+    <div class="accordion-list">
+
+      <details class="accordion-card">
+        <summary>🌸 ¿Qué es el turismo en Japón?</summary>
+        <div class="accordion-content">
+          <p>
+            El turismo en Japón no es solo visitar lugares bonitos. También significa
+            conocer su cultura, respetar sus costumbres y disfrutar cada lugar con
+            educación, seguridad y consideración hacia las personas que viven aquí.
+          </p>
+        </div>
+      </details>
+
+      <details class="accordion-card">
+        <summary>✅ Qué hacer durante tu viaje</summary>
+        <div class="accordion-content">
+          <ul>
+            <li>Respeta las filas en estaciones, tiendas, templos y atracciones.</li>
+            <li>Habla en voz baja en trenes y lugares públicos.</li>
+            <li>Lleva tu basura contigo si no encuentras basurero.</li>
+            <li>Revisa el clima y el horario del último tren antes de salir.</li>
+            <li>Guarda la dirección de tu hotel en japonés.</li>
+            <li>Lleva efectivo, batería portátil y el teléfono cargado.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion-card">
+        <summary>❌ Qué no hacer</summary>
+        <div class="accordion-content">
+          <ul>
+            <li>No hables fuerte dentro del tren.</li>
+            <li>No fumes fuera de las zonas permitidas.</li>
+            <li>No tires basura en la calle.</li>
+            <li>No bloquees escaleras, entradas o pasillos.</li>
+            <li>No tomes fotos a personas sin permiso.</li>
+            <li>No toques objetos de templos o santuarios sin autorización.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion-card">
+        <summary>⛩️ Respeto en templos y santuarios</summary>
+        <div class="accordion-content">
+          <p>
+            Los templos y santuarios son lugares turísticos, pero también son espacios
+            de respeto espiritual y cultural. Muchas personas van allí a orar o a
+            participar en tradiciones. Camina con calma, evita gritar, respeta las
+            señales y no entres en zonas prohibidas.
+          </p>
+        </div>
+      </details>
+
+      <details class="accordion-card">
+        <summary>🗣️ Palabras útiles para turistas</summary>
+        <div class="accordion-content">
+          <div class="phrase-box">
+            <p><strong>Gracias</strong><br>ありがとうございます<br><small>Arigatō gozaimasu</small></p>
+            <p><strong>Disculpe</strong><br>すみません<br><small>Sumimasen</small></p>
+            <p><strong>¿Dónde está la estación?</strong><br>駅はどこですか？<br><small>Eki wa doko desu ka?</small></p>
+            <p><strong>¿Cuánto cuesta?</strong><br>いくらですか？<br><small>Ikura desu ka?</small></p>
+            <p><strong>No entiendo japonés</strong><br>日本語がわかりません<br><small>Nihongo ga wakarimasen</small></p>
+            <p><strong>Ayuda, por favor</strong><br>助けてください<br><small>Tasukete kudasai</small></p>
+          </div>
+        </div>
+      </details>
+
+      <details class="accordion-card">
+        <summary>📱 Aplicaciones útiles</summary>
+        <div class="accordion-content">
+          <ul class="apps-list">
+            <li>🗺️ <strong>Google Maps:</strong> rutas, lugares y transporte.</li>
+            <li>🚆 <strong>NAVITIME Japan Travel:</strong> trenes, horarios y transbordos.</li>
+            <li>🌐 <strong>Google Translate:</strong> traducción rápida y cámara.</li>
+            <li>🔤 <strong>DeepL:</strong> traducciones más naturales.</li>
+            <li>🚨 <strong>Safety Tips:</strong> terremotos, tifones y emergencias.</li>
+            <li>🇯🇵 <strong>Japan Official Travel App:</strong> turismo oficial de Japón.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion-card">
+        <summary>🌸 Lugares turísticos recomendados en Japón</summary>
+        <div class="accordion-content">
+
+          <p>
+            Explora algunos de los destinos más populares de Japón.
+            Abre cada lugar para ver un video y conocer mejor su ambiente.
+          </p>
+
+          <div class="lugares-box">
+
+            <details class="lugar-card">
+              <summary>🌆 Tokio – Modernidad y energía</summary>
+              <div class="lugar-content">
+                <p>
+                  Tokio combina rascacielos, trenes, luces, tecnología, compras y
+                  barrios famosos como Shibuya, Shinjuku y Asakusa.
+                </p>
+
+                <div class="video-box">
+                  <iframe
+                    src="https://www.youtube.com/embed/BDt4EQ99lhQ"
+                    title="Tokio turismo"
+                    loading="lazy"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </details>
+
+            <details class="lugar-card">
+              <summary>⛩️ Kioto – Tradición y templos</summary>
+              <div class="lugar-content">
+                <p>
+                  Kioto es ideal para ver templos, santuarios, calles antiguas,
+                  jardines japoneses y paisajes tradicionales.
+                </p>
+
+                <div class="video-box">
+                  <iframe
+                    src="https://www.youtube.com/embed/6lt2JfJdGSY"
+                    title="Kioto turismo"
+                    loading="lazy"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </details>
+
+            <details class="lugar-card">
+              <summary>🍜 Osaka – Comida y diversión</summary>
+              <div class="lugar-content">
+                <p>
+                  Osaka es famosa por su comida callejera, Dotonbori, ambiente alegre
+                  y buena conexión con Kioto, Nara y Kobe.
+                </p>
+
+                <div class="video-box">
+                  <iframe
+                    src="https://www.youtube.com/embed/J1c0hrrYhhc"
+                    title="Osaka turismo"
+                    loading="lazy"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </details>
+
+            <details class="lugar-card">
+              <summary>🗻 Monte Fuji – Naturaleza icónica</summary>
+              <div class="lugar-content">
+                <p>
+                  El Monte Fuji es uno de los símbolos más importantes de Japón.
+                  Es ideal para fotos, excursiones y paisajes naturales.
+                </p>
+
+                <div class="video-box">
+                  <iframe
+                    src="https://www.youtube.com/embed/8lRA_bA8ySg?si=GebsIMxequsSuZhK"
+                    title="Monte Fuji turismo"
+                    loading="lazy"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </details>
+
+          </div>
+        </div>
+      </details>
+
+      <!-- NUEVA SECCIÓN AGREGADA -->
+      <details class="accordion-card">
+        <summary>🗾 Rutas turísticas por Japón</summary>
+        <div class="accordion-content">
+
+          <div class="route-map">
+            Ruta recomendada para conocer Japón por primera vez:<br>
+            Tokio → Fuji o Hakone → Nagoya y Ghibli Park → Kioto → Nara → Osaka y Universal Studios → Hiroshima y Miyajima
+          </div>
+
+          <div class="routes-box">
+
+            <details class="route-card">
+              <summary>3 días — Tokio esencial / 東京3日間</summary>
+              <div class="route-content">
+                <div class="route-day"><strong>Día 1:</strong> Asakusa, Sensō-ji, Nakamise y Tokyo Skytree.</div>
+                <div class="route-day"><strong>Día 2:</strong> Shibuya, Harajuku, Meiji Jingū y Shinjuku.</div>
+                <div class="route-day"><strong>Día 3:</strong> Disneyland, DisneySea, teamLab o Museo Ghibli. Elige solo una experiencia.</div>
+              </div>
+            </details>
+
+            <details class="route-card">
+              <summary>5 días — Tokio + Disney o Fuji / 東京・富士5日間</summary>
+              <div class="route-content">
+                <div class="route-day"><strong>Días 1 al 3:</strong> Tokio esencial.</div>
+                <div class="route-day"><strong>Día 4:</strong> Tokyo Disneyland, DisneySea o Museo Ghibli.</div>
+                <div class="route-day"><strong>Día 5:</strong> Excursión a Kawaguchiko o Hakone.</div>
+              </div>
+            </details>
+
+            <details class="route-card">
+              <summary>7 días — Tokio, Kioto y Osaka / 日本7日間</summary>
+              <div class="route-content">
+                <div class="route-day"><strong>Días 1 al 3:</strong> Tokio.</div>
+                <div class="route-day"><strong>Día 4:</strong> Shinkansen a Kioto, Fushimi Inari y Gion.</div>
+                <div class="route-day"><strong>Día 5:</strong> Kiyomizu-dera, Higashiyama y Arashiyama o Kinkaku-ji.</div>
+                <div class="route-day"><strong>Día 6:</strong> Nara y Tōdai-ji.</div>
+                <div class="route-day"><strong>Día 7:</strong> Osaka, castillo, Dōtonbori y Umeda.</div>
+              </div>
+            </details>
+
+            <details class="route-card">
+              <summary>10 días — Tokio, Fuji, Kioto, Nara y Osaka / 日本10日間</summary>
+              <div class="route-content">
+                <div class="route-day"><strong>Días 1 al 3:</strong> Tokio.</div>
+                <div class="route-day"><strong>Día 4:</strong> Fuji o Hakone.</div>
+                <div class="route-day"><strong>Días 5 al 7:</strong> Kioto.</div>
+                <div class="route-day"><strong>Día 8:</strong> Nara.</div>
+                <div class="route-day"><strong>Día 9:</strong> Osaka.</div>
+                <div class="route-day"><strong>Día 10:</strong> Universal Studios Japan.</div>
+              </div>
+            </details>
+
+            <details class="route-card">
+              <summary>14 días — Ruta completa / 日本周遊14日間</summary>
+              <div class="route-content">
+                <div class="route-day"><strong>Día 1:</strong> Llegada a Tokio y descanso.</div>
+                <div class="route-day"><strong>Día 2:</strong> Asakusa, Sensō-ji y Skytree.</div>
+                <div class="route-day"><strong>Día 3:</strong> Shibuya, Harajuku y Shinjuku.</div>
+                <div class="route-day"><strong>Día 4:</strong> Disney, teamLab o Museo Ghibli.</div>
+                <div class="route-day"><strong>Día 5:</strong> Fuji o Hakone.</div>
+                <div class="route-day"><strong>Día 6:</strong> Nagoya y Ghibli Park.</div>
+                <div class="route-day"><strong>Día 7:</strong> Kioto, Fushimi Inari y Gion.</div>
+                <div class="route-day"><strong>Día 8:</strong> Kiyomizu-dera e Higashiyama.</div>
+                <div class="route-day"><strong>Día 9:</strong> Arashiyama y Kinkaku-ji.</div>
+                <div class="route-day"><strong>Día 10:</strong> Nara y Tōdai-ji.</div>
+                <div class="route-day"><strong>Día 11:</strong> Osaka, castillo y Dōtonbori.</div>
+                <div class="route-day"><strong>Día 12:</strong> Universal Studios Japan.</div>
+                <div class="route-day"><strong>Día 13:</strong> Hiroshima y Parque Memorial de la Paz.</div>
+                <div class="route-day"><strong>Día 14:</strong> Miyajima e Itsukushima.</div>
+              </div>
+            </details>
+
+          </div>
+
+          <div class="warning-box">
+            <strong>⚠️ Reserva anticipada:</strong><br>
+            Disney, Universal Studios Japan, Ghibli Park y Museo Ghibli pueden exigir compra previa, fecha reservada o acceso programado. Comprueba siempre la página oficial antes de organizar el viaje.
+          </div>
+
+          <h3 style="margin-top:24px;">⭐ Atracciones principales</h3>
+
+          <div class="attraction-grid">
+
+            <article class="attraction">
+              <h4>🏰 Tokyo Disneyland</h4>
+              <div class="jp-name">東京ディズニーランド</div>
+              <p>Parque clásico de Disney en Urayasu, Chiba.</p>
+              <span class="tag reserve">Reserva recomendada</span>
+              <span class="tag">Día completo</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.tokyodisneyresort.jp/en/tdl/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Tokyo+Disneyland" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🌊 Tokyo DisneySea</h4>
+              <div class="jp-name">東京ディズニーシー</div>
+              <p>Parque exclusivo de Japón con temática marítima.</p>
+              <span class="tag reserve">Reserva recomendada</span>
+              <span class="tag">Día completo</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.tokyodisneyresort.jp/en/tds/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Tokyo+DisneySea" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🎬 Universal Studios Japan</h4>
+              <div class="jp-name">ユニバーサル・スタジオ・ジャパン</div>
+              <p>Parque temático en Osaka.</p>
+              <span class="tag reserve">Comprar antes</span>
+              <span class="tag">Día completo</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.usj.co.jp/web/en/us" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Universal+Studios+Japan" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🌿 Ghibli Park</h4>
+              <div class="jp-name">ジブリパーク</div>
+              <p>Parque de Studio Ghibli en la prefectura de Aichi.</p>
+              <span class="tag reserve">Reserva necesaria</span>
+              <span class="tag">Día completo</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://ghibli-park.jp/en/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Ghibli+Park+Aichi" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🎨 Museo Ghibli</h4>
+              <div class="jp-name">三鷹の森ジブリ美術館</div>
+              <p>Museo en Mitaka, Tokio. Es distinto de Ghibli Park.</p>
+              <span class="tag reserve">Reserva obligatoria</span>
+              <span class="tag">2 a 4 horas</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.ghibli-museum.jp/en/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Ghibli+Museum+Mitaka" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🏮 Asakusa y Sensō-ji</h4>
+              <div class="jp-name">浅草・浅草寺</div>
+              <p>Templo histórico, Kaminarimon y calle Nakamise.</p>
+              <span class="tag">2 a 4 horas</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.senso-ji.jp/english/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Sensoji+Temple" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🗻 Fuji y Kawaguchiko</h4>
+              <div class="jp-name">富士山・河口湖</div>
+              <p>Vistas del Monte Fuji, lago y naturaleza.</p>
+              <span class="tag">Día completo</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.japan.travel/en/fuji-guide/" target="_blank" rel="noopener">Guía oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchi" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>⛩️ Fushimi Inari</h4>
+              <div class="jp-name">伏見稲荷大社</div>
+              <p>Santuario famoso por sus miles de torii rojos.</p>
+              <span class="tag">2 a 4 horas</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://inari.jp/en/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Fushimi+Inari+Taisha" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🏯 Kiyomizu-dera</h4>
+              <div class="jp-name">清水寺</div>
+              <p>Templo emblemático y calles tradicionales de Higashiyama.</p>
+              <span class="tag">Medio día</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.kiyomizudera.or.jp/en/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Kiyomizu-dera" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🎋 Arashiyama</h4>
+              <div class="jp-name">嵐山</div>
+              <p>Bosque de bambú, puente Togetsukyō y templos.</p>
+              <span class="tag">Medio día</span>
+              <div class="link-row">
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Arashiyama+Bamboo+Forest" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🦌 Nara y Tōdai-ji</h4>
+              <div class="jp-name">奈良公園・東大寺</div>
+              <p>Ciervos, Gran Buda y patrimonio histórico.</p>
+              <span class="tag">Día completo</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.todaiji.or.jp/en/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Nara+Park" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🏯 Castillo de Osaka</h4>
+              <div class="jp-name">大阪城</div>
+              <p>Castillo, museo y parque urbano.</p>
+              <span class="tag">2 a 4 horas</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.osakacastle.net/english/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Osaka+Castle" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🍜 Dōtonbori</h4>
+              <div class="jp-name">道頓堀</div>
+              <p>Luces, comida callejera y ambiente nocturno.</p>
+              <span class="tag">2 a 3 horas</span>
+              <div class="link-row">
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Dotonbori" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🐋 Acuario Kaiyukan</h4>
+              <div class="jp-name">海遊館</div>
+              <p>Uno de los acuarios más conocidos de Osaka.</p>
+              <span class="tag reserve">Reserva útil</span>
+              <span class="tag">3 a 4 horas</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.kaiyukan.com/language/eng/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Osaka+Aquarium+Kaiyukan" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>🕊️ Parque de la Paz de Hiroshima</h4>
+              <div class="jp-name">広島平和記念公園</div>
+              <p>Museo, monumentos y Cúpula de la Bomba Atómica.</p>
+              <span class="tag">Medio día</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://hpmmuseum.jp/?lang=eng" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Hiroshima+Peace+Memorial+Park" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+            <article class="attraction">
+              <h4>⛩️ Miyajima e Itsukushima</h4>
+              <div class="jp-name">宮島・厳島神社</div>
+              <p>Isla conocida por su gran torii y santuario.</p>
+              <span class="tag">Medio día o día completo</span>
+              <div class="link-row">
+                <a class="mini-btn official" href="https://www.itsukushimajinja.jp/en/" target="_blank" rel="noopener">Sitio oficial</a>
+                <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Itsukushima+Shrine" target="_blank" rel="noopener">Google Maps</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </details>
+      <!-- FIN DE NUEVA SECCIÓN -->
+
+      <details class="accordion-card">
+        <summary>💡 Consejo importante</summary>
+        <div class="accordion-content">
+          <div class="consejo">
+            Antes de salir, revisa el clima, el horario del último tren,
+            lleva batería en el teléfono y guarda la dirección de tu hotel en japonés.
+          </div>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="btn-row-final">
+      <a href="#top" class="final-btn secondary-btn">
+        ⬆ Volver arriba
+      </a>
+
+      <a href="index.html" class="final-btn">
+        ⬅ Volver al inicio
+      </a>
+    </div>
+
+    <p class="copyright">© Derechos reservados – Ayuda Inmediata en Japón</p>
+
+  </main>
+
+  <script>
+    document.addEventListener("click", (event) => {
+      const summary = event.target.closest("summary");
+      if (!summary) return;
+
+      const current = summary.parentElement;
+
+      if (current.classList.contains("accordion-card")) {
+        document.querySelectorAll(".accordion-card").forEach((details) => {
+          if (details !== current) {
+            details.removeAttribute("open");
+          }
+        });
+      }
+
+      if (current.classList.contains("lugar-card")) {
+        const container = current.closest(".lugares-box");
+        if (!container) return;
+
+        container.querySelectorAll(".lugar-card").forEach((details) => {
+          if (details !== current) {
+            details.removeAttribute("open");
+          }
+        });
+      }
+
+      if (current.classList.contains("route-card")) {
+        const container = current.closest(".routes-box");
+        if (!container) return;
+
+        container.querySelectorAll(".route-card").forEach((details) => {
+          if (details !== current) {
+            details.removeAttribute("open");
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

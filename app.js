@@ -671,7 +671,432 @@ alt="no tengo seguro medico s">
       <p>現金で払えます<br>Genkin de haraemasu<br>Puedo pagar en efectivo</p>
     </div>
   </details>
+  <details class="subtema-card">
+    <summary>🛡️ Seguro de viaje para turistas</summary>
 
+    <div class="subtema-content">
+
+      <p>
+        <strong>El seguro de viaje no es obligatorio para la mayoría de los turistas que visitan Japón, pero es muy recomendable.</strong>
+      </p>
+
+      <p>
+        Una enfermedad, accidente, consulta de emergencia u hospitalización puede generar gastos médicos elevados si el visitante no tiene cobertura.
+      </p>
+
+      <div style="
+      border:2px solid #25D366;
+      border-radius:12px;
+      padding:14px;
+      margin:18px 0;
+      background:#151515;
+      ">
+
+        <p style="margin-top:0;">
+          <strong>✅ Recomendación:</strong>
+        </p>
+
+        <p style="margin-bottom:0;">
+          Contrata el seguro antes de comenzar el viaje y lleva en tu teléfono el número de asistencia, el certificado y el número de póliza.
+        </p>
+
+      </div>
+
+      <h3>📄 Requisitos habituales</h3>
+
+      <p>Generalmente te pedirán:</p>
+
+      <ul>
+        <li>Nombre completo del viajero</li>
+        <li>Fecha de nacimiento y edad</li>
+        <li>Número de pasaporte o documento de identidad</li>
+        <li>País de residencia</li>
+        <li>Destino: Japón</li>
+        <li>Fecha de salida y regreso</li>
+        <li>Duración total del viaje</li>
+        <li>Información sobre enfermedades preexistentes, si la compañía la solicita</li>
+        <li>Una tarjeta u otro medio de pago</li>
+      </ul>
+
+      <p>
+        Para un viaje turístico normal, muchas compañías permiten contratarlo por internet y normalmente no exigen un examen médico.
+      </p>
+
+      <h3>📱 Cómo contratarlo</h3>
+
+      <ol>
+        <li>Compara varias compañías y coberturas.</li>
+        <li>Selecciona Japón como destino.</li>
+        <li>Indica correctamente las fechas del viaje.</li>
+        <li>Declara tu edad y cualquier condición médica solicitada.</li>
+        <li>Revisa las coberturas y exclusiones.</li>
+        <li>Paga la póliza.</li>
+        <li>Guarda el certificado, número de póliza y teléfono de asistencia.</li>
+      </ol>
+
+      <p>
+        Puedes contratarlo mediante una aseguradora de tu país, una agencia de viajes, una aerolínea, una tarjeta de crédito que incluya cobertura o una empresa especializada en seguros de viaje.
+      </p>
+
+      <h3>💴 Precio aproximado</h3>
+
+      <p>
+        Los siguientes valores son solamente una referencia general. El precio puede variar considerablemente según el país, la edad, la duración, las coberturas y las condiciones médicas del viajero.
+      </p>
+
+      <div style="overflow-x:auto;margin:16px 0;">
+
+        <table style="
+        width:100%;
+        border-collapse:collapse;
+        min-width:300px;
+        background:#181818;
+        ">
+
+          <thead>
+            <tr>
+              <th style="border:1px solid #444;padding:10px;text-align:left;">
+                Duración
+              </th>
+
+              <th style="border:1px solid #444;padding:10px;text-align:left;">
+                Precio orientativo
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td style="border:1px solid #444;padding:10px;">
+                7 días
+              </td>
+
+              <td style="border:1px solid #444;padding:10px;">
+                ¥2,000 a ¥6,000
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border:1px solid #444;padding:10px;">
+                15 días
+              </td>
+
+              <td style="border:1px solid #444;padding:10px;">
+                ¥4,000 a ¥10,000
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border:1px solid #444;padding:10px;">
+                30 días
+              </td>
+
+              <td style="border:1px solid #444;padding:10px;">
+                ¥7,000 a ¥20,000 o más
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <p>
+        <strong>Importante:</strong> las personas mayores, quienes tengan enfermedades preexistentes o quienes elijan coberturas más amplias pueden pagar una cantidad mayor.
+      </p>
+
+      <h3>✅ Qué conviene que cubra</h3>
+
+      <ul>
+        <li>Consultas médicas por enfermedad o accidente</li>
+        <li>Atención de emergencia</li>
+        <li>Hospitalización y operaciones</li>
+        <li>Medicamentos recetados</li>
+        <li>Pruebas, análisis y estudios médicos</li>
+        <li>Traslado médico cuando sea necesario</li>
+        <li>Repatriación sanitaria al país de residencia</li>
+        <li>Asistencia telefónica durante las 24 horas</li>
+        <li>Responsabilidad civil por daños a otras personas</li>
+        <li>Pérdida, robo o retraso del equipaje, según el plan</li>
+        <li>Cancelación o interrupción del viaje, si está incluida</li>
+      </ul>
+
+      <h3>💰 Cobertura médica recomendada</h3>
+
+      <p>
+        Busca una póliza con una cobertura médica suficientemente alta para hospitalización, tratamientos y una posible repatriación.
+      </p>
+
+      <p>
+        No elijas únicamente por el precio. Comprueba el límite máximo, el deducible o franquicia y si la compañía puede pagar directamente al hospital.
+      </p>
+
+      <h3>⚠️ Qué puede no estar cubierto</h3>
+
+      <ul>
+        <li>Enfermedades preexistentes no declaradas</li>
+        <li>Tratamientos médicos planificados antes del viaje</li>
+        <li>Deportes peligrosos sin cobertura adicional</li>
+        <li>Accidentes relacionados con alcohol o drogas</li>
+        <li>Objetos perdidos por descuido</li>
+        <li>Gastos que no fueron comunicados o autorizados</li>
+        <li>Cancelaciones por motivos no incluidos en la póliza</li>
+      </ul>
+
+      <p>
+        Cada compañía establece sus propias condiciones. Lee cuidadosamente la póliza antes de contratarla.
+      </p>
+
+      <h3>🏥 Cómo utilizar el seguro en Japón</h3>
+
+      <ol>
+        <li>En una emergencia grave, llama primero al <strong>119</strong>.</li>
+        <li>Cuando sea posible, comunícate con la central de asistencia del seguro.</li>
+        <li>Indica tu nombre, número de póliza, ubicación y síntomas.</li>
+        <li>Pregunta a qué clínica u hospital debes acudir.</li>
+        <li>Confirma si la aseguradora pagará directamente o si tendrás que pagar primero.</li>
+        <li>Guarda facturas, recibos, recetas, informes médicos y comprobantes.</li>
+        <li>Solicita el reembolso siguiendo las instrucciones de la aseguradora.</li>
+      </ol>
+
+      <h3>📲 Documentos que debes guardar</h3>
+
+      <ul>
+        <li>Certificado del seguro</li>
+        <li>Número de póliza</li>
+        <li>Teléfono internacional de asistencia</li>
+        <li>Pasaporte</li>
+        <li>Facturas y recibos originales</li>
+        <li>Recetas médicas</li>
+        <li>Informe o certificado médico</li>
+        <li>Denuncia policial si hubo robo o pérdida</li>
+      </ul>
+
+      <h3>💳 Pago directo o reembolso</h3>
+
+      <p>
+        Algunas aseguradoras pueden coordinar el pago directamente con determinados hospitales. En otros casos, el turista debe pagar primero y solicitar el reembolso después.
+      </p>
+
+      <p>
+        Antes de recibir atención, pregunta:
+      </p>
+
+      <p>
+        キャッシュレスで診察を受けられますか？<br>
+        Kyasshuresu de shinsatsu o ukeraremasu ka?<br>
+        ¿Puedo recibir atención sin pagar directamente?
+      </p>
+
+      <h3>🗣️ Frases útiles</h3>
+
+      <p>
+        旅行保険があります<br>
+        Ryokou hoken ga arimasu<br>
+        Tengo seguro de viaje
+      </p>
+
+      <p>
+        保険会社に連絡したいです<br>
+        Hoken gaisha ni renraku shitai desu<br>
+        Quiero comunicarme con mi aseguradora
+      </p>
+
+      <p>
+        領収書をください<br>
+        Ryoushuusho o kudasai<br>
+        Por favor, deme un recibo
+      </p>
+
+      <p>
+        診断書をください<br>
+        Shindansho o kudasai<br>
+        Por favor, deme un certificado médico
+      </p>
+
+      <h3>🌐 Información oficial</h3>
+
+      <p>
+        🟢
+        <a href="https://www.japan.travel/en/plan/travel-insurance-in-japan/"
+        target="_blank"
+        rel="noopener noreferrer">
+          Información oficial sobre seguros de viaje en Japón – JNTO
+        </a>
+      </p>
+
+      <p>
+        La Organización Nacional de Turismo de Japón recomienda comprobar cuidadosamente qué cubre y qué no cubre la póliza. El Ministerio de Asuntos Exteriores de Japón también recomienda contratar un seguro médico internacional para afrontar posibles emergencias. [oai_citation:0‡Japan Travel](https://www.japan.travel/en/plan/travel-insurance-in-japan/?utm_source=chatgpt.com)
+      </p>
+      <h3>🇯🇵 Opciones de seguro disponibles en Japón</h3>
+
+      <p>
+        Además de contratar un seguro en tu país antes de viajar, existen opciones japonesas dirigidas a visitantes extranjeros.
+      </p>
+
+      <div style="
+      border:2px solid #25D366;
+      border-radius:12px;
+      padding:14px;
+      margin:16px 0;
+      background:#151515;
+      ">
+
+        <h4 style="margin-top:0;color:#25D366;">
+          🛡️ Tokio Marine & Nichido
+        </h4>
+
+        <p>
+          Compañía aseguradora japonesa que ofrece una opción para visitantes extranjeros que se encuentran temporalmente en Japón.
+        </p>
+
+        <p><strong>Puede incluir, según las condiciones del producto:</strong></p>
+
+        <ul>
+          <li>Atención por enfermedad o accidente durante la estancia</li>
+          <li>Orientación para encontrar clínicas u hospitales</li>
+          <li>Servicio de interpretación durante la atención médica</li>
+          <li>Atención y asistencia telefónica</li>
+          <li>Servicio médico sin pago directo en determinados hospitales</li>
+        </ul>
+
+        <p>
+          Esta opción puede contratarse incluso después de llegar a Japón, siempre que la persona cumpla las condiciones establecidas.
+        </p>
+
+        <p>
+          🔵
+          <a href="https://www.japan.travel/en/practical-coronavirus-information/travelers/"
+          target="_blank"
+          rel="noopener noreferrer">
+            Consultar información para visitantes – JNTO
+          </a>
+        </p>
+
+        <p>
+          🔵
+          <a href="https://www.tokiomarine-nichido.co.jp/en/"
+          target="_blank"
+          rel="noopener noreferrer">
+            Sitio oficial de Tokio Marine & Nichido
+          </a>
+        </p>
+
+      </div>
+
+      <div style="
+      border:2px solid #4da6ff;
+      border-radius:12px;
+      padding:14px;
+      margin:16px 0;
+      background:#151515;
+      ">
+
+        <h4 style="margin-top:0;color:#4da6ff;">
+          🌐 Portal oficial para contratar después de llegar
+        </h4>
+
+        <p>
+          La Agencia de Turismo de Japón ofrece información para visitantes que necesitan contratar un seguro después de haber ingresado al país.
+        </p>
+
+        <p>
+          El portal permite consultar opciones disponibles para cubrir enfermedades o accidentes ocurridos durante la estancia en Japón.
+        </p>
+
+        <p>
+          🟢
+          <a href="https://www.jnto.go.jp/emergency/eng/mi_guide.html"
+          target="_blank"
+          rel="noopener noreferrer">
+            Guía médica y seguros para visitantes – JNTO
+          </a>
+        </p>
+
+      </div>
+
+      <h3>🏢 Otras aseguradoras japonesas conocidas</h3>
+
+      <p>
+        En Japón también operan grandes compañías como:
+      </p>
+
+      <ul>
+        <li>Sompo Japan</li>
+        <li>Mitsui Sumitomo Insurance</li>
+        <li>Aioi Nissay Dowa Insurance</li>
+      </ul>
+
+      <p>
+        <strong>Atención:</strong> no todos sus seguros están disponibles para turistas extranjeros.
+        Algunos productos son únicamente para personas residentes en Japón que viajan al exterior.
+      </p>
+
+      <p>
+        Antes de contratar, confirma directamente con la compañía:
+      </p>
+
+      <ul>
+        <li>Si acepta visitantes extranjeros</li>
+        <li>Si puede contratarse después de llegar a Japón</li>
+        <li>Cuál es la edad máxima permitida</li>
+        <li>Cuántos días puede durar la cobertura</li>
+        <li>Si cubre enfermedades preexistentes</li>
+        <li>Si dispone de asistencia en español o inglés</li>
+        <li>Si ofrece atención médica sin pago directo</li>
+      </ul>
+
+      <div style="
+      border:3px solid #f5c542;
+      border-radius:10px;
+      padding:14px;
+      margin:20px 0;
+      background:#1c1c1c;
+      box-shadow:0 0 8px rgba(245,197,66,0.4);
+      ">
+
+        <h4 style="color:#f5c542;margin-top:0;">
+          ⚠️ Antes de elegir una compañía
+        </h4>
+
+        <p>
+          Que una aseguradora sea japonesa no significa automáticamente que pueda vender una póliza a cualquier turista.
+        </p>
+
+        <p style="margin-bottom:0;">
+          Revisa siempre la disponibilidad, el precio, el límite médico, las exclusiones y las condiciones vigentes en el sitio oficial.
+        </p>
+
+      </div>
+      <div style="
+      border:3px solid #f5c542;
+      border-radius:10px;
+      padding:14px;
+      margin-top:22px;
+      background:#1c1c1c;
+      box-shadow:0 0 8px rgba(245,197,66,0.4);
+      ">
+
+        <h3 style="color:#f5c542;margin-top:0;">
+          💡 Consejo importante
+        </h3>
+
+        <p>
+          No esperes a enfermarte para revisar tu seguro.
+        </p>
+
+        <p>
+          Antes de viajar, guarda el número de asistencia y verifica si la atención puede ser pagada directamente por la aseguradora.
+        </p>
+
+        <p style="margin-bottom:0;">
+          Los precios mostrados son orientativos y no representan una tarifa oficial ni una cotización garantizada.
+        </p>
+
+      </div>
+
+    </div>
+  </details>
   <details class="subtema-card">
     <summary>🌐 No hablo bien japonés</summary>
     <div class="subtema-content">

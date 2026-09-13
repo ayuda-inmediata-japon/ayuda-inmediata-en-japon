@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WENSND2DJG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WENSND2DJG');
+  </script>
+
+  <title>Reservas para tu viaje a Japón | Ayuda Inmediata en Japón</title>
+
+  <meta
+    name="description"
+    content="Actividades, excursiones, entradas y servicios para organizar un viaje a Japón."
+  >
+
+  <meta name="theme-color" content="#050505">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #050505;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    .reservas-page {
+      width: min(820px, 94vw);
+      margin: 0 auto;
+      padding: 24px 12px 48px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 10px 18px;
+      border-radius: 16px;
+      background: #2b2b2b;
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .reservas-hero {
+      text-align: center;
+    }
+
+    .reservas-hero h1 {
+      margin: 8px 0 14px;
+      font-size: clamp(32px, 8vw, 48px);
+      line-height: 1.12;
+    }
+
+    .reservas-hero p {
+      max-width: 670px;
+      margin: 0 auto;
+      color: #d8d8d8;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .booking-card {
+      margin: 28px auto 0;
+      padding: 22px;
+      border: 1px solid #69ff78;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #102514, #171717);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+    }
+
+    .booking-card h2 {
+      margin: 0 0 10px;
+      color: #7cff7c;
+      font-size: clamp(24px, 6vw, 32px);
+      line-height: 1.25;
+    }
+
+    .booking-card p {
+      margin: 0;
+      color: #dddddd;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .booking-list {
+      display: grid;
+      gap: 9px;
+      margin: 18px 0;
+      padding: 0;
+      list-style: none;
+      color: #f0f0f0;
+      font-size: 16px;
+    }
+
+    .affiliate-btn {
+      display: block;
+      width: 100%;
+      padding: 16px 18px;
+      border-radius: 15px;
+      background: #246bda;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .affiliate-btn:active {
+      transform: scale(0.985);
+    }
+
+    .affiliate-note {
+      display: block;
+      margin-top: 14px;
+      color: #bdbdbd;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .future-note {
+      margin: 20px 0 0;
+      padding: 15px 17px;
+      border: 1px solid #333333;
+      border-radius: 16px;
+      background: #151515;
+      color: #cccccc;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .info-box {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border: 1px solid #66501a;
+      border-radius: 17px;
+      background: #2c220e;
+      color: #f9e8bd;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .bottom-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .bottom-links a {
+      padding: 13px 12px;
+      border-radius: 14px;
+      background: #242424;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    footer {
+      margin-top: 34px;
+      color: #999999;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 520px) {
+      .booking-card {
+        padding: 19px 16px;
+      }
+
+      .bottom-links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="reservas-page">
+
+    <a href="index.html" class="back-btn">
+      ⬅ Volver al inicio
+    </a>
+
+    <header class="reservas-hero">
+      <h1>🎟️ Reservas para tu viaje</h1>
+
+      <p>
+        Encuentra en un solo lugar las opciones disponibles para organizar
+        actividades y entradas durante tu visita a Japón.
+      </p>
+    </header>
+
+    <!-- AFILIACIÓN ACTIVA: GETYOURGUIDE -->
+
+    <section class="booking-card" aria-labelledby="tokio-title">
+      <h2 id="tokio-title">
+        🗼 Actividades y entradas en Tokio
+      </h2>
+
+      <p>
+        Consulta excursiones, experiencias, entradas y visitas guiadas.
+        Revisa la disponibilidad y las condiciones antes de reservar.
+      </p>
+
+      <ul class="booking-list">
+        <li>✅ Fechas y horarios disponibles</li>
+        <li>✅ Opiniones de otros viajeros</li>
+        <li>✅ Información de cada actividad</li>
+      </ul>
+
+      <a
+        href="https://gyg.me/ZRe4to3S"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Ver actividades y reservar en Tokio
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: si reservas mediante este botón, podemos recibir
+        una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!--
+      ==========================================================
+      AFILIACIONES FUTURAS
+      ==========================================================
+
+      Estas tarjetas tienen la palabra hidden y no aparecerán
+      públicamente.
+
+      Para activar una tarjeta posteriormente:
+
+      1. Eliminar la palabra hidden.
+      2. Cambiar ENLACE_AFILIADO por el enlace verdadero.
+      3. Conservar rel="sponsored noopener noreferrer".
+    -->
+
+    <!-- HOTELES -->
+
+    <section class="booking-card" aria-labelledby="hoteles-title" hidden>
+      <h2 id="hoteles-title">🏨 Hoteles y alojamiento</h2>
+
+      <p>
+        Compara alojamientos, disponibilidad, ubicación y condiciones
+        de cancelación para distintas ciudades de Japón.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Buscar hoteles en Japón
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- RESTAURANTES -->
+
+    <section class="booking-card" aria-labelledby="restaurantes-title" hidden>
+      <h2 id="restaurantes-title">🍣 Restaurantes y gastronomía</h2>
+
+      <p>
+        Busca restaurantes, recorridos gastronómicos, clases de cocina
+        y otras experiencias culinarias disponibles en Japón.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Ver restaurantes y experiencias
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- ENTRADAS Y ATRACCIONES -->
+
+    <section class="booking-card" aria-labelledby="entradas-title" hidden>
+      <h2 id="entradas-title">
+        🎫 Entradas, atracciones y excursiones
+      </h2>
+
+      <p>
+        Encuentra parques temáticos, museos, miradores, visitas guiadas
+        y actividades en diferentes ciudades de Japón.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Buscar entradas y actividades
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- TRENES Y PASES -->
+
+    <section class="booking-card" aria-labelledby="trenes-title" hidden>
+      <h2 id="trenes-title">
+        🚄 Trenes, JR Pass y pases regionales
+      </h2>
+
+      <p>
+        Consulta billetes de tren, pases nacionales o regionales
+        y opciones de transporte entre ciudades.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Ver trenes y pases
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- VUELOS -->
+
+    <section class="booking-card" aria-labelledby="vuelos-title" hidden>
+      <h2 id="vuelos-title">✈️ Vuelos y pasajes aéreos</h2>
+
+      <p>
+        Compara vuelos internacionales y vuelos nacionales para
+        desplazarte entre las principales regiones de Japón.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Buscar vuelos
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- TRANSPORTE -->
+
+    <section class="booking-card" aria-labelledby="traslados-title" hidden>
+      <h2 id="traslados-title">
+        🚌 Traslados, autobuses y ferris
+      </h2>
+
+      <p>
+        Busca traslados desde aeropuertos, autobuses interurbanos,
+        ferris y otras opciones de transporte.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Ver opciones de transporte
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- INTERNET Y ESIM -->
+
+    <section class="booking-card" aria-labelledby="esim-title" hidden>
+      <h2 id="esim-title">
+        📱 Internet, eSIM y datos móviles
+      </h2>
+
+      <p>
+        Revisa opciones de eSIM, tarjetas SIM y conexión a internet
+        para usar durante el viaje.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Ver opciones de internet
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- SEGURO DE VIAJE -->
+
+    <section class="booking-card" aria-labelledby="seguro-title" hidden>
+      <h2 id="seguro-title">🛡️ Seguro de viaje</h2>
+
+      <p>
+        Compara coberturas médicas, asistencia, cancelaciones
+        y otras condiciones importantes antes de viajar.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Consultar seguros de viaje
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- ALQUILER DE VEHÍCULOS -->
+
+    <section class="booking-card" aria-labelledby="vehiculos-title" hidden>
+      <h2 id="vehiculos-title">
+        🚗 Alquiler de vehículos
+      </h2>
+
+      <p>
+        Compara vehículos, puntos de recogida y condiciones
+        de alquiler para recorrer Japón.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Buscar vehículos
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <!-- EQUIPAJE -->
+
+    <section class="booking-card" aria-labelledby="equipaje-title" hidden>
+      <h2 id="equipaje-title">
+        🧳 Equipaje y envío de maletas
+      </h2>
+
+      <p>
+        Consulta servicios para guardar o enviar equipaje entre
+        aeropuertos, hoteles y ciudades.
+      </p>
+
+      <a
+        href="ENLACE_AFILIADO"
+        class="affiliate-btn"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >
+        Ver servicios de equipaje
+      </a>
+
+      <small class="affiliate-note">
+        Enlace de afiliado: podemos recibir una comisión sin costo adicional para ti.
+      </small>
+    </section>
+
+    <p class="future-note">
+      Esta sección irá incorporando nuevas opciones de alojamiento,
+      transporte, internet y otros servicios cuando estén disponibles
+      y confirmadas.
+    </p>
+
+    <aside class="info-box">
+      ⚠️ Los precios, horarios, cancelaciones y condiciones pueden cambiar.
+      Comprueba siempre la información antes de completar una reserva.
+    </aside>
+
+    <nav class="bottom-links" aria-label="Navegación">
+      <a href="turismo.html">
+        🌸 Volver a Turismo
+      </a>
+
+      <a href="index.html">
+        🏠 Volver al inicio
+      </a>
+    </nav>
+
+    <footer>
+      © 2026 Derechos reservados – Ayuda Inmediata en Japón
+      <br>
+      Página en mejora constante
+    </footer>
+
+  </main>
+</body>
+</html>

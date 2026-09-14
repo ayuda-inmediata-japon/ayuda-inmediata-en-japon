@@ -1744,3 +1744,69 @@ font-size:13px;
   margin-bottom:10px !important;
   color:#111 !important;
 }
+/* BOTÓN DESTACADO: RESERVAS PARA TU VIAJE */
+.reservation-strip{
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+  margin:18px 0 22px !important;
+  padding:17px 18px !important;
+  color:#fff !important;
+  text-decoration:none !important;
+  background:linear-gradient(
+    120deg,
+    #145d32 0%,
+    #246fdf 100%
+  ) !important;
+  border:3px solid #63ff74 !important;
+  border-radius:18px !important;
+  box-shadow:
+    0 8px 24px rgba(36,111,223,.32),
+    0 0 14px rgba(99,255,116,.16) !important;
+}
+
+.reservation-strip:visited{
+  color:#fff !important;
+}
+
+.reservation-strip:active{
+  transform:scale(.985);
+}
+
+.reservation-strip-icon{
+  flex:0 0 auto;
+  font-size:30px;
+  line-height:1;
+}
+
+.reservation-strip-text{
+  display:flex !important;
+  flex:1;
+  flex-direction:column;
+  min-width:0;
+  line-height:1.25;
+}
+
+.reservation-strip-text strong{
+  color:#fff !important;
+  font-size:19px;
+  font-weight:900;
+}
+
+.reservation-strip-text small{
+  display:block;
+  margin-top:3px;
+  color:#eaf2ff !important;
+  font-size:13px;
+  font-weight:700;
+}
+
+.reservation-strip-arrow{
+  flex:0 0 auto;
+  color:#fff;
+  font-size:34px;
+  font-weight:800;
+  line-height:1;
+}

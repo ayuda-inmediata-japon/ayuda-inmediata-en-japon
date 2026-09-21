@@ -38,40 +38,75 @@
   <!-- ======================================================
        PANTALLA 1: PORTADA
   ======================================================= -->
-  <header class="hero" id="inicio">
-    <div class="hero-overlay"></div>
+  
+<header class="hero" id="inicio">
+  <div class="hero-overlay"></div>
 
-    <div class="hero-content">
-      <img
-        src="Img/banner-premium.webp"
-        class="hero-brand-banner"
-        alt="Ayuda Inmediata en Japón"
-      >
+  <div class="hero-content">
+    <img
+      src="Img/banner-premium.webp"
+      class="hero-brand-banner"
+      alt="Ayuda Inmediata en Japón"
+    >
 
-      <h1>Información clara para vivir y visitar Japón</h1>
+    <h1>
+      Guía gratuita en español para visitar y vivir en Japón
+    </h1>
 
-      <p class="hero-sub">
-  Guía gratuita y práctica en español para orientarte en la vida diaria y durante tu visita.
-</p>
+    <p class="hero-sub">
+      Información práctica para organizar tu viaje y, si vives
+      en Japón, orientarte en la vida diaria.
+    </p>
 
-<p class="hero-highlight">
-  Organiza tu viaje y reserva desde nuestra página en sitios oficiales y plataformas reconocidas. Compara precios, condiciones y disponibilidad, y elige la opción que más te convenga.
-</p>
+    <p class="hero-sub">
+      💬 ¿Tienes alguna consulta? Escríbenos.
+      Te ayudaremos en lo que podamos.
+    </p>
 
-      <p><a class="booking-access" href="reservas.html">🎟️ Comparar opciones y reservar</a></p>
-      <p>🔄 Guía en constante mejora</p>
-    </div>
+    <p class="hero-highlight">
+      También encontrarás enlaces a sitios oficiales y
+      plataformas reconocidas para comparar precios,
+      condiciones y disponibilidad, y reservar la opción
+      que más te convenga.
+    </p>
 
     <button
       id="arrowDown"
       class="arrow"
       type="button"
-      aria-label="Continuar al buscador"
+      aria-controls="buscador"
+      aria-label="Ver todas las secciones"
+      style="
+        position:static;
+        transform:none;
+        animation:none;
+        display:block;
+        width:100%;
+        max-width:380px;
+        height:auto;
+        min-height:52px;
+        margin:18px auto 12px;
+        padding:14px 18px;
+        box-sizing:border-box;
+        border:2px solid #ffffff;
+        border-radius:14px;
+        background:#6dff79;
+        color:#102414;
+        font-family:inherit;
+        font-size:19px;
+        font-weight:800;
+        line-height:1.3;
+        cursor:pointer;
+      "
     >
-      ⬇️
+      👇 Ver todas las secciones
     </button>
-  </header>
 
+    <p class="hero-update">
+      🔄 Guía en constante mejora
+    </p>
+  </div>
+</header>
   <!-- ======================================================
        PANTALLA 2: BUSCADOR, CATEGORÍAS Y TARJETAS
   ======================================================= -->

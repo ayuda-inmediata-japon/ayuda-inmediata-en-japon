@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WENSND2DJG"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-WENSND2DJG');
+</script>
+
+<title>Reservas para tu viaje a Japón | Ayuda Inmediata en Japón</title>
+
+<meta name="description"
+content="Tours, entradas, hoteles, transporte y otros servicios para organizar un viaje a Japón.">
+
+<meta name="theme-color" content="#050505">
+
+<style>
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+background:#050505;
+color:#fff;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+.reservas-page{
+width:min(850px,94vw);
+margin:auto;
+padding:24px 12px 50px;
+}
+
+.back-btn{
+display:inline-block;
+margin-bottom:24px;
+padding:11px 18px;
+border-radius:15px;
+background:#292929;
+color:#fff;
+font-weight:800;
+text-decoration:none;
+}
+
+.reservas-hero{
+text-align:center;
+}
+
+.reservas-hero h1{
+margin:8px 0 14px;
+font-size:clamp(32px,8vw,48px);
+}
+
+.reservas-hero p{
+max-width:700px;
+margin:auto;
+color:#d8d8d8;
+font-size:18px;
+line-height:1.6;
+}
+
+.info-box{
+margin:22px 0;
+padding:17px;
+border:1px solid #66501a;
+border-radius:17px;
+background:#2c220e;
+color:#f9e8bd;
+line-height:1.6;
+}
+
+/* MENU PRINCIPAL */
+
+.reservation-menu{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:12px;
+margin:25px 0 32px;
+}
+
+.reservation-menu a{
+display:flex;
+align-items:center;
+min-height:60px;
+padding:14px;
+border-radius:16px;
+background:#141c27;
+border:1px solid #40506a;
+color:#fff;
+font-weight:850;
+text-decoration:none;
+}
+
+/* CATEGORIAS */
+
+.category-panel{
+margin-top:35px;
+padding:22px;
+border:1px solid #34445a;
+border-radius:23px;
+background:#0f151d;
+scroll-margin-top:18px;
+}
+
+.category-panel>h2{
+margin:0 0 8px;
+font-size:clamp(25px,6vw,32px);
+}
+
+.category-intro{
+margin:0 0 20px;
+color:#d5dce5;
+line-height:1.6;
+}
+
+/* EMPRESAS */
+
+.provider-card{
+margin-top:20px;
+padding:20px;
+background:#151c25;
+border:1px solid #46566c;
+border-radius:19px;
+}
+
+.provider-label{
+display:inline-block;
+padding:6px 11px;
+margin-bottom:10px;
+border-radius:20px;
+background:#242e3c;
+font-size:13px;
+font-weight:900;
+}
+
+.provider-card h3{
+margin:0 0 9px;
+font-size:23px;
+}
+
+.provider-card p{
+color:#d8dde5;
+line-height:1.6;
+}
+
+.getyourguide{
+border-color:#62ff7a;
+}
+
+.getyourguide h3{
+color:#7cff8f;
+}
+
+.klook{
+border-color:#ff762c;
+}
+
+.klook h3{
+color:#ff9a5d;
+}
+
+.viator{
+border-color:#6d819d;
+}
+
+.booking{
+border-color:#4e87df;
+}
+
+.booking h3{
+color:#7eafff;
+}
+
+.aff-btn{
+display:block;
+width:100%;
+padding:15px;
+margin-top:15px;
+border-radius:14px;
+text-align:center;
+text-decoration:none;
+color:#fff;
+font-weight:900;
+}
+
+.gyg-btn{
+background:#246bda;
+}
+
+.klook-btn{
+background:#ff5b00;
+}
+
+.viator-btn{
+background:#253448;
+}
+
+/* ATRACCIONES */
+
+.reservation-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:15px;
+margin-top:18px;
+}
+
+.reservation-item{
+padding:18px;
+background:#171c24;
+border:1px solid #3b4658;
+border-radius:17px;
+scroll-margin-top:20px;
+}
+
+.reservation-item:target{
+outline:3px solid #ffb45c;
+}
+
+.reservation-item h4{
+margin:0 0 8px;
+font-size:20px;
+}
+
+.reservation-item p{
+color:#d7d7d7;
+line-height:1.5;
+}
+
+.reservation-actions{
+display:grid;
+gap:9px;
+margin-top:12px;
+}
+
+.official-link,
+.klook-link{
+display:block;
+padding:12px;
+border-radius:11px;
+color:#fff;
+text-decoration:none;
+font-weight:800;
+text-align:center;
+}
+
+.official-link{
+background:#26364a;
+}
+
+.klook-link{
+background:#ff5b00;
+}
+
+/* VIATOR */
+
+.viator-region{
+margin-top:22px;
+}
+
+.viator-region h4{
+margin:0 0 11px;
+font-size:18px;
+}
+
+.viator-grid{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:10px;
+}
+
+.viator-grid a{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:47px;
+padding:11px;
+border-radius:11px;
+background:#253448;
+border:1px solid #46556b;
+color:#fff;
+text-decoration:none;
+font-weight:800;
+text-align:center;
+}
+
+.status{
+display:inline-block;
+margin-top:10px;
+padding:7px 11px;
+border-radius:10px;
+background:#292929;
+color:#ddd;
+font-weight:800;
+font-size:13px;
+}
+
+.bottom-links{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:28px;
+}
+
+.bottom-links a{
+padding:14px;
+background:#242424;
+border-radius:14px;
+color:#fff;
+text-decoration:none;
+text-align:center;
+font-weight:800;
+}
+
+footer{
+margin-top:35px;
+text-align:center;
+color:#999;
+font-size:13px;
+line-height:1.6;
+}
+
+@media(max-width:650px){
+
+.reservation-menu,
+.reservation-grid{
+grid-template-columns:1fr;
+}
+
+.viator-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+.category-panel{
+padding:18px 15px;
+}
+
+}
+
+@media(max-width:430px){
+
+.viator-grid{
+grid-template-columns:1fr;
+}
+
+.bottom-links{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<main class="reservas-page">
+
+<a href="index.html" class="back-btn">
+⬅ Volver al inicio
+</a>
+
+<header class="reservas-hero">
+
+<h1>🎟️ Reservas para tu viaje</h1>
+
+<p>
+Encuentra en un solo lugar opciones para reservar actividades,
+alojamiento, transporte y otros servicios para tu viaje por Japón.
+</p>
+
+</header>
+
+
+<div class="info-box">
+Elige primero qué necesitas reservar.
+Antes de comprar, compara precios, condiciones y disponibilidad.
+Cada enlace indica claramente la empresa o plataforma que vas a abrir.
+</div>
+
+
+<!-- ==================================================
+MENU PRINCIPAL
+================================================== -->
+
+<nav class="reservation-menu">
+
+<a href="#tours">
+🎟️ Tours, actividades y atracciones
+</a>
+
+<a href="#hoteles">
+🏨 Hoteles y alojamientos
+</a>
+
+<a href="#restaurantes">
+🍣 Restaurantes
+</a>
+
+<a href="#autos">
+🚗 Alquiler de autos
+</a>
+
+<a href="#trenes">
+🚆 Trenes y transporte
+</a>
+
+<a href="#internet">
+📱 Internet / eSIM
+</a>
+
+<a href="#seguro">
+🛡️ Seguro de viaje
+</a>
+
+</nav>
+
+
+<!-- ==================================================
+TOURS ACTIVIDADES ATRACCIONES
+================================================== -->
+
+<section class="category-panel" id="tours">
+
+<h2>🎟️ Tours, actividades y atracciones</h2>
+
+<p class="category-intro">
+Excursiones, entradas, visitas guiadas y experiencias.
+Elige la plataforma que quieras consultar.
+</p>
+
+
+<!-- GETYOURGUIDE -->
+
+<article class="provider-card getyourguide">
+
+<span class="provider-label">
+GETYOURGUIDE
+</span>
+
+<h3>🎟️ GetYourGuide</h3>
+
+<p>
+Actividades, excursiones, entradas y visitas guiadas disponibles en Japón.
+</p>
+
+<a
+class="aff-btn gyg-btn"
+href="https://gyg.me/ZRe4to3S"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver actividades en GetYourGuide
+</a>
+
+</article>
+
+
+<!-- VIATOR -->
+
+<article class="provider-card viator">
+
+<span class="provider-label">
+VIATOR
+</span>
+
+<h3>🧭 Viator — tours por destino</h3>
+
+<p>
+Selecciona una ciudad o región para consultar excursiones,
+visitas guiadas y experiencias disponibles en Viator.
+</p>
+
+
+<div class="viator-region">
+
+<h4>🗼 Tokio y alrededores</h4>
+
+<div class="viator-grid">
+
+<a href="https://www.viator.com/searchResults/all?text=Tours+tokyo&pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Tokyo"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Tokio
+</a>
+
+<a href="https://www.viator.com/Yokohama/d25747-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Yokohama"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Yokohama
+</a>
+
+<a href="https://www.viator.com/Kamakura/d26734-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Kamakura"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Kamakura
+</a>
+
+<a href="https://www.viator.com/Kawagoe/d50683-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Kawagoe"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Kawagoe
+</a>
+
+<a href="https://www.viator.com/Nikko/d50514-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Nikko"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Nikko
+</a>
+
+<a href="https://www.viator.com/Hakone/d25550-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Hakone"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Hakone
+</a>
+
+<a href="https://www.viator.com/searchResults/all?text=Monte+fuji&pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Monte"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Monte Fuji
+</a>
+
+</div>
+</div>
+
+
+<div class="viator-region">
+
+<h4>⛩️ Kansai</h4>
+
+<div class="viator-grid">
+
+<a href="https://www.viator.com/searchResults/all?text=Tours+osaka&pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Tours"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Osaka
+</a>
+
+<a href="https://www.viator.com/searchResults/all?text=Kyoto+tours&pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Kyoto"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Kyoto
+</a>
+
+<a href="https://www.viator.com/searchResults/all?text=Nara+tours&pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Nara"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Nara
+</a>
+
+<a href="https://www.viator.com/Kobe/d27432-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Kobe"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Kobe
+</a>
+
+<a href="https://www.viator.com/searchResults/all?text=Koyasan&pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Koyasan"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Koyasan
+</a>
+
+</div>
+</div>
+
+
+<div class="viator-region">
+
+<h4>🏯 Chubu y Alpes Japoneses</h4>
+
+<div class="viator-grid">
+
+<a href="https://www.viator.com/Nagoya/d4701-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Nagoya"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Nagoya
+</a>
+
+<a href="https://www.viator.com/Kanazawa/d4699-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Kanazawa"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Kanazawa
+</a>
+
+<a href="https://www.viator.com/Takayama/d25943-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Takayama"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Takayama
+</a>
+
+<a href="https://www.viator.com/searchResults/all?text=Shirakawa+go&pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Shirakawa"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Shirakawa-go
+</a>
+
+<a href="https://www.viator.com/Matsumoto/d50821-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Matsumoto"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Matsumoto
+</a>
+
+<a href="https://www.viator.com/Nagano/d23523-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Nagano"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Nagano
+</a>
+
+</div>
+</div>
+
+
+<div class="viator-region">
+
+<h4>🌊 Hiroshima y oeste de Japón</h4>
+
+<div class="viator-grid">
+
+<a href="https://www.viator.com/Hiroshima/d4661-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Hiroshima"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Hiroshima
+</a>
+
+<a href="https://www.viator.com/Miyajima/d51239-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Miyajima"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Miyajima
+</a>
+
+<a href="https://www.viator.com/Fukuoka/d4660-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Fukuoka"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Fukuoka
+</a>
+
+</div>
+</div>
+
+
+<div class="viator-region">
+
+<h4>❄️ Hokkaido y 🌺 Okinawa</h4>
+
+<div class="viator-grid">
+
+<a href="https://www.viator.com/Sapporo/d5559-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Sapporo"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Sapporo
+</a>
+
+<a href="https://www.viator.com/Okinawa/d5614-ttd?pid=P00322216&mcid=42383&medium=link&medium_version=selector&campaign=Okinawa"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Okinawa
+</a>
+
+</div>
+</div>
+
+</article>
+
+
+<!-- KLOOK -->
+
+<article class="provider-card klook">
+
+<span class="provider-label">
+KLOOK
+</span>
+
+<h3>🎫 Klook — entradas y atracciones</h3>
+
+<p>
+Entradas para parques, observatorios, museos y otras atracciones.
+También puedes consultar el sitio oficial antes de comprar.
+</p>
+
+</article>
+
+
+<div class="reservation-grid">
+
+
+<!-- UNIVERSAL -->
+
+<article class="reservation-item" id="universal">
+
+<h4>🎢 Universal Studios Japan</h4>
+
+<p>Osaka</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.usj.co.jp/web/en/us"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1438921&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F46604-universal-studios-japan-e-ticket-osaka-qr-code-direct-entry"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- DISNEY -->
+
+<article class="reservation-item" id="disney">
+
+<h4>🏰 Tokyo Disney Resort</h4>
+
+<p>Tokyo Disneyland y DisneySea</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.tokyodisneyresort.jp/en/"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439016&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F695-tokyo-disney-resort-1-day-pass-tokyo"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- TEAMLAB PLANETS -->
+
+<article class="reservation-item" id="planets">
+
+<h4>✨ teamLab Planets</h4>
+
+<p>Toyosu, Tokio</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.teamlab.art/e/planets/"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439023&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F25300-teamlab-planets-toyosu-tokyo-ticket"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- TEAMLAB BORDERLESS -->
+
+<article class="reservation-item" id="borderless">
+
+<h4>✨ teamLab Borderless</h4>
+
+<p>Tokio</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.teamlab.art/e/tokyo/"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439028&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F20707-teamlab-borderless-admission-ticket-tokyo"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- KAIYUKAN -->
+
+<article class="reservation-item" id="kaiyukan">
+
+<h4>🐠 Acuario Kaiyukan</h4>
+
+<p>Osaka</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.kaiyukan.com/language/eng/"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439051&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F598-osaka-aquarium-kaiyukan-japan"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- SKYTREE -->
+
+<article class="reservation-item" id="skytree">
+
+<h4>🗼 Tokyo Skytree</h4>
+
+<p>Tokio</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.tokyo-skytree.jp/en/"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439046&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F41352-tokyo-skytree"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- SHIBUYA SKY -->
+
+<article class="reservation-item" id="shibuya-sky">
+
+<h4>🌆 Shibuya Sky</h4>
+
+<p>Tokio</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.shibuya-scramble-square.com/sky/ticket/en/"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439056&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F70672-shibuya-sky-tokyo"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- GHIBLI PARK -->
+
+<article class="reservation-item" id="ghibli-park">
+
+<h4>🌳 Ghibli Park</h4>
+
+<p>Aichi</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://ghibli-park.jp/en/"
+target="_blank"
+rel="noopener noreferrer">
+Sitio oficial
+</a>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439057&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F132673-ghibli-park-ticket"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver en Klook
+</a>
+
+</div>
+</article>
+
+
+<!-- MUSEO GHIBLI -->
+
+<article class="reservation-item" id="museo-ghibli">
+
+<h4>🎬 Museo Ghibli</h4>
+
+<p>Mitaka, Tokio</p>
+
+<div class="reservation-actions">
+
+<a class="official-link"
+href="https://www.ghibli-museum.jp/en/"
+target="_blank"
+rel="noopener noreferrer">
+Consultar sitio oficial
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+HOTELES
+================================================== -->
+
+<section class="category-panel" id="hoteles">
+
+<h2>🏨 Hoteles y alojamientos</h2>
+
+<p class="category-intro">
+Hoteles, ryokan y otros alojamientos para distintas ciudades de Japón.
+</p>
+
+<article class="provider-card booking">
+
+<span class="provider-label">
+BOOKING.COM
+</span>
+
+<h3>🏨 Booking.com</h3>
+
+<p>
+Aquí aparecerá el acceso para buscar alojamientos cuando el enlace
+de afiliación esté completamente disponible.
+</p>
+
+<span class="status">
+En preparación
+</span>
+
+</article>
+
+</section>
+
+
+<!-- ==================================================
+RESTAURANTES
+================================================== -->
+
+<section class="category-panel" id="restaurantes">
+
+<h2>🍣 Restaurantes</h2>
+
+<p class="category-intro">
+Reservas de restaurantes y experiencias gastronómicas en Japón.
+</p>
+
+<article class="provider-card">
+
+<h3>🍽️ Reservas de restaurantes</h3>
+
+<p>
+Añadiremos aquí una plataforma de reserva cuando tengamos
+un servicio confirmado y útil para Japón.
+</p>
+
+<span class="status">
+En preparación
+</span>
+
+</article>
+
+</section>
+
+
+<!-- ==================================================
+ALQUILER AUTOS
+================================================== -->
+
+<section class="category-panel" id="autos">
+
+<h2>🚗 Alquiler de autos</h2>
+
+<p class="category-intro">
+Especialmente útil para Hokkaido, Okinawa y zonas rurales
+donde el transporte público puede ser limitado.
+</p>
+
+<article class="provider-card">
+
+<h3>🚗 Alquiler de vehículos</h3>
+
+<p>
+La sección queda preparada para incorporar una empresa
+o comparador de alquiler de autos.
+</p>
+
+<span class="status">
+En preparación
+</span>
+
+</article>
+
+</section>
+
+
+<!-- ==================================================
+TRENES
+================================================== -->
+
+<section class="category-panel" id="trenes">
+
+<h2>🚆 Trenes y transporte</h2>
+
+<p class="category-intro">
+Billetes de aeropuerto y transporte para desplazarte por Japón.
+</p>
+
+<article class="provider-card klook">
+
+<span class="provider-label">
+KLOOK
+</span>
+
+<h3>🚆 Klook — trenes y traslados</h3>
+
+<p>
+Consulta las opciones disponibles y comprueba siempre
+origen, destino, sentido del viaje y condiciones del billete.
+</p>
+
+</article>
+
+
+<div class="reservation-grid">
+
+
+<!-- HARUKA -->
+
+<article class="reservation-item" id="haruka">
+
+<h4>🚆 JR Haruka</h4>
+
+<p>Aeropuerto de Kansai</p>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439070&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F18400-jr-haruka-airport-express-train-tickets-osaka"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver opciones en Klook
+</a>
+
+</article>
+
+
+<!-- NANKAI -->
+
+<article class="reservation-item" id="nankai">
+
+<h4>🚆 Nankai Kansai–Namba</h4>
+
+<p>Aeropuerto de Kansai ↔ Namba</p>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439076&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F599-kansai-airport-namba-train-ticket-osaka"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver opciones en Klook
+</a>
+
+</article>
+
+
+<!-- SKYLINER -->
+
+<article class="reservation-item" id="skyliner">
+
+<h4>🚄 Keisei Skyliner</h4>
+
+<p>Aeropuerto de Narita ↔ Tokio</p>
+
+<a class="klook-link"
+href="https://affiliate.klook.com/redirect?aid=134958&aff_adid=1439081&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F1410-skyliner-tokyo"
+target="_blank"
+rel="sponsored noopener noreferrer">
+Ver opciones en Klook
+</a>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
+INTERNET
+================================================== -->
+
+<section class="category-panel" id="internet">
+
+<h2>📱 Internet / eSIM</h2>
+
+<p class="category-intro">
+Opciones para disponer de internet durante tu viaje por Japón.
+</p>
+
+<article class="provider-card">
+
+<h3>📱 eSIM / SIM</h3>
+
+<p>
+Esta sección se activará cuando tengamos un proveedor
+y enlace de afiliación confirmado.
+</p>
+
+<span class="status">
+En preparación
+</span>
+
+</article>
+
+</section>
+
+
+<!-- ==================================================
+SEGURO
+================================================== -->
+
+<section class="category-panel" id="seguro">
+
+<h2>🛡️ Seguro de viaje</h2>
+
+<p class="category-intro">
+Consulta coberturas, asistencia médica, cancelaciones
+y otras condiciones antes de viajar.
+</p>
+
+<article class="provider-card">
+
+<h3>🛡️ Seguro de viaje</h3>
+
+<p>
+Añadiremos una plataforma cuando tengamos una opción
+confirmada para viajeros que visitan Japón.
+</p>
+
+<span class="status">
+En preparación
+</span>
+
+</article>
+
+</section>
+
+
+<div class="info-box">
+⚠️ Los precios, horarios, disponibilidad y políticas de cancelación
+pueden cambiar. Comprueba siempre las condiciones antes de completar
+una compra o reserva.
+</div>
+
+
+<nav class="bottom-links">
+
+<a href="turismo.html">
+🌸 Volver a Turismo
+</a>
+
+<a href="index.html">
+🏠 Volver al inicio
+</a>
+
+</nav>
+
+
+<footer>
+
+© 2026 Derechos reservados – Ayuda Inmediata en Japón
+<br>
+Página en mejora constante
+
+</footer>
+
+</main>
+
+</body>
+</html>

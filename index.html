@@ -245,32 +245,76 @@
 <main class="main" id="pantallaOrientacion" style="display:none;">
   <section class="panel">
 
-    <!-- Noticias importantes y sugerencias -->
-    <div class="acciones-finales">
+    <style>
+      #pantallaOrientacion .boton-p3 {
+        width: 100%;
+        height: 58px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 8px 12px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.15;
+        text-decoration: none;
+      }
 
-      <a href="novedades.html" class="btn-comentarios">
+      #pantallaOrientacion .grupo-p3 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 14px 0;
+      }
+
+      #pantallaOrientacion .titulo-orientacion-p3 {
+        margin: 22px 0 10px;
+      }
+
+      #pantallaOrientacion .mensaje-p3 {
+        margin: 0 0 14px;
+        line-height: 1.35;
+      }
+
+      #pantallaOrientacion .caja-orientacion-p3 {
+        padding: 12px;
+        margin: 0 0 14px;
+      }
+    </style>
+
+    <!-- Noticias y sugerencias -->
+    <div class="grupo-p3">
+
+      <a href="novedades.html"
+         class="btn-comentarios boton-p3">
         📰 Noticias importantes
       </a>
 
-      <a href="comentarios.html" class="btn-comentarios">
+      <a href="comentarios.html"
+         class="btn-comentarios boton-p3">
         💬 Sugerencias
       </a>
 
     </div>
 
     <!-- Más ayuda y orientación -->
-    <h2 tabindex="-1">💬 Más ayuda y orientación</h2>
+    <h2 class="titulo-orientacion-p3" tabindex="-1">
+      💬 Más ayuda y orientación
+    </h2>
 
-    <p class="orientacion-mensaje">
+    <p class="mensaje-p3">
       <strong>¿No encontraste lo que buscabas?</strong><br>
       <span style="color:#ccc;">Estamos aquí para ayudarte.</span>
     </p>
 
-    <div class="cta-box">
-      <div class="whatsapp-buttons-box">
+    <div class="cta-box caja-orientacion-p3">
+      <div class="grupo-p3" style="margin:0;">
 
         <button
-          class="cta-whatsapp general"
+          class="cta-whatsapp general boton-p3"
           id="btnGeneral"
           type="button"
         >
@@ -278,7 +322,7 @@
         </button>
 
         <button
-          class="cta-whatsapp personalizada"
+          class="cta-whatsapp personalizada boton-p3"
           id="btnPersonalizada"
           type="button"
         >
@@ -331,28 +375,30 @@
       </div>
     </div>
 
-    <!-- Guía rápida en inglés y navegación -->
-    <div class="acciones-finales">
+    <!-- Guía y navegación -->
+    <div class="grupo-p3">
 
-      <a href="ingles.html" class="btn-comentarios">
+      <a href="ingles.html"
+         class="btn-comentarios boton-p3">
         🇬🇧 Guía rápida en inglés
       </a>
 
       <button
         id="volverDesdeOrientacion"
-        class="aij-back"
+        class="aij-back boton-p3"
         type="button"
       >
         ← Volver a las secciones
       </button>
 
-      <a href="#inicio" class="btn-inicio">
+      <a href="#inicio"
+         class="btn-inicio boton-p3">
         🏠 Inicio
       </a>
 
       <button
         id="arrowApoyo"
-        class="flecha-apoyo aij-next"
+        class="flecha-apoyo aij-next boton-p3"
         type="button"
         aria-label="Continuar a la página de apoyo"
       >

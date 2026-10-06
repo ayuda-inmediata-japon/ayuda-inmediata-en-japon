@@ -241,107 +241,128 @@
     </section>
   </main>
 
-  <!-- PANTALLA 3: ORIENTACIÓN Y SUGERENCIAS -->
-  <main class="main" id="pantallaOrientacion" style="display:none;">
-    <section class="panel">
-      <h2 tabindex="-1">💬 Más ayuda y orientación</h2>
-      <div class="cta-box">
-        <p>
-          <strong>¿No encontraste lo que buscas?</strong><br>
-          <span style="color:#ccc;">Estamos aquí para ayudarte.</span>
-        </p>
+  <!-- PANTALLA 3: NOTICIAS, SUGERENCIAS Y ORIENTACIÓN -->
+<main class="main" id="pantallaOrientacion" style="display:none;">
+  <section class="panel">
 
-        <div class="whatsapp-buttons-box">
-          <button
-            class="cta-whatsapp general"
-            id="btnGeneral"
-            type="button"
-          >
-            💬 Orientación general
-          </button>
+    <!-- Noticias importantes y sugerencias -->
+    <div class="acciones-finales">
 
-          <button
-            class="cta-whatsapp personalizada"
-            id="btnPersonalizada"
-            type="button"
-          >
-            📞 Orientación personalizada
-          </button>
-        </div>
+      <a href="novedades.html" class="btn-comentarios">
+        📰 Noticias importantes
+      </a>
+
+      <a href="comentarios.html" class="btn-comentarios">
+        💬 Sugerencias
+      </a>
+
+    </div>
+
+    <!-- Más ayuda y orientación -->
+    <h2 tabindex="-1">💬 Más ayuda y orientación</h2>
+
+    <p class="orientacion-mensaje">
+      <strong>¿No encontraste lo que buscabas?</strong><br>
+      <span style="color:#ccc;">Estamos aquí para ayudarte.</span>
+    </p>
+
+    <div class="cta-box">
+      <div class="whatsapp-buttons-box">
+
+        <button
+          class="cta-whatsapp general"
+          id="btnGeneral"
+          type="button"
+        >
+          💬 Orientación general
+        </button>
+
+        <button
+          class="cta-whatsapp personalizada"
+          id="btnPersonalizada"
+          type="button"
+        >
+          📞 Orientación personalizada
+        </button>
+
       </div>
+    </div>
 
-      <!-- Modal de orientación -->
-      <div id="servicioModal" class="servicio-modal oculto">
-        <div class="servicio-modal-box">
+    <!-- Modal de orientación -->
+    <div id="servicioModal" class="servicio-modal oculto">
+      <div class="servicio-modal-box">
 
-          <button
-            id="cerrarServicioModal"
-            class="servicio-modal-close"
-            type="button"
-          >
-            ✕
-          </button>
+        <button
+          id="cerrarServicioModal"
+          class="servicio-modal-close"
+          type="button"
+        >
+          ✕
+        </button>
 
-          <h3
-            id="servicioModalTitulo"
-            class="servicio-modal-titulo"
-          ></h3>
+        <h3
+          id="servicioModalTitulo"
+          class="servicio-modal-titulo"
+        ></h3>
 
-          <div
-            id="servicioModalTexto"
-            class="servicio-modal-texto"
-          ></div>
+        <div
+          id="servicioModalTexto"
+          class="servicio-modal-texto"
+        ></div>
 
-          <a
-            id="servicioModalWhatsapp"
-            class="cta-whatsapp general"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Aceptar y continuar a WhatsApp
-          </a>
-
-          <button
-            id="cancelarServicioModal"
-            class="modal-cancelar"
-            type="button"
-          >
-            Cancelar
-          </button>
-        </div>
-      </div>
-
-      <!-- Botones finales -->
-      <div class="acciones-finales">
-
-        <a href="comentarios.html" class="btn-comentarios">
-          💬 Sugerencias
+        <a
+          id="servicioModalWhatsapp"
+          class="cta-whatsapp general"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Aceptar y continuar a WhatsApp
         </a>
 
         <button
-          id="arrowApoyo"
-          class="flecha-apoyo aij-next"
+          id="cancelarServicioModal"
+          class="modal-cancelar"
           type="button"
-          aria-label="Continuar a la página de apoyo"
         >
-          Continuar: apoyo a la guía →
+          Cancelar
         </button>
 
-        <a href="#inicio" class="btn-inicio">
-          🏠 Inicio
-        </a>
-
       </div>
+    </div>
 
-      <!-- Aquí se pueden añadir nuevos accesos en el futuro. -->
-      <button id="volverDesdeOrientacion" class="aij-back" type="button">
+    <!-- Guía rápida en inglés y navegación -->
+    <div class="acciones-finales">
+
+      <a href="ingles.html" class="btn-comentarios">
+        🇬🇧 Guía rápida en inglés
+      </a>
+
+      <button
+        id="volverDesdeOrientacion"
+        class="aij-back"
+        type="button"
+      >
         ← Volver a las secciones
       </button>
 
-    </section>
-  </main>
+      <a href="#inicio" class="btn-inicio">
+        🏠 Inicio
+      </a>
 
+      <button
+        id="arrowApoyo"
+        class="flecha-apoyo aij-next"
+        type="button"
+        aria-label="Continuar a la página de apoyo"
+      >
+        Continuar: apoyo a la guía →
+      </button>
+
+    </div>
+
+  </section>
+</main>
   <!-- ======================================================
        PANTALLA 4: APOYO
   ======================================================= -->

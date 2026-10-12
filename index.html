@@ -88,6 +88,28 @@
  #inicio h1 {font-size:25px;}
 }
 
+
+/* Nueva pantalla de turismo: estilos aislados para no alterar otras secciones */
+#pantallaTurismo .panel{padding:22px 16px 28px;max-width:980px;margin:auto}
+#pantallaTurismo .turismo-titulo{text-align:center;color:#fff;font-size:clamp(25px,5vw,36px);margin:8px 0 10px}
+#pantallaTurismo .turismo-intro{text-align:center;color:#e3e9e7;line-height:1.6;margin:0 auto 22px;max-width:740px}
+#pantallaTurismo .turismo-cortina{border:1px solid #5c9f79;border-radius:16px;margin:12px 0;background:#142b26;overflow:hidden;color:#fff}
+#pantallaTurismo .turismo-cortina>summary{cursor:pointer;list-style:none;padding:17px 16px;background:#205b40;color:#fff;font-weight:800;font-size:19px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+#pantallaTurismo .turismo-cortina>summary::-webkit-details-marker{display:none}
+#pantallaTurismo .turismo-cortina>summary:after{content:'＋';color:#d2ffd6;font-size:24px}
+#pantallaTurismo .turismo-cortina[open]>summary:after{content:'−'}
+#pantallaTurismo .turismo-cuerpo{padding:16px;line-height:1.6}
+#pantallaTurismo .turismo-cuerpo p{margin:0 0 12px}
+#pantallaTurismo .turismo-subtema{border:1px solid #53725f;border-radius:12px;margin:10px 0;background:#20332e;overflow:hidden}
+#pantallaTurismo .turismo-subtema summary{padding:12px 14px;cursor:pointer;color:#a8ffb3;font-weight:700}
+#pantallaTurismo .turismo-subtema p{padding:0 14px 12px;margin:0;color:#fff}
+#pantallaTurismo .turismo-enlace{display:block;box-sizing:border-box;text-align:center;background:#6dff79;color:#102414!important;font-weight:800;text-decoration:none;border:2px solid #fff;border-radius:12px;padding:13px;margin:14px 0 4px}
+#pantallaTurismo .turismo-aviso{border:1px solid #e2a34b;background:#392b1b;color:#ffe6bd;padding:13px;border-radius:12px;margin:18px 0;line-height:1.5}
+#pantallaTurismo .turismo-navegacion{display:grid;gap:10px;margin-top:18px}
+#pantallaTurismo .turismo-navegacion button{width:100%;min-height:52px;padding:12px;border-radius:14px;border:2px solid #fff;background:#6dff79;color:#102414;font:inherit;font-weight:800;font-size:18px;cursor:pointer}
+#pantallaTurismo .turismo-navegacion button:last-child{background:#252525;color:#fff;border-color:#aaa}
+#buscador .cards-wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+
 </style></head>
 
 <body>
@@ -128,8 +150,8 @@
   </span>
 </p>
 
-      <button id="arrowDown" class="arrow hero-continue" type="button" aria-controls="buscador">
-        👇 Ver todas las secciones
+      <button id="arrowDown" class="arrow hero-continue" type="button" aria-controls="pantallaTurismo">
+        👇 Descubre turismo y todas las secciones
       </button>
       <p class="hero-update">🔄 Guía en constante mejora</p>
     </div>
@@ -138,45 +160,72 @@
   </header>
 
   <!-- ======================================================
-       PANTALLA 2: BUSCADOR, CATEGORÍAS Y TARJETAS
+       PANTALLA 2: TURISMO Y PLANIFICACIÓN
   ======================================================= -->
-  <main class="main" id="buscador">
+  <main class="main" id="pantallaTurismo" style="display:none;">
     <section class="panel">
+      <h2 class="turismo-titulo">🇯🇵 Turismo en Japón</h2>
+      <p class="turismo-intro">Descubre Japón, prepara tu viaje y compara opciones para disfrutar más sin gastar de más. Abre cada cortina para ver los subtemas.</p>
 
-      <!-- Accesos destacados -->
+      <details class="turismo-cortina" open>
+        <summary>🌸 Turismo en Japón</summary>
+        <div class="turismo-cuerpo">
+          <p>Lugares para conocer, recorridos y recomendaciones para visitar Japón.</p>
+          <details class="turismo-subtema"><summary>🗼 Lugares y atracciones</summary><p>Explora destinos turísticos y atracciones antes de organizar tu recorrido.</p></details>
+          <details class="turismo-subtema"><summary>🚆 Rutas y desplazamientos</summary><p>Organiza las visitas según la zona y revisa cómo desplazarte entre destinos.</p></details>
+          <details class="turismo-subtema"><summary>💴 Viajar con presupuesto limitado</summary><p>Compara alternativas gratuitas y de pago, y revisa las condiciones antes de comprar.</p></details>
+          <a class="turismo-enlace" href="turismo.html">🌸 Abrir Turismo en Japón →</a>
+        </div>
+      </details>
+
+      <details class="turismo-cortina">
+        <summary>🧳 Planifica tu viaje</summary>
+        <div class="turismo-cuerpo">
+          <p>Información práctica para preparar tu visita antes de salir y durante tu estancia.</p>
+          <details class="turismo-subtema"><summary>📄 Documentos y preparación</summary><p>Consulta requisitos y recomendaciones según tu nacionalidad y las condiciones de tu viaje.</p></details>
+          <details class="turismo-subtema"><summary>🌦️ Clima y vestimenta</summary><p>Revisa el clima de las regiones que visitarás y elige la ropa adecuada para la temporada.</p></details>
+          <details class="turismo-subtema"><summary>💰 Presupuesto y gastos</summary><p>Prepara un presupuesto para alojamiento, comida, transporte y actividades.</p></details>
+          <a class="turismo-enlace" href="planifica.html">🧳 Abrir Planifica tu viaje →</a>
+        </div>
+      </details>
+
+      <details class="turismo-cortina">
+        <summary>🎟️ Reservas para tu viaje</summary>
+        <div class="turismo-cuerpo">
+          <p>Consulta y compara servicios antes de reservar. Se mantienen los enlaces y contenidos de nuestra página actual de reservas.</p>
+          <details class="turismo-subtema"><summary>🏨 Hoteles y alojamiento</summary><p>Compara ubicación, condiciones de cancelación y precio final.</p></details>
+          <details class="turismo-subtema"><summary>🎫 Entradas, tours y actividades</summary><p>Consulta las opciones de atracciones y experiencias según tus fechas.</p></details>
+          <details class="turismo-subtema"><summary>🚄 Transporte y servicios</summary><p>Revisa alternativas de trenes, traslados, alquiler de vehículos y conectividad.</p></details>
+          <a class="turismo-enlace" href="reservas.html">🎟️ Abrir Reservas para tu viaje →</a>
+        </div>
+      </details>
+
+      <div class="turismo-aviso">💡 <strong>Consejo:</strong> comprueba precios, disponibilidad, condiciones y fuentes oficiales antes de reservar. Algunos enlaces pueden generar una comisión que ayuda a mantener esta guía gratuita.</div>
+      <div class="turismo-navegacion">
+        <button type="button" id="irAyudaDesdeTurismo">👇 Continuar: ¿En qué necesitas ayuda?</button>
+        <button type="button" id="volverInicioDesdeTurismo">← Volver a la portada</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================
+       PANTALLA 3: BUSCADOR, CATEGORÍAS Y TARJETAS
+  ======================================================= -->
+  <main class="main" id="buscador" style="display:none;">
+    <section class="panel">
+      <!-- Accesos destacados: el turismo se trasladó a la pantalla anterior -->
       <div class="cards-wrap">
-
-        <a href="turismo.html" class="card-link">
-          <div class="card-icon">🌸</div>
-          <div class="card-title">Turismo en Japón</div>
-          <div class="card-desc">Lugares, videos y recomendaciones</div>
-        </a>
-
         <a href="japones.html" class="card-link">
           <div class="card-icon">🗣️</div>
           <div class="card-title">Aprender japonés</div>
           <div class="card-desc">Frases útiles y guía práctica</div>
         </a>
-
-        <a href="planifica.html" class="card-link">
-  <div class="card-icon">🧳</div>
-  <div class="card-title">Planifica tu viaje</div>
-  <div class="card-desc">Requisitos, presupuesto y preparación</div>
-</a>
-
+        <a href="noticias.html" class="card-link">
+          <div class="card-icon">📰</div>
+          <div class="card-title">Noticias importantes</div>
+          <div class="card-desc">Avisos e información relevante</div>
+        </a>
       </div>
-
-      <!-- Reservas -->
-      <a href="reservas.html" class="reservation-strip">
-        <span class="reservation-strip-icon" aria-hidden="true">🎟️</span>
-
-        <span class="reservation-strip-text">
-          <strong>Reservas para tu viaje</strong>
-          <small>Compara opciones de entradas, transporte y experiencias</small>
-        </span>
-
-        <span class="reservation-strip-arrow" aria-hidden="true">›</span>
-      </a>
 
       <h2>¿En qué necesitas ayuda?</h2>
 
@@ -728,7 +777,7 @@
 /* Navegación de las cinco pantallas, sin sustituir el buscador de app.js.
    Captura únicamente estos controles para evitar ejecutar dos navegaciones. */
 document.addEventListener('DOMContentLoaded', function () {
-  const ids = ['inicio', 'buscador', 'pantallaOrientacion', 'pantallaApoyo', 'pantallaFinal'];
+  const ids = ['inicio', 'pantallaTurismo', 'buscador', 'pantallaOrientacion', 'pantallaApoyo', 'pantallaFinal'];
   const pantallas = ids.map(id => document.getElementById(id));
   function mostrar(id) {
     pantallas.forEach(pantalla => {
@@ -743,8 +792,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     window.scrollTo({top:0, behavior:'instant'});
   }
+  document.querySelectorAll('#pantallaTurismo > .panel > details.turismo-cortina').forEach(cortina => {
+    cortina.addEventListener('toggle', () => {
+      if (cortina.open) document.querySelectorAll('#pantallaTurismo > .panel > details.turismo-cortina').forEach(otra => {
+        if (otra !== cortina) otra.open = false;
+      });
+    });
+  });
   const rutas = {
-    arrowDown:'buscador',
+    arrowDown:'pantallaTurismo',
+    irAyudaDesdeTurismo:'buscador',
+    volverInicioDesdeTurismo:'inicio',
     verOrientacion:'pantallaOrientacion',
     volverDesdeOrientacion:'buscador',
     arrowApoyo:'pantallaApoyo',

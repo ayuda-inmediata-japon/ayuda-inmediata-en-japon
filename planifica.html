@@ -1,0 +1,44 @@
+
+<style>
+/* FLECHAS CORREGIDAS - PLANIFICA TU VIAJE */
+
+.planifica-accesos > details.planifica-tarjeta > summary {
+  position: relative !important;
+  box-sizing: border-box;
+  padding: 16px 46px 16px 16px !important;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.planifica-accesos > details.planifica-tarjeta > summary::after {
+  content: "▼";
+  position: absolute !important;
+  right: 14px !important;
+  top: 22px !important;
+  transform: none !important;
+  width: 18px;
+  font-size: 16px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.planifica-accesos > details.planifica-tarjeta[open] > summary::after {
+  transform: rotate(180deg) !important;
+}
+
+.planifica-accesos > details.planifica-tarjeta {
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .planifica-accesos > details.planifica-tarjeta > summary {
+    padding: 16px 43px 16px 12px !important;
+    font-size: 16px;
+  }
+
+  .planifica-accesos > details.planifica-tarjeta > summary::after {
+    right: 11px !important;
+  }
+}
+</style>

@@ -899,12 +899,16 @@ details.subtema-card, #resultado, #resultadoContent > section,
 })();
 </script>
 <script>
-/* Navegación de las cinco pantallas, sin sustituir el buscador de app.js.
+/* Navegación de las seis pantallas, sin sustituir el buscador de app.js.
    Captura únicamente estos controles para evitar ejecutar dos navegaciones. */
 document.addEventListener('DOMContentLoaded', function () {
   const ids = ['inicio', 'pantallaTurismo', 'buscador', 'pantallaOrientacion', 'pantallaApoyo', 'pantallaFinal'];
   const pantallas = ids.map(id => document.getElementById(id));
-  function mostrar(id) {
+  function mostrar(id, registrar = true) {
+    if (!ids.includes(id)) return;
+    if (registrar && location.hash !== "#" + id) {
+      history.pushState(null, "", "#" + id);
+    }
     pantallas.forEach(pantalla => {
       if (pantalla) pantalla.style.display = pantalla.id === id
         ? (id === 'inicio' ? 'flex' : 'block') : 'none';
@@ -919,6 +923,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     window.scrollTo({top:0, behavior:'instant'});
   }
+  window.aijMostrarPantalla = mostrar;
+  function restaurarPantalla() {
+    const id = location.hash.slice(1) || 'inicio';
+    if (ids.includes(id)) mostrar(id, false);
+  }
+  window.addEventListener('hashchange', restaurarPantalla);
+  restaurarPantalla();
   // Los enlaces a temas se resuelven en aij-conexiones-navegacion.
   const rutas = {
     arrowDown:'pantallaTurismo',
@@ -978,7 +989,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  const safeAnchor=validSource&&(/^(tur-[a-z0-9-]+|paso-\d+|plan-ayuda-practica)$/).test(requested)?requested:'';
  function sourceHref(){return source+'.html'+(safeAnchor?'#'+safeAnchor:'');}
  function showHelp(){
-  ['inicio','pantallaTurismo','buscador','pantallaOrientacion','pantallaApoyo','pantallaFinal'].forEach(id=>{const node=document.getElementById(id);if(node)node.style.display=id==='buscador'?'block':'none';});
+  window.aijMostrarPantalla('buscador', false);
  }
  function decorate(){
   if(!content.textContent.trim())return;

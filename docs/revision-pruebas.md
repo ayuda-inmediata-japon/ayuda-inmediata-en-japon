@@ -19,12 +19,17 @@ Sitio estático con once páginas HTML, estilos compartidos en `styles.css`, bus
 - **Imágenes:** la guía inglesa apuntaba a `Img/english-hero.jpg`, inexistente. Se reutiliza la fotografía existente `Img/hero.jpg`.
 - **Sin conexión:** se corrige `hero.jpg` por `Img/hero.jpg`, se incluyen las páginas que faltaban en la precaché y se incrementa su versión. La limpieza se limita a cachés del sitio y una respuesta HTML de error no reemplaza una copia válida.
 
+## Ampliación de la navegación
+
+Tras la autorización para continuar, se añadió historial entre las seis pantallas de portada. Atrás y Adelante recuperan la pantalla anterior; la recarga conserva la pantalla indicada en la URL. Los accesos a Apoyo desde las respuestas usan también esta navegación. El resolver de ayuda comparte la misma función para mostrar pantallas sin añadir entradas duplicadas al historial.
+
 ## Validación realizada
 
 - Chromium local mediante Playwright, sin publicar el sitio.
 - Once páginas revisadas a 375 px: sin errores de JavaScript ni anclas locales ausentes en el DOM inicial. Las imágenes sin `src` de los visores de Turismo y Japonés son elementos de interfaz que reciben la imagen al abrirse.
 - Portada, Descubre Japón, Noticias y Reservas a 320, 375, 390, 768 y 1280 px: veinte comprobaciones sin desbordamiento horizontal.
 - Recorrido portada → tarjetas → buscador; apertura de respuesta y tarjeta anidada; enlace directo a clínica; diálogo de orientación y Escape con retorno de foco; búsqueda de Kioto; enlace a Expedia dentro de Reservas; tercera noticia y botones de regreso.
+- Prueba adicional de Atrás, Adelante, recarga, enlace directo a pantalla, apertura de Apoyo desde una respuesta y regreso al tema: correcta.
 - Comparación con `main`: se conservan los textos visibles originales y las URL externas de las once páginas HTML.
 - Noticias, Descubre Japón, Reservas y Planifica disponibles sin conexión tras instalar la nueva caché.
 - `node --check app.js`, `node --check sw.js` y `git diff --check` correctos.
@@ -33,7 +38,7 @@ Sitio estático con once páginas HTML, estilos compartidos en `styles.css`, bus
 ## Mejoras pendientes y límites
 
 - Consolidar gradualmente estilos repetidos y reglas con `!important`; la portada acumula muchas capas de ajustes. Se evita una reestructuración amplia que pueda cambiar su diseño actual.
-- La navegación entre pantallas de portada todavía no tiene historial propio para los botones Atrás/Adelante del navegador. Conviene diseñarlo y probarlo con todos los enlaces de ayuda antes de incorporarlo.
+- La navegación de las seis pantallas ya admite historial y enlaces directos. Queda pendiente una prueba en dispositivos físicos con Safari.
 - Revisar editorialmente las noticias de inmigración y contrastar fechas, importes y requisitos con sus fuentes oficiales. Esta revisión conserva sus afirmaciones; no certifica su vigencia jurídica.
 - Confirmar comisiones y atribución real en los paneles de afiliación, especialmente Klook. Conservar parámetros no demuestra que una reserva genere comisión. No se realizaron reservas ni se modificaron cuentas de afiliación.
 - Completar los documentales pendientes cuando existan artículos y vídeos reales.

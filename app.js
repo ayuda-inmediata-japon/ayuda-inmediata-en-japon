@@ -4552,6 +4552,10 @@ if (servicioModal) {
   });
 }
 function irAApoyo() {
+  if (window.aijMostrarPantalla) {
+    window.aijMostrarPantalla("pantallaApoyo");
+    return;
+  }
   const inicio = document.getElementById("inicio");
   const buscador = document.getElementById("buscador");
   const pantallaApoyo = document.getElementById("pantallaApoyo");

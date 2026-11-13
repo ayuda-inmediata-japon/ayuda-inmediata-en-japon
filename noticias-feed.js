@@ -29,11 +29,11 @@
       info.className = 'fecha';
       const date = item.published_at ? new Date(item.published_at) : null;
       const dateText = date && !isNaN(date.getTime()) ? date.toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Tokyo'}) : 'Fecha no disponible';
-      info.textContent = (item.source || 'Fuente externa') + ' · ' + dateText + ' · Titular original en inglés';
+      info.textContent = (item.source || 'Fuente externa') + ' · ' + dateText + ' · Titular original en japonés';
       article.append(a, info);
       root.append(article);
     }
-    status.textContent = 'Titulares enlazados a su fuente original. Se muestran en inglés para evitar traducciones automáticas imprecisas.';
+    status.textContent = 'Titulares enlazados a su fuente original. Se muestran en japonés para evitar traducciones automáticas imprecisas.';
   } catch (error) {
     status.textContent = 'No fue posible cargar los titulares automáticos. Las noticias explicadas siguen disponibles abajo.';
   }

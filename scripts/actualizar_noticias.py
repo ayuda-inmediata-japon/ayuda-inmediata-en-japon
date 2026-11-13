@@ -13,8 +13,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "data" / "noticias.json"
 SOURCES = [
-    ("NHK WORLD-JAPAN", "https://www3.nhk.or.jp/nhkworld/en/news/feeds/rss.xml"),
-    ("Japan Meteorological Agency", "https://www.jma.go.jp/bosai/forecast/data/overview_forecast/130000.json"),
+    ("NHK Noticias", "https://www.nhk.or.jp/rss/news/cat0.xml"),
 ]
 MAX_ITEMS = 60
 
@@ -38,7 +37,7 @@ def parse_rss(xml, source):
             date = ""
         result.append({"id": hashlib.sha256(link.encode()).hexdigest()[:20],
                        "title": title[:240], "url": link, "source": source,
-                       "published_at": date, "language": "en"})
+                       "published_at": date, "language": "ja"})
     return result
 
 def main():

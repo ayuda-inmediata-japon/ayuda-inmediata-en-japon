@@ -193,6 +193,9 @@
       font-size: 13px;
       margin-top: 24px;
     }
+    .noticia-automatica { padding: 13px 16px; border: 1px solid #335b39; border-radius: 12px; margin: 10px 0; background: #102115; }
+    .noticia-automatica a { color: #89f190; font-weight: 700; line-height: 1.5; }
+    .noticia-automatica .fecha { margin: 8px 0 0; }
   </style>
 </head>
 
@@ -216,7 +219,15 @@
 
   <nav aria-label="Volver"><a class="boton" href="index.html">← Volver a la portada</a></nav>
 
-  <h2 class="titulo-seccion">📌 Lo más importante ahora</h2>
+
+  <section aria-labelledby="titulo-automaticas">
+    <h2 class="titulo-seccion" id="titulo-automaticas">🗞️ Titulares recientes de Japón</h2>
+    <p id="estado-noticias-automaticas" role="status">Cargando titulares de fuentes externas…</p>
+    <div id="noticias-automaticas"></div>
+    <p class="nota">Los titulares automáticos son enlaces informativos en su idioma original; las explicaciones en español están más abajo.</p>
+  </section>
+  <h2 class="titulo-seccion">📌 Noticias explicadas en español</h2>
+
 
 
   <!-- NOTICIA 1 -->
@@ -441,5 +452,6 @@
   </nav>
   <p class="nota">Consulta la fuente oficial de cada noticia para comprobar los requisitos y su vigencia.</p>
 </main>
+<script src="noticias-feed.js" defer></script>
 </body>
 </html>

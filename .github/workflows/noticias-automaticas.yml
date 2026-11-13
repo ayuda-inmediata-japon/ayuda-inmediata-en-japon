@@ -1,0 +1,30 @@
+name: Actualizar noticias de Japón
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: noticias-automaticas
+  cancel-in-progress: false
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Consultar fuentes y actualizar JSON
+        run: python scripts/actualizar_noticias.py
+      - name: Guardar cambios si hay novedades
+        run: |
+          if ! git diff --quiet -- data/noticias.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/noticias.json
+            git commit -m "Noticias: actualizar fuentes oficiales"
+            git push
+          fi

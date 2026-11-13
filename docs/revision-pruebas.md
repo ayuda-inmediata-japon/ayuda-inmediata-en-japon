@@ -46,4 +46,4 @@ Tras la autorización para continuar, se añadió historial entre las seis panta
 
 ## Estado de entrega
 
-Cambios preparados únicamente en una rama local de pruebas. No se ha modificado `main`, subido la rama, abierto una solicitud de cambios, desplegado ni fusionado nada.
+Los cambios se prepararon y validaron primero en una rama local de pruebas. Posteriormente, el usuario autorizó subir la rama y fusionarla con `main`. La solicitud de cambios de GitHub registra el resultado de la integración.

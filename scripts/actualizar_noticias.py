@@ -47,7 +47,10 @@ def main():
     successful = False
     for name, url in SOURCES:
         try:
-            for item in parse_rss(get(url), name):
+            parsed = parse_rss(get(url), name)
+            if not parsed:
+                raise ValueError("La fuente no contiene titulares válidos")
+            for item in parsed:
                 items[item["id"]] = item
             successful = True
             break

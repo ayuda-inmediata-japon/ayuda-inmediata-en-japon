@@ -1,4 +1,4 @@
-const CACHE_NAME = "ayuda-japon-v8";
+const CACHE_NAME = "ayuda-japon-v9";
 
 const CORE_FILES = [
   "./",
@@ -11,7 +11,12 @@ const CORE_FILES = [
   "./ingles.html",
   "./apoyo.html",
   "./comentarios.html",
-  "./hero.jpg"
+  "./Img/hero.jpg",
+  "./reservas.html",
+  "./planifica.html",
+  "./noticias.html",
+  "./descubre-japon.html",
+  "./trabajo.html"
 ];
 
 // Instala el nuevo Service Worker.
@@ -34,7 +39,7 @@ self.addEventListener("activate", (event) => {
     caches.keys().then((keys) =>
       Promise.all(
         keys
-          .filter((key) => key !== CACHE_NAME)
+          .filter((key) => key.startsWith("ayuda-japon-") && key !== CACHE_NAME)
           .map((key) => caches.delete(key))
       )
     )
@@ -58,6 +63,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request)
         .then((response) => {
+          if (!response.ok) return response;
           const copy = response.clone();
 
           caches.open(CACHE_NAME).then((cache) => {

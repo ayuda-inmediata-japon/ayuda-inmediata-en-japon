@@ -13,7 +13,8 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "data" / "noticias.json"
 SOURCES = [
-    ("NHK Noticias", "https://www.nhk.or.jp/rss/news/cat0.xml"),
+    ("NHK Noticias", "https://news.web.nhk/n-data/conf/na/rss/cat0.xml"),
+    ("NHK Noticias (alternativa)", "https://www.nhk.or.jp/rss/news/cat0.xml"),
 ]
 MAX_ITEMS = 60
 
@@ -44,11 +45,12 @@ def main():
     previous = json.loads(DEST.read_text(encoding="utf-8")) if DEST.exists() else {"items": []}
     items = {x["id"]: x for x in previous.get("items", [])}
     successful = False
-    for name, url in SOURCES[:1]:
+    for name, url in SOURCES:
         try:
             for item in parse_rss(get(url), name):
                 items[item["id"]] = item
             successful = True
+            break
         except Exception as exc:
             print(f"No se pudo consultar {name}: {exc}")
     if not successful:

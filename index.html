@@ -532,12 +532,12 @@ details.subtema-card, #resultado, #resultadoContent > section,
     </div>
 
     <!-- MODAL DE ORIENTACIÓN -->
-    <div id="servicioModal" class="servicio-modal oculto">
+    <div id="servicioModal" class="servicio-modal oculto" role="dialog" aria-modal="true" aria-labelledby="servicioModalTitulo">
 
       <div class="servicio-modal-box">
 
         <button
-          id="cerrarServicioModal"
+          id="cerrarServicioModal" aria-label="Cerrar orientación"
           class="servicio-modal-close"
           type="button"
         >
@@ -899,12 +899,16 @@ details.subtema-card, #resultado, #resultadoContent > section,
 })();
 </script>
 <script>
-/* Navegación de las cinco pantallas, sin sustituir el buscador de app.js.
+/* Navegación de las seis pantallas, sin sustituir el buscador de app.js.
    Captura únicamente estos controles para evitar ejecutar dos navegaciones. */
 document.addEventListener('DOMContentLoaded', function () {
   const ids = ['inicio', 'pantallaTurismo', 'buscador', 'pantallaOrientacion', 'pantallaApoyo', 'pantallaFinal'];
   const pantallas = ids.map(id => document.getElementById(id));
-  function mostrar(id) {
+  function mostrar(id, registrar = true) {
+    if (!ids.includes(id)) return;
+    if (registrar && location.hash !== "#" + id) {
+      history.pushState(null, "", "#" + id);
+    }
     pantallas.forEach(pantalla => {
       if (pantalla) pantalla.style.display = pantalla.id === id
         ? (id === 'inicio' ? 'flex' : 'block') : 'none';
@@ -919,18 +923,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     window.scrollTo({top:0, behavior:'instant'});
   }
-  // Abrir desde Planifica el tema indicado por el enlace.
-  function abrirTemaDesdeEnlace() {
-    const tema = location.hash.slice(1);
-    const permitidos = ['llegada', 'salud', 'dinero', 'alojamiento', 'transporte'];
-    if (!permitidos.includes(tema)) return;
-    const boton = document.querySelector('.chip[data-key="' + tema + '"]');
-    if (!boton) return;
-    mostrar('buscador');
-    boton.click();
+  window.aijMostrarPantalla = mostrar;
+  function restaurarPantalla() {
+    const id = location.hash.slice(1) || 'inicio';
+    if (ids.includes(id)) mostrar(id, false);
   }
-  window.addEventListener('hashchange', abrirTemaDesdeEnlace);
-  abrirTemaDesdeEnlace();
+  window.addEventListener('hashchange', restaurarPantalla);
+  restaurarPantalla();
+  // Los enlaces a temas se resuelven en aij-conexiones-navegacion.
   const rutas = {
     arrowDown:'pantallaTurismo',
     continuarDesdeTurismo:'buscador',
@@ -989,7 +989,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  const safeAnchor=validSource&&(/^(tur-[a-z0-9-]+|paso-\d+|plan-ayuda-practica)$/).test(requested)?requested:'';
  function sourceHref(){return source+'.html'+(safeAnchor?'#'+safeAnchor:'');}
  function showHelp(){
-  ['inicio','pantallaTurismo','buscador','pantallaOrientacion','pantallaApoyo','pantallaFinal'].forEach(id=>{const node=document.getElementById(id);if(node)node.style.display=id==='buscador'?'block':'none';});
+  window.aijMostrarPantalla('buscador', false);
  }
  function decorate(){
   if(!content.textContent.trim())return;
@@ -1028,6 +1028,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const button=Array.from(document.querySelectorAll('.chip[data-key]')).find(b=>b.dataset.key===route[0]);
   if(!button)return;
   showHelp();button.click();result.classList.remove('oculto');
+  const footer=document.getElementById('aijLegalFooter');if(footer)footer.style.display='none';
   const details=Array.from(content.querySelectorAll('details'));
   const selected=route[1]?details.find(d=>{const s=d.querySelector('summary');return s&&normalize(s.textContent).includes(normalize(route[1]));}):null;
   if(selected){let node=selected;while(node&&node!==content){if(node.tagName==='DETAILS')node.open=true;node=node.parentElement;}}

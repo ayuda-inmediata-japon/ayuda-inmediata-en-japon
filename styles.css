@@ -1810,3 +1810,15 @@ font-size:13px;
   font-weight:800;
   line-height:1;
 }
+
+/* Ajustes de lectura, teclado y ventanas pequeñas. */
+img { max-width:100%; height:auto; }
+.subtema-content, .servicio-modal-texto { overflow-wrap:anywhere; }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible {
+  outline:3px solid #ffd08a; outline-offset:3px;
+}
+.servicio-modal-box { height:auto; max-height:90dvh; }
+.servicio-modal-titulo { padding-right:32px; }
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+}

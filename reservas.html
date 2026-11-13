@@ -612,8 +612,8 @@ function oneOpen(selector){
 oneOpen('details.category');
 document.querySelectorAll('details.category').forEach(cat=>{
   cat.addEventListener('toggle',()=>{
-    if(!cat.open)return;
-    document.querySelectorAll('details.provider').forEach(p=>p.open=false);
+    if(cat.open)return;
+    cat.querySelectorAll('details.provider').forEach(p=>p.open=false);
   });
   const providers=cat.querySelectorAll('details.provider');
   providers.forEach(p=>p.addEventListener('toggle',()=>{
@@ -625,8 +625,10 @@ function openReservationCategory(){
  const aliases = {transporte:'trenes', alojamiento:'hoteles', esim:'internet', 'seguro-viaje':'seguro', disney:'atracciones', universal:'atracciones', 'ghibli-park':'atracciones', borderless:'atracciones', planets:'atracciones', 'museo-ghibli':'atracciones', kaiyukan:'atracciones', 'shibuya-sky':'atracciones', skytree:'atracciones'};
  const fragment=location.hash.slice(1);
  const el=document.getElementById(aliases[fragment] || fragment);
- if(el && el.matches('details.category')){
-   el.open=true;
+ if(el){
+   const ancestors=[];
+   for(let node=el;node;node=node.parentElement)if(node.tagName==='DETAILS')ancestors.unshift(node);
+   ancestors.forEach(node=>node.open=true);
    requestAnimationFrame(()=>el.scrollIntoView({block:'start'}));
  }
 }
@@ -647,7 +649,10 @@ document.addEventListener('click',event=>{
    });
 });
 
-document.querySelectorAll('.options-toggle').forEach(btn=>{
+document.querySelectorAll('.options-toggle').forEach((btn, index)=>{
+  const panelId='provider-options-'+index;
+  btn.nextElementSibling.id=panelId;
+  btn.setAttribute('aria-controls',panelId);
   btn.addEventListener('click',()=>{
     const panel=btn.nextElementSibling;
     const willOpen=panel.hasAttribute('hidden');

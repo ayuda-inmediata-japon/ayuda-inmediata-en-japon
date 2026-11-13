@@ -465,7 +465,7 @@ Kono nimotsu o hoteru ni okuritai desu<br><br>
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón', url:window.location.href})"
 style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -1282,7 +1282,7 @@ Si puedes explicar tus síntomas con calma, todo será más fácil.
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón', url:window.location.href})"
 style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -1491,7 +1491,7 @@ En caso de desastre, busca los puntos de evacuación señalizados:
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón', url:window.location.href})"
 style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:8px;">
 ↗ Compartir
 </button>
@@ -1854,7 +1854,7 @@ Si no aparece ese mismo día, vuelve a preguntar más adelante.
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
 
-<button onclick="navigator.share({title:'Ayuda Inmediata en Japón',url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda Inmediata en Japón',url:window.location.href})"
 style="padding:8px 14px;border-radius:6px;border:1px solid #444;background:#1e1e1e;color:#ddd;">
 ↗ Compartir
 </button>
@@ -2261,7 +2261,7 @@ Si llevas maletas grandes o viajas muy cansado, a veces un taxi puede ser mejor 
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón', url:window.location.href})"
 style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -2610,7 +2610,7 @@ Reserva con anticipación en temporadas altas (sakura, otoño, feriados).
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón', url:window.location.href})"
 style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -2949,7 +2949,7 @@ En Japón conviene llevar siempre algo de efectivo. No todos los lugares aceptan
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón', url:window.location.href})"
 style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -3252,7 +3252,7 @@ En Japón respeta las normas, mantén el orden y evita hacer ruido en espacios p
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón', url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón', url:window.location.href})"
 style="flex:1;background:#ddd;color:#2a6edb;padding:8px 0;font-size:14px;border:none;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -3533,7 +3533,7 @@ Haz tus trámites lo antes posible después de llegar. Muchos procesos en Japón
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
 style="padding:8px 14px;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -3886,7 +3886,7 @@ Primero intenta resolver con la información gratuita. Si tu caso es más delica
 
 <div style="display:flex;gap:10px;flex-wrap:wrap;">
 
-<button onclick="navigator.share({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
+<button onclick="compartirPagina({title:'Ayuda en Japón',text:document.title,url:window.location.href})"
 style="padding:8px 14px;border-radius:6px;">
 ↗ Compartir
 </button>
@@ -4455,9 +4455,12 @@ const servicioModalTitulo = document.getElementById("servicioModalTitulo");
 const servicioModalTexto = document.getElementById("servicioModalTexto");
 const servicioModalWhatsapp = document.getElementById("servicioModalWhatsapp");
 
+let focoAntesDelModal = null;
+
 function abrirServicioModal(titulo, html, whatsappUrl, btnClass = "general") {
   if (!servicioModal) return;
 
+  focoAntesDelModal = document.activeElement;
   servicioModalTitulo.textContent = titulo;
   servicioModalTexto.innerHTML = html;
   servicioModalWhatsapp.href = whatsappUrl;
@@ -4467,12 +4470,14 @@ function abrirServicioModal(titulo, html, whatsappUrl, btnClass = "general") {
 
   servicioModal.classList.remove("oculto");
   document.body.classList.add("modal-abierto");
+  cerrarServicioModal?.focus();
 }
 
 function cerrarModalServicio() {
   if (!servicioModal) return;
   servicioModal.classList.add("oculto");
   document.body.classList.remove("modal-abierto");
+  focoAntesDelModal?.focus();
 }
 
 if (btnGeneral) {
@@ -4547,6 +4552,10 @@ if (servicioModal) {
   });
 }
 function irAApoyo() {
+  if (window.aijMostrarPantalla) {
+    window.aijMostrarPantalla("pantallaApoyo");
+    return;
+  }
   const inicio = document.getElementById("inicio");
   const buscador = document.getElementById("buscador");
   const pantallaApoyo = document.getElementById("pantallaApoyo");
@@ -4575,11 +4584,11 @@ document.addEventListener("click", function(e) {
   if (!summary) return;
 
   const current = summary.parentElement;
-  const container = current.closest(".subtema-contenido, .contenido, section, body");
+  const container = current.parentElement;
 
   if (!container) return;
 
-  container.querySelectorAll("details").forEach(d => {
+  Array.from(container.children).filter(d => d.tagName === "DETAILS").forEach(d => {
     if (d !== current) {
       d.removeAttribute("open");
     }
@@ -4669,3 +4678,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 })();
+
+// Compartir también funciona en navegadores sin Web Share.
+async function compartirPagina(datos) {
+  try {
+    if (navigator.share) {
+      await navigator.share(datos);
+    } else if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(datos.url);
+      alert("Enlace copiado. Puedes pegarlo para compartir la guía.");
+    } else {
+      window.prompt("Copia este enlace para compartir la guía:", datos.url);
+    }
+  } catch (error) {
+    if (error.name !== "AbortError") {
+      window.prompt("Copia este enlace para compartir la guía:", datos.url);
+    }
+  }
+}
+
+// Mantener el teclado dentro del diálogo mientras está abierto.
+document.addEventListener("keydown", (event) => {
+  if (!servicioModal || servicioModal.classList.contains("oculto")) return;
+  if (event.key === "Escape") { cerrarModalServicio(); return; }
+  if (event.key !== "Tab") return;
+  const controles = Array.from(servicioModal.querySelectorAll('button, a[href], input, [tabindex="0"]'))
+    .filter(control => !control.disabled && control.getClientRects().length);
+  const primero = controles[0], ultimo = controles[controles.length - 1];
+  if (event.shiftKey && document.activeElement === primero) {
+    event.preventDefault(); ultimo?.focus();
+  } else if (!event.shiftKey && document.activeElement === ultimo) {
+    event.preventDefault(); primero?.focus();
+  }
+});

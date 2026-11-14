@@ -1,6 +1,54 @@
 {
-  "updated_at": "2026-11-14T15:49:52.818564+00:00",
+  "updated_at": "2026-11-14T22:25:32.024131+00:00",
   "items": [
+    {
+      "id": "3b91d09f2ca3c52f7cc0",
+      "title": "【地震情報】熊本県で震度3 津波の心配なし(06:17）",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76036",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T21:53:10+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "98a0c935f8f741636b2e",
+      "title": "アメリカ 航空機運航停止の影響で14日も混乱続く",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76032",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T21:31:25+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "d10f7dc70147511c821c",
+      "title": "経産省とアジア開発銀行 アジアの原発導入支援 協力覚書で調整",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76028",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T21:05:00+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "b9ac0e4a08e44acc3236",
+      "title": "枚方女児死亡 「以前から夫が娘殴るの見た」逮捕前に母親説明",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de76000",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T21:03:00+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "aabe78cc6dad088377de",
+      "title": "ラグビー日本代表 イングランドに13トライ奪われ大敗【詳報】",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75976",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T20:29:22+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "9f779adb9ba997d38d99",
+      "title": "ASEAN首脳会議開幕へ トランプ大統領のアジアへの姿勢にも注目",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75995",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T20:12:00+00:00",
+      "language": "ja"
+    },
     {
       "id": "9f56a955bf3db6eb376e",
       "title": "高市首相 東南アジアなどと「アジア版IEA」創設を提唱で調整",
@@ -18,19 +66,11 @@
       "language": "ja"
     },
     {
-      "id": "aabe78cc6dad088377de",
-      "title": "ラグビー日本代表×イングランド【速報予定 1:40】聖地で対戦",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75976",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T15:17:15+00:00",
-      "language": "ja"
-    },
-    {
       "id": "7e2485d2fdd3cd2ed0b9",
-      "title": "サッカー日本代表 ブラジルに勝利 W杯の雪辱果たす",
+      "title": "サッカー日本代表 ブラジルに勝利 W杯の雪辱果たす 通算2勝目",
       "url": "https://news.web.nhk/newsweb/na/nd-20261114de75990",
       "source": "NHK Noticias",
-      "published_at": "2026-11-14T15:04:36+00:00",
+      "published_at": "2026-11-14T15:04:00+00:00",
       "language": "ja"
     },
     {

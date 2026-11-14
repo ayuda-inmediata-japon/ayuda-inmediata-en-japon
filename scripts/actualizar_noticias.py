@@ -16,7 +16,22 @@ SOURCES = [
     ("NHK Noticias", "https://news.web.nhk/n-data/conf/na/rss/cat0.xml"),
     ("NHK Noticias (alternativa)", "https://www.nhk.or.jp/rss/news/cat0.xml"),
 ]
-MAX_ITEMS = 60
+MAX_ITEMS = 30
+# Filtro conservador: solo titulares vinculados con la vida en Japón.
+CATEGORIES = [
+    ("Inmigración y residencia", ("外国人", "在留", "入管", "ビザ", "永住", "技能実習", "特定技能", "不法滞在")),
+    ("Trabajo y salarios", ("最低賃金", "賃上げ", "賃金", "雇用", "労働", "求人", "失業", "ハローワーク")),
+    ("Costo de vida", ("物価", "値上げ", "電気料金", "ガス料金", "食料品", "家計", "給付金", "消費税")),
+    ("Trámites y servicios", ("年金", "健康保険", "マイナンバー", "住民税", "社会保険", "手続き")),
+    ("Cursos y capacitación", ("日本語教室", "外国人向け", "職業訓練", "研修", "講習")),
+    ("Seguridad y emergencias", ("地震", "津波", "台風", "避難指示", "大雨特別警報", "詐欺", "外国人犯罪")),
+]
+def category(title):
+    for label, terms in CATEGORIES:
+        if any(term in title for term in terms):
+            return label
+    return None
+
 
 def get(url):
     request = urllib.request.Request(url, headers={"User-Agent": "AyudaInmediataJaponNews/1.0"})
@@ -59,7 +74,14 @@ def main():
     if not successful:
         print("Sin fuentes disponibles: se conserva el archivo anterior")
         return
-    selected = sorted(items.values(), key=lambda x: x.get("published_at") or "", reverse=True)[:MAX_ITEMS]
+    # Refiltrar también noticias antiguas: no conservar deportes o política general.
+    selected = []
+    for item in sorted(items.values(), key=lambda x: x.get("published_at") or "", reverse=True):
+        label = category(item.get("title", ""))
+        if label:
+            selected.append({**item, "category_es": label})
+        if len(selected) >= MAX_ITEMS:
+            break
     if selected == previous.get("items", []):
         print("No hay noticias nuevas")
         return

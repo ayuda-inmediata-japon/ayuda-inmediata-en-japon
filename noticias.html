@@ -193,6 +193,7 @@
       font-size: 13px;
       margin-top: 24px;
     }
+    .informacion-complementaria { margin-top: 35px; }
     .noticia-automatica { padding: 13px 16px; border: 1px solid #335b39; border-radius: 12px; margin: 10px 0; background: #102115; }
     .noticia-automatica a { color: #89f190; font-weight: 700; line-height: 1.5; }
     .noticia-automatica .fecha { margin: 8px 0 0; }
@@ -220,37 +221,12 @@
   <nav aria-label="Volver"><a class="boton" href="index.html">← Volver a la portada</a></nav>
 
 
-  <section aria-labelledby="criterios-noticias">
-    <h2 class="titulo-seccion" id="criterios-noticias">📍 Noticias que importan a los extranjeros</h2>
-    <p class="intro" style="text-align:center">Seleccionamos información útil para residentes, trabajadores, estudiantes y visitantes. No publicamos todas las noticias generales de Japón.</p>
-    <div class="noticia-automatica" style="line-height:1.7">
-      💴 <strong>Economía:</strong> costo de vida, precios, impuestos y ayudas<br>
-      💼 <strong>Empleo:</strong> salarios, derechos laborales y oportunidades<br>
-      🛂 <strong>Residencia:</strong> visados, inmigración y trámites<br>
-      🏥 <strong>Vida diaria:</strong> seguros, pensiones y servicios<br>
-      ⚖️ <strong>Seguridad:</strong> delitos, estafas y cambios legales relevantes, sin generalizaciones por nacionalidad<br>
-      📚 <strong>Capacitación:</strong> cursos de japonés y formación para extranjeros<br>
-      🚨 <strong>Emergencias:</strong> alertas que requieran tomar medidas
-    </div>
-    <p class="intro" style="text-align:center">Cada artículo debe explicar qué cambió, a quién afecta, desde cuándo y dónde consultar la fuente oficial. Los titulares generales de NHK en japonés quedan como referencia opcional, no como nuestras noticias principales.</p>
-  </section>
-
-  <section aria-labelledby="fuentes-espanol">
-    <h2 class="titulo-seccion" id="fuentes-espanol">🌎 Fuentes oficiales en español para extranjeros</h2>
-    <p class="intro" style="text-align:center">Avisos y orientación sobre Japón en español. Consulta la fecha de cada publicación: no todos estos portales son servicios de noticias diarias.</p>
-    <div class="noticia-automatica"><a href="https://www3.nhk.or.jp/nhkworld/es/" target="_blank" rel="noopener noreferrer">📻 NHK WORLD-JAPAN en español</a><p class="fecha">Información y programación de NHK en español.</p></div>
-    <div class="noticia-automatica"><a href="https://www.moj.go.jp/isa/support/portal/index" target="_blank" rel="noopener noreferrer">🛂 Inmigración de Japón: portal para residentes extranjeros</a><p class="fecha">Guías y comunicaciones gubernamentales; incluye recursos en español.</p></div>
-    <div class="noticia-automatica"><a href="https://www.japan.travel/es/es/plan/security-and-emergencies/" target="_blank" rel="noopener noreferrer">🚨 JNTO: seguridad y emergencias en español</a><p class="fecha">Información oficial para visitantes sobre terremotos, tifones y seguridad.</p></div>
-    <div class="noticia-automatica"><a href="https://www.es.emb-japan.go.jp/itpr_es/00_000012.html" target="_blank" rel="noopener noreferrer">🧳 Embajada de Japón en España: visitar Japón</a><p class="fecha">Información consular sobre visados, llegada y requisitos de viaje.</p></div>
-    <div class="noticia-automatica"><a href="https://www.exteriores.gob.es/Embajadas/tokio/es/ViajarA/Paginas/Recomendaciones-de-viaje.aspx" target="_blank" rel="noopener noreferrer">📢 Embajada de España en Tokio: recomendaciones de viaje</a><p class="fecha">Avisos y recomendaciones oficiales para viajeros.</p></div>
-  </section>
-
-  <h2 class="titulo-seccion">📌 Noticias explicadas en español</h2>
-  <p class="intro" style="text-align:center">Información útil para quienes viven en Japón o están de visita. Cada artículo incluye su fecha y fuente oficial.</p>
+  <h2 class="titulo-seccion">📰 Noticias para extranjeros en Japón</h2>
+  <p class="intro" style="text-align:center">Información en español sobre residencia, trabajo y vida diaria. Abre cada noticia para conocer los detalles y consultar su fuente oficial.</p>
 
   <!-- NOTICIA 1 -->
 
-  <details>
+  <details open>
 
     <summary>
       🛂 Cambiaron las tarifas de trámites de residencia
@@ -464,6 +440,31 @@
 
     </div>
   </details>
+  <section aria-labelledby="criterios-noticias" class="informacion-complementaria">
+    <h2 class="titulo-seccion" id="criterios-noticias">📍 Noticias que importan a los extranjeros</h2>
+    <p class="intro" style="text-align:center">Seleccionamos información útil para residentes, trabajadores, estudiantes y visitantes. No publicamos todas las noticias generales de Japón.</p>
+    <div class="noticia-automatica" style="line-height:1.7">
+      💴 <strong>Economía:</strong> costo de vida, precios, impuestos y ayudas<br>
+      💼 <strong>Empleo:</strong> salarios, derechos laborales y oportunidades<br>
+      🛂 <strong>Residencia:</strong> visados, inmigración y trámites<br>
+      🏥 <strong>Vida diaria:</strong> seguros, pensiones y servicios<br>
+      ⚖️ <strong>Seguridad:</strong> delitos, estafas y cambios legales relevantes, sin generalizaciones por nacionalidad<br>
+      📚 <strong>Capacitación:</strong> cursos de japonés y formación para extranjeros<br>
+      🚨 <strong>Emergencias:</strong> alertas que requieran tomar medidas
+    </div>
+    <p class="intro" style="text-align:center">Cada artículo debe explicar qué cambió, a quién afecta, desde cuándo y dónde consultar la fuente oficial. Los titulares generales de NHK en japonés quedan como referencia opcional, no como nuestras noticias principales.</p>
+  </section>
+
+  <section aria-labelledby="fuentes-espanol" class="informacion-complementaria">
+    <h2 class="titulo-seccion" id="fuentes-espanol">🌎 Fuentes oficiales en español para extranjeros</h2>
+    <p class="intro" style="text-align:center">Avisos y orientación sobre Japón en español. Consulta la fecha de cada publicación: no todos estos portales son servicios de noticias diarias.</p>
+    <div class="noticia-automatica"><a href="https://www3.nhk.or.jp/nhkworld/es/" target="_blank" rel="noopener noreferrer">📻 NHK WORLD-JAPAN en español</a><p class="fecha">Información y programación de NHK en español.</p></div>
+    <div class="noticia-automatica"><a href="https://www.moj.go.jp/isa/support/portal/index" target="_blank" rel="noopener noreferrer">🛂 Inmigración de Japón: portal para residentes extranjeros</a><p class="fecha">Guías y comunicaciones gubernamentales; incluye recursos en español.</p></div>
+    <div class="noticia-automatica"><a href="https://www.japan.travel/es/es/plan/security-and-emergencies/" target="_blank" rel="noopener noreferrer">🚨 JNTO: seguridad y emergencias en español</a><p class="fecha">Información oficial para visitantes sobre terremotos, tifones y seguridad.</p></div>
+    <div class="noticia-automatica"><a href="https://www.es.emb-japan.go.jp/itpr_es/00_000012.html" target="_blank" rel="noopener noreferrer">🧳 Embajada de Japón en España: visitar Japón</a><p class="fecha">Información consular sobre visados, llegada y requisitos de viaje.</p></div>
+    <div class="noticia-automatica"><a href="https://www.exteriores.gob.es/Embajadas/tokio/es/ViajarA/Paginas/Recomendaciones-de-viaje.aspx" target="_blank" rel="noopener noreferrer">📢 Embajada de España en Tokio: recomendaciones de viaje</a><p class="fecha">Avisos y recomendaciones oficiales para viajeros.</p></div>
+  </section>
+
   <details>
     <summary>🗞️ Consultar titulares recientes de NHK en japonés (opcional)</summary>
     <div class="noticia">

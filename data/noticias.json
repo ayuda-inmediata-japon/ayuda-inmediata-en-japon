@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T22:25:32.024131+00:00",
+  "updated_at": "2026-11-14T23:03:35.098848+00:00",
   "items": [
     {
       "id": "3b91d09f2ca3c52f7cc0",
@@ -7,55 +7,8 @@
       "url": "https://news.web.nhk/newsweb/na/nd-20261115de76036",
       "source": "NHK Noticias",
       "published_at": "2026-11-14T21:53:10+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "98a0c935f8f741636b2e",
-      "title": "アメリカ 航空機運航停止の影響で14日も混乱続く",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76032",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T21:31:25+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "d10f7dc70147511c821c",
-      "title": "経産省とアジア開発銀行 アジアの原発導入支援 協力覚書で調整",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76028",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T21:05:00+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "b9ac0e4a08e44acc3236",
-      "title": "枚方女児死亡 「以前から夫が娘殴るの見た」逮捕前に母親説明",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de76000",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T21:03:00+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "aabe78cc6dad088377de",
-      "title": "ラグビー日本代表 イングランドに13トライ奪われ大敗【詳報】",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75976",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T20:29:22+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "9f779adb9ba997d38d99",
-      "title": "ASEAN首脳会議開幕へ トランプ大統領のアジアへの姿勢にも注目",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75995",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T20:12:00+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "9f56a955bf3db6eb376e",
-      "title": "高市首相 東南アジアなどと「アジア版IEA」創設を提唱で調整",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de76011",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T15:46:05+00:00",
-      "language": "ja"
+      "language": "ja",
+      "category_es": "Seguridad y emergencias"
     },
     {
       "id": "25206d831e572cad7980",
@@ -63,15 +16,8 @@
       "url": "https://news.web.nhk/newsweb/na/nd-20261115de76024",
       "source": "NHK Noticias",
       "published_at": "2026-11-14T15:29:59+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "7e2485d2fdd3cd2ed0b9",
-      "title": "サッカー日本代表 ブラジルに勝利 W杯の雪辱果たす 通算2勝目",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75990",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T15:04:00+00:00",
-      "language": "ja"
+      "language": "ja",
+      "category_es": "Seguridad y emergencias"
     },
     {
       "id": "82d1c2daf43329d48841",
@@ -79,95 +25,8 @@
       "url": "https://news.web.nhk/newsweb/na/nd-20261114de75993",
       "source": "NHK Noticias",
       "published_at": "2026-11-14T13:08:50+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "b65e03681e0ae832e9c5",
-      "title": "全米の空港で運航停止措置 欠航1万便超 解除後も混乱続く",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75764",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T09:26:00+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "d149cd6bb0d4d5defd1e",
-      "title": "大阪 枚方女児死亡 体に古いもの含め数10か所のあざ",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75748",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T08:44:00+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "5595625ca2b45c831c13",
-      "title": "マイクロソフトの接続障害 全面復旧と発表",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75755",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T06:22:15+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "681dfc5648b7c4c52485",
-      "title": "「いつまでも仲よく」横田めぐみさんとの“約束”胸に再会待つ",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75794",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T05:40:56+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "65b9c18e040886c51bd2",
-      "title": "米中ロ3か国首脳会談 19日に初めての開催へ",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75768",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T05:17:20+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "98d6a953cd3dec994128",
-      "title": "タマホーム 不正請求疑いで保険代理業廃業へ 外部調査も検討",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75846",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T04:09:00+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "1f1c2a528274a14444a2",
-      "title": "京成電鉄 予約システムに不正アクセス 最大337万件漏えいか",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75830",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T03:54:02+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "a81fd7990348f3c9714b",
-      "title": "米 ミシシッピ川でクルーズ船にタンカー衝突 救助活動続く",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75761",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-13T21:56:43+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "8d9e79fc0422d0e0dfe5",
-      "title": "エヌビディア先端半導体輸出 ラトニック商務長官の責任論浮上",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75753",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-13T21:20:07+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "c79942698c4fb4c8126f",
-      "title": "神奈川 海老名 2人死亡 ひき逃げ疑いで運転手逮捕 容疑否認",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75759",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-13T21:08:31+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "eed19d36d13bebe4b860",
-      "title": "高市首相“支援金対象5割以上” 野党“さらなる具体像を”",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75743",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-13T20:32:00+00:00",
-      "language": "ja"
+      "language": "ja",
+      "category_es": "Inmigración y residencia"
     }
   ]
 }

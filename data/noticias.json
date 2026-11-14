@@ -1,6 +1,62 @@
 {
-  "updated_at": "2026-11-14T06:24:39.660201+00:00",
+  "updated_at": "2026-11-14T15:49:52.818564+00:00",
   "items": [
+    {
+      "id": "9f56a955bf3db6eb376e",
+      "title": "高市首相 東南アジアなどと「アジア版IEA」創設を提唱で調整",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de76011",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T15:46:05+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "25206d831e572cad7980",
+      "title": "【地震速報】熊本県で震度3 津波の心配なし",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76024",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T15:29:59+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "aabe78cc6dad088377de",
+      "title": "ラグビー日本代表×イングランド【速報予定 1:40】聖地で対戦",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75976",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T15:17:15+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "7e2485d2fdd3cd2ed0b9",
+      "title": "サッカー日本代表 ブラジルに勝利 W杯の雪辱果たす",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75990",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T15:04:36+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "82d1c2daf43329d48841",
+      "title": "杉原千畝「命のビザ」パスポートの複製 生存のユダヤ人に寄贈",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75993",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T13:08:50+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "b65e03681e0ae832e9c5",
+      "title": "全米の空港で運航停止措置 欠航1万便超 解除後も混乱続く",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75764",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T09:26:00+00:00",
+      "language": "ja"
+    },
+    {
+      "id": "d149cd6bb0d4d5defd1e",
+      "title": "大阪 枚方女児死亡 体に古いもの含め数10か所のあざ",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75748",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-14T08:44:00+00:00",
+      "language": "ja"
+    },
     {
       "id": "5595625ca2b45c831c13",
       "title": "マイクロソフトの接続障害 全面復旧と発表",
@@ -15,14 +71,6 @@
       "url": "https://news.web.nhk/newsweb/na/nd-20261114de75794",
       "source": "NHK Noticias",
       "published_at": "2026-11-14T05:40:56+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "b65e03681e0ae832e9c5",
-      "title": "アメリカ航空当局 全米の運航停止措置解除 8000便超欠航",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75764",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T05:40:05+00:00",
       "language": "ja"
     },
     {
@@ -47,14 +95,6 @@
       "url": "https://news.web.nhk/newsweb/na/nd-20261114de75830",
       "source": "NHK Noticias",
       "published_at": "2026-11-14T03:54:02+00:00",
-      "language": "ja"
-    },
-    {
-      "id": "d149cd6bb0d4d5defd1e",
-      "title": "大阪 枚方 女児死亡 父親「しつけで殴ることも」逮捕前説明",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75748",
-      "source": "NHK Noticias",
-      "published_at": "2026-11-14T02:51:00+00:00",
       "language": "ja"
     },
     {

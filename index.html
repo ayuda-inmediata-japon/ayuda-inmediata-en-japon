@@ -289,7 +289,23 @@ details.subtema-card, #resultado, #resultadoContent > section,
  #pantallaTurismo .aij-accesos-grid{row-gap:1px!important;column-gap:6px!important}
  #pantallaTurismo .aij-accesos-grid a{font-size:clamp(12px,3.35vw,15px)!important;line-height:1.25!important;padding:2px 1px!important}
 }
-</style></head>
+</style><style id="aij-accesos-botones-2026">
+/* Accesos secundarios claros, compactos y táctiles. */
+#pantallaTurismo .aij-accesos-directos{margin:9px 0 0!important;padding:0!important}
+#pantallaTurismo .aij-accesos-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px!important;align-items:stretch!important}
+#pantallaTurismo .aij-accesos-grid a{
+ display:flex!important;align-items:center;justify-content:center;text-align:center;
+ min-height:43px;padding:7px 8px!important;border:1px solid #87bdb2;
+ border-radius:11px;background:#142b29;color:#c1f7df!important;
+ text-decoration:none!important;font-size:clamp(12px,3.3vw,15px)!important;
+ font-weight:750!important;line-height:1.2!important;overflow-wrap:break-word;
+}
+#pantallaTurismo .aij-accesos-grid a::after{content:none!important;display:none!important}
+#pantallaTurismo .aij-accesos-grid a:last-child{grid-column:1/-1;color:#ffe29a!important;border-color:#bca66e;background:#29261b}
+#pantallaTurismo .aij-accesos-grid a:focus-visible{outline:3px solid #ffdf87;outline-offset:2px}
+@media(max-width:360px){#pantallaTurismo .aij-accesos-grid a{font-size:12px!important;padding:6px 4px!important}}
+</style>
+</head>
 
 <body>
 
@@ -405,7 +421,7 @@ details.subtema-card, #resultado, #resultadoContent > section,
       <!-- FIN: DESCUBRE JAPÓN -->
 
       <section class="aij-accesos-directos" aria-label="Más información y ayuda">
-        <p class="aij-guia-siguiente">✨ ¿Necesitas más información o ayuda? <strong>Accede directamente:</strong></p>
+        
         <div class="aij-accesos-grid">
           <a href="noticias.html">📰 Noticias importantes</a>
           <a href="#buscador">🚨 Emergencias y trámites</a>

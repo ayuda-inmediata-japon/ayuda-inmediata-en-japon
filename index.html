@@ -313,6 +313,31 @@ details.subtema-card, #resultado, #resultadoContent > section,
 #pantallaTurismo .aij-accesos-grid a::after{content:none!important}
 #pantallaTurismo .aij-accesos-grid a:last-child{grid-column:1/-1;background:#293026!important;color:#ffe0a0!important}
 </style>
+
+<style id="aij-hero-profesional-responsive-2026">
+/* Portada sobria: se conservan el fondo de Tokio y el banner originales. */
+#inicio.hero{padding:clamp(20px,4vw,44px) 16px 34px!important;}
+#inicio .hero-content{max-width:740px!important;}
+#inicio .hero-brand-banner{width:min(100%,560px)!important;max-height:none!important;margin:0 auto clamp(18px,3vw,26px)!important;border-radius:9px;}
+#inicio h1{font-size:clamp(23px,4.5vw,34px)!important;line-height:1.22!important;margin:0 auto 12px!important;font-weight:750!important;text-shadow:0 2px 4px rgba(0,0,0,.75)!important;}
+#inicio .hero-sub{font-size:clamp(15px,2.2vw,18px)!important;line-height:1.5!important;max-width:570px!important;margin:0 auto 20px!important;color:#f4f5f7!important;text-shadow:0 2px 4px rgba(0,0,0,.85)!important;}
+#inicio .hero-contact{margin:0 auto 20px!important;font-size:16px!important;text-shadow:none!important;}
+#inicio .hero-contact-title{color:#fff;font-size:clamp(15px,2.2vw,17px);font-weight:700;margin:0 auto 12px;text-shadow:0 2px 4px #000;}
+#inicio .hero-contact-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;max-width:440px;margin:0 auto;}
+#inicio .hero-contact-actions a{box-sizing:border-box;display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:10px 16px;flex:1 1 160px;border-radius:11px;font-size:16px;font-weight:750;text-decoration:none;text-shadow:none!important;border:1px solid rgba(255,255,255,.8);box-shadow:0 2px 8px rgba(0,0,0,.24);}
+#inicio .hero-contact-email{background:#f7f8fa;color:#132239;}
+#inicio .hero-contact-whatsapp{background:#167a43;color:#fff;}
+#inicio #arrowDown{width:min(100%,440px)!important;max-width:440px!important;min-height:54px!important;background:#b82029!important;color:#fff!important;border:1px solid #f4c9cc!important;border-radius:12px!important;padding:13px 16px!important;font-size:clamp(17px,2.8vw,20px)!important;box-shadow:0 3px 12px rgba(0,0,0,.3)!important;}
+#inicio #arrowDown:hover{background:#9c1b23!important;}
+#inicio .hero-update{font-size:13px!important;margin:15px 0 0!important;color:#e5e5e5!important;}
+@media(max-width:420px){
+ #inicio.hero{padding:18px 14px 26px!important;}
+ #inicio .hero-brand-banner{width:100%!important;margin-bottom:20px!important;}
+ #inicio .hero-contact-actions{gap:8px;}
+ #inicio .hero-contact-actions a{flex:1 1 125px;min-width:0;padding:10px 8px;font-size:15px;}
+}
+@media(prefers-reduced-motion:reduce){#inicio .hero-content,#inicio #arrowDown{animation:none!important;transition:none!important;}}
+</style>
 </head>
 
 <body>
@@ -330,40 +355,22 @@ details.subtema-card, #resultado, #resultadoContent > section,
         alt="Ayuda Inmediata en Japón"
       >
 
-      <h1>Guía gratuita en español para visitar y vivir en Japón</h1>
+      <h1>Guía gratuita en español</h1>
 
       <p class="hero-sub">
-  Organiza tu viaje y encuentra orientación para la vida diaria.
+  Información y orientación gratuita para visitar, vivir y desenvolverte en Japón.
 </p>
 
-<p class="hero-contact">
-  <strong>💬 ¿Tienes dudas? Escríbenos.</strong><br>
-  Te ayudaremos en lo que podamos.<br><br>
-
-  <span style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:10px auto;">
-    <a href="mailto:ayudainmediataenjapon@gmail.com"
-       style="display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;
-       background:#6dff79;color:#102414;border-radius:10px;font-size:14px;
-       font-weight:bold;text-decoration:none;text-shadow:none !important;box-shadow:none !important;">
-      ✉️ Escríbenos por correo
-    </a>
-    <a href="https://wa.me/819084462319?text=Hola%2C%20encontr%C3%A9%20su%20p%C3%A1gina%20Ayuda%20Inmediata%20en%20Jap%C3%B3n%20y%20quisiera%20hacer%20una%20consulta."
-       target="_blank" rel="noopener noreferrer"
-       style="display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;
-       background:#6dff79;color:#102414;border-radius:10px;font-size:14px;
-       font-weight:bold;text-decoration:none;text-shadow:none !important;box-shadow:none !important;">
-      💬 Escríbenos por WhatsApp
-    </a>
-  </span><br>
-
-  <span style="display:inline-block;margin-top:10px;
-    font-size:14px;overflow-wrap:anywhere;">
-    ayudainmediataenjapon@gmail.com
-  </span>
-</p>
+<div class="hero-contact">
+  <p class="hero-contact-title">¿Tienes dudas? Escríbenos.</p>
+  <div class="hero-contact-actions">
+    <a class="hero-contact-email" href="mailto:ayudainmediataenjapon@gmail.com" aria-label="Contactar por correo electrónico">✉️ Correo</a>
+    <a class="hero-contact-whatsapp" href="https://wa.me/819084462319?text=Hola%2C%20encontr%C3%A9%20su%20p%C3%A1gina%20Ayuda%20Inmediata%20en%20Jap%C3%B3n%20y%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">💬 WhatsApp</a>
+  </div>
+</div>
 
       <button id="arrowDown" class="arrow hero-continue" type="button" aria-controls="buscador">
-        👇 Ver todas las secciones
+        Ver todas las secciones →
       </button>
       <p class="hero-update">🔄 Guía en constante mejora</p>
     </div>

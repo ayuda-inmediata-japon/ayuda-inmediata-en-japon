@@ -338,6 +338,30 @@ details.subtema-card, #resultado, #resultadoContent > section,
 }
 @media(prefers-reduced-motion:reduce){#inicio .hero-content,#inicio #arrowDown{animation:none!important;transition:none!important;}}
 </style>
+
+<style id="aij-banner-hero-real-2026">
+/* Banner integrado: iconos dentro del banner, estética rojo/blanco. */
+#inicio.hero{min-height:100svh!important;justify-content:flex-start!important;padding-top:clamp(22px,5vh,55px)!important;}
+#inicio .hero-content{margin:0 auto!important;}
+#inicio .aij-banner-2026{position:relative;width:min(100%,660px);margin:0 auto 18px;overflow:hidden;border-radius:12px;box-shadow:0 5px 18px rgba(0,0,0,.35);aspect-ratio:1.85/1;background:#07101d;}
+#inicio .aij-banner-original{display:block;width:100%;height:100%;object-fit:cover;}
+#inicio .aij-banner-categories{position:absolute;bottom:0;left:0;right:0;min-height:33%;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));align-items:stretch;padding:10px 7px 9px;background:linear-gradient(180deg,rgba(4,9,18,.96),#050b15 30%);color:#fff;}
+#inicio .aij-banner-category{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0 3px;font-size:clamp(8px,1.15vw,12px);font-weight:700;line-height:1.16;min-width:0;}
+#inicio .aij-banner-category + .aij-banner-category{border-left:1px solid rgba(255,255,255,.35);}
+#inicio .aij-banner-icon{display:grid;place-items:center;width:clamp(23px,4.2vw,38px);height:clamp(23px,4.2vw,38px);border-radius:8px;background:#c51f2b;color:#fff;font-size:clamp(15px,2.7vw,25px);line-height:1;}
+#inicio h1{font-size:clamp(23px,4vw,32px)!important;margin:0 auto 10px!important;}
+#inicio .hero-sub{margin-bottom:17px!important;}
+#inicio .hero-contact{margin-bottom:17px!important;}
+#inicio #arrowDown{max-width:440px!important;}
+@media(max-width:600px){
+ #inicio.hero{padding-top:clamp(16px,3vh,32px)!important;}
+ #inicio .aij-banner-2026{width:100%;aspect-ratio:1.68/1;margin-bottom:16px;}
+ #inicio .aij-banner-categories{min-height:35%;padding:7px 3px 6px;}
+ #inicio .aij-banner-category{font-size:clamp(7px,1.85vw,10px);gap:3px;padding:0 1px;overflow-wrap:anywhere;}
+ #inicio .aij-banner-icon{width:clamp(21px,6vw,30px);height:clamp(21px,6vw,30px);font-size:clamp(14px,4vw,20px);border-radius:6px;}
+ #inicio .hero-sub{font-size:clamp(15px,4vw,17px)!important;}
+}
+</style>
 </head>
 
 <body>
@@ -349,11 +373,18 @@ details.subtema-card, #resultado, #resultadoContent > section,
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-      <img
-        src="Img/banner-premium.webp"
-        class="hero-brand-banner"
-        alt="Ayuda Inmediata en Japón"
-      >
+      <div class="aij-banner-2026" role="img" aria-label="Ayuda Inmediata en Japón: turismo, vida diaria, trámites, emergencias, idiomas, transporte y apoyo para extranjeros">
+        <img src="Img/banner-premium.webp" alt="" class="aij-banner-original">
+        <div class="aij-banner-categories" aria-hidden="true">
+          <span class="aij-banner-category"><b class="aij-banner-icon">✈</b><span>Turismo</span></span>
+          <span class="aij-banner-category"><b class="aij-banner-icon">●</b><span>Vida diaria</span></span>
+          <span class="aij-banner-category"><b class="aij-banner-icon">▤</b><span>Trámites</span></span>
+          <span class="aij-banner-category"><b class="aij-banner-icon">✚</b><span>Emergencias<br>y seguridad</span></span>
+          <span class="aij-banner-category"><b class="aij-banner-icon">文</b><span>Idiomas<br>y traducción</span></span>
+          <span class="aij-banner-category"><b class="aij-banner-icon">▣</b><span>Lugares y<br>transporte</span></span>
+          <span class="aij-banner-category"><b class="aij-banner-icon">♟</b><span>Apoyo para<br>extranjeros</span></span>
+        </div>
+      </div>
 
       <h1>Guía gratuita en español</h1>
 

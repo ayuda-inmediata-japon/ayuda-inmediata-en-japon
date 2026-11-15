@@ -264,6 +264,20 @@
       .aij-fuentes-grid > a:last-child:nth-child(odd) { width: calc((100% - 7px) / 2); }
     }
     .aij-noticias-tarjetas > details[open]:last-child:nth-child(odd) { width: 100%; }
+
+    /* Centrar la última tarjeta impar de titulares y fuentes. */
+    .aij-noticias-tarjetas > details:last-child:nth-child(odd),
+    .aij-fuentes-grid > a:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      width: calc(50% - 5px);
+      justify-self: center;
+    }
+    .aij-noticias-tarjetas > details[open]:last-child:nth-child(odd) { width: 100%; }
+    @media (max-width: 600px) {
+      .aij-noticias-tarjetas > details:last-child:nth-child(odd),
+      .aij-fuentes-grid > a:last-child:nth-child(odd) { width: calc(50% - 3.5px); }
+      .aij-noticias-tarjetas > details[open]:last-child:nth-child(odd) { width: 100%; }
+    }
   </style>
 </head>
 

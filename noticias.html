@@ -213,6 +213,13 @@
       summary { padding: 12px 35px 12px 12px; font-size: 15px; line-height: 1.3; }
       summary::after { right: 12px; top: 6px; font-size: 24px; }
     }
+
+    /* Tarjetas uniformes: la información secundaria queda plegada. */
+    .recurso-desplegable summary { background:#162e2a; border-radius:12px; color:#baf5da; }
+    .aij-temas-grid,.aij-fuentes-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+    .aij-temas-grid > div,.aij-fuentes-grid > a { display:flex; flex-direction:column; justify-content:center; min-height:70px; border:1px solid #83c8b5; border-radius:11px; background:#17302d; color:#d6f8e9; padding:10px; text-align:center; text-decoration:none; font-size:14px; line-height:1.3; }
+    .aij-temas-grid small,.aij-fuentes-grid small { display:block; font-size:12px; color:#c4d6d0; margin-top:5px; }
+    @media(max-width:390px) { .aij-temas-grid > div,.aij-fuentes-grid > a {font-size:12px;padding:7px;} }
   </style>
 </head>
 
@@ -456,29 +463,33 @@
 
     </div>
   </details>
-  <section aria-labelledby="criterios-noticias" class="informacion-complementaria">
-    <h2 class="titulo-seccion" id="criterios-noticias">📍 Noticias que importan a los extranjeros</h2>
-    <p class="intro" style="text-align:center">Seleccionamos información útil para residentes, trabajadores, estudiantes y visitantes. No publicamos todas las noticias generales de Japón.</p>
-    <div class="noticia-automatica" style="line-height:1.7">
-      💴 <strong>Economía:</strong> costo de vida, precios, impuestos y ayudas<br>
-      💼 <strong>Empleo:</strong> salarios, derechos laborales y oportunidades<br>
-      🛂 <strong>Residencia:</strong> visados, inmigración y trámites<br>
-      🏥 <strong>Vida diaria:</strong> seguros, pensiones y servicios<br>
-      ⚖️ <strong>Seguridad:</strong> delitos, estafas y cambios legales relevantes, sin generalizaciones por nacionalidad<br>
-      📚 <strong>Capacitación:</strong> cursos de japonés y formación para extranjeros<br>
-      🚨 <strong>Emergencias:</strong> alertas que requieran tomar medidas
-    </div>
-    <p class="intro" style="text-align:center">Cada artículo debe explicar qué cambió, a quién afecta, desde cuándo y dónde consultar la fuente oficial. Los titulares generales de NHK en japonés quedan como referencia opcional, no como nuestras noticias principales.</p>
-  </section>
-
-  <section aria-labelledby="fuentes-espanol" class="informacion-complementaria">
-    <h2 class="titulo-seccion" id="fuentes-espanol">🌎 Fuentes oficiales en español para extranjeros</h2>
-    <p class="intro" style="text-align:center">Avisos y orientación sobre Japón en español. Consulta la fecha de cada publicación: no todos estos portales son servicios de noticias diarias.</p>
-    <div class="noticia-automatica"><a href="https://www3.nhk.or.jp/nhkworld/es/" target="_blank" rel="noopener noreferrer">📻 NHK WORLD-JAPAN en español</a><p class="fecha">Información y programación de NHK en español.</p></div>
-    <div class="noticia-automatica"><a href="https://www.moj.go.jp/isa/support/portal/index" target="_blank" rel="noopener noreferrer">🛂 Inmigración de Japón: portal para residentes extranjeros</a><p class="fecha">Guías y comunicaciones gubernamentales; incluye recursos en español.</p></div>
-    <div class="noticia-automatica"><a href="https://www.japan.travel/es/es/plan/security-and-emergencies/" target="_blank" rel="noopener noreferrer">🚨 JNTO: seguridad y emergencias en español</a><p class="fecha">Información oficial para visitantes sobre terremotos, tifones y seguridad.</p></div>
-    <div class="noticia-automatica"><a href="https://www.es.emb-japan.go.jp/itpr_es/00_000012.html" target="_blank" rel="noopener noreferrer">🧳 Embajada de Japón en España: visitar Japón</a><p class="fecha">Información consular sobre visados, llegada y requisitos de viaje.</p></div>
-    <div class="noticia-automatica"><a href="https://www.exteriores.gob.es/Embajadas/tokio/es/ViajarA/Paginas/Recomendaciones-de-viaje.aspx" target="_blank" rel="noopener noreferrer">📢 Embajada de España en Tokio: recomendaciones de viaje</a><p class="fecha">Avisos y recomendaciones oficiales para viajeros.</p></div>
+  <section class="informacion-complementaria" aria-label="Más recursos de noticias">
+    <h2 class="titulo-seccion">📚 Más información y fuentes</h2>
+    <p class="intro" style="text-align:center">Abre la sección que necesites.</p>
+    <details class="recurso-desplegable">
+      <summary>📍 Temas de noticias para extranjeros</summary>
+      <div class="noticia">
+        <div class="aij-temas-grid">
+          <div>💴 <strong>Economía</strong><small>Precios, impuestos y ayudas</small></div>
+          <div>💼 <strong>Empleo</strong><small>Salarios y derechos laborales</small></div>
+          <div>🛂 <strong>Residencia</strong><small>Visados e inmigración</small></div>
+          <div>🏥 <strong>Vida diaria</strong><small>Seguros y pensiones</small></div>
+          <div>⚖️ <strong>Seguridad</strong><small>Estafas y cambios legales</small></div>
+          <div>📚 <strong>Capacitación</strong><small>Cursos y formación</small></div>
+          <div>🚨 <strong>Emergencias</strong><small>Alertas importantes</small></div>
+        </div>
+      </div>
+    </details>
+    <details class="recurso-desplegable">
+      <summary>🌎 Fuentes oficiales en español</summary>
+      <div class="noticia aij-fuentes-grid">
+        <a href="https://www3.nhk.or.jp/nhkworld/es/" target="_blank" rel="noopener noreferrer">📻 NHK WORLD-JAPAN <small>Noticias en español</small></a>
+        <a href="https://www.moj.go.jp/isa/support/portal/index" target="_blank" rel="noopener noreferrer">🛂 Inmigración de Japón <small>Residencia y trámites</small></a>
+        <a href="https://www.japan.travel/es/es/plan/security-and-emergencies/" target="_blank" rel="noopener noreferrer">🚨 JNTO <small>Seguridad y emergencias</small></a>
+        <a href="https://www.es.emb-japan.go.jp/itpr_es/00_000012.html" target="_blank" rel="noopener noreferrer">🧳 Embajada de Japón en España <small>Visados y viajes</small></a>
+        <a href="https://www.exteriores.gob.es/Embajadas/tokio/es/ViajarA/Paginas/Recomendaciones-de-viaje.aspx" target="_blank" rel="noopener noreferrer">📢 Embajada de España en Tokio <small>Recomendaciones para viajeros</small></a>
+      </div>
+    </details>
   </section>
 
   <details>

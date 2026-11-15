@@ -340,26 +340,24 @@ details.subtema-card, #resultado, #resultadoContent > section,
 </style>
 
 <style id="aij-banner-hero-real-2026">
-/* Portada con las dos imágenes originales, sin recortes ni superposiciones. */
-#inicio.hero{box-sizing:border-box;min-height:100svh!important;justify-content:center!important;align-items:center!important;padding:clamp(14px,3vh,32px) clamp(10px,3vw,24px) 24px!important;background-image:linear-gradient(180deg,rgba(0,0,0,.30),rgba(0,0,0,.52)),url("Img/tokio-original-2026.webp")!important;background-position:center!important;background-size:cover!important;}
-#inicio .hero-content{width:100%!important;max-width:850px!important;margin:0 auto!important;padding:0!important;}
-#inicio .aij-banner-2026{display:block;width:100%;max-width:760px;margin:0 auto 18px;overflow:hidden;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.45);}
+#inicio.hero{box-sizing:border-box;min-height:100svh!important;justify-content:center!important;align-items:flex-start!important;padding:clamp(12px,2.5vh,24px) clamp(10px,3vw,24px) 20px!important;background-image:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.45)),url("Img/tokio-original-2026.webp")!important;background-position:center!important;background-size:cover!important;}
+#inicio .hero-content{display:flex!important;flex-direction:column;justify-content:space-evenly;align-items:center;gap:12px;width:100%!important;max-width:760px!important;min-height:calc(100svh - 52px);margin:0 auto!important;padding:0!important;}
+#inicio .aij-banner-2026{display:block;width:100%;max-width:min(760px,95vh);margin:0;overflow:hidden;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.45);}
 #inicio .aij-banner-original{display:block;width:100%;height:auto;max-height:none;object-fit:contain;}
-#inicio h1{font-size:clamp(21px,4.6vw,29px)!important;margin:0 auto 9px!important;line-height:1.2!important;}
-#inicio .hero-sub{font-size:clamp(14px,3.7vw,17px)!important;line-height:1.45!important;margin:0 auto 14px!important;}
-#inicio .hero-contact{margin:0 auto 16px!important;}
-#inicio .hero-contact-title{font-size:14px!important;margin:0 auto 8px!important;}
-#inicio .hero-contact-actions{max-width:360px;gap:8px;}
-#inicio .hero-contact-actions a{min-height:44px;padding:8px 12px;font-size:15px;}
-#inicio #arrowDown{max-width:400px!important;min-height:48px!important;}
-#inicio .hero-update{margin-top:10px!important;}
-@media(max-width:600px){
- #inicio.hero{padding-top:16px!important;padding-bottom:24px!important;}
- #inicio .aij-banner-2026{margin-bottom:16px;}
-}
-@media(max-height:750px) and (min-width:601px){
- #inicio .aij-banner-2026{max-width:min(690px,99vh);}
-}
+#inicio .aij-hero-topics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px;width:100%;max-width:620px;padding:0;margin:0;list-style:none;}
+#inicio .aij-hero-topics li{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;color:#fff;font-size:clamp(9px,2.65vw,13px);font-weight:650;line-height:1.2;white-space:nowrap;text-shadow:0 1px 4px #000;}
+#inicio .aij-hero-topics svg{width:clamp(22px,6vw,32px);height:clamp(22px,6vw,32px);color:#ff2439;}
+#inicio h1{font-size:clamp(20px,5vw,30px)!important;margin:0!important;line-height:1.2!important;font-weight:750!important;}
+#inicio h1::after{content:"";display:block;width:42%;height:3px;border-radius:2px;background:#e62638;margin:8px auto 0;}
+#inicio .hero-sub{font-size:clamp(14px,3.8vw,18px)!important;font-weight:400!important;line-height:1.4!important;margin:0!important;max-width:570px!important;}
+#inicio .hero-contact{width:100%;margin:0!important;}
+#inicio .hero-contact-title{font-size:clamp(13px,3.8vw,16px)!important;margin:0 auto 8px!important;font-weight:650!important;}
+#inicio .hero-contact-actions{max-width:420px;gap:8px;}
+#inicio .hero-contact-actions a{min-height:44px;padding:8px 10px;font-size:15px;flex:1 1 0;}
+#inicio #arrowDown{width:100%!important;max-width:520px!important;min-height:48px!important;}
+#inicio .hero-update{margin:0!important;font-weight:400!important;}
+@media(max-width:600px){#inicio.hero{padding:14px 10px 18px!important;}#inicio .hero-content{gap:10px;min-height:calc(100svh - 42px);}#inicio .aij-banner-2026{max-width:100%;}}
+@media(max-height:650px) and (min-width:601px){#inicio .aij-banner-2026{max-width: min(620px,75vh);}}
 </style>
 </head>
 
@@ -373,13 +371,20 @@ details.subtema-card, #resultado, #resultadoContent > section,
 
     <div class="hero-content">
       <div class="aij-banner-2026">
-        <img src="Img/banner-premium.webp" width="1536" height="768" alt="Ayuda Inmediata en Japón. Tu guía confiable para vivir, viajar y resolver cualquier situación en Japón. Emergencias y seguridad, idiomas y traducción, lugares y transporte, apoyo para extranjeros." class="aij-banner-original" fetchpriority="high">
+        <img src="Img/banner-portada-2026.webp" width="910" height="537" alt="Ayuda Inmediata en Japón" class="aij-banner-original" fetchpriority="high">
       </div>
+      <ul class="aij-hero-topics" aria-label="Temas de la guía">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="14" r="4"/></svg><span>Turismo</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9"/></svg><span>Vida diaria</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8m-8 4 2 2 5-5"/></svg><span>Trámites</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 6v6c0 5 4 8 9 10 5-2 9-5 9-10V6Z M12 8v8m-4-4h8"/></svg><span>Emergencias</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h12v10H8l-5 4V3Zm9 12h9v7l-4-3h-5Zm-6-8h6M9 5v2m-3 2 5 3m0-5c-1 3-3 4-5 5"/></svg><span>Idiomas</span></li>
+      </ul>
 
       <h1>Guía gratuita en español</h1>
 
       <p class="hero-sub">
-  Información y orientación para turistas y residentes.
+  Información y orientación gratuita para visitar, vivir y desenvolverte en Japón.
 </p>
 
 <div class="hero-contact">

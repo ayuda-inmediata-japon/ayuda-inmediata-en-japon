@@ -11,6 +11,8 @@
 :root{color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#101820;color:#f5f8f6;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}a{color:#a9ffb5}header{background:linear-gradient(135deg,#123428,#183e43);padding:34px 16px 28px;text-align:center;border-bottom:1px solid #547967}header h1{margin:0 0 8px;font-size:clamp(28px,6vw,42px)}header p{margin:0 auto;max-width:640px;color:#e0eeee}main{max-width:850px;margin:0 auto;padding:22px 16px 50px}.intro{font-size:17px}.article{padding:24px 20px;margin:24px 0;border:1px solid #52745f;border-radius:18px;background:#152820}.article h2{color:#c2ffd0;line-height:1.3;margin:0 0 10px}.article h3{color:#b9eacb;margin:22px 0 6px}.article p{margin:9px 0 14px}.article ul{padding-left:22px}.article li{margin:7px 0}.article-divider{border:0;border-top:2px solid #79b997;margin:30px 0}.youtube-link{display:inline-block;background:#245a3d;color:white;text-decoration:none;font-weight:750;padding:12px 16px;border:1px solid #a4ffc0;border-radius:12px}.pending{font-size:14px;color:#d5e6da;background:#213b31;border-radius:10px;padding:12px}.illustration{border:1px dashed #779b8b;border-radius:12px;padding:18px;text-align:center;color:#d5e6da;margin:18px 0;background:#1a322a}.back{display:inline-block;margin:8px 0 20px;padding:10px 16px;border:1px solid #9ecfb0;border-radius:12px;text-decoration:none;color:#fff;background:#204735}footer{text-align:center;color:#c5d6cb;font-size:13px;padding:24px 16px;border-top:1px solid #365548}@media(max-width:480px){.article{padding:18px 14px}}
 .ep-kicker{font-size:13px;letter-spacing:.08em;font-weight:800;color:#f4d99a}.ep-watch{display:block;text-align:center;margin:15px 0;background:#a51f2d;border-color:#f2a6ae}.ep-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:20px 0}.ep-index a,.ep-map{display:block;padding:10px;border:1px solid #79b997;border-radius:10px;background:#204735;text-decoration:none;text-align:center;color:#e5fff0;font-weight:650}.ep-region{margin:28px 0;scroll-margin-top:18px;border-top:1px solid #52745f;padding-top:14px}.ep-sub{color:#dce8df}.ep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.ep-place{min-width:0;padding:12px;border:1px solid #52745f;border-radius:14px;background:#172f29}.ep-place h4{font-size:18px;line-height:1.3;margin:0 0 10px;color:#d1f9de}.ep-photo{margin:0 0 12px;min-width:0}.ep-photo img{width:100%;height:auto;display:block;border-radius:10px}.ep-photo figcaption{font-size:11px;line-height:1.45;color:#c8d7cd;overflow-wrap:anywhere;margin:6px 0}.ep-tip{padding:12px;background:#213b31;border-radius:10px}.ep-documental{scroll-margin-top:10px}@media(max-width:600px){.ep-grid{grid-template-columns:1fr}.ep-place h4{font-size:18px}}
 .ep-articles a{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:74px;line-height:1.35;overflow-wrap:anywhere}.ep-articles small{font-size:12px;font-weight:500;color:#c8d7cd;margin-top:4px}
+
+.article[hidden],.ep-articles[hidden],.intro[hidden]{display:none!important}.article-divider{display:none}.article-return{margin:0 0 16px}.article-return:focus-visible,.ep-articles a:focus-visible{outline:3px solid #f4d99a;outline-offset:3px}
 </style>
 </head>
 <body>
@@ -18,8 +20,9 @@
 <main>
 <a class="back" href="index.html#pantallaTurismo">← Volver a las secciones</a>
 <p class="intro">Japón guarda historias en sus ciudades, santuarios, paisajes y tradiciones. Aquí reunimos artículos para leer con calma y enlaces a nuestros documentales publicados en YouTube.</p>
-<nav class="ep-index ep-articles" aria-label="Artículos y documentales"><a href="#documental-1">🎬 El Japón que no aparece en las postales</a><a href="#documental-2">🎬 El Japón de los pueblos escondidos</a><a href="#documental-3">🎬 Shikoku, Kyūshū y Okinawa <small>Próximamente</small></a><a href="#nikko">⛩️ Nikkō: historia y naturaleza</a></nav>
-<article class="article ep-documental" id="documental-1">
+<nav id="indice-articulos" class="ep-index ep-articles" aria-label="Artículos y documentales"><a href="#documental-1">🎬 El Japón que no aparece en las postales</a><a href="#documental-2">🎬 El Japón de los pueblos escondidos</a><a href="#documental-3">🎬 Shikoku, Kyūshū y Okinawa <small>Próximamente</small></a><a href="#nikko">⛩️ Nikkō: historia y naturaleza</a></nav>
+<article class="article ep-documental" id="documental-1" hidden>
+<a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a>
 <p class="ep-kicker">JAPÓN QUE TODAVÍA NO CONOCES · EPISODIO 1</p>
 <h2>El Japón que no aparece en las postales</h2>
 <p>Hokkaidō · Tōhoku · Kantō · Chūbu | Documental de 6 min 33 s</p>
@@ -74,14 +77,16 @@
 <p><a class="back" href="turismo.html">🌸 Explorar turismo por prefecturas</a> <a class="back" href="planifica.html">🧳 Planificar el viaje</a> <a class="back" href="reservas.html">🎟️ Consultar reservas</a></p></section>
 <section class="ep-region"><h3>Próximo episodio: Kansai y Chūgoku</h3><p>Continuaremos descubriendo lagos, pueblos escondidos, castillos y paisajes como el lago Biwa, Amanohashidate y las dunas de Tottori.</p><div class="ep-grid"><figure class="ep-photo"><a href="https://commons.wikimedia.org/wiki/File:Drone_shot_of_Otsu_and_Lake_Biwa_2.jpg" target="_blank" rel="noopener noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Drone_shot_of_Otsu_and_Lake_Biwa_2.jpg?width=800" alt="Lago Biwa y Ōtsu, Shiga" loading="lazy" decoding="async"></a><figcaption>Drone shot of Otsu and Lake Biwa 2.jpg · Benlisquare · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Drone_shot_of_Otsu_and_Lake_Biwa_2.jpg" target="_blank" rel="noopener noreferrer">Fuente y foto ampliada</a>. Sin recortes propios.</figcaption></figure><figure class="ep-photo"><a href="https://commons.wikimedia.org/wiki/File:Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg" target="_blank" rel="noopener noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg?width=800" alt="Amanohashidate, Kioto" loading="lazy" decoding="async"></a><figcaption>Amanohashidate view from Kasamatsu Park01s3s4410.jpg · 663highland · <a href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener noreferrer">CC BY 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg" target="_blank" rel="noopener noreferrer">Fuente y foto ampliada</a>. Sin recortes propios.</figcaption></figure></div></section>
 <p class="pending">Guía basada en la narración definitiva del episodio 1. Las imágenes proceden de los registros de producción y Wikimedia Commons; cada fotografía incluye autor, licencia y fuente. Las fotos complementarias se identifican en el texto. Las imágenes originales sin licencia registrada no se reproducen aquí.</p>
-<a class="youtube-link ep-watch" href="https://youtu.be/bHTcmnh-InY" target="_blank" rel="noopener noreferrer">▶ Ver el episodio 1 en YouTube</a><p>¿Quieres descubrir más sobre Japón? Explora nuestra guía gratuita para turistas y residentes.</p><a class="back" href="#documental-1">↑ Volver al inicio del episodio</a> <a class="back" href="index.html#pantallaTurismo">← Volver a las secciones</a></article><hr class="article-divider">
+<a class="youtube-link ep-watch" href="https://youtu.be/bHTcmnh-InY" target="_blank" rel="noopener noreferrer">▶ Ver el episodio 1 en YouTube</a><p>¿Quieres descubrir más sobre Japón? Explora nuestra guía gratuita para turistas y residentes.</p><a class="back" href="#documental-1">↑ Volver al inicio del episodio</a> <a class="back" href="index.html#pantallaTurismo">← Volver a las secciones</a><p><a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a></p>
+</article><hr class="article-divider">
 <!-- ============================================================
      INICIO ARTÍCULO 1: NIKKŌ
      Añadir imagen propia autorizada en el espacio señalado.
      Añadir URL real del video de YouTube cuando esté disponible.
      FIN DEL ARTÍCULO: buscar FIN ARTÍCULO 1.
 ============================================================ -->
-<article class="article" id="nikko">
+<article class="article" id="nikko" hidden>
+<a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a>
 <h2>⛩️ Nikkō: historia y naturaleza en las montañas de Tochigi</h2>
 <p>Nikkō, en la prefectura de Tochigi, es uno de los lugares donde la historia y el paisaje de Japón se encuentran de una forma especialmente llamativa. Entre bosques y montañas aparecen santuarios y templos de gran importancia cultural.</p>
 <!-- INICIO: FOTO DE NIKKŌ -->
@@ -108,6 +113,7 @@
    class="youtube-link">
   ▶️ Ver nuestro vídeo de Nikkō en YouTube
 </a>
+<p><a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a></p>
 </article>
 <!-- FIN ARTÍCULO 1: NIKKŌ -->
 <hr class="article-divider">
@@ -116,7 +122,9 @@
      Sustituir el título y desarrollar el artículo cuando se confirme
      el episodio; insertar foto propia y enlace externo a YouTube.
 ============================================================ -->
-<article class="article" id="documental-2"><h2>🎬 El Japón de los pueblos escondidos</h2><p>Kansai y Chūgoku · Japón que todavía no conoces. La guía ilustrada de este documental está en preparación.</p><p class="pending">🎬 Enlace de YouTube pendiente. No se alojarán vídeos en esta página.</p></article>
+<article class="article" id="documental-2" hidden>
+<a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a><h2>🎬 El Japón de los pueblos escondidos</h2><p>Kansai y Chūgoku · Japón que todavía no conoces. La guía ilustrada de este documental está en preparación.</p><p class="pending">🎬 Enlace de YouTube pendiente. No se alojarán vídeos en esta página.</p><p><a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a></p>
+</article>
 <!-- FIN ARTÍCULO 2 -->
 <hr class="article-divider">
 <!-- ============================================================
@@ -124,10 +132,33 @@
      Se pueden copiar artículos completos ENTRE sus marcadores
      para agregar nuevos episodios sin rehacer esta página.
 ============================================================ -->
-<article class="article" id="documental-3"><h2>🎬 Shikoku, Kyūshū y Okinawa</h2><p>Reservamos esta sección para ampliar el tercer episodio con explicaciones, curiosidades, imágenes y referencias útiles.</p><p class="pending">🎬 Enlace de YouTube pendiente. No se alojarán vídeos en esta página.</p></article>
+<article class="article" id="documental-3" hidden>
+<a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a><h2>🎬 Shikoku, Kyūshū y Okinawa</h2><p>Reservamos esta sección para ampliar el tercer episodio con explicaciones, curiosidades, imágenes y referencias útiles.</p><p class="pending">🎬 Enlace de YouTube pendiente. No se alojarán vídeos en esta página.</p><p><a class="back article-return" href="#indice-articulos">← Volver a las tarjetas</a></p>
+</article>
 <!-- FIN ARTÍCULO 3 -->
 <a class="back" href="index.html#pantallaTurismo">← Volver a las secciones</a>
 </main>
 <footer>© 2026 Ayuda Inmediata en Japón · Guía gratuita en español</footer>
+<script>(function(){
+  const menu=document.getElementById('indice-articulos');
+  const intro=document.querySelector('main > .intro');
+  const articles=Array.from(document.querySelectorAll('main > article.article'));
+  function show(){
+    const hash=location.hash.slice(1);
+    const target=document.getElementById(hash);
+    const active=target && target.closest('main > article.article');
+    for(const article of articles) article.hidden=article!==active;
+    menu.hidden=Boolean(active);
+    intro.hidden=Boolean(active);
+    if(active || hash==='indice-articulos'){
+      requestAnimationFrame(function(){
+        (active?(target||active):menu).scrollIntoView({block:'start',behavior:'instant'});
+      });
+    }
+  }
+  window.addEventListener('hashchange',show);
+  show();
+})();</script>
+<noscript><style>.article[hidden]{display:block!important}</style></noscript>
 </body>
 </html>

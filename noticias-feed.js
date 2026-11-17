@@ -8,11 +8,10 @@
     if (!response.ok) throw new Error('HTTP ' + response.status);
     const data = await response.json();
     const items = Array.isArray(data.items) ? data.items : [];
+    const updated = new Date(data.updated_at);
+    const stamp = document.getElementById('fecha-noticias-automaticas');
+    if (stamp) stamp.textContent = !isNaN(updated.getTime()) ? 'Última consulta registrada: ' + updated.toLocaleString('es-ES',{timeZone:'Asia/Tokyo',dateStyle:'medium',timeStyle:'short'}) + ' (JST)' : 'Fecha de actualización no disponible';
     root.replaceChildren();
-    if (!items.length) {
-      status.textContent = 'Todavía no hay titulares automáticos disponibles. Consulta las noticias explicadas más abajo.';
-      return;
-    }
     const topics = [
       ['Inmigración y residencia', /外国人|在留|入管|ビザ|永住|技能実習|特定技能|不法滞在/],
       ['Trabajo y salarios', /最低賃金|賃上げ|賃金|雇用|労働|求人|失業|ハローワーク/],
@@ -21,12 +20,11 @@
       ['Cursos y capacitación', /日本語教室|外国人向け|職業訓練|研修|講習/],
       ['Seguridad y emergencias', /地震|津波|台風|避難指示|大雨特別警報|詐欺|外国人犯罪/]
     ];
-    const relevant = items.map(item => ({...item, category_es: topics.find(t => t[1].test(item.title || ''))?.[0] || ''})).filter(item => item.category_es);
-    if (!relevant.length) {
-      status.textContent = 'No hay titulares recientes que coincidan con nuestras categorías. Consulta las noticias en español y las fuentes oficiales.';
-      return;
-    }
-    for (const item of relevant.slice(0, 12)) {
+    const relevant = items.map(item => ({...item, category_es: item.category_es || topics.find(t => t[1].test(item.title || ''))?.[0] || ''})).filter(item => item.category_es);
+    function render(container, list) {
+      if (!container) return;
+      container.replaceChildren();
+      for (const item of list) {
       if (!item || typeof item.title !== 'string' || typeof item.url !== 'string') continue;
       let url;
       try { url = new URL(item.url); } catch { continue; }
@@ -47,10 +45,16 @@
       category.className = 'etiqueta';
       category.textContent = item.category_es;
       article.append(category, a, info);
-      root.append(article);
+      container.append(article);
+      }
+      if (!container.children.length) container.textContent = 'No hay titulares disponibles en esta sección.';
     }
+    render(root, relevant.slice(0, 12));
+    render(document.getElementById('archivo-noticias-automaticas'), Array.isArray(data.archive) ? data.archive : []);
     status.textContent = 'Selección automática por temas útiles para extranjeros. Titulares originales en japonés, aún sin traducción verificada.';
   } catch (error) {
+    const stamp = document.getElementById('fecha-noticias-automaticas');
+    if (stamp) stamp.textContent = 'Fecha de actualización no disponible';
     status.textContent = 'No fue posible cargar los titulares automáticos. Las noticias explicadas siguen disponibles abajo.';
   }
 })();

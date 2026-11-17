@@ -297,6 +297,17 @@
       .aij-fuentes-grid > a:last-child { grid-column: 1 / -1 !important; width: calc(50% - 2.5px) !important; justify-self:center !important; }
       .aij-noticias-tarjetas > details:last-child[open] { grid-column:1/-1 !important; width:100% !important; }
     }
+      /* Acordeones por temas: seis tarjetas y sus noticias internas. */
+    .aij-noticias-tarjetas > details.aij-noticias-tema:last-child:not([open]) {grid-column:auto!important;width:100%!important;}
+    .aij-noticias-tarjetas > details.aij-noticias-tema > summary {min-height:55px;}
+    .aij-noticias-lista {padding:0 9px 9px;}
+    .aij-noticias-lista > details {margin:7px 0;background:#102115;border-color:#497e6b;}
+    .aij-noticias-lista > details > summary {color:#d2f7e7;text-align:left;}
+    .aij-noticias-lista:has(> details) > .aij-sin-noticias {display:none;}
+    .aij-sin-noticias {font-size:13px;color:#c4d6d0;text-align:center;margin:8px;}
+    details[open] > summary::after {content:"⌃";}
+    details:not([open]) > summary::after {content:"⌄";}
+    @media(max-width:600px){.aij-noticias-tarjetas > details.aij-noticias-tema > summary {min-height:49px;font-size:13px;}.aij-fuentes-grid > a:last-child:nth-child(even){grid-column:auto!important;width:100%!important;}}
   </style>
 </head>
 
@@ -322,38 +333,13 @@
 
 
   <h2 class="titulo-seccion">📌 Avisos importantes que permanecen</h2>
-  <p class="intro" style="text-align:center">Cambios de residencia, visados, impuestos, seguros y otros avisos de interés para extranjeros. Se conservan aquí aunque aparezcan nuevas noticias; consulta su fecha y vigencia antes de hacer trámites.</p>
+  <p class="intro" style="text-align:center">Elige un tema para consultar sus noticias en español. Conservamos los avisos útiles y archivamos los que ya no están vigentes.</p>
 
   <div class="aij-noticias-tarjetas">
-  <!-- NOTICIAS RECIENTES VERIFICADAS -->
-  <details>
-    <summary>🏥 Seguro de salud: proponen subir el límite de primas en 2027</summary>
-    <div class="noticia">
-      <p class="fecha">11 de noviembre de 2026 · Propuesta del Ministerio de Salud</p>
-      <span class="etiqueta">SEGURO · ECONOMÍA</span>
-      <p>El Ministerio de Salud de Japón propuso elevar en 30.000 yenes el límite anual de la parte médica del Seguro Nacional de Salud (Kokumin Kenkō Hoken): de 930.000 a 960.000 yenes para el ejercicio fiscal 2027.</p>
-      <h3>¿A quién afecta?</h3>
-      <p>Principalmente a los hogares con ingresos altos que llegan al límite máximo. No significa que todas las personas pagarán 960.000 yenes: las primas dependen de los ingresos y del municipio.</p>
-      <p>La propuesta fue examinada por el ministerio. Conviene comprobar la normativa definitiva y los avisos municipales antes de calcular cuánto se pagará.</p>
-      <a class="fuente" href="https://www.mhlw.go.jp/content/12401000/001768125.pdf" target="_blank" rel="noopener noreferrer">🔗 Documento oficial del Ministerio de Salud</a>
-    </div>
-  </details>
-  <details>
-    <summary>🏛️ Japón prepara una capital secundaria para grandes desastres</summary>
-    <div class="noticia">
-      <p class="fecha">27 de octubre de 2026 · Seguridad y emergencias</p>
-      <span class="etiqueta">PREVENCIÓN · GOBIERNO</span>
-      <p>El Gobierno aprobó los requisitos para designar una capital secundaria capaz de asumir funciones esenciales si un desastre de gran magnitud afecta a Tokio.</p>
-      <h3>¿Qué lugares se consideran?</h3>
-      <p>Hokkaidō, Aichi, Osaka y Fukuoka cumplen los criterios iniciales. Ninguna queda designada automáticamente por ese hecho.</p>
-      <h3>¿Qué significa para los residentes?</h3>
-      <p>Es una medida de continuidad de las funciones del Gobierno. No significa que Tokio deje de ser la capital ni exige trámites nuevos a los residentes.</p>
-      <a class="fuente" href="https://www.nippon.com/en/articles/-/56363" target="_blank" rel="noopener noreferrer">🔗 Noticia sobre la decisión gubernamental</a>
-    </div>
-  </details>
-  <!-- NOTICIA 1 -->
-
-  <details>
+    <details class="aij-noticias-tema" id="noticias-residencia">
+      <summary>🛂 Visados y residencia</summary>
+      <div class="aij-noticias-lista">
+<details>
 
     <summary>
       🛂 Cambiaron las tarifas de trámites de residencia
@@ -423,11 +409,7 @@
     </div>
 
   </details>
-
-
-  <!-- NOTICIA 2 -->
-
-  <details>
+<details>
 
     <summary>
       🏠 Nuevas directrices para obtener la residencia permanente
@@ -500,11 +482,7 @@
     </div>
 
   </details>
-
-
-  <!-- NOTICIA 3 -->
-
-  <details>
+<details>
 
     <summary>
       ⚠️ Nuevas directrices sobre residentes permanentes
@@ -567,7 +545,72 @@
 
     </div>
   </details>
+        <p class="aij-sin-noticias">Por ahora no hay avisos recientes verificados en este tema.</p>
+      </div>
+    </details>
+    <details class="aij-noticias-tema" id="noticias-impuestos">
+      <summary>💴 Impuestos y ayudas económicas</summary>
+      <div class="aij-noticias-lista">
+
+        <p class="aij-sin-noticias">Por ahora no hay avisos recientes verificados en este tema.</p>
+      </div>
+    </details>
+    <details class="aij-noticias-tema" id="noticias-trabajo">
+      <summary>💼 Trabajo y salarios</summary>
+      <div class="aij-noticias-lista">
+
+        <p class="aij-sin-noticias">Por ahora no hay avisos recientes verificados en este tema.</p>
+      </div>
+    </details>
+    <details class="aij-noticias-tema" id="noticias-salud">
+      <summary>🏥 Salud y seguros</summary>
+      <div class="aij-noticias-lista">
+<details>
+    <summary>🏥 Seguro de salud: proponen subir el límite de primas en 2027</summary>
+    <div class="noticia">
+      <p class="fecha">11 de noviembre de 2026 · Propuesta del Ministerio de Salud</p>
+      <span class="etiqueta">SEGURO · ECONOMÍA</span>
+      <p>El Ministerio de Salud de Japón propuso elevar en 30.000 yenes el límite anual de la parte médica del Seguro Nacional de Salud (Kokumin Kenkō Hoken): de 930.000 a 960.000 yenes para el ejercicio fiscal 2027.</p>
+      <h3>¿A quién afecta?</h3>
+      <p>Principalmente a los hogares con ingresos altos que llegan al límite máximo. No significa que todas las personas pagarán 960.000 yenes: las primas dependen de los ingresos y del municipio.</p>
+      <p>La propuesta fue examinada por el ministerio. Conviene comprobar la normativa definitiva y los avisos municipales antes de calcular cuánto se pagará.</p>
+      <a class="fuente" href="https://www.mhlw.go.jp/content/12401000/001768125.pdf" target="_blank" rel="noopener noreferrer">🔗 Documento oficial del Ministerio de Salud</a>
+    </div>
+  </details>
+        <p class="aij-sin-noticias">Por ahora no hay avisos recientes verificados en este tema.</p>
+      </div>
+    </details>
+    <details class="aij-noticias-tema" id="noticias-pensiones">
+      <summary>👵 Pensiones y jubilación</summary>
+      <div class="aij-noticias-lista">
+
+        <p class="aij-sin-noticias">Por ahora no hay avisos recientes verificados en este tema.</p>
+      </div>
+    </details>
+    <details class="aij-noticias-tema" id="noticias-seguridad">
+      <summary>🚨 Seguridad y emergencias</summary>
+      <div class="aij-noticias-lista">
+<details>
+    <summary>🏛️ Japón prepara una capital secundaria para grandes desastres</summary>
+    <div class="noticia">
+      <p class="fecha">27 de octubre de 2026 · Seguridad y emergencias</p>
+      <span class="etiqueta">PREVENCIÓN · GOBIERNO</span>
+      <p>El Gobierno aprobó los requisitos para designar una capital secundaria capaz de asumir funciones esenciales si un desastre de gran magnitud afecta a Tokio.</p>
+      <h3>¿Qué lugares se consideran?</h3>
+      <p>Hokkaidō, Aichi, Osaka y Fukuoka cumplen los criterios iniciales. Ninguna queda designada automáticamente por ese hecho.</p>
+      <h3>¿Qué significa para los residentes?</h3>
+      <p>Es una medida de continuidad de las funciones del Gobierno. No significa que Tokio deje de ser la capital ni exige trámites nuevos a los residentes.</p>
+      <a class="fuente" href="https://www.nippon.com/en/articles/-/56363" target="_blank" rel="noopener noreferrer">🔗 Noticia sobre la decisión gubernamental</a>
+    </div>
+  </details>
+        <p class="aij-sin-noticias">Por ahora no hay avisos recientes verificados en este tema.</p>
+      </div>
+    </details>
   </div>
+  <details id="noticias-archivo-editorial">
+    <summary>📁 Avisos anteriores (archivo histórico)</summary>
+    <div class="aij-noticias-lista"><p class="aij-sin-noticias">Todavía no hay avisos archivados.</p></div>
+  </details>
   <section class="informacion-complementaria" aria-label="Más recursos de noticias">
     <h2 class="titulo-seccion">🌎 Fuentes oficiales y trámites</h2>
     <div class="aij-fuentes-grid">

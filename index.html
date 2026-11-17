@@ -403,6 +403,23 @@ details.subtema-card, #resultado, #resultadoContent > section,
 }
 
 </style>
+<style id="aij-weather-style">
+#aij-weather{box-sizing:border-box;width:100%;max-width:550px;margin:12px auto;padding:12px 14px;border:1px solid #a7d5c2;border-radius:16px;background:#102522ef;color:#fff;text-align:left;font-size:14px;line-height:1.4}
+#aij-weather h2{font-size:19px!important;margin:0 0 8px!important;text-align:center;color:#d5f7e9}
+#aij-weather .wx-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#aij-weather select{flex:1;min-width:120px;background:#fff;color:#142a24;border:1px solid #b6d5c8;border-radius:8px;padding:8px;font:inherit}
+#aij-weather button{background:#285142;color:#fff;border:1px solid #b6d5c8;border-radius:8px;padding:6px 12px;font-size:21px;cursor:pointer}
+#wx-status{font-size:12px;color:#d0e4dc;margin:8px 0}
+#wx-now{font-size:18px;font-weight:800;margin:6px 0}
+#wx-more summary{cursor:pointer;font-weight:700;color:#d5f7e9}
+#wx-days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin:8px 0}
+#wx-days div{padding:6px;background:#1d3933;border-radius:7px;font-size:12px}
+#wx-rain{font-size:12px}
+#aij-weather .wx-links{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0}
+#aij-weather .wx-links a{flex:1;min-width:125px;border:1px solid #a7d5c2;border-radius:8px;text-align:center;padding:7px;color:#dbfff0;font-weight:bold;text-decoration:none}
+#aij-weather small{display:block;color:#c4d6cf;font-size:11px}
+#aij-weather small a{color:#c7ffda}
+</style>
 </head>
 
 <body>
@@ -431,6 +448,14 @@ details.subtema-card, #resultado, #resultadoContent > section,
   Información y orientación gratuita para visitar, vivir y desenvolverte en Japón.
 </p>
 
+<section id="aij-weather" aria-label="Clima de Japón">
+  <h2>🌤️ Clima de Japón</h2>
+  <div class="wx-controls"><label for="wx-pref">Prefectura</label><select id="wx-pref"><option value="016000">Hokkaidō · Sapporo</option><option value="020000">Aomori</option><option value="030000">Iwate</option><option value="040000">Miyagi</option><option value="050000">Akita</option><option value="060000">Yamagata</option><option value="070000">Fukushima</option><option value="080000">Ibaraki</option><option value="090000">Tochigi</option><option value="100000">Gunma</option><option value="110000">Saitama</option><option value="120000">Chiba</option><option value="130000" selected>Tokio</option><option value="140000">Kanagawa</option><option value="150000">Niigata</option><option value="160000">Toyama</option><option value="170000">Ishikawa</option><option value="180000">Fukui</option><option value="190000">Yamanashi</option><option value="200000">Nagano</option><option value="210000">Gifu</option><option value="220000">Shizuoka</option><option value="230000">Aichi</option><option value="240000">Mie</option><option value="250000">Shiga</option><option value="260000">Kioto</option><option value="270000">Osaka</option><option value="280000">Hyōgo</option><option value="290000">Nara</option><option value="300000">Wakayama</option><option value="310000">Tottori</option><option value="320000">Shimane</option><option value="330000">Okayama</option><option value="340000">Hiroshima</option><option value="350000">Yamaguchi</option><option value="360000">Tokushima</option><option value="370000">Kagawa</option><option value="380000">Ehime</option><option value="390000">Kōchi</option><option value="400000">Fukuoka</option><option value="410000">Saga</option><option value="420000">Nagasaki</option><option value="430000">Kumamoto</option><option value="440000">Ōita</option><option value="450000">Miyazaki</option><option value="460100">Kagoshima</option><option value="471000">Okinawa · Naha</option></select><button type="button" id="wx-refresh" aria-label="Actualizar pronóstico">↻</button></div>
+  <div id="wx-status" role="status" aria-live="polite">Consultando el pronóstico oficial…</div>
+  <div id="wx-now" hidden></div><details id="wx-more"><summary>Ver pronóstico y lluvia</summary><div id="wx-days"></div><div id="wx-rain"></div></details>
+  <div class="wx-links"><a href="https://www.data.jma.go.jp/multi/warn/index.html?lang=es" target="_blank" rel="noopener noreferrer">⚠️ Alertas oficiales</a><a href="reservas.html#bajo-techo">☔ Actividades bajo techo</a></div>
+  <small>Fuente: <a href="https://www.data.jma.go.jp/multi/yoho/index.html?lang=es" target="_blank" rel="noopener noreferrer">Agencia Meteorológica de Japón (JMA)</a>. Predicción resumida en español; zona representativa, no toda la prefectura.</small>
+</section>
 <div class="hero-contact">
   <p class="hero-contact-title">¿Tienes dudas? Escríbenos.</p>
   <div class="hero-contact-actions">
@@ -1237,6 +1262,29 @@ document.addEventListener('DOMContentLoaded',()=>{
   #pantallaTurismo .aij-cultura small { font-size: 12px !important; line-height: 1.2 !important; }
 }
 </style>
+<script id="aij-weather-script">
+(function(){
+const pref=document.getElementById('wx-pref'),status=document.getElementById('wx-status'),now=document.getElementById('wx-now'),days=document.getElementById('wx-days'),rain=document.getElementById('wx-rain'),refresh=document.getElementById('wx-refresh');
+let seq=0;
+function label(c){const n=String(c||'');return n[0]==='1'?'☀️ Soleado o con claros':n[0]==='2'?'☁️ Nuboso':n[0]==='3'?'🌧️ Lluvia':n[0]==='4'?'❄️ Nieve':'Pronóstico no disponible';}
+function date(t){return t.slice(8,10)+'/'+t.slice(5,7);}
+function num(v,suffix){return v!==undefined&&v!==null&&v!==''?v+suffix:'—';}
+async function update(){
+const id=++seq;status.textContent='Consultando datos de JMA…';now.hidden=true;days.replaceChildren();rain.textContent='';refresh.disabled=true;
+try{
+const res=await fetch('https://www.jma.go.jp/bosai/forecast/data/forecast/'+pref.value+'.json',{cache:'no-store',signal:AbortSignal.timeout(12000)});if(!res.ok)throw Error('JMA');const data=await res.json();if(id!==seq)return;
+const short=data[0],week=data[1],w=short.timeSeries.find(x=>x.areas[0]?.weatherCodes),p=short.timeSeries.find(x=>x.areas[0]?.pops),t=short.timeSeries.find(x=>x.areas[0]?.temps),ww=week?.timeSeries.find(x=>x.areas[0]?.weatherCodes),wt=week?.timeSeries.find(x=>x.areas[0]?.tempsMin);
+const area=w.areas[0];const today=w.timeDefines[0].slice(0,10);now.textContent=label(area.weatherCodes[0])+' · '+pref.options[pref.selectedIndex].text;now.hidden=false;
+status.textContent='Pronóstico emitido: '+date(short.reportDatetime)+' '+short.reportDatetime.slice(11,16)+' (Japón).';
+if(ww){ww.timeDefines.forEach((d,i)=>{const a=ww.areas[0],v=wt?.areas[0],j=wt?.timeDefines.findIndex(x=>x.slice(0,10)===d.slice(0,10));let el=document.createElement('div');el.textContent=date(d)+' · '+label(a.weatherCodes[i])+' | mín. '+num(v?.tempsMin[j],'°')+' / máx. '+num(v?.tempsMax[j],'°')+' · precip. '+num(a.pops[i],'%');days.append(el);});}
+if(p){rain.textContent='Precipitación por franjas (JST): '+p.timeDefines.slice(0,4).map((d,i)=>date(d)+' '+d.slice(11,16)+' '+num(p.areas[0].pops[i],'%')).join(' · ');}
+if(t){const station=t.areas[0]?.area?.code;try{const latest=await fetch('https://www.jma.go.jp/bosai/amedas/data/latest_time.txt',{cache:'no-store',signal:AbortSignal.timeout(7000)});if(!latest.ok)throw Error();const stamp=(await latest.text()).trim();const day=stamp.slice(0,10).replace(/-/g,''),hour=String(Math.floor(Number(stamp.slice(11,13))/3)*3).padStart(2,'0');const obs=await fetch('https://www.jma.go.jp/bosai/amedas/data/point/'+station+'/'+day+'_'+hour+'.json',{cache:'no-store',signal:AbortSignal.timeout(7000)});if(!obs.ok)throw Error();const readings=await obs.json();const key=Object.keys(readings).sort().reverse().find(k=>readings[k].temp?.[1]===0&&Number.isFinite(readings[k].temp[0]));if(id===seq&&key){now.textContent=readings[key].temp[0]+' °C · '+label(area.weatherCodes[0]);status.textContent+=' Temperatura observada: '+key.slice(8,10)+':'+key.slice(10,12)+' (JST).';}}catch(e){/* El pronóstico sigue visible si no hay observación. */}}
+}catch(e){if(id===seq)status.textContent='No se pudo obtener el pronóstico. Consulta la fuente oficial o pulsa actualizar.';}finally{if(id===seq)refresh.disabled=false;}
+}
+pref.addEventListener('change',update);refresh.addEventListener('click',update);update();
+setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementById('aij-weather').getClientRects().length)update();},30*60*1000);
+})();
+</script>
 </body>
 
 </html>

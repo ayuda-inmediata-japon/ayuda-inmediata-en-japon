@@ -321,8 +321,8 @@
   <nav aria-label="Volver"><a class="boton" href="index.html">← Volver a la portada</a></nav>
 
 
-  <h2 class="titulo-seccion">📌 Noticias en español</h2>
-  <p class="intro" style="text-align:center">Toca un titular para leer la noticia y consultar su fuente oficial.</p>
+  <h2 class="titulo-seccion">📌 Avisos importantes que permanecen</h2>
+  <p class="intro" style="text-align:center">Cambios de residencia, visados, impuestos, seguros y otros avisos de interés para extranjeros. Se conservan aquí aunque aparezcan nuevas noticias; consulta su fecha y vigencia antes de hacer trámites.</p>
 
   <div class="aij-noticias-tarjetas">
   <!-- NOTICIAS RECIENTES VERIFICADAS -->
@@ -569,20 +569,25 @@
   </details>
   </div>
   <section class="informacion-complementaria" aria-label="Más recursos de noticias">
-    <h2 class="titulo-seccion">🌎 Fuentes oficiales</h2>
+    <h2 class="titulo-seccion">🌎 Fuentes oficiales y trámites</h2>
     <div class="aij-fuentes-grid">
         <a href="https://www3.nhk.or.jp/nhkworld/es/" target="_blank" rel="noopener noreferrer">📻 NHK WORLD-JAPAN <small>Noticias en español</small></a>
         <a href="https://www.moj.go.jp/isa/support/portal/index" target="_blank" rel="noopener noreferrer">🛂 Inmigración de Japón <small>Residencia y trámites</small></a>
+        <a href="https://www.nta.go.jp/english/taxes/individual/" target="_blank" rel="noopener noreferrer">💴 Agencia Tributaria Nacional <small>Impuestos y declaración de ingresos (inglés)</small></a>
+        <a href="https://www.nenkin.go.jp/tokusetsu/pamphlets_spanish.html" target="_blank" rel="noopener noreferrer">👵 Servicio de Pensiones de Japón <small>Información en español</small></a>
+        <a href="https://www.check-roudou.mhlw.go.jp/soudan/foreigner_spa.html" target="_blank" rel="noopener noreferrer">💼 Ministerio de Trabajo <small>Consultas laborales en español</small></a>
         <a href="https://www.japan.travel/es/es/plan/security-and-emergencies/" target="_blank" rel="noopener noreferrer">🚨 JNTO <small>Seguridad y emergencias</small></a>
     </div>
   </section>
 
+  <p id="fecha-noticias-automaticas" class="fecha" style="text-align:center">Consultando fecha de actualización…</p>
   <details>
     <summary>🗞️ Consultar titulares recientes de NHK en japonés (opcional)</summary>
     <div class="noticia">
-      <p>Estas noticias se actualizan automáticamente desde NHK. Sus titulares están en japonés y todavía no cuentan con traducción editorial al español.</p>
+      <p>Consultamos NHK cada hora. Los titulares se muestran en japonés, sin traducción editorial al español. La publicación puede demorarse.</p>
       <p id="estado-noticias-automaticas" role="status">Cargando titulares…</p>
       <div id="noticias-automaticas"></div>
+      <details><summary>📁 Archivo de noticias sobre residencia, impuestos, trabajo y seguros</summary><div id="archivo-noticias-automaticas"></div><p class="nota">Archivo histórico: los titulares no prueban que una medida siga vigente.</p></details>
     </div>
   </details>
   <nav class="navegacion" aria-label="Navegación de noticias">

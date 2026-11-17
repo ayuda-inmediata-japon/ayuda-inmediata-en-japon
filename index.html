@@ -463,6 +463,22 @@ details.subtema-card, #resultado, #resultadoContent > section,
 #inicio #arrowDown{font-size:20px!important;min-height:52px!important;}
 }
 </style>
+<style id="aij-portada-respiro">
+/* Espacio adaptable: se conserva la versión compacta en pantallas bajas. */
+@media (max-width:600px) and (min-height:640px){
+  #inicio.hero{padding:10px 10px 12px!important;}
+  #inicio .hero-content{gap:clamp(7px,1.05svh,10px)!important;}
+  #inicio .hero-sub{line-height:1.42!important;}
+  #inicio #aij-weather{padding:8px 8px!important;}
+  #inicio #aij-weather h2{margin-bottom:5px!important;}
+  #inicio #wx-status{line-height:1.32!important;}
+  #inicio #aij-weather small{line-height:1.3!important;}
+  #inicio .hero-contact-title{margin-bottom:6px!important;}
+}
+@media (max-width:600px) and (min-height:760px){
+  #inicio .hero-content{gap:11px!important;}
+}
+</style>
 </head>
 
 <body>

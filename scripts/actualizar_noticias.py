@@ -19,10 +19,12 @@ SOURCES = [
 MAX_ITEMS = 30
 # Filtro conservador: solo titulares vinculados con la vida en Japón.
 CATEGORIES = [
-    ("Inmigración y residencia", ("外国人", "在留", "入管", "ビザ", "永住", "技能実習", "特定技能", "不法滞在")),
+    ("Inmigración y residencia", ("外国人", "在留", "入管", "ビザ", "永住", "技能実習", "特定技能", "不法滞在", "入国管理", "在留資格", "帰化", "難民")),
     ("Trabajo y salarios", ("最低賃金", "賃上げ", "賃金", "雇用", "労働", "求人", "失業", "ハローワーク")),
-    ("Costo de vida", ("物価", "値上げ", "電気料金", "ガス料金", "食料品", "家計", "給付金", "消費税")),
-    ("Trámites y servicios", ("年金", "健康保険", "マイナンバー", "住民税", "社会保険", "手続き")),
+    ("Costo de vida", ("物価", "値上げ", "電気料金", "ガス料金", "食料品", "家計", "給付金")),
+    ("Impuestos y obligaciones", ("所得税", "住民税", "消費税", "確定申告", "年末調整", "納税", "税制", "税金", "固定資産税")),
+    ("Seguros y pensiones", ("年金", "健康保険", "社会保険", "国民健康保険", "保険料", "介護保険")),
+    ("Trámites y servicios", ("マイナンバー", "手続き", "自治体", "行政サービス")),
     ("Cursos y capacitación", ("日本語教室", "外国人向け", "職業訓練", "研修", "講習")),
     ("Seguridad y emergencias", ("地震", "津波", "台風", "避難指示", "大雨特別警報", "詐欺", "外国人犯罪")),
 ]
@@ -82,10 +84,14 @@ def main():
             selected.append({**item, "category_es": label})
         if len(selected) >= MAX_ITEMS:
             break
-    if selected == previous.get("items", []):
-        print("No hay noticias nuevas")
-        return
-    output = {"updated_at": dt.datetime.now(dt.timezone.utc).isoformat(), "items": selected}
+    priority = {"Inmigración y residencia", "Impuestos y obligaciones", "Seguros y pensiones", "Trabajo y salarios", "Trámites y servicios"}
+    archive = {x["id"]: x for x in previous.get("archive", [])}
+    for item in items.values():
+        label = category(item.get("title", ""))
+        if label in priority:
+            archive[item["id"]] = {**item, "category_es": label}
+    history = sorted(archive.values(), key=lambda x: x.get("published_at") or "", reverse=True)
+    output = {"updated_at": dt.datetime.now(dt.timezone.utc).isoformat(), "items": selected, "archive": history}
     DEST.parent.mkdir(parents=True, exist_ok=True)
     DEST.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Guardadas {len(selected)} noticias")

@@ -3316,13 +3316,25 @@ style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" zairyu en japon">
     <p><strong>Qué saber:</strong></p>
     <ul>
-      <li>Es obligatoria para residentes extranjeros</li>
-      <li>Debes llevarla siempre contigo</li>
-      <li>Se entrega al ingresar al país o en inmigración</li>
+      <li>Se expide a residentes extranjeros de medio y largo plazo.</li>
+      <li>Si tienes 16 años o más, debes llevarla contigo.</li>
+      <li>Se entrega al ingresar al país o en inmigración, según el procedimiento.</li>
     </ul>
 
-    <p><strong>Importante:</strong></p>
-    <p>No llevarla puede causarte problemas legales.</p>
+    <h3>🆕 Nuevas tarjetas de residencia desde el 14 de junio de 2026</h3>
+    <p>Japón introdujo un nuevo diseño de la tarjeta de residencia (在留カード) y del certificado de residente permanente especial (特別永住者証明書). También ofrece una tarjeta integrada con las funciones de My Number (特定在留カード), cuya solicitud es voluntaria.</p>
+    <p><strong>¿Debo cambiar mi tarjeta actual?</strong> No. Si sigue vigente, puedes continuar utilizándola hasta su vencimiento. No es obligatorio solicitar la tarjeta integrada.</p>
+    <p><strong>¿Qué cambia para los residentes permanentes (永住者)?</strong></p>
+    <ul>
+      <li>Las nuevas tarjetas de personas de 18 años o más vencen en el décimo cumpleaños posterior a la expedición; en las renovaciones, el cálculo parte del vencimiento de la tarjeta anterior.</li>
+      <li>Para menores de 18 años con residencia permanente, el plazo general es hasta el quinto cumpleaños posterior a la expedición, con reglas específicas para renovaciones.</li>
+      <li>Este cambio no modifica por sí mismo el estatus de residencia permanente.</li>
+      <li>Para quienes tienen un período de residencia limitado, la vigencia de la tarjeta ordinaria sigue vinculada al vencimiento de ese período, conforme a su situación.</li>
+    </ul>
+    <p><strong>Qué hacer:</strong> comprueba la fecha de vencimiento de tu tarjeta y consulta a Inmigración si deseas solicitar el nuevo formato o integrar My Number. No esperes a que caduque para renovarla.</p>
+    <p><a href="https://www.moj.go.jp/isa/tokutei.html" target="_blank" rel="noopener noreferrer">🔗 Información oficial y preguntas frecuentes de Inmigración</a></p>
+    <p><a href="https://www.moj.go.jp/isa/content/001472761.pdf" target="_blank" rel="noopener noreferrer">🔗 Comparación oficial de los diseños anteriores y nuevos (PDF)</a></p>
+    <p><small>Información revisada: 18 de noviembre de 2026.</small></p>
 
   </div>
 </details>

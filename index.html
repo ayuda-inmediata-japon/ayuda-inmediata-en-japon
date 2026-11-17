@@ -422,6 +422,34 @@ details.subtema-card, #resultado, #resultadoContent > section,
 #aij-weather small a{color:#c7ffda}
 </style>
 <style>#aij-japan-clock{display:block;width:fit-content;max-width:100%;margin:5px auto 6px;padding:4px 9px;border-radius:10px;background:#102522ed;color:#e1f8ec;font-size:11px;font-weight:600;text-align:center;line-height:1.4;font-variant-numeric:tabular-nums}</style>
+<style id="aij-portada-compacta">
+@media (max-width:600px){
+#inicio.hero{padding:6px 10px 8px!important;min-height:100svh!important;}
+#inicio .hero-content{min-height:0!important;gap:5px!important;justify-content:flex-start!important;}
+#inicio .aij-banner-2026{width:min(100%,48svh,340px)!important;max-width:100%!important;flex-shrink:0;}
+#inicio #aij-japan-clock{display:block!important;margin:0!important;padding:2px 7px!important;font-size:11px!important;line-height:1.25!important;}
+#inicio .aij-hero-topics{gap:2px!important;}
+#inicio .aij-hero-topics li{gap:2px!important;font-size:10px!important;}
+#inicio .aij-hero-topics svg{width:21px!important;height:21px!important;}
+#inicio h1{font-size:clamp(17px,4.8vw,21px)!important;line-height:1.15!important;}
+#inicio h1::after{margin-top:3px!important;height:2px!important;}
+#inicio .hero-sub{font-size:13px!important;line-height:1.28!important;}
+#inicio #aij-weather{margin:0!important;padding:5px 8px!important;line-height:1.2!important;}
+#inicio #aij-weather h2{font-size:14px!important;margin:0 0 3px!important;}
+#inicio #aij-weather select,#inicio #aij-weather button{height:32px!important;min-height:32px!important;}
+#inicio #aij-weather .wx-controls label{font-size:11px!important;}
+#inicio #wx-status{margin:2px 0!important;font-size:10px!important;line-height:1.2!important;}
+#inicio #wx-now{margin:2px 0!important;font-size:14px!important;}
+#inicio #wx-more summary{font-size:11px!important;}
+#inicio #aij-weather .wx-links{margin:3px 0!important;gap:4px!important;}
+#inicio #aij-weather .wx-links a{font-size:11px!important;padding:4px 2px!important;}
+#inicio #aij-weather small{font-size:10px!important;line-height:1.2!important;}
+#inicio .hero-contact-title{font-size:13px!important;margin:0 0 3px!important;}
+#inicio .hero-contact-actions a{min-height:40px!important;padding:5px 8px!important;font-size:14px!important;}
+#inicio #arrowDown{min-height:44px!important;padding:6px 10px!important;font-size:16px!important;}
+#inicio .hero-update{font-size:11px!important;line-height:1.2!important;}
+}
+</style>
 </head>
 
 <body>
@@ -436,7 +464,7 @@ details.subtema-card, #resultado, #resultadoContent > section,
       <div class="aij-banner-2026">
         <img src="Img/banner-portada-2026.webp" width="910" height="537" alt="Ayuda Inmediata en Japón" class="aij-banner-original" fetchpriority="high">
       </div>
-      <div id="aij-japan-clock" aria-label="Fecha y hora de Japón">🇯🇵 Fecha y hora de Japón (JST) · <time id="aij-clock-time">—</time></div>
+      <div id="aij-japan-clock" aria-label="Fecha y hora de Japón">🇯🇵 Japón (JST) · <time id="aij-clock-time">—</time></div>
       <ul class="aij-hero-topics" aria-label="Temas de la guía">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="14" r="4"/></svg><span>Turismo</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9"/></svg><span>Vida diaria</span></li>
@@ -1288,7 +1316,7 @@ pref.addEventListener('change',update);refresh.addEventListener('click',update);
 setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementById('aij-weather').getClientRects().length)update();},30*60*1000);
 })();
 </script>
-<script>(function(){const el=document.getElementById('aij-clock-time');const fmt=new Intl.DateTimeFormat('es-ES',{timeZone:'Asia/Tokyo',weekday:'long',day:'numeric',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'});function tick(){const now=new Date();el.textContent=fmt.format(now);el.dateTime=now.toISOString();}tick();setInterval(tick,1000);})();</script>
+<script>(function(){const el=document.getElementById('aij-clock-time');const fmt=new Intl.DateTimeFormat('es-ES',{timeZone:'Asia/Tokyo',weekday:'short',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'});function tick(){const now=new Date();el.textContent=fmt.format(now);el.dateTime=now.toISOString();}tick();setInterval(tick,1000);})();</script>
 </body>
 
 </html>

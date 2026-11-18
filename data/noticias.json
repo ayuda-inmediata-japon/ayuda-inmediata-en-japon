@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-11-18T13:56:17.764707+00:00",
+  "updated_at": "2026-11-18T21:55:26.044178+00:00",
   "items": [
+    {
+      "id": "9a6742e197b9285c42d6",
+      "title": "【地震情報】熊本県で震度5弱 今後1週間程度は注意を",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261119de78097",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-18T21:37:02+00:00",
+      "language": "ja",
+      "category_es": "Seguridad y emergencias"
+    },
+    {
+      "id": "c053901d1ed59f102246",
+      "title": "来年度税制改正 東京と地方の偏在是正など論点 自民税制調査会",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261119de78073",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-18T20:31:00+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "f3289850e1842a0e128e",
       "title": "“M9.9”誤った緊急地震速報 背景に二重のエラー 気象庁が修正",
@@ -39,6 +57,15 @@
     }
   ],
   "archive": [
+    {
+      "id": "c053901d1ed59f102246",
+      "title": "来年度税制改正 東京と地方の偏在是正など論点 自民税制調査会",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261119de78073",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-18T20:31:00+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "82d1c2daf43329d48841",
       "title": "杉原千畝「命のビザ」パスポートの複製 生存のユダヤ人に寄贈",

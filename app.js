@@ -1557,6 +1557,30 @@ alt="Policia en Japón">
 
 <p><strong>Policía: 110</strong></p>
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
+<details class="subtema-card">
+<summary>🚗 Accidente de tráfico: qué hacer y cómo reclamar al seguro</summary>
+<div class="subtema-content">
+<h3>1. Primero, protege a las personas</h3>
+<p>Detén el vehículo inmediatamente. Enciende las luces de emergencia y evita nuevos accidentes. Muévete a un lugar seguro cuando sea posible; no te expongas al tráfico para fotografiar. Si hay heridos, llama al <strong>119</strong> y sigue las instrucciones de emergencias. No muevas innecesariamente a personas con lesiones graves.</p>
+<p><strong>Llama siempre al 110 para informar del accidente, aunque sea pequeño o parezca que solo hay daños materiales.</strong> Sigue las instrucciones de la policía y no abandones el lugar sin cumplir tus obligaciones.</p>
+<h3>2. Datos que debes intercambiar</h3>
+<ul><li>Nombre completo, dirección y teléfono del otro conductor.</li><li>Matrícula (número de placa), marca y modelo del vehículo; nombre del propietario si es diferente.</li><li>Compañía y datos de la póliza del seguro obligatorio (自賠責保険, jibaiseki hoken) y del seguro voluntario (任意保険, nin'i hoken), si existe.</li><li>Si conducía por trabajo: nombre y contacto de la empresa.</li><li>Nombres y teléfonos de testigos, si aceptan facilitarlos.</li></ul>
+<p>Intercambia también tus datos. Puedes pedir la presencia del policía al hacerlo; solicita permiso antes de fotografiar documentos personales.</p>
+<h3>3. Pruebas que conviene conservar</h3>
+<ul><li>Fecha, hora y ubicación exacta (calle, intersección, punto del mapa).</li><li>Fotografías generales del lugar y de ambos vehículos, matrículas, daños, señales, semáforos, marcas de frenado y posición de los vehículos, solo si es seguro.</li><li>Grabación original de la cámara del coche (ドライブレコーダー); guárdala antes de que se sobrescriba.</li><li>Descripción de cómo ocurrió, dirección de circulación y condiciones de la vía y el clima.</li><li>Contacto de testigos, documentos médicos, facturas, recibos de grúa y reparación.</li></ul>
+<h3>4. Avisa a la aseguradora cuanto antes</h3>
+<p>Llama al teléfono de accidentes de tu compañía, explica lo sucedido y pide un número de expediente. Consulta antes de encargar reparaciones, grúa o vehículo de sustitución; conserva presupuestos y facturas. Si es un coche alquilado, llama también a la empresa de alquiler y sigue las condiciones de su contrato.</p>
+<p><strong>No prometas pagar una cantidad ni firmes un acuerdo de indemnización en el lugar sin consultar primero con tu aseguradora.</strong> La responsabilidad y el importe dependen de los hechos, las coberturas y la evaluación del caso.</p>
+<h3>5. Certificado oficial del accidente</h3>
+<p>Pregunta por el <strong>交通事故証明書 (kōtsū jiko shōmeisho)</strong>, certificado de accidente de tráfico emitido por el Centro de Conducción Segura de Japón (自動車安全運転センター). Se solicita después de que la policía haya registrado el accidente; no es un documento que el agente necesariamente entregue en el lugar. Muchas aseguradoras ayudan a obtenerlo. Es importante para reclamar indemnizaciones.</p>
+<p>Si tienes molestias o lesiones, consulta pronto a un médico, aunque inicialmente te sientas bien. Guarda los informes y consulta a la policía y a tu aseguradora sobre el registro de lesiones (人身事故, jinshin jiko).</p>
+<h3>6. ¿Qué cubre el seguro?</h3>
+<p>El <strong>seguro obligatorio (自賠責)</strong> protege a víctimas por lesiones o fallecimiento dentro de sus límites; <strong>no paga la reparación de los automóviles</strong>. El seguro voluntario puede cubrir daños a terceros, lesiones y daños al propio vehículo según la póliza. La existencia de un parte policial <strong>no garantiza por sí sola el pago</strong>: se revisan la responsabilidad, las exclusiones, la cobertura y los documentos.</p>
+<h3>Frases útiles en japonés</h3>
+<ul><li><strong>交通事故です (Kōtsū jiko desu)</strong> — Ha ocurrido un accidente de tráfico.</li><li><strong>警察を呼んでください (Keisatsu o yonde kudasai)</strong> — Por favor, llamen a la policía.</li><li><strong>救急車をお願いします (Kyūkyūsha o onegaishimasu)</strong> — Necesito una ambulancia.</li><li><strong>スペイン語の通訳をお願いします (Supeingo no tsūyaku o onegaishimasu)</strong> — Necesito interpretación en español.</li><li><strong>保険会社に連絡します (Hoken gaisha ni renraku shimasu)</strong> — Voy a contactar a mi aseguradora.</li></ul>
+<p><strong>110:</strong> emergencia policial. <strong>119:</strong> ambulancia/bomberos. <strong>#9110:</strong> consultas policiales no urgentes; no sustituye el 110 para informar un accidente.</p>
+<p>Fuentes oficiales: <a href="https://www.mlit.go.jp/jidosha/jibaiseki/en/accident/correspondence/index.html" target="_blank" rel="noopener noreferrer">Ministerio de Transporte de Japón (MLIT)</a> · <a href="https://www.sonpo.or.jp/report/publish/bousai/koutuu/article/1/" target="_blank" rel="noopener noreferrer">Asociación de Seguros Generales de Japón</a> · <a href="https://english.jaf.or.jp/driving-in-japan/emergencymeasures" target="_blank" rel="noopener noreferrer">JAF</a>.</p>
+</div></details>
 <div class="subtemas-box">
 
   <details class="subtema-card">

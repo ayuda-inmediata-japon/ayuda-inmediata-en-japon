@@ -1822,3 +1822,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
 }
+
+/* Directorio de guías: accesos claros en móvil y escritorio */
+.aij-topic-directory{margin:22px 0 28px;padding:18px;border:1px solid rgba(255,255,255,.22);border-radius:18px;background:rgba(17,38,28,.62)}
+.aij-topic-directory>h2{margin:0 0 8px;font-size:clamp(21px,4vw,28px)}
+.aij-topic-directory>p{margin:0 0 18px;line-height:1.55;color:#e6efe8}
+.aij-topic-group{margin:16px 0}
+.aij-topic-group h3{font-size:18px;margin:0 0 10px;color:#c6f6cf}
+.aij-topic-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.aij-topic-links .chip,.aij-topic-link{display:flex;align-items:center;justify-content:center;min-height:56px;width:100%;padding:12px;border:1px solid rgba(255,255,255,.36);border-radius:12px;background:#245a39;color:white;font:inherit;font-weight:700;text-align:center;text-decoration:none;line-height:1.35;cursor:pointer}
+.aij-topic-links .chip:hover,.aij-topic-link:hover{background:#31734a}
+@media(max-width:560px){.aij-topic-directory{padding:14px}.aij-topic-links{grid-template-columns:1fr}}

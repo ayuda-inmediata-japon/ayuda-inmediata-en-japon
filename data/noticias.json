@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-11-21T01:30:20.959653+00:00",
+  "updated_at": "2026-11-21T09:46:40.321279+00:00",
   "items": [
+    {
+      "id": "3a709bf25d3580880097",
+      "title": "自民 鈴木幹事長 関文科相問責対応“消費税法案など成立優先”",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261121de79553",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-21T06:08:00+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "2d26f19fbfc836a72164",
       "title": "新築マンション 投機的な取り引き抑制を検討 来年度税制改正",
@@ -84,6 +93,15 @@
     }
   ],
   "archive": [
+    {
+      "id": "3a709bf25d3580880097",
+      "title": "自民 鈴木幹事長 関文科相問責対応“消費税法案など成立優先”",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261121de79553",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-21T06:08:00+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "2d26f19fbfc836a72164",
       "title": "新築マンション 投機的な取り引き抑制を検討 来年度税制改正",

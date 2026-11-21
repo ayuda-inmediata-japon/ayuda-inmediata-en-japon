@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-11-20T20:13:10.219621+00:00",
+  "updated_at": "2026-11-21T01:30:20.959653+00:00",
   "items": [
+    {
+      "id": "2d26f19fbfc836a72164",
+      "title": "新築マンション 投機的な取り引き抑制を検討 来年度税制改正",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261121de79532",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-21T01:05:48+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
+    {
+      "id": "68e6085f31e77526a492",
+      "title": "ペルーでM6.7の地震 津波のおそれなし 米海洋大気局",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261121de79540",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-21T00:47:36+00:00",
+      "language": "ja",
+      "category_es": "Seguridad y emergencias"
+    },
     {
       "id": "e58541f1b60485beed3a",
       "title": "物価高 アイスは値上げ 居酒屋やピザ店は低価格で 農家は悲鳴",
@@ -66,6 +84,15 @@
     }
   ],
   "archive": [
+    {
+      "id": "2d26f19fbfc836a72164",
+      "title": "新築マンション 投機的な取り引き抑制を検討 来年度税制改正",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261121de79532",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-21T01:05:48+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "c053901d1ed59f102246",
       "title": "来年度税制改正 東京と地方の偏在是正など論点 自民税制調査会",

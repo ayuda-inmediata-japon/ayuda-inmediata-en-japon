@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayuda-inmediata-japon.github.io/ayuda-inmediata-en-japon/sitemap.xml

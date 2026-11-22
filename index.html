@@ -539,52 +539,22 @@ details.subtema-card, #resultado, #resultadoContent > section,
       </button>
       <h2>🇯🇵 Japón a tu alcance</h2>
       <p>Tu guía para vivir y visitar Japón sin complicaciones.<br>Información y orientación gratuita para turistas y residentes.</p>
-      <!-- INICIO: CUATRO TARJETAS PRINCIPALES -->
-      <div class="cards-wrap">
-        <a href="turismo.html" class="card-link">
-          <div class="card-icon">🌸</div>
-          <div class="card-title">Turismo en Japón</div>
-          <div class="card-desc">Lugares, vídeos y recomendaciones</div>
-        </a>
-        <a href="planifica.html" class="card-link">
-          <div class="card-icon">🧳</div>
-          <div class="card-title">Planifica tu viaje</div>
-          <div class="card-desc">Requisitos, presupuesto y preparación</div>
-        </a>
-        <!-- Se conserva el ID del botón: la navegación existente sigue funcionando. -->
-        <button id="continuarDesdeTurismo" class="aij-next" type="button" aria-controls="buscador">
+      <!-- Seis tarjetas principales -->
+<div class="cards-wrap aij-sixcards">
+<a href="turismo.html" class="card-link"><div class="card-icon" aria-hidden="true">🌸</div><div class="card-title">Turismo en Japón</div><div class="card-desc">Lugares y recomendaciones</div></a>
+<button id="continuarDesdeTurismo" class="aij-next" type="button" aria-controls="buscador">
           <span class="aij-daily-icon" aria-hidden="true">🏡</span>
           <span class="aij-daily-title">Vivir en Japón</span>
           <span class="aij-daily-desc">Visas, trámites, salud, trabajo y vida diaria</span>
           <span class="aij-daily-continue">👇 Continuar</span>
         </button>
-        <a href="japones.html" class="card-link">
-          <div class="card-icon">📚</div>
-          <div class="card-title">Aprender japonés</div>
-          <div class="card-desc">Cursos, vocabulario, frases y conversación</div>
-        </a>
-      </div>
-      <!-- FIN: CUATRO TARJETAS PRINCIPALES -->
-
-      <!-- INICIO: RESERVAS (se conservan clases y aspecto original) -->
-      <a href="reservas.html" class="reservation-strip">
-        <span class="reservation-strip-icon" aria-hidden="true">🎟️</span>
-        <span class="reservation-strip-text">
-          <strong>Reservas para tu viaje</strong>
-          <small>Hoteles · Restaurantes · Tours · Actividades · Parques · Transporte</small>
-        </span>
-        <span class="reservation-strip-arrow" aria-hidden="true">›</span>
-      </a>
-      <!-- FIN: RESERVAS -->
-
-      <!-- INICIO: DESCUBRE JAPÓN - artículos y documentales -->
-      <a href="descubre-japon.html" class="aij-cultura">
-        <strong>🏯 Descubre Japón</strong>
-        <small>Cultura · Historia · Curiosidades · Documentales</small>
-      </a>
-      <!-- FIN: DESCUBRE JAPÓN -->
-
-      <section class="aij-accesos-directos" aria-label="Más información y ayuda">
+<a href="planifica.html" class="card-link"><div class="card-icon" aria-hidden="true">🧳</div><div class="card-title">Planifica tu viaje</div><div class="card-desc">Requisitos y presupuesto</div></a>
+<a href="reservas.html" class="card-link"><div class="card-icon" aria-hidden="true">🎟️</div><div class="card-title">Reservas</div><div class="card-desc">Hoteles, tours y transporte</div></a>
+<a href="descubre-japon.html" class="card-link"><div class="card-icon" aria-hidden="true">🏯</div><div class="card-title">Descubre Japón</div><div class="card-desc">Cultura, historia y curiosidades</div></a>
+<a href="videoteca.html" class="card-link"><div class="card-icon" aria-hidden="true">🎬</div><div class="card-title">Videoteca</div><div class="card-desc">Reels y documentales</div></a>
+</div>
+<a href="japones.html" class="aij-cultura aij-japanese-highlight"><strong>📚 Aprender japonés</strong><small>Lecciones, frases y conversación</small></a>
+<section class="aij-accesos-directos" aria-label="Más información y ayuda">
         
         <div class="aij-accesos-grid">
           <a href="noticias.html">📰 Noticias importantes</a>
@@ -1361,6 +1331,12 @@ setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementByI
 })();
 </script>
 <script>(function(){const el=document.getElementById('aij-clock-time');const fmt=new Intl.DateTimeFormat('es-ES',{timeZone:'Asia/Tokyo',weekday:'short',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'});function tick(){const now=new Date();el.textContent=fmt.format(now);el.dateTime=now.toISOString();}tick();setInterval(tick,1000);})();</script>
+<style id="aij-sixcards-2026">
+#pantallaTurismo .cards-wrap.aij-sixcards{gap:7px!important;margin:7px 0!important}
+#pantallaTurismo .cards-wrap.aij-sixcards > a.card-link,#pantallaTurismo .cards-wrap.aij-sixcards > #continuarDesdeTurismo.aij-next{min-height:88px!important;padding:6px!important;gap:3px!important;border-radius:13px!important}
+#pantallaTurismo .aij-japanese-highlight{background:linear-gradient(115deg,#173b34,#173b50)!important;border:1px solid #8ce7bc!important;margin:7px 0!important;min-height:0!important;padding:8px!important}
+@media(max-width:600px){#pantallaTurismo .cards-wrap.aij-sixcards > a.card-link,#pantallaTurismo .cards-wrap.aij-sixcards > #continuarDesdeTurismo.aij-next{min-height:74px!important;padding:5px!important;gap:2px!important}#pantallaTurismo .cards-wrap.aij-sixcards .card-icon,#pantallaTurismo .cards-wrap.aij-sixcards .aij-daily-icon{font-size:21px!important;line-height:1.05!important}#pantallaTurismo .cards-wrap.aij-sixcards .card-title,#pantallaTurismo .cards-wrap.aij-sixcards .aij-daily-title{font-size:clamp(13px,3.5vw,16px)!important;line-height:1.15!important}#pantallaTurismo .cards-wrap.aij-sixcards .card-desc,#pantallaTurismo .cards-wrap.aij-sixcards .aij-daily-desc{font-size:clamp(11px,2.8vw,13px)!important;line-height:1.18!important}}
+</style>
 </body>
 
 </html>

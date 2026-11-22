@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-11-22T11:18:42.837291+00:00",
+  "updated_at": "2026-11-22T19:35:41.817906+00:00",
   "items": [
+    {
+      "id": "e3c50bc58d9cd3516fcf",
+      "title": "【地震情報】熊本県で震度3 津波の心配なし",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261122de80074",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-22T18:19:05+00:00",
+      "language": "ja",
+      "category_es": "Seguridad y emergencias"
+    },
     {
       "id": "3a709bf25d3580880097",
       "title": "自民 鈴木幹事長 関文科相問責対応“消費税法案など成立優先”",

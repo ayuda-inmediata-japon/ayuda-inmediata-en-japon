@@ -1486,18 +1486,18 @@ setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementByI
  if(!form||!input||!status||!results)return;
  const normalize=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
  const topics=[
-  {keys:['robo','robado','robaron','hurto','asalto','estafa','denuncia','denunciar'],items:[['🚨 Qué hacer si te roban o estafan','Información práctica para solicitar ayuda y denunciar un robo en Japón.','index.html#ayuda-robo'],['🚓 Policía y kōban','Teléfono de emergencias 110 y ayuda policial.','index.html#ayuda-policia']]},
-  {keys:['policia','comisaria','koban','110'],items:[['🚓 Policía en Japón','Cómo solicitar ayuda policial y contactar con un kōban.','index.html#ayuda-policia'],['🚨 Robo o estafa','Qué hacer si has sufrido un robo o una estafa.','index.html#ayuda-robo']]},
-  {keys:['restaurante','restaurantes','comer','comida','cenar','almorzar','gastronomia'],items:[['🍱 Restaurantes y comida en Japón','Información para visitantes sobre lugares, gastronomía y actividades.','turismo.html'],['🗣️ Japonés para restaurantes','Cómo pedir comida, solicitar la cuenta y comunicarte en un restaurante.','japones.html#art-cuenta']]},
+  {keys:['robo','robar','robado','robaron','me robaron','hurto','asalto','estafa','denuncia','denunciar','ladron','cartera robada'],items:[['🚨 Qué hacer si te roban o estafan','Información práctica para solicitar ayuda y denunciar un robo en Japón.','index.html#ayuda-robo'],['🚓 Policía y kōban','Teléfono de emergencias 110 y ayuda policial.','index.html#ayuda-policia']]},
+  {keys:['policia','policial','policias','poli','pol','comisaria','koban','kouban','puesto policial','110'],items:[['🚓 Policía en Japón','Cómo solicitar ayuda policial y contactar con un kōban.','index.html#ayuda-policia'],['🚨 Robo o estafa','Qué hacer si has sufrido un robo o una estafa.','index.html#ayuda-robo']]},
+  {keys:['restaurante','restaurantes','restaurant','comer','comida','cenar','almorzar','gastronomia','donde comer','menu'],items:[['🍱 Restaurantes y comida en Japón','Información para visitantes sobre lugares, gastronomía y actividades.','turismo.html'],['🗣️ Japonés para restaurantes','Cómo pedir comida, solicitar la cuenta y comunicarte en un restaurante.','japones.html#art-cuenta']]},
   {keys:['video','videos','videoteca','reel','reels','documental','documentales'],items:[['🎬 Videoteca','Todos nuestros vídeos educativos organizados por tema.','videoteca.html']]},
   {keys:['turismo','turista','turistas','viaje','viajar','visitar','lugares','destinos'],items:[['🗾 Turismo en Japón','Lugares, destinos y recomendaciones para conocer Japón.','turismo.html'],['🧳 Preparar un viaje','Requisitos, documentos y recomendaciones antes de viajar.','planifica.html']]},
-  {keys:['japones','idioma','aprender','frases','hablar japones'],items:[['🗣️ Aprende japonés práctico','Frases útiles y guía para vivir y trabajar en Japón.','japones.html#japones-para-vivir-trabajar']]},
+  {keys:['japones','idioma','aprender','frases','hablar japones','nihongo','lengua japonesa'],items:[['🗣️ Aprende japonés práctico','Frases útiles y guía para vivir y trabajar en Japón.','japones.html#japones-para-vivir-trabajar']]},
   {keys:['ambulancia','119','emergencia','emergencias','bomberos','terremoto'],items:[['🚑 Emergencias en Japón','Ambulancias, policía, terremotos y otras situaciones urgentes.','index.html#ayuda-emergencias']]},
   {keys:['visa','visado','residencia','inmigracion','zairyu','renovacion'],items:[['🪪 Residencia y trámites','Información sobre trámites y documentos en Japón.','index.html#ayuda-tramites']]},
-  {keys:['hotel','hoteles','alojamiento','hospedaje','ryokan'],items:[['🏨 Alojamiento y hoteles','Consejos para llegar, alojarte y hacer check-in en Japón.','index.html#ayuda-alojamiento']]},
-  {keys:['tren','trenes','transporte','estacion','metro','autobus'],items:[['🚆 Transporte en Japón','Trenes, estaciones, tarjetas IC y desplazamientos.','index.html#ayuda-transporte']]},
+  {keys:['hotel','hoteles','alojamiento','hospedaje','ryokan','hostal','dormir'],items:[['🏨 Alojamiento y hoteles','Consejos para llegar, alojarte y hacer check-in en Japón.','index.html#ayuda-alojamiento']]},
+  {keys:['tren','trenes','transporte','estacion','metro','autobus','bus','ferrocarril','densha'],items:[['🚆 Transporte en Japón','Trenes, estaciones, tarjetas IC y desplazamientos.','index.html#ayuda-transporte']]},
   {keys:['hospital','medico','medicina','salud','clinica'],items:[['🏥 Salud y atención médica','Cómo buscar atención médica y qué hacer en caso de enfermedad.','index.html#ayuda-salud']]},
-  {keys:['basura','reciclaje','supermercado','konbini','compras'],items:[['🏠 Vida diaria en Japón','Compras, reciclaje, konbini y servicios cotidianos.','index.html#ayuda-vida-diaria']]}
+  {keys:['basura','reciclaje','supermercado','konbini','compras','residuos','desechos','reciclar'],items:[['🏠 Vida diaria en Japón','Compras, reciclaje, konbini y servicios cotidianos.','index.html#ayuda-vida-diaria']]}
  ];
  function render(title,desc,href){
   if([...results.querySelectorAll('a')].some(a=>a.getAttribute('href')===href))return;
@@ -1509,8 +1509,26 @@ setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementByI
  form.addEventListener('submit',function(e){
   e.preventDefault();results.replaceChildren();
   const q=normalize(input.value);if(!q){status.textContent='Escribe lo que necesitas buscar.';return;}
-  const words=q.split(' ');
-  const matched=topics.filter(topic=>topic.keys.some(k=>{const n=normalize(k);return q===n||q.includes(n)||words.some(w=>w.length>=4&&(w===n||n.startsWith(w)&&w.length>=5));}));
+  const words=q.split(' ').filter(Boolean);
+  function near(a,b){
+   if(a===b)return true;
+   if(a.length<5||b.length<5||Math.abs(a.length-b.length)>1)return false;
+   let i=0,j=0,edits=0;
+   while(i<a.length&&j<b.length){
+    if(a[i]===b[j]){i++;j++;continue;}
+    if(++edits>1)return false;
+    if(a.length>b.length)i++;
+    else if(b.length>a.length)j++;
+    else{i++;j++;}
+   }
+   return edits+Number(i<a.length||j<b.length)<=1;
+  }
+  function matches(key){
+   const n=normalize(key);
+   if(q===n||(n.length>=4&&q.includes(n)))return true;
+   return words.some(w=>w===n||(w.length>=3&&n.startsWith(w))||near(w,n));
+  }
+  const matched=topics.filter(topic=>topic.keys.some(matches));
   matched.forEach(t=>t.items.forEach(item=>render(...item)));
   const count=results.querySelectorAll('a').length;
   status.textContent=count?'Encontramos '+count+' resultado'+(count===1?'':'s')+' relacionado'+(count===1?'':'s')+'.':'Todavía no tenemos un resultado específico para esta búsqueda. Puedes consultar las secciones o escribirnos para recibir orientación.';

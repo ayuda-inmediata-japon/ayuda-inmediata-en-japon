@@ -1483,55 +1483,77 @@ setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementByI
 <style id="aij-video-art-style">.aij-video-art{margin:12px 0;border:1px solid #648f83;border-radius:12px;background:#162b2b;padding:10px;color:#fff}.aij-video-art>summary{color:#b8e4cf;font-weight:800;cursor:pointer}.aij-video-art a,.aij-video-info a{color:#8ed2ff!important;text-decoration:underline}.aij-video-art p,.aij-video-info p{line-height:1.55}</style><script id="aij-buscador-global-script">
 (function(){
 const form=document.getElementById('aij-global-form'),input=document.getElementById('aij-global-input'),status=document.getElementById('aij-global-status'),results=document.getElementById('aij-global-results');
-if(!form)return;
-const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9ñ\s]/g,' ').replace(/\s+/g,' ').trim();
-const groups=[
-['policia','robo','robado','hurto','denuncia','perdida','perdido','extravío','extravio','accidente','110','comisaria','koban'],
-['hotel','hoteles','alojamiento','hospedaje','estadia','estadía','dormir','reservas','habitacion','hostal','ryokan'],
-['visa','visado','residencia','inmigracion','extranjeria','renovacion','zairyu'],
-['hospital','medico','salud','ambulancia','emergencia','119','clinica'],
-['trabajo','empleo','salario','laboral','contrato'],
-['turismo','viaje','viajar','visitar','lugares','excursion']
+if(!form||!input||!status||!results)return;
+const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
+const stop=new Set(['de','del','la','las','el','los','en','un','una','que','como','para','por','con','sobre','japon','quiero','necesito','saber','informacion']);
+const topics=[
+ {words:['robo','robado','robaron','hurto','asalto','denuncia','denunciar','policia','comisaria','koban'],title:'🚓 Robo, denuncia y policía en Japón',description:'Qué hacer ante un robo, cómo pedir ayuda y contactar a la policía (110).',url:'index.html#buscador',terms:['robo','policia','denuncia']},
+ {words:['ambulancia','119','emergencia medica'],title:'🚑 Ambulancias y emergencias médicas',description:'Cómo pedir ayuda médica y cuándo llamar al 119.',url:'index.html#buscador',terms:['ambulancia','emergencia']},
+ {words:['visa','visado','residencia','zairyu','inmigracion','renovar visa'],title:'🪪 Residencia, visas y trámites',description:'Consulta información sobre residencia y procedimientos en Japón.',url:'index.html#buscador',terms:['visa','residencia']},
+ {words:['videos','video','videoteca','reels','documentales'],title:'🎬 Videoteca de Ayuda Inmediata en Japón',description:'Vídeos educativos y documentales organizados por tema.',url:'videoteca.html',terms:['videos','videoteca']},
+ {words:['turismo','turista','turistas','viaje','viajar','visitar','lugares turisticos'],title:'🗾 Turismo y lugares para visitar',description:'Descubre destinos, actividades y consejos para viajar por Japón.',url:'turismo.html',terms:['turismo','viajar']},
+ {words:['idioma','japones','aprender japones','frases'],title:'🗣️ Aprende japonés práctico',description:'Frases y recursos para vivir y trabajar en Japón.',url:'japones.html',terms:['idioma','japones']}
 ];
 let cache=null;
 async function index(){
  if(cache)return cache;
  const root=new URL('./',location.href),visited=new Set(),queue=['index.html'],pages=[];
- while(queue.length&&visited.size<180){
+ while(queue.length&&visited.size<120){
   const path=queue.shift();if(visited.has(path))continue;visited.add(path);
   try{
    const response=await fetch(new URL(path,root));if(!response.ok)continue;
-   const html=await response.text(),doc=new DOMParser().parseFromString(html,'text/html');
-   doc.querySelectorAll('script,style,nav,footer').forEach(n=>n.remove());
-   const title=(doc.querySelector('title')?.textContent||doc.querySelector('h1')?.textContent||path).trim();
-   const body=(doc.body?.innerText||doc.body?.textContent||'').replace(/\s+/g,' ').slice(0,180000);
-   pages.push({path,title,body,normalized:norm(title+' '+body)});
-   doc.querySelectorAll('a[href]').forEach(a=>{
-    try{const u=new URL(a.getAttribute('href'),new URL(path,root));
+   const doc=new DOMParser().parseFromString(await response.text(),'text/html');
+   doc.querySelectorAll('script,style,nav,footer,header,form,button,aside').forEach(n=>n.remove());
+   const title=(doc.querySelector('title')?.textContent||path).trim();
+   const main=doc.querySelector('main')||doc.body;
+   const headings=[...main.querySelectorAll('h1,h2,h3,summary')].map(h=>(h.textContent||'').trim()).filter(Boolean).slice(0,90);
+   const paras=[...main.querySelectorAll('p')].map(p=>(p.textContent||'').replace(/\s+/g,' ').trim()).filter(p=>p.length>35).slice(0,100);
+   pages.push({path,title,headings,paras,titleNorm:norm(title),headingNorm:norm(headings.join(' '))});
+   doc.querySelectorAll('a[href]').forEach(a=>{try{
+    const u=new URL(a.getAttribute('href'),new URL(path,root));
     if(u.origin!==root.origin||!u.pathname.startsWith(root.pathname))return;
-    const relative=decodeURIComponent(u.pathname.slice(root.pathname.length))||'index.html';
-    if(/^[^?#]+\.html$/i.test(relative)&&!visited.has(relative)&&!queue.includes(relative))queue.push(relative);
-    }catch(e){}
-   });
+    const rel=decodeURIComponent(u.pathname.slice(root.pathname.length))||'index.html';
+    if(/^[^?#]+\.html$/i.test(rel)&&!visited.has(rel)&&!queue.includes(rel))queue.push(rel);
+   }catch(e){}});
   }catch(e){}
  }
  cache=pages;return pages;
 }
+function add(title,description,url){
+ if([...results.querySelectorAll('a')].some(a=>a.getAttribute('href')===url))return;
+ const a=document.createElement('a');a.href=url;
+ const strong=document.createElement('strong');strong.textContent=title;
+ const small=document.createElement('small');small.textContent=description;
+ a.append(strong,small);results.append(a);
+}
 form.addEventListener('submit',async e=>{
  e.preventDefault();const q=norm(input.value);if(!q)return;
- status.textContent='Buscando en las secciones de la guía…';results.replaceChildren();
+ status.textContent='Buscando información relacionada…';results.replaceChildren();
+ const terms=q.split(' ').filter(t=>t.length>2&&!stop.has(t));
+ const matched=topics.filter(t=>t.words.some(w=>q===norm(w)||q.includes(norm(w))||norm(w).includes(q)&&q.length>3));
+ matched.forEach(t=>add(t.title,t.description,t.url));
  try{
- const pages=await index(),terms=q.split(' ').filter(x=>x.length>1);
- const extra=new Set(terms);
- groups.forEach(g=>{if(g.some(w=>terms.includes(norm(w))))g.forEach(w=>extra.add(norm(w)))});
- const found=pages.map(p=>{
-  let score=0;if(p.normalized.includes(q))score+=12;
-  for(const t of extra){if(t.length>2&&p.normalized.includes(t))score+=p.title.toLowerCase().includes(t)?5:1}
-  return {...p,score};
- }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,18);
- status.textContent=found.length?'Encontramos '+found.length+' secciones relacionadas.':'No encontramos resultados. Prueba otras palabras o escríbenos.';
- found.forEach(p=>{const a=document.createElement('a');a.href=p.path;const strong=document.createElement('strong');strong.textContent=p.title;const small=document.createElement('small');small.textContent=p.body.slice(0,145)+'…';a.append(strong,small);results.append(a)});
- }catch(err){status.textContent='No se pudo completar la búsqueda. Inténtalo nuevamente o contáctanos.'}
+  const pages=await index();
+  const scored=pages.map(p=>{
+   let score=0;
+   if(p.titleNorm.includes(q))score+=35;
+   if(p.headingNorm.includes(q))score+=18;
+   for(const term of terms){
+    if(p.titleNorm.includes(term))score+=12;
+    if(p.headingNorm.includes(term))score+=5;
+   }
+   // Avoid generic pages ranking merely because a word appears in an unrelated paragraph.
+   if(p.path==='index.html')score=Math.min(score,4);
+   if(matched.length&&matched.some(t=>t.url.split('#')[0]===p.path))score+=18;
+   const snippet=p.paras.find(x=>norm(x).includes(q))||p.paras.find(x=>terms.some(t=>norm(x).includes(t)))||'Consulta esta sección de nuestra guía.';
+   return {...p,score,snippet};
+  }).filter(p=>p.score>=8).sort((a,b)=>b.score-a.score).slice(0,6);
+  scored.forEach(p=>add(p.title,p.snippet.slice(0,155)+(p.snippet.length>155?'…':''),p.path));
+  const count=results.querySelectorAll('a').length;
+  status.textContent=count?'Encontramos '+count+' resultado'+(count===1?'':'s')+' relacionado'+(count===1?'':'s')+'.':'No encontramos una sección específica para esta búsqueda. Prueba otra palabra o contáctanos.';
+ }catch(err){
+  status.textContent=results.children.length?'Resultados principales disponibles.':'No se pudo completar la búsqueda. Inténtalo nuevamente.';
+ }
 });
 })();
 </script>

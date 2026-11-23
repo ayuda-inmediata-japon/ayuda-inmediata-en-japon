@@ -1507,21 +1507,16 @@ function focusCard(card){
  setTimeout(()=>{card.style.outline=prior;},2200);
 }
 function go(route){
- if(route.href){
-  showScreen('pantallaTurismo');
-  const card=document.querySelector('#pantallaTurismo a.card-link[href="'+route.href+'"]')||document.querySelector('#pantallaTurismo a[href="'+route.href+'"]');
-  if(card){setTimeout(()=>focusCard(card),100);return;}
-  location.href=route.href;return;
- }
+ if(route.href){location.href=route.href;return;}
  if(route.weather){
-showScreen('pantallaTurismo');
-else {document.getElementById('inicio').style.display='none';document.getElementById('pantallaTurismo').style.display='block';}
-setTimeout(()=>document.getElementById('aij-weather')?.scrollIntoView({behavior:'smooth',block:'start'}),60);return;
-}
-const chip=document.querySelector('#buscador .chips-wrap [data-key="'+route.key+'"]');
-if(!chip)return;
-showScreen('buscador');
-setTimeout(()=>{focusCard(chip);},90);
+  showScreen('pantallaTurismo');
+  setTimeout(()=>document.getElementById('aij-weather')?.scrollIntoView({behavior:'smooth',block:'start'}),80);
+  return;
+ }
+ const chip=document.querySelector('#buscador .chips-wrap [data-key="'+route.key+'"]');
+ if(!chip)return;
+ showScreen('buscador');
+ setTimeout(()=>chip.click(),80);
 }
 function update(){
 const q=norm(input.value),route=find(q);
@@ -1529,7 +1524,7 @@ results.replaceChildren();status.textContent='';
 if(!q)return;
 if(!route){status.textContent='No encontramos una tarjeta para esa palabra. Prueba con otro término.';return;}
 const a=document.createElement('a');a.href=route.href||'#';a.textContent=route.label;
-a.addEventListener('click',e=>{if(!route.href){e.preventDefault();go(route);}});
+a.addEventListener('click',e=>{e.preventDefault();go(route);});
 results.append(a);
 }
 input.addEventListener('input',update);

@@ -286,6 +286,11 @@ function update(){
  const a=document.createElement('a');a.href=h.url;a.textContent=h.label;a.addEventListener('click',ev=>{if(h.r.key||h.r.screen||h.r.weather){ev.preventDefault();go(h.r);}});results.append(a);if(++shown>=6)break;}
  if(!shown)contact();else status.textContent=shown===1?'Encontramos este apartado:':'Apartados relacionados con tu búsqueda:';
 }
+/* La búsqueda antigua de Ayuda usa el mismo índice y resultados que la portada. */
+const secondary=document.getElementById('searchInput'),secondaryBtn=document.getElementById('searchBtn');
+function useMainSearch(ev){if(!secondary||!secondary.value.trim())return;ev.preventDefault();ev.stopImmediatePropagation();showScreen('inicio');input.value=secondary.value;update();setTimeout(()=>{input.focus({preventScroll:true});form.scrollIntoView({block:'center'});},80);}
+if(secondaryBtn)secondaryBtn.addEventListener('click',useMainSearch,true);
+if(secondary)secondary.addEventListener('keydown',ev=>{if(ev.key==='Enter')useMainSearch(ev);},true);
 input.addEventListener('input',update);
 form.addEventListener('submit',ev=>{ev.preventDefault();const first=results.querySelector('a');if(first)first.click();else update();});
 fetch('search-index.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(data=>{if(Array.isArray(data)){entries=data;update();}}).catch(()=>{status.textContent='Puedes buscar las secciones principales. Algunas búsquedas detalladas podrían no estar disponibles temporalmente.';});

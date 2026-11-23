@@ -1466,7 +1466,8 @@ if(!form||!input||!status||!results)return;
 const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
 const routes=[
 {label:'🚓 Policía',key:'policia',terms:['policia','pol','poli','policial','koban','kouban','patrulla','comisaria','denuncia','robo','robado','ladron','asalto','accidente','110']},
-{label:'🌸 Turismo en Japón',href:'turismo.html',terms:['turismo','turista','turistas','turistic','excursion','visitar','atracciones']},
+{label:'🌸 Turismo en Japón',href:'turismo.html',terms:['turismo','turista','turistas','turistic','excursion','visitar']},
+{label:'🎡 Atracciones',href:'turismo.html#tur-attractions',terms:['atraccion','atracciones','parques tematicos','parque tematico','atractivos turisticos']},
 {label:'🎟️ Reservas',href:'reservas.html',terms:['reserva','reservas','reservar','booking','entradas','tickets']},
 {label:'🧳 Planifica tu viaje',href:'planifica.html',terms:['planifica','planificar','planificacion','preparar viaje','presupuesto','itinerario']},
 {label:'🌤️ Clima',weather:true,terms:['clima','tiempo','temperatura','pronostico','meteorologia','lluvia','llover','weather']},

@@ -769,27 +769,6 @@ details.subtema-card, #resultado, #resultadoContent > section,
 
       <div id="sugerencias" class="sugerencias"></div>
 
-      <!-- Accesos organizados según los temas de nuestros vídeos. Usan las guías existentes. -->
-      <nav class="aij-topic-directory" aria-label="Guías por situación">
-        <h2>Encuentra tu guía por tema</h2>
-        <p>Elige una situación para consultar las instrucciones disponibles. En una emergencia real llama directamente al 110 (policía) o al 119 (ambulancia y bomberos).</p>
-        <div class="aij-topic-group"><h3>🚨 Seguridad y emergencias</h3><div class="aij-topic-links">
-          <button class="chip" type="button" data-key="emergencia">🚑 Ambulancia, 119 y terremotos</button>
-          <button class="chip" type="button" data-key="policia">🚓 Policía, 110 y accidentes de tráfico</button>
-          <button class="chip" type="button" data-key="salud">🏥 Atención médica</button>
-        </div></div>
-        <div class="aij-topic-group"><h3>🏠 Vivir y comprar en Japón</h3><div class="aij-topic-links">
-          <button class="chip" type="button" data-key="vida-diaria">🛒 Supermercados, konbini y basura</button>
-          <button class="chip" type="button" data-key="dinero">💴 Pagos y dinero</button>
-          <button class="chip" type="button" data-key="tramites">📄 Documentos y trámites</button>
-        </div></div>
-        <div class="aij-topic-group"><h3>🧳 Viajar y orientarse</h3><div class="aij-topic-links">
-          <button class="chip" type="button" data-key="llegada">✈️ Llegada a Japón</button>
-          <button class="chip" type="button" data-key="transporte">🚆 Trenes, estaciones y transporte</button>
-          <button class="chip" type="button" data-key="alojamiento">🏨 Alojamiento</button>
-          <a class="aij-topic-link" href="planifica.html">🗾 Planificar visitas y destinos</a>
-        </div></div>
-      </nav>
       <!-- Diez categorías principales -->
       <div class="chips-wrap" aria-label="Categorías principales">
         <button class="chip" type="button" data-key="llegada">
@@ -1485,103 +1464,58 @@ setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementByI
 const form=document.getElementById('aij-global-form'),input=document.getElementById('aij-global-input'),status=document.getElementById('aij-global-status'),results=document.getElementById('aij-global-results');
 if(!form||!input||!status||!results)return;
 const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
-const stop=new Set(['de','del','la','las','el','los','un','una','en','con','por','para','que','como','quiero','necesito','saber','informacion','sobre','japon','donde','puedo','hacer','hay','mi','me','se','es','al','y','o']);
-const synonymGroups=[
-['policia','policial','policias','poli','pol','comisaria','koban','kouban','110'],
-['robo','robar','robado','robaron','hurto','asalto','ladron','denuncia'],
-['restaurante','restaurantes','restaurant','comer','comida','cenar','almorzar','gastronomia','menu'],
-['japones','idioma','nihongo','lengua japonesa'],
-['tren','trenes','densha','ferrocarril','estacion','metro'],
-['autobus','bus','buses'],['hospital','medico','clinica','salud','enfermedad'],
-['hotel','hoteles','alojamiento','hospedaje','hostal','ryokan'],
-['visa','visado','residencia','zairyu','inmigracion'],
-['basura','residuos','desechos','reciclaje','reciclar'],
-['video','videos','videoteca','reels','reel','documental','documentales'],
-['turismo','turista','turistas','viajar','viaje','visitar'],
-['ambulancia','emergencia','emergencias','119'],
-['trabajo','trabajar','empleo','laboral','fabrica']
-].map(g=>g.map(norm));
-const root=new URL('./',location.href),entries=[],seen=new Set(),visited=new Set(),queued=new Set(),queue=[],limit=80;
-function local(value){
- try{const u=new URL(value,root);if(u.origin!==root.origin||!u.pathname.startsWith(root.pathname)||!u.pathname.endsWith('.html'))return null;u.search='';u.hash='';return u.href;}catch(e){return null;}
+const routes=[
+{label:'🚓 Policía',key:'policia',terms:['policia','pol','poli','policial','koban','kouban','patrulla','comisaria','denuncia','robo','robado','ladron','asalto','accidente','110']},
+{label:'🌸 Turismo en Japón',href:'turismo.html',terms:['turismo','turista','turistas','turistic','excursion','visitar','atracciones']},
+{label:'🎟️ Reservas',href:'reservas.html',terms:['reserva','reservas','reservar','booking','entradas','tickets']},
+{label:'🧳 Planifica tu viaje',href:'planifica.html',terms:['planifica','planificar','planificacion','preparar viaje','presupuesto','itinerario']},
+{label:'🌤️ Clima',weather:true,terms:['clima','tiempo','temperatura','pronostico','meteorologia','lluvia','llover','weather']},
+{label:'💴 Dinero',key:'dinero',terms:['dinero','efectivo','yen','yenes','cambio','cajero','atm','pago','pagos','moneda']},
+{label:'🎬 Videoteca',href:'videoteca.html',terms:['video','videos','videoteca','reel','reels','documental','documentales']},
+{label:'🚑 Emergencia',key:'emergencia',terms:['emergencia','ambulancia','119','bomberos','terremoto','sismo']},
+{label:'🏥 Salud',key:'salud',terms:['salud','hospital','medico','clinica','enfermedad','doctor']},
+{label:'🚆 Transporte',key:'transporte',terms:['transporte','tren','trenes','estacion','metro','bus','autobus','taxi']},
+{label:'🏨 Alojamiento',key:'alojamiento',terms:['alojamiento','hotel','hoteles','hospedaje','hostal','ryokan']},
+{label:'🏠 Vida diaria',key:'vida-diaria',terms:['vida diaria','basura','reciclaje','supermercado','konbini','compras','restaurante','restaurantes']},
+{label:'📄 Trámites',key:'tramites',terms:['tramite','tramites','documentos','visa','visado','residencia','inmigracion','zairyu']},
+{label:'💼 Trabajo en Japón',href:'trabajo.html',terms:['trabajo','trabajar','empleo','laboral','fabrica']},
+{label:'🇯🇵 Aprender japonés',href:'japones.html',terms:['japones','idioma','nihongo','aprender japones','frases']},
+{label:'✈️ Llegada a Japón',key:'llegada',terms:['llegada','aeropuerto','aduana','aterrizar']},
+{label:'🧰 Servicios',key:'servicios',terms:['servicio','servicios']}
+];
+function find(q){
+if(!q)return null;
+let best=null,score=0;
+for(const route of routes)for(const term of route.terms){
+const t=norm(term);
+let n=q===t?100:q.length>=2&&t.startsWith(q)?70:q.length>=3&&q.startsWith(t)?50:0;
+if(n>score){best=route;score=n;}
 }
-function enqueue(value){const url=local(value);if(url&&!queued.has(url)&&queued.size<limit){queued.add(url);queue.push(url);}}
-function add(title,description,url){
- title=(title||'').replace(/\s+/g,' ').trim();description=(description||'').replace(/\s+/g,' ').trim();
- if(title.length<5||title.length>160||description.length<20)return;
- const key=url+'|'+norm(title);if(seen.has(key))return;seen.add(key);
- entries.push({title,description:description.slice(0,330),url});
+return best;
 }
-function indexPage(doc,url){
- const main=doc.querySelector('main')||doc.body;if(!main)return;
- const clean=main.cloneNode(true);
- clean.querySelectorAll('script,style,nav,footer,header,form,button,noscript,svg').forEach(n=>n.remove());
- const pageTitle=doc.querySelector('title')?.textContent||'Guía de Japón';
- add(pageTitle,clean.textContent.slice(0,600),url);
- clean.querySelectorAll('h2,h3,h4,details,section[id],article[id]').forEach(el=>{
-  const heading=el.matches('h2,h3,h4')?el:el.querySelector('summary,h2,h3,h4');
-  const title=heading?.textContent?.replace(/\s+/g,' ').trim();
-  if(!title||title.length<5||title.length>150)return;
-  let node=el,anchor=el.id||heading?.id||'';
-  while(!anchor&&node&&node!==clean){node=node.parentElement;if(node?.id)anchor=node.id;}
-  const desc=(el.matches('h2,h3,h4')?el.parentElement?.textContent:el.textContent)||'';
-  add(title,desc,url+(anchor?'#'+encodeURIComponent(anchor):''));
- });
- doc.querySelectorAll('a[href]').forEach(a=>enqueue(a.getAttribute('href')));
+function go(route){
+if(route.href){location.href=route.href;return;}
+if(route.weather){
+if(typeof window.aijMostrarPantalla==='function')window.aijMostrarPantalla('pantallaTurismo',false);
+else {document.getElementById('inicio').style.display='none';document.getElementById('pantallaTurismo').style.display='block';}
+setTimeout(()=>document.getElementById('aij-weather')?.scrollIntoView({behavior:'smooth',block:'start'}),60);return;
 }
-let loading=null;
-async function build(){
- enqueue('index.html');
- const parser=new DOMParser();
- while(queue.length){
-  const batch=queue.splice(0,5).filter(u=>!visited.has(u));
-  await Promise.all(batch.map(async url=>{
-   visited.add(url);
-   try{const res=await fetch(url);if(res.ok)indexPage(parser.parseFromString(await res.text(),'text/html'),url);}catch(e){}
-  }));
- }
+const chip=document.querySelector('#buscador .chips-wrap [data-key="'+route.key+'"]');
+if(!chip)return;
+if(typeof window.aijMostrarPantalla==='function')window.aijMostrarPantalla('buscador',false);
+chip.click();
 }
-function variants(word){
- const v=new Set([word]);
- synonymGroups.forEach(g=>{if(g.some(w=>w===word||(word.length>=3&&w.startsWith(word))))g.forEach(w=>v.add(w));});
- return [...v];
+function update(){
+const q=norm(input.value),route=find(q);
+results.replaceChildren();status.textContent='';
+if(!q)return;
+if(!route){status.textContent='No encontramos una tarjeta para esa palabra. Prueba con otro término.';return;}
+const a=document.createElement('a');a.href=route.href||'#';a.textContent=route.label;
+a.addEventListener('click',e=>{if(!route.href){e.preventDefault();go(route);}});
+results.append(a);
 }
-function score(entry,words){
- const title=norm(entry.title),desc=norm(entry.description);
- let total=0;
- for(const w of words){
-  let best=0;
-  for(const v of variants(w)){
-   if(title.split(' ').includes(v))best=Math.max(best,15);
-   else if(v.length>=3&&title.includes(v))best=Math.max(best,10);
-   if(v.length>=4&&desc.includes(v))best=Math.max(best,3);
-  }
-  if(!best)return 0;
-  total+=best;
- }
- return total;
-}
-function render(item){
- const a=document.createElement('a');a.href=item.url;
- const strong=document.createElement('strong');strong.textContent=item.title;
- const small=document.createElement('small');small.textContent=item.description.slice(0,180)+(item.description.length>180?'…':'');
- a.append(strong,small);results.append(a);
-}
-let request=0;
-form.addEventListener('submit',async function(e){
- e.preventDefault();const current=++request;results.replaceChildren();
- const query=norm(input.value);if(!query){status.textContent='Escribe lo que necesitas buscar.';return;}
- status.textContent='Buscando en los artículos de nuestra guía…';
- if(!loading)loading=build();
- await loading;
- if(current!==request)return;
- const words=query.split(' ').filter(w=>w&&!stop.has(w));
- if(!words.length){status.textContent='Escribe una palabra más específica.';return;}
- const matches=entries.map(item=>({item,rank:score(item,words)})).filter(x=>x.rank>0).sort((a,b)=>b.rank-a.rank);
- const unique=new Set();
- matches.forEach(x=>{if(!unique.has(x.item.url)){unique.add(x.item.url);render(x.item);}});
- status.textContent=unique.size?'Encontramos '+unique.size+' resultado'+(unique.size===1?'':'s')+' relacionado'+(unique.size===1?'':'s')+'.':'No encontramos un artículo relacionado con esa búsqueda. Puedes escribirnos o consultar todas las secciones.';
-});
+input.addEventListener('input',update);
+form.addEventListener('submit',e=>{e.preventDefault();const route=find(norm(input.value));if(route)go(route);else update();});
 })();
 </script>
 </body>

@@ -1481,7 +1481,14 @@ const routes=[
 {label:'💼 Trabajo en Japón',href:'trabajo.html',terms:['trabajo','trabajar','empleo','laboral','fabrica']},
 {label:'🇯🇵 Aprender japonés',href:'japones.html',terms:['japones','idioma','nihongo','aprender japones','frases']},
 {label:'✈️ Llegada a Japón',key:'llegada',terms:['llegada','aeropuerto','aduana','aterrizar']},
-{label:'🧰 Servicios',key:'servicios',terms:['servicio','servicios']}
+{label:'🧰 Servicios',key:'servicios',terms:['servicio','servicios','reparaciones','electricista','fontanero']},
+{label:'🏯 Descubre Japón',href:'descubre-japon.html',terms:['descubre','descubrir japon','cultura','historia','curiosidades','tradiciones','costumbres','santuarios','templos']},
+{label:'📰 Noticias importantes',href:'noticias.html',terms:['noticias','noticia','actualidad','novedades','informacion oficial','cambios legales']},
+{label:'🇯🇵 Japonés para vivir y trabajar',href:'japones.html#japones-para-vivir-trabajar',terms:['japones para vivir','japones para trabajar','vivir sin hablar japones','idioma en el trabajo','malentendidos laborales']},
+{label:'📝 Sugerencias',href:'comentarios.html',terms:['sugerencias','sugerencia','comentarios','opinion','propuestas','contactar']},
+{label:'❤️ Apoya esta guía',screen:'pantallaApoyo',terms:['apoya','apoyar','donar','donaciones','colaborar con la guia']},
+{label:'🏡 Vivir en Japón',screen:'buscador',terms:['vivir en japon','residentes','vida en japon','orientacion para residentes']},
+{label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','ayuda inmediata','orientacion y consultas']}
 ];
 function find(q){
 if(!q)return null;
@@ -1508,6 +1515,7 @@ function focusCard(card){
 }
 function go(route){
  if(route.href){location.href=route.href;return;}
+ if(route.screen){showScreen(route.screen);return;}
  if(route.weather){
   showScreen('pantallaTurismo');
   setTimeout(()=>document.getElementById('aij-weather')?.scrollIntoView({behavior:'smooth',block:'start'}),80);

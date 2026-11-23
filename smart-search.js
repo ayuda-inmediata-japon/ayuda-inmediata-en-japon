@@ -1,0 +1,293 @@
+/* Buscador unificado: categorías existentes + índice de subtemas publicados. */
+(()=>{
+const form=document.getElementById('aij-global-form'),input=document.getElementById('aij-global-input'),status=document.getElementById('aij-global-status'),results=document.getElementById('aij-global-results');
+if(!form||!input||!status||!results)return;
+const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
+const routes=[
+{label:'🆘 Ayuda inmediata',screen:'buscador',terms:['ayuda','ayudar','necesito ayuda','ayuda inmediata','auxilio','orientacion','consulta']},
+{label:'🎟️ Atracciones y entradas',href:'reservas.html#atracciones',terms:['comprar entradas atracciones','reservar atracciones']},
+{label:'🍽️ Reservar restaurantes',href:'reservas.html#restaurantes',terms:['reservar restaurante','reservar restaurantes','reserva restaurante','mesa restaurante']},
+{label:'📺 Vídeo sobre japonés y trabajo',href:'videoteca.html#video-vivir-sin-japones',terms:['video vivir sin japones','video hablar japones trabajo']},
+{label:'📰 Noticias de residencia',href:'noticias.html#noticias-residencia',terms:['noticias residencia','novedades residencia']},
+{label:'📰 Noticias laborales',href:'noticias.html#noticias-trabajo',terms:['noticias trabajo','novedades laborales']},
+{label:'📰 Noticias de pensiones',href:'noticias.html#noticias-pensiones',terms:['noticias pensiones','novedades pensiones']},
+{label:'📰 Noticias de impuestos',href:'noticias.html#noticias-impuestos',terms:['noticias impuestos','novedades impuestos']},
+{label:'📰 Noticias de salud',href:'noticias.html#noticias-salud',terms:['noticias salud','novedades salud']},
+{label:'📰 Noticias de seguridad',href:'noticias.html#noticias-seguridad',terms:['noticias seguridad','novedades seguridad']},
+{label:'💼 Derechos laborales',href:'trabajo.html',terms:['derechos laborales','derechos del trabajador','buscar empleo','ofertas empleo']},
+
+/* AIJ-INDICE-SECCIONES-EXISTENTES-INICIO */
+{"label":"🗾 Prefecturas y ciudades","href":"turismo.html#tur-destinations","terms":["Prefecturas y ciudades"]},
+{"label":"Hokkaidō","href":"turismo.html#pref-hokkaido","terms":["Hokkaidō"]},
+{"label":"Aomori","href":"turismo.html#pref-aomori","terms":["Aomori"]},
+{"label":"Iwate","href":"turismo.html#pref-iwate","terms":["Iwate"]},
+{"label":"Miyagi","href":"turismo.html#pref-miyagi","terms":["Miyagi"]},
+{"label":"Akita","href":"turismo.html#pref-akita","terms":["Akita"]},
+{"label":"Yamagata","href":"turismo.html#pref-yamagata","terms":["Yamagata"]},
+{"label":"Fukushima","href":"turismo.html#pref-fukushima","terms":["Fukushima"]},
+{"label":"Ibaraki","href":"turismo.html#pref-ibaraki","terms":["Ibaraki"]},
+{"label":"Tochigi","href":"turismo.html#pref-tochigi","terms":["Tochigi"]},
+{"label":"Gunma","href":"turismo.html#pref-gunma","terms":["Gunma"]},
+{"label":"Saitama","href":"turismo.html#pref-saitama","terms":["Saitama"]},
+{"label":"Chiba","href":"turismo.html#pref-chiba","terms":["Chiba"]},
+{"label":"Tokio","href":"turismo.html#pref-tokyo","terms":["Tokio"]},
+{"label":"Kanagawa","href":"turismo.html#pref-kanagawa","terms":["Kanagawa"]},
+{"label":"Kamakura","href":"turismo.html#art-kamakura","terms":["Kamakura"]},
+{"label":"Niigata","href":"turismo.html#pref-niigata","terms":["Niigata"]},
+{"label":"Toyama","href":"turismo.html#pref-toyama","terms":["Toyama"]},
+{"label":"Ishikawa","href":"turismo.html#pref-ishikawa","terms":["Ishikawa"]},
+{"label":"Kenrokuen, Kanazawa","href":"turismo.html#art-kenrokuen","terms":["Kenrokuen, Kanazawa"]},
+{"label":"Fukui","href":"turismo.html#pref-fukui","terms":["Fukui"]},
+{"label":"Nagano","href":"turismo.html#pref-nagano","terms":["Nagano"]},
+{"label":"Yamanashi","href":"turismo.html#pref-yamanashi","terms":["Yamanashi"]},
+{"label":"Monte Fuji","href":"turismo.html#art-fuji","terms":["Monte Fuji"]},
+{"label":"Shizuoka","href":"turismo.html#pref-shizuoka","terms":["Shizuoka"]},
+{"label":"Gifu","href":"turismo.html#pref-gifu","terms":["Gifu"]},
+{"label":"Aichi","href":"turismo.html#pref-aichi","terms":["Aichi"]},
+{"label":"Mie","href":"turismo.html#pref-mie","terms":["Mie"]},
+{"label":"Shiga","href":"turismo.html#pref-shiga","terms":["Shiga"]},
+{"label":"Kioto","href":"turismo.html#pref-kyoto","terms":["Kioto"]},
+{"label":"Osaka","href":"turismo.html#pref-osaka","terms":["Osaka"]},
+{"label":"Hyōgo","href":"turismo.html#pref-hyogo","terms":["Hyōgo"]},
+{"label":"Nara","href":"turismo.html#pref-nara","terms":["Nara"]},
+{"label":"Wakayama","href":"turismo.html#pref-wakayama","terms":["Wakayama"]},
+{"label":"Tottori","href":"turismo.html#pref-tottori","terms":["Tottori"]},
+{"label":"Shimane","href":"turismo.html#pref-shimane","terms":["Shimane"]},
+{"label":"Okayama","href":"turismo.html#pref-okayama","terms":["Okayama"]},
+{"label":"Hiroshima","href":"turismo.html#pref-hiroshima","terms":["Hiroshima"]},
+{"label":"Miyajima","href":"turismo.html#art-miyajima","terms":["Miyajima"]},
+{"label":"Yamaguchi","href":"turismo.html#pref-yamaguchi","terms":["Yamaguchi"]},
+{"label":"Tokushima","href":"turismo.html#pref-tokushima","terms":["Tokushima"]},
+{"label":"Kagawa","href":"turismo.html#pref-kagawa","terms":["Kagawa"]},
+{"label":"Ehime","href":"turismo.html#pref-ehime","terms":["Ehime"]},
+{"label":"Kōchi","href":"turismo.html#pref-kochi","terms":["Kōchi"]},
+{"label":"Fukuoka","href":"turismo.html#pref-fukuoka","terms":["Fukuoka"]},
+{"label":"Saga","href":"turismo.html#pref-saga","terms":["Saga"]},
+{"label":"Nagasaki","href":"turismo.html#pref-nagasaki","terms":["Nagasaki"]},
+{"label":"Kumamoto","href":"turismo.html#pref-kumamoto","terms":["Kumamoto"]},
+{"label":"Ōita","href":"turismo.html#pref-oita","terms":["ita","Ōita"]},
+{"label":"Miyazaki","href":"turismo.html#pref-miyazaki","terms":["Miyazaki"]},
+{"label":"Kagoshima","href":"turismo.html#pref-kagoshima","terms":["Kagoshima"]},
+{"label":"Okinawa","href":"turismo.html#pref-okinawa","terms":["Okinawa"]},
+{"label":"Okinawa","href":"turismo.html#art-okinawa","terms":["Okinawa"]},
+{"label":"✨ Temporadas y novedades","href":"turismo.html#tur-temporadas","terms":["Temporadas y novedades"]},
+{"label":"🎡 Atracciones","href":"turismo.html#tur-attractions","terms":["Atracciones"]},
+{"label":"🏊 Piscinas y parques acuáticos","href":"turismo.html#tur-piscinas","terms":["Piscinas y parques acuáticos"]},
+{"label":"♨️ Onsen y descanso","href":"turismo.html#tur-onsen","terms":["Onsen y descanso"]},
+{"label":"🥾 Caminatas y senderos","href":"turismo.html#tur-caminatas","terms":["Caminatas y senderos"]},
+{"label":"🗓️ Itinerarios","href":"turismo.html#tur-itineraries","terms":["Itinerarios"]},
+{"label":"🚆 Rutas","href":"turismo.html#tur-linear","terms":["Rutas"]},
+{"label":"🌤️ Clima","href":"turismo.html#tur-climate","terms":["Clima"]},
+{"label":"🧥 Ropa","href":"turismo.html#tur-clothing","terms":["Ropa"]},
+{"label":"💡 Consejos útiles","href":"turismo.html#tur-consejos","terms":["Consejos útiles"]},
+{"label":"🧭 Tours","href":"reservas.html#tours","terms":["Tours"]},
+{"label":"🎫 Atracciones y entradas","href":"reservas.html#atracciones","terms":["Atracciones y entradas"]},
+{"label":"🎯 Actividades y experiencias","href":"reservas.html#actividades","terms":["Actividades y experiencias"]},
+{"label":"🚆 Trenes y transporte","href":"reservas.html#trenes","terms":["Trenes y transporte"]},
+{"label":"🚗 Alquiler de autos","href":"reservas.html#autos","terms":["Alquiler de autos"]},
+{"label":"🏨 Hoteles y alojamientos","href":"reservas.html#hoteles","terms":["Hoteles y alojamientos"]},
+{"label":"Expedia · Alojamientos en Japón","href":"reservas.html#expedia-hoteles","terms":["Expedia · Alojamientos en Japón"]},
+{"label":"🗾 Alojamientos por región y prefectura","href":"reservas.html#alojamientos-prefecturas","terms":["Alojamientos por región y prefectura"]},
+{"label":"Hokkaidō","href":"reservas.html#alojamiento-hokkaido","terms":["Hokkaidō","hotel Hokkaidō","alojamiento Hokkaidō"]},
+{"label":"Aomori","href":"reservas.html#alojamiento-aomori","terms":["Aomori","hotel Aomori","alojamiento Aomori"]},
+{"label":"Iwate","href":"reservas.html#alojamiento-iwate","terms":["Iwate","hotel Iwate","alojamiento Iwate"]},
+{"label":"Miyagi","href":"reservas.html#alojamiento-miyagi","terms":["Miyagi","hotel Miyagi","alojamiento Miyagi"]},
+{"label":"Akita","href":"reservas.html#alojamiento-akita","terms":["Akita","hotel Akita","alojamiento Akita"]},
+{"label":"Yamagata","href":"reservas.html#alojamiento-yamagata","terms":["Yamagata","hotel Yamagata","alojamiento Yamagata"]},
+{"label":"Fukushima","href":"reservas.html#alojamiento-fukushima","terms":["Fukushima","hotel Fukushima","alojamiento Fukushima"]},
+{"label":"Ibaraki","href":"reservas.html#alojamiento-ibaraki","terms":["Ibaraki","hotel Ibaraki","alojamiento Ibaraki"]},
+{"label":"Tochigi","href":"reservas.html#alojamiento-tochigi","terms":["Tochigi","hotel Tochigi","alojamiento Tochigi"]},
+{"label":"Gunma","href":"reservas.html#alojamiento-gunma","terms":["Gunma","hotel Gunma","alojamiento Gunma"]},
+{"label":"Saitama","href":"reservas.html#alojamiento-saitama","terms":["Saitama","hotel Saitama","alojamiento Saitama"]},
+{"label":"Chiba","href":"reservas.html#alojamiento-chiba","terms":["Chiba","hotel Chiba","alojamiento Chiba"]},
+{"label":"Tokio · Colección disponible","href":"reservas.html#alojamiento-tokyo","terms":["Tokio · Colección disponible","hotel Tokio · Colección disponible","alojamiento Tokio · Colección disponible"]},
+{"label":"Kanagawa","href":"reservas.html#alojamiento-kanagawa","terms":["Kanagawa","hotel Kanagawa","alojamiento Kanagawa"]},
+{"label":"Niigata","href":"reservas.html#alojamiento-niigata","terms":["Niigata","hotel Niigata","alojamiento Niigata"]},
+{"label":"Toyama","href":"reservas.html#alojamiento-toyama","terms":["Toyama","hotel Toyama","alojamiento Toyama"]},
+{"label":"Ishikawa","href":"reservas.html#alojamiento-ishikawa","terms":["Ishikawa","hotel Ishikawa","alojamiento Ishikawa"]},
+{"label":"Fukui","href":"reservas.html#alojamiento-fukui","terms":["Fukui","hotel Fukui","alojamiento Fukui"]},
+{"label":"Yamanashi","href":"reservas.html#alojamiento-yamanashi","terms":["Yamanashi","hotel Yamanashi","alojamiento Yamanashi"]},
+{"label":"Nagano","href":"reservas.html#alojamiento-nagano","terms":["Nagano","hotel Nagano","alojamiento Nagano"]},
+{"label":"Gifu","href":"reservas.html#alojamiento-gifu","terms":["Gifu","hotel Gifu","alojamiento Gifu"]},
+{"label":"Shizuoka","href":"reservas.html#alojamiento-shizuoka","terms":["Shizuoka","hotel Shizuoka","alojamiento Shizuoka"]},
+{"label":"Aichi","href":"reservas.html#alojamiento-aichi","terms":["Aichi","hotel Aichi","alojamiento Aichi"]},
+{"label":"Mie","href":"reservas.html#alojamiento-mie","terms":["Mie","hotel Mie","alojamiento Mie"]},
+{"label":"Shiga","href":"reservas.html#alojamiento-shiga","terms":["Shiga","hotel Shiga","alojamiento Shiga"]},
+{"label":"Kioto · Colección disponible","href":"reservas.html#alojamiento-kyoto","terms":["Kioto · Colección disponible","hotel Kioto · Colección disponible","alojamiento Kioto · Colección disponible"]},
+{"label":"Osaka","href":"reservas.html#alojamiento-osaka","terms":["Osaka","hotel Osaka","alojamiento Osaka"]},
+{"label":"Hyōgo","href":"reservas.html#alojamiento-hyogo","terms":["Hyōgo","hotel Hyōgo","alojamiento Hyōgo"]},
+{"label":"Nara","href":"reservas.html#alojamiento-nara","terms":["Nara","hotel Nara","alojamiento Nara"]},
+{"label":"Wakayama","href":"reservas.html#alojamiento-wakayama","terms":["Wakayama","hotel Wakayama","alojamiento Wakayama"]},
+{"label":"Tottori","href":"reservas.html#alojamiento-tottori","terms":["Tottori","hotel Tottori","alojamiento Tottori"]},
+{"label":"Shimane","href":"reservas.html#alojamiento-shimane","terms":["Shimane","hotel Shimane","alojamiento Shimane"]},
+{"label":"Okayama","href":"reservas.html#alojamiento-okayama","terms":["Okayama","hotel Okayama","alojamiento Okayama"]},
+{"label":"Hiroshima","href":"reservas.html#alojamiento-hiroshima","terms":["Hiroshima","hotel Hiroshima","alojamiento Hiroshima"]},
+{"label":"Yamaguchi","href":"reservas.html#alojamiento-yamaguchi","terms":["Yamaguchi","hotel Yamaguchi","alojamiento Yamaguchi"]},
+{"label":"Tokushima","href":"reservas.html#alojamiento-tokushima","terms":["Tokushima","hotel Tokushima","alojamiento Tokushima"]},
+{"label":"Kagawa","href":"reservas.html#alojamiento-kagawa","terms":["Kagawa","hotel Kagawa","alojamiento Kagawa"]},
+{"label":"Ehime","href":"reservas.html#alojamiento-ehime","terms":["Ehime","hotel Ehime","alojamiento Ehime"]},
+{"label":"Kōchi","href":"reservas.html#alojamiento-kochi","terms":["Kōchi","hotel Kōchi","alojamiento Kōchi"]},
+{"label":"Fukuoka","href":"reservas.html#alojamiento-fukuoka","terms":["Fukuoka","hotel Fukuoka","alojamiento Fukuoka"]},
+{"label":"Saga","href":"reservas.html#alojamiento-saga","terms":["Saga","hotel Saga","alojamiento Saga"]},
+{"label":"Nagasaki","href":"reservas.html#alojamiento-nagasaki","terms":["Nagasaki","hotel Nagasaki","alojamiento Nagasaki"]},
+{"label":"Kumamoto","href":"reservas.html#alojamiento-kumamoto","terms":["Kumamoto","hotel Kumamoto","alojamiento Kumamoto"]},
+{"label":"Ōita","href":"reservas.html#alojamiento-oita","terms":["ita","hotel Ōita","alojamiento Ōita"]},
+{"label":"Miyazaki","href":"reservas.html#alojamiento-miyazaki","terms":["Miyazaki","hotel Miyazaki","alojamiento Miyazaki"]},
+{"label":"Kagoshima","href":"reservas.html#alojamiento-kagoshima","terms":["Kagoshima","hotel Kagoshima","alojamiento Kagoshima"]},
+{"label":"Okinawa","href":"reservas.html#alojamiento-okinawa","terms":["Okinawa","hotel Okinawa","alojamiento Okinawa"]},
+{"label":"🚐 Traslados al aeropuerto","href":"reservas.html#traslados","terms":["Traslados al aeropuerto"]},
+{"label":"🍣 Restaurantes y experiencias culinarias","href":"reservas.html#restaurantes","terms":["Restaurantes y experiencias culinarias"]},
+{"label":"📱 Internet, SIM y eSIM","href":"reservas.html#internet","terms":["Internet, SIM y eSIM"]},
+{"label":"🛡️ Seguro de viaje","href":"reservas.html#seguro","terms":["Seguro de viaje"]},
+{"label":"⛴️ Cruceros y paseos en barco","href":"reservas.html#cruceros","terms":["Cruceros y paseos en barco"]},
+{"label":"🌿 Naturaleza, islas y aventura","href":"reservas.html#naturaleza","terms":["Naturaleza, islas y aventura"]},
+{"label":"⚾ Deportes y actividades especiales","href":"reservas.html#deportes","terms":["Deportes y actividades especiales"]},
+{"label":"♨️ Bienestar y spa","href":"reservas.html#bienestar","terms":["Bienestar y spa"]},
+{"label":"👨‍👩‍👧 Actividades con niños y familias","href":"reservas.html#familia","terms":["Actividades con niños y familias"]},
+{"label":"🧑 Actividades para adultos y parejas","href":"reservas.html#adultos","terms":["Actividades para adultos y parejas"]},
+{"label":"👵 Personas mayores y accesibilidad","href":"reservas.html#accesibilidad-viaje","terms":["Personas mayores y accesibilidad"]},
+{"label":"🌸 Temporadas y celebraciones","href":"reservas.html#temporada","terms":["Temporadas y celebraciones"]},
+{"label":"✨ Iluminaciones y jardines nocturnos","href":"reservas.html#iluminaciones","terms":["Iluminaciones y jardines nocturnos"]},
+{"label":"⛩️ Templos, santuarios y jardines","href":"reservas.html#templos-jardines","terms":["Templos, santuarios y jardines"]},
+{"label":"🦁 Zoológicos y parques de animales","href":"reservas.html#zoologicos","terms":["Zoológicos y parques de animales"]},
+{"label":"🌿 Jardines botánicos e invernaderos","href":"reservas.html#jardines-botanicos","terms":["Jardines botánicos e invernaderos"]},
+{"label":"☔ Actividades bajo techo y días de lluvia","href":"reservas.html#bajo-techo","terms":["Actividades bajo techo y días de lluvia"]},
+{"label":"🧳 Envío de equipaje","href":"reservas.html#equipaje","terms":["Envío de equipaje"]},
+{"label":"🛂 Requisitos para entrar a Japón","href":"planifica.html#paso-1","terms":["Requisitos para entrar a Japón","🛂 Requisitos para entrar a Japón"]},
+{"label":"📄 Visa de turista: requisitos, costo y trámite","href":"planifica.html#paso-2","terms":["Visa de turista: requisitos, costo y trámite","📄 Visa de turista: requisitos, costo y trámite"]},
+{"label":"💻 JAPAN eVISA: quién puede utilizarla","href":"planifica.html#paso-3","terms":["JAPAN eVISA: quién puede utilizarla","💻 JAPAN eVISA: quién puede utilizarla"]},
+{"label":"📱 Visit Japan Web: inmigración y aduanas","href":"planifica.html#paso-4","terms":["Visit Japan Web: inmigración y aduanas","📱 Visit Japan Web: inmigración y aduanas"]},
+{"label":"💴 Presupuesto: ¿cuánto dinero preparar?","href":"planifica.html#paso-5","terms":["Presupuesto: ¿cuánto dinero preparar?","💴 Presupuesto: ¿cuánto dinero preparar?"]},
+{"label":"✈️ Vuelo, fechas y reservas antes de viajar","href":"planifica.html#paso-6","terms":["Vuelo, fechas y reservas antes de viajar","✈️ Vuelo, fechas y reservas antes de viajar"]},
+{"label":"🛡️ Seguro de viaje y emergencias","href":"planifica.html#paso-7","terms":["Seguro de viaje y emergencias","🛡️ Seguro de viaje y emergencias"]},
+{"label":"💊 Medicamentos: comprueba antes de llevarlos","href":"planifica.html#paso-8","terms":["Medicamentos: comprueba antes de llevarlos","💊 Medicamentos: comprueba antes de llevarlos"]},
+{"label":"📶 Internet: eSIM, SIM, Wi-Fi y teléfono","href":"planifica.html#paso-9","terms":["Internet: eSIM, SIM, Wi-Fi y teléfono","📶 Internet: eSIM, SIM, Wi-Fi y teléfono"]},
+{"label":"💳 Dinero antes de viajar: efectivo y tarjetas","href":"planifica.html#paso-10","terms":["Dinero antes de viajar: efectivo y tarjetas","💳 Dinero antes de viajar: efectivo y tarjetas"]},
+{"label":"🏨 Alojamiento: qué comprobar antes de reservar","href":"planifica.html#paso-11","terms":["Alojamiento: qué comprobar antes de reservar","🏨 Alojamiento: qué comprobar antes de reservar"]},
+{"label":"🚆 Transporte: qué decidir antes de viajar","href":"planifica.html#paso-12","terms":["Transporte: qué decidir antes de viajar","🚆 Transporte: qué decidir antes de viajar"]},
+{"label":"🧳 Equipaje: prepara el viaje sin cargar de más","href":"planifica.html#paso-13","terms":["Equipaje: prepara el viaje sin cargar de más","🧳 Equipaje: prepara el viaje sin cargar de más"]},
+{"label":"🔌 Electricidad, enchufes, clima y preparación","href":"planifica.html#paso-14","terms":["Electricidad, enchufes, clima y preparación","🔌 Electricidad, enchufes, clima y preparación"]},
+{"label":"📋 Checklist final antes de salir","href":"planifica.html#paso-15","terms":["Checklist final antes de salir","📋 Checklist final antes de salir"]},
+{"label":"Vivir en Japón sin hablar japonés · El precio de no comprender","href":"videoteca.html#video-vivir-sin-japones","terms":["Vivir en Japón sin hablar japonés · El precio de no comprender","video Vivir en Japón sin hablar japonés · El precio de no comprender"]},
+{"label":"Lección 1 · En el konbini","href":"videoteca.html#video-konbini-01","terms":["Lección 1 · En el konbini","video Lección 1 · En el konbini"]},
+{"label":"Sumimasen: una palabra muy útil","href":"videoteca.html#video-sumimasen","terms":["Sumimasen: una palabra muy útil","video Sumimasen: una palabra muy útil"]},
+{"label":"Japón que todavía no conoces · Episodio 1","href":"videoteca.html#video-documental-1","terms":["Japón que todavía no conoces · Episodio 1","video Japón que todavía no conoces · Episodio 1"]},
+{"label":"Kenrokuen, Kanazawa","href":"videoteca.html#video-kenrokuen","terms":["Kenrokuen, Kanazawa","video Kenrokuen, Kanazawa"]},
+{"label":"Miyajima","href":"videoteca.html#video-miyajima","terms":["Miyajima","video Miyajima"]},
+{"label":"Nikkō","href":"videoteca.html#video-nikko","terms":["Nikkō","video Nikkō"]},
+{"label":"Monte Fuji","href":"videoteca.html#video-fuji","terms":["Monte Fuji","video Monte Fuji"]},
+{"label":"Kamakura","href":"videoteca.html#video-kamakura","terms":["Kamakura","video Kamakura"]},
+{"label":"Okinawa","href":"videoteca.html#video-okinawa","terms":["Okinawa","video Okinawa"]},
+{"label":"Comer barato en Japón","href":"videoteca.html#video-comida","terms":["Comer barato en Japón","video Comer barato en Japón"]},
+{"label":"Descuentos en supermercados","href":"videoteca.html#video-supermercados","terms":["Descuentos en supermercados","video Descuentos en supermercados"]},
+{"label":"Cómo pedir la cuenta","href":"videoteca.html#video-cuenta","terms":["Cómo pedir la cuenta","video Cómo pedir la cuenta"]},
+{"label":"Basura y reciclaje","href":"videoteca.html#video-basura","terms":["Basura y reciclaje","video Basura y reciclaje"]},
+{"label":"Servicios del konbini","href":"videoteca.html#video-konbini","terms":["Servicios del konbini","video Servicios del konbini"]},
+{"label":"Lavanderías en Japón","href":"videoteca.html#video-lavanderia","terms":["Lavanderías en Japón","video Lavanderías en Japón"]},
+{"label":"Enviar maletas (takkyūbin)","href":"videoteca.html#video-maletas","terms":["Enviar maletas (takkyūbin)","video Enviar maletas (takkyūbin)"]},
+{"label":"Qué hacer si te pierdes en una estación","href":"videoteca.html#video-estacion","terms":["Qué hacer si te pierdes en una estación","video Qué hacer si te pierdes en una estación"]},
+{"label":"Tarjetas IC y la luz roja","href":"videoteca.html#video-ic","terms":["Tarjetas IC y la luz roja","video Tarjetas IC y la luz roja"]},
+{"label":"Policía en Japón","href":"videoteca.html#video-policia","terms":["Policía en Japón","video Policía en Japón"]},
+{"label":"Cómo pedir una ambulancia","href":"videoteca.html#video-ambulancia","terms":["Cómo pedir una ambulancia","video Cómo pedir una ambulancia"]},
+{"label":"Qué hacer durante un terremoto","href":"videoteca.html#video-terremoto","terms":["Qué hacer durante un terremoto","video Qué hacer durante un terremoto"]},
+{"label":"🇯🇵 ¿Por qué aprender japonés para vivir y trabajar?","href":"japones.html#japones-para-vivir-trabajar","terms":["Por qué aprender japonés para vivir y trabajar?"]},
+{"label":"🎬 Lección 1 · En el konbini","href":"japones.html#leccion-01-konbini","terms":["Lección 1 · En el konbini"]},
+{"label":"📘 Guía didáctica ilustrada","href":"japones.html#guia-ilustrada","terms":["Guía didáctica ilustrada"]},
+{"label":"🇯🇵 Curso gratuito del Gobierno de Japón · TSUNAHIRO","href":"japones.html#curso-gobierno-japon","terms":["Curso gratuito del Gobierno de Japón · TSUNAHIRO"]},
+{"label":"Sumimasen: una palabra muy útil","href":"japones.html#art-sumimasen","terms":["Sumimasen: una palabra muy útil"]},
+{"label":"Cómo pedir la cuenta","href":"japones.html#art-cuenta","terms":["Cómo pedir la cuenta"]},
+{"label":"🛂 Visados y residencia","href":"noticias.html#noticias-residencia","terms":["Visados y residencia"]},
+{"label":"💴 Impuestos y ayudas económicas","href":"noticias.html#noticias-impuestos","terms":["Impuestos y ayudas económicas"]},
+{"label":"💼 Trabajo y salarios","href":"noticias.html#noticias-trabajo","terms":["Trabajo y salarios"]},
+{"label":"🏥 Salud y seguros","href":"noticias.html#noticias-salud","terms":["Salud y seguros"]},
+{"label":"👵 Pensiones y jubilación","href":"noticias.html#noticias-pensiones","terms":["Pensiones y jubilación"]},
+{"label":"🚨 Seguridad y emergencias","href":"noticias.html#noticias-seguridad","terms":["Seguridad y emergencias"]},
+{"label":"📁 Avisos anteriores (archivo histórico)","href":"noticias.html#noticias-archivo-editorial","terms":["Avisos anteriores (archivo histórico)"]},
+{"label":"📁 Archivo de noticias sobre residencia, impuestos, trabajo y seguros","href":"noticias.html#noticias-automaticas","terms":["Archivo de noticias sobre residencia, impuestos, trabajo y seguros"]},
+{"label":"✈️ Quiero venir a trabajar a Jap n","href":"trabajo.html#venir","terms":["Quiero venir a trabajar a Jap n"]},
+{"label":"🏠 Ya vivo en Jap n y busco trabajo","href":"trabajo.html#residentes","terms":["Ya vivo en Jap n y busco trabajo"]},
+{"label":"⚖️ Derechos laborales","href":"trabajo.html#derechos","terms":["Derechos laborales"]},
+{"label":"🔎 Buscar ofertas de empleo","href":"trabajo.html#ofertas","terms":["Buscar ofertas de empleo"]},
+{"label":"📣 Empresas y agencias: publicar una oferta","href":"trabajo.html#publicar","terms":["Empresas y agencias: publicar una oferta"]},
+{"label":"El Japón que no aparece en las postales","href":"descubre-japon.html#documental-1","terms":["El Japón que no aparece en las postales"]},
+{"label":"Hokkaidō · 北海道","href":"descubre-japon.html#ep1-hokkaido","terms":["Hokkaidō · 北海道"]},
+{"label":"Tōhoku · 東北","href":"descubre-japon.html#ep1-tohoku","terms":["Tōhoku · 東北"]},
+{"label":"Kantō · 関東","href":"descubre-japon.html#ep1-kanto","terms":["Kantō · 関東"]},
+{"label":"Chūbu · 中部","href":"descubre-japon.html#ep1-chubu","terms":["Chūbu · 中部"]},
+{"label":"Consejos para recorrer estas regiones","href":"descubre-japon.html#ep1-consejos","terms":["Consejos para recorrer estas regiones"]},
+{"label":"⛩️ Nikkō: historia y naturaleza en las montañas de Tochigi","href":"descubre-japon.html#nikko","terms":["Nikkō: historia y naturaleza en las montañas de Tochigi"]},
+{"label":"🎬 El Japón de los pueblos escondidos","href":"descubre-japon.html#documental-2","terms":["El Japón de los pueblos escondidos"]},
+{"label":"🎬 Shikoku, Kyūshū y Okinawa","href":"descubre-japon.html#documental-3","terms":["Shikoku, Kyūshū y Okinawa"]},
+/* AIJ-INDICE-SECCIONES-EXISTENTES-FIN */
+{label:'🚓 Policía',key:'policia',terms:['policia','pol','poli','policial','koban','kouban','patrulla','comisaria','denuncia','robo','robado','ladron','asalto','accidente','110']},
+{label:'🌸 Turismo en Japón',href:'turismo.html',terms:['turismo','turista','turistas','turistic','excursion','visitar']},
+{label:'🎡 Atracciones',href:'turismo.html#tur-attractions',terms:['atraccion','atracciones','parques tematicos','parque tematico','atractivos turisticos']},
+{label:'🎟️ Reservas',href:'reservas.html',terms:['reserva','reservas','reservar','booking','entradas','tickets']},
+{label:'🧳 Planifica tu viaje',href:'planifica.html',terms:['planifica','planificar','planificacion','planificar viaje','planifica tu viaje','preparar viaje','presupuesto','itinerario']},
+{label:'🌤️ Clima',weather:true,terms:['clima','tiempo','temperatura','pronostico','meteorologia','lluvia','llover','weather']},
+{label:'💴 Dinero',key:'dinero',terms:['dinero','efectivo','yen','yenes','cambio','cajero','atm','pago','pagos','moneda']},
+{label:'🎬 Videoteca',href:'videoteca.html',terms:['video','videos','videoteca','reel','reels','documental','documentales']},
+{label:'🚑 Emergencia',key:'emergencia',terms:['emergencia','ambulancia','119','bomberos','terremoto','sismo']},
+{label:'🏥 Salud',key:'salud',terms:['salud','hospital','medico','clinica','enfermedad','doctor']},
+{label:'🚆 Transporte',key:'transporte',terms:['transporte','tren','trenes','estacion','metro','bus','autobus','taxi']},
+{label:'🏨 Alojamiento',key:'alojamiento',terms:['alojamiento','hotel','hoteles','hospedaje','hostal','ryokan']},
+{label:'🏠 Vida diaria',key:'vida-diaria',terms:['vida diaria','basura','reciclaje','supermercado','konbini','compras','restaurante','restaurantes']},
+{label:'📄 Trámites',key:'tramites',terms:['tramite','tramites','documentos','visa','visado','residencia','inmigracion','zairyu']},
+{label:'💼 Trabajo en Japón',href:'trabajo.html',terms:['trabajo','trabajar','empleo','laboral','fabrica']},
+{label:'🇯🇵 Aprender japonés',href:'japones.html',terms:['japones','idioma','nihongo','aprender japones','frases']},
+{label:'✈️ Llegada a Japón',key:'llegada',terms:['llegada','aeropuerto','aduana','aterrizar']},
+{label:'🧰 Servicios',key:'servicios',terms:['servicio','servicios','reparaciones','electricista','fontanero']},
+{label:'🏯 Descubre Japón',href:'descubre-japon.html',terms:['descubre','descubrir japon','conocer japon','conoce japon','conociendo japon','quiero conocer japon','conocer el japon','lugares de japon','cultura','historia','curiosidades','tradiciones','costumbres','santuarios','templos']},
+{label:'📰 Noticias importantes',href:'noticias.html',terms:['noticias','noticia','actualidad','novedades','informacion oficial','cambios legales','noti']},
+{label:'🇯🇵 Japonés para vivir y trabajar',href:'japones.html#japones-para-vivir-trabajar',terms:['japones para vivir','japones para trabajar','vivir sin hablar japones','idioma en el trabajo','malentendidos laborales']},
+{label:'📝 Sugerencias',href:'comentarios.html',terms:['sugerencias','sugerencia','comentarios','opinion','propuestas','contactar']},
+{label:'❤️ Apoya esta guía',screen:'pantallaApoyo',terms:['apoya','apoyar','donar','donaciones','colaborar con la guia']},
+{label:'🏡 Vivir en Japón',screen:'buscador',terms:['vivir en japon','residentes','vida en japon','orientacion para residentes']},
+{label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
+];
+const synonyms={libros:'libro',guias:'guia',atraccion:'atracciones',atractivo:'atracciones',paseos:'turismo',pasear:'turismo',visitas:'turismo',visitar:'turismo',conocer:'descubre',conociendo:'descubre',noticia:'noticias',empleos:'empleo',trabajar:'trabajo',medicinas:'medicamentos',medicina:'medicamentos',hospitales:'hospital',visados:'visa',tramites:'tramite',trenes:'tren',restaurantes:'restaurante',hoteles:'hotel',policial:'policia',documentos:'documento',prefecturas:'prefectura'};
+const words=q=>norm(q).split(' ').filter(w=>w.length>1&&!['de','del','la','el','los','las','en','un','una','para','por','que','como','quiero','sobre','japon'].includes(w)).map(w=>synonyms[w]||w);
+let entries=[];
+function routeURL(r){return r.href|| (r.key?'#ayuda-'+r.key : r.screen?'#'+r.screen:r.weather?'#pantallaTurismo':'#inicio');}
+function score(q,record,route=false){
+ const title=norm(record.title||record.label),terms=(record.terms||[]).map(norm),body=norm(record.text||'');
+ const qs=words(q);if(!qs.length)return q===title?180:0;
+ if(route&&terms.some(t=>t===q))return 250;
+ if(q===title)return 220;
+ if(route&&terms.some(t=>q.length>=3&&t.startsWith(q)))return 165;
+ if(route&&terms.some(t=>q.length>=4&&q.startsWith(t)))return 145;
+ if(title.startsWith(q))return 130;
+ if(q.length>=3&&title.includes(q))return 105;
+ if(route&&terms.some(t=>qs.every(w=>t.includes(w))))return 105;
+ const inTitle=qs.filter(w=>title.split(' ').some(t=>t===w||w.length>=4&&t.startsWith(w))).length;
+ const inBody=qs.filter(w=>body.includes(w)).length;
+ if(inTitle===qs.length)return 90+qs.length*3;
+ if(inTitle&&inBody===qs.length)return 60+inTitle*8;
+ if(inBody===qs.length)return 25+qs.length*3;
+ return 0;
+}
+function showScreen(id){if(typeof window.aijMostrarPantalla==='function')window.aijMostrarPantalla(id,false);}
+function go(r){
+ if(r.href||r.url&&!r.url.startsWith('#')){location.href=r.href||r.url;return;}
+ if(r.key){showScreen('buscador');setTimeout(()=>document.querySelector('#buscador .chips-wrap [data-key="'+r.key+'"]')?.click(),80);return;}
+ if(r.weather){showScreen('pantallaTurismo');setTimeout(()=>document.getElementById('aij-weather')?.scrollIntoView({block:'start'}),80);return;}
+ if(r.screen){showScreen(r.screen);return;}
+ if(r.url?.startsWith('#'))location.hash=r.url;
+}
+function contact(){status.textContent='No encontramos información específica sobre ese tema. Puedes consultarnos directamente:';const p=document.createElement('p');const a=document.createElement('a');a.href='mailto:ayudainmediataenjapon@gmail.com';a.textContent='✉️ Correo';const b=document.createElement('a');b.href='https://wa.me/819084462319';b.target='_blank';b.rel='noopener noreferrer';b.textContent='💬 WhatsApp';p.append(a,' · ',b);results.append(p);}
+function update(){
+ const q=norm(input.value);results.replaceChildren();status.textContent='';if(!q)return;
+ const hits=[];
+ for(const r of routes){const n=score(q,r,true);if(n)hits.push({n,label:r.label,url:routeURL(r),r});}
+ for(const r of entries){const n=score(q,r,false);if(n)hits.push({n,label:r.title,url:r.url,r});}
+ hits.sort((a,b)=>b.n-a.n||a.label.length-b.label.length);
+ const unique=new Set();let shown=0;
+ for(const h of hits){if(unique.has(h.url))continue;unique.add(h.url);
+ const a=document.createElement('a');a.href=h.url;a.textContent=h.label;a.addEventListener('click',ev=>{if(h.r.key||h.r.screen||h.r.weather){ev.preventDefault();go(h.r);}});results.append(a);if(++shown>=6)break;}
+ if(!shown)contact();else status.textContent=shown===1?'Encontramos este apartado:':'Apartados relacionados con tu búsqueda:';
+}
+input.addEventListener('input',update);
+form.addEventListener('submit',ev=>{ev.preventDefault();const first=results.querySelector('a');if(first)first.click();else update();});
+fetch('search-index.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(data=>{if(Array.isArray(data)){entries=data;update();}}).catch(()=>{status.textContent='Puedes buscar las secciones principales. Algunas búsquedas detalladas podrían no estar disponibles temporalmente.';});
+if(new URLSearchParams(location.search).has('buscar')){setTimeout(()=>{input.focus({preventScroll:true});form.scrollIntoView({block:'center'});},180);}
+})();

@@ -1465,11 +1465,23 @@ const form=document.getElementById('aij-global-form'),input=document.getElementB
 if(!form||!input||!status||!results)return;
 const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
 const routes=[
+{label:'🆘 Ayuda inmediata',screen:'buscador',terms:['ayuda','ayudar','necesito ayuda','ayuda inmediata','auxilio','orientacion','consulta']},
+{label:'🎟️ Atracciones y entradas',href:'reservas.html#atracciones',terms:['comprar entradas atracciones','reservar atracciones']},
+{label:'🍽️ Reservar restaurantes',href:'reservas.html#restaurantes',terms:['reservar restaurante','reservar restaurantes','reserva restaurante','mesa restaurante']},
+{label:'📺 Vídeo sobre japonés y trabajo',href:'videoteca.html#video-vivir-sin-japones',terms:['video vivir sin japones','video hablar japones trabajo']},
+{label:'📰 Noticias de residencia',href:'noticias.html#noticias-residencia',terms:['noticias residencia','novedades residencia']},
+{label:'📰 Noticias laborales',href:'noticias.html#noticias-trabajo',terms:['noticias trabajo','novedades laborales']},
+{label:'📰 Noticias de pensiones',href:'noticias.html#noticias-pensiones',terms:['noticias pensiones','novedades pensiones']},
+{label:'📰 Noticias de impuestos',href:'noticias.html#noticias-impuestos',terms:['noticias impuestos','novedades impuestos']},
+{label:'📰 Noticias de salud',href:'noticias.html#noticias-salud',terms:['noticias salud','novedades salud']},
+{label:'📰 Noticias de seguridad',href:'noticias.html#noticias-seguridad',terms:['noticias seguridad','novedades seguridad']},
+{label:'💼 Derechos laborales',href:'trabajo.html',terms:['derechos laborales','derechos del trabajador','buscar empleo','ofertas empleo']},
+
 {label:'🚓 Policía',key:'policia',terms:['policia','pol','poli','policial','koban','kouban','patrulla','comisaria','denuncia','robo','robado','ladron','asalto','accidente','110']},
 {label:'🌸 Turismo en Japón',href:'turismo.html',terms:['turismo','turista','turistas','turistic','excursion','visitar']},
 {label:'🎡 Atracciones',href:'turismo.html#tur-attractions',terms:['atraccion','atracciones','parques tematicos','parque tematico','atractivos turisticos']},
 {label:'🎟️ Reservas',href:'reservas.html',terms:['reserva','reservas','reservar','booking','entradas','tickets']},
-{label:'🧳 Planifica tu viaje',href:'planifica.html',terms:['planifica','planificar','planificacion','preparar viaje','presupuesto','itinerario']},
+{label:'🧳 Planifica tu viaje',href:'planifica.html',terms:['planifica','planificar','planificacion','planificar viaje','planifica tu viaje','preparar viaje','presupuesto','itinerario']},
 {label:'🌤️ Clima',weather:true,terms:['clima','tiempo','temperatura','pronostico','meteorologia','lluvia','llover','weather']},
 {label:'💴 Dinero',key:'dinero',terms:['dinero','efectivo','yen','yenes','cambio','cajero','atm','pago','pagos','moneda']},
 {label:'🎬 Videoteca',href:'videoteca.html',terms:['video','videos','videoteca','reel','reels','documental','documentales']},
@@ -1484,12 +1496,12 @@ const routes=[
 {label:'✈️ Llegada a Japón',key:'llegada',terms:['llegada','aeropuerto','aduana','aterrizar']},
 {label:'🧰 Servicios',key:'servicios',terms:['servicio','servicios','reparaciones','electricista','fontanero']},
 {label:'🏯 Descubre Japón',href:'descubre-japon.html',terms:['descubre','descubrir japon','cultura','historia','curiosidades','tradiciones','costumbres','santuarios','templos']},
-{label:'📰 Noticias importantes',href:'noticias.html',terms:['noticias','noticia','actualidad','novedades','informacion oficial','cambios legales']},
+{label:'📰 Noticias importantes',href:'noticias.html',terms:['noticias','noticia','actualidad','novedades','informacion oficial','cambios legales','noti']},
 {label:'🇯🇵 Japonés para vivir y trabajar',href:'japones.html#japones-para-vivir-trabajar',terms:['japones para vivir','japones para trabajar','vivir sin hablar japones','idioma en el trabajo','malentendidos laborales']},
 {label:'📝 Sugerencias',href:'comentarios.html',terms:['sugerencias','sugerencia','comentarios','opinion','propuestas','contactar']},
 {label:'❤️ Apoya esta guía',screen:'pantallaApoyo',terms:['apoya','apoyar','donar','donaciones','colaborar con la guia']},
 {label:'🏡 Vivir en Japón',screen:'buscador',terms:['vivir en japon','residentes','vida en japon','orientacion para residentes']},
-{label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','ayuda inmediata','orientacion y consultas']}
+{label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
 ];
 function find(q){
 if(!q)return null;

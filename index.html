@@ -487,6 +487,20 @@ details.subtema-card, #resultado, #resultadoContent > section,
 }
 </style>
   <link rel="canonical" href="https://ayuda-inmediata-japon.github.io/ayuda-inmediata-en-japon/">
+<style id="aij-buscador-global-estilo">
+#aij-search-home{width:100%;box-sizing:border-box;margin:12px auto 15px;padding:15px 13px;border:2px solid #a8e4d1;border-radius:17px;background:rgba(8,35,31,.94);color:#fff;text-align:center}
+#aij-search-home h2{font-size:clamp(20px,5vw,26px);line-height:1.25;margin:0 0 8px;color:#ffe7a0}
+#aij-search-home p{font-size:15px;line-height:1.45;margin:0 0 12px}
+#aij-global-form{display:flex;gap:7px;align-items:stretch}
+#aij-global-input{min-width:0;flex:1;border-radius:10px;border:2px solid #d4ede3;background:#fff;color:#172323;padding:12px 10px;font-size:16px}
+#aij-global-form button{border:1px solid #fff;border-radius:10px;background:#1c7654;color:#fff;font-weight:800;padding:10px 13px;font-size:15px}
+#aij-global-results{text-align:left;max-height:360px;overflow:auto}
+#aij-global-results a{display:block;padding:10px;margin:7px 0;border:1px solid #8eb6a9;border-radius:10px;background:#183b36;color:#fff;text-decoration:none}
+#aij-global-results small{display:block;font-size:12px;color:#d7eee6;line-height:1.4;margin-top:3px}
+#aij-global-status{font-size:13px;margin-top:8px}
+#pantallaTurismo #aij-weather{margin:10px 0 16px}
+@media(max-width:390px){#aij-global-form{flex-wrap:wrap}#aij-global-form button{width:100%}}
+</style>
 </head>
 
 <body>
@@ -506,26 +520,26 @@ details.subtema-card, #resultado, #resultadoContent > section,
       <h1>Guía gratuita en español</h1>
 
       <p class="hero-sub">
-  Información y orientación gratuita para visitar y vivir en Japón.<br>Turismo, vida diaria, trámites, emergencias, idioma japonés y mucho más.
+  Información gratuita y práctica para turistas y residentes: descubre cómo viajar, realizar trámites, actuar ante emergencias, aprender japonés y resolver situaciones de la vida diaria.
 </p>
 
-<section id="aij-weather" aria-label="Clima de Japón">
-  <h2>🌤️ Clima de Japón</h2>
-  <div class="wx-controls"><label for="wx-pref">Prefectura</label><select id="wx-pref"><option value="016000">Hokkaidō · Sapporo</option><option value="020000">Aomori</option><option value="030000">Iwate</option><option value="040000">Miyagi</option><option value="050000">Akita</option><option value="060000">Yamagata</option><option value="070000">Fukushima</option><option value="080000">Ibaraki</option><option value="090000">Tochigi</option><option value="100000">Gunma</option><option value="110000">Saitama</option><option value="120000">Chiba</option><option value="130000" selected>Tokio</option><option value="140000">Kanagawa</option><option value="150000">Niigata</option><option value="160000">Toyama</option><option value="170000">Ishikawa</option><option value="180000">Fukui</option><option value="190000">Yamanashi</option><option value="200000">Nagano</option><option value="210000">Gifu</option><option value="220000">Shizuoka</option><option value="230000">Aichi</option><option value="240000">Mie</option><option value="250000">Shiga</option><option value="260000">Kioto</option><option value="270000">Osaka</option><option value="280000">Hyōgo</option><option value="290000">Nara</option><option value="300000">Wakayama</option><option value="310000">Tottori</option><option value="320000">Shimane</option><option value="330000">Okayama</option><option value="340000">Hiroshima</option><option value="350000">Yamaguchi</option><option value="360000">Tokushima</option><option value="370000">Kagawa</option><option value="380000">Ehime</option><option value="390000">Kōchi</option><option value="400000">Fukuoka</option><option value="410000">Saga</option><option value="420000">Nagasaki</option><option value="430000">Kumamoto</option><option value="440000">Ōita</option><option value="450000">Miyazaki</option><option value="460100">Kagoshima</option><option value="471000">Okinawa · Naha</option></select><button type="button" id="wx-refresh" aria-label="Actualizar pronóstico">↻</button></div>
-  <div id="wx-status" role="status" aria-live="polite">Consultando el pronóstico oficial…</div>
-  <div id="wx-now" hidden></div><details id="wx-more"><summary>Ver pronóstico y lluvia</summary><div id="wx-days"></div><div id="wx-rain"></div></details>
-  <div class="wx-links"><a href="https://www.data.jma.go.jp/multi/warn/index.html?lang=es" target="_blank" rel="noopener noreferrer">⚠️ Alertas oficiales</a><a href="reservas.html#bajo-techo">☔ Actividades bajo techo</a></div>
-  <small>Fuente: <a href="https://www.data.jma.go.jp/multi/yoho/index.html?lang=es" target="_blank" rel="noopener noreferrer">Agencia Meteorológica de Japón (JMA)</a>. Predicción resumida en español; zona representativa, no toda la prefectura.</small>
+
+
+<section id="aij-search-home" aria-label="Buscador de toda la guía">
+<h2>🔎 ¿Qué necesitas saber sobre Japón?</h2>
+<p>Escribe un tema, una pregunta o una palabra. Te ayudamos a encontrar la información en nuestra guía.</p>
+<form id="aij-global-form" role="search"><input id="aij-global-input" type="search" autocomplete="off" placeholder="Ej.: robo, policía, hotel, visa…" aria-label="Buscar información en toda la página" required><button type="submit">Buscar</button></form>
+<div id="aij-global-status" role="status" aria-live="polite"></div><div id="aij-global-results"></div>
 </section>
 <div class="hero-contact">
-  <p class="hero-contact-title">¿Tienes dudas? Escríbenos.</p>
+  <p class="hero-contact-title">¿No encontraste lo que buscabas? ¿Necesitas más información? ¡Contáctanos!</p>
   <div class="hero-contact-actions">
     <a class="hero-contact-email" href="mailto:ayudainmediataenjapon@gmail.com" aria-label="Contactar por correo electrónico">✉️ Correo</a>
     <a class="hero-contact-whatsapp" href="https://wa.me/819084462319?text=Hola%2C%20encontr%C3%A9%20su%20p%C3%A1gina%20Ayuda%20Inmediata%20en%20Jap%C3%B3n%20y%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">💬 WhatsApp</a>
   </div>
 </div>
 
-      <button id="arrowDown" class="arrow hero-continue" type="button" aria-controls="buscador">
+      <button id="arrowDown" class="arrow hero-continue" type="button" aria-controls="pantallaTurismo">
         Ver todas las secciones →
       </button>
       <p class="hero-update">🔄 Guía en constante mejora</p>
@@ -546,6 +560,14 @@ details.subtema-card, #resultado, #resultadoContent > section,
       </button>
       <h2>🇯🇵 Japón a tu alcance</h2>
       <p>Tu guía para vivir y visitar Japón sin complicaciones.<br>Información y orientación gratuita para turistas y residentes.</p>
+<section id="aij-weather" aria-label="Clima de Japón">
+  <h2>🌤️ Clima de Japón</h2>
+  <div class="wx-controls"><label for="wx-pref">Prefectura</label><select id="wx-pref"><option value="016000">Hokkaidō · Sapporo</option><option value="020000">Aomori</option><option value="030000">Iwate</option><option value="040000">Miyagi</option><option value="050000">Akita</option><option value="060000">Yamagata</option><option value="070000">Fukushima</option><option value="080000">Ibaraki</option><option value="090000">Tochigi</option><option value="100000">Gunma</option><option value="110000">Saitama</option><option value="120000">Chiba</option><option value="130000" selected>Tokio</option><option value="140000">Kanagawa</option><option value="150000">Niigata</option><option value="160000">Toyama</option><option value="170000">Ishikawa</option><option value="180000">Fukui</option><option value="190000">Yamanashi</option><option value="200000">Nagano</option><option value="210000">Gifu</option><option value="220000">Shizuoka</option><option value="230000">Aichi</option><option value="240000">Mie</option><option value="250000">Shiga</option><option value="260000">Kioto</option><option value="270000">Osaka</option><option value="280000">Hyōgo</option><option value="290000">Nara</option><option value="300000">Wakayama</option><option value="310000">Tottori</option><option value="320000">Shimane</option><option value="330000">Okayama</option><option value="340000">Hiroshima</option><option value="350000">Yamaguchi</option><option value="360000">Tokushima</option><option value="370000">Kagawa</option><option value="380000">Ehime</option><option value="390000">Kōchi</option><option value="400000">Fukuoka</option><option value="410000">Saga</option><option value="420000">Nagasaki</option><option value="430000">Kumamoto</option><option value="440000">Ōita</option><option value="450000">Miyazaki</option><option value="460100">Kagoshima</option><option value="471000">Okinawa · Naha</option></select><button type="button" id="wx-refresh" aria-label="Actualizar pronóstico">↻</button></div>
+  <div id="wx-status" role="status" aria-live="polite">Consultando el pronóstico oficial…</div>
+  <div id="wx-now" hidden></div><details id="wx-more"><summary>Ver pronóstico y lluvia</summary><div id="wx-days"></div><div id="wx-rain"></div></details>
+  <div class="wx-links"><a href="https://www.data.jma.go.jp/multi/warn/index.html?lang=es" target="_blank" rel="noopener noreferrer">⚠️ Alertas oficiales</a><a href="reservas.html#bajo-techo">☔ Actividades bajo techo</a></div>
+  <small>Fuente: <a href="https://www.data.jma.go.jp/multi/yoho/index.html?lang=es" target="_blank" rel="noopener noreferrer">Agencia Meteorológica de Japón (JMA)</a>. Predicción resumida en español; zona representativa, no toda la prefectura.</small>
+</section>
       <!-- Seis tarjetas principales -->
 <div class="cards-wrap aij-sixcards">
 <a href="turismo.html" class="card-link"><div class="card-icon" aria-hidden="true">🌸</div><div class="card-title">Turismo en Japón</div><div class="card-desc">Lugares y recomendaciones</div></a>
@@ -566,7 +588,7 @@ details.subtema-card, #resultado, #resultadoContent > section,
         <div class="aij-accesos-grid">
           <a href="noticias.html">📰 Noticias importantes</a>
           <a href="#buscador">🚨 Emergencias y trámites</a>
-          <a href="#pantallaOrientacion">💬 Orientación personalizada y consultas</a>
+          
           <a href="comentarios.html">📝 Sugerencias</a>
           <a href="#pantallaApoyo">❤️ Apoya esta guía</a>
         </div>
@@ -1344,6 +1366,61 @@ setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementByI
 #pantallaTurismo .aij-japanese-highlight{background:linear-gradient(115deg,#173b34,#173b50)!important;border:2px solid #e7c36a!important;margin:7px 0!important;min-height:0!important;padding:8px!important}
 @media(max-width:600px){#pantallaTurismo .cards-wrap.aij-sixcards > a.card-link,#pantallaTurismo .cards-wrap.aij-sixcards > #continuarDesdeTurismo.aij-next{min-height:74px!important;padding:5px!important;gap:2px!important}#pantallaTurismo .cards-wrap.aij-sixcards .card-icon,#pantallaTurismo .cards-wrap.aij-sixcards .aij-daily-icon{font-size:21px!important;line-height:1.05!important}#pantallaTurismo .cards-wrap.aij-sixcards .card-title,#pantallaTurismo .cards-wrap.aij-sixcards .aij-daily-title{font-size:clamp(13px,3.5vw,16px)!important;line-height:1.15!important}#pantallaTurismo .cards-wrap.aij-sixcards .card-desc,#pantallaTurismo .cards-wrap.aij-sixcards .aij-daily-desc{font-size:clamp(11px,2.8vw,13px)!important;line-height:1.18!important}}
 </style>
-<style id="aij-video-art-style">.aij-video-art{margin:12px 0;border:1px solid #648f83;border-radius:12px;background:#162b2b;padding:10px;color:#fff}.aij-video-art>summary{color:#b8e4cf;font-weight:800;cursor:pointer}.aij-video-art a,.aij-video-info a{color:#8ed2ff!important;text-decoration:underline}.aij-video-art p,.aij-video-info p{line-height:1.55}</style></body>
+<style id="aij-video-art-style">.aij-video-art{margin:12px 0;border:1px solid #648f83;border-radius:12px;background:#162b2b;padding:10px;color:#fff}.aij-video-art>summary{color:#b8e4cf;font-weight:800;cursor:pointer}.aij-video-art a,.aij-video-info a{color:#8ed2ff!important;text-decoration:underline}.aij-video-art p,.aij-video-info p{line-height:1.55}</style><script id="aij-buscador-global-script">
+(function(){
+const form=document.getElementById('aij-global-form'),input=document.getElementById('aij-global-input'),status=document.getElementById('aij-global-status'),results=document.getElementById('aij-global-results');
+if(!form)return;
+const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9ñ\s]/g,' ').replace(/\s+/g,' ').trim();
+const groups=[
+['policia','robo','robado','hurto','denuncia','perdida','perdido','extravío','extravio','accidente','110','comisaria','koban'],
+['hotel','hoteles','alojamiento','hospedaje','estadia','estadía','dormir','reservas','habitacion','hostal','ryokan'],
+['visa','visado','residencia','inmigracion','extranjeria','renovacion','zairyu'],
+['hospital','medico','salud','ambulancia','emergencia','119','clinica'],
+['trabajo','empleo','salario','laboral','contrato'],
+['turismo','viaje','viajar','visitar','lugares','excursion']
+];
+let cache=null;
+async function index(){
+ if(cache)return cache;
+ const root=new URL('./',location.href),visited=new Set(),queue=['index.html'],pages=[];
+ while(queue.length&&visited.size<180){
+  const path=queue.shift();if(visited.has(path))continue;visited.add(path);
+  try{
+   const response=await fetch(new URL(path,root));if(!response.ok)continue;
+   const html=await response.text(),doc=new DOMParser().parseFromString(html,'text/html');
+   doc.querySelectorAll('script,style,nav,footer').forEach(n=>n.remove());
+   const title=(doc.querySelector('title')?.textContent||doc.querySelector('h1')?.textContent||path).trim();
+   const body=(doc.body?.innerText||doc.body?.textContent||'').replace(/\s+/g,' ').slice(0,180000);
+   pages.push({path,title,body,normalized:norm(title+' '+body)});
+   doc.querySelectorAll('a[href]').forEach(a=>{
+    try{const u=new URL(a.getAttribute('href'),new URL(path,root));
+    if(u.origin!==root.origin||!u.pathname.startsWith(root.pathname))return;
+    const relative=decodeURIComponent(u.pathname.slice(root.pathname.length))||'index.html';
+    if(/^[^?#]+\.html$/i.test(relative)&&!visited.has(relative)&&!queue.includes(relative))queue.push(relative);
+    }catch(e){}
+   });
+  }catch(e){}
+ }
+ cache=pages;return pages;
+}
+form.addEventListener('submit',async e=>{
+ e.preventDefault();const q=norm(input.value);if(!q)return;
+ status.textContent='Buscando en las secciones de la guía…';results.replaceChildren();
+ try{
+ const pages=await index(),terms=q.split(' ').filter(x=>x.length>1);
+ const extra=new Set(terms);
+ groups.forEach(g=>{if(g.some(w=>terms.includes(norm(w))))g.forEach(w=>extra.add(norm(w)))});
+ const found=pages.map(p=>{
+  let score=0;if(p.normalized.includes(q))score+=12;
+  for(const t of extra){if(t.length>2&&p.normalized.includes(t))score+=p.title.toLowerCase().includes(t)?5:1}
+  return {...p,score};
+ }).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,18);
+ status.textContent=found.length?'Encontramos '+found.length+' secciones relacionadas.':'No encontramos resultados. Prueba otras palabras o escríbenos.';
+ found.forEach(p=>{const a=document.createElement('a');a.href=p.path;const strong=document.createElement('strong');strong.textContent=p.title;const small=document.createElement('small');small.textContent=p.body.slice(0,145)+'…';a.append(strong,small);results.append(a)});
+ }catch(err){status.textContent='No se pudo completar la búsqueda. Inténtalo nuevamente o contáctanos.'}
+});
+})();
+</script>
+</body>
 
 </html>

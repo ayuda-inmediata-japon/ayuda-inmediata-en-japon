@@ -1493,17 +1493,35 @@ if(n>score){best=route;score=n;}
 }
 return best;
 }
+function showScreen(id){
+ if(typeof window.aijMostrarPantalla==='function')window.aijMostrarPantalla(id,false);
+ else{
+  ['inicio','pantallaTurismo','buscador','pantallaOrientacion','pantallaApoyo','pantallaFinal'].forEach(k=>{const el=document.getElementById(k);if(el)el.style.display=k===id?'block':'none';});
+ }
+}
+function focusCard(card){
+ if(!card)return;
+ card.scrollIntoView({behavior:'smooth',block:'center'});
+ const prior=card.style.outline;
+ card.style.outline='3px solid #ffe7a0';
+ setTimeout(()=>{card.style.outline=prior;},2200);
+}
 function go(route){
-if(route.href){location.href=route.href;return;}
-if(route.weather){
-if(typeof window.aijMostrarPantalla==='function')window.aijMostrarPantalla('pantallaTurismo',false);
+ if(route.href){
+  showScreen('pantallaTurismo');
+  const card=document.querySelector('#pantallaTurismo a.card-link[href="'+route.href+'"]')||document.querySelector('#pantallaTurismo a[href="'+route.href+'"]');
+  if(card){setTimeout(()=>focusCard(card),100);return;}
+  location.href=route.href;return;
+ }
+ if(route.weather){
+showScreen('pantallaTurismo');
 else {document.getElementById('inicio').style.display='none';document.getElementById('pantallaTurismo').style.display='block';}
 setTimeout(()=>document.getElementById('aij-weather')?.scrollIntoView({behavior:'smooth',block:'start'}),60);return;
 }
 const chip=document.querySelector('#buscador .chips-wrap [data-key="'+route.key+'"]');
 if(!chip)return;
-if(typeof window.aijMostrarPantalla==='function')window.aijMostrarPantalla('buscador',false);
-chip.click();
+showScreen('buscador');
+setTimeout(()=>{focusCard(chip);},90);
 }
 function update(){
 const q=norm(input.value),route=find(q);

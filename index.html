@@ -1482,57 +1482,106 @@ setInterval(()=>{if(document.visibilityState==='visible'&&document.getElementByI
 </style>
 <style id="aij-video-art-style">.aij-video-art{margin:12px 0;border:1px solid #648f83;border-radius:12px;background:#162b2b;padding:10px;color:#fff}.aij-video-art>summary{color:#b8e4cf;font-weight:800;cursor:pointer}.aij-video-art a,.aij-video-info a{color:#8ed2ff!important;text-decoration:underline}.aij-video-art p,.aij-video-info p{line-height:1.55}</style><script id="aij-buscador-global-script">
 (function(){
- const form=document.getElementById('aij-global-form'),input=document.getElementById('aij-global-input'),status=document.getElementById('aij-global-status'),results=document.getElementById('aij-global-results');
- if(!form||!input||!status||!results)return;
- const normalize=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
- const topics=[
-  {keys:['robo','robar','robado','robaron','me robaron','hurto','asalto','estafa','denuncia','denunciar','ladron','cartera robada'],items:[['🚨 Qué hacer si te roban o estafan','Información práctica para solicitar ayuda y denunciar un robo en Japón.','index.html#ayuda-robo'],['🚓 Policía y kōban','Teléfono de emergencias 110 y ayuda policial.','index.html#ayuda-policia']]},
-  {keys:['policia','policial','policias','poli','pol','comisaria','koban','kouban','puesto policial','110'],items:[['🚓 Policía en Japón','Cómo solicitar ayuda policial y contactar con un kōban.','index.html#ayuda-policia'],['🚨 Robo o estafa','Qué hacer si has sufrido un robo o una estafa.','index.html#ayuda-robo']]},
-  {keys:['restaurante','restaurantes','restaurant','comer','comida','cenar','almorzar','gastronomia','donde comer','menu'],items:[['🍱 Restaurantes y comida en Japón','Información para visitantes sobre lugares, gastronomía y actividades.','turismo.html'],['🗣️ Japonés para restaurantes','Cómo pedir comida, solicitar la cuenta y comunicarte en un restaurante.','japones.html#art-cuenta']]},
-  {keys:['video','videos','videoteca','reel','reels','documental','documentales'],items:[['🎬 Videoteca','Todos nuestros vídeos educativos organizados por tema.','videoteca.html']]},
-  {keys:['turismo','turista','turistas','viaje','viajar','visitar','lugares','destinos'],items:[['🗾 Turismo en Japón','Lugares, destinos y recomendaciones para conocer Japón.','turismo.html'],['🧳 Preparar un viaje','Requisitos, documentos y recomendaciones antes de viajar.','planifica.html']]},
-  {keys:['japones','idioma','aprender','frases','hablar japones','nihongo','lengua japonesa'],items:[['🗣️ Aprende japonés práctico','Frases útiles y guía para vivir y trabajar en Japón.','japones.html#japones-para-vivir-trabajar']]},
-  {keys:['ambulancia','119','emergencia','emergencias','bomberos','terremoto'],items:[['🚑 Emergencias en Japón','Ambulancias, policía, terremotos y otras situaciones urgentes.','index.html#ayuda-emergencias']]},
-  {keys:['visa','visado','residencia','inmigracion','zairyu','renovacion'],items:[['🪪 Residencia y trámites','Información sobre trámites y documentos en Japón.','index.html#ayuda-tramites']]},
-  {keys:['hotel','hoteles','alojamiento','hospedaje','ryokan','hostal','dormir'],items:[['🏨 Alojamiento y hoteles','Consejos para llegar, alojarte y hacer check-in en Japón.','index.html#ayuda-alojamiento']]},
-  {keys:['tren','trenes','transporte','estacion','metro','autobus','bus','ferrocarril','densha'],items:[['🚆 Transporte en Japón','Trenes, estaciones, tarjetas IC y desplazamientos.','index.html#ayuda-transporte']]},
-  {keys:['hospital','medico','medicina','salud','clinica'],items:[['🏥 Salud y atención médica','Cómo buscar atención médica y qué hacer en caso de enfermedad.','index.html#ayuda-salud']]},
-  {keys:['basura','reciclaje','supermercado','konbini','compras','residuos','desechos','reciclar'],items:[['🏠 Vida diaria en Japón','Compras, reciclaje, konbini y servicios cotidianos.','index.html#ayuda-vida-diaria']]}
- ];
- function render(title,desc,href){
-  if([...results.querySelectorAll('a')].some(a=>a.getAttribute('href')===href))return;
-  const a=document.createElement('a');a.href=href;
-  const strong=document.createElement('strong');strong.textContent=title;
-  const small=document.createElement('small');small.textContent=desc;
-  a.append(strong,small);results.append(a);
- }
- form.addEventListener('submit',function(e){
-  e.preventDefault();results.replaceChildren();
-  const q=normalize(input.value);if(!q){status.textContent='Escribe lo que necesitas buscar.';return;}
-  const words=q.split(' ').filter(Boolean);
-  function near(a,b){
-   if(a===b)return true;
-   if(a.length<5||b.length<5||Math.abs(a.length-b.length)>1)return false;
-   let i=0,j=0,edits=0;
-   while(i<a.length&&j<b.length){
-    if(a[i]===b[j]){i++;j++;continue;}
-    if(++edits>1)return false;
-    if(a.length>b.length)i++;
-    else if(b.length>a.length)j++;
-    else{i++;j++;}
-   }
-   return edits+Number(i<a.length||j<b.length)<=1;
-  }
-  function matches(key){
-   const n=normalize(key);
-   if(q===n||(n.length>=4&&q.includes(n)))return true;
-   return words.some(w=>w===n||(w.length>=3&&n.startsWith(w))||near(w,n));
-  }
-  const matched=topics.filter(topic=>topic.keys.some(matches));
-  matched.forEach(t=>t.items.forEach(item=>render(...item)));
-  const count=results.querySelectorAll('a').length;
-  status.textContent=count?'Encontramos '+count+' resultado'+(count===1?'':'s')+' relacionado'+(count===1?'':'s')+'.':'Todavía no tenemos un resultado específico para esta búsqueda. Puedes consultar las secciones o escribirnos para recibir orientación.';
+const form=document.getElementById('aij-global-form'),input=document.getElementById('aij-global-input'),status=document.getElementById('aij-global-status'),results=document.getElementById('aij-global-results');
+if(!form||!input||!status||!results)return;
+const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
+const stop=new Set(['de','del','la','las','el','los','un','una','en','con','por','para','que','como','quiero','necesito','saber','informacion','sobre','japon','donde','puedo','hacer','hay','mi','me','se','es','al','y','o']);
+const synonymGroups=[
+['policia','policial','policias','poli','pol','comisaria','koban','kouban','110'],
+['robo','robar','robado','robaron','hurto','asalto','ladron','denuncia'],
+['restaurante','restaurantes','restaurant','comer','comida','cenar','almorzar','gastronomia','menu'],
+['japones','idioma','nihongo','lengua japonesa'],
+['tren','trenes','densha','ferrocarril','estacion','metro'],
+['autobus','bus','buses'],['hospital','medico','clinica','salud','enfermedad'],
+['hotel','hoteles','alojamiento','hospedaje','hostal','ryokan'],
+['visa','visado','residencia','zairyu','inmigracion'],
+['basura','residuos','desechos','reciclaje','reciclar'],
+['video','videos','videoteca','reels','reel','documental','documentales'],
+['turismo','turista','turistas','viajar','viaje','visitar'],
+['ambulancia','emergencia','emergencias','119'],
+['trabajo','trabajar','empleo','laboral','fabrica']
+].map(g=>g.map(norm));
+const root=new URL('./',location.href),entries=[],seen=new Set(),visited=new Set(),queued=new Set(),queue=[],limit=80;
+function local(value){
+ try{const u=new URL(value,root);if(u.origin!==root.origin||!u.pathname.startsWith(root.pathname)||!u.pathname.endsWith('.html'))return null;u.search='';u.hash='';return u.href;}catch(e){return null;}
+}
+function enqueue(value){const url=local(value);if(url&&!queued.has(url)&&queued.size<limit){queued.add(url);queue.push(url);}}
+function add(title,description,url){
+ title=(title||'').replace(/\s+/g,' ').trim();description=(description||'').replace(/\s+/g,' ').trim();
+ if(title.length<5||title.length>160||description.length<20)return;
+ const key=url+'|'+norm(title);if(seen.has(key))return;seen.add(key);
+ entries.push({title,description:description.slice(0,330),url});
+}
+function indexPage(doc,url){
+ const main=doc.querySelector('main')||doc.body;if(!main)return;
+ const clean=main.cloneNode(true);
+ clean.querySelectorAll('script,style,nav,footer,header,form,button,noscript,svg').forEach(n=>n.remove());
+ const pageTitle=doc.querySelector('title')?.textContent||'Guía de Japón';
+ add(pageTitle,clean.textContent.slice(0,600),url);
+ clean.querySelectorAll('h2,h3,h4,details,section[id],article[id]').forEach(el=>{
+  const heading=el.matches('h2,h3,h4')?el:el.querySelector('summary,h2,h3,h4');
+  const title=heading?.textContent?.replace(/\s+/g,' ').trim();
+  if(!title||title.length<5||title.length>150)return;
+  let node=el,anchor=el.id||heading?.id||'';
+  while(!anchor&&node&&node!==clean){node=node.parentElement;if(node?.id)anchor=node.id;}
+  const desc=(el.matches('h2,h3,h4')?el.parentElement?.textContent:el.textContent)||'';
+  add(title,desc,url+(anchor?'#'+encodeURIComponent(anchor):''));
  });
+ doc.querySelectorAll('a[href]').forEach(a=>enqueue(a.getAttribute('href')));
+}
+let loading=null;
+async function build(){
+ enqueue('index.html');
+ const parser=new DOMParser();
+ while(queue.length){
+  const batch=queue.splice(0,5).filter(u=>!visited.has(u));
+  await Promise.all(batch.map(async url=>{
+   visited.add(url);
+   try{const res=await fetch(url);if(res.ok)indexPage(parser.parseFromString(await res.text(),'text/html'),url);}catch(e){}
+  }));
+ }
+}
+function variants(word){
+ const v=new Set([word]);
+ synonymGroups.forEach(g=>{if(g.some(w=>w===word||(word.length>=3&&w.startsWith(word))))g.forEach(w=>v.add(w));});
+ return [...v];
+}
+function score(entry,words){
+ const title=norm(entry.title),desc=norm(entry.description);
+ let total=0;
+ for(const w of words){
+  let best=0;
+  for(const v of variants(w)){
+   if(title.split(' ').includes(v))best=Math.max(best,15);
+   else if(v.length>=3&&title.includes(v))best=Math.max(best,10);
+   if(v.length>=4&&desc.includes(v))best=Math.max(best,3);
+  }
+  if(!best)return 0;
+  total+=best;
+ }
+ return total;
+}
+function render(item){
+ const a=document.createElement('a');a.href=item.url;
+ const strong=document.createElement('strong');strong.textContent=item.title;
+ const small=document.createElement('small');small.textContent=item.description.slice(0,180)+(item.description.length>180?'…':'');
+ a.append(strong,small);results.append(a);
+}
+let request=0;
+form.addEventListener('submit',async function(e){
+ e.preventDefault();const current=++request;results.replaceChildren();
+ const query=norm(input.value);if(!query){status.textContent='Escribe lo que necesitas buscar.';return;}
+ status.textContent='Buscando en los artículos de nuestra guía…';
+ if(!loading)loading=build();
+ await loading;
+ if(current!==request)return;
+ const words=query.split(' ').filter(w=>w&&!stop.has(w));
+ if(!words.length){status.textContent='Escribe una palabra más específica.';return;}
+ const matches=entries.map(item=>({item,rank:score(item,words)})).filter(x=>x.rank>0).sort((a,b)=>b.rank-a.rank);
+ const unique=new Set();
+ matches.forEach(x=>{if(!unique.has(x.item.url)){unique.add(x.item.url);render(x.item);}});
+ status.textContent=unique.size?'Encontramos '+unique.size+' resultado'+(unique.size===1?'':'s')+' relacionado'+(unique.size===1?'':'s')+'.':'No encontramos un artículo relacionado con esa búsqueda. Puedes escribirnos o consultar todas las secciones.';
+});
 })();
 </script>
 </body>

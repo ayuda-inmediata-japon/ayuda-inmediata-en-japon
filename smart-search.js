@@ -246,6 +246,8 @@ const routes=[
 {label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
 ];
 const consultasUsuario=[
+{label:'🛍️ Tax Free: devolución de impuestos para turistas (normas 2026)',href:'tax-free.html',terms:['tax free','taxfree','tax-free','tax refund','taxrefund','menzei','免税','compras sin impuestos','devolucion de impuestos','devolucion del impuesto','devolucion iva','iva japon','impuestos compras turistas','comprar sin impuestos','compras libres de impuestos','reembolso impuestos','reembolso de impuestos','exencion impuestos turista','exencion de impuestos','tax free japon','devolucion impuestos aeropuerto']},
+
 {label:'🚓 Perdido, extraviado u objeto perdido: ayuda policial',key:'policia',terms:['perdido','perdida','extraviado','extraviada','extravio','me perdi','estoy perdido','me he perdido','objeto perdido','perdi mi cartera','perdi mi pasaporte']},
 {label:'🧭 Qué hacer si te pierdes en una estación',href:'videoteca.html#video-estacion',terms:['perderse en una estacion','perdido en estacion','no encuentro salida estacion']},
 {label:'🌸 Paseos y excursiones por Japón',href:'turismo.html',terms:['paseo','paseos','pasear','salir de paseo','ir de paseo','excursion','excursiones']},

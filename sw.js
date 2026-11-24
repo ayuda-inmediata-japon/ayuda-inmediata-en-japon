@@ -1,4 +1,4 @@
-const CACHE_NAME = "ayuda-japon-v12";
+const CACHE_NAME = "ayuda-japon-v13";
 
 const CORE_FILES = [
   "./",
@@ -18,6 +18,7 @@ const CORE_FILES = [
   "./Img/banner-portada-2026.webp",
   "./reservas.html",
   "./planifica.html",
+  "./tax-free.html",
   "./noticias.html",
   "./descubre-japon.html",
   "./trabajo.html"

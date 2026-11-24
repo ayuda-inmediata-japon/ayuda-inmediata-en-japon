@@ -252,19 +252,19 @@ function routeURL(r){return r.href|| (r.key?'#ayuda-'+r.key : r.screen?'#'+r.scr
 function score(q,record,route=false){
  const title=norm(record.title||record.label),terms=(record.terms||[]).map(norm),body=norm(record.text||'');
  const qs=words(q);if(!qs.length)return q===title?180:0;
- if(route&&terms.some(t=>t===q))return 250;
- if(q===title)return 220;
- if(route&&terms.some(t=>q.length>=3&&t.startsWith(q)))return 165;
- if(route&&terms.some(t=>q.length>=4&&q.startsWith(t)))return 145;
- if(title.startsWith(q))return 130;
- if(q.length>=3&&title.includes(q))return 105;
- if(route&&terms.some(t=>qs.every(w=>t.includes(w))))return 105;
- const inTitle=qs.filter(w=>title.split(' ').some(t=>t===w||w.length>=4&&t.startsWith(w))).length;
- const inBody=qs.filter(w=>body.includes(w)).length;
- if(inTitle===qs.length)return 90+qs.length*3;
- if(inTitle&&inBody===qs.length)return 60+inTitle*8;
- if(inBody===qs.length)return 25+qs.length*3;
+ const tokens=s=>s.split(' ').map(w=>synonyms[w]||w);
+ const matches=(w,t)=>t===w||(w.length>=2&&t.startsWith(w));
+ const titleMatch=qs.every(w=>tokens(title).some(t=>matches(w,t)));
+ const termMatch=terms.some(t=>qs.every(w=>tokens(t).some(x=>matches(w,x))));
+ if(qs.length===1&&/^reservas\.html#alojamiento-[a-z]/.test(record.href||record.url||'')&&/^(hot|hotel|aloj|alojamiento|hosp)/.test(q))return 0;
+ if(q===title)return 320;
+ if(route&&terms.some(t=>t===q))return 300;
+ if(titleMatch)return 240;
+ if(termMatch)return 180;
+ if(q.length<4)return 0;
+ if(qs.every(w=>tokens(body).includes(w)))return 30;
  return 0;
+
 }
 function showScreen(id){if(typeof window.aijMostrarPantalla==='function')window.aijMostrarPantalla(id,false);}
 function go(r){
@@ -278,11 +278,11 @@ function contact(){status.textContent='No encontramos información específica s
 function update(){
  const q=norm(input.value);results.replaceChildren();status.textContent='';if(!q)return;
  const hits=[];
- for(const r of routes){const n=score(q,r,true);if(n)hits.push({n,label:r.label,url:routeURL(r),r});}
- for(const r of entries){const n=score(q,r,false);if(n)hits.push({n,label:r.title,url:r.url,r});}
+ for(const r of routes){const n=score(q,r,true);if(n)hits.push({n,label:r.href?.startsWith('videoteca.html#')?'Vídeo: '+r.label:r.label,url:routeURL(r),r});}
+ for(const r of entries){const n=score(q,r,false);if(n)hits.push({n,label:r.url?.startsWith('videoteca.html')?'Vídeo: '+r.title:r.title,url:r.url,r});}
  hits.sort((a,b)=>b.n-a.n||a.label.length-b.label.length);
- const unique=new Set();let shown=0;
- for(const h of hits){if(unique.has(h.url))continue;unique.add(h.url);
+ const unique=new Set(),labels=new Set();let shown=0;const best=hits[0]?.n||0;
+ for(const h of hits){if(best>=180&&h.n<180)continue;const label=norm(h.label);if(unique.has(h.url)||labels.has(label))continue;unique.add(h.url);labels.add(label);
  const a=document.createElement('a');a.href=h.url;a.textContent=h.label;a.addEventListener('click',ev=>{if(h.r.key||h.r.screen||h.r.weather){ev.preventDefault();go(h.r);}});results.append(a);if(++shown>=6)break;}
  if(!shown)contact();else status.textContent=shown===1?'Encontramos este apartado:':'Apartados relacionados con tu búsqueda:';
 }
@@ -292,7 +292,7 @@ function useMainSearch(ev){if(!secondary||!secondary.value.trim())return;ev.prev
 if(secondaryBtn)secondaryBtn.addEventListener('click',useMainSearch,true);
 if(secondary)secondary.addEventListener('keydown',ev=>{if(ev.key==='Enter')useMainSearch(ev);},true);
 input.addEventListener('input',update);
-form.addEventListener('submit',ev=>{ev.preventDefault();const first=results.querySelector('a');if(first)first.click();else update();});
+form.addEventListener('submit',ev=>{ev.preventDefault();const first=results.querySelector('a');if(first&&first.parentElement===results)first.click();else update();});
 fetch('search-index.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('index');return r.json();}).then(data=>{if(Array.isArray(data)){entries=data;update();}}).catch(()=>{status.textContent='Puedes buscar las secciones principales. Algunas búsquedas detalladas podrían no estar disponibles temporalmente.';});
 if(new URLSearchParams(location.search).has('buscar')){setTimeout(()=>{input.focus({preventScroll:true});form.scrollIntoView({block:'center'});},180);}
 })();

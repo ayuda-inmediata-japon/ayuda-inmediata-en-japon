@@ -277,7 +277,8 @@ function score(q,record,route=false){
  const titleMatch=qs.every(w=>tokens(title).some(t=>matches(w,t)));
  const termMatch=terms.some(t=>qs.every(w=>tokens(t).some(x=>matches(w,x))));
  if(qs.length===1&&/^reservas\.html#alojamiento-[a-z]/.test(record.href||record.url||'')&&/^(hot|hotel|aloj|alojamiento|hosp)/.test(q))return 0;
- if(primary.includes(record)&&terms.some(t=>t===q|| (q.length>=2&&!q.includes(' ')&&t.startsWith(q))))return 1000;
+ if(primary.includes(record)&&terms.some(t=>t===q))return 1200;
+ if(primary.includes(record)&&q.length>=2&&!q.includes(' ')&&terms.some(t=>t.startsWith(q)))return 850;
  if(q===title)return 320;
  if(route&&terms.some(t=>t===q))return 300;
  if(titleMatch)return 240;

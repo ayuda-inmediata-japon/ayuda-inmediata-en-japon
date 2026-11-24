@@ -245,6 +245,10 @@ const routes=[
 {label:'🏡 Vivir en Japón',screen:'buscador',terms:['vivir en japon','residentes','vida en japon','orientacion para residentes']},
 {label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
 ];
+const primary=[
+{label:'🏨 Hoteles y alojamientos',href:'reservas.html#hoteles',terms:['hotel','hoteles','alojamiento','hospedaje','hostal','ryokan']},
+...routes.filter(r=>r.key||r.screen||r.weather||['turismo.html','reservas.html','planifica.html','trabajo.html','japones.html','descubre-japon.html','noticias.html','videoteca.html','comentarios.html'].includes(r.href)).filter(r=>r.key!=='alojamiento')
+];
 const synonyms={libros:'libro',guias:'guia',atraccion:'atracciones',atractivo:'atracciones',paseos:'turismo',pasear:'turismo',visitas:'turismo',visitar:'turismo',conocer:'descubre',conociendo:'descubre',noticia:'noticias',empleos:'empleo',trabajar:'trabajo',medicinas:'medicamentos',medicina:'medicamentos',hospitales:'hospital',visados:'visa',tramites:'tramite',trenes:'tren',restaurantes:'restaurante',hoteles:'hotel',policial:'policia',documentos:'documento',prefecturas:'prefectura'};
 const words=q=>norm(q).split(' ').filter(w=>w.length>1&&!['de','del','la','el','los','las','en','un','una','para','por','que','como','quiero','sobre','japon'].includes(w)).map(w=>synonyms[w]||w);
 let entries=[];
@@ -257,6 +261,7 @@ function score(q,record,route=false){
  const titleMatch=qs.every(w=>tokens(title).some(t=>matches(w,t)));
  const termMatch=terms.some(t=>qs.every(w=>tokens(t).some(x=>matches(w,x))));
  if(qs.length===1&&/^reservas\.html#alojamiento-[a-z]/.test(record.href||record.url||'')&&/^(hot|hotel|aloj|alojamiento|hosp)/.test(q))return 0;
+ if(primary.includes(record)&&terms.some(t=>t===q|| (q.length>=2&&!q.includes(' ')&&t.startsWith(q))))return 1000;
  if(q===title)return 320;
  if(route&&terms.some(t=>t===q))return 300;
  if(titleMatch)return 240;
@@ -278,11 +283,13 @@ function contact(){status.textContent='No encontramos información específica s
 function update(){
  const q=norm(input.value);results.replaceChildren();status.textContent='';if(!q)return;
  const hits=[];
- for(const r of routes){const n=score(q,r,true);if(n)hits.push({n,label:r.href?.startsWith('videoteca.html#')?'Vídeo: '+r.label:r.label,url:routeURL(r),r});}
+ for(const r of [...primary,...routes]){const n=score(q,r,true);if(n)hits.push({n,label:r.href?.startsWith('videoteca.html#')?'Vídeo: '+r.label:r.label,url:routeURL(r),r});}
  for(const r of entries){const n=score(q,r,false);if(n)hits.push({n,label:r.url?.startsWith('videoteca.html')?'Vídeo: '+r.title:r.title,url:r.url,r});}
  hits.sort((a,b)=>b.n-a.n||a.label.length-b.label.length);
  const unique=new Set(),labels=new Set();let shown=0;const best=hits[0]?.n||0;
- for(const h of hits){if(best>=180&&h.n<180)continue;const label=norm(h.label);if(unique.has(h.url)||labels.has(label))continue;unique.add(h.url);labels.add(label);
+ for(const h of hits){if(best>=1000&&q.length<4&&h.n<1000)continue;
+ if(best>=180&&h.n<180)continue;if(/^reservas\.html#alojamiento-[a-z]/.test(h.url||''))h.label='🏨 Alojamientos en '+h.label.replace(/^🏨\s*/,'').replace(/^Alojamientos en /i,'');
+ const label=norm(h.label);if(unique.has(h.url)||labels.has(label))continue;unique.add(h.url);labels.add(label);
  const a=document.createElement('a');a.href=h.url;a.textContent=h.label;a.addEventListener('click',ev=>{if(h.r.key||h.r.screen||h.r.weather){ev.preventDefault();go(h.r);}});results.append(a);if(++shown>=6)break;}
  if(!shown)contact();else status.textContent=shown===1?'Encontramos este apartado:':'Apartados relacionados con tu búsqueda:';
 }

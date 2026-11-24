@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-11-23T21:19:09.264912+00:00",
+  "updated_at": "2026-11-24T05:59:21.229750+00:00",
   "items": [
+    {
+      "id": "593b810c9ac3b15cf8e5",
+      "title": "消費税減税法案めぐり 立民が最大5万円給付など対案を国会提出",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261124de80414",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-24T05:39:41+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "e3c50bc58d9cd3516fcf",
       "title": "【地震情報】熊本県で震度3 津波の心配なし",
@@ -102,6 +111,15 @@
     }
   ],
   "archive": [
+    {
+      "id": "593b810c9ac3b15cf8e5",
+      "title": "消費税減税法案めぐり 立民が最大5万円給付など対案を国会提出",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261124de80414",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-24T05:39:41+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "3a709bf25d3580880097",
       "title": "自民 鈴木幹事長 関文科相問責対応“消費税法案など成立優先”",

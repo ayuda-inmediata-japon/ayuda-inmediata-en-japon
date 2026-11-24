@@ -245,7 +245,23 @@ const routes=[
 {label:'🏡 Vivir en Japón',screen:'buscador',terms:['vivir en japon','residentes','vida en japon','orientacion para residentes']},
 {label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
 ];
+const consultasUsuario=[
+{label:'🚓 Perdido, extraviado u objeto perdido: ayuda policial',key:'policia',terms:['perdido','perdida','extraviado','extraviada','extravio','me perdi','estoy perdido','me he perdido','objeto perdido','perdi mi cartera','perdi mi pasaporte']},
+{label:'🧭 Qué hacer si te pierdes en una estación',href:'videoteca.html#video-estacion',terms:['perderse en una estacion','perdido en estacion','no encuentro salida estacion']},
+{label:'🌸 Paseos y excursiones por Japón',href:'turismo.html',terms:['paseo','paseos','pasear','salir de paseo','ir de paseo','excursion','excursiones']},
+{label:'🏥 Hospitales y atención médica',key:'salud',terms:['hos','hospital','hospitales','clinica','medico']},
+{label:'🏨 Hoteles y alojamiento',href:'reservas.html#hoteles',terms:['hotel','hoteles','hospedaje','hostal','alojamiento']},
+{label:'👨‍👩‍👧 Viajar con niños y familias',href:'reservas.html#familia',terms:['viaje con niños','viajar con niños','viajar con ninos','viaje con ninos','viaje familiar','viajar en familia']},
+{label:'🧑 Actividades para adultos y parejas',href:'reservas.html#adultos',terms:['viaje con adultos','viajar con adultos','adultos','viaje para adultos','viaje en pareja']},
+{label:'♿ Viajes accesibles y personas con discapacidad',href:'reservas.html#accesibilidad-viaje',terms:['viaje con discapacitados','viajar con discapacitados','viaje con discapacidad','viajar con discapacidad','viaje accesible','accesibilidad','silla de ruedas','personas con discapacidad','movilidad reducida']},
+{label:'🧳 Preparar viaje con mascotas: consulta la planificación',href:'planifica.html',terms:['viaje con mascotas','viajar con mascotas','viajar con perro','viaje con perro','mascotas','perros en viaje','viajar con gato']},
+{label:'🚒 Incendio, fuego o humo: emergencias y bomberos (119)',key:'emergencia',terms:['incendio','incendios','emergencia en incendio','emergencia incendio','fuego','bomberos','llamar bomberos','humo','119']},
+{label:'🏛️ Ayuntamiento, alcaldía y trámites municipales',key:'tramites',terms:['alcaldia','ayuntamiento','municipalidad','oficina municipal','city hall','shiyakusho','yakuba','municipio']},
+{label:'🍱 Comida y opciones económicas',href:'index.html#ayuda-comida',terms:['comida','comer','almuerzo','desayuno','cena','desayunar','almorzar','cenar','comer barato','donde comer']},
+{label:'🍣 Restaurantes y gastronomía',href:'reservas.html#restaurantes',terms:['restaurantes para comer','restaurante','restaurantes','reservar mesa']},
+];
 const primary=[
+...consultasUsuario,
 {label:'🏨 Hoteles y alojamientos',href:'reservas.html#hoteles',terms:['hotel','hoteles','alojamiento','hospedaje','hostal','ryokan']},
 ...routes.filter(r=>r.key||r.screen||r.weather||['turismo.html','reservas.html','planifica.html','trabajo.html','japones.html','descubre-japon.html','noticias.html','videoteca.html','comentarios.html'].includes(r.href)).filter(r=>r.key!=='alojamiento')
 ];

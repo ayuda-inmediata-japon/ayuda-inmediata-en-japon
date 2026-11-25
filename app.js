@@ -527,6 +527,8 @@ alt="salud general">
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
 <div class="subtemas-box">
+<details class="subtema-card"><summary>🏥 Prestaciones médicas y ayudas de salud</summary><div class="subtema-content"><p>Devolución por operaciones y gastos médicos elevados, deducción fiscal, subsidios por enfermedad y maternidad, discapacidad y ayudas públicas.</p><p><a href="vida-tramites.html#prestaciones-medicas">📖 Consultar requisitos, documentos, costos y trámites</a></p></div></details>
+
 <details class="subtema-card">
     <summary>🛡️ Salud y seguros en Japón</summary>
     <div class="subtema-content">
@@ -3036,6 +3038,13 @@ alt="vida diaria en japon">
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
 <div class="subtemas-box">
+<details class="subtema-card"><summary>💴 Impuestos y declaraciones</summary><div class="subtema-content"><p>Shiminzei, Jūminzei, Shotokuzei, propiedad, Kakutei Shinkoku, Nenmatsu Chōsei, deducciones y devoluciones.</p><p><a href="vida-tramites.html#impuestos">📖 Consultar requisitos, documentos, costos y trámites</a></p></div></details>
+<details class="subtema-card"><summary>🏛️ Certificados municipales</summary><div class="subtema-content"><p>Jūminhyō, Kazei, Nōzei, Inkan, certificados de ingresos y más.</p><p><a href="vida-tramites.html#certificados">📖 Consultar requisitos, documentos, costos y trámites</a></p></div></details>
+<details class="subtema-card"><summary>💼 Documentos laborales y desempleo</summary><div class="subtema-content"><p>Certificados de trabajo y cese, Rishokuhyō, Gensen y nóminas.</p><p><a href="vida-tramites.html#documentos-trabajo">📖 Consultar requisitos, documentos, costos y trámites</a></p></div></details>
+<details class="subtema-card"><summary>🏥 Beneficios médicos y devoluciones</summary><div class="subtema-content"><p>Operaciones, gastos elevados, deducción médica, incapacidad, maternidad y ayudas municipales.</p><p><a href="vida-tramites.html#prestaciones-medicas">📖 Consultar requisitos, documentos, costos y trámites</a></p></div></details>
+<details class="subtema-card"><summary>🤝 Ayudas sociales y familiares</summary><div class="subtema-content"><p>Seikatsu Hogo, asistencia de alquiler, hijos, escuela y reducción de cuotas.</p><p><a href="vida-tramites.html#ayudas-sociales">📖 Consultar requisitos, documentos, costos y trámites</a></p></div></details>
+<details class="subtema-card"><summary>🚘 Licencia de conducir y convenios internacionales</summary><div class="subtema-content"><p>Obtener licencia japonesa, canje, permiso internacional y países reconocidos.</p><p><a href="vida-tramites.html#licencias">📖 Consultar requisitos, documentos, costos y trámites</a></p></div></details>
+
 
 <details class="subtema-card">
   <summary>🏪 Konbini (tiendas 24h)</summary>
@@ -3424,14 +3433,14 @@ alt=" impuestos en japon">
     </ul>
 
     <p><strong>Importante:</strong></p>
-    <p>Pagar a tiempo evita multas y problemas.</p>
+    <p>Pagar a tiempo evita multas y problemas.</p><p><a href="vida-tramites.html#impuestos">📖 Guía de impuestos y declaraciones</a></p>
 
   </div>
 </details>
 
 <details class="subtema-card">
   <summary>📑 Certificados (Juminhyo, ingresos, etc.)</summary>
-  <div class="subtema-content">
+  <div class="subtema-content"><p><a href="vida-tramites.html#certificados">📖 Guía completa: requisitos y cómo tramitar</a></p>
 <Img src="Img/certificados.webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" zairyu en japon">
@@ -3450,7 +3459,7 @@ alt=" zairyu en japon">
 
 <details class="subtema-card">
   <summary>🚗 Licencia de conducir (Menkyo)</summary>
-  <div class="subtema-content">
+  <div class="subtema-content"><p><a href="vida-tramites.html#licencias">📖 Guía completa: requisitos y cómo tramitar</a></p>
 <Img src="Img/licencia .webp"
 style="width:100%;display:block;margin:0 auto;border-radius:18px;"
 alt=" licencia en japon">

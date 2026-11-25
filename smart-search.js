@@ -2,7 +2,7 @@
 (()=>{
 const form=document.getElementById('aij-global-form'),input=document.getElementById('aij-global-input'),status=document.getElementById('aij-global-status'),results=document.getElementById('aij-global-results');
 if(!form||!input||!status||!results)return;
-const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
+const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim();
 const routes=[
 {label:'🆘 Ayuda inmediata',screen:'buscador',terms:['ayuda','ayudar','necesito ayuda','ayuda inmediata','auxilio','orientacion','consulta']},
 {label:'🎟️ Atracciones y entradas',href:'reservas.html#atracciones',terms:['comprar entradas atracciones','reservar atracciones']},
@@ -246,6 +246,23 @@ const routes=[
 {label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
 ];
 const consultasUsuario=[
+{"label":"🛡️ Salud y seguros en Japón","href":"seguros.html","terms":["seguros","seguro","salud y seguros","hoken","保険","seguro medico","seguridad social","seguros japon","cuanto cuesta seguro"]},
+{"label":"Seguro Nacional de Salud (Kokumin Hoken)","href":"seguros.html#kokumin","terms":["kokumin","kokumin hoken","kokumin kenko hoken","kokuho","国民健康保険","国保","seguro nacional de salud","seguro nacional","cuota kokumin"]},
+{"label":"Seguro social de empresa (Shakai Hoken)","href":"seguros.html#shakai","terms":["shakai","shakai hoken","shakai hoken cuota","社会保険","健康保険","kenko hoken","seguro social","seguro empresa","seguro medico empresa"]},
+{"label":"Continuación voluntaria (Nin'i Keizoku)","href":"seguros.html#nin-i-keizoku","terms":["nini keizoku","nin i keizoku","任意継続","continuacion voluntaria","seguro al dejar trabajo"]},
+{"label":"Seguro de desempleo (Koyō Hoken)","href":"seguros.html#koyo","terms":["koyo","koyo hoken","雇用保険","seguro desempleo","seguro de desempleo","desempleo","paro","subsidio desempleo","shitsugyo","失業保険"]},
+{"label":"Seguro de accidentes laborales (Rōsai)","href":"seguros.html#rosai","terms":["rosai","rossai","rousai","roosai","rosai hoken","労災","労災保険","seguro accidente laboral","seguro de accidentes laborales","accidente trabajo","accidente laboral"]},
+{"label":"Pensión nacional (Kokumin Nenkin)","href":"seguros.html#kokumin-nenkin","terms":["kokumin nenkin","国民年金","nenkin","pension","pensiones","pension nacional","jubilacion","pension vejez","seguro vejez","年金","cuota nenkin"]},
+{"label":"Pensión de empleados (Kōsei Nenkin)","href":"seguros.html#kosei-nenkin","terms":["kosei nenkin","kousei nenkin","厚生年金","pension empleados","pension empresa","pension trabajadores"]},
+{"label":"Seguro de cuidados (Kaigo Hoken)","href":"seguros.html#kaigo","terms":["kaigo","kaigo hoken","介護保険","seguro cuidados","cuidados larga duracion","seguro dependencia","seguro ancianos"]},
+{"label":"Seguro médico de mayores de 75 años","href":"seguros.html#75-anos","terms":["75 años","seguro mayores 75","seguro medico mayores","koki koreisha","kouki koureisha","後期高齢者医療制度"]},
+{"label":"Seguro obligatorio de automóvil","href":"seguros.html#jibaiseki","terms":["jibaiseki","jibaiseki hoken","自賠責","自賠責保険","seguro obligatorio coche","seguro obligatorio auto","seguro obligatorio automovil"]},
+{"label":"Seguro voluntario de automóvil","href":"seguros.html#nin-i-hoken","terms":["nini hoken","nin i hoken","任意保険","seguro auto","seguro coche","seguro voluntario automovil"]},
+{"label":"Seguro de viaje","href":"seguros.html#viaje","terms":["seguro viaje","seguro de viaje","seguro turista","旅行保険","ryoko hoken"]},
+{"label":"Seguro de vida y médico privado","href":"seguros.html#vida","terms":["seguro vida","seguro de vida","seimei hoken","生命保険","seguro medico privado","医療保険"]},
+{"label":"Seguro de hogar, incendio y terremoto","href":"seguros.html#vivienda","terms":["seguro vivienda","seguro hogar","seguro incendio","seguro terremoto","火災保険","地震保険","kasai hoken","jishin hoken"]},
+{"label":"Seguro de responsabilidad civil","href":"seguros.html#responsabilidad","terms":["seguro responsabilidad civil","seguro bicicleta","個人賠償責任保険","kojin baisho sekinin hoken"]},
+
 {label:'🛍️ Tax Free: devolución de impuestos para turistas (normas 2026)',href:'tax-free.html',terms:['tax free','taxfree','tax-free','tax refund','taxrefund','menzei','免税','compras sin impuestos','devolucion de impuestos','devolucion del impuesto','devolucion iva','iva japon','impuestos compras turistas','comprar sin impuestos','compras libres de impuestos','reembolso impuestos','reembolso de impuestos','exencion impuestos turista','exencion de impuestos','tax free japon','devolucion impuestos aeropuerto']},
 
 {label:'🚓 Perdido, extraviado u objeto perdido: ayuda policial',key:'policia',terms:['perdido','perdida','extraviado','extraviada','extravio','me perdi','estoy perdido','me he perdido','objeto perdido','perdi mi cartera','perdi mi pasaporte']},

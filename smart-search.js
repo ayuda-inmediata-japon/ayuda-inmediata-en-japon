@@ -246,6 +246,9 @@ const routes=[
 {label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
 ];
 const consultasUsuario=[
+{"label":"Ayuda por fallecimiento y gastos funerarios","href":"vida-tramites.html#maiso","terms":["Ayuda por fallecimiento y gastos funerarios","maiso","maisoryo","sosaihi","ayuda funeral","gastos funerarios","埋葬料","葬祭費"]},
+{"label":"Prestación por permiso de crianza","href":"vida-tramites.html#ikuji","terms":["Prestación por permiso de crianza","ikuji kyugyo kyufukin","ikuji kyuugyou","permiso crianza","baja parental","育児休業給付金"]},
+
 {"label":"💴 Impuestos y declaraciones","href":"vida-tramites.html#impuestos","terms":["impuestos","pagar impuestos","impuestos japon","impuestos y declaraciones"]},
 {"label":"Impuesto sobre la renta","href":"vida-tramites.html#shotokuzei","terms":["Impuesto sobre la renta","shotokuzei","impuesto renta","impuesto trabajo","所得税"]},
 {"label":"Impuesto de residencia, municipal y prefectural","href":"vida-tramites.html#juminzei","terms":["Impuesto de residencia, municipal y prefectural","juminzei","shiminzei","kenminzei","impuesto residencia","impuesto municipal","住民税","市民税","県民税"]},

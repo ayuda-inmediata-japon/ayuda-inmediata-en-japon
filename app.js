@@ -527,6 +527,14 @@ alt="salud general">
 <p><strong>🟢 Presiona una situación para ver qué hacer:</strong></p>
 
 <div class="subtemas-box">
+<details class="subtema-card">
+    <summary>🛡️ Salud y seguros en Japón</summary>
+    <div class="subtema-content">
+      <p>Consulta qué cubren los seguros médicos, de desempleo, accidentes laborales, pensiones, cuidados de larga duración, automóvil y otros seguros; cuánto se paga y dónde hacer trámites.</p>
+      <p><a href="seguros.html">📖 Abrir guía completa de Salud y seguros</a></p>
+    </div>
+  </details>
+
 
   <details class="subtema-card">
     <summary>🏥 Quiero ir a una clínica</summary>
@@ -3397,6 +3405,7 @@ alt="segurosalud en japon">
 
     <p><strong>Importante:</strong></p>
     <p>Sin seguro, la atención médica es muy costosa.</p>
+    <p><a href="seguros.html">📖 Guía de Salud y seguros: cotizaciones, pensiones y trámites</a></p>
 
   </div>
 </details>

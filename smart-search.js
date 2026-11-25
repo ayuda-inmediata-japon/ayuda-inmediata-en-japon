@@ -246,6 +246,7 @@ const routes=[
 {label:'🚨 Emergencias y trámites',screen:'buscador',terms:['emergencias y tramites','orientacion y consultas']}
 ];
 const consultasUsuario=[
+{label:'🛡️ Nuestro compromiso de confianza y transparencia',href:'nuestro-compromiso.html',terms:['nuestro compromiso','compromiso','confianza','informacion confiable','informacion verificada','fuentes oficiales','seguridad en reservas','enlaces seguros','afiliados','transparencia','quienes somos','sobre nosotros','nuestra mision']},
 {"label":"🌏 Working Holiday: vacaciones y trabajo temporal","href":"estudiar-trabajar.html#working-holiday","terms":["working holiday","work holiday","holiday work","holliday work","working holliday","work and holiday","visa working holiday","visado working holiday","vacaciones trabajo","trabajar vacaciones","ワーキングホリデー","wakkingu horide","waking holiday"]},
 {"label":"🗺️ Working Holiday: países y convenios","href":"estudiar-trabajar.html#paises","terms":["paises working holiday","convenio working holiday","working holiday argentina","working holiday chile","working holiday españa","working holiday uruguay","working holiday panama","working holiday bolivia","working holiday peru","working holiday mexico","working holiday colombia","paises convenio working holiday","cupo working holiday"]},
 {"label":"📋 Solicitud de Working Holiday","href":"estudiar-trabajar.html#solicitud-wh","terms":["solicitar working holiday","requisitos working holiday","fondos working holiday","cuanto cuesta working holiday","documentos working holiday","tramitar working holiday"]},

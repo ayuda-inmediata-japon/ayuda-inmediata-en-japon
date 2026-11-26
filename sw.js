@@ -1,8 +1,9 @@
-const CACHE_NAME = "ayuda-japon-v14";
+const CACHE_NAME = "ayuda-japon-v15";
 
 const CORE_FILES = [
   "./",
   "./index.html",
+  "./consultar-pension-japon.html",
   "./styles.css",
   "./app.js",
   "./smart-search.js",

@@ -623,6 +623,10 @@ alt="comprar medicina s">
       <p>薬がほしいです<br>Kusuri ga hoshii desu<br>Quiero medicina</p>
       <p>風邪です<br>Kaze desu<br>Estoy resfriado</p>
       <p>頭が痛いです<br>Atama ga itai desu<br>Me duele la cabeza</p>
+      <p><strong>🏪 ¿Dónde se compra en Japón?</strong> Entre las cadenas de droguerías más conocidas están <strong>Matsumoto Kiyoshi (マツモトキヨシ)</strong>, <strong>Welcia (ウエルシア)</strong> y <strong>Tsuruha Drug (ツルハドラッグ)</strong>. Venden productos de higiene, cuidado personal y, según el establecimiento y personal disponible, medicamentos sin receta.</p>
+      <p><strong>Importante:</strong> una droguería (ドラッグストア) no siempre dispone de mostrador para surtir recetas. Para medicamentos recetados busca una <strong>farmacia de dispensación (調剤薬局・chōzai yakkyoku)</strong> o un local con ese servicio.</p>
+      <p><a href="seguros.html#farmacias-medicamentos">📖 Guía detallada: farmacias, medicamentos, recetas y frases para pedir ayuda</a></p>
+      <p><a href="videoteca.html">🎬 Ver vídeos educativos de salud en nuestra Videoteca</a></p>
     </div>
   </details>
 

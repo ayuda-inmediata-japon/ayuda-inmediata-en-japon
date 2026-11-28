@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-11-27T18:56:52.971423+00:00",
+  "updated_at": "2026-11-28T01:57:44.262846+00:00",
   "items": [
+    {
+      "id": "b04352d87432812e39f4",
+      "title": "自民 麻生副総裁 茂木外相らが会談 消費税減税法案など成立を",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261127de82796",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-27T14:43:30+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "593b810c9ac3b15cf8e5",
       "title": "消費税減税法案めぐり 立民が最大5万円給付など対案を国会提出",
@@ -111,6 +120,15 @@
     }
   ],
   "archive": [
+    {
+      "id": "b04352d87432812e39f4",
+      "title": "自民 麻生副総裁 茂木外相らが会談 消費税減税法案など成立を",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261127de82796",
+      "source": "NHK Noticias",
+      "published_at": "2026-11-27T14:43:30+00:00",
+      "language": "ja",
+      "category_es": "Impuestos y obligaciones"
+    },
     {
       "id": "593b810c9ac3b15cf8e5",
       "title": "消費税減税法案めぐり 立民が最大5万円給付など対案を国会提出",
